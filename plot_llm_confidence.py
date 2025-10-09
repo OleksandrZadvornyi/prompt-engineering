@@ -1,9 +1,13 @@
 import math
 import numpy as np
 import matplotlib.pyplot as plt
+from pathlib import Path
 
-def plot_llm_confidence(logprobs_data, title_prefix="LLM Output"):
-    # Extract tokens and probabilities
+def plot_llm_confidence(logprobs_data, output_dir=".", title_prefix="LLM Output"):
+    """Generates and saves confidence plots (bar, line, histogram, cumulative) to output_dir."""
+
+    Path(output_dir).mkdir(parents=True, exist_ok=True)
+
     tokens = [item["token"] for item in logprobs_data]
     logprobs = [item["logprob"] for item in logprobs_data]
     probs = [math.exp(lp) for lp in logprobs]
@@ -16,7 +20,8 @@ def plot_llm_confidence(logprobs_data, title_prefix="LLM Output"):
     plt.xlabel("Token Index")
     plt.title(f"{title_prefix}: Per-token Confidence")
     plt.tight_layout()
-    plt.show()
+    plt.savefig(f"{output_dir}/1_token_confidence.png", bbox_inches="tight")
+    plt.close()
 
     # --- 2. Log-Probability Trend ---
     plt.figure(figsize=(12, 4))
@@ -26,7 +31,8 @@ def plot_llm_confidence(logprobs_data, title_prefix="LLM Output"):
     plt.ylabel("Log Probability")
     plt.grid(True)
     plt.tight_layout()
-    plt.show()
+    plt.savefig(f"{output_dir}/2_logprob_trend.png", bbox_inches="tight")
+    plt.close()
 
     # --- 3. Probability Distribution Histogram ---
     plt.figure(figsize=(6, 4))
@@ -35,7 +41,8 @@ def plot_llm_confidence(logprobs_data, title_prefix="LLM Output"):
     plt.xlabel("Probability")
     plt.ylabel("Token Count")
     plt.tight_layout()
-    plt.show()
+    plt.savefig(f"{output_dir}/3_probability_distribution.png", bbox_inches="tight")
+    plt.close()
 
     # --- 4. Cumulative Log-Probability Curve ---
     cumulative = np.cumsum(logprobs)
@@ -46,9 +53,10 @@ def plot_llm_confidence(logprobs_data, title_prefix="LLM Output"):
     plt.ylabel("Cumulative Log Probability")
     plt.grid(True)
     plt.tight_layout()
-    plt.show()
+    plt.savefig(f"{output_dir}/4_cumulative_logprob.png", bbox_inches="tight")
+    plt.close()
 
-    # --- 5. Summary Metrics ---
+    # --- 5. Summary Metrics (terminal print only) ---
     total_logprob = sum(logprobs)
     avg_logprob = total_logprob / len(logprobs)
     avg_prob = math.exp(avg_logprob)
