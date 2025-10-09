@@ -1,0 +1,124 @@
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>LLM Code Generation Report #1</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; background: #fafafa; }
+        h2 { color: #333; }
+        pre { background: #f3f3f3; padding: 10px; border-radius: 6px; overflow-x: auto; }
+        .metrics { background: #fff; padding: 10px; border-radius: 6px; margin-bottom: 20px; }
+    </style>
+</head>
+<body>
+    <h1>LLM Code Generation Report #1</h1>
+    <p><b>Timestamp:</b> 2025-10-09 09:19:14</p>
+    <p><b>Model:</b> openai/gpt-4o</p>
+    
+    <h2>Selected User Stories</h2>
+    <pre>﻿As a Data user, I want to have the 12-19-2017 deletions processed.
+As a UI designer, I want to redesign the Resources page, so that it matches the new Broker design styles.
+As a UI designer, I want to report to the Agencies about user testing, so that they are aware of their contributions to making Broker a better UX.
+As a UI designer, I want to move on to round 2 of DABS or FABS landing page edits, so that I can get approvals from leadership.
+As a UI designer, I want to move on to round 2 of Homepage edits, so that I can get approvals from leadership.
+As a UI designer, I want to move on to round 3 of the Help page edits, so that I can get approvals from leadership.
+As a Developer , I want to be able to log better, so that I can troubleshoot issues with particular submissions and functions.
+As a Developer, I want to add the updates on a FABS submission to be modified when the publishStatus changes, so that I know when the status of the submission has changed.
+As a DevOps engineer, I want New Relic to provide useful data across all applications.
+As a UI designer,  I want to move on to round 2 of the Help page edits, so that I can get approvals from leadership.</pre>
+    
+    <h2>Prompt Sent to LLM</h2>
+    <pre>Write only Python code (no explanations, no markdown formatting or comments) that fulfills the following user stories:
+
+﻿As a Data user, I want to have the 12-19-2017 deletions processed.
+As a UI designer, I want to redesign the Resources page, so that it matches the new Broker design styles.
+As a UI designer, I want to report to the Agencies about user testing, so that they are aware of their contributions to making Broker a better UX.
+As a UI designer, I want to move on to round 2 of DABS or FABS landing page edits, so that I can get approvals from leadership.
+As a UI designer, I want to move on to round 2 of Homepage edits, so that I can get approvals from leadership.
+As a UI designer, I want to move on to round 3 of the Help page edits, so that I can get approvals from leadership.
+As a Developer , I want to be able to log better, so that I can troubleshoot issues with particular submissions and functions.
+As a Developer, I want to add the updates on a FABS submission to be modified when the publishStatus changes, so that I know when the status of the submission has changed.
+As a DevOps engineer, I want New Relic to provide useful data across all applications.
+As a UI designer,  I want to move on to round 2 of the Help page edits, so that I can get approvals from leadership.
+
+Do NOT include ```python or ``` anywhere. The code should be simple, clean, and implement the described functionality as best as possible.</pre>
+    
+    <h2>Generated Code</h2>
+    <pre># Process 12-19-2017 deletions
+def process_deletions(date):
+    if date == '12-19-2017':
+        return "Deletions processed"
+    return "No actions taken"
+
+# Redesign the Resources page
+def redesign_resources_page(current_design, new_broker_design):
+    new_design = new_broker_design
+    return new_design
+
+# Report to Agencies about user testing
+def report_user_testing(user_feedback, agencies):
+    reports = {}
+    for agency in agencies:
+        reports[agency] = f"User feedback from testing: {user_feedback}"
+    return reports
+
+# Move on to round 2 edits for DABS or FABS landing pages
+def move_to_round_2_edits(page_type, round_number):
+    if page_type in ["DABS", "FABS"] and round_number == 2:
+        return "Proceeding to round 2 edits"
+    return "Invalid operation"
+
+# Move on to round 2 of Homepage edits
+def move_to_round_2_homepage(round_number):
+    if round_number == 2:
+        return "Proceeding to round 2 homepage edits"
+    return "Invalid operation"
+
+# Move on to round 3 of the Help page edits
+def move_to_round_3_help_page(round_number):
+    if round_number == 3:
+        return "Proceeding to round 3 Help page edits"
+    return "Invalid operation"
+
+# Log improvements for troubleshooting submissions and functions
+class Logger:
+    def log(self, message):
+        print(f"Log: {message}")
+
+# Update on FABS submission status change
+class FABSSubmission:
+    def __init__(self, status):
+        self.status = status
+
+    def update_status(self, new_status):
+        if new_status != self.status:
+            self.status = new_status
+            return f"Status updated to {self.status}"
+        return "No status change"
+
+# New Relic integration for useful data
+class NewRelic:
+    def provide_data(self, application_data):
+        return f"Data for all applications: {application_data}"
+
+# Move on to round 2 of Help page edits
+def move_to_help_page_round_2(round_number):
+    if round_number == 2:
+        return "Proceeding to round 2 Help page edits"
+    return "Invalid operation"</pre>
+    
+    <h2>Confidence Metrics</h2>
+    <div class="metrics">
+        <p><b>Total tokens:</b> 479</p>
+        <p><b>Total log-probability:</b> -132.789</p>
+        <p><b>Average per-token probability:</b> 75.79%</p>
+        <p><b>Perplexity:</b> 1.32</p>
+    </div>
+    
+    <h2>Visualizations</h2>
+    <img src="1_token_confidence.png" width="800"><br>
+    <img src="2_logprob_trend.png" width="800"><br>
+    <img src="3_probability_distribution.png" width="800"><br>
+    <img src="4_cumulative_logprob.png" width="800">
+</body>
+</html>
