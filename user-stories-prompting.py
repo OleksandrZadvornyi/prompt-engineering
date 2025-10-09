@@ -4,6 +4,7 @@ from dotenv import load_dotenv
 import math
 import datetime
 import json
+import csv
 from pathlib import Path
 from plot_llm_confidence import plot_llm_confidence
 
@@ -11,7 +12,7 @@ from plot_llm_confidence import plot_llm_confidence
 load_dotenv()
 
 # Configuration
-model = "openai/gpt-4o"
+model = "openai/gpt-oss-20b"
 results_root = Path("results")
 results_root.mkdir(exist_ok=True)
 
@@ -33,12 +34,12 @@ with open("data.txt", "r", encoding="utf-8") as f:
     user_stories = [line.strip() for line in f if line.strip()]
 
 # --- Step 2: Select a few stories ---
-sample_stories = user_stories[:10]
+sample_stories = user_stories #[:50]
 stories_text = "\n".join(sample_stories)
 
 # --- Step 3: Build the prompt ---
 prompt = (
-    "Write only Python code (no explanations, no markdown formatting or comments) "
+    "Write only Python code (no explanations or comments) "
     "that fulfills the following user stories:\n\n"
     f"{stories_text}\n\n"
     "Do NOT include ```python or ``` anywhere. "
@@ -59,7 +60,33 @@ print("\n--- GENERATED PYTHON CODE ---\n")
 print(code)
 
 # --- Step 6: Analyze log probabilities ---
-logprobs_data = msg.response_metadata["logprobs"]["content"]
+#logprobs_data = msg.response_metadata["logprobs"]["content"]
+logprobs_meta = msg.response_metadata.get("logprobs")
+
+if not logprobs_meta or not logprobs_meta.get("content"):
+    print("\n⚠️ This model did not return logprobs. Skipping probability analysis.\n")
+    logprobs_data = []
+else:
+    logprobs_data = logprobs_meta["content"]
+
+supports_logprobs = bool(msg.response_metadata.get("logprobs"))
+print(supports_logprobs)
+
+# Convert to richer structure for saving 
+tokens_info = [] 
+cumulative_logprob = 0.0 
+for idx, item in enumerate(logprobs_data): 
+    token = item["token"] 
+    logp = item["logprob"] 
+    prob = math.exp(logp) 
+    cumulative_logprob += logp 
+    tokens_info.append({ 
+        "index": idx + 1, 
+        "token": token, 
+        "logprob": logp, 
+        "probability": prob, 
+        "cumulative_logprob": cumulative_logprob 
+    })
 
 total_logprob = sum(item["logprob"] for item in logprobs_data)
 total_tokens = len(logprobs_data)
@@ -70,7 +97,18 @@ perplexity = math.exp(-avg_logprob)
 # --- Step 7: Save plots ---
 plot_llm_confidence(logprobs_data, output_dir=run_dir, title_prefix="Python Code Generation")
 
-# --- Step 8: Save report ---
+# --- Step 8: Save detailed data ---
+# JSON (for reloading in Python)
+with open(run_dir / "tokens.json", "w", encoding="utf-8") as f:
+    json.dump(tokens_info, f, indent=4)
+
+# CSV (for spreadsheets / pandas)
+with open(run_dir / "tokens.csv", "w", encoding="utf-8", newline="") as f:
+    writer = csv.DictWriter(f, fieldnames=tokens_info[0].keys())
+    writer.writeheader()
+    writer.writerows(tokens_info)
+
+# --- Step 9: Save report ---
 timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
 html_report = f"""
