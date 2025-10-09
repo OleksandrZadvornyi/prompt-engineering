@@ -2,6 +2,7 @@ from langchain_openai import ChatOpenAI
 from os import getenv
 from dotenv import load_dotenv
 import math
+from plot_llm_confidence import plot_llm_confidence
 
 load_dotenv()
 
@@ -12,7 +13,7 @@ llm = ChatOpenAI(
 ).bind(logprobs=True)
 
 # Ask for code generation
-msg = llm.invoke(("human", "Write only the Python code (no explanation): a function that returns the square of a number."))
+msg = llm.invoke(("human", "Python code only, no comments or explanations: implement a basic class representing a bank account with deposit and withdraw methods."))
 
 logprobs_data = msg.response_metadata["logprobs"]["content"]
 
@@ -37,8 +38,11 @@ avg_logprob = total_logprob / total_tokens
 avg_prob = math.exp(avg_logprob)
 perplexity = math.exp(-avg_logprob)
 
-print(f"\nTotal tokens: {total_tokens}")
-print(f"Total log-probability: {total_logprob:.6f}")
+print(f"\nTotal tokens: {total_tokens} (not for comparison!)")
+print(f"Total log-probability: {total_logprob:.6f} (not for comparison!)")
+print(f"Average per-token logarithmic probability: {avg_logprob:.2}")
 print(f"Average per-token probability: {avg_prob:.2%}")
 print(f"Perplexity: {perplexity:.2f}")
 print("=" * 70)
+
+plot_llm_confidence(logprobs_data)
