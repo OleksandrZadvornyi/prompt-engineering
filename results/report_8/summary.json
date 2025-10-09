@@ -1,0 +1,9 @@
+{
+    "request_number": 8,
+    "timestamp": "2025-10-09 12:22:33",
+    "model": "qwen/qwen3-coder-30b-a3b-instruct",
+    "total_tokens": 2866,
+    "total_logprob": -786.0202823998866,
+    "avg_prob": 0.7601367691820995,
+    "perplexity": 1.3155527275387446
+}

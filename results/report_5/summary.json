@@ -1,0 +1,9 @@
+{
+    "request_number": 5,
+    "timestamp": "2025-10-09 11:40:58",
+    "model": "openai/gpt-4o-mini",
+    "total_tokens": 1236,
+    "total_logprob": -10325.524698204927,
+    "avg_prob": 0.00023545649794782494,
+    "perplexity": 4247.0690285285355
+}

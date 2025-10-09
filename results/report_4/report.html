@@ -1,0 +1,334 @@
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>LLM Code Generation Report #4</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; background: #fafafa; }
+        h2 { color: #333; }
+        pre { background: #f3f3f3; padding: 10px; border-radius: 6px; overflow-x: auto; }
+        .metrics { background: #fff; padding: 10px; border-radius: 6px; margin-bottom: 20px; }
+    </style>
+</head>
+<body>
+    <h1>LLM Code Generation Report #4</h1>
+    <p><b>Timestamp:</b> 2025-10-09 11:33:29</p>
+    <p><b>Model:</b> openai/gpt-4o-mini</p>
+    
+    <h2>Selected User Stories</h2>
+    <pre>﻿As a Data user, I want to have the 12-19-2017 deletions processed.
+As a UI designer, I want to redesign the Resources page, so that it matches the new Broker design styles.
+As a UI designer, I want to report to the Agencies about user testing, so that they are aware of their contributions to making Broker a better UX.
+As a UI designer, I want to move on to round 2 of DABS or FABS landing page edits, so that I can get approvals from leadership.
+As a UI designer, I want to move on to round 2 of Homepage edits, so that I can get approvals from leadership.
+As a UI designer, I want to move on to round 3 of the Help page edits, so that I can get approvals from leadership.
+As a Developer , I want to be able to log better, so that I can troubleshoot issues with particular submissions and functions.
+As a Developer, I want to add the updates on a FABS submission to be modified when the publishStatus changes, so that I know when the status of the submission has changed.
+As a DevOps engineer, I want New Relic to provide useful data across all applications.
+As a UI designer,  I want to move on to round 2 of the Help page edits, so that I can get approvals from leadership.
+As a UI designer, I want to move on to round 2 of Homepage edits, so that I can get approvals from leadership.
+As a Broker user, I want to Upload and Validate the error message to have accurate text.
+As a Broker user, I want the D1 file generation to be synced with the FPDS data load, so that I don't have to regenerate a file if no data has been updated.
+As a Website user, I want to access published FABS files, so that I can see the new files as they come in.
+As an owner, I want to be sure that USAspending only send grant records to my system.
+As a Developer, I want to update the Broker validation rule table to account for the rule updates in DB-2213.
+As a Developer, I want to add the GTAS window data to the database, so that I can ensure the site is locked down during the GTAS submission period.
+As a Developer, I want D Files generation requests to be managed and cached, so that duplicate requests do not cause performance issues.
+As a user, I want to access the raw agency published files from FABS via USAspending.
+As an Agency user, I want to be able to include a large number of flexfields without performance impact.
+As a Broker user, I want  to help create content mockups, so that I can submit my data efficiently.
+As a UI designer, I want to track the issues that come up in Tech Thursday, so that I know what to test and what want s to be fixed.
+As an Owner, I want to create a user testing summary from the UI SME, so that I can know what UI improvements we will follow through on.
+As a UI designer, I want to begin user testing, so that I can validate stakeholder UI improvement requests.
+As a UI designer, I want to schedule user testing, so that I can give the testers advanced notice to ensure buy-in.
+As an Owner, I want to design a schedule from the UI SME, so that I know the potential timeline of the UI improvements wanted.
+As an Owner, I want to design an audit from the UI SME, so that I know the potential scope of the UI improvements want ed.
+As a Developer, I want to prevent users from double publishing FABS submissions after refreshing, so that there are no duplicates.
+As an data user, I want to receive updates to FABS records.
+As an Agency user, I want to be able to include a large number of flexfields without performance impact.
+As a Developer , I want to update the FABS sample file to remove FundingAgencyCode after FABS is updated to no longer require the header.
+As an agency user, I want to ensure that deleted FSRS records are not included in submissions.
+As a website user, I want to see updated financial assistance data daily.
+As a user, I want the publish button in FABS to deactivate after I click it while the derivations are happening, so that I cannot click it multiple times for the same submission.
+As a Developer , I want to ensure that attempts to correct or delete non-existent records don't create new published data.
+As an Owner, I want to reset the environment to only take Staging MAX permissions, so that I can ensure that the FABS testers no longer have access.
+As a user, I want the flexfields in my submission file to appear in the warning and error files when the only error is a missing required element.
+As a user, I want to have accurate and complete data related to PPoPCode and PPoPCongressionalDistrict.
+As an agency user, I want the FABS validation rules to accept zero and blank for loan records.
+As an Agency user, I want FABS deployed into production, so I can submit my Financial Assistance data.
+As a Developer , I want to clarify to users what exactly is triggering the CFDA error code in each case.
+As an agency user, I want to be confident that the data coming from SAM is complete.
+As a Developer , I want my domain models to be indexed properly, so that I can get validation results back in a reasonable amount of time.
+As an agency user, I want the FABS validation rules to accept zero and blank for non-loan records.
+As a broker team member, I want to make some updates to the SQL codes for clarity.
+As an agency user, I want to have all derived data elements derived properly.
+As a broker team member, I want to add the 00***** and 00FORGN PPoPCode cases to the derivation logic.
+As a data user, I want to see the office names derived from office codes, so that I can have appropriate context for understanding them.
+As a broker user, I want the historical FABS loader to derive fields, so that my agency codes are correct in the PublishedAwardFinancialAssistance table.
+As a broker team member, I want to ensure the Broker resources, validations, and P&P pages are updated appropriately for the launch of FABS and DAIMS v1.1.</pre>
+    
+    <h2>Prompt Sent to LLM</h2>
+    <pre>Write only Python code (no explanations, no markdown formatting or comments) that fulfills the following user stories:
+
+﻿As a Data user, I want to have the 12-19-2017 deletions processed.
+As a UI designer, I want to redesign the Resources page, so that it matches the new Broker design styles.
+As a UI designer, I want to report to the Agencies about user testing, so that they are aware of their contributions to making Broker a better UX.
+As a UI designer, I want to move on to round 2 of DABS or FABS landing page edits, so that I can get approvals from leadership.
+As a UI designer, I want to move on to round 2 of Homepage edits, so that I can get approvals from leadership.
+As a UI designer, I want to move on to round 3 of the Help page edits, so that I can get approvals from leadership.
+As a Developer , I want to be able to log better, so that I can troubleshoot issues with particular submissions and functions.
+As a Developer, I want to add the updates on a FABS submission to be modified when the publishStatus changes, so that I know when the status of the submission has changed.
+As a DevOps engineer, I want New Relic to provide useful data across all applications.
+As a UI designer,  I want to move on to round 2 of the Help page edits, so that I can get approvals from leadership.
+As a UI designer, I want to move on to round 2 of Homepage edits, so that I can get approvals from leadership.
+As a Broker user, I want to Upload and Validate the error message to have accurate text.
+As a Broker user, I want the D1 file generation to be synced with the FPDS data load, so that I don't have to regenerate a file if no data has been updated.
+As a Website user, I want to access published FABS files, so that I can see the new files as they come in.
+As an owner, I want to be sure that USAspending only send grant records to my system.
+As a Developer, I want to update the Broker validation rule table to account for the rule updates in DB-2213.
+As a Developer, I want to add the GTAS window data to the database, so that I can ensure the site is locked down during the GTAS submission period.
+As a Developer, I want D Files generation requests to be managed and cached, so that duplicate requests do not cause performance issues.
+As a user, I want to access the raw agency published files from FABS via USAspending.
+As an Agency user, I want to be able to include a large number of flexfields without performance impact.
+As a Broker user, I want  to help create content mockups, so that I can submit my data efficiently.
+As a UI designer, I want to track the issues that come up in Tech Thursday, so that I know what to test and what want s to be fixed.
+As an Owner, I want to create a user testing summary from the UI SME, so that I can know what UI improvements we will follow through on.
+As a UI designer, I want to begin user testing, so that I can validate stakeholder UI improvement requests.
+As a UI designer, I want to schedule user testing, so that I can give the testers advanced notice to ensure buy-in.
+As an Owner, I want to design a schedule from the UI SME, so that I know the potential timeline of the UI improvements wanted.
+As an Owner, I want to design an audit from the UI SME, so that I know the potential scope of the UI improvements want ed.
+As a Developer, I want to prevent users from double publishing FABS submissions after refreshing, so that there are no duplicates.
+As an data user, I want to receive updates to FABS records.
+As an Agency user, I want to be able to include a large number of flexfields without performance impact.
+As a Developer , I want to update the FABS sample file to remove FundingAgencyCode after FABS is updated to no longer require the header.
+As an agency user, I want to ensure that deleted FSRS records are not included in submissions.
+As a website user, I want to see updated financial assistance data daily.
+As a user, I want the publish button in FABS to deactivate after I click it while the derivations are happening, so that I cannot click it multiple times for the same submission.
+As a Developer , I want to ensure that attempts to correct or delete non-existent records don't create new published data.
+As an Owner, I want to reset the environment to only take Staging MAX permissions, so that I can ensure that the FABS testers no longer have access.
+As a user, I want the flexfields in my submission file to appear in the warning and error files when the only error is a missing required element.
+As a user, I want to have accurate and complete data related to PPoPCode and PPoPCongressionalDistrict.
+As an agency user, I want the FABS validation rules to accept zero and blank for loan records.
+As an Agency user, I want FABS deployed into production, so I can submit my Financial Assistance data.
+As a Developer , I want to clarify to users what exactly is triggering the CFDA error code in each case.
+As an agency user, I want to be confident that the data coming from SAM is complete.
+As a Developer , I want my domain models to be indexed properly, so that I can get validation results back in a reasonable amount of time.
+As an agency user, I want the FABS validation rules to accept zero and blank for non-loan records.
+As a broker team member, I want to make some updates to the SQL codes for clarity.
+As an agency user, I want to have all derived data elements derived properly.
+As a broker team member, I want to add the 00***** and 00FORGN PPoPCode cases to the derivation logic.
+As a data user, I want to see the office names derived from office codes, so that I can have appropriate context for understanding them.
+As a broker user, I want the historical FABS loader to derive fields, so that my agency codes are correct in the PublishedAwardFinancialAssistance table.
+As a broker team member, I want to ensure the Broker resources, validations, and P&P pages are updated appropriately for the launch of FABS and DAIMS v1.1.
+
+Do NOT include ```python or ``` anywhere. The code should be simple, clean, and implement the described functionality as best as possible.</pre>
+    
+    <h2>Generated Code</h2>
+    <pre>from datetime import datetime
+
+def process_deletions(date_str):
+    date = datetime.strptime(date_str, '%m-%d-%Y')
+    # logic to process deletions based on the date
+    pass
+
+def redesign_resources_page():
+    # logic to redesign the Resources page to match new Broker design styles
+    pass
+
+def report_user_testing_to_agencies():
+    # logic to report to the Agencies about user testing
+    pass
+
+def move_to_round_2_dabs_fabs_edits():
+    # logic to move on to round 2 of DABS or FABS landing page edits
+    pass
+
+def move_to_round_2_homepage_edits():
+    # logic to move on to round 2 of Homepage edits
+    pass
+
+def move_to_round_3_help_page_edits():
+    # logic to move on to round 3 of Help page edits
+    pass
+
+def log_submission_issues(issue_details):
+    # logic for better logging of issues with submissions
+    pass
+
+def update_fabs_submission_status(submission_id, new_status):
+    # logic to modify updates on a FABS submission when its publishStatus changes
+    pass
+
+def get_new_relic_data():
+    # logic to retrieve useful data from New Relic across all applications
+    pass
+
+def upload_validate_error_message():
+    # logic to upload and validate the error message for accuracy
+    pass
+
+def sync_d1_file_generation_with_fpds():
+    # logic to sync D1 file generation with FPDS data load
+    pass
+
+def access_published_fabs_files():
+    # logic to access published FABS files
+    pass
+
+def send_grant_records_to_system(grant_record):
+    # logic to ensure only grant records are sent to the system
+    pass
+
+def update_broker_validation_rule_table(rule_updates):
+    # logic to update the Broker validation rule table per DB-2213
+    pass
+
+def add_gtas_window_data_to_db(gtas_data):
+    # logic to add GTAS window data to the database
+    pass
+
+def manage_cache_for_d_files_generation(requests):
+    # logic to manage and cache D Files generation requests
+    pass
+
+def access_raw_agency_published_files():
+    # logic to access raw agency published files from FABS via USAspending
+    pass
+
+def include_flexfields_without_performance_impact(fields):
+    # logic to include a large number of flexfields without impacting performance
+    pass
+
+def create_content_mockups(mockups):
+    # logic to create content mockups for efficient data submission
+    pass
+
+def track_tech_thursday_issues(issues):
+    # logic to track issues from Tech Thursday
+    pass
+
+def create_user_testing_summary(summary):
+    # logic to create a user testing summary
+    pass
+
+def begin_user_testing():
+    # logic to start user testing for UI validation
+    pass
+
+def schedule_user_testing(schedule):
+    # logic to schedule user testing
+    pass
+
+def design_schedule_from_ui_sme(schedule_details):
+    # logic to design a schedule from the UI SME
+    pass
+
+def design_audit_from_ui_sme(audit_details):
+    # logic to design an audit from the UI SME
+    pass
+
+def prevent_double_publishing(submission_id):
+    # logic to prevent double publishing of FABS submissions
+    pass
+
+def receive_updates_to_fabs_records(updates):
+    # logic to receive updates to FABS records
+    pass
+
+def update_fabs_sample_file():
+    # logic to update the FABS sample file as required
+    pass
+
+def ensure_deleted_fsrs_records_excluded():
+    # logic to ensure deleted FSRS records are not included in submissions
+    pass
+
+def see_updated_financial_assistance_data():
+    # logic to see updated financial assistance data daily
+    pass
+
+def deactivate_publish_button(submission_id):
+    # logic to deactivate the publish button after being clicked
+    pass
+
+def prevent_non_existent_record_modifications():
+    # logic to ensure corrections to non-existent records don't create new data
+    pass
+
+def reset_environment_to_staging_max():
+    # logic to reset the environment for staging MAX permissions
+    pass
+
+def handle_flexfields_in_warning_error_files(fields):
+    # logic to ensure flexfields appear in warning and error files
+    pass
+
+def ensure_complete_data_for_ppop_code_and_district(data):
+    # logic to ensure accurate PPoPCode and PPoPCongressionalDistrict data
+    pass
+
+def validate_fabs_records_zero_and_blank(loan_records):
+    # logic to ensure FABS validation rules accept zero and blank for loan records
+    pass
+
+def deploy_fabs_to_production():
+    # logic to deploy FABS into production
+    pass
+
+def clarify_cfda_error_triggers():
+    # logic to clarify CFDA error code triggers to users
+    pass
+
+def validate_data_from_sam():
+    # logic to ensure data from SAM is complete
+    pass
+
+def index_domain_models_for_validation(domain_models):
+    # logic to ensure domain models are indexed for performance
+    pass
+
+def validate_fabs_non_loan_records_zero_and_blank(non_loan_records):
+    # logic to validate non-loan records in FABS
+    pass
+
+def update_sql_codes_for_clarity(sql_codes):
+    # logic to update SQL codes for clarity
+    pass
+
+def derive_all_data_elements(data):
+    # logic to ensure all derived data elements are correctly derived
+    pass
+
+def add_ppop_code_cases_to_derivation(logic):
+    # logic to add specific PPoPCode cases to the derivation logic
+    pass
+
+def see_office_names_from_codes(office_codes):
+    # logic to derive office names from office codes for context
+    pass
+
+def derive_fields_in_historical_fabs_loader(loader):
+    # logic to derive fields in the historical FABS loader
+    pass
+
+def update_broker_resources_for_fabs_launch():
+    # logic to update resources, validations, and pages for FABS and DAIMS v1.1
+    pass
+
+process_deletions("12-19-2017")</pre>
+    
+    <h2>Confidence Metrics</h2>
+    <div class="metrics">
+        <p><b>Total tokens:</b> 1249</p>
+        <p><b>Total log-probability:</b> -239.446</p>
+        <p><b>Average per-token probability:</b> 82.55%</p>
+        <p><b>Perplexity:</b> 1.21</p>
+    </div>
+    
+    <h2>Visualizations</h2>
+    <img src="1_token_confidence.png" width="800"><br>
+    <img src="2_logprob_trend.png" width="800"><br>
+    <img src="3_probability_distribution.png" width="800"><br>
+    <img src="4_cumulative_logprob.png" width="800">
+</body>
+</html>
