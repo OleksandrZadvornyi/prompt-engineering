@@ -13,6 +13,8 @@ import subprocess
 import tempfile
 import os
 from jinja2 import Environment, FileSystemLoader
+import time
+import textwrap
 
 # Load environment variables
 load_dotenv()
@@ -127,6 +129,80 @@ if code.endswith("```"):
 
 print("\n--- GENERATED PYTHON CODE ---\n")
 print(code)
+
+def compute_code_execution_metrics(code_text, timeout_sec=5):
+    """
+    Safely executes generated Python code in a subprocess.
+    Returns:
+      - execution_success (bool)
+      - execution_time_sec (float)
+      - exception_type (str)
+      - exception_message (str)
+      - runtime_output (str)
+    """
+
+    # Write code to a temporary file
+    with tempfile.NamedTemporaryFile("w", suffix=".py", delete=False) as tmp:
+        tmp.write(code_text)
+        tmp_path = tmp.name
+
+    start_time = time.time()
+
+    try:
+        result = subprocess.run(
+            ["python", tmp_path],
+            capture_output=True,
+            text=True,
+            timeout=timeout_sec
+        )
+        exec_time = round(time.time() - start_time, 3)
+
+        if result.returncode == 0:
+            execution_success = True
+            exception_type = ""
+            exception_message = ""
+        else:
+            execution_success = False
+            # Try to extract Python error type and message
+            stderr = result.stderr.strip()
+            if ":" in stderr:
+                exception_type = stderr.split(":")[0].split()[-1]
+                exception_message = ":".join(stderr.split(":")[1:]).strip()
+            else:
+                exception_type = "UnknownError"
+                exception_message = stderr
+
+        # Capture first 10 lines of stdout for report
+        stdout_preview = "\n".join(result.stdout.splitlines()[:10])
+        runtime_output = textwrap.shorten(stdout_preview, width=300, placeholder="...")
+
+    except subprocess.TimeoutExpired:
+        execution_success = False
+        exec_time = timeout_sec
+        exception_type = "TimeoutError"
+        exception_message = f"Execution exceeded {timeout_sec}s limit"
+        runtime_output = ""
+
+    except Exception as e:
+        execution_success = False
+        exec_time = round(time.time() - start_time, 3)
+        exception_type = type(e).__name__
+        exception_message = str(e)
+        runtime_output = ""
+
+    finally:
+        try:
+            os.remove(tmp_path)
+        except OSError:
+            pass
+
+    return {
+        "execution_success": execution_success,
+        "execution_time_sec": exec_time,
+        "exception_type": exception_type,
+        "exception_message": exception_message,
+        "runtime_output": runtime_output
+    }
 
 def compute_code_semantic_metrics(code_text):
     """
@@ -430,6 +506,8 @@ struct_metrics = compute_code_structure_metrics(code, logprobs_data)
 # Semantic quality metrics
 semantic_metrics = compute_code_semantic_metrics(code)
 
+# Execution-based metrics
+execution_metrics = compute_code_execution_metrics(code)
 
 ###################################################################
 ###################################################################
@@ -478,7 +556,8 @@ html_report = template.render(
     avg_prob=avg_prob,
     perplexity=perplexity,
     struct_metrics=struct_metrics,
-    semantic_metrics=semantic_metrics
+    semantic_metrics=semantic_metrics,
+    execution_metrics=execution_metrics
 )
 
 
@@ -497,7 +576,8 @@ summary = {
     "avg_prob": avg_prob,
     "perplexity": perplexity,
     **struct_metrics,
-    **semantic_metrics
+    **semantic_metrics,
+    **execution_metrics
 }
 with open(run_dir / "summary.json", "w", encoding="utf-8") as f:
     json.dump(summary, f, indent=4, ensure_ascii=False)
