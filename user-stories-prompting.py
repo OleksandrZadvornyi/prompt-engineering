@@ -12,13 +12,13 @@ from plot_llm_confidence import plot_llm_confidence
 load_dotenv()
 
 # Configuration
-model = "openai/gpt-oss-20b"
+model = "qwen/qwen3-coder-30b-a3b-instruct"
 results_root = Path("results")
 results_root.mkdir(exist_ok=True)
 
 # --- Step 0: Determine next request number ---
-existing_reports = sorted([p for p in results_root.iterdir() if p.is_dir()])
-request_number = len(existing_reports) + 1
+#existing_reports = sorted([p for p in results_root.iterdir() if p.is_dir()])
+request_number = 17#len(existing_reports) + 1
 run_dir = results_root / f"report_{request_number}"
 run_dir.mkdir(parents=True, exist_ok=True)
 
@@ -38,12 +38,21 @@ sample_stories = user_stories #[:50]
 stories_text = "\n".join(sample_stories)
 
 # --- Step 3: Build the prompt ---
+with open("clustered_stories.json", "r", encoding="utf-8") as f:
+    clusters = json.load(f)
+
+# Combine all clusters into a single structured section
+structured_text = "\n\n".join(
+    f"Module {name}:\n{stories}" for name, stories in clusters.items()
+)
+
 prompt = (
-    "Write only Python code (no explanations or comments) "
-    "that fulfills the following user stories:\n\n"
-    f"{stories_text}\n\n"
-    "Do NOT include ```python or ``` anywhere. "
-    "The code should be simple, clean, and implement the described functionality as best as possible."
+    "You are an experienced Python engineer. "
+    "Analyze the following grouped user stories (modules) and implement a complete system in Python. "
+    "Each module should correspond to a coherent part of the codebase (e.g., classes, APIs, or components). "
+    "Integrate them together logically. "
+    "Do not output markdown formatting or explanations.\n\n"
+    f"{structured_text}"
 )
 
 # --- Step 4: LLM call ---
@@ -60,17 +69,8 @@ print("\n--- GENERATED PYTHON CODE ---\n")
 print(code)
 
 # --- Step 6: Analyze log probabilities ---
-#logprobs_data = msg.response_metadata["logprobs"]["content"]
-logprobs_meta = msg.response_metadata.get("logprobs")
-
-if not logprobs_meta or not logprobs_meta.get("content"):
-    print("\n⚠️ This model did not return logprobs. Skipping probability analysis.\n")
-    logprobs_data = []
-else:
-    logprobs_data = logprobs_meta["content"]
-
+logprobs_data = msg.response_metadata["logprobs"]["content"]
 supports_logprobs = bool(msg.response_metadata.get("logprobs"))
-print(supports_logprobs)
 
 # Convert to richer structure for saving 
 tokens_info = [] 
@@ -127,6 +127,8 @@ html_report = f"""
     <h1>LLM Code Generation Report #{request_number}</h1>
     <p><b>Timestamp:</b> {timestamp}</p>
     <p><b>Model:</b> {model}</p>
+    <p><b>Logprobs available:</b> {supports_logprobs}</p>
+
 
     <h2>Selected User Stories</h2>
     <pre>{stories_text}</pre>
