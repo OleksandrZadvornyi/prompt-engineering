@@ -1,0 +1,32 @@
+Cheap models:
+1. x-ai/grok-code-fast-1 (Programming (#1)) $0.20/M input | $1.50/M output 
+2. qwen/qwen3-coder-30b-a3b-instruct (Programming (#4)) $0.06/M input | $0.25/M output 
+3. x-ai/grok-4-fast (Programming (#9)) $0.20/M input | $0.50/M output
+4. openai/gpt-4o-mini $0.15/M input | $0.60/M output
+
+Zero-shot prompt:
+prompt = (
+    "Generate fully functional Python code that implements the following user stories. "
+    "The code should realistically reflect the described functionality.\n\n"
+    f"{stories_text}\n\n"
+    "Output only Python code (no markdown formatting or extra text). "
+    "Do not leave functions empty — implement reasonable logic where needed."
+)
+
+prompt = (
+    "Analyze the following user stories and first reason about what functionality they describe. "
+    "Then, generate fully functional Python code that implements these requirements "
+    "as realistically as possible.\n\n"
+    f"{stories_text}\n\n"
+    "Output only Python code (no markdown formatting or extra text). "
+    "Do not just define empty functions — implement the logic even if you must make reasonable assumptions."
+)
+
+prompt = (
+    "You are an experienced Python engineer. "
+    "Analyze the following grouped user stories (modules) and implement a complete system in Python. "
+    "Each module should correspond to a coherent part of the codebase (e.g., classes, APIs, or components). "
+    "Integrate them together logically. "
+    "Do not output markdown formatting or explanations.\n\n"
+    f"{structured_text}"
+)
