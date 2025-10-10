@@ -12,6 +12,7 @@ import statistics
 import subprocess
 import tempfile
 import os
+from jinja2 import Environment, FileSystemLoader
 
 # Load environment variables
 load_dotenv()
@@ -461,156 +462,25 @@ with open(run_dir / "tokens.csv", "w", encoding="utf-8", newline="") as f:
 # Save report assets
 timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
-html_report = f"""
-<html>
-<head>
-    <meta charset="utf-8">
-    <title>LLM Code Generation Report #{request_number}</title>
-    <style>
-        body {{ font-family: Arial, sans-serif; margin: 40px; background: #fafafa; }}
-        h2 {{ color: #333; }}
-        pre {{ background: #f3f3f3; padding: 10px; border-radius: 6px; overflow-x: auto; }}
-        .metrics {{ background: #fff; padding: 10px; border-radius: 6px; margin-bottom: 20px; }}
-        .metrics table {{ width: 100%; border-collapse: collapse; }}
-        .metrics td {{ padding: 6px 8px; border-bottom: 1px solid #eee; }}
-    </style>
-</head>
-<body>
-    <h1>LLM Code Generation Report #{request_number}</h1>
-    <p><b>Timestamp:</b> {timestamp}</p>
-    <p><b>Model:</b> {model}</p>
-    <p><b>Logprobs available:</b> {supports_logprobs}</p>
+env = Environment(loader=FileSystemLoader("."))  # current directory
+template = env.get_template("report_template.html")
 
-    <h2>Selected User Stories</h2>
-    <pre>{stories_text}</pre>
+html_report = template.render(
+    request_number=request_number,
+    timestamp=timestamp,
+    model=model,
+    supports_logprobs=supports_logprobs,
+    stories_text=stories_text,
+    prompt=prompt,
+    code=code,
+    total_tokens=total_tokens,
+    total_logprob=total_logprob,
+    avg_prob=avg_prob,
+    perplexity=perplexity,
+    struct_metrics=struct_metrics,
+    semantic_metrics=semantic_metrics
+)
 
-    <h2>Prompt Sent to LLM</h2>
-    <pre>{prompt}</pre>
-
-    <h2>Generated Code</h2>
-    <pre>{code}</pre>
-
-    <h2>Confidence & Basic Metrics</h2>
-    <div class="metrics">
-        <table>
-            <tr><td><b>Total tokens</b></td><td>{total_tokens}</td></tr>
-            <tr><td><b>Total log-probability</b></td><td>{total_logprob:.3f}</td></tr>
-            <tr><td><b>Average per-token probability</b></td><td>{avg_prob:.2%}</td></tr>
-            <tr><td><b>Perplexity</b></td><td>{perplexity:.2f}</td></tr>
-        </table>
-    </div>
-
-    <h2>Code Structure & Length Metrics</h2>
-    <div class="metrics">
-        <table>
-            <tr><td><b>Token count (source)</b></td><td>{struct_metrics["token_count"]}</td></tr>
-            <tr><td><b>Function count (AST)</b></td><td>{struct_metrics["function_count"]}</td></tr>
-            <tr><td><b>Class count (AST)</b></td><td>{struct_metrics["class_count"]}</td></tr>
-            <tr><td><b>Number of lines</b></td><td>{struct_metrics["num_lines"]}</td></tr>
-            <tr><td><b>Non-empty lines</b></td><td>{struct_metrics["num_nonempty_lines"]}</td></tr>
-            <tr><td><b>Avg line length (all lines, chars)</b></td><td>{struct_metrics["avg_line_len_all_chars"]:.1f}</td></tr>
-            <tr><td><b>Avg line length (non-empty, chars)</b></td><td>{struct_metrics["avg_line_len_nonempty_chars"]:.1f}</td></tr>
-            <tr><td><b>Avg tokens per non-empty line</b></td><td>{struct_metrics["avg_tokens_per_nonempty_line"]:.2f}</td></tr>
-            <tr><td><b>AST depth (max nesting)</b></td><td>{struct_metrics["ast_depth"]}</td></tr>
-            <tr><td><b>Import count</b></td><td>{struct_metrics["import_count"]}</td></tr>
-            <tr><td><b>Import names</b></td><td>{", ".join(struct_metrics["import_names"])}</td></tr>
-            <tr><td><b>Avg cyclomatic complexity (functions)</b></td><td>{struct_metrics["avg_cyclomatic_complexity"]:.2f}</td></tr>
-            <tr><td><b>Max cyclomatic complexity (functions)</b></td><td>{struct_metrics["max_cyclomatic_complexity"]}</td></tr>
-            <tr><td><b>Module cyclomatic complexity</b></td><td>{struct_metrics["module_cyclomatic_complexity"]}</td></tr>
-            <tr><td><b>Average function size (lines)</b></td><td>{struct_metrics["avg_function_size_lines"]:.1f}</td></tr>
-            <tr><td><b>Comment density (%)</b></td><td>{struct_metrics["comment_density_percent"]:.1f}%</td></tr>
-            <tr><td><b>Import redundancy ratio</b></td><td>{struct_metrics["import_redundancy_ratio"]:.2f}</td></tr>
-        </table>
-    </div>
-    
-    <h2>Semantic Quality Metrics</h2>
-    <div class="metrics">
-        <table>
-            <tr>
-                <td><b>Syntax valid</b></td>
-                <td>{semantic_metrics["syntax_valid"]}</td>
-            </tr>
-            <tr>
-                <td><b>Flake8 style errors</b></td>
-                <td>{semantic_metrics["flake8_error_count"]}</td>
-            </tr>
-            <tr>
-                <td><b>Flake8 errors (by category)</b></td>
-                <td>
-                    <table>
-                        <tr>
-                            <td>Style errors (PEP8 spacing, indentation, etc.) (E)</td>
-                            <td>{semantic_metrics["flake8_error_breakdown"]["E"]}</td>
-                        </tr>
-                        <tr>
-                            <td>Logical errors (undefined vars, unused imports, etc.) (F)</td>
-                            <td>{semantic_metrics["flake8_error_breakdown"]["F"]}</td>
-                        </tr>
-                        <tr>
-                            <td>Warnings (whitespace, etc.) (W)</td>
-                            <td>{semantic_metrics["flake8_error_breakdown"]["W"]}</td>
-                        </tr>
-                        <tr>
-                            <td>McCabe complexity issues (C)</td>
-                            <td>{semantic_metrics["flake8_error_breakdown"]["C"]}</td>
-                        </tr>
-                        <tr>
-                            <td>Naming conventions (N)</td>
-                            <td>{semantic_metrics["flake8_error_breakdown"]["N"]}</td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-            <tr>
-                <td><b>Mypy type-check errors</b></td>
-                <td>{semantic_metrics["mypy_error_count"]}</td>
-            </tr>
-            <tr>
-                <td><b>Mypy error breakdown</b></td>
-                <td>
-                    <table>
-                        <tr>
-                            <td>Return type</td>
-                            <td>{semantic_metrics["mypy_error_breakdown"]["return_type"]}</td>
-                        </tr>
-                        <tr>
-                            <td>Argument type</td>
-                            <td>{semantic_metrics["mypy_error_breakdown"]["argument_type"]}</td>
-                        </tr>
-                        <tr>
-                            <td>Missing return</td>
-                            <td>{semantic_metrics["mypy_error_breakdown"]["missing_return"]}</td>
-                        </tr>
-                        <tr>
-                            <td>Attribute</td>
-                            <td>{semantic_metrics["mypy_error_breakdown"]["attribute_error"]}</td>
-                        </tr>
-                        <tr>
-                            <td>Annotation</td>
-                            <td>{semantic_metrics["mypy_error_breakdown"]["annotation_issue"]}</td>
-                        </tr>
-                        <tr>
-                            <td>Other</td>
-                            <td>{semantic_metrics["mypy_error_breakdown"]["other"]}</td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-            <tr>
-                <td><b>Semantic quality score (0–100)</b></td>
-                <td>{semantic_metrics["semantic_quality_score"]}</td>
-            </tr>
-        </table>
-    </div>
-
-    <h2>Visualizations</h2>
-    <img src="1_token_confidence.png" width="800"><br>
-    <img src="2_logprob_trend.png" width="800"><br>
-    <img src="3_probability_distribution.png" width="800"><br>
-    <img src="4_cumulative_logprob.png" width="800">
-</body>
-</html>
-"""
 
 # Write report to file
 report_path = run_dir / "report.html"

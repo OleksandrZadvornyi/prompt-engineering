@@ -1,0 +1,251 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>LLM Code Generation Report #{{ request_number }}</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            padding: 40px;
+            background: #f5f7fa;
+            color: #2c3e50;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #2c3e50;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        h2 {
+            color: #34495e;
+            margin-top: 40px;
+            margin-bottom: 15px;
+            font-size: 1.4em;
+        }
+        .header-info {
+            background: #ecf0f1;
+            padding: 15px 20px;
+            border-radius: 6px;
+            margin-bottom: 30px;
+        }
+        .header-info p {
+            margin: 5px 0;
+        }
+        pre {
+            background: #2c3e50;
+            color: #ecf0f1;
+            padding: 15px;
+            border-radius: 6px;
+            overflow-x: auto;
+            font-size: 0.9em;
+            line-height: 1.5;
+        }
+        .metrics {
+            background: #fafbfc;
+            padding: 20px;
+            border-radius: 6px;
+            margin-bottom: 20px;
+            border: 1px solid #e1e4e8;
+        }
+        .metrics table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .metrics td {
+            padding: 10px 12px;
+            border-bottom: 1px solid #e1e4e8;
+        }
+        .metrics td:first-child {
+            font-weight: 500;
+            width: 50%;
+        }
+        .metrics td:last-child {
+            color: #0366d6;
+            font-family: 'Courier New', monospace;
+        }
+        .metrics tr:last-child td {
+            border-bottom: none;
+        }
+        .nested-table {
+            margin-top: 8px;
+        }
+        .nested-table table {
+            width: 100%;
+            background: white;
+            border-radius: 4px;
+        }
+        .nested-table td {
+            padding: 6px 10px;
+            font-size: 0.9em;
+        }
+        .nested-table td:first-child {
+            font-weight: normal;
+            color: #586069;
+        }
+        .visualizations {
+            margin-top: 30px;
+        }
+        .visualizations img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+            border-radius: 6px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>LLM Code Generation Report #{{ request_number }}</h1>
+        
+        <div class="header-info">
+            <p><b>Timestamp:</b> {{ timestamp }}</p>
+            <p><b>Model:</b> {{ model }}</p>
+            <p><b>Logprobs available:</b> {{ supports_logprobs }}</p>
+        </div>
+
+        <h2>Selected User Stories</h2>
+        <pre>{{ stories_text }}</pre>
+
+        <h2>Prompt Sent to LLM</h2>
+        <pre>{{ prompt }}</pre>
+
+        <h2>Generated Code</h2>
+        <pre>{{ code }}</pre>
+
+        <h2>Confidence & Basic Metrics</h2>
+        <div class="metrics">
+            <table>
+                <tr><td>Total tokens</td><td>{{ total_tokens }}</td></tr>
+                <tr><td>Total log-probability</td><td>{{ "%.3f"|format(total_logprob) }}</td></tr>
+                <tr><td>Average per-token probability</td><td>{{ "%.2f%%"|format(avg_prob * 100) }}</td></tr>
+                <tr><td>Perplexity</td><td>{{ "%.2f"|format(perplexity) }}</td></tr>
+            </table>
+        </div>
+
+        <h2>Code Structure & Length Metrics</h2>
+        <div class="metrics">
+            <table>
+                <tr><td>Token count (source)</td><td>{{ struct_metrics["token_count"] }}</td></tr>
+                <tr><td>Function count (AST)</td><td>{{ struct_metrics["function_count"] }}</td></tr>
+                <tr><td>Class count (AST)</td><td>{{ struct_metrics["class_count"] }}</td></tr>
+                <tr><td>Number of lines</td><td>{{ struct_metrics["num_lines"] }}</td></tr>
+                <tr><td>Non-empty lines</td><td>{{ struct_metrics["num_nonempty_lines"] }}</td></tr>
+                <tr><td>Avg line length (all lines, chars)</td><td>{{ "%.1f"|format(struct_metrics["avg_line_len_all_chars"]) }}</td></tr>
+                <tr><td>Avg line length (non-empty, chars)</td><td>{{ "%.1f"|format(struct_metrics["avg_line_len_nonempty_chars"]) }}</td></tr>
+                <tr><td>Avg tokens per non-empty line</td><td>{{ "%.2f"|format(struct_metrics["avg_tokens_per_nonempty_line"]) }}</td></tr>
+                <tr><td>AST depth (max nesting)</td><td>{{ struct_metrics["ast_depth"] }}</td></tr>
+                <tr><td>Import count</td><td>{{ struct_metrics["import_count"] }}</td></tr>
+                <tr><td>Import names</td><td>{{ ", ".join(struct_metrics["import_names"]) }}</td></tr>
+                <tr><td>Avg cyclomatic complexity (functions)</td><td>{{ "%.2f"|format(struct_metrics["avg_cyclomatic_complexity"]) }}</td></tr>
+                <tr><td>Max cyclomatic complexity (functions)</td><td>{{ struct_metrics["max_cyclomatic_complexity"] }}</td></tr>
+                <tr><td>Module cyclomatic complexity</td><td>{{ struct_metrics["module_cyclomatic_complexity"] }}</td></tr>
+                <tr><td>Average function size (lines)</td><td>{{ "%.1f"|format(struct_metrics["avg_function_size_lines"]) }}</td></tr>
+                <tr><td>Comment density (%)</td><td>{{ "%.1f"|format(struct_metrics["comment_density_percent"]) }}%</td></tr>
+                <tr><td>Import redundancy ratio</td><td>{{ "%.2f"|format(struct_metrics["import_redundancy_ratio"]) }}</td></tr>
+            </table>
+        </div>
+        
+        <h2>Semantic Quality Metrics</h2>
+        <div class="metrics">
+            <table>
+                <tr>
+                    <td>Syntax valid</td>
+                    <td>{{ semantic_metrics["syntax_valid"] }}</td>
+                </tr>
+                <tr>
+                    <td>Flake8 style errors</td>
+                    <td>{{ semantic_metrics["flake8_error_count"] }}</td>
+                </tr>
+                <tr>
+                    <td>Flake8 errors (by category)</td>
+                    <td>
+                        <div class="nested-table">
+                            <table>
+                                <tr>
+                                    <td>Style errors (PEP8 spacing, indentation, etc.) (E)</td>
+                                    <td>{{ semantic_metrics["flake8_error_breakdown"]["E"] }}</td>
+                                </tr>
+                                <tr>
+                                    <td>Logical errors (undefined vars, unused imports, etc.) (F)</td>
+                                    <td>{{ semantic_metrics["flake8_error_breakdown"]["F"] }}</td>
+                                </tr>
+                                <tr>
+                                    <td>Warnings (whitespace, etc.) (W)</td>
+                                    <td>{{ semantic_metrics["flake8_error_breakdown"]["W"] }}</td>
+                                </tr>
+                                <tr>
+                                    <td>McCabe complexity issues (C)</td>
+                                    <td>{{ semantic_metrics["flake8_error_breakdown"]["C"] }}</td>
+                                </tr>
+                                <tr>
+                                    <td>Naming conventions (N)</td>
+                                    <td>{{ semantic_metrics["flake8_error_breakdown"]["N"] }}</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Mypy type-check errors</td>
+                    <td>{{ semantic_metrics["mypy_error_count"] }}</td>
+                </tr>
+                <tr>
+                    <td>Mypy error breakdown</td>
+                    <td>
+                        <div class="nested-table">
+                            <table>
+                                <tr>
+                                    <td>Return type</td>
+                                    <td>{{ semantic_metrics["mypy_error_breakdown"]["return_type"] }}</td>
+                                </tr>
+                                <tr>
+                                    <td>Argument type</td>
+                                    <td>{{ semantic_metrics["mypy_error_breakdown"]["argument_type"] }}</td>
+                                </tr>
+                                <tr>
+                                    <td>Missing return</td>
+                                    <td>{{ semantic_metrics["mypy_error_breakdown"]["missing_return"] }}</td>
+                                </tr>
+                                <tr>
+                                    <td>Attribute</td>
+                                    <td>{{ semantic_metrics["mypy_error_breakdown"]["attribute_error"] }}</td>
+                                </tr>
+                                <tr>
+                                    <td>Annotation</td>
+                                    <td>{{ semantic_metrics["mypy_error_breakdown"]["annotation_issue"] }}</td>
+                                </tr>
+                                <tr>
+                                    <td>Other</td>
+                                    <td>{{ semantic_metrics["mypy_error_breakdown"]["other"] }}</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Semantic quality score (0–100)</td>
+                    <td>{{ semantic_metrics["semantic_quality_score"] }}</td>
+                </tr>
+            </table>
+        </div>
+
+        <h2>Visualizations</h2>
+        <div class="visualizations">
+            <img src="1_token_confidence.png" alt="Token Confidence">
+            <img src="2_logprob_trend.png" alt="Log Probability Trend">
+            <img src="3_probability_distribution.png" alt="Probability Distribution">
+            <img src="4_cumulative_logprob.png" alt="Cumulative Log Probability">
+        </div>
+    </div>
+</body>
+</html>
