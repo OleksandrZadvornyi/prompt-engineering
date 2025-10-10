@@ -18,6 +18,14 @@ model = "qwen/qwen3-coder-30b-a3b-instruct"
 results_root = Path("Reports/qwen3")
 results_root.mkdir(exist_ok=True)
 
+
+
+###################################################################
+###################################################################
+###################################################################
+
+
+
 # --- Step 0: Determine next request number ---
 request_number = 2
 run_dir = results_root / f"report_{request_number}"
@@ -39,13 +47,37 @@ llm = ChatOpenAI(
     }
 )
 
+
+
+###################################################################
+###################################################################
+###################################################################
+
+
+
 # --- Step 1: Read user stories ---
 with open("data.txt", "r", encoding="utf-8") as f:
     user_stories = [line.strip() for line in f if line.strip()]
 
+
+
+###################################################################
+###################################################################
+###################################################################
+
+
+
 # --- Step 2: Select a few stories ---
 sample_stories = user_stories  # [:50]
 stories_text = "\n".join(sample_stories)
+
+
+
+###################################################################
+###################################################################
+###################################################################
+
+
 
 # --- Step 3: Build the prompt ---
 # with open("clustered_stories.json", "r", encoding="utf-8") as f:
@@ -63,8 +95,24 @@ prompt = (
     "Do not leave functions empty — implement reasonable logic where needed."
 )
 
+
+
+###################################################################
+###################################################################
+###################################################################
+
+
+
 # --- Step 4: LLM call ---
 msg = llm.invoke(("human", prompt))
+
+
+
+###################################################################
+###################################################################
+###################################################################
+
+
 
 # --- Step 5: Clean code output ---
 code = msg.content.strip()
@@ -80,136 +128,111 @@ print(code)
 def compute_code_structure_metrics(code_text, logprobs_data):
     """
     Returns dictionary with:
-      - token_count
-      - function_count
-      - class_count
+      - token_count, function_count, class_count
       - num_lines, num_nonempty_lines
-      - avg_line_len_all_chars, avg_line_len_nonempty_chars
-      - avg_tokens_per_nonempty_line
+      - avg_line_len_all_chars, avg_line_len_nonempty_chars, avg_tokens_per_nonempty_line
       - ast_depth
-      - import_count
-      - import_names (list)
-      - per_function_cyclomatic (dict: func_name -> int)
-      - avg_cyclomatic_complexity
-      - max_cyclomatic_complexity
-      - module_cyclomatic_complexity
+      - import_count, import_names
+      - per_function_cyclomatic, avg_cyclomatic_complexity, max_cyclomatic_complexity, module_cyclomatic_complexity
+      - avg_function_size_lines
+      - comment_density_percent
+      - import_redundancy_ratio
     """
-    # tokens
+
     token_count = len(logprobs_data) if logprobs_data is not None else len(code_text.split())
-
-    # default values if parse fails
-    func_count = class_count = 0
-    num_lines = num_nonempty = 0
-    avg_line_len_all = avg_line_len_nonempty = 0.0
-    avg_tokens_per_line = 0.0
-
-    ast_depth = 0
-    import_count = 0
-    import_names = []
-    per_function_cc = {}
-    avg_cc = 0.0
-    max_cc = 0.0
-    module_cc = 0.0
-
-    # basic line metrics
     lines = code_text.splitlines()
     non_empty_lines = [ln for ln in lines if ln.strip()]
     num_lines = len(lines)
     num_nonempty = len(non_empty_lines)
 
-    if num_lines:
-        avg_line_len_all = sum(len(ln) for ln in lines) / num_lines
-    if num_nonempty:
-        avg_line_len_nonempty = sum(len(ln) for ln in non_empty_lines) / num_nonempty
-        tokens_per_line = [len(ln.split()) for ln in non_empty_lines]
+    avg_line_len_all = sum(len(ln) for ln in lines) / num_lines if num_lines else 0.0
+    avg_line_len_nonempty = sum(len(ln) for ln in non_empty_lines) / num_nonempty if num_nonempty else 0.0
+    tokens_per_line = [len(ln.split()) for ln in non_empty_lines]
+    avg_tokens_per_line = statistics.mean(tokens_per_line) if tokens_per_line else 0.0
 
-        avg_tokens_per_line = statistics.mean(tokens_per_line) if tokens_per_line else 0.0
+    # --- Count comment lines for comment density ---
+    comment_lines = sum(1 for ln in lines if ln.strip().startswith("#"))
+    comment_density_percent = (comment_lines / num_nonempty * 100) if num_nonempty else 0.0
 
-    # AST parsing and advanced metrics
+    # --- AST parsing ---
     try:
         tree = ast.parse(code_text)
-        func_count = sum(isinstance(n, (ast.FunctionDef, ast.AsyncFunctionDef)) for n in ast.walk(tree))
-        class_count = sum(isinstance(n, ast.ClassDef) for n in ast.walk(tree))
     except SyntaxError:
         tree = None
 
-    # AST depth (max nesting)
-    def _ast_max_depth(node):
-        max_child = 0
-        for child in ast.iter_child_nodes(node):
-            d = _ast_max_depth(child)
-            if d > max_child:
-                max_child = d
-        return max_child + 1
+    func_count = class_count = 0
+    ast_depth = 0
+    import_count = 0
+    import_names = []
+    per_function_cc = {}
+    avg_cc = max_cc = module_cc = 0.0
+    avg_function_size = 0.0
+    import_redundancy_ratio = 0.0
 
     if tree is not None:
-        try:
-            ast_depth = _ast_max_depth(tree)
-        except Exception:
-            ast_depth = 0
+        # --- Function and class counts ---
+        func_nodes = [n for n in ast.walk(tree) if isinstance(n, (ast.FunctionDef, ast.AsyncFunctionDef))]
+        class_nodes = [n for n in ast.walk(tree) if isinstance(n, ast.ClassDef)]
+        func_count = len(func_nodes)
+        class_count = len(class_nodes)
 
-        # Imports
-        import_modules = set()
-        import_nodes = 0
+        # --- Average function size ---
+        func_sizes = []
+        for fn in func_nodes:
+            start = getattr(fn, "lineno", None)
+            end = getattr(fn, "end_lineno", None)
+            if start is not None and end is not None and end >= start:
+                func_sizes.append(end - start + 1)
+        avg_function_size = statistics.mean(func_sizes) if func_sizes else 0.0
+
+        # --- AST depth ---
+        def _depth(node):
+            return 1 + max((_depth(ch) for ch in ast.iter_child_nodes(node)), default=0)
+        ast_depth = _depth(tree)
+
+        # --- Imports and redundancy ratio ---
+        import_modules = []
         for node in ast.walk(tree):
             if isinstance(node, ast.Import):
-                import_nodes += 1
                 for alias in node.names:
-                    import_modules.add(alias.name.split('.')[0])
-            elif isinstance(node, ast.ImportFrom):
-                import_nodes += 1
-                if node.module:
-                    import_modules.add(node.module.split('.')[0])
-        import_count = import_nodes
-        import_names = sorted([m for m in import_modules if m])
+                    import_modules.append(alias.name.split(".")[0])
+            elif isinstance(node, ast.ImportFrom) and node.module:
+                import_modules.append(node.module.split(".")[0])
 
-        # Cyclomatic complexity: try radon first, fallback to heuristic
+        import_count = len(import_modules)
+        import_names = sorted(set(import_modules))
+        if import_count > 0:
+            duplicates = import_count - len(set(import_modules))
+            import_redundancy_ratio = duplicates / import_count
+        else:
+            import_redundancy_ratio = 0.0
+
+        # --- Cyclomatic complexity (radon if available, fallback heuristic) ---
         try:
-            from radon.complexity import cc_visit  # radon must be installed for this block
+            from radon.complexity import cc_visit
             cc_results = cc_visit(code_text)
-            # cc_visit returns CCResult objects with .name and .complexity
             per_function_cc = {r.name: int(r.complexity) for r in cc_results}
             cc_values = list(per_function_cc.values())
-            avg_cc = float(statistics.mean(cc_values)) if cc_values else 0.0
-            max_cc = int(max(cc_values)) if cc_values else 0
-            # radon also may include module-level entries; compute module_cc approx as sum or take top-level entry:
-            module_cc = int(sum(cc_values)) if cc_values else 0
+            avg_cc = statistics.mean(cc_values) if cc_values else 0.0
+            max_cc = max(cc_values) if cc_values else 0
+            module_cc = sum(cc_values)
         except Exception:
-            # fallback heuristic: CC = 1 + number of branching constructs in the scope
-            def _compute_cc_for_node(node):
-                branch_nodes = (
+            def _cc_heuristic(node):
+                branches = (
                     ast.If, ast.For, ast.While, ast.AsyncFor, ast.With,
                     ast.Try, ast.ExceptHandler, ast.IfExp, ast.Match
                 )
-                count = 0
-                for n in ast.walk(node):
-                    if isinstance(n, branch_nodes):
-                        count += 1
-                # Boolean ops: each additional operand increases complexity (a and b and c -> +2)
+                count = sum(1 for n in ast.walk(node) if isinstance(n, branches))
                 bool_extra = sum((len(n.values) - 1) for n in ast.walk(node) if isinstance(n, ast.BoolOp))
                 count += bool_extra
-                # comprehensions add branches
-                count += sum(1 for n in ast.walk(node) if isinstance(n, ast.comprehension))
                 return 1 + count
 
-            # compute per-function CC
-            per_function_cc = {}
-            for func in (n for n in ast.walk(tree) if isinstance(n, (ast.FunctionDef, ast.AsyncFunctionDef))):
-                try:
-                    per_function_cc[func.name] = int(_compute_cc_for_node(func))
-                except Exception:
-                    per_function_cc[func.name] = 1
-
+            per_function_cc = {fn.name: _cc_heuristic(fn) for fn in func_nodes}
             cc_values = list(per_function_cc.values())
-            avg_cc = float(statistics.mean(cc_values)) if cc_values else 0.0
-            max_cc = int(max(cc_values)) if cc_values else 0
-            # module-level CC (apply heuristic to whole module)
-            try:
-                module_cc = int(_compute_cc_for_node(tree))
-            except Exception:
-                module_cc = 0
+            avg_cc = statistics.mean(cc_values) if cc_values else 0.0
+            max_cc = max(cc_values) if cc_values else 0
+            module_cc = _cc_heuristic(tree)
 
-    # Build result
     return {
         "token_count": token_count,
         "function_count": func_count,
@@ -222,11 +245,22 @@ def compute_code_structure_metrics(code_text, logprobs_data):
         "ast_depth": ast_depth,
         "import_count": import_count,
         "import_names": import_names,
+        "import_redundancy_ratio": import_redundancy_ratio,
+        "avg_function_size_lines": avg_function_size,
+        "comment_density_percent": comment_density_percent,
         "per_function_cyclomatic": per_function_cc,
         "avg_cyclomatic_complexity": avg_cc,
         "max_cyclomatic_complexity": max_cc,
         "module_cyclomatic_complexity": module_cc,
     }
+
+
+
+
+###################################################################
+###################################################################
+###################################################################
+
 
 
 # --- Step 6: Analyze log probabilities ---
@@ -255,11 +289,26 @@ avg_logprob = (total_logprob / total_tokens) if total_tokens else 0.0
 avg_prob = math.exp(avg_logprob) if math.isfinite(avg_logprob) else 0.0
 perplexity = math.exp(-avg_logprob) if math.isfinite(avg_logprob) else float("inf")
 
-# --- NEW: structural & length metrics ---
+# Structural & length metrics ---
 struct_metrics = compute_code_structure_metrics(code, logprobs_data)
+
+
+
+###################################################################
+###################################################################
+###################################################################
+
+
 
 # --- Step 7: Save plots ---
 plot_llm_confidence(logprobs_data, output_dir=run_dir, title_prefix="Python Code Generation")
+
+
+
+###################################################################
+###################################################################
+###################################################################
+
 
 
 # --- Step 8: Save detailed data ---
@@ -332,6 +381,10 @@ html_report = f"""
             <tr><td><b>Avg cyclomatic complexity (functions)</b></td><td>{struct_metrics["avg_cyclomatic_complexity"]:.2f}</td></tr>
             <tr><td><b>Max cyclomatic complexity (functions)</b></td><td>{struct_metrics["max_cyclomatic_complexity"]}</td></tr>
             <tr><td><b>Module cyclomatic complexity</b></td><td>{struct_metrics["module_cyclomatic_complexity"]}</td></tr>
+            <tr><td><b>Average function size (lines)</b></td><td>{struct_metrics["avg_function_size_lines"]:.1f}</td></tr>
+            <tr><td><b>Comment density (%)</b></td><td>{struct_metrics["comment_density_percent"]:.1f}%</td></tr>
+            <tr><td><b>Import redundancy ratio</b></td><td>{struct_metrics["import_redundancy_ratio"]:.2f}</td></tr>
+
         </table>
     </div>
 
