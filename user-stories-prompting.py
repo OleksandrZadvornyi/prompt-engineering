@@ -19,7 +19,7 @@ results_root = Path("Reports/qwen3")
 results_root.mkdir(exist_ok=True)
 
 # --- Step 0: Determine next request number ---
-request_number = 1
+request_number = 2
 run_dir = results_root / f"report_{request_number}"
 run_dir.mkdir(parents=True, exist_ok=True)
 
@@ -30,17 +30,13 @@ llm = ChatOpenAI(
     model=model
 ).bind(
     logprobs=True,
-    # ------------------------------------------------------------------
-    # ADD THE PROVIDER CONFIGURATION HERE
-    # ------------------------------------------------------------------
     extra_body={
         "provider": {
             "order": [
-                "nebius-ai-studio", # Use the slug for Nebius AI Studioz
+                "nebius-ai-studio",
             ]
         }
     }
-    # ------------------------------------------------------------------
 )
 
 # --- Step 1: Read user stories ---
@@ -90,30 +86,130 @@ def compute_code_structure_metrics(code_text, logprobs_data):
       - num_lines, num_nonempty_lines
       - avg_line_len_all_chars, avg_line_len_nonempty_chars
       - avg_tokens_per_nonempty_line
+      - ast_depth
+      - import_count
+      - import_names (list)
+      - per_function_cyclomatic (dict: func_name -> int)
+      - avg_cyclomatic_complexity
+      - max_cyclomatic_complexity
+      - module_cyclomatic_complexity
     """
     # tokens
-    token_count = len(logprobs_data)
+    token_count = len(logprobs_data) if logprobs_data is not None else len(code_text.split())
 
-    # AST-based counts
-    try:
-        tree = ast.parse(code_text)
-        func_count = sum(isinstance(n, (ast.FunctionDef, ast.AsyncFunctionDef)) for n in ast.walk(tree))
-        class_count = sum(isinstance(n, ast.ClassDef) for n in ast.walk(tree))
-    except SyntaxError:
-        func_count = 0
-        class_count = 0
+    # default values if parse fails
+    func_count = class_count = 0
+    num_lines = num_nonempty = 0
+    avg_line_len_all = avg_line_len_nonempty = 0.0
+    avg_tokens_per_line = 0.0
 
+    ast_depth = 0
+    import_count = 0
+    import_names = []
+    per_function_cc = {}
+    avg_cc = 0.0
+    max_cc = 0.0
+    module_cc = 0.0
+
+    # basic line metrics
     lines = code_text.splitlines()
     non_empty_lines = [ln for ln in lines if ln.strip()]
     num_lines = len(lines)
     num_nonempty = len(non_empty_lines)
 
-    avg_line_len_all = (sum(len(ln) for ln in lines) / num_lines) if num_lines else 0.0
-    avg_line_len_nonempty = (sum(len(ln) for ln in non_empty_lines) / num_nonempty) if num_nonempty else 0.0
+    if num_lines:
+        avg_line_len_all = sum(len(ln) for ln in lines) / num_lines
+    if num_nonempty:
+        avg_line_len_nonempty = sum(len(ln) for ln in non_empty_lines) / num_nonempty
+        tokens_per_line = [len(ln.split()) for ln in non_empty_lines]
 
-    tokens_per_line = [len(ln.split()) for ln in non_empty_lines] if num_nonempty else []
-    avg_tokens_per_line = statistics.mean(tokens_per_line) if tokens_per_line else 0.0
+        avg_tokens_per_line = statistics.mean(tokens_per_line) if tokens_per_line else 0.0
 
+    # AST parsing and advanced metrics
+    try:
+        tree = ast.parse(code_text)
+        func_count = sum(isinstance(n, (ast.FunctionDef, ast.AsyncFunctionDef)) for n in ast.walk(tree))
+        class_count = sum(isinstance(n, ast.ClassDef) for n in ast.walk(tree))
+    except SyntaxError:
+        tree = None
+
+    # AST depth (max nesting)
+    def _ast_max_depth(node):
+        max_child = 0
+        for child in ast.iter_child_nodes(node):
+            d = _ast_max_depth(child)
+            if d > max_child:
+                max_child = d
+        return max_child + 1
+
+    if tree is not None:
+        try:
+            ast_depth = _ast_max_depth(tree)
+        except Exception:
+            ast_depth = 0
+
+        # Imports
+        import_modules = set()
+        import_nodes = 0
+        for node in ast.walk(tree):
+            if isinstance(node, ast.Import):
+                import_nodes += 1
+                for alias in node.names:
+                    import_modules.add(alias.name.split('.')[0])
+            elif isinstance(node, ast.ImportFrom):
+                import_nodes += 1
+                if node.module:
+                    import_modules.add(node.module.split('.')[0])
+        import_count = import_nodes
+        import_names = sorted([m for m in import_modules if m])
+
+        # Cyclomatic complexity: try radon first, fallback to heuristic
+        try:
+            from radon.complexity import cc_visit  # radon must be installed for this block
+            cc_results = cc_visit(code_text)
+            # cc_visit returns CCResult objects with .name and .complexity
+            per_function_cc = {r.name: int(r.complexity) for r in cc_results}
+            cc_values = list(per_function_cc.values())
+            avg_cc = float(statistics.mean(cc_values)) if cc_values else 0.0
+            max_cc = int(max(cc_values)) if cc_values else 0
+            # radon also may include module-level entries; compute module_cc approx as sum or take top-level entry:
+            module_cc = int(sum(cc_values)) if cc_values else 0
+        except Exception:
+            # fallback heuristic: CC = 1 + number of branching constructs in the scope
+            def _compute_cc_for_node(node):
+                branch_nodes = (
+                    ast.If, ast.For, ast.While, ast.AsyncFor, ast.With,
+                    ast.Try, ast.ExceptHandler, ast.IfExp, ast.Match
+                )
+                count = 0
+                for n in ast.walk(node):
+                    if isinstance(n, branch_nodes):
+                        count += 1
+                # Boolean ops: each additional operand increases complexity (a and b and c -> +2)
+                bool_extra = sum((len(n.values) - 1) for n in ast.walk(node) if isinstance(n, ast.BoolOp))
+                count += bool_extra
+                # comprehensions add branches
+                count += sum(1 for n in ast.walk(node) if isinstance(n, ast.comprehension))
+                return 1 + count
+
+            # compute per-function CC
+            per_function_cc = {}
+            for func in (n for n in ast.walk(tree) if isinstance(n, (ast.FunctionDef, ast.AsyncFunctionDef))):
+                try:
+                    per_function_cc[func.name] = int(_compute_cc_for_node(func))
+                except Exception:
+                    per_function_cc[func.name] = 1
+
+            cc_values = list(per_function_cc.values())
+            avg_cc = float(statistics.mean(cc_values)) if cc_values else 0.0
+            max_cc = int(max(cc_values)) if cc_values else 0
+            # module-level CC (apply heuristic to whole module)
+            try:
+                module_cc = int(_compute_cc_for_node(tree))
+            except Exception:
+                module_cc = 0
+
+    # Build result
     return {
         "token_count": token_count,
         "function_count": func_count,
@@ -123,7 +219,15 @@ def compute_code_structure_metrics(code_text, logprobs_data):
         "avg_line_len_all_chars": avg_line_len_all,
         "avg_line_len_nonempty_chars": avg_line_len_nonempty,
         "avg_tokens_per_nonempty_line": avg_tokens_per_line,
+        "ast_depth": ast_depth,
+        "import_count": import_count,
+        "import_names": import_names,
+        "per_function_cyclomatic": per_function_cc,
+        "avg_cyclomatic_complexity": avg_cc,
+        "max_cyclomatic_complexity": max_cc,
+        "module_cyclomatic_complexity": module_cc,
     }
+
 
 # --- Step 6: Analyze log probabilities ---
 logprobs_data = msg.response_metadata["logprobs"]["content"]
@@ -222,6 +326,12 @@ html_report = f"""
             <tr><td><b>Avg line length (all lines, chars)</b></td><td>{struct_metrics["avg_line_len_all_chars"]:.1f}</td></tr>
             <tr><td><b>Avg line length (non-empty, chars)</b></td><td>{struct_metrics["avg_line_len_nonempty_chars"]:.1f}</td></tr>
             <tr><td><b>Avg tokens per non-empty line</b></td><td>{struct_metrics["avg_tokens_per_nonempty_line"]:.2f}</td></tr>
+            <tr><td><b>AST depth (max nesting)</b></td><td>{struct_metrics["ast_depth"]}</td></tr>
+            <tr><td><b>Import count</b></td><td>{struct_metrics["import_count"]}</td></tr>
+            <tr><td><b>Import names</b></td><td>{", ".join(struct_metrics["import_names"])}</td></tr>
+            <tr><td><b>Avg cyclomatic complexity (functions)</b></td><td>{struct_metrics["avg_cyclomatic_complexity"]:.2f}</td></tr>
+            <tr><td><b>Max cyclomatic complexity (functions)</b></td><td>{struct_metrics["max_cyclomatic_complexity"]}</td></tr>
+            <tr><td><b>Module cyclomatic complexity</b></td><td>{struct_metrics["module_cyclomatic_complexity"]}</td></tr>
         </table>
     </div>
 
