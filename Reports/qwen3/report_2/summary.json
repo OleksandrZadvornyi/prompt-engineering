@@ -1,6 +1,6 @@
 {
     "request_number": 2,
-    "timestamp": "2025-10-10 11:38:20",
+    "timestamp": "2025-10-10 16:03:09",
     "model": "qwen/qwen3-coder-30b-a3b-instruct",
     "total_tokens": 2346,
     "total_logprob": -1088.92004643626,
@@ -23,6 +23,9 @@
         "os",
         "typing"
     ],
+    "import_redundancy_ratio": 0.0,
+    "avg_function_size_lines": 7.64,
+    "comment_density_percent": 7.258064516129033,
     "per_function_cyclomatic": {
         "main": 1,
         "SubmissionStatus": 1,
@@ -62,5 +65,26 @@
     },
     "avg_cyclomatic_complexity": 2.257142857142857,
     "max_cyclomatic_complexity": 9,
-    "module_cyclomatic_complexity": 79
+    "module_cyclomatic_complexity": 79,
+    "syntax_valid": true,
+    "flake8_error_count": 71,
+    "flake8_error_breakdown": {
+        "E": 21,
+        "F": 5,
+        "W": 45,
+        "C": 0,
+        "N": 0,
+        "total": 71
+    },
+    "mypy_error_count": 2,
+    "mypy_error_breakdown": {
+        "return_type": 0,
+        "argument_type": 2,
+        "missing_return": 0,
+        "attribute_error": 0,
+        "annotation_issue": 0,
+        "other": 0,
+        "total": 2
+    },
+    "semantic_quality_score": 78.0
 }
