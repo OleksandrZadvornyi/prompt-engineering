@@ -85,7 +85,7 @@
       <h1>LLM Code Generation Report #2</h1>
 
       <div class="header-info">
-        <p><b>Timestamp:</b> 2025-10-10 22:04:15</p>
+        <p><b>Timestamp:</b> 2025-10-10 16:03:09</p>
         <p><b>Model:</b> qwen/qwen3-coder-30b-a3b-instruct</p>
         <p><b>Logprobs available:</b> True</p>
       </div>
@@ -295,575 +295,332 @@ As an agency user, I want to submit my data elements surrounded by quotation mar
 Output only Python code (no markdown formatting or extra text). Do not leave functions empty — implement reasonable logic where needed.</pre>
 
       <h2>Generated Code</h2>
-      <pre>import logging
-from datetime import datetime
-from typing import List, Dict, Any
-import json
-import hashlib
+      <pre>import os
+import datetime
+from typing import List, Dict, Any, Optional, Tuple
+from dataclasses import dataclass
+from enum import Enum
 
-# Logging configuration
-logging.basicConfig(
-    level=logging.INFO,
-    format='%(asctime)s - %(levelname)s - %(message)s'
-)
+# Define basic types to represent entities
+class SubmissionStatus(Enum):
+    DRAFT = "draft"
+    VALIDATING = "validating"
+    VALIDATED = "validated"
+    PUBLISHING = "publishing"
+    PUBLISHED = "published"
+    ERROR = "error"
 
-class BrokerSystem:
+@dataclass
+class User:
+    user_id: str
+    username: str
+    role: str  # e.g., "agency_user", "administrator", "developer"
+
+@dataclass
+class Submission:
+    submission_id: str
+    user_id: str
+    status: SubmissionStatus
+    submission_date: datetime.datetime
+    file_path: str
+    validation_errors: List[str]
+    publication_metadata: dict
+
+@dataclass
+class FABSRecord:
+    record_id: str
+    funding_agency_code: str
+    legal_entity_address_line_3: Optional[str]
+    ppop_zip_plus_four: Optional[str]
+    action_type: Optional[str]
+    duns: str
+    action_date: datetime.date
+    federal_action_obligation: float
+
+@dataclass
+class Resource:
+    resource_id: str
+    title: str
+    content: str
+    updated_at: datetime.datetime
+
+@dataclass
+class HelpPageContent:
+    page_section: str
+    content: str
+    version: int
+
+class DataLoader:
+    """Handles loading data and managing historical records"""
+    
     def __init__(self):
-        self.submissions = {}
-        self.users = {}
-        self.fabs_records = []
-        self.dabs_records = []
-        self.fpds_data = []
-        self.gtas_window_data = {}
-        self.config = {
-            "staging_max_permissions": True,
-            "frefs_enabled": False,
-            "dabs_landing_page_round": 1,
-            "fabs_landing_page_round": 1,
-            "homepage_round": 1,
-            "help_page_round": 1,
-            "ui_sme_schedule": {},
-            "audit_scope": {}
-        }
+        self.historical_records: List[FABSRecord] = []
+        self.fpds_records: List[Dict[str, Any]] = []
         
-    def process_deletions_2017(self):
-        """Process 12-19-2017 deletions"""
-        logging.info("Processing 12-19-2017 deletions")
-        # In a real implementation this would query and apply deletion logic
-        return {"status": "processed", "date": "2017-12-19"}
-    
-    def redesign_resources_page(self):
-        """Redesign Resources page according to new Broker design styles"""
-        logging.info("Redesigning Resources page")
-        return {"status": "redesigned", "design_compliance": True}
-    
-    def report_user_testing_results(self):
-        """Report user testing results to agencies"""
-        logging.info("Reporting user testing results to agencies")
-        return {"status": "reported", "agencies_notified": True}
-    
-    def move_to_round_2_landing_pages(self):
-        """Move to round 2 of DABS/FABS landing page edits"""
-        self.config["dabs_landing_page_round"] = 2
-        self.config["fabs_landing_page_round"] = 2
-        logging.info("Moving to round 2 landing page edits")
-        return {"status": "in_progress", "round": 2}
-    
-    def move_to_round_2_homepage(self):
-        """Move to round 2 of homepage edits"""
-        self.config["homepage_round"] = 2
-        logging.info("Moving to round 2 homepage edits")
-        return {"status": "in_progress", "round": 2}
-    
-    def move_to_round_3_help_pages(self):
-        """Move to round 3 of Help page edits"""
-        self.config["help_page_round"] = 3
-        logging.info("Moving to round 3 Help page edits")
-        return {"status": "in_progress", "round": 3}
-    
-    def move_to_round_2_help_pages(self):
-        """Move to round 2 of Help page edits"""
-        self.config["help_page_round"] = 2
-        logging.info("Moving to round 2 Help page edits")
-        return {"status": "in_progress", "round": 2}
-    
-    def move_to_round_2_homepage_v2(self):
-        """Move to round 2 of homepage edits (duplicate story)"""
-        self.config["homepage_round"] = 2
-        logging.info("Moving to round 2 homepage edits (round 2)")
-        return {"status": "in_progress", "round": 2}
-    
-    def enhance_logging(self, submission_id: str = None):
-        """Enhanced logging for troubleshooting"""
-        logging.info(f"Enhanced logging activated for submission {submission_id}")
-        return {"status": "logging_enhanced", "timestamp": datetime.now().isoformat()}
-    
-    def update_fabs_submission_on_publish_status_change(self, submission_id: str, old_status: str, new_status: str, fields_updated: List[str]):
-        """Update FABS submission when publishStatus changes"""
-        logging.info(f"Updating FABS submission {submission_id} due to status change from {old_status} to {new_status}")
-        submission = self.submissions.get(submission_id, {})
-        submission['publish_status'] = new_status
-        submission['last_modified'] = datetime.now().isoformat()
-        submission['status_changed_fields'] = fields_updated
-        return {"status": "updated", "changed_fields": fields_updated}
-    
-    def enable_new_relic_monitoring(self):
-        """Configure New Relic monitoring across all applications"""
-        logging.info("Enabling New Relic monitoring for all applications")
-        return {"status": "enabled", "monitoring_active": True}
-    
-    def upload_and_validate_error_message(self, file_content: str):
-        """Process upload and validate error messages with accurate text"""
-        logging.info("Processing upload with accurate error messages")
-        try:
-            # Example processing logic
-            if not file_content:
-                raise Exception("Empty file provided")
-            return {"error": None, "valid": True}
-        except Exception as e:
-            return {"error": str(e), "valid": False}
-    
-    def sync_d1_file_generation_with_fpds(self):
-        """Sync D1 file generation with FPDS data load"""
-        logging.info("Syncing D1 file generation with FPDS data")
-        return {"status": "synced", "requires_new_generation": False}
-    
-    def access_published_fabs_files(self):
-        """Allow access to published FABS files"""
-        logging.info("Accessing published FABS files")
-        # Return list of available published files
-        return {
-            "files": ["published_fabs_2023_q1.json", "published_fabs_2023_q2.json"],
-            "access_granted": True
-        }
-    
-    def filter_grant_records_only(self):
-        """Ensure only grant records are sent to system"""
-        logging.info("Filtering grant records only")
-        return {"status": "secure", "only_grants": True}
-    
-    def update_validation_rule_table(self):
-        """Update Broker validation rule table for DB-2213"""
-        logging.info("Updating validation rule table for DB-2213")
-        return {"status": "updated", "rules_applied": True}
-    
-    def add_gtas_window_data(self):
-        """Add GTAS window data to database"""
-        self.gtas_window_data = {
-            "start_date": "2024-01-01",
-            "end_date": "2024-01-31",
-            "status": "locked"
-        }
-        logging.info("Adding GTAS window data to database")
-        return {"status": "stored", "lock_period": self.gtas_window_data}
-    
-    def manage_d_files_requests(self, request_hash: str):
-        """Manage and cache D Files generation requests"""
-        cache_key = hashlib.md5(request_hash.encode()).hexdigest()
-        logging.info(f"Managing D Files request for hash {cache_key}")
-        return {"request_hash": cache_key, "cached": True}
-    
-    def access_raw_fabs_files(self):
-        """Access raw agency published FABS files"""
-        logging.info("Accessing raw agency published FABS files")
-        return {"files_available": True, "access_type": "raw_files"}
-    
-    def handle_large_flexfields(self):
-        """Handle large numbers of flexfields without performance impact"""
-        logging.info("Handling large number of flexfields")
-        return {"performance_optimized": True, "flexfield_limit": 2000}
-    
-    def help_create_content_mockups(self):
-        """Help create content mockups for efficient data submission"""
-        logging.info("Creating content mockups for data submission")
-        return {"mockups_created": True, "efficiency_improved": True}
-    
-    def track_tech_thursday_issues(self, issue_list: List[Dict]):
-        """Track issues from Tech Thursday"""
-        logging.info(f"Tracking {len(issue_list)} issues from Tech Thursday")
-        return {"issues_tracked": len(issue_list)}
-    
-    def create_user_testing_summary(self, ui_sme_data: Dict):
-        """Create user testing summary from UI SME"""
-        logging.info("Creating user testing summary from UI SME")
-        return {"summary_created": True, "improvement_areas": ui_sme_data.get('improvements', [])}
-    
-    def begin_user_testing(self):
-        """Begin user testing cycle"""
-        logging.info("Starting user testing cycle")
-        return {"testing_started": True, "testing_cycle": "round_1"}
-    
-    def schedule_user_testing(self, date: str, participants: List[str]):
-        """Schedule user testing with dates and participants"""
-        logging.info(f"Scheduling user testing for {date} with {len(participants)} participants")
-        return {"scheduled": True, "date": date}
-    
-    def design_ui_schedule(self, ui_sme_schedule: Dict):
-        """Design schedule from UI SME for timeline estimation"""
-        self.config["ui_sme_schedule"] = ui_sme_schedule
-        logging.info("UI schedule designed from SME input")
-        return {"schedule_created": True, "timeline_estimated": True}
-    
-    def design_ui_audit(self, ui_sme_audit: Dict):
-        """Design audit scope from UI SME for improvement assessment"""
-        self.config["audit_scope"] = ui_sme_audit
-        logging.info("Auditing UI improvement scope from SME")
-        return {"audit_completed": True, "scope_defined": True}
-    
-    def prevent_double_publishing(self, submission_id: str):
-        """Prevent double publishing of FABS submissions"""
-        logging.info(f"Checking for duplicate publish attempt for submission {submission_id}")
-        submission = self.submissions.get(submission_id, {})
-        if submission.get("published"):
-            return {"error": "Submission already published", "allowed": False}
-        return {"status": "safe", "allowed": True}
-    
-    def receive_fabs_updates(self):
-        """Receive updates to FABS records"""
-        logging.info("Receiving FABS record updates")
-        return {"updates_received": True, "records_processed": 150}
-    
-    def update_fabs_sample_file(self):
-        """Update samples file to remove FundingAgencyCode"""
-        logging.info("Updating FABS sample file to remove FundingAgencyCode")
-        return {"file_updated": True, "header_removed": "FundingAgencyCode"}
-    
-    def exclude_deleted_fsrs_records(self):
-        """Ensure deleted FSRS records are excluded from submissions"""
-        logging.info("Excluding deleted FSRS records from submissions")
-        return {"deleted_records_excluded": True}
-    
-    def display_daily_financial_assistance_data(self):
-        """Display updated financial assistance data daily"""
-        logging.info("Displaying latest daily financial assistance data")
-        return {"data_current": True, "update_frequency": "daily"}
-    
-    def disable_publish_button_on_click(self, submission_id: str):
-        """Deactivate publish button after click during derivation process"""
-        logging.info(f"Disabling publish button for submission {submission_id}")
-        return {"button_disabled": True, "process_started": True}
-    
-    def prevent_nonexistent_record_operations(self):
-        """Prevent operations on non-existent records"""
-        logging.info("Preventing operations on non-existent records")
-        return {"operation_blocked": True}
-    
-    def reset_environment_to_staging_max(self):
-        """Reset environment to only take Staging MAX permissions"""
-        self.config["staging_max_permissions"] = True
-        logging.info("Environment reset to staging MAX permissions")
-        return {"environment_reset": True, "permissions_restricted": True}
-    
-    def show_flexfield_warnings(self, submission_file: str, has_required_missing: bool):
-        """Show warnings for flexfields with missing required elements"""
-        if has_required_missing:
-            logging.warning(f"Flexfield warnings shown for required field missing in {submission_file}")
-            return {"warnings_shown": True}
-        return {"no_warnings_needed": True}
-    
-    def derive_ppop_codes(self):
-        """Derive accurate PPoPCode and PPoPCongressionalDistrict data"""
-        logging.info("Deriving PPoPCode and congressional district data")
-        return {"derived_fields": ["PPoPCode", "PPoPCongressionalDistrict"]}
-    
-    def accept_zero_blank_loan_records(self):
-        """Accept zero and blank values for loan records"""
-        logging.info("Configuring validation to accept zero and blank for loan records")
-        return {"validation_updated": True, "loan_records_accepted": True}
-    
-    def deploy_fabs_to_production(self):
-        """Deploy FABS to production environment"""
-        logging.info("Deploying FABS to production environment")
-        return {"deployed": True, "environment_production": True}
-    
-    def clarify_cfds_error_codes(self):
-        """Clarify triggers for CFDA error codes"""
-        logging.info("Clarifying CFDA error code triggers")
-        return {"error_code_clarified": True, "user_guidance": "CFDA validation rules applied"}
-    
-    def verify_sam_data_completeness(self):
-        """Verify SAM data integrity before FABS submissions"""
-        logging.info("Verifying complete data from SAM system")
-        return {"sam_data_complete": True, "verification_passed": True}
-    
-    def index_domain_models(self):
-        """Index domain models for faster validation"""
-        logging.info("Indexing domain models for faster validation")
-        return {"models_indexed": True, "validation_speed_improved": True}
-    
-    def accept_zero_blank_nonloan_records(self):
-        """Accept zero and blank values for non-loan records"""
-        logging.info("Configuring validation for non-loan records with zero/blank entries")
-        return {"validation_updated": True, "nonloan_records_accepted": True}
-    
-    def clean_sql_codes(self):
-        """Clean and clarify SQL codes for better readability and maintenance"""
-        logging.info("Cleaning and clarifying SQL codebase")
-        return {"codes_cleaned": True, "readability_improved": True}
-    
-    def derive_all_derived_data_elements(self):
-        """Ensure all derived data elements are computed correctly"""
-        logging.info("Deriving all required data elements")
-        return {"all_derived": True}
-    
-    def add_ppop_code_derivation_logic(self):
-        """Add the 00***** and 00FORGN PPoPCode cases to derivation logic"""
-        logging.info("Adding 00***** and 00FORGN PPoPCode derivation logic")
-        return {"logic_added": True, "ppop_cases_handled": ["00*****", "00FORGN"]}
-    
-    def derive_office_names(self): 
-        """Derive office names from office codes"""
-        logging.info("Deriving office names from office codes")
-        return {"office_names_derived": True, "context_provided": True}
-    
-    def derive_fabs_fields_from_history(self):
-        """Derive fields for historical FABS data loading"""
-        logging.info("Deriving fields for historical FABS data")
-        return {"fields_derived": True, "agency_codes_corrected": True}
-    
-    def update_broker_resources_for_fabs(self):
-        """Update Broker resources, validations, and P&P pages for FABS/D IMS v1.1 launch"""
-        logging.info("Updating Broker resources for FABS/DAMS v1.1 launch")
-        return {"resources_updated": True, "pages_migrated": True}
-    
-    def load_fabs_frec_derivations(self):
-        """Load historical FABS data with FREC derivations"""
-        logging.info("Loading FABS data with FREC derivations")
-        return {"data_loaded": True, "frec_consistency": True}
-    
-    def filter_nasa_grants(self):
-        """Prevent NASA grants from appearing as contracts"""
-        logging.info("Filtering out NASA grants from contract display")
-        return {"nasa_grants_filtered": True}
-    
-    def accept_expired_duns_with_actiontype(self):
-        """Accept DUNS records from ActionType B, C, D even if expired"""
-        logging.info("Configuring DUNS validation to accept expired records from valid ActionTypes")
-        return {"duns_validation_updated": True, "action_types_accepted": ["B", "C", "D"]}
-    
-    def accept_old_duns_dates(self):
-        """Accept DUNS records with ActionDates before today but after registration"""
-        logging.info("Configuring DUNS validation for date-based acceptances")
-        return {"date_validation_updated": True}
-    
-    def derive_funding_agency_code(self):
-        """Derive FundingAgencyCode for improved data quality"""
-        logging.info("Deriving FundingAgencyCode")
-        return {"funding_agency_code_derived": True}
-    
-    def check_legal_entity_address_length(self):
-        """Check maximum length for LegalEntityAddressLine3 matches schema v1.1"""
-        logging.info("Validating LegalEntityAddressLine3 length against schema v1.1")
-        return {"address_length_validated": True, "maximum_length": 150}
-    
-    def use_schema_v11_headers(self):
-        """Use schema v1.1 headers in FABS files"""
-        logging.info("Using schema v1.1 headers for FABS submissions")
-        return {"schema_compliant": True, "headers_updated": True}
-    
-    def map_federal_action_obligation(self):
-        """Map FederalActionObligation to Atom Feed"""
-        logging.info("Mapping FederalActionObligation to atom feed")
-        return {"map_successful": True, "feed_integrated": True}
-    
-    def support_zip_plus_four(self):
-        """Support PPoPZIP+4 like LegalEntity ZIP validation"""
-        logging.info("Setting up PPoPZIP+4 validation compatibility")
-        return {"zip_validation_updated": True}
-    
-    def link_sample_file_correctly(self):
-        """Link SAMPLE FILE properly to FABS submission dialog"""
-        logging.info("Linking sample file in FABS submission interface")
-        return {"sample_link_fixed": True, "reference_accessed": True}
-    
-    def keep_fpds_data_updated_daily(self):
-        """Keep FPDS data updated daily"""
-        logging.info("Maintaining daily FPDS data updates")
-        return {"fpds_up_to_date": True, "update_frequency": "daily"}
-    
-    def generate_d_files_from_fabs_fpds(self):
-        """Generate D files from combined FABS and FPDS data"""
-        logging.info("Generating D files from FABS and FPDS data")
-        return {"d_file_generated": True, "combined_data_used": True}
-    
-    def show_last_modification_details(self):
-        """Display updated date/time and creation details"""
-        logging.info("Showing creation/mutation details")
-        return {"details_displayed": True, "date_time_shown": True}
-    
-    def improve_file_level_errors(self):
-        """Provide helpful file-level errors for incorrect extensions"""
-        logging.info("Improving file-level error handling")
-        return {"error_handling_improved": True}
-    
-    def test_in_nonprod_environments(self):
-        """Allow testing in non-staging environments"""
-        logging.info("Enabling testing in nonProduction environments")
-        return {"testing_allowed": True}
-    
-    def report_fabs_submission_errors(self, errors: List[str]):
-        """Provide accurate FABS error reporting"""
-        logging.info("Reporting accurate FABS submission errors")
-        return {"errors_reported": True, "detail_provided": errors}
-    
-    def improve_frontend_urls(self):
-        """Make frontend URLs more reflective of accessed pages"""
-        logging.info("Improving URL structure for clarity")
-        return {"urls_improved": True, "navigation_clarified": True}
-    
-    def load_historical_fabs_data(self):
-        """Load all historical Financial Assistance data"""
-        logging.info("Loading historical FABS data")
-        return {"historical_data_loaded": True, "complete_coverage": True}
-    
-    def load_historical_fpds_data(self):
-        """Load historical FPDS data including both sources"""
-        logging.info("Loading historical FPDS data with extracts and feeds")
-        return {"fpds_data_load": True, "historical_coverage": True}
-    
-    def show_submission_creator_identity(self):
-        """Show who created each submission"""
-        logging.info("Displaying creator identity for submissions")
-        return {"creator_identity_shown": True}
-    
-    def deliver_file_f_in_correct_format(self):
-        """Format File F correctly"""
-        logging.info("Preparing File F in correct format")
-        return {"file_f_format_correct": True}
-    
-    def improve_file_level_error_understanding(self):
-        """Better explain file-level errors for agencies"""
-        logging.info("Improving explanation of file-level errors")
-        return {"error_explanation": "Improved", "agency_comprehension": True}
-    
-    def provide_frefs_groups(self):
-        """Provide FABS groups operating under FREC paradigm"""
-        logging.info("Creating FREC-focused distribution groupings")
-        return {"frefs_groups_created": True, "distribution_paradigm": "frec"}
-    
-    def test_field_derivation(self, test_file: str):
-        """Test field derivation with robust test file"""
-        logging.info(f"Testing field derivation using {test_file}")
-        return {"derivation_test_passed": True}
-    
-    def enforce_zero_padding(self):
-        """Enforce zero-padding for consistency"""
-        logging.info("Enforcing zero-padded fields")
-        return {"zero_padding_enforced": True, "justification_provided": True}
-    
-    def submit_without_duns_error(self):
-        """Submit records without requiring DUNS for recipient level records"""
-        logging.info("Allowing record submission at individual recipient level")
-        return {"record_submitted_without_duns": True}
-    
-    def show_rows_count_before_publish(self):
-        """Display row count before publishing"""
-        logging.info("Showing row counts before publishing decisions")
-        return {"rows_count_displayed": True}
-    
-    def prevent_duplicate_publications(self):
-        """Prevent publishing duplicate transactions"""
-        logging.info("Preventing duplicate transaction publications")
-        return {"duplicates_prevented": True, "publish_time_overlap_handled": True}
-    
-    def validate_citywide_ppopzip(self):
-        """Allow submitting citywide as a PPoPZIP value"""
-        logging.info("Allowing citywide ZIP submissions")
-        return {"citywide_submission_allowed": True}
-    
-    def update_error_codes(self):
-        """Provide clearer and more descriptive error codes"""
-        logging.info("Updating error codes with descriptive information")
-        return {"error_codes_refined": True}
-    
-    def allow_3_digit_zip_no_plus_four(self):
-        """Allow 3-digit ZIP codes without the +4 extension"""
-        logging.info("Allowing 3-digit ZIP code submissions")
-        return {"partial_zip_allowed": True}
-    
-    def verify_historical_data_columns(self):
-        """Ensure historical data includes all necessary columns"""
-        logging.info("Verifying historical data contains all necessary columns")
-        return {"columns_validated": True, "data_integrity_confirmed": True}
-    
-    def access_additional_fpds_fields(self):
-        """Access two additional data points from FPDS pull"""
-        logging.info("Accessing additional fields from FPDS data")
-        return {"additional_fpds_fields": ["award_description", "recipient_name"], "included": True}
-    
-    def enhance_submission_dashboard(self):
-        """Provide more helpful info in submission dashboard"""
-        logging.info("Enhancing submission dashboard with additional metrics")
-        return {"dashboard_enhanced": True, "info_added": True}
-    
-    def allow_download_uploaded_file(self):
-        """Enable downloading of uploaded files"""
-        logging.info("Enabling uploaded file download capability")
-        return {"download_enabled": True}
-    
-    def fast_access_broker_data(self):
-        """Provide quick access to Broker application data"""
-        logging.info("Setting up fast data access for troubleshooting")
-        return {"fast_access_setup": True}
-    
-    def determine_fpds_loading_approach(self):
-        """Determine best approach for historical FPDS loading"""
-        logging.info("Analyzing optimal loading strategy for historical FPDS data")
-        return {"loading_strategy_determined": True, "full_data_coverage": True}
-    
-    def tailor_fabs_language(self):
-        """Make FABS language appropriate for user type"""
-        logging.info("Tailoring language for FABS pages")
-        return {"language_appropriate": True, "user_type_considered": True}
-    
-    def hide_banner_messages(self):
-        """Hide inappropriate banner messages for each application"""
-        logging.info("Hiding incorrect banner messages")
-        return {"banner_messages_filtered": True}
-    
-    def provide_readonly_dabs_access(self):
-        """Allow read-only access to DABS pages"""
-        logging.info("Setting up read-only access to DABS")
-        return {"readonly_access_granted": True}
-    
-    def optimize_fabs_validation_performance(self):
-        """Optimize validation performance for FABS submissions"""
-        logging.info("Optimizing FABS validation runtimes")
-        return {"validation_performance_optimized": True}
-    
-    def show_correct_status_labels(self):
-        """Show correct status labels on submission dashboard"""
-        logging.info("Presenting clear submission status labels")
-        return {"status_labels_correct": True}
-    
-    def show_submission_periods(self):
-        """Show when submission periods start and end"""
-        logging.info("Displaying submission period timing information")
-        return {"period_timing_shown": True, "dates_available": True}
-    
-    def provide_single_landing_page(self):
-        """Create landing page that goes to either FABS or DABS"""
-        logging.info("Creating unified landing page for FABS/DABS")
-        return {"landing_page_created": True, "navigation_switched": True}
-    
-    def allow_quoted_fields(self):
-        """Allow fields to be surrounded by quotation marks to preserve zeros"""
-        logging.info("Enabling quote-surrounded fields in submissions")
-        return {"quoted_fields_supported": True}
+    def load_historical_fabs_data(self) -> List[FABSRecord]:
+        """Load historical FABS data for integration."""
+        return self.historical_records
+        
+    def load_fpds_data(self) -> List[Dict[str, Any]]:
+        """Load FPDS records with proper data handling."""
+        return self.fpds_records
 
-# Example usage:
-if __name__ == "__main__":
-    broker = BrokerSystem()
+class ValidationService:
+    """Handles validation rules for submissions"""
     
-    # Demonstrate some functionality
-    print(broker.process_deletions_2017())
-    print(broker.redesign_resources_page())
-    print(broker.enhance_logging("SUB0001"))
-    print(broker.upload_and_validate_error_message("Sample data"))
-    print(broker.sync_d1_file_generation_with_fpds())
-    print(broker.access_published_fabs_files())
-    print(broker.update_fabs_sample_file())
-    print(broker.check_legal_entity_address_length())
-    print(broker.update_error_codes())</pre>
+    @staticmethod
+    def validate_fabs_fields(record: FABSRecord) -> Tuple[bool, List[str]]:
+        """Validate FABS record fields according to business rules."""
+        errors = []
+        if record.funding_agency_code == "":
+            errors.append("Field FundingAgencyCode cannot be empty")
+            
+        if record.legal_entity_address_line_3 and len(record.legal_entity_address_line_3) > 150:
+            errors.append("LegalEntityAddressLine3 must not exceed 150 characters")
+        
+        if not record.ppop_zip_plus_four:
+            # Allow partial ZIPs for now (e.g., no +4)
+            pass
+        elif len(record.ppop_zip_plus_four) < 3:
+            errors.append("PPoPZIP+4 must have at least 3 digits")
+        
+        if record.action_type in ['B', 'C', 'D'] and not ValidationService._is_duns_active(record.duns):
+            errors.append(f"DUNS {record.duns} is not active in SAM")
+            
+        if record.action_date < datetime.date(2007, 1, 1):
+            errors.append("ActionDate cannot precede 2007")
+            
+        return (len(errors) == 0), errors
+    
+    @staticmethod
+    def _is_duns_active(duns: str) -> bool:
+        """Mock implementation - in reality would query SAM database."""
+        return True
+
+class FABSSubmissionManager:
+    """Manages submission lifecycle for FABS records and validations"""
+    
+    def __init__(self):
+        self.submissions: Dict[str, Submission] = {}
+        self.duplicates_tracker: set = set()
+        
+    def create_submission(self, user_id: str, file_path: str) -> Submission:
+        """Create a new FABS submission."""
+        submission_id = f"fabs_sub_{datetime.datetime.now().strftime('%Y%m%d%H%M%S')}"
+        submission = Submission(
+            submission_id=submission_id,
+            user_id=user_id,
+            status=SubmissionStatus.DRAFT,
+            submission_date=datetime.datetime.now(),
+            file_path=file_path,
+            validation_errors=[], 
+            publication_metadata={}
+        )
+        self.submissions[submission_id] = submission
+        return submission
+        
+    def validate_submission(self, submission_id: str) -> Tuple[bool, List[str]]:
+        """Validate a submitted file."""
+        submission = self.submissions.get(submission_id)
+        if not submission:
+            return False, ["Submission not found"]
+            
+        # Simulate reading and validating each line of the file 
+        validation_errors = []
+        # In real implementation this would parse the actual file
+        # For now just returning a generic set of example validations
+        
+        # Example validation checks
+        if not submission.file_path.endswith('.csv'):
+            validation_errors.append("Invalid file type. Only CSV files accepted.")
+        else:
+            submission.status = SubmissionStatus.VALIDATING
+            
+        # Run standard validations
+        return True, validation_errors
+    
+    def publish_submission(self, submission_id: str) -> bool:
+        """Publish a submission and handle duplicate prevention."""
+        submission = self.submissions.get(submission_id)
+        if not submission:
+            return False
+            
+        # Check if submission already published
+        if submission.status == SubmissionStatus.PUBLISHED:
+            return False
+            
+        # Prevent double publishes during publishing phase
+        key = f"{submission.user_id}_{submission_id}"
+        if key in self.duplicates_tracker:
+            return False
+            
+        self.duplicates_tracker.add(key)
+        
+        submission.status = SubmissionStatus.PUBLISHING
+        # Publish logic would go here
+        submission.status = SubmissionStatus.PUBLISHED
+        return True
+
+class DatabaseService:
+    """Provides database functionality and indexing"""
+    
+    def __init__(self):
+        self.indexes: dict = {}
+        
+    def initialize_indexes(self):
+        """Ensure database models are properly indexed."""
+        self.indexes['funding_agency_code'] = True
+        self.indexes['ppop_zip_plus_four'] = True
+        self.indexes['action_date'] = True
+        self.indexes['duns'] = True
+        print("Database indexes initialized successfully.")
+        
+    def query_validation_results(self, filters: dict) -> list:
+        """Query validation results with optimized filtering."""
+        return []  # Placeholder - actual implementation would query DB
+
+class FileProcessingService:
+    """Handles file operations and data transformations"""
+    
+    @staticmethod
+    def clean_fabs_header(row: List[str]) -> List[str]:
+        """Clean-up headers by removing FundingAgencyCode if present."""
+        clean_headers = [header.strip() for header in row]
+        if "FundingAgencyCode" in clean_headers:
+            clean_headers.remove("FundingAgencyCode")
+        return clean_headers
+        
+    @staticmethod
+    def process_zip_plus_four(value: str) -> str:
+        """Process ZIP+4 codes ensuring consistency."""
+        value = str(value).strip()
+        if value and len(value) >= 5:
+            return value[:5]
+        return value
+        
+    @staticmethod
+    def validate_zip_format(zipcode: str) -> bool:
+        """Ensure zip formats are valid for matching."""
+        if not zipcode:
+            return True
+        stripped_zip = zipcode.replace(' ', '').replace('-', '')
+        return stripped_zip.isdigit() and len(stripped_zip) >= 3 and len(stripped_zip) <= 9
+
+class UserTestingTracker:
+    """Tracks UI usability issues from Tech Thursday sessions."""
+    
+    def __init__(self):
+        self.issue_trackers: Dict[str, List[str]] = {}
+        
+    def log_issue(self, issue_desc: str, session_date: datetime.date):
+        """Log an issue seen during Tech Thursday."""
+        key = session_date.strftime("%Y-%m-%d")
+        if key not in self.issue_trackers:
+            self.issue_trackers[key] = []
+        self.issue_trackers[key].append(issue_desc)
+        
+    def get_issues_summary(self, from_date: datetime.date=None, to_date: datetime.date=None) -> Dict:
+        """Retrieves summary of logged issues."""
+        return {
+            "total_issues": sum(len(issues) for _, issues in self.issue_trackers.items()),
+            "issue_list": self.issue_trackers
+        }
+
+class BrokerEnvironmentResetter:
+    """Handles resetting environments to proper permission states."""
+    
+    @staticmethod
+    def reset_environment():
+        """Reset environment to use only Staging MAX permissions."""
+        print("Environment reset initiated...")
+        # In practice, this would interact with AWS/infrastructure management tools
+        print("Environment reset complete. Staging MAX permissions enforced.")
+
+class UIContentUpdateManager:
+    """Manages UI updates including homepage, help page, and resources section."""
+    
+    def __init__(self):
+        self.resources: List[Resource] = []
+        self.help_pages: List[HelpPageContent] = []
+        
+    def update_resources_page(self, content_updates: Dict[str, str]):
+        """Apply changes to Resources page styling and structure."""
+        for item in self.resources:
+            if item.title in content_updates:
+                item.content = content_updates[item.title]
+                
+    def update_help_page(self, updates: Dict[str, str]):
+        """Apply UI tweaks to Help page."""
+        for page in self.help_pages:
+            if page.page_section in updates:
+                page.content = updates[page.page_section]
+
+class ReportGenerator:
+    """Generates reports for stakeholders."""
+    
+    def __init__(self, tracker: UserTestingTracker):
+        self.tracker = tracker
+        
+    def generate_ui_testing_report(self, date_range: Tuple[datetime.date, datetime.date]) -> str:
+        """Generate summary report for UI testing activities."""
+        issues = self.tracker.get_issues_summary(date_range[0], date_range[1])
+        report = f"UI Testing Summary Report ({date_range[0]} to {date_range[1]}):\n"
+        report += f"Total Issues Logged: {issues['total_issues']}\n"
+        return report
+
+# Example usage functions
+def main():
+    loader = DataLoader()
+    validator = ValidationService()
+    manager = FABSSubmissionManager()
+    db_service = DatabaseService()
+    file_service = FileProcessingService()
+    testing_tracker = UserTestingTracker()
+    ui_manager = UIContentUpdateManager()
+    report_generator = ReportGenerator(testing_tracker)
+    
+    # Initialize required services
+    db_service.initialize_indexes()
+    
+    # Create test submission
+    submission = manager.create_submission(user_id="agency123", file_path="/tmp/test.csv")
+    
+    # Validate submission
+    is_valid, errors = manager.validate_submission(submission.submission_id)
+    print(f"Validation result: Valid={is_valid}, Errors={errors}")
+    
+    # Attempt to publish (may be blocked due to existing publish state)
+    success = manager.publish_submission(submission.submission_id)
+    print(f"Published successfully: {success}")
+    
+    # Track UI issue from Tech Thursday
+    testing_tracker.log_issue("Homepage navigation confusing", datetime.date.today())
+    
+    # Generate report
+    report = report_generator.generate_ui_testing_report((datetime.date.today(), datetime.date.today()))
+    print(report)
+
+if __name__ == "__main__":
+    main()</pre>
 
       <h2>Confidence & Basic Metrics</h2>
       <div class="metrics">
         <table>
           <tr>
             <th>Total tokens</th>
-            <td>5471</td>
+            <td>2346</td>
           </tr>
           <tr>
             <th>Total log-probability</th>
-            <td>-1747.895</td>
+            <td>-1088.920</td>
           </tr>
           <tr>
             <th>Average per-token probability</th>
-            <td>72.65%</td>
+            <td>62.87%</td>
           </tr>
           <tr>
             <th>Perplexity</th>
-            <td>1.38</td>
+            <td>1.59</td>
           </tr>
         </table>
       </div>
@@ -873,41 +630,41 @@ if __name__ == "__main__":
         <table>
           <tr>
             <th>Function count (AST)</th>
-            <td>95</td>
+            <td>25</td>
           </tr>
           <tr>
             <th>Class count (AST)</th>
-            <td>1</td>
+            <td>15</td>
           </tr>
           <tr>
             <th>Number of lines</th>
-            <td>550</td>
+            <td>307</td>
           </tr>
           <tr>
             <th>Non-empty lines</th>
-            <td>452</td>
+            <td>248</td>
           </tr>
           <tr>
             <th>Avg line length (all lines, chars)</th>
             <td>
-              46.4
+              35.4
             </td>
           </tr>
           <tr>
             <th>Avg line length (non-empty, chars)</th>
             <td>
-              55.6
+              42.6
             </td>
           </tr>
           <tr>
             <th>Avg tokens per non-empty line</th>
             <td>
-              4.58
+              3.83
             </td>
           </tr>
           <tr>
             <th>AST depth (max nesting)</th>
-            <td>11</td>
+            <td>13</td>
           </tr>
           <tr>
             <th>Import count</th>
@@ -915,32 +672,32 @@ if __name__ == "__main__":
           </tr>
           <tr>
             <th>Import names</th>
-            <td>datetime, hashlib, json, logging, typing</td>
+            <td>dataclasses, datetime, enum, os, typing</td>
           </tr>
           <tr>
             <th>Avg cyclomatic complexity (functions)</th>
             <td>
-              1.05
+              2.26
             </td>
           </tr>
           <tr>
             <th>Max cyclomatic complexity (functions)</th>
-            <td>3</td>
+            <td>9</td>
           </tr>
           <tr>
             <th>Module cyclomatic complexity</th>
-            <td>101</td>
+            <td>79</td>
           </tr>
           <tr>
             <th>Average function size (lines)</th>
             <td>
-              4.5
+              7.6
             </td>
           </tr>
           <tr>
             <th>Comment density (%)</th>
             <td>
-              1.3%
+              7.3%
             </td>
           </tr>
           <tr>
@@ -961,7 +718,7 @@ if __name__ == "__main__":
           </tr>
           <tr>
             <th>Flake8 style errors</th>
-            <td>101</td>
+            <td>71</td>
           </tr>
           <tr>
             <th>Flake8 errors (by category)</th>
@@ -971,7 +728,7 @@ if __name__ == "__main__":
                   <tr>
                     <th>Style errors (PEP8 spacing, indentation, etc.) (E)</th>
                     <td>
-                      2
+                      21
                     </td>
                   </tr>
                   <tr>
@@ -979,13 +736,13 @@ if __name__ == "__main__":
                       Logical errors (undefined vars, unused imports, etc.) (F)
                     </th>
                     <td>
-                      2
+                      5
                     </td>
                   </tr>
                   <tr>
                     <th>Warnings (whitespace, etc.) (W)</th>
                     <td>
-                      97
+                      45
                     </td>
                   </tr>
                   <tr>
@@ -1006,7 +763,7 @@ if __name__ == "__main__":
           </tr>
           <tr>
             <th>Mypy type-check errors</th>
-            <td>1</td>
+            <td>2</td>
           </tr>
           <tr>
             <th>Mypy error breakdown</th>
@@ -1022,7 +779,7 @@ if __name__ == "__main__":
                   <tr>
                     <th>Argument type</th>
                     <td>
-                      1
+                      2
                     </td>
                   </tr>
                   <tr>
@@ -1055,7 +812,7 @@ if __name__ == "__main__":
           </tr>
           <tr>
             <th>Semantic quality score (0–100)</th>
-            <td>79.0</td>
+            <td>78.0</td>
           </tr>
         </table>
       </div>
@@ -1070,7 +827,7 @@ if __name__ == "__main__":
           <tr>
             <th>Execution time (s)</th>
             <td>
-              1.078
+              0.168
             </td>
           </tr>
           <tr>
@@ -1085,15 +842,12 @@ if __name__ == "__main__":
             <th>Runtime output (preview)</th>
             <td>
               <div class="runtime-output">
-                <pre>2025-10-10 19:03:20,649 - INFO - Processing 12-19-2017 deletions 2025-10-10 19:03:20,649 - INFO - Redesigning Resources page 2025-10-10 19:03:20,650 - INFO - Enhanced logging activated for submission SUB0001 2025-10-10 19:03:20,650 - INFO - Processing upload with accurate error messages...</pre>
+                <pre>Database indexes initialized successfully. Validation result: Valid=True, Errors=[] Published successfully: True UI Testing Summary Report (2025-10-10 to 2025-10-10): Total Issues Logged: 1</pre>
               </div>
             </td>
           </tr>
         </table>
       </div>
-      
-      <h2>Total Credibility (0-100%)</h2>
-      <p><b>Credibility:</b> 73.12%</p>
 
       <h2>Visualizations</h2>
       <div class="visualizations">
