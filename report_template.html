@@ -66,11 +66,11 @@
         font-size: 13px;
       }
       .runtime-output pre {
-        white-space: pre-wrap; /* Since CSS 2.1 */
-        white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
-        white-space: -pre-wrap; /* Opera 4-6 */
-        white-space: -o-pre-wrap; /* Opera 7 */
-        word-wrap: break-word; /* Internet Explorer 5.5+ */
+        white-space: pre-wrap;
+        white-space: -moz-pre-wrap;
+        white-space: -pre-wrap;
+        white-space: -o-pre-wrap;
+        word-wrap: break-word;
       }
       .visualizations img {
         max-width: 100%;
@@ -78,7 +78,58 @@
         border: 1px solid #e0e0e0;
         border-radius: 4px;
       }
+      .visualizations h3 {
+        margin-top: 30px;
+        margin-bottom: 15px;
+        color: #2c3e50;
+        border-bottom: 2px solid #3498db;
+        padding-bottom: 5px;
+      }
+      
+      /* Collapsible section styles */
+      .collapsible {
+        cursor: pointer;
+        padding: 10px;
+        background-color: #f0f0f0;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        margin-bottom: 10px;
+        user-select: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .collapsible:hover {
+        background-color: #e8e8e8;
+      }
+      .collapsible::after {
+        content: '▼';
+        font-size: 12px;
+        color: #666;
+        transition: transform 0.3s;
+      }
+      .collapsible.collapsed::after {
+        transform: rotate(-90deg);
+      }
+      .collapsible-content {
+        max-height: 500px;
+        overflow: auto;
+        transition: max-height 0.3s ease;
+        margin-bottom: 20px;
+      }
+      .collapsible-content.collapsed {
+        max-height: 0;
+        overflow: hidden;
+      }
     </style>
+    <script>
+      function toggleCollapse(id) {
+        const content = document.getElementById(id);
+        const button = content.previousElementSibling;
+        content.classList.toggle('collapsed');
+        button.classList.toggle('collapsed');
+      }
+    </script>
   </head>
   <body>
     <div class="container">
@@ -91,19 +142,34 @@
       </div>
 
       <h2>Selected User Stories</h2>
-      <pre>{{ stories_text }}</pre>
+      <div class="collapsible collapsed" onclick="toggleCollapse('stories-content')">
+        Click to expand/collapse
+      </div>
+      <div id="stories-content" class="collapsible-content collapsed">
+        <pre>{{ stories_text }}</pre>
+      </div>
 
       <h2>Prompt Sent to LLM</h2>
-      <pre>{{ prompt }}</pre>
+      <div class="collapsible collapsed" onclick="toggleCollapse('prompt-content')">
+        Click to expand/collapse
+      </div>
+      <div id="prompt-content" class="collapsible-content collapsed">
+        <pre>{{ prompt }}</pre>
+      </div>
 
       <h2>Generated Code</h2>
-      <pre>{{ code }}</pre>
+      <div class="collapsible collapsed" onclick="toggleCollapse('code-content')">
+        Click to expand/collapse
+      </div>
+      <div id="code-content" class="collapsible-content collapsed">
+        <pre>{{ code }}</pre>
+      </div>
 
       <h2>Confidence & Basic Metrics</h2>
       <div class="metrics">
         <table>
           <tr>
-            <th>Total tokens</th>
+            <th>Total completion tokens</th>
             <td>{{ total_tokens }}</td>
           </tr>
           <tr>
