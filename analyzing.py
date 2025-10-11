@@ -1,10 +1,5 @@
-from langchain_openai import ChatOpenAI
-from os import getenv
-from dotenv import load_dotenv
 import math
-import datetime
 import json
-import csv
 from pathlib import Path
 from jinja2 import Environment, FileSystemLoader
 
@@ -14,43 +9,12 @@ from Functions.compute_code_semantic_metrics import compute_code_semantic_metric
 from Functions.compute_code_execution_metrics import compute_code_execution_metrics
 from Functions.compute_credibility import compute_credibility
 
-# Load environment variables
-load_dotenv()
-
 # Configuration
-model = "qwen/qwen3-coder-30b-a3b-instruct"
 results_root = Path("Reports/qwen3")
-results_root.mkdir(exist_ok=True)
 
-
-
-###################################################################
-###################################################################
-###################################################################
-
-
-
-# --- Step 0: Determine next request number ---
-request_number = 2
+# --- Step 0: Get request number 
+request_number = 9
 run_dir = results_root / f"report_{request_number}"
-run_dir.mkdir(parents=True, exist_ok=True)
-
-# Initialize LLM
-llm = ChatOpenAI(
-    api_key=getenv("OPENROUTER_API_KEY"),
-    base_url=getenv("OPENROUTER_BASE_URL"),
-    model=model
-).bind(
-    logprobs=True,
-    extra_body={
-        "provider": {
-            "order": [
-                "nebius-ai-studio",
-                "nebius"
-            ]
-        }
-    }
-)
 
 
 
@@ -60,9 +24,24 @@ llm = ChatOpenAI(
 
 
 
-# --- Step 1: Read user stories ---
-with open("data.txt", "r", encoding="utf-8") as f:
-    user_stories = [line.strip() for line in f if line.strip()]
+# --- Step 1: Load raw response data ---
+print(f"Loading data from {run_dir}...")
+with open(run_dir / "raw_response.json", "r", encoding="utf-8") as f:
+    raw_data = json.load(f)
+
+# Extract data
+request_number = raw_data["request_number"]
+timestamp = raw_data["timestamp"]
+model = raw_data["model"]
+prompt = raw_data["prompt"]
+stories_text = raw_data["stories_text"]
+code = raw_data["code"]
+logprobs_data = raw_data["logprobs"].get("content", [])
+supports_logprobs = raw_data["supports_logprobs"]
+
+print(f"Loaded response from {timestamp}")
+print(f"Model: {model}")
+print(f"Code length: {len(code)} characters")
 
 
 
@@ -72,76 +51,7 @@ with open("data.txt", "r", encoding="utf-8") as f:
 
 
 
-# --- Step 2: Select a few stories ---
-sample_stories = user_stories  # [:50]
-stories_text = "\n".join(sample_stories)
-
-
-
-###################################################################
-###################################################################
-###################################################################
-
-
-
-# --- Step 3: Build the prompt ---
-# with open("clustered_stories.json", "r", encoding="utf-8") as f:
-#     clusters = json.load(f)
-
-# structured_text = "\n\n".join(
-#     f"Module {name}:\n{stories}" for name, stories in clusters.items()
-# )
-
-prompt = (
-    "Generate fully functional Python code that implements the following user stories. "
-    "The code should realistically reflect the described functionality.\n\n"
-    f"{stories_text}\n\n"
-    "Output only Python code (no markdown formatting or extra text). "
-    "Do not leave functions empty — implement reasonable logic where needed."
-)
-
-
-
-###################################################################
-###################################################################
-###################################################################
-
-
-
-# --- Step 4: LLM call ---
-msg = llm.invoke(("human", prompt))
-
-
-
-###################################################################
-###################################################################
-###################################################################
-
-
-
-# --- Step 5: Clean code output ---
-code = msg.content.strip()
-if code.startswith("```python"):
-    code = code[len("```python"):].strip()
-if code.endswith("```"):
-    code = code[:-3].strip()
-
-print("\n--- GENERATED PYTHON CODE ---\n")
-print(code)
-
-
-
-###################################################################
-###################################################################
-###################################################################
-
-
-
-# --- Step 6: Analyze log probabilities ---
-logprobs_data = msg.response_metadata["logprobs"]["content"]
-supports_logprobs = bool(msg.response_metadata.get("logprobs"))
-
-# Convert to richer structure for saving 
+# --- Step 2: Analyze log probabilities ---
 tokens_info = []
 cumulative_logprob = 0.0
 for idx, item in enumerate(logprobs_data):
@@ -163,6 +73,17 @@ avg_logprob = (total_logprob / total_tokens) if total_tokens else 0.0
 avg_prob = math.exp(avg_logprob) if math.isfinite(avg_logprob) else 0.0
 perplexity = math.exp(-avg_logprob) if math.isfinite(avg_logprob) else float("inf")
 
+
+
+###################################################################
+###################################################################
+###################################################################
+
+
+
+# --- Step 3: Compute metrics ---
+print("Computing metrics...")
+
 # Structural & length metrics
 struct_metrics = compute_code_structure_metrics(code, logprobs_data)
 
@@ -176,16 +97,6 @@ execution_metrics = compute_code_execution_metrics(code)
 credibility = compute_credibility(struct_metrics, semantic_metrics, execution_metrics, avg_prob, perplexity)
 
 
-###################################################################
-###################################################################
-###################################################################
-
-
-
-# --- Step 7: Save plots ---
-plot_llm_confidence(logprobs_data, output_dir=run_dir, title_prefix="Python Code Generation")
-
-
 
 ###################################################################
 ###################################################################
@@ -193,21 +104,37 @@ plot_llm_confidence(logprobs_data, output_dir=run_dir, title_prefix="Python Code
 
 
 
-# --- Step 8: Save detailed data ---
+# --- Step 4: Save plots ---
+print("Generating plots...")
+plot_llm_confidence(logprobs_data, output_dir=run_dir, title_prefix="Python Code Generation", code_text=code)
+
+
+
+###################################################################
+###################################################################
+###################################################################
+
+
+
+# --- Step 5: Save detailed data ---
+print("Saving analysis results...")
+
 # JSON (for reloading in Python)
 with open(run_dir / "tokens.json", "w", encoding="utf-8") as f:
     json.dump(tokens_info, f, indent=4, ensure_ascii=False)
 
-# CSV (for spreadsheets / pandas)
-with open(run_dir / "tokens.csv", "w", encoding="utf-8", newline="") as f:
-    writer = csv.DictWriter(f, fieldnames=tokens_info[0].keys())
-    writer.writeheader()
-    writer.writerows(tokens_info)
 
-# Save report assets
-timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
-env = Environment(loader=FileSystemLoader("."))  # current directory
+###################################################################
+###################################################################
+###################################################################
+
+
+
+# --- Step 6: Generate HTML report ---
+print("Generating HTML report...")
+
+env = Environment(loader=FileSystemLoader("."))
 template = env.get_template("report_template.html")
 
 html_report = template.render(
@@ -228,13 +155,20 @@ html_report = template.render(
     credibility=credibility
 )
 
-
 # Write report to file
 report_path = run_dir / "report.html"
 with open(report_path, "w", encoding="utf-8") as f:
     f.write(html_report)
 
-# Also save JSON summary for easier analysis later
+
+
+###################################################################
+###################################################################
+###################################################################
+
+
+
+# --- Step 7: Save JSON summary ---
 summary = {
     "request_number": request_number,
     "timestamp": timestamp,
@@ -251,8 +185,7 @@ summary = {
 with open(run_dir / "summary.json", "w", encoding="utf-8") as f:
     json.dump(summary, f, indent=4, ensure_ascii=False)
 
-# Save raw code separately
-with open(run_dir / "generated_code.py", "w", encoding="utf-8") as f:
-    f.write(code)
-
-print(f"\n✅ Report saved in folder: {run_dir}")
+print(f"\n✅ Analysis complete! Report saved in folder: {run_dir}")
+print("   - tokens.json")
+print("   - report.html")
+print("   - summary.json")
