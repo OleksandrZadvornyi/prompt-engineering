@@ -1,0 +1,255 @@
+{
+    "model": "openai/gpt-4o-mini",
+    "total_runs": 20,
+    "statistics": {
+        "LLM Confidence": {
+            "total_tokens": {
+                "min": 694,
+                "max": 2944,
+                "mean": 967.05,
+                "median": 839.5,
+                "stdev": 475.15243814347014,
+                "range": 2250
+            },
+            "avg_prob": {
+                "min": 0.620869843403558,
+                "max": 0.7842591887626289,
+                "mean": 0.7181243116957576,
+                "median": 0.718669089658864,
+                "stdev": 0.043780491266498515,
+                "range": 0.1633893453590709
+            },
+            "perplexity": {
+                "min": 1.2750886624328341,
+                "max": 1.6106435360398266,
+                "mean": 1.3975687934753058,
+                "median": 1.391783382617438,
+                "stdev": 0.08745051415184084,
+                "range": 0.33555487360699243
+            },
+            "total_logprob": {
+                "min": -783.2686319297111,
+                "max": -191.25336798490525,
+                "mean": -315.94676016517536,
+                "median": -289.5392449632309,
+                "stdev": 129.79122097347982,
+                "range": 592.0152639448058
+            }
+        },
+        "Code Structure": {
+            "token_count": {
+                "min": 694,
+                "max": 2944,
+                "mean": 967.05,
+                "median": 839.5,
+                "stdev": 475.15243814347014,
+                "range": 2250
+            },
+            "function_count": {
+                "min": 0,
+                "max": 27,
+                "mean": 17.35,
+                "median": 17.5,
+                "stdev": 6.02865962234602,
+                "range": 27
+            },
+            "class_count": {
+                "min": 0,
+                "max": 15,
+                "mean": 6.2,
+                "median": 7.0,
+                "stdev": 3.750087718272313,
+                "range": 15
+            },
+            "num_lines": {
+                "min": 89,
+                "max": 394,
+                "mean": 132.9,
+                "median": 120.0,
+                "stdev": 62.95687747222404,
+                "range": 305
+            },
+            "num_nonempty_lines": {
+                "min": 72,
+                "max": 316,
+                "mean": 104.95,
+                "median": 92.5,
+                "stdev": 50.80766104686016,
+                "range": 244
+            },
+            "avg_line_len_nonempty_chars": {
+                "min": 36.189473684210526,
+                "max": 49.753246753246756,
+                "mean": 42.0182961308088,
+                "median": 41.823033707865164,
+                "stdev": 3.674331159386194,
+                "range": 13.56377306903623
+            },
+            "avg_tokens_per_nonempty_line": {
+                "min": 3.0898876404494384,
+                "max": 4.4145569620253164,
+                "mean": 3.5036747198041547,
+                "median": 3.4092128801431123,
+                "stdev": 0.37202443109691175,
+                "range": 1.324669321575878
+            },
+            "ast_depth": {
+                "min": 0,
+                "max": 12,
+                "mean": 10.2,
+                "median": 11.0,
+                "stdev": 2.687201635824701,
+                "range": 12
+            }
+        },
+        "Imports & Dependencies": {
+            "import_count": {
+                "min": 0,
+                "max": 4,
+                "mean": 2.2,
+                "median": 2.0,
+                "stdev": 0.8335087534664907,
+                "range": 4
+            },
+            "import_redundancy_ratio": {
+                "min": 0.0,
+                "max": 0.0,
+                "mean": 0.0,
+                "median": 0.0,
+                "stdev": 0.0,
+                "range": 0.0
+            }
+        },
+        "Code Complexity": {
+            "avg_function_size_lines": {
+                "min": 0.0,
+                "max": 6,
+                "mean": 3.5695988227079054,
+                "median": 3.461904761904762,
+                "stdev": 1.2830024509919749,
+                "range": 6.0
+            },
+            "avg_cyclomatic_complexity": {
+                "min": 0.0,
+                "max": 2.1176470588235294,
+                "mean": 1.5852502210231227,
+                "median": 1.6547619047619047,
+                "stdev": 0.4339088260324888,
+                "range": 2.1176470588235294
+            },
+            "max_cyclomatic_complexity": {
+                "min": 0.0,
+                "max": 6,
+                "mean": 3.4,
+                "median": 3.0,
+                "stdev": 1.3138933706635727,
+                "range": 6.0
+            },
+            "module_cyclomatic_complexity": {
+                "min": 0.0,
+                "max": 48,
+                "mean": 34.15,
+                "median": 35.0,
+                "stdev": 10.529532403273135,
+                "range": 48.0
+            }
+        },
+        "Code Quality": {
+            "comment_density_percent": {
+                "min": 0.0,
+                "max": 29.166666666666668,
+                "mean": 10.421594987314108,
+                "median": 9.895549994559897,
+                "stdev": 7.354123816963402,
+                "range": 29.166666666666668
+            },
+            "syntax_valid": {
+                "min": 0.0,
+                "max": 1.0,
+                "mean": 0.95,
+                "median": 1.0,
+                "stdev": 0.22360679774997896,
+                "range": 1.0
+            },
+            "flake8_error_count": {
+                "min": 1,
+                "max": 28,
+                "mean": 12.6,
+                "median": 12.0,
+                "stdev": 6.150738081512529,
+                "range": 27
+            },
+            "mypy_error_count": {
+                "min": 0,
+                "max": 4,
+                "mean": 0.45,
+                "median": 0.0,
+                "stdev": 0.9445132413883327,
+                "range": 4
+            },
+            "semantic_quality_score": {
+                "min": 48.5,
+                "max": 98.0,
+                "mean": 90.75,
+                "median": 93.0,
+                "stdev": 10.408119300258864,
+                "range": 49.5
+            }
+        },
+        "Execution": {
+            "execution_success": {
+                "min": 0.0,
+                "max": 1.0,
+                "mean": 0.85,
+                "median": 1.0,
+                "stdev": 0.36634754853252327,
+                "range": 1.0
+            },
+            "execution_time_sec": {
+                "min": 0.404,
+                "max": 1.15,
+                "mean": 0.81585,
+                "median": 0.8205,
+                "stdev": 0.18644634475817487,
+                "range": 0.7459999999999999
+            }
+        },
+        "Overall": {
+            "total_credibility": {
+                "min": 0.0,
+                "max": 90.983,
+                "mean": 79.24695,
+                "median": 86.951,
+                "stdev": 21.568203964644955,
+                "range": 90.983
+            }
+        }
+    },
+    "best_run": {
+        "run_number": 5,
+        "credibility": 90.983,
+        "timestamp": "2025-10-11 16:01:14",
+        "quality_score": 98.0,
+        "syntax_valid": true,
+        "execution_success": true
+    },
+    "worst_run": {
+        "run_number": 10,
+        "credibility": 0.0,
+        "timestamp": "2025-10-11 16:11:15",
+        "quality_score": 48.5,
+        "syntax_valid": false,
+        "execution_success": false
+    },
+    "outliers": [
+        {
+            "run": 10,
+            "credibility": 0.0,
+            "deviation": 3.6742489142769252
+        }
+    ],
+    "quality_rates": {
+        "syntax_valid_rate": 95.0,
+        "execution_success_rate": 85.0
+    }
+}

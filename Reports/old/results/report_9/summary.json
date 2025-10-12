@@ -1,9 +1,0 @@
-{
-    "request_number": 9,
-    "timestamp": "2025-10-09 13:16:57",
-    "model": "x-ai/grok-code-fast-1",
-    "total_tokens": 2344,
-    "total_logprob": -875.1307256716676,
-    "avg_prob": 0.6884247339325793,
-    "perplexity": 1.4525916207100351
-}

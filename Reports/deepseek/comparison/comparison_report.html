@@ -1,0 +1,1339 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Model Comparison Report - deepseek/deepseek-chat-v3-0324</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .header h1 { margin: 0 0 10px 0; }
+        .header p { margin: 5px 0; opacity: 0.9; }
+        .section {
+            background: white;
+            padding: 25px;
+            margin-bottom: 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .section h2 {
+            color: #667eea;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+        .metric-card {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 6px;
+            border-left: 4px solid #667eea;
+        }
+        .metric-card h4 {
+            margin: 0 0 10px 0;
+            color: #333;
+            font-size: 14px;
+        }
+        .stat-row {
+            display: flex;
+            justify-content: space-between;
+            margin: 5px 0;
+            font-size: 13px;
+        }
+        .stat-label { color: #666; }
+        .stat-value { font-weight: bold; color: #333; }
+        .highlight-box {
+            background: #e7f3ff;
+            border-left: 4px solid #2196F3;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 4px;
+        }
+        .warning-box {
+            background: #fff3e0;
+            border-left: 4px solid #ff9800;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 4px;
+        }
+        .success-box {
+            background: #e8f5e9;
+            border-left: 4px solid #4caf50;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 4px;
+        }
+        .plot-container {
+            margin: 20px 0;
+            text-align: center;
+        }
+        .plot-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 6px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+            font-size: 14px;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background: #667eea;
+            color: white;
+            font-weight: 600;
+        }
+        tr:hover { background: #f5f5f5; }
+        .best-badge {
+            display: inline-block;
+            padding: 4px 8px;
+            background: #4caf50;
+            color: white;
+            border-radius: 4px;
+            font-size: 11px;
+            font-weight: bold;
+        }
+        .worst-badge {
+            display: inline-block;
+            padding: 4px 8px;
+            background: #f44336;
+            color: white;
+            border-radius: 4px;
+            font-size: 11px;
+            font-weight: bold;
+        }
+        .progress-bar {
+            width: 100%;
+            height: 25px;
+            background: #e0e0e0;
+            border-radius: 12px;
+            overflow: hidden;
+            margin: 10px 0;
+        }
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            font-size: 13px;
+        }
+        .kpi-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+        .kpi-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .kpi-value {
+            font-size: 32px;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+        .kpi-label {
+            font-size: 14px;
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🔬 Model Comparison Report</h1>
+        <p><strong>Model:</strong> deepseek/deepseek-chat-v3-0324</p>
+        <p><strong>Total Runs:</strong> 20</p>
+        <p><strong>Generated:</strong> 2025-10-12 16:08:16</p>
+    </div>
+
+    <!-- Key Performance Indicators -->
+    <div class="section">
+        <h2>🎯 Key Performance Indicators</h2>
+        <div class="kpi-grid">
+            <div class="kpi-card">
+                <div class="kpi-label">Mean Credibility</div>
+                <div class="kpi-value">65.1</div>
+            </div>
+            <div class="kpi-card">
+                <div class="kpi-label">Syntax Valid Rate</div>
+                <div class="kpi-value">100.0%</div>
+            </div>
+            <div class="kpi-card">
+                <div class="kpi-label">Execution Success Rate</div>
+                <div class="kpi-value">55.0%</div>
+            </div>
+            <div class="kpi-card">
+                <div class="kpi-label">Mean Quality Score</div>
+                <div class="kpi-value">81.4</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Summary Statistics -->
+    <div class="section">
+        <h2>📊 Summary Statistics</h2>
+        
+        <div class="highlight-box">
+            <h3 style="margin-top: 0;">Overall Credibility</h3>
+            <div class="metrics-grid">
+                <div class="metric-card">
+                    <h4>Mean Credibility</h4>
+                    <div class="stat-value" style="font-size: 24px; color: #667eea;">
+                        65.13
+                    </div>
+                </div>
+                <div class="metric-card">
+                    <h4>Range</h4>
+                    <div class="stat-value" style="font-size: 18px;">
+                        33.69 - 
+                        87.52
+                    </div>
+                </div>
+                <div class="metric-card">
+                    <h4>Standard Deviation</h4>
+                    <div class="stat-value" style="font-size: 18px;">
+                        20.58
+                    </div>
+                </div>
+                <div class="metric-card">
+                    <h4>Median</h4>
+                    <div class="stat-value" style="font-size: 18px;">
+                        78.57
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h3>Best and Worst Runs</h3>
+        <table>
+            <tr>
+                <th>Category</th>
+                <th>Run</th>
+                <th>Credibility</th>
+                <th>Perplexity</th>
+                <th>Quality Score</th>
+                <th>Functions</th>
+                <th>Syntax Valid</th>
+                <th>Executed</th>
+            </tr>
+            <tr style="background: #e8f5e9;">
+                <td><span class="best-badge">BEST</span></td>
+                <td><a href="../report_18/report.html">Run 18</a></td>
+                <td><strong>87.52</strong></td>
+                <td>1.15</td>
+                <td>94.0</td>
+                <td>16</td>
+                <td>✓</td>
+                <td>✓</td>
+            </tr>
+            <tr style="background: #ffebee;">
+                <td><span class="worst-badge">WORST</span></td>
+                <td><a href="../report_12/report.html">Run 12</a></td>
+                <td><strong>33.69</strong></td>
+                <td>1.16</td>
+                <td>63.0</td>
+                <td>14</td>
+                <td>✓</td>
+                <td>✗</td>
+            </tr>
+        </table>
+
+        
+        <div class="warning-box">
+            <h4 style="margin-top: 0;">⚠️ Outlier Runs Detected</h4>
+            <p>The following runs have credibility scores more than 1.5 standard deviations from the mean:</p>
+            <ul>
+            
+                <li><a href="../report_12/report.html">Run 12</a>: 
+                    33.69 
+                    (1.53σ from mean)</li>
+            
+            </ul>
+        </div>
+        
+
+        <div class="success-box">
+            <h4 style="margin-top: 0;">✅ Code Quality Metrics</h4>
+            <p><strong>Syntax Validity:</strong> 20/20 runs (100.0%)</p>
+            <div class="progress-bar">
+                <div class="progress-fill" style="width: 100.0%">100%</div>
+            </div>
+            <p><strong>Execution Success:</strong> 11/20 runs (55.0%)</p>
+            <div class="progress-bar">
+                <div class="progress-fill" style="width: 55.00000000000001%">55%</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Visualizations -->
+    <div class="section">
+        <h2>📈 Trends Over Runs</h2>
+        
+        <div class="plot-container">
+            <h3>Credibility Score Progression</h3>
+            <img src="plots/credibility_over_runs.png" alt="Credibility Over Runs">
+        </div>
+
+        <div class="plot-container">
+            <h3>Credibility Distribution</h3>
+            <img src="plots/credibility_distribution.png" alt="Credibility Distribution">
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+            <div class="plot-container">
+                <h3>Perplexity</h3>
+                <img src="plots/perplexity_over_runs.png" alt="Perplexity Over Runs">
+            </div>
+            <div class="plot-container">
+                <h3>Token Probability</h3>
+                <img src="plots/avg_prob_over_runs.png" alt="Average Probability Over Runs">
+            </div>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+            <div class="plot-container">
+                <h3>Semantic Quality Score</h3>
+                <img src="plots/semantic_quality_over_runs.png" alt="Quality Score Over Runs">
+            </div>
+            <div class="plot-container">
+                <h3>Cyclomatic Complexity</h3>
+                <img src="plots/complexity_over_runs.png" alt="Complexity Over Runs">
+            </div>
+        </div>
+    </div>
+
+    <!-- Detailed Metrics by Category -->
+    
+    
+    <div class="section">
+        <h2>LLM Confidence</h2>
+        
+        <div class="plot-container">
+            <img src="plots/llm_confidence_comparison.png" 
+                 alt="LLM Confidence Comparison">
+        </div>
+
+        <div class="metrics-grid">
+        
+            <div class="metric-card">
+                <h4>Total Tokens</h4>
+                <div class="stat-row">
+                    <span class="stat-label">Mean:</span>
+                    <span class="stat-value">1865.050</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Median:</span>
+                    <span class="stat-value">1725.500</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Min:</span>
+                    <span class="stat-value">1398.000</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Max:</span>
+                    <span class="stat-value">3029.000</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Std Dev:</span>
+                    <span class="stat-value">437.626</span>
+                </div>
+            </div>
+        
+            <div class="metric-card">
+                <h4>Avg Prob</h4>
+                <div class="stat-row">
+                    <span class="stat-label">Mean:</span>
+                    <span class="stat-value">0.868</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Median:</span>
+                    <span class="stat-value">0.868</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Min:</span>
+                    <span class="stat-value">0.802</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Max:</span>
+                    <span class="stat-value">0.911</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Std Dev:</span>
+                    <span class="stat-value">0.024</span>
+                </div>
+            </div>
+        
+            <div class="metric-card">
+                <h4>Perplexity</h4>
+                <div class="stat-row">
+                    <span class="stat-label">Mean:</span>
+                    <span class="stat-value">1.153</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Median:</span>
+                    <span class="stat-value">1.152</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Min:</span>
+                    <span class="stat-value">1.098</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Max:</span>
+                    <span class="stat-value">1.246</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Std Dev:</span>
+                    <span class="stat-value">0.033</span>
+                </div>
+            </div>
+        
+            <div class="metric-card">
+                <h4>Total Logprob</h4>
+                <div class="stat-row">
+                    <span class="stat-label">Mean:</span>
+                    <span class="stat-value">-260.863</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Median:</span>
+                    <span class="stat-value">-263.935</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Min:</span>
+                    <span class="stat-value">-405.806</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Max:</span>
+                    <span class="stat-value">-174.112</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Std Dev:</span>
+                    <span class="stat-value">62.297</span>
+                </div>
+            </div>
+        
+        </div>
+    </div>
+    
+    
+    
+    <div class="section">
+        <h2>Code Structure</h2>
+        
+        <div class="plot-container">
+            <img src="plots/code_structure_comparison.png" 
+                 alt="Code Structure Comparison">
+        </div>
+
+        <div class="metrics-grid">
+        
+            <div class="metric-card">
+                <h4>Token Count</h4>
+                <div class="stat-row">
+                    <span class="stat-label">Mean:</span>
+                    <span class="stat-value">1865.050</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Median:</span>
+                    <span class="stat-value">1725.500</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Min:</span>
+                    <span class="stat-value">1398.000</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Max:</span>
+                    <span class="stat-value">3029.000</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Std Dev:</span>
+                    <span class="stat-value">437.626</span>
+                </div>
+            </div>
+        
+            <div class="metric-card">
+                <h4>Function Count</h4>
+                <div class="stat-row">
+                    <span class="stat-label">Mean:</span>
+                    <span class="stat-value">19.500</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Median:</span>
+                    <span class="stat-value">17.500</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Min:</span>
+                    <span class="stat-value">11.000</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Max:</span>
+                    <span class="stat-value">34.000</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Std Dev:</span>
+                    <span class="stat-value">6.091</span>
+                </div>
+            </div>
+        
+            <div class="metric-card">
+                <h4>Class Count</h4>
+                <div class="stat-row">
+                    <span class="stat-label">Mean:</span>
+                    <span class="stat-value">6.550</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Median:</span>
+                    <span class="stat-value">6.000</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Min:</span>
+                    <span class="stat-value">3.000</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Max:</span>
+                    <span class="stat-value">11.000</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Std Dev:</span>
+                    <span class="stat-value">2.837</span>
+                </div>
+            </div>
+        
+            <div class="metric-card">
+                <h4>Num Lines</h4>
+                <div class="stat-row">
+                    <span class="stat-label">Mean:</span>
+                    <span class="stat-value">232.150</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Median:</span>
+                    <span class="stat-value">211.000</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Min:</span>
+                    <span class="stat-value">160.000</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Max:</span>
+                    <span class="stat-value">383.000</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Std Dev:</span>
+                    <span class="stat-value">57.821</span>
+                </div>
+            </div>
+        
+            <div class="metric-card">
+                <h4>Num Nonempty Lines</h4>
+                <div class="stat-row">
+                    <span class="stat-label">Mean:</span>
+                    <span class="stat-value">197.150</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Median:</span>
+                    <span class="stat-value">175.000</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Min:</span>
+                    <span class="stat-value">137.000</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Max:</span>
+                    <span class="stat-value">337.000</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Std Dev:</span>
+                    <span class="stat-value">51.952</span>
+                </div>
+            </div>
+        
+            <div class="metric-card">
+                <h4>Avg Line Len Nonempty Chars</h4>
+                <div class="stat-row">
+                    <span class="stat-label">Mean:</span>
+                    <span class="stat-value">39.855</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Median:</span>
+                    <span class="stat-value">40.079</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Min:</span>
+                    <span class="stat-value">34.301</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Max:</span>
+                    <span class="stat-value">44.181</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Std Dev:</span>
+                    <span class="stat-value">2.792</span>
+                </div>
+            </div>
+        
+            <div class="metric-card">
+                <h4>Avg Tokens Per Nonempty Line</h4>
+                <div class="stat-row">
+                    <span class="stat-label">Mean:</span>
+                    <span class="stat-value">3.583</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Median:</span>
+                    <span class="stat-value">3.551</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Min:</span>
+                    <span class="stat-value">2.812</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Max:</span>
+                    <span class="stat-value">4.274</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Std Dev:</span>
+                    <span class="stat-value">0.378</span>
+                </div>
+            </div>
+        
+            <div class="metric-card">
+                <h4>Ast Depth</h4>
+                <div class="stat-row">
+                    <span class="stat-label">Mean:</span>
+                    <span class="stat-value">12.400</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Median:</span>
+                    <span class="stat-value">12.500</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Min:</span>
+                    <span class="stat-value">9.000</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Max:</span>
+                    <span class="stat-value">17.000</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Std Dev:</span>
+                    <span class="stat-value">1.698</span>
+                </div>
+            </div>
+        
+        </div>
+    </div>
+    
+    
+    
+    <div class="section">
+        <h2>Imports & Dependencies</h2>
+        
+        <div class="plot-container">
+            <img src="plots/imports_and_dependencies_comparison.png" 
+                 alt="Imports & Dependencies Comparison">
+        </div>
+
+        <div class="metrics-grid">
+        
+            <div class="metric-card">
+                <h4>Import Count</h4>
+                <div class="stat-row">
+                    <span class="stat-label">Mean:</span>
+                    <span class="stat-value">7.150</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Median:</span>
+                    <span class="stat-value">6.000</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Min:</span>
+                    <span class="stat-value">4.000</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Max:</span>
+                    <span class="stat-value">17.000</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Std Dev:</span>
+                    <span class="stat-value">3.631</span>
+                </div>
+            </div>
+        
+            <div class="metric-card">
+                <h4>Import Redundancy Ratio</h4>
+                <div class="stat-row">
+                    <span class="stat-label">Mean:</span>
+                    <span class="stat-value">0.077</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Median:</span>
+                    <span class="stat-value">0.000</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Min:</span>
+                    <span class="stat-value">0.000</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Max:</span>
+                    <span class="stat-value">0.353</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Std Dev:</span>
+                    <span class="stat-value">0.128</span>
+                </div>
+            </div>
+        
+        </div>
+    </div>
+    
+    
+    
+    <div class="section">
+        <h2>Code Complexity</h2>
+        
+        <div class="plot-container">
+            <img src="plots/code_complexity_comparison.png" 
+                 alt="Code Complexity Comparison">
+        </div>
+
+        <div class="metrics-grid">
+        
+            <div class="metric-card">
+                <h4>Avg Function Size Lines</h4>
+                <div class="stat-row">
+                    <span class="stat-label">Mean:</span>
+                    <span class="stat-value">8.474</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Median:</span>
+                    <span class="stat-value">6.894</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Min:</span>
+                    <span class="stat-value">3.882</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Max:</span>
+                    <span class="stat-value">18.214</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Std Dev:</span>
+                    <span class="stat-value">4.228</span>
+                </div>
+            </div>
+        
+            <div class="metric-card">
+                <h4>Avg Cyclomatic Complexity</h4>
+                <div class="stat-row">
+                    <span class="stat-label">Mean:</span>
+                    <span class="stat-value">1.795</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Median:</span>
+                    <span class="stat-value">1.760</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Min:</span>
+                    <span class="stat-value">1.100</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Max:</span>
+                    <span class="stat-value">2.600</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Std Dev:</span>
+                    <span class="stat-value">0.379</span>
+                </div>
+            </div>
+        
+            <div class="metric-card">
+                <h4>Max Cyclomatic Complexity</h4>
+                <div class="stat-row">
+                    <span class="stat-label">Mean:</span>
+                    <span class="stat-value">4.200</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Median:</span>
+                    <span class="stat-value">4.000</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Min:</span>
+                    <span class="stat-value">2.000</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Max:</span>
+                    <span class="stat-value">7.000</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Std Dev:</span>
+                    <span class="stat-value">1.436</span>
+                </div>
+            </div>
+        
+            <div class="metric-card">
+                <h4>Module Cyclomatic Complexity</h4>
+                <div class="stat-row">
+                    <span class="stat-label">Mean:</span>
+                    <span class="stat-value">42.450</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Median:</span>
+                    <span class="stat-value">40.500</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Min:</span>
+                    <span class="stat-value">22.000</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Max:</span>
+                    <span class="stat-value">73.000</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Std Dev:</span>
+                    <span class="stat-value">13.320</span>
+                </div>
+            </div>
+        
+        </div>
+    </div>
+    
+    
+    
+    <div class="section">
+        <h2>Code Quality</h2>
+        
+        <div class="plot-container">
+            <img src="plots/code_quality_comparison.png" 
+                 alt="Code Quality Comparison">
+        </div>
+
+        <div class="metrics-grid">
+        
+            <div class="metric-card">
+                <h4>Comment Density Percent</h4>
+                <div class="stat-row">
+                    <span class="stat-label">Mean:</span>
+                    <span class="stat-value">10.910</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Median:</span>
+                    <span class="stat-value">11.327</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Min:</span>
+                    <span class="stat-value">3.256</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Max:</span>
+                    <span class="stat-value">22.989</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Std Dev:</span>
+                    <span class="stat-value">4.911</span>
+                </div>
+            </div>
+        
+            <div class="metric-card">
+                <h4>Syntax Valid</h4>
+                <div class="stat-row">
+                    <span class="stat-label">Mean:</span>
+                    <span class="stat-value">1.000</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Median:</span>
+                    <span class="stat-value">1.000</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Min:</span>
+                    <span class="stat-value">1.000</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Max:</span>
+                    <span class="stat-value">1.000</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Std Dev:</span>
+                    <span class="stat-value">0.000</span>
+                </div>
+            </div>
+        
+            <div class="metric-card">
+                <h4>Flake8 Error Count</h4>
+                <div class="stat-row">
+                    <span class="stat-label">Mean:</span>
+                    <span class="stat-value">32.850</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Median:</span>
+                    <span class="stat-value">32.500</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Min:</span>
+                    <span class="stat-value">10.000</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Max:</span>
+                    <span class="stat-value">63.000</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Std Dev:</span>
+                    <span class="stat-value">13.797</span>
+                </div>
+            </div>
+        
+            <div class="metric-card">
+                <h4>Mypy Error Count</h4>
+                <div class="stat-row">
+                    <span class="stat-label">Mean:</span>
+                    <span class="stat-value">3.800</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Median:</span>
+                    <span class="stat-value">1.000</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Min:</span>
+                    <span class="stat-value">0.000</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Max:</span>
+                    <span class="stat-value">25.000</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Std Dev:</span>
+                    <span class="stat-value">6.654</span>
+                </div>
+            </div>
+        
+            <div class="metric-card">
+                <h4>Semantic Quality Score</h4>
+                <div class="stat-row">
+                    <span class="stat-label">Mean:</span>
+                    <span class="stat-value">81.425</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Median:</span>
+                    <span class="stat-value">81.000</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Min:</span>
+                    <span class="stat-value">60.000</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Max:</span>
+                    <span class="stat-value">94.000</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Std Dev:</span>
+                    <span class="stat-value">9.186</span>
+                </div>
+            </div>
+        
+        </div>
+    </div>
+    
+    
+    
+    <div class="section">
+        <h2>Execution</h2>
+        
+        <div class="plot-container">
+            <img src="plots/execution_comparison.png" 
+                 alt="Execution Comparison">
+        </div>
+
+        <div class="metrics-grid">
+        
+            <div class="metric-card">
+                <h4>Execution Success</h4>
+                <div class="stat-row">
+                    <span class="stat-label">Mean:</span>
+                    <span class="stat-value">0.550</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Median:</span>
+                    <span class="stat-value">1.000</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Min:</span>
+                    <span class="stat-value">0.000</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Max:</span>
+                    <span class="stat-value">1.000</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Std Dev:</span>
+                    <span class="stat-value">0.510</span>
+                </div>
+            </div>
+        
+            <div class="metric-card">
+                <h4>Execution Time Sec</h4>
+                <div class="stat-row">
+                    <span class="stat-label">Mean:</span>
+                    <span class="stat-value">1.198</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Median:</span>
+                    <span class="stat-value">1.005</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Min:</span>
+                    <span class="stat-value">0.568</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Max:</span>
+                    <span class="stat-value">5.000</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Std Dev:</span>
+                    <span class="stat-value">0.908</span>
+                </div>
+            </div>
+        
+        </div>
+    </div>
+    
+    
+    
+    
+
+    <!-- All Runs Table -->
+    <div class="section">
+        <h2>📋 All Runs Summary</h2>
+        <div style="overflow-x: auto;">
+            <table>
+                <tr>
+                    <th>Run</th>
+                    <th>Timestamp</th>
+                    <th>Credibility</th>
+                    <th>Perplexity</th>
+                    <th>Quality</th>
+                    <th>Functions</th>
+                    <th>Classes</th>
+                    <th>Lines</th>
+                    <th>Complexity</th>
+                    <th>Syntax</th>
+                    <th>Executed</th>
+                </tr>
+                
+                <tr>
+                    <td><a href="../report_1/report.html">1</a></td>
+                    <td style="font-size: 12px;">2025-10-11 21:17:39</td>
+                    <td><strong>51.0</strong></td>
+                    <td>1.16</td>
+                    <td>87.5</td>
+                    <td>19</td>
+                    <td>6</td>
+                    <td>262</td>
+                    <td>2.5</td>
+                    <td>✓</td>
+                    <td>✗</td>
+                </tr>
+                
+                <tr>
+                    <td><a href="../report_2/report.html">2</a></td>
+                    <td style="font-size: 12px;">2025-10-11 21:21:34</td>
+                    <td><strong>82.5</strong></td>
+                    <td>1.16</td>
+                    <td>90.0</td>
+                    <td>25</td>
+                    <td>9</td>
+                    <td>213</td>
+                    <td>1.4</td>
+                    <td>✓</td>
+                    <td>✓</td>
+                </tr>
+                
+                <tr>
+                    <td><a href="../report_3/report.html">3</a></td>
+                    <td style="font-size: 12px;">2025-10-11 21:23:36</td>
+                    <td><strong>38.0</strong></td>
+                    <td>1.13</td>
+                    <td>68.0</td>
+                    <td>17</td>
+                    <td>4</td>
+                    <td>383</td>
+                    <td>2.6</td>
+                    <td>✓</td>
+                    <td>✗</td>
+                </tr>
+                
+                <tr>
+                    <td><a href="../report_4/report.html">4</a></td>
+                    <td style="font-size: 12px;">2025-10-11 21:25:19</td>
+                    <td><strong>81.9</strong></td>
+                    <td>1.13</td>
+                    <td>85.5</td>
+                    <td>11</td>
+                    <td>6</td>
+                    <td>199</td>
+                    <td>1.6</td>
+                    <td>✓</td>
+                    <td>✓</td>
+                </tr>
+                
+                <tr>
+                    <td><a href="../report_5/report.html">5</a></td>
+                    <td style="font-size: 12px;">2025-10-11 21:27:11</td>
+                    <td><strong>83.5</strong></td>
+                    <td>1.15</td>
+                    <td>86.5</td>
+                    <td>16</td>
+                    <td>8</td>
+                    <td>170</td>
+                    <td>1.7</td>
+                    <td>✓</td>
+                    <td>✓</td>
+                </tr>
+                
+                <tr>
+                    <td><a href="../report_6/report.html">6</a></td>
+                    <td style="font-size: 12px;">2025-10-12 11:56:50</td>
+                    <td><strong>87.4</strong></td>
+                    <td>1.15</td>
+                    <td>94.0</td>
+                    <td>22</td>
+                    <td>4</td>
+                    <td>197</td>
+                    <td>1.7</td>
+                    <td>✓</td>
+                    <td>✓</td>
+                </tr>
+                
+                <tr>
+                    <td><a href="../report_7/report.html">7</a></td>
+                    <td style="font-size: 12px;">2025-10-12 12:00:59</td>
+                    <td><strong>79.0</strong></td>
+                    <td>1.19</td>
+                    <td>80.0</td>
+                    <td>34</td>
+                    <td>11</td>
+                    <td>209</td>
+                    <td>1.9</td>
+                    <td>✓</td>
+                    <td>✓</td>
+                </tr>
+                
+                <tr>
+                    <td><a href="../report_8/report.html">8</a></td>
+                    <td style="font-size: 12px;">2025-10-12 12:02:49</td>
+                    <td><strong>78.1</strong></td>
+                    <td>1.15</td>
+                    <td>80.5</td>
+                    <td>31</td>
+                    <td>11</td>
+                    <td>235</td>
+                    <td>2.1</td>
+                    <td>✓</td>
+                    <td>✓</td>
+                </tr>
+                
+                <tr>
+                    <td><a href="../report_9/report.html">9</a></td>
+                    <td style="font-size: 12px;">2025-10-12 12:04:08</td>
+                    <td><strong>44.6</strong></td>
+                    <td>1.10</td>
+                    <td>78.5</td>
+                    <td>15</td>
+                    <td>3</td>
+                    <td>249</td>
+                    <td>1.9</td>
+                    <td>✓</td>
+                    <td>✗</td>
+                </tr>
+                
+                <tr>
+                    <td><a href="../report_10/report.html">10</a></td>
+                    <td style="font-size: 12px;">2025-10-12 12:05:36</td>
+                    <td><strong>81.5</strong></td>
+                    <td>1.11</td>
+                    <td>83.0</td>
+                    <td>17</td>
+                    <td>11</td>
+                    <td>207</td>
+                    <td>1.8</td>
+                    <td>✓</td>
+                    <td>✓</td>
+                </tr>
+                
+                <tr>
+                    <td><a href="../report_11/report.html">11</a></td>
+                    <td style="font-size: 12px;">2025-10-12 12:10:14</td>
+                    <td><strong>47.6</strong></td>
+                    <td>1.19</td>
+                    <td>80.0</td>
+                    <td>18</td>
+                    <td>3</td>
+                    <td>225</td>
+                    <td>1.7</td>
+                    <td>✓</td>
+                    <td>✗</td>
+                </tr>
+                
+                <tr>
+                    <td><a href="../report_12/report.html">12</a></td>
+                    <td style="font-size: 12px;">2025-10-12 12:12:17</td>
+                    <td><strong>33.7</strong></td>
+                    <td>1.16</td>
+                    <td>63.0</td>
+                    <td>14</td>
+                    <td>5</td>
+                    <td>321</td>
+                    <td>2.4</td>
+                    <td>✓</td>
+                    <td>✗</td>
+                </tr>
+                
+                <tr>
+                    <td><a href="../report_13/report.html">13</a></td>
+                    <td style="font-size: 12px;">2025-10-12 12:14:23</td>
+                    <td><strong>35.8</strong></td>
+                    <td>1.11</td>
+                    <td>60.0</td>
+                    <td>21</td>
+                    <td>7</td>
+                    <td>273</td>
+                    <td>1.4</td>
+                    <td>✓</td>
+                    <td>✗</td>
+                </tr>
+                
+                <tr>
+                    <td><a href="../report_14/report.html">14</a></td>
+                    <td style="font-size: 12px;">2025-10-12 12:15:34</td>
+                    <td><strong>83.1</strong></td>
+                    <td>1.25</td>
+                    <td>88.0</td>
+                    <td>17</td>
+                    <td>3</td>
+                    <td>167</td>
+                    <td>1.1</td>
+                    <td>✓</td>
+                    <td>✓</td>
+                </tr>
+                
+                <tr>
+                    <td><a href="../report_15/report.html">15</a></td>
+                    <td style="font-size: 12px;">2025-10-12 12:17:19</td>
+                    <td><strong>86.6</strong></td>
+                    <td>1.18</td>
+                    <td>90.5</td>
+                    <td>22</td>
+                    <td>10</td>
+                    <td>208</td>
+                    <td>1.3</td>
+                    <td>✓</td>
+                    <td>✓</td>
+                </tr>
+                
+                <tr>
+                    <td><a href="../report_16/report.html">16</a></td>
+                    <td style="font-size: 12px;">2025-10-12 12:19:00</td>
+                    <td><strong>48.3</strong></td>
+                    <td>1.17</td>
+                    <td>80.0</td>
+                    <td>12</td>
+                    <td>4</td>
+                    <td>207</td>
+                    <td>1.9</td>
+                    <td>✓</td>
+                    <td>✗</td>
+                </tr>
+                
+                <tr>
+                    <td><a href="../report_17/report.html">17</a></td>
+                    <td style="font-size: 12px;">2025-10-12 12:20:31</td>
+                    <td><strong>79.8</strong></td>
+                    <td>1.16</td>
+                    <td>81.5</td>
+                    <td>22</td>
+                    <td>6</td>
+                    <td>190</td>
+                    <td>1.8</td>
+                    <td>✓</td>
+                    <td>✓</td>
+                </tr>
+                
+                <tr>
+                    <td><a href="../report_18/report.html">18</a></td>
+                    <td style="font-size: 12px;">2025-10-12 12:21:44</td>
+                    <td><strong>87.5</strong></td>
+                    <td>1.15</td>
+                    <td>94.0</td>
+                    <td>16</td>
+                    <td>9</td>
+                    <td>160</td>
+                    <td>1.6</td>
+                    <td>✓</td>
+                    <td>✓</td>
+                </tr>
+                
+                <tr>
+                    <td><a href="../report_19/report.html">19</a></td>
+                    <td style="font-size: 12px;">2025-10-12 12:23:18</td>
+                    <td><strong>48.1</strong></td>
+                    <td>1.15</td>
+                    <td>79.0</td>
+                    <td>27</td>
+                    <td>7</td>
+                    <td>237</td>
+                    <td>1.9</td>
+                    <td>✓</td>
+                    <td>✗</td>
+                </tr>
+                
+                <tr>
+                    <td><a href="../report_20/report.html">20</a></td>
+                    <td style="font-size: 12px;">2025-10-12 12:25:12</td>
+                    <td><strong>44.7</strong></td>
+                    <td>1.12</td>
+                    <td>79.0</td>
+                    <td>14</td>
+                    <td>4</td>
+                    <td>331</td>
+                    <td>1.9</td>
+                    <td>✓</td>
+                    <td>✗</td>
+                </tr>
+                
+            </table>
+        </div>
+    </div>
+
+    <div style="text-align: center; padding: 20px; color: #666; font-size: 14px;">
+        <p>Generated by Model Comparison Tool</p>
+    </div>
+</body>
+</html>

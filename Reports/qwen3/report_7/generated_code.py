@@ -1,315 +1,333 @@
-# Note: This is a partial implementation as the full requirements would span an entire project structure
-# This example provides core implementations for several key user stories
-
 import logging
 from datetime import datetime
-from typing import List, Dict, Optional
-from dataclasses import dataclass, field
-from enum import Enum
+from typing import List, Dict, Any
 import hashlib
 
-# Setup basic logging configuration
-logging.basicConfig(level=logging.INFO)
-logger = logging.getLogger(__name__)
+class LoggerService:
+    def __init__(self):
+        self.logger = logging.getLogger('broker_app')
+        handler = logging.StreamHandler()
+        formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+        handler.setFormatter(formatter)
+        self.logger.addHandler(handler)
+        self.logger.setLevel(logging.INFO)
 
-class SubmissionStatus(Enum):
-    DRAFT = "draft"
-    VALIDATING = "validating"
-    VALIDATED = "validated"
-    PUBLISHING = "publishing"
-    PUBLISHED = "published"
-    ERROR = "error"
+    def log_info(self, message: str):
+        self.logger.info(message)
 
-@dataclass
-class Submission:
-    submission_id: str
-    status: SubmissionStatus
-    file_path: str
-    created_by: str
-    created_at: datetime
-    updated_at: datetime
-    validation_results: List[Dict] = field(default_factory=list)
-    publish_status: Optional[str] = None
-    
-    def set_publish_status(self, status: str):
-        """Update publish status and track changes"""
-        old_status = self.publish_status
-        self.publish_status = status
-        logger.info(f"Submission {self.submission_id} publish status changed from {old_status} to {status}")
+    def log_error(self, message: str):
+        self.logger.error(message)
 
-@dataclass
-class User:
-    user_id: str
-    name: str
-    role: str
-    permissions: List[str]
-    last_login: Optional[datetime] = None
+    def log_debug(self, message: str):
+        self.logger.debug(message)
 
 class FABSSubmissionManager:
     def __init__(self):
-        self.submissions: Dict[str, Submission] = {}
-        self.users: Dict[str, User] = {}
-
-    def create_submission(self, submission_id: str, file_path: str, created_by: str) -> Submission:
-        """Create new FABS submission"""
-        creation_time = datetime.now()
-        submission = Submission(
-            submission_id=submission_id,
-            status=SubmissionStatus.DRAFT,
-            file_path=file_path,
-            created_by=created_by,
-            created_at=creation_time,
-            updated_at=creation_time
-        )
-        self.submissions[submission_id] = submission
-        logger.info(f"Created FABS submission {submission_id}")
-        return submission
-
-    def process_deletions_2017_12_19(self):
-        """Process deletions from 2017-12-19"""
-        logger.info("Processing 2017-12-19 deletions...")
-        # Would implement actual deletion logic
-        logger.info("Deletions processed successfully")
-
-    def generate_d_file(self, submission_ids: List[str]) -> str:
-        """Generate D File based on submissions"""
-        # Mock D File generation logic
-        d_file_id = f"d_file_{hashlib.md5(str(sorted(submission_ids)).encode()).hexdigest()[:8]}"
-        logger.info(f"Generated D file {d_file_id} for submissions {submission_ids}")
-        return d_file_id
-
-    def verify_gtas_window_data(self):
-        """Check GTAS window data in database"""
-        logger.info("Verifying GTAS window data")
-        # Would check if site should be locked during GTAS period
-        return True
-
-    def cache_d_file_generation_request(self, submission_ids: List[str]) -> str:
-        """Cache D File generation request"""
-        request_hash = hashlib.md5(str(sorted(submission_ids)).encode()).hexdigest()
-        logger.info(f"Cached D file generation request: {request_hash}")
-        return f"D_FILE_CACHE_{request_hash[:16]}"
-
-    def validate_fabs_submission(self, submission_id: str) -> bool:
-        """Validate a FABS submission"""
-        submission = self.submissions.get(submission_id)
-        if not submission:
-            logger.error(f"Submission {submission_id} not found")
-            return False
-            
-        submission.status = SubmissionStatus.VALIDATING
-        logger.info(f"Validating submission {submission_id}")
-        # Mock validation logic
-        submission.status = SubmissionStatus.VALIDATED
-        
-        # Add some dummy validation results
-        submission.validation_results = [
-            {"field": "LegalEntityAddressLine1", "error": "Required field missing"},
-            {"field": "PPoPZIP+4", "error": "Format invalid"},
-        ]
-        logger.info(f"Validated submission {submission_id}")
-        return True
-
-    def submit_for_publishing(self, submission_id: str) -> bool:
-        """Submit for publishing"""
-        submission = self.submissions.get(submission_id)
-        if not submission:
-            logger.error(f"Submission {submission_id} not found")
-            return False
-            
-        if submission.status != SubmissionStatus.VALIDATED:
-            logger.error(f"Cannot publish submission {submission_id} - not validated")
-            return False
-            
-        submission.status = SubmissionStatus.PUBLISHING
-        submission.set_publish_status("Published")
-        submission.status = SubmissionStatus.PUBLISHED
-        logger.info(f"Published submission {submission_id}")
-        return True
-
-    def get_submission_dashboard_info(self, user_id: str) -> Dict:
-        """Get submission dashboard info for user"""
-        user = self.users.get(user_id)
-        if not user:
-            return {}
-            
-        return {
-            "user": user.name,
-            "submissions": [s for s in self.submissions.values() if s.created_by == user_id],
-            "total_submissions": len([s for s in self.submissions.values() if s.created_by == user_id]),
-            "recent_activity": [
-                {"timestamp": s.updated_at, "action": f"Updated {s.submission_id}"}
-                for s in list(self.submissions.values())[-5:]
-            ]
-        }
-
-class ValidationRuleManager:
-    """Manages FABS validation rules"""
+        self.submissions = {}
+        self.logger_service = LoggerService()
     
+    def process_deletions_2017_12_19(self):
+        self.logger_service.log_info("Processing 12-19-2017 deletions")
+        # Simulating deletion processing
+        return {"status": "processed", "date": "2017-12-19"}
+    
+    def modify_fabs_submission_on_publish_status_change(
+        self, submission_id: str, old_status: str, new_status: str
+    ):
+        self.logger_service.log_info(f"Updating FABS submission {submission_id} status from {old_status} to {new_status}")
+        # Update database logic here
+        return {"updated": True, "submission_id": submission_id, "new_status": new_status}
+    
+    def prevent_double_publish(self, submission_id: str) -> bool:
+        if submission_id in self.submissions:
+            if self.submissions[submission_id]["publish_status"] == "published":
+                self.logger_service.log_error("Submission already published - prevented double publish")
+                return False
+        return True
+    
+    def update_sample_file_remove_funding_agency_code(self):
+        self.logger_service.log_info("Updating FABS sample file to remove FundingAgencyCode")
+        return {"status": "updated"}
+
+class ValidationRuleTable:
     def __init__(self):
         self.rules = {}
-        
-    def update_rules_from_db_2213(self):
-        """Update rules from DB-2213"""
-        logger.info("Updating validation rules from DB-2213")
-        # Mock rule update logic
-        self.rules["CFDA_0"] = "CFDA Code must be valid"
-        self.rules["LegalEntity_0"] = "Legal entity address is required"
-        logger.info("Validation rules updated successfully")
-
-    def update_sample_file(self):
-        """Remove FundingAgencyCode from sample file"""
-        logger.info("Updating FABS sample file to remove FundingAgencyCode")
-        # Mock operation
-        logger.info("Sample file updated")
-
-class DataExporter:
-    """Handles data exports"""
+        self.logger_service = LoggerService()
     
-    def export_published_fabs_files(self):
-        """Export published FABS files"""
-        logger.info("Exporting published FABS files")
-        # Mock export operation
-        return ["file1.csv", "file2.json", "file3.xml"]
-    
-    def access_raw_agency_files(self, agency_name: str) -> List[str]:
-        """Access raw agency published files"""
-        logger.info(f"Accessing raw agency files for {agency_name}")
-        # Mock operation returns available files
-        return [f"{agency_name}_award_{i}.csv" for i in range(1, 4)]
-
-class UserTestingCoordinator:
-    """Coordinates user testing activities"""
-    
-    def schedule_user_testing(self, date_str: str, participants: List[str]):
-        """Schedule user testing"""
-        logger.info(f"Scheduling user testing on {date_str} for {participants}")
-        
-    def track_tech_thursday_issues(self, issues: List[str]):
-        """Track tech thursday issues"""
-        logger.info(f"Tracking {len(issues)} issues from Tech Thursday")
-        
-    def begin_user_testing(self):
-        """Begin user testing phase"""
-        logger.info("Starting user testing phase")
-        
-    def generate_ui_summary(self) -> Dict:
-        """Generate UI improvement summary"""
-        return {
-            "improvements": [
-                "Redesign Resources page",
-                "Update Help page layouts",
-                "Enhance Homepage design",
-                "Improve accessibility features"
-            ],
-            "timeline": "Q2 2024",
-            "priority": "High"
+    def update_validation_rules_for_db2213(self):
+        self.logger_service.log_info("Updating validation rules for DB-2213")
+        self.rules = {
+            "rule_1": "Updated rule for DB-2213",
+            "rule_2": "Another updated rule"
         }
+        return {"status": "updated"}
 
-class HomePageManager:
-    """Manage homepage updates"""
+class GTASWindowData:
+    def __init__(self):
+        self.gtas_data = []
+        self.logger_service = LoggerService()
     
-    def apply_round_two_edits(self):
-        """Apply second round of homepage edits"""
-        logger.info("Applying homepage round 2 edits")
+    def add_gtas_window_data(self, start_date: str, end_date: str, description: str):
+        self.gtas_data.append({
+            "start_date": start_date,
+            "end_date": end_date,
+            "description": description
+        })
+        self.logger_service.log_info(f"Added GTAS window data for period {start_date} to {end_date}")
+        return {"status": "added", "data": self.gtas_data[-1]}
+
+class DFilesGenerationManager:
+    def __init__(self):
+        self.cache = {}
+        self.logger_service = LoggerService()
+    
+    def manage_d_files_generation_requests(self, request_signature: str):
+        cached_result = self.cache.get(request_signature)
+        if cached_result:
+            self.logger_service.log_debug(f"Duplicates detected for request: {request_signature}")
+            return cached_result
         
-    def apply_round_three_help_edits(self):
-        """Apply third round of help page edits"""
-        logger.info("Applying help page round 3 edits")
+        # Simulate processing
+        result = {
+            "generated_at": datetime.now().isoformat(),
+            "signature": request_signature,
+            "status": "completed"
+        }
+        
+        self.cache[request_signature] = result
+        self.logger_service.log_debug(f"Generated D files for request signature: {request_signature}")
+        return result
 
-class BrokerDataManager:
-    """Handle broker data operations"""
+class FlexFieldsManager:
+    def __init__(self):
+        self.flexfield_max_count = 50  # Limit of flexfields allowed
+        self.logger_service = LoggerService()
     
-    def sync_d1_with_fpds(self) -> bool:
-        """Sync D1 file generation with FPDS data"""
-        logger.info("Syncing D1 with FPDS data...")
-        # Would check if data has updated since last generation
+    def add_flex_fields(self, fields: List[str]) -> bool:
+        if len(fields) > self.flexfield_max_count:
+            self.logger_service.log_error("Exceeded max allowable flexfields")
+            return False
+        
+        self.logger_service.log_info(f"Adding {len(fields)} flexfields")
         return True
 
-    def derive_ppop_fields(self, ppop_code: str) -> Dict[str, str]:
-        """Derive PPoP fields including zip+4 handling"""
-        logger.info(f"Deriving PPoP fields for {ppop_code}")
-        return {
-            "zip_plus_four": ppop_code[5:] if len(ppop_code) > 5 else "",
-            "state_code": ppop_code[:2],
-            "congressional_district": "00" if len(ppop_code) < 5 else ppop_code[2:4]
+class SubmissionErrorManager:
+    def __init__(self):
+        self.logger_service = LoggerService()
+    
+    def submit_errors_to_be_more_helpful(self, submission_id: str, error_details: Dict[str, Any]):
+        self.logger_service.log_info(f"Updating file-level errors for submission {submission_id}")
+        return {"error_message": "Please review the uploaded file for incorrect extension", "fixed": True}
+
+class HistoricalLoader:
+    def __init__(self):
+        self.logger_service = LoggerService()
+    
+    def load_historical_fabs_data(self):
+        self.logger_service.log_info("Loading historical FABS data")
+        return {"status": "loaded", "source": "historical"}
+
+    def load_historical_fpds_data(self, include_feed: bool = True):
+        self.logger_service.log_info("Loading historical FPDS data")
+        if include_feed:
+            self.logger_service.log_info("Including FPDS feed data")
+        return {"status": "loaded", "with_feed": include_feed}
+
+class FABSValidationRules:
+    def __init__(self):
+        self.logger_service = LoggerService()
+    
+    def set_zero_and_blank_acceptance(self, record_type: str):
+        self.logger_service.log_info(f"Setting zero and blank acceptance for {record_type} records")
+        return {"status": "configured", "type": record_type}
+
+class UIComponentManager:
+    def __init__(self):
+        self.resources_page_design = "Broker_v1"
+        self.help_page_edits_round = 1
+        self.homepage_edits_round = 1
+        self.logger_service = LoggerService()
+    
+    def redesign_resources_page(self, new_style: str):
+        self.resources_page_design = new_style
+        self.logger_service.log_info(f"Resources page redesigned with {new_style}")
+        return {"status": "redesigned", "new_style": new_style}
+    
+    def advance_edits_round(self, component: str):
+        if component == "help":
+            self.help_page_edits_round += 1
+            return {"round": self.help_page_edits_round}
+        elif component == "homepage":
+            self.homepage_edits_round += 1
+            return {"round": self.homepage_edits_round}
+        return {"error": "Invalid component"}
+
+class UserTestingManager:
+    def __init__(self):
+        self.user_testing_summary = ""
+        self.logger_service = LoggerService()
+    
+    def conduct_user_testing_round_1(self):
+        self.logger_service.log_info("Beginning user testing round 1")
+        return {"status": "started", "round": 1}
+    
+    def schedule_user_testing(self, date: str):
+        self.logger_service.log_info(f"Scheduling user testing for {date}")
+        return {"scheduled": True, "date": date}
+    
+    def generate_ui_sme_report(self):
+        self.user_testing_summary = "UI SME completed analysis with suggestions for improvements"
+        self.logger_service.log_info("Generated UI SME report")
+        return {"report": self.user_testing_summary}
+
+class TestEnvironmentAccess:
+    def __init__(self):
+        self.environments = ["Staging", "Production", "DEV"]
+        self.logger_service = LoggerService()
+    
+    def access_test_features(self, env_name: str):
+        if env_name in self.environments:
+            self.logger_service.log_info(f"Accessed test features in {env_name}")
+            return {"access_granted": True, "environment": env_name}
+        else:
+            self.logger_service.log_error(f"Environment {env_name} not valid for testing")
+            return {"access_granted": False}
+
+class DataLoader:
+    def __init__(self):
+        self.fabs_records = []
+        self.fpds_records = []
+        self.logger_service = LoggerService()
+    
+    def load_fabs_records(self):
+        self.logger_service.log_info("Loading FABS records")
+        return {"status": "loaded", "count": len(self.fabs_records)}
+    
+    def load_fpds_records(self):
+        self.logger_service.log_info("Loading FPDS records with historical data")
+        return {"status": "loaded", "count": len(self.fpds_records)}
+
+class SubmissionDashboard:
+    def __init__(self):
+        self.submission_history = []
+        self.logger_service = LoggerService()
+    
+    def display_submission_status(self, submission_id: str):
+        self.logger_service.log_info(f"Displaying submission status for {submission_id}")
+        status_labels = {
+            "submitted": "Submitted",
+            "validating": "Validating", 
+            "published": "Published"
         }
+        return {"status": "displayed", "labels": status_labels}
 
-class DomainModelIndexer:
-    """Ensure domain models are indexed properly"""
+class FABSFileDownloader:
+    def __init__(self):
+        self.logger_service = LoggerService()
     
-    def index_models(self, model_names: List[str]):
-        """Reindex domain model entities"""
-        logger.info(f"Indexing domain models: {model_names}")
-        # Simulate indexing operation
-        for model in model_names:
-            logger.debug(f"Indexed {model}")
+    def download_uploaded_file(self, submission_id: str):
+        self.logger_service.log_info(f"Downloading file for submission {submission_id}")
+        return {"file_downloaded": True, "submission": submission_id}
+    
+    def download_raw_agency_published_files(self):
+        self.logger_service.log_info("Downloading raw agency published files")
+        return {"downloaded": True, "count": 5}
 
-# Sample usage demonstrating functionality
+class FABSFileValidator:
+    def __init__(self):
+        self.logger_service = LoggerService()
+    
+    def validate_fabs_file(self, file_path: str, schema_version: str = "v1.1"):
+        self.logger_service.log_info(f"Validating FABS file at {file_path} with schema {schema_version}")
+        
+        if schema_version == "v1.1":
+            return {"valid": True, "issues": [], "version": schema_version}
+        else:
+            return {"valid": False, "issues": ["Incorrect schema version"], "version": schema_version}
+
+# Entry point to demonstrate functionality
 def main():
-    """Demonstrate core functionality"""
+    logger_service = LoggerService()
     
-    # Initialize systems
-    fabs_manager = FABSSubmissionManager()
-    validator = ValidationRuleManager()
-    exporter = DataExporter()
-    testing_coord = UserTestingCoordinator()
-    homepage_mgr = HomePageManager()
-    broker_data = BrokerDataManager()
-    indexer = DomainModelIndexer()
+    # Create instances
+    fabs_mgr = FABSSubmissionManager()
+    validation_rule_table = ValidationRuleTable()
+    gtas_data = GTASWindowData()
+    dfiles_mgr = DFilesGenerationManager()
+    flex_mgr = FlexFieldsManager()
+    error_mgr = SubmissionErrorManager()
+    historical_loader = HistoricalLoader()
+    fabs_rules = FABSValidationRules()
+    ui_mgr = UIComponentManager()
+    user_test_mgr = UserTestingManager()
+    test_env_access = TestEnvironmentAccess()
+    data_loader = DataLoader()
+    dashboard = SubmissionDashboard()
+    file_downloader = FABSFileDownloader()
+    validator = FABSFileValidator()
     
-    # Create submission
-    submission = fabs_manager.create_submission(
-        submission_id="SUB001",
-        file_path="/path/to/fabs_file.csv",
-        created_by="agency_user"
-    )
+    # Demonstrate core functionality
+    logger_service.log_info("Running demonstrations...")
     
-    # Process required deletion
-    fabs_manager.process_deletions_2017_12_19()
+    # Process deletions
+    print(fabs_mgr.process_deletions_2017_12_19())
     
-    # Validate submission
-    fabs_manager.validate_fabs_submission("SUB001")
+    # Modify FABS submission on status change
+    print(fabs_mgr.modify_fabs_submission_on_publish_status_change("sub123", "submitted", "validated"))
     
-    # Publish submission
-    fabs_manager.submit_for_publishing("SUB001")
+    # Prevent double publish
+    print(fabs_mgr.prevent_double_publish("sub123"))
     
     # Update validation rules
-    validator.update_rules_from_db_2213()
+    print(validation_rule_table.update_validation_rules_for_db2213())
     
-    # Verify GTAS data
-    fabs_manager.verify_gtas_window_data()
+    # Add GTAS data
+    print(gtas_data.add_gtas_window_data("2023-01-01", "2023-01-15", "GTAS Window for Q1"))
     
-    # Export FABS files
-    exported_files = exporter.export_published_fabs_files()
-    print(f"Exported files: {exported_files}")
+    # Manage D files generations
+    sig = hashlib.md5(b"dfile_request_01").hexdigest()
+    print(dfiles_mgr.manage_d_files_generation_requests(sig))
     
-    # Access raw agency files
-    agency_files = exporter.access_raw_agency_files("Department of Defense")
-    print(f"Agency files: {agency_files}")
+    # Handle flexfields
+    print(flex_mgr.add_flex_fields(["flex1", "flex2"]))
     
-    # Sync D1 with FPDS
-    broker_data.sync_d1_with_fpds()
+    # Update errors for submissions
+    print(error_mgr.submit_errors_to_be_more_helpful("sub123", {"code": "INVALID_EXTENSION"}))
     
-    # Generate D file
-    d_file_id = fabs_manager.generate_d_file(["SUB001"])
-    print(f"Generated D file: {d_file_id}")
+    # Load historical data
+    print(historical_loader.load_historical_fabs_data())
+    print(historical_loader.load_historical_fpds_data())
     
-    # Handle PPoP field derivation
-    ppop_fields = broker_data.derive_ppop_fields("0123456789")
-    print(f"Derived PPoP fields: {ppop_fields}")
+    # Set validation rules
+    print(fabs_rules.set_zero_and_blank_acceptance("loan"))
     
-    # Schedule user testing
-    testing_coord.schedule_user_testing("2024-01-15", ["User1", "User2"])
+    # Redesign UI
+    print(ui_mgr.redesign_resources_page("modern_broker_design"))
     
-    # Begin user testing
-    testing_coord.begin_user_testing()
+    # Advance to next edit round
+    print(ui_mgr.advance_edits_round("help"))
     
-    # Apply homepage edits
-    homepage_mgr.apply_round_two_edits()
+    # Conduct user testing
+    print(user_test_mgr.conduct_user_testing_round_1())
     
-    # Index domain models
-    indexer.index_models(["Submission", "Award", "Validation"])
+    # Schedule testing
+    print(user_test_mgr.schedule_user_testing("2023-05-15"))
+    
+    # Access test environments
+    print(test_env_access.access_test_features("DEV"))
+    
+    # Load data
+    print(data_loader.load_fabs_records())
+    
+    # Display status
+    print(dashboard.display_submission_status("sub123"))
+    
+    # Download files
+    print(file_downloader.download_uploaded_file("sub123"))
+    print(file_downloader.download_raw_agency_published_files())
+    
+    # Validate files with schema
+    print(validator.validate_fabs_file("/path/to/fabs.csv", "v1.1"))
 
 if __name__ == "__main__":
     main()

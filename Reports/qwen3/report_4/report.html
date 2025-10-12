@@ -66,11 +66,11 @@
         font-size: 13px;
       }
       .runtime-output pre {
-        white-space: pre-wrap; /* Since CSS 2.1 */
-        white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
-        white-space: -pre-wrap; /* Opera 4-6 */
-        white-space: -o-pre-wrap; /* Opera 7 */
-        word-wrap: break-word; /* Internet Explorer 5.5+ */
+        white-space: pre-wrap;
+        white-space: -moz-pre-wrap;
+        white-space: -pre-wrap;
+        white-space: -o-pre-wrap;
+        word-wrap: break-word;
       }
       .visualizations img {
         max-width: 100%;
@@ -78,20 +78,75 @@
         border: 1px solid #e0e0e0;
         border-radius: 4px;
       }
+      .visualizations h3 {
+        margin-top: 30px;
+        margin-bottom: 15px;
+        color: #2c3e50;
+        border-bottom: 2px solid #3498db;
+        padding-bottom: 5px;
+      }
+      
+      /* Collapsible section styles */
+      .collapsible {
+        cursor: pointer;
+        padding: 10px;
+        background-color: #f0f0f0;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        margin-bottom: 10px;
+        user-select: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .collapsible:hover {
+        background-color: #e8e8e8;
+      }
+      .collapsible::after {
+        content: '▼';
+        font-size: 12px;
+        color: #666;
+        transition: transform 0.3s;
+      }
+      .collapsible.collapsed::after {
+        transform: rotate(-90deg);
+      }
+      .collapsible-content {
+        max-height: 500px;
+        overflow: auto;
+        transition: max-height 0.3s ease;
+        margin-bottom: 20px;
+      }
+      .collapsible-content.collapsed {
+        max-height: 0;
+        overflow: hidden;
+      }
     </style>
+    <script>
+      function toggleCollapse(id) {
+        const content = document.getElementById(id);
+        const button = content.previousElementSibling;
+        content.classList.toggle('collapsed');
+        button.classList.toggle('collapsed');
+      }
+    </script>
   </head>
   <body>
     <div class="container">
       <h1>LLM Code Generation Report #4</h1>
 
       <div class="header-info">
-        <p><b>Timestamp:</b> 2025-10-10 21:39:58</p>
+        <p><b>Timestamp:</b> 2025-10-12 13:06:54</p>
         <p><b>Model:</b> qwen/qwen3-coder-30b-a3b-instruct</p>
         <p><b>Logprobs available:</b> True</p>
       </div>
 
       <h2>Selected User Stories</h2>
-      <pre>﻿As a Data user, I want to have the 12-19-2017 deletions processed.
+      <div class="collapsible collapsed" onclick="toggleCollapse('stories-content')">
+        Click to expand/collapse
+      </div>
+      <div id="stories-content" class="collapsible-content collapsed">
+        <pre>﻿As a Data user, I want to have the 12-19-2017 deletions processed.
 As a UI designer, I want to redesign the Resources page, so that it matches the new Broker design styles.
 As a UI designer, I want to report to the Agencies about user testing, so that they are aware of their contributions to making Broker a better UX.
 As a UI designer, I want to move on to round 2 of DABS or FABS landing page edits, so that I can get approvals from leadership.
@@ -189,9 +244,14 @@ As a FABS user, I want to see correct status labels on the Submission Dashboard,
 As an agency user, I want to know when the submission periods start and end, so that I know when the submission starts and ends.
 As an agency user, I want a landing page to navigate to either FABS or DABS pages, so that I can access both sides of the site.
 As an agency user, I want to submit my data elements surrounded by quotation marks, so that Excel won't strip off leading and trailing zeroes.</pre>
+      </div>
 
       <h2>Prompt Sent to LLM</h2>
-      <pre>Generate fully functional Python code that implements the following user stories. The code should realistically reflect the described functionality.
+      <div class="collapsible collapsed" onclick="toggleCollapse('prompt-content')">
+        Click to expand/collapse
+      </div>
+      <div id="prompt-content" class="collapsible-content collapsed">
+        <pre>Generate fully functional Python code that implements the following user stories. The code should realistically reflect the described functionality.
 
 ﻿As a Data user, I want to have the 12-19-2017 deletions processed.
 As a UI designer, I want to redesign the Resources page, so that it matches the new Broker design styles.
@@ -293,598 +353,349 @@ As an agency user, I want a landing page to navigate to either FABS or DABS page
 As an agency user, I want to submit my data elements surrounded by quotation marks, so that Excel won't strip off leading and trailing zeroes.
 
 Output only Python code (no markdown formatting or extra text). Do not leave functions empty — implement reasonable logic where needed.</pre>
+      </div>
 
       <h2>Generated Code</h2>
-      <pre>import os
+      <div class="collapsible collapsed" onclick="toggleCollapse('code-content')">
+        Click to expand/collapse
+      </div>
+      <div id="code-content" class="collapsible-content collapsed">
+        <pre># Generated Python Code Based on User Stories
+
+import sqlite3
+from datetime import datetime, timedelta
 import logging
-from datetime import datetime
-from typing import Dict, List, Optional, Any
-from sqlalchemy import create_engine, Column, Integer, String, DateTime, Boolean
-from sqlalchemy.ext.declarative import declarative_base
-from sqlalchemy.orm import sessionmaker
+from typing import List, Dict, Any
+import os
+import json
 
-# Setup basic logging
-logging.basicConfig(level=logging.INFO)
-logger = logging.getLogger(__name__)
+class DatabaseHandler:
+    def __init__(self, db_path: str):
+        self.db_path = db_path
+        self.init_db()
 
-# Database setup
-DATABASE_URL = "sqlite:///broker.db"
-engine = create_engine(DATABASE_URL)
-SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
-Base = declarative_base()
+    def init_db(self):
+        conn = sqlite3.connect(self.db_path)
+        cursor = conn.cursor()
+        
+        # Create tables for FABS submissions and metadata
+        cursor.execute('''CREATE TABLE IF NOT EXISTS fabs_submissions (
+            id INTEGER PRIMARY KEY,
+            submission_id TEXT UNIQUE,
+            status TEXT,
+            publish_status TEXT,
+            created_at DATETIME,
+            updated_at DATETIME,
+            agency_code TEXT,
+            frec_code TEXT,
+            funding_agency_code TEXT
+        )''')
+        
+        cursor.execute('''CREATE TABLE IF NOT EXISTS submission_errors (
+            id INTEGER PRIMARY KEY,
+            submission_id TEXT,
+            error_type TEXT,
+            error_message TEXT,
+            field_name TEXT,
+            row_number INTEGER
+        )''')
+        
+        cursor.execute('''CREATE TABLE IF NOT EXISTS validation_rules (
+            id INTEGER PRIMARY KEY,
+            rule_name TEXT,
+            description TEXT,
+            updated_date DATE,
+            rule_version TEXT
+        )''')
+        
+        cursor.execute('''CREATE TABLE IF NOT EXISTS gtas_window (
+            id INTEGER PRIMARY KEY,
+            start_date DATE,
+            end_date DATE,
+            is_locked BOOLEAN
+        )''')
+        
+        # Add index for performance optimization
+        cursor.execute('''CREATE INDEX IF NOT EXISTS idx_fabs_status ON fabs_submissions(status)''')
+        cursor.execute('''CREATE INDEX IF NOT EXISTS idx_fabs_publish_status ON fabs_submissions(publish_status)''')
+        cursor.execute('''CREATE INDEX IF NOT EXISTS idx_submission_errors_submission_id ON submission_errors(submission_id)''')
 
-class Resource(Base):
-    __tablename__ = "resources"
-    
-    id: int = Column(Integer, primary_key=True, index=True)
-    title: str = Column(String, nullable=False)
-    path: str = Column(String, nullable=False)
-    last_modified: datetime = Column(DateTime, default=datetime.utcnow)
+        conn.commit()
+        conn.close()
 
-class FabsSubmission(Base):
-    __tablename__ = "fabs_submissions"
-    
-    id: int = Column(Integer, primary_key=True, index=True)
-    submission_id: str = Column(String, unique=True, nullable=False)
-    status: str = Column(String, default="draft")
-    publish_status: str = Column(String, default="not_published")
-    created_at: datetime = Column(DateTime, default=datetime.utcnow)
-    updated_at: datetime = Column(DateTime, default=datetime.utcnow)
-    validated_data: Dict[str, Any] = Column(String)  # JSON field
-    file_path: str = Column(String)
-    
-class User(Base):
-    __tablename__ = "users"
-    
-    id: int = Column(Integer, primary_key=True, index=True)
-    username: str = Column(String, unique=True, nullable=False)
-    role: str = Column(String, nullable=False)
-    is_active: bool = Column(Boolean, default=True)
+    def process_deletions_2017_12_19(self):
+        """Process deletions from 12/19/2017"""
+        conn = sqlite3.connect(self.db_path)
+        cursor = conn.cursor()
+        
+        # Example deletion logic - actual implementation will depend on specific requirements
+        affected_rows = cursor.execute(
+            "UPDATE fabs_submissions SET status = 'deleted' WHERE created_at < ?",
+            ('2017-12-19',)
+        ).rowcount
+        
+        conn.commit()
+        conn.close()
+        return f"Processed {affected_rows} deletions"
 
-class DFileRequest(Base):
-    __tablename__ = "dfile_requests"
-    
-    id: int = Column(Integer, primary_key=True, index=True)
-    submission_id: str = Column(String, nullable=False)
-    request_time: datetime = Column(DateTime, default=datetime.utcnow)
-    cache_key: str = Column(String)
-    cached_result: str = Column(String)
-    is_processed: bool = Column(Boolean, default=False)
+    def update_validation_rule(self, rule_name: str, description: str, rule_version: str):
+        """Update validation rules in DB-2213"""
+        conn = sqlite3.connect(self.db_path)
+        cursor = conn.cursor()
+        
+        cursor.execute('''
+            INSERT OR REPLACE INTO validation_rules (rule_name, description, updated_date, rule_version)
+            VALUES (?, ?, ?, ?)
+        ''', (rule_name, description, datetime.now().date(), rule_version))
+        
+        conn.commit()
+        conn.close()
+        return True
 
-class FabsValidationError(Base):
-    __tablename__ = "fabs_validation_errors"
-    
-    id: int = Column(Integer, primary_key=True, index=True)
-    submission_id: str = Column(String, nullable=False)
-    error_code: str = Column(String)
-    error_message: str = Column(String)
-    row_number: int = Column(Integer)
-    field_name: str = Column(String)
+class FabsSubmissionManager:
+    def __init__(self, db_handler: DatabaseHandler):
+        self.db_handler = db_handler
 
-class HistoricalFabsData(Base):
-    __tablename__ = "historical_fabs_data"
-    
-    id: int = Column(Integer, primary_key=True, index=True)
-    record_id: str = Column(String, nullable=False)
-    submission_id: str = Column(String, nullable=False)
-    created_at: datetime = Column(DateTime, default=datetime.utcnow)
-    agency_code: str = Column(String)
-    frec_code: str = Column(String)
-
-def process_deletions_2017_12_19():
-    """Process deletions from 2017-12-19"""
-    try:
-        logger.info("Processing deletions from 2017-12-19...")
-        # This would actually involve querying database for records from this deletion date
-        # and deleting them appropriately
-        
-        session = SessionLocal()
-        
-        # Example deletion logic (simplified)
-        # session.query(Resource).filter(Resource.created_at < datetime(2017, 12, 19)).delete(synchronize_session=False)
-        session.commit()
-        logger.info("Deletions processed successfully")
-    except Exception as e:
-        logger.error(f"Error processing deletions: {str(e)}")
-        raise
-
-def update_resource_page_design():
-    """Redesign Resources page to match new Broker design styles"""
-    try:
-        logger.info("Updating Resources page design...")
-        
-        # In a real implementation, this might involve updating templates/styles
-        session = SessionLocal()
-        
-        # Update existing resources with new designs
-        resources = session.query(Resource).all()
-        for res in resources:
-            res.title = f"[Updated Style] {res.title}"
-            res.last_modified = datetime.utcnow()
-            
-        session.commit()
-        
-        logger.info("Resources page design updated")
-    except Exception as e:
-        logger.error(f"Error updating resource page design: {str(e)}")
-        raise
-
-def generate_user_testing_report():
-    """Generate report to Agencies about user testing"""
-    try:
-        logger.info("Generating user testing report...")
-        
-        session = SessionLocal()
-        
-        # Get test results, user feedback, etc.
-        # In a real world app, you'd query more detailed tables
-        
-        report = {
-            "report_date": datetime.now(),
-            "testing_results": [
-                {"topic": "Homepage navigation", "participants": 5},
-                {"topic": "Submission form usability", "participants": 8}
-            ],
-            "agency_contributions": ["Data team provided datasets", "UI team designed mockups"],
-            "improvements_made": ["Improved form layout", "Enhanced help section"]
-        }
-        
-        logger.info(f"User testing report generated: {report}")
-        return report
-    except Exception as e:
-        logger.error(f"Error generating user testing report: {str(e)}")
-        raise
-
-def move_help_page_round_2():
-    """Move Help page edits to round 2"""
-    try:
-        logger.info("Moving Help page edits to round 2...")
-        
-        # In actual implementation, this involves updating documentation/UI assets
-        session = SessionLocal()
-        
-        # Placeholder update - in real app you'd make specific UI changes
-        logger.info("Help page changes staged for round 2")
-        
-    except Exception as e:
-        logger.error(f"Error moving help page edits to round 2: {str(e)}")
-        raise
-
-def move_homepage_round_2():
-    """Move Homepage edits to round 2"""
-    try:
-        logger.info("Moving Homepage edits to round 2...")
-        
-        # Similar to help page, staging UI changes
-        session = SessionLocal()
-        
-        logger.info("Homepage changes staged for round 2")
-        
-    except Exception as e:
-        logger.error(f"Error moving homepage edits to round 2: {str(e)}")
-        raise
-
-def update_fabs_sample_file():
-    """Update FABS sample file to remove FundingAgencyCode"""
-    try:
-        logger.info("Updating FABS sample file to remove FundingAgencyCode...")
-        
-        # In practice, this might modify template files in a directory structure
-        sample_file_path = "data/fabs_sample.csv"
-        
-        # Remove header line containing FundingAgencyCode
-        if os.path.exists(sample_file_path):
-            with open(sample_file_path, 'r') as f:
-                lines = f.readlines()
-            
-            # Filter out lines with FundingAgencyCode
-            filtered_lines = [line for line in lines if 'FundingAgencyCode' not in line]
-            
-            with open(sample_file_path, 'w') as f:
-                f.writelines(filtered_lines)
-                
-            logger.info("Sample file updated successfully")
-        else:
-            logger.warning("Sample file not found at expected path")
-            
-    except Exception as e:
-        logger.error(f"Error updating sample file: {str(e)}")
-        raise
-
-def process_new_relic_monitoring():
-    """Ensure New Relic provides useful data across all applications"""
-    try:
-        logger.info("Configuring New Relic monitoring for all applications...")
-        
-        # This would connect to New Relic API or configure agent settings
-        
-        logger.info("New Relic configuration completed")
-    except Exception as e:
-        logger.error(f"Error configuring New Relic: {str(e)}")
-        raise
-
-def prevent_double_publishing(submission_id: str):
-    """Prevent users from double publishing FABS submissions after refresh""" 
-    try:
-        logger.info(f"Preventing double publishing for submission {submission_id}")
-        
-        session = SessionLocal()
-        
-        # Check if submission exists and is already published
-        submission = session.query(FabsSubmission).filter_by(submission_id=submission_id).first()
-        
-        if submission:
-            if submission.publish_status == "published":
-                logger.warning(f"Attempted duplicate publish for submission {submission_id}")
-                raise ValueError("This submission has already been published")
-            else:
-                # Update publish status to prevent further publishing attempts
-                submission.publish_status = "publishing"
-                session.commit()
-                logger.info("Publish lock set for submission")
-        else:
-            raise ValueError(f"No submission found with ID {submission_id}")
-            
-    except Exception as e:
-        logger.error(f"Error preventing double publishing: {str(e)}")
-        raise
-
-def handle_publish_status_change(submission_id: str, new_status: str):
-    """Handle FABS submission publish status change updates"""
-    try:
-        logger.info(f"Handling publish status change for {submission_id}: {new_status}")
-        
-        session = SessionLocal()
-        submission = session.query(FabsSubmission).filter_by(submission_id=submission_id).first()
-        
-        if submission:
-            old_status = submission.publish_status
-            submission.publish_status = new_status
-            submission.updated_at = datetime.utcnow()
-            
-            # Log status change
-            logger.info(f"Status changed from '{old_status}' to '{new_status}' for submission {submission_id}")
-            
-            session.commit()
-        else:
-            logger.warning(f"Submission {submission_id} not found for status update")
-            
-    except Exception as e:
-        logger.error(f"Error handling publish status change: {str(e)}")
-        raise
-
-def process_d_file_generation_cache():
-    """Manage and cache D File generation requests"""
-    try:
-        logger.info("Managing D File generation requests...")
-        
-        session = SessionLocal()
-        
-        # Generate cache key based on parameters
-        def generate_cache_key(request_params: dict) -> str:
-            # Simple hash-like approach for demo - real impl would be more robust
-            return "_".join([f"{k}:{v}" for k,v in sorted(request_params.items())])
-        
-        # Simulate requesting a D file
-        dummy_request_params = {"submission_id": "test123", "format": "json"}
-        cache_key = generate_cache_key(dummy_request_params)
-        
-        # Check if request already cached
-        cached_request = session.query(DFileRequest).filter_by(cache_key=cache_key).first()
-        
-        if cached_request and cached_request.is_processed:
-            logger.info("Returning cached result")
-            return cached_request.cached_result
-        else:
-            # Process new request
-            logger.info("Processing new D file generation request")
-            result = "D File Generation Result"
-            
-            new_request = DFileRequest(
-                submission_id=dummy_request_params["submission_id"],
-                cache_key=cache_key,
-                cached_result=result,
-                is_processed=True
-            )
-            
-            session.add(new_request)
-            session.commit()
-            
-            logger.info("D file generation request processed and cached")
-            return result
-            
-    except Exception as e:
-        logger.error(f"Error managing D file generation: {str(e)}")
-        raise
-
-def add_gtas_window_data():
-    """Add GTAS window data to database"""
-    try:
-        logger.info("Adding GTAS window data to database...")
-        
-        # In reality this would connect to GTAS service to fetch data
-        
-        logger.info("GTAS window data added successfully")
-        
-    except Exception as e:
-        logger.error(f"Error adding GTAS data: {str(e)}")
-        raise
-
-def update_validation_rules_table():
-    """Update Broker validation rules table for DB-2213"""
-    try:
-        logger.info("Updating validation rules table for DB-2213...")
-        
-        # Would typically update rules definitions in DB
-        
-        logger.info("Validation rules updated")
-        
-    except Exception as e:
-        logger.error(f"Error updating validation rules: {str(e)}")
-        raise
-
-def derive_funding_agency_code():
-    """Derive FundingAgencyCode to improve data quality"""
-    try:
-        logger.info("Deriving FundingAgencyCode...")
-        
-        # Logic to determine FundingAgencyCode from other fields
-        
-        logger.info("FundingAgencyCode derivation completed")
-        
-    except Exception as e:
-        logger.error(f"Error deriving FundingAgencyCode: {str(e)}")
-        raise
-
-def derive_ppop_zip_plus_four():
-    """Ensure PPoPZIP+4 works like Legal Entity ZIP validations"""
-    try:
-        logger.info("Ensuring PPoPZIP+4 behavior matches Legal Entity ZIP validations...")
-        
-        # Validation logic comparison logic here
-        
-        logger.info("PPoPZIP+4 validation synced")
-        
-    except Exception as e:
-        logger.error(f"Error syncing zip validation logic: {str(e)}")
-        raise
-
-def update_fabs_error_messages():
-    """Update FABS error messages to have accurate text"""
-    try:
-        logger.info("Updating FABS error message accuracy...")
-        
-        # Example of updating error message definitions
-        
-        logger.info("Error messages updated")
-        
-    except Exception as e:
-        logger.error(f"Error updating error messages: {str(e)}")
-        raise
-
-def sync_d1_file_with_fpds():
-    """Sync D1 file generation with FPDS data load"""
-    try:
-        logger.info("Syncing D1 file generation with FPDS data...")
-        
-        # Determine if data has changed, regenerate only if necessary
-        
-        logger.info("D1 file generation synchronized with FPDS")
-        
-    except Exception as e:
-        logger.error(f"Error syncing D1/FPDS: {str(e)}")
-        raise
-
-def load_historical_fabs_data():
-    """Load historical FABS data ensuring FREC derivations"""
-    try:
-        logger.info("Loading historical FABS data with FREC derivations...")
-        
-        # Load and transform historical data
-        
-        logger.info("Historical FABS data loaded successfully")
-        
-    except Exception as e:
-        logger.error(f"Error loading historical FABS data: {str(e)}")
-        raise
-
-def reset_environment_permissions():
-    """Reset environment to only take Staging MAX permissions"""
-    try:
-        logger.info("Resetting environment permissions to Staging MAX...")
-        
-        session = SessionLocal()
-        
-        # Set all user roles to staging permissions
-        # This would filter users by environment and adjust roles
-        
-        logger.info("Environment permissions reset")
-        
-    except Exception as e:
-        logger.error(f"Error resetting permissions: {str(e)}")
-        raise
-
-def handle_zero_padding_fields():
-    """Ensure zero-padded fields as requested"""
-    try:
-        logger.info("Enforcing zero-padded fields...")
-        
-        # Logic to pad numerical fields with zeros
-        
-        logger.info("Zero-padding enforced")
-        
-    except Exception as e:
-        logger.error(f"Error enforcing zero-padding: {str(e)}")
-        raise
-
-def validate_submission_errors():
-    """Provide accurate error messages for FABS submission failures"""
-    try:
-        logger.info("Validating FABS submission errors...")
-        
-        # Check file errors and provide specific guidance
+    def validate_and_submit_fabs(self, submission_data: Dict[str, Any]):
+        """Add validation logic for FABS submission"""
+        # Check for proper fields required
+        required_fields = ['agency_code', 'funding_agency_code']
         errors = []
-        logger.info("Submission error validation completed")
+        
+        for field in required_fields:
+            if field not in submission_data or not submission_data[field]:
+                errors.append(f"Missing required field: {field}")
+        
+        # Validate publish status change handling
+        if 'publish_status' in submission_data:
+            old_status = self.get_old_publish_status(submission_data['submission_id'])
+            new_status = submission_data['publish_status']
+            
+            if old_status != new_status:
+                self.log_status_change(submission_data['submission_id'], old_status, new_status)
+                
         return errors
-        
-    except Exception as e:
-        logger.error(f"Error validating submission errors: {str(e)}")
-        raise
+    
+    def get_old_publish_status(self, submission_id: str) -> str:
+        """Get previous status for monitoring changes"""
+        conn = sqlite3.connect(self.db_handler.db_path)
+        cursor = conn.cursor()
+        result = cursor.execute(
+            "SELECT publish_status FROM fabs_submissions WHERE submission_id=?", 
+            (submission_id,)
+        ).fetchone()
+        conn.close()
+        return result[0] if result else ''
+    
+    def log_status_change(self, submission_id: str, old_status: str, new_status: str):
+        """Log publish status changes"""
+        logging.info(f"Publish status changed for {submission_id}: {old_status} -> {new_status}")
 
-def derive_office_names_from_codes():
-    """Derive office names from office codes for context"""
-    try:
-        logger.info("Deriving office names from codes...")
-        
-        # Map codes to names
-        
-        logger.info("Office names derived successfully")
-        
-    except Exception as e:
-        logger.error(f"Error deriving office names: {str(e)}")
-        raise
+class DataReporter:
+    def generate_user_testing_report(self) -> str:
+        """Report to Agencies about user testing"""
+        return """
+        User Testing Summary Report:
+        - Round 2 of DABS/FABS landing page edits completed
+        - Homepage edits passed to leadership for approval
+        - Help page edits moved to round 2
+        - Tech Thursday issues tracked in project board
+        - Initial user testing phase started with SME input
+        """
 
-def validate_duns_records():
-    """Validate DUNS records according to specifications"""
-    try:
-        logger.info("Validating DUNS records according to spec...")
-        
-        # Implement complex validation logic for DUNS records
-        
-        logger.info("DUNS validation completed")
-        
-    except Exception as e:
-        logger.error(f"Error validating DUNS records: {str(e)}")
-        raise
+class ResourcePageUI:
+    def redesign_resources_page(self):
+        """Redesign Resources page to match new Broker design styles"""
+        # Actual redesign would involve front-end work
+        return "Resources page redesigned with Broker design system"
 
-def load_historical_fpds_data():
-    """Load historical FPDS data including both extracted and feed data"""
-    try:
-        logger.info("Loading historical FPDS data...")
-        
-        # Combine different data sources
-        
-        logger.info("Historical FPDS data loaded successfully")
-        
-    except Exception as e:
-        logger.error(f"Error loading FPDS data: {str(e)}")
-        raise
+class HelpPageEdits:
+    def update_help_page_round_two(self):
+        """Implement round 2 of help page edits"""
+        return "Round 2 changes to Help pages implemented"
+    
+    def update_help_page_round_three(self):
+        """Implement round 3 of help page edits"""
+        return "Round 3 changes to Help pages implemented"
 
-def run_tech_thursday_tracker():
-    """Track issues from Tech Thursday meetings"""
-    try:
-        logger.info("Tracking Tech Thursday issues...")
-        
-        # Track tech meeting issues and fixes
-        
-        logger.info("Tech Thursday issues tracked")
-        
-    except Exception as e:
-        logger.error(f"Error tracking Tech Thursday issues: {str(e)}")
-        raise
+class HomepageEdits:
+    def update_homepage_round_two(self):
+        """Implement round 2 of homepage edits"""
+        return "Round 2 homepage updates applied"
 
-def initiate_user_testing():
-    """Begin user testing phase"""
-    try:
-        logger.info("Initiating user testing phase...")
-        
-        # Schedule user tests, prepare materials
-        
-        logger.info("User testing initiated")
-        
-    except Exception as e:
-        logger.error(f"Error initiating user testing: {str(e)}")
-        raise
+class FileGenerationCache:
+    def manage_d_files_request(self, request_params: dict) -> str:
+        """Manage caching of D Files generation requests"""
+        # In real implementation this would integrate with Redis/Caching system
+        return "D Files generation request processed with cache management"
 
-def schedule_test_session(date_str: str = None):
-    """Schedule a user testing session"""
-    try:
-        logger.info("Scheduling user testing session...")
-        
-        # Schedule test activity with given date or default time
-        
-        logger.info("Test session scheduled")
-        
-    except Exception as e:
-        logger.error(f"Error scheduling test session: {str(e)}")
-        raise
+class LoggingModule:
+    def setup_logging(self):
+        """Setup better logging for debugging"""
+        logging.basicConfig(
+            level=logging.INFO,
+            format='%(asctime)s - %(levelname)s - %(message)s',
+            handlers=[
+                logging.FileHandler("broker_debug.log"),
+                logging.StreamHandler()
+            ]
+        )
+        logging.info("Broker logging initialized")
 
-def generate_ui_summary():
-    """Generate UI improvements summary from SME"""
-    try:
-        logger.info("Generating UI improvements summary...")
-        
-        # Collect input from UI SME and summarize improvements
-        
-        summary = {
-            "changes_requested": ["Homepage layout", "Form design", "Error messaging"],
-            "priority": "high",
-            "timeline_estimate": "3 weeks"
-        }
-        
-        logger.info(f"UI summary generated: {summary}")
-        return summary
-        
-    except Exception as e:
-        logger.error(f"Error generating UI summary: {str(e)}")
-        raise
+class GTASWindowData:
+    def save_gtas_window_data(self, start_date: str, end_date: str):
+        """Save GTAS window information to database"""
+        conn = sqlite3.connect(self.db_handler.db_path)
+        cursor = conn.cursor()
+        cursor.execute(
+            '''INSERT OR REPLACE INTO gtas_window (start_date, end_date, is_locked) 
+               VALUES (?, ?, ?)''',
+            (start_date, end_date, start_date <= datetime.today().date() <= end_date)
+        )
+        conn.commit()
+        conn.close()
+
+class FABSSampleFile:
+    def update_sample_file(self):
+        """Update sample file to remove FundingAgencyCode"""
+        # Logic would interact with file system to modify template
+        return "Sample file updated to remove FundingAgencyCode header"
+
+class FlexfieldValidation:
+    def handle_flexfields_large_amount(self, data):
+        """Handle large numbers of flexfields efficiently"""
+        # Implementation would optimize processing
+        if len(data) > 1000:
+            logging.warning(f"Large flexfield set detected: {len(data)} items")
+        return "Flexfield validation handled successfully"
+
+class PPoPDerivation:
+    def derive_ppop_zip_plus_four(self, zip_input: str) -> str:
+        """Derived PPoP ZIP+4 logic"""
+        if len(zip_input) == 5:
+            return zip_input + "-0000"
+        elif len(zip_input) == 9:
+            return zip_input
+        else:
+            return zip_input
+
+class HistoricalDataLoader:
+    def load_historical_fabs(self):
+        """Load historical FABS data including derived fields"""
+        # Placeholder for complex loading logic
+        return "Historical FABS data loaded successfully with proper derivations"
+    
+    def load_historical_fpds(self):
+        """Load historical FPDS data including extracted and feed data"""
+        return "Historical FPDS data including extracted and feed data loaded successfully"
+
+class SubmissionDashboard:
+    def enhance_dashboard_ui(self):
+        """Enhance submission dashboard for better user experience"""
+        return "Dashboard enhanced with additional info and clearer status labels"
+
+class UserTestingScheduling:
+    def schedule_user_test(self, test_date: datetime, participants: List[str]) -> str:
+        """Schedule user tests for improved UI design"""
+        return f"Scheduled user test on {test_date.strftime('%Y-%m-%d')} with {len(participants)} participants"
+
+class FABSValidationError:
+    def improve_cfda_error_codes(self, errors: List[str]) -> List[str]:
+        """Clarify CFDA error codes"""
+        clarified_errors = []
+        for err in errors:
+            if 'CFDA' in err:
+                clarified_errors.append(err + " - This code indicates an invalid CFDA program number.")
+            else:
+                clarified_errors.append(err)
+        return clarified_errors
+
+def main():
+    # Demonstration of core functions
+    
+    db = DatabaseHandler("broker.db")
+    
+    # Process 12-19-2017 deletions
+    print(db.process_deletions_2017_12_19())
+    
+    # Update validation rules
+    db.update_validation_rule("DB2213_RULE", "Updated for new validation logic", "1.2")
+    
+    # Set up logging
+    logger = LoggingModule()
+    logger.setup_logging()
+    
+    # Initialize components
+    reporter = DataReporter()
+    ui_redesign = ResourcePageUI()
+    help_edits = HelpPageEdits()
+    homepage_edits = HomepageEdits()
+    file_cache = FileGenerationCache()
+    fabs_manager = FabsSubmissionManager(db)
+    flexfield_validator = FlexfieldValidation()
+    ppop_deriver = PPoPDerivation()
+    historical_loader = HistoricalDataLoader()
+    dashboard = SubmissionDashboard()
+    testing_scheduler = UserTestingScheduling()
+    error_clarifier = FABSValidationError()
+    
+    # Generate reports
+    print(reporter.generate_user_testing_report())
+    
+    # Implement UI changes
+    print(ui_redesign.redesign_resources_page())
+    print(help_edits.update_help_page_round_two())
+    print(homepage_edits.update_homepage_round_two())
+    
+    # Manage file requests
+    print(file_cache.manage_d_files_request({}))
+    
+    # Handle flexfields
+    flexfield_data = [str(i) for i in range(100)]  # Simulate large dataset
+    print(flexfield_validator.handle_flexfields_large_amount(flexfield_data))
+    
+    # Derive ZIP+4
+    zip_result = ppop_deriver.derive_ppop_zip_plus_four("12345")
+    print(f"PPoP ZIP+4 derived as: {zip_result}")
+    
+    # Load historical data
+    print(historical_loader.load_historical_fabs())
+    print(historical_loader.load_historical_fpds())
+    
+    # Enrich dashboard
+    print(dashboard.enhance_dashboard_ui())
+    
+    # Schedule user test
+    future_date = datetime.now() + timedelta(days=30)
+    print(testing_scheduler.schedule_user_test(future_date, ["Tester1", "Tester2"]))
+    
+    # Improve error messages
+    fake_errors = ["Invalid CFDA code", "Missing field"]
+    enhanced_errors = error_clarifier.improve_cfda_error_codes(fake_errors)
+    print("Enhanced Errors:", enhanced_errors)
 
 if __name__ == "__main__":
-    # Create tables
-    Base.metadata.create_all(bind=engine)
-    
-    # Run example tasks
-    try:
-        process_deletions_2017_12_19()
-        update_resource_page_design()
-        generate_user_testing_report()
-        move_help_page_round_2()
-        move_homepage_round_2()
-        update_fabs_sample_file()
-        process_new_relic_monitoring()
-        prevent_double_publishing("test_sub")
-        handle_publish_status_change("test_sub", "published")
-        process_d_file_generation_cache()
-        add_gtas_window_data()
-        update_validation_rules_table()
-        derive_funding_agency_code()
-        derive_ppop_zip_plus_four()
-        update_fabs_error_messages()
-        sync_d1_file_with_fpds()
-        load_historical_fabs_data()
-        reset_environment_permissions()
-        handle_zero_padding_fields()
-        validate_submission_errors()
-        derive_office_names_from_codes()
-        validate_duns_records()
-        load_historical_fpds_data()
-        run_tech_thursday_tracker()
-        initiate_user_testing()
-        schedule_test_session()
-        generate_ui_summary()
-        
-    except Exception as e:
-        logger.error(f"Application error: {str(e)}")
-        raise</pre>
+    main()</pre>
+      </div>
 
       <h2>Confidence & Basic Metrics</h2>
       <div class="metrics">
         <table>
           <tr>
-            <th>Total tokens</th>
-            <td>4026</td>
+            <th>Total completion tokens</th>
+            <td>2451</td>
           </tr>
           <tr>
             <th>Total log-probability</th>
-            <td>-1213.481</td>
+            <td>-908.171</td>
           </tr>
           <tr>
             <th>Average per-token probability</th>
-            <td>73.98%</td>
+            <td>69.04%</td>
           </tr>
           <tr>
             <th>Perplexity</th>
-            <td>1.35</td>
+            <td>1.45</td>
           </tr>
         </table>
       </div>
@@ -894,36 +705,36 @@ if __name__ == "__main__":
         <table>
           <tr>
             <th>Function count (AST)</th>
-            <td>28</td>
+            <td>25</td>
           </tr>
           <tr>
             <th>Class count (AST)</th>
-            <td>6</td>
+            <td>16</td>
           </tr>
           <tr>
             <th>Number of lines</th>
-            <td>571</td>
+            <td>316</td>
           </tr>
           <tr>
             <th>Non-empty lines</th>
-            <td>433</td>
+            <td>261</td>
           </tr>
           <tr>
             <th>Avg line length (all lines, chars)</th>
             <td>
-              34.2
+              36.3
             </td>
           </tr>
           <tr>
             <th>Avg line length (non-empty, chars)</th>
             <td>
-              43.1
+              43.2
             </td>
           </tr>
           <tr>
             <th>Avg tokens per non-empty line</th>
             <td>
-              3.95
+              3.89
             </td>
           </tr>
           <tr>
@@ -932,42 +743,42 @@ if __name__ == "__main__":
           </tr>
           <tr>
             <th>Import count</th>
-            <td>7</td>
+            <td>6</td>
           </tr>
           <tr>
             <th>Import names</th>
-            <td>datetime, logging, os, sqlalchemy, typing</td>
+            <td>datetime, json, logging, os, sqlite3, typing</td>
           </tr>
           <tr>
             <th>Avg cyclomatic complexity (functions)</th>
             <td>
-              2.09
+              1.85
             </td>
           </tr>
           <tr>
             <th>Max cyclomatic complexity (functions)</th>
-            <td>5</td>
+            <td>6</td>
           </tr>
           <tr>
             <th>Module cyclomatic complexity</th>
-            <td>69</td>
+            <td>74</td>
           </tr>
           <tr>
             <th>Average function size (lines)</th>
             <td>
-              15.5
+              10.6
             </td>
           </tr>
           <tr>
             <th>Comment density (%)</th>
             <td>
-              10.4%
+              9.6%
             </td>
           </tr>
           <tr>
             <th>Import redundancy ratio</th>
             <td>
-              0.29
+              0.00
             </td>
           </tr>
         </table>
@@ -982,7 +793,7 @@ if __name__ == "__main__":
           </tr>
           <tr>
             <th>Flake8 style errors</th>
-            <td>146</td>
+            <td>55</td>
           </tr>
           <tr>
             <th>Flake8 errors (by category)</th>
@@ -992,7 +803,7 @@ if __name__ == "__main__":
                   <tr>
                     <th>Style errors (PEP8 spacing, indentation, etc.) (E)</th>
                     <td>
-                      35
+                      18
                     </td>
                   </tr>
                   <tr>
@@ -1000,13 +811,13 @@ if __name__ == "__main__":
                       Logical errors (undefined vars, unused imports, etc.) (F)
                     </th>
                     <td>
-                      6
+                      3
                     </td>
                   </tr>
                   <tr>
                     <th>Warnings (whitespace, etc.) (W)</th>
                     <td>
-                      105
+                      34
                     </td>
                   </tr>
                   <tr>
@@ -1027,7 +838,7 @@ if __name__ == "__main__":
           </tr>
           <tr>
             <th>Mypy type-check errors</th>
-            <td>47</td>
+            <td>3</td>
           </tr>
           <tr>
             <th>Mypy error breakdown</th>
@@ -1043,7 +854,7 @@ if __name__ == "__main__":
                   <tr>
                     <th>Argument type</th>
                     <td>
-                      1
+                      0
                     </td>
                   </tr>
                   <tr>
@@ -1055,7 +866,7 @@ if __name__ == "__main__":
                   <tr>
                     <th>Attribute</th>
                     <td>
-                      0
+                      1
                     </td>
                   </tr>
                   <tr>
@@ -1067,7 +878,7 @@ if __name__ == "__main__":
                   <tr>
                     <th>Other</th>
                     <td>
-                      46
+                      2
                     </td>
                   </tr>
                 </table>
@@ -1076,7 +887,7 @@ if __name__ == "__main__":
           </tr>
           <tr>
             <th>Semantic quality score (0–100)</th>
-            <td>60.0</td>
+            <td>77.0</td>
           </tr>
         </table>
       </div>
@@ -1086,27 +897,27 @@ if __name__ == "__main__":
         <table>
           <tr>
             <th>Execution success</th>
-            <td>False</td>
+            <td>True</td>
           </tr>
           <tr>
             <th>Execution time (s)</th>
             <td>
-              0.978
+              1.480
             </td>
           </tr>
           <tr>
             <th>Exception type</th>
-            <td>ModuleNotFoundError</td>
+            <td>APIError</td>
           </tr>
           <tr>
             <th>Exception message</th>
-            <td>No module named 'sqlalchemy'</td>
+            <td>409 Client Error for http+docker://localnpipe/v1.51/containers/a6f132a3b310d4af116cad7d3a941a08437945d0a0d894b4238262b4b67a5060/logs?stderr=1&stdout=1&timestamps=0&follow=0&tail=all: Conflict ("can not get logs from container which is dead or marked for removal")</td>
           </tr>
           <tr>
             <th>Runtime output (preview)</th>
             <td>
               <div class="runtime-output">
-                <pre>Traceback (most recent call last): File "/app/code.py", line 5, in <module> from sqlalchemy import create_engine, Column, Integer, String, DateTime, Boolean ModuleNotFoundError: No module named 'sqlalchemy'</pre>
+                <pre></pre>
               </div>
             </td>
           </tr>
@@ -1114,17 +925,25 @@ if __name__ == "__main__":
       </div>
       
       <h2>Total Credibility (0-100%)</h2>
-      <p><b>Credibility:</b> 33.93%</p>
+      <p><b>Credibility:</b> 70.79%</p>
 
       <h2>Visualizations</h2>
       <div class="visualizations">
-        <img src="1_token_confidence.png" alt="Token Confidence" />
-        <img src="2_logprob_trend.png" alt="Log Probability Trend" />
-        <img
-          src="3_probability_distribution.png"
-          alt="Probability Distribution"
-        />
-        <img src="4_cumulative_logprob.png" alt="Cumulative Log Probability" />
+        <h3>Basic Confidence Metrics</h3>
+        <img src="1_logprob_trend.png" alt="Log Probability Trend" />
+        <img src="2_probability_distribution.png" alt="Probability Distribution" />
+        <img src="3_cumulative_logprob.png" alt="Cumulative Log Probability" />
+        
+        <h3>Advanced Analysis</h3>
+        <img src="4_smoothed_confidence.png" alt="Smoothed Confidence Trend" />
+        <img src="5_uncertainty_heatmap.png" alt="Uncertainty Detection" />
+        <img src="6_rolling_perplexity.png" alt="Rolling Perplexity" />
+        
+        <h3>Segmented Analysis</h3>
+        <img src="7_confidence_by_segment.png" alt="Confidence by Segment" />
+        <img src="8_confidence_by_token_type.png" alt="Confidence by Token Type" />
+        <img src="9_confidence_volatility.png" alt="Confidence Volatility" />
+        <img src="10_top_uncertain_tokens.png" alt="Top Uncertain Tokens" />
       </div>
     </div>
   </body>
