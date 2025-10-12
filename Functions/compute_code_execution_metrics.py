@@ -80,8 +80,8 @@ def compute_code_execution_metrics(code_text, timeout_sec=5):
                 exception_message = logs
 
         # Preview first 10 lines of output, shortened
-        stdout_preview = "\n".join(logs.splitlines()[:10])
-        runtime_output = textwrap.shorten(stdout_preview, width=300, placeholder="...")
+        stdout_preview = "\n".join(logs.splitlines())
+        runtime_output = stdout_preview
 
     except docker.errors.DockerException as e:
         exec_time = round(time.time() - start_time, 3)
