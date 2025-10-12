@@ -10,9 +10,9 @@ from Functions.compute_code_execution_metrics import compute_code_execution_metr
 from Functions.compute_credibility import compute_credibility
 
 # Configuration
-results_root = Path("Reports/gpt-4o-mini")
+results_root = Path("Reports/qwen3")
 
-for i in range(10, 11):
+for i in range(1, 21):
     # --- Step 0: Get request number 
     request_number = i
     run_dir = results_root / f"report_{request_number}"
@@ -53,13 +53,32 @@ for i in range(10, 11):
     
     
     # --- Step 2: Analyze log probabilities ---
+    MIN_LOGPROB = -10  # Adjust based on your needs
+    
+    # First pass: clip logprobs in the original data structure
+    anomalous_count = 0
+    for item in logprobs_data:
+        raw_logp = item.get("logprob", float("-inf"))
+        clipped_logp = max(raw_logp, MIN_LOGPROB) if math.isfinite(raw_logp) else MIN_LOGPROB
+        
+        if math.isfinite(raw_logp) and raw_logp < MIN_LOGPROB:
+            anomalous_count += 1
+        
+        # Modify the original data structure
+        item["logprob"] = clipped_logp
+    
+    if anomalous_count > 0:
+        print(f"⚠️  Warning: Clipped {anomalous_count} tokens with logprob < {MIN_LOGPROB}")
+    
+    # Second pass: build tokens_info (now using clipped values)
     tokens_info = []
     cumulative_logprob = 0.0
     for idx, item in enumerate(logprobs_data):
         token = item.get("token")
-        logp = item.get("logprob", float("-inf"))
-        prob = math.exp(logp) if math.isfinite(logp) else 0.0
-        cumulative_logprob += logp if math.isfinite(logp) else 0.0
+        logp = item.get("logprob")
+        prob = math.exp(logp)
+        cumulative_logprob += logp
+        
         tokens_info.append({
             "index": idx + 1,
             "token": token,
@@ -68,7 +87,8 @@ for i in range(10, 11):
             "cumulative_logprob": cumulative_logprob
         })
     
-    total_logprob = sum((it.get("logprob", 0.0) for it in logprobs_data)) if logprobs_data else 0.0
+    # Calculate summary statistics (using clipped values)
+    total_logprob = sum(item.get("logprob", 0.0) for item in logprobs_data) if logprobs_data else 0.0
     total_tokens = len(logprobs_data) if logprobs_data else len(code.split())
     avg_logprob = (total_logprob / total_tokens) if total_tokens else 0.0
     avg_prob = math.exp(avg_logprob) if math.isfinite(avg_logprob) else 0.0
