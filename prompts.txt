@@ -1,8 +1,9 @@
 Cheap models:
 1. x-ai/grok-code-fast-1 (Programming (#1)) $0.20/M input | $1.50/M output 
-2. qwen/qwen3-coder-30b-a3b-instruct (Programming (#4)) $0.06/M input | $0.25/M output 
+2. qwen/qwen3-coder-30b-a3b-instruct (Programming (#4)) $0.06/M input | $0.25/M output (nebius) 
 3. x-ai/grok-4-fast (Programming (#9)) $0.20/M input | $0.50/M output
 4. openai/gpt-4o-mini $0.15/M input | $0.60/M output
+5. deepseek/deepseek-chat-v3-0324 $0.24/M input | $0.84/M output
 
 Zero-shot prompt:
 prompt = (
