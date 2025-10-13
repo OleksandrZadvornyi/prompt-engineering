@@ -55,17 +55,14 @@ def compute_code_execution_metrics(code_text, timeout_sec=5):
             result = container.wait(timeout=timeout_sec)
             exec_time = round(time.time() - start_time, 3)
             execution_success = result["StatusCode"] == 0
-            logs = container.logs().decode("utf-8", errors="ignore").strip()
         except Exception as e:  # Handles timeout
             container.kill()  # Force stop if timed out
             exec_time = timeout_sec
             exception_type = "TimeoutError"
             exception_message = f"Execution exceeded {timeout_sec}s limit"
-        finally:
-            try:
-                container.remove(force=True)
-            except Exception:
-                pass
+
+        logs = container.logs().decode("utf-8", errors="ignore").strip()
+        container.remove(force=True)
         
         # Clean up dead containers periodically
         # Just in case a crash prevents removal:
