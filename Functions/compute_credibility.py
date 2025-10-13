@@ -27,6 +27,7 @@ def compute_credibility(
     # Default weights
     if weights is None:
         weights = {"confidence": 0.10, "structure": 0.15, "semantic": 0.40, "execution": 0.35}
+    
     # Normalize weight sum to 1
     total_w = sum(weights.values()) or 1.0
     for k in weights:

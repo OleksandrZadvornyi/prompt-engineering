@@ -7,7 +7,7 @@ import matplotlib
 matplotlib.use('Agg')
 
 # Configuration
-results_root = Path("Reports/grok-4-fast")
+results_root = Path("Reports/grok-4-fast_clusters")
 comparison_dir = results_root / "comparison"
 comparison_dir.mkdir(exist_ok=True)
 
