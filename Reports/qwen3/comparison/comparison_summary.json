@@ -206,28 +206,28 @@
                 "range": 1.0
             },
             "execution_time_sec": {
-                "min": 0.825,
-                "max": 2.152,
-                "mean": 1.18625,
-                "median": 1.1520000000000001,
-                "stdev": 0.2836604484238153,
-                "range": 1.3270000000000002
+                "min": 0.8,
+                "max": 2.556,
+                "mean": 1.6377,
+                "median": 1.6625,
+                "stdev": 0.3264830293002266,
+                "range": 1.756
             }
         },
         "Overall": {
             "total_credibility": {
                 "min": 0.0,
-                "max": 87.182,
-                "mean": 70.29115,
-                "median": 73.6875,
-                "stdev": 19.728351837887363,
-                "range": 87.182
+                "max": 85.834,
+                "mean": 68.26595,
+                "median": 72.1455,
+                "stdev": 19.064407634937222,
+                "range": 85.834
             }
         }
     },
     "best_run": {
         "run_number": 9,
-        "credibility": 87.182,
+        "credibility": 85.834,
         "timestamp": "2025-10-11 11:11:39",
         "quality_score": 96.5,
         "syntax_valid": true,
@@ -245,12 +245,12 @@
         {
             "run": 1,
             "credibility": 33.625,
-            "deviation": 1.8585510995188357
+            "deviation": 1.817048327088715
         },
         {
             "run": 17,
             "credibility": 0.0,
-            "deviation": 3.5629509539164435
+            "deviation": 3.5808062493846693
         }
     ],
     "quality_rates": {

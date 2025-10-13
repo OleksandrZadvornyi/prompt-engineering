@@ -166,7 +166,7 @@
     },
     "semantic_quality_score": 76.0,
     "execution_success": false,
-    "execution_time_sec": 1.294,
+    "execution_time_sec": 1.739,
     "exception_type": "sqlite3.OperationalError",
     "exception_message": "near \"as_window\": syntax error",
     "runtime_output": "Traceback (most recent call last):\n  File \"/app/code.py\", line 111, in <module>\n    init_db()\n  File \"/app/code.py\", line 92, in init_db\n    cursor.execute('''\nsqlite3.OperationalError: near \"as_window\": syntax error",

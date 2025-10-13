@@ -81,9 +81,9 @@
     },
     "semantic_quality_score": 90.5,
     "execution_success": true,
-    "execution_time_sec": 1.042,
+    "execution_time_sec": 1.696,
     "exception_type": "",
     "exception_message": "",
-    "runtime_output": "2025-10-12 12:01:28,479 - __main__ - INFO - Processing deletions for date: 2017-12-19\n2025-10-12 12:01:28,479 - __main__ - INFO - Redesigning Resources page\n2025-10-12 12:01:28,479 - __main__ - INFO - Configuring New Relic for 3 applications\n2025-10-12 12:01:28,479 - __main__ - INFO - Loading historical FPDS data for year 2007\nLoaded 1000 records from FPDS",
-    "total_credibility": 86.556
+    "runtime_output": "2025-10-13 08:59:26,472 - __main__ - INFO - Processing deletions for date: 2017-12-19\n2025-10-13 08:59:26,472 - __main__ - INFO - Redesigning Resources page\n2025-10-13 08:59:26,472 - __main__ - INFO - Configuring New Relic for 3 applications\n2025-10-13 08:59:26,472 - __main__ - INFO - Loading historical FPDS data for year 2007\nLoaded 1000 records from FPDS",
+    "total_credibility": 83.351
 }

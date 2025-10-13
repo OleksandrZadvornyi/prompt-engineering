@@ -1308,22 +1308,28 @@ if __name__ == "__main__":
           <tr>
             <th>Execution time (s)</th>
             <td>
-              0.570
+              0.790
             </td>
           </tr>
           <tr>
             <th>Exception type</th>
-            <td>APIError</td>
+            <td>RuntimeError</td>
           </tr>
           <tr>
             <th>Exception message</th>
-            <td>409 Client Error for http+docker://localnpipe/v1.51/containers/c2e3d2ebe1c339b7a65bcc536b9dd8f5da7160046cf39f0c610b46f33991644f/logs?stderr=1&stdout=1&timestamps=0&follow=0&tail=all: Conflict ("can not get logs from container which is dead or marked for removal")</td>
+            <td>File "/app/code.py", line 110
+    def set_gt as_lock(self, start: str, end: str, locked: bool = True):
+               ^^^^^^^
+SyntaxError: expected '('</td>
           </tr>
           <tr>
             <th>Runtime output (preview)</th>
             <td>
               <div class="runtime-output">
-                <pre></pre>
+                <pre>File "/app/code.py", line 110
+    def set_gt as_lock(self, start: str, end: str, locked: bool = True):
+               ^^^^^^^
+SyntaxError: expected '('</pre>
               </div>
             </td>
           </tr>

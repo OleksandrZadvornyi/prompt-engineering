@@ -1249,22 +1249,31 @@ if __name__ == "__main__":
           <tr>
             <th>Execution time (s)</th>
             <td>
-              1.724
+              2.183
             </td>
           </tr>
           <tr>
             <th>Exception type</th>
-            <td>APIError</td>
+            <td>FileNotFoundError</td>
           </tr>
           <tr>
             <th>Exception message</th>
-            <td>409 Client Error for http+docker://localnpipe/v1.51/containers/92f54bc33f0681aad04f579f0cb8359de47a2c892714be1adc1a8c041580c1d7/logs?stderr=1&stdout=1&timestamps=0&follow=0&tail=all: Conflict ("can not get logs from container which is dead or marked for removal")</td>
+            <td>[Errno 2] No such file or directory: 'sample.txt'</td>
           </tr>
           <tr>
             <th>Runtime output (preview)</th>
             <td>
               <div class="runtime-output">
-                <pre></pre>
+                <pre>Traceback (most recent call last):
+  File "/app/code.py", line 662, in <module>
+    broker.handle_fabs_submission('sample.txt', 'test_sub', 'user1')
+  File "/app/code.py", line 617, in handle_fabs_submission
+    errors, warnings, derived = self.file_proc.upload_and_validate(file_path, sub_id)
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/code.py", line 399, in upload_and_validate
+    with open(file_path, 'r') as f:
+         ^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'sample.txt'</pre>
               </div>
             </td>
           </tr>

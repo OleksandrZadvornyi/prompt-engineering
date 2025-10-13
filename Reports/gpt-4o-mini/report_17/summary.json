@@ -65,9 +65,9 @@
     },
     "semantic_quality_score": 94.5,
     "execution_success": true,
-    "execution_time_sec": 0.906,
+    "execution_time_sec": 1.67,
     "exception_type": "",
     "exception_message": "",
-    "runtime_output": "2025-10-12 12:06:04,804 - INFO - Submission logged: 1, Status: Pending\n2025-10-12 12:06:04,804 - INFO - Updating status for submission 1 from Pending to Validated\n2025-10-12 12:06:04,804 - INFO - Submission validated successfully.\n2025-10-12 12:06:04,804 - INFO - Tracking issue: Issue with the Resources page design\n2025-10-12 12:06:04,804 - INFO - Generating user testing summary.\n2025-10-12 12:06:04,805 - INFO - Submission 1 deleted successfully.\nSubmission ID: 1, Status: Pending, Timestamp: 2025-10-12 12:06:04.803997\nSubmission ID: 1, Status: Validated, Timestamp: 2025-10-12 12:06:04.804693\nUser Testing Summary: ['Issue with the Resources page design']\nSubmission not found.",
-    "total_credibility": 87.563
+    "runtime_output": "2025-10-13 09:07:32,900 - INFO - Submission logged: 1, Status: Pending\n2025-10-13 09:07:32,900 - INFO - Updating status for submission 1 from Pending to Validated\n2025-10-13 09:07:32,901 - INFO - Submission validated successfully.\n2025-10-13 09:07:32,901 - INFO - Tracking issue: Issue with the Resources page design\n2025-10-13 09:07:32,901 - INFO - Generating user testing summary.\n2025-10-13 09:07:32,901 - INFO - Submission 1 deleted successfully.\nSubmission ID: 1, Status: Pending, Timestamp: 2025-10-13 09:07:32.899989\nSubmission ID: 1, Status: Validated, Timestamp: 2025-10-13 09:07:32.900999\nUser Testing Summary: ['Issue with the Resources page design']\nSubmission not found.",
+    "total_credibility": 83.819
 }

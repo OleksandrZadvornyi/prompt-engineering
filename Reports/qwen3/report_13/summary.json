@@ -75,9 +75,9 @@
     },
     "semantic_quality_score": 80.0,
     "execution_success": true,
-    "execution_time_sec": 1.414,
-    "exception_type": "APIError",
-    "exception_message": "409 Client Error for http+docker://localnpipe/v1.51/containers/7ba342637bbc9ed8749e3e3e2cc11aa8052148530a5abdba06d675c7ea0a736a/logs?stderr=1&stdout=1&timestamps=0&follow=0&tail=all: Conflict (\"can not get logs from container which is dead or marked for removal\")",
-    "runtime_output": "",
-    "total_credibility": 72.955
+    "execution_time_sec": 1.469,
+    "exception_type": "",
+    "exception_message": "",
+    "runtime_output": "2025-10-13 09:44:19,703 - INFO - Processing deletions for 12-19-2017\n2025-10-13 09:44:19,703 - INFO - Successfully processed 12-19-2017 deletions\n2025-10-13 09:44:19,703 - INFO - Moved resources to round 2\n2025-10-13 09:44:19,703 - INFO - Scheduled user testing session #1\n2025-10-13 09:44:19,703 - INFO - Updating validation rules per DB-2213\n2025-10-13 09:44:19,703 - INFO - Domain models indexed for performance\n2025-10-13 09:44:19,703 - INFO - GTAS window set from 2023-01-01T00:00:00 to 2023-01-15T23:59:59\n2025-10-13 09:44:19,704 - INFO - Updating publish status for submission sub123\n2025-10-13 09:44:19,704 - INFO - Generated new D File: DFile_d1_generated_at_2025-10-13 09:44:19.704268\nStarting Broker System Operations...\n\n--- DATA USER STORIES ---\n\n--- UI DESIGNER STORIES ---\n\n--- DEVELOPER STORIES ---\n\n--- BROKER USER STORIES ---\nUpload validation: {'valid': True, 'error_message': '', 'file_name': 'sample.csv'}\n\n--- GENERAL OPERATIONS ---\nD File generation: DFile_d1_generated_at_2025-10-13 09:44:19.704268\n\n--- END OF SYSTEM OPERATION ---",
+    "total_credibility": 72.686
 }

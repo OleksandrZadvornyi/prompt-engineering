@@ -1332,22 +1332,28 @@ if __name__ == "__main__":
           <tr>
             <th>Execution time (s)</th>
             <td>
-              0.611
+              0.698
             </td>
           </tr>
           <tr>
             <th>Exception type</th>
-            <td>APIError</td>
+            <td>RuntimeError</td>
           </tr>
           <tr>
             <th>Exception message</th>
-            <td>409 Client Error for http+docker://localnpipe/v1.51/containers/b1e7d8c1f99f6a5855b2b97be3032d5cb4fddcce46fcd27bbafce11041588b48/logs?stderr=1&stdout=1&timestamps=0&follow=0&tail=all: Conflict ("can not get logs from container which is dead or marked for removal")</td>
+            <td>File "/app/code.py", line 35
+    self.gt as_window_open = False
+            ^^^^^^^^^^^^^^
+SyntaxError: invalid syntax</td>
           </tr>
           <tr>
             <th>Runtime output (preview)</th>
             <td>
               <div class="runtime-output">
-                <pre></pre>
+                <pre>File "/app/code.py", line 35
+    self.gt as_window_open = False
+            ^^^^^^^^^^^^^^
+SyntaxError: invalid syntax</pre>
               </div>
             </td>
           </tr>

@@ -76,9 +76,9 @@
     },
     "semantic_quality_score": 86.5,
     "execution_success": true,
-    "execution_time_sec": 0.967,
+    "execution_time_sec": 1.833,
     "exception_type": "",
     "exception_message": "",
-    "runtime_output": "2025-10-12 12:00:20,556 - BrokerApp - INFO - Processing deletions for date: 2017-12-19\n2025-10-12 12:00:20,556 - BrokerApp - INFO - Redesigning Resources with design specs: {'colors': ['#1a73e8', '#4285f4'], 'layout': 'grid'}\n2025-10-12 12:00:20,556 - BrokerApp - INFO - Updating validation rules: {'PPoPCode': {'required': True, 'max_length': 10}}\n2025-10-12 12:00:20,556 - BrokerApp - INFO - Generating new D file\n2025-10-12 12:00:20,556 - BrokerApp - INFO - Loading FPDS data from 2007 to present",
-    "total_credibility": 83.548
+    "runtime_output": "2025-10-13 08:57:45,769 - BrokerApp - INFO - Processing deletions for date: 2017-12-19\n2025-10-13 08:57:45,770 - BrokerApp - INFO - Redesigning Resources with design specs: {'colors': ['#1a73e8', '#4285f4'], 'layout': 'grid'}\n2025-10-13 08:57:45,770 - BrokerApp - INFO - Updating validation rules: {'PPoPCode': {'required': True, 'max_length': 10}}\n2025-10-13 08:57:45,770 - BrokerApp - INFO - Generating new D file\n2025-10-13 08:57:45,770 - BrokerApp - INFO - Loading FPDS data from 2007 to present",
+    "total_credibility": 79.305
 }

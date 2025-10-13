@@ -10,7 +10,7 @@ from Functions.compute_code_execution_metrics import compute_code_execution_metr
 from Functions.compute_credibility import compute_credibility
 
 # Configuration
-results_root = Path("Reports/grok-4-fast_clusters")
+results_root = Path("Reports/qwen3_clusters")
 
 for i in range(1, 21):
     # --- Step 0: Get request number 
@@ -112,7 +112,7 @@ for i in range(1, 21):
     semantic_metrics = compute_code_semantic_metrics(code)
     
     # Execution-based metrics
-    execution_metrics = compute_code_execution_metrics(code)
+    execution_metrics = compute_code_execution_metrics(code, 20)
     
     # Total credibility
     credibility = compute_credibility(struct_metrics, semantic_metrics, execution_metrics, avg_prob, perplexity)

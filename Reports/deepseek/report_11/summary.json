@@ -73,9 +73,9 @@
     },
     "semantic_quality_score": 80.0,
     "execution_success": false,
-    "execution_time_sec": 0.918,
-    "exception_type": "APIError",
-    "exception_message": "409 Client Error for http+docker://localnpipe/v1.51/containers/8e11cb00ef5331ac5c25188fbda25d4999b1a0378bb0d963d1d7e9ab8a4b57c1/logs?stderr=1&stdout=1&timestamps=0&follow=0&tail=all: Conflict (\"can not get logs from container which is dead or marked for removal\")",
-    "runtime_output": "",
+    "execution_time_sec": 1.778,
+    "exception_type": "ModuleNotFoundError",
+    "exception_message": "No module named 'sqlalchemy'",
+    "runtime_output": "Traceback (most recent call last):\n  File \"/app/code.py\", line 5, in <module>\n    import sqlalchemy as sa\nModuleNotFoundError: No module named 'sqlalchemy'",
     "total_credibility": 47.599
 }

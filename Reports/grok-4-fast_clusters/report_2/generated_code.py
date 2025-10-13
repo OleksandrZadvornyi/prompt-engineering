@@ -1,0 +1,779 @@
+import datetime
+import json
+import logging
+import os
+import re
+from typing import Dict, List, Any, Optional
+import pandas as pd
+from enum import Enum
+
+# Configure logging for better troubleshooting
+logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+logger = logging.getLogger(__name__)
+
+class SubmissionStatus(Enum):
+    DRAFT = "draft"
+    PUBLISHED = "published"
+    ERROR = "error"
+    VALIDATING = "validating"
+
+class DataType(Enum):
+    FABS = "fabs"
+    DABS = "dabs"
+    FPDS = "fpds"
+
+class BrokerSystem:
+    def __init__(self):
+        self.submissions: Dict[str, Dict] = {}
+        self.historical_data: Dict[str, List[Dict]] = {}
+        self.validations_rules: Dict[str, Any] = self._load_validation_rules()
+        self.user_roles: Dict[str, str] = {}  # user_id: role
+        self.gtAS_window: bool = False
+        self.new_relic_data: Dict = {}
+        self.error_codes: Dict[str, str] = self._load_error_codes()
+        self.cache: Dict[str, Any] = {}  # For caching file generations
+
+    def _load_validation_rules(self) -> Dict[str, Any]:
+        # Simulated validation rules update for DB-2213 and v1.1
+        return {
+            "duns_validation": {
+                "accept_expired": ["B", "C", "D"],
+                "date_check": lambda action_date, reg_start, reg_end: reg_start <= action_date <= reg_end
+            },
+            "zip_validation": {
+                "allow_partial": True,  # For ZIP+4, allow last 4 digits missing
+                "citywide": ["00000"]
+            },
+            "funding_agency_code": {"derive": True},
+            "ppop_code": {
+                "special_cases": ["00*****", "00FORGN"],
+                "zip_congressional": True
+            },
+            "flexfields": {"max_count": 1000, "performance_threshold": 50000},
+            "loan_records": {"accept_zero_blank": True},
+            "cfda_error": {
+                "triggers": ["invalid_format", "missing", "duplicate"]
+            },
+            "file_extension": {"allowed": [".txt", ".csv"]},
+            "schema_version": "1.1"
+        }
+
+    def _load_error_codes(self) -> Dict[str, str]:
+        return {
+            "DUNS_EXPIRED": "DUNS is expired but acceptable for ActionTypes B, C, D if registered in SAM.",
+            "FILE_WRONG_EXTENSION": "File must be .txt or .csv. Please check extension.",
+            "CFDA_INVALID": "CFDA error: Check format, presence, and uniqueness.",
+            "DUPLICATE_PUBLISH": "Submission already published or being processed. Wait for completion.",
+            "MISSING_REQUIRED": "Missing required element. Flexfields included in error report.",
+            "FABS_SUBMISSION_ERROR": "Submission failed due to validation issues. See details below.",
+            "PPOP_ZIP_INVALID": "PPoP ZIP+4 must match Legal Entity ZIP or be citywide (00000)."
+        }
+
+    # Cluster (4,): Process deletions, UI redesigns, reports, New Relic, syncing, SQL updates, derivations
+    def process_deletions_2017_12_19(self, submission_id: str):
+        """Process deletions for 12-19-2017."""
+        if submission_id in self.submissions:
+            delete_date = datetime.date(2017, 12, 19)
+            if 'created_date' in self.submissions[submission_id]:
+                if self.submissions[submission_id]['created_date'].date() == delete_date:
+                    del self.submissions[submission_id]
+                    logger.info(f"Deleted submission {submission_id} from 12-19-2017.")
+                else:
+                    logger.warning(f"Submission {submission_id} not from 12-19-2017.")
+
+    def redesign_resources_page(self, new_styles: Dict[str, str]):
+        """Redesign Resources page to match Broker styles."""
+        resources_config = {
+            "styles": new_styles,
+            "broker_design": True
+        }
+        logger.info("Resources page redesigned with new Broker styles.")
+        return resources_config
+
+    def report_user_testing_to_agencies(self, testing_results: Dict):
+        """Report user testing to Agencies."""
+        report = {
+            "summary": "User testing contributions to better UX.",
+            "results": testing_results,
+            "agencies_notified": True
+        }
+        logger.info("User testing report sent to Agencies.")
+        return report
+
+    def integrate_new_relic(self, app_data: Dict):
+        """Integrate New Relic for useful data across applications."""
+        self.new_relic_data.update(app_data)
+        logger.info("New Relic data integrated for all applications.")
+
+    def sync_d1_file_generation_with_fpds(self, fabs_data: pd.DataFrame, fpds_load_date: datetime.date):
+        """Sync D1 file generation with FPDS data load."""
+        cache_key = f"d1_{fpds_load_date}"
+        if cache_key not in self.cache or self.cache[cache_key]['last_load'] != fpds_load_date:
+            d1_file = self._generate_d1_file(fabs_data)
+            self.cache[cache_key] = {"file": d1_file, "last_load": fpds_load_date}
+            logger.info(f"D1 file generated and synced with FPDS load on {fpds_load_date}.")
+        else:
+            logger.info("No update needed; D1 file synced with current FPDS load.")
+
+    def _generate_d1_file(self, data: pd.DataFrame) -> str:
+        """Generate D1 file content."""
+        return data.to_csv(index=False, quoting=1)  # Quoted for leading zeros
+
+    def update_sql_codes_for_clarity(self, sql_queries: List[str]):
+        """Update SQL codes for clarity."""
+        # Simulate SQL updates
+        clarified_sql = [query.replace("-- Old", "-- Clarified") for query in sql_queries]
+        logger.info("SQL codes updated for clarity.")
+        return clarified_sql
+
+    def add_ppopcode_special_cases(self, records: pd.DataFrame):
+        """Add 00***** and 00FORGN PPoPCode cases to derivation logic."""
+        def derive_ppopcode(row):
+            if re.match(r'^00\*+\*+', row.get('PPoPCode', '')) or row.get('PPoPCode') == '00FORGN':
+                row['derived_PPoPCode'] = 'SPECIAL_CASE'
+            return row
+        updated_records = records.apply(derive_ppopcode, axis=1)
+        logger.info("PPoPCode special cases added to derivation.")
+        return updated_records
+
+    def derive_funding_agency_code(self, records: pd.DataFrame):
+        """Derive FundingAgencyCode for data quality."""
+        if self.validations_rules['funding_agency_code']['derive']:
+            records['FundingAgencyCode'] = records['AgencyCode'].fillna('DERIVED_DEFAULT')
+        logger.info("FundingAgencyCode derived for improved data quality.")
+        return records
+
+    def map_federal_action_obligation_to_atom_feed(self, fabs_data: Dict):
+        """Map FederalActionObligation to Atom Feed."""
+        atom_feed = {
+            "obligation": fabs_data.get('FederalActionObligation', 0),
+            "mapped": True
+        }
+        logger.info("FederalActionObligation mapped to Atom Feed.")
+        return atom_feed
+
+    def validate_ppopyip_plus4_like_legal_zip(self, zip_code: str, legal_zip: str):
+        """PPoP ZIP+4 works like Legal Entity ZIP validations."""
+        if self.validations_rules['zip_validation']['allow_partial']:
+            # Validate ZIP+4, allow citywide
+            if re.match(r'^\d{5}(-\d{4})?$', zip_code) or zip_code == '00000':
+                if zip_code.startswith(legal_zip[:5]):
+                    return True, "Valid PPoP ZIP+4 matching Legal ZIP."
+                return False, self.error_codes['PPOP_ZIP_INVALID']
+        return False, self.error_codes['PPOP_ZIP_INVALID']
+
+    # Cluster (5,): UI edits, logging, file access, permissions, testing, etc.
+    def round2_dabs_landing_page_edits(self, edits: Dict):
+        """Round 2 of DABS landing page edits."""
+        self._apply_ui_edits('dabs_landing', edits, round=2)
+        logger.info("Round 2 DABS landing page edits applied.")
+
+    def round2_homepage_edits(self, edits: Dict):
+        """Round 2 of Homepage edits."""
+        self._apply_ui_edits('homepage', edits, round=2)
+        logger.info("Round 2 Homepage edits applied.")
+
+    def round3_help_page_edits(self, edits: Dict):
+        """Round 3 of Help page edits."""
+        self._apply_ui_edits('help_page', edits, round=3)
+        logger.info("Round 3 Help page edits applied.")
+
+    def round2_help_page_edits(self, edits: Dict):
+        """Round 2 of Help page edits."""
+        self._apply_ui_edits('help_page', edits, round=2)
+        logger.info("Round 2 Help page edits applied.")
+
+    def _apply_ui_edits(self, page: str, edits: Dict, round: int):
+        """Apply UI edits for leadership approval."""
+        ui_config = self.cache.get('ui_edits', {})
+        ui_config[f"{page}_round_{round}"] = edits
+        self.cache['ui_edits'] = ui_config
+        logger.info(f"UI edits applied to {page} for round {round}.")
+
+    def enhance_logging_for_submissions(self, submission_id: str, function: str):
+        """Better logging for troubleshooting submissions."""
+        logger.info(f"Troubleshooting submission {submission_id} in function {function}.")
+        # Log specific details
+        if submission_id in self.submissions:
+            logger.debug(f"Submission details: {json.dumps(self.submissions[submission_id], default=str)}")
+
+    def access_published_fabs_files(self, user_id: str):
+        """Access published FABS files."""
+        if self.user_roles.get(user_id) == 'website_user':
+            files = [sub for sub in self.submissions.values() if sub.get('status') == SubmissionStatus.PUBLISHED]
+            return files
+        return []
+
+    def filter_grant_records_only(self, records: pd.DataFrame):
+        """Ensure USAspending sends only grant records."""
+        grants = records[records['data_type'] == DataType.FABS.value]
+        logger.info(f"Filtered to {len(grants)} grant records only.")
+        return grants
+
+    def create_content_mockups(self, data: Dict):
+        """Create content mockups for efficient submission."""
+        mockup = {
+            "layout": "efficient_submission",
+            "content": data
+        }
+        logger.info("Content mockups created.")
+        return mockup
+
+    def track_tech_thursday_issues(self, issues: List[str]):
+        """Track issues from Tech Thursday for testing and fixes."""
+        self.cache['tech_thursday_issues'] = issues
+        logger.info(f"Tracked {len(issues)} issues from Tech Thursday.")
+
+    def create_user_testing_summary(self, ui_sme_data: Dict):
+        """Create user testing summary from UI SME."""
+        summary = {
+            "improvements": ui_sme_data.get('follow_through', []),
+            "summary": "UI improvements to follow."
+        }
+        logger.info("User testing summary created.")
+        return summary
+
+    def begin_user_testing(self, requests: List):
+        """Begin user testing for UI improvements."""
+        results = {"tested": requests, "validated": True}
+        logger.info("User testing begun and validated.")
+        return results
+
+    def schedule_user_testing(self, date: datetime.date, testers: List[str]):
+        """Schedule user testing with advance notice."""
+        schedule = {
+            "date": date,
+            "testers": testers,
+            "notified": True
+        }
+        logger.info(f"User testing scheduled for {date} with {len(testers)} testers.")
+        return schedule
+
+    def design_ui_schedule_from_sme(self, sme_timeline: Dict):
+        """Design schedule from UI SME."""
+        timeline = {"potential_timeline": sme_timeline}
+        logger.info("UI improvement schedule designed.")
+        return timeline
+
+    def design_ui_audit_from_sme(self, sme_scope: Dict):
+        """Design audit from UI SME."""
+        audit = {"potential_scope": sme_scope}
+        logger.info("UI improvement audit designed.")
+        return audit
+
+    def reset_environment_staging_max(self):
+        """Reset environment to only Staging MAX permissions."""
+        self.user_roles = {uid: role for uid, role in self.user_roles.items() if 'staging' in role}
+        logger.warning("Environment reset to Staging MAX permissions; FABS testers access revoked.")
+
+    def index_domain_models(self, models: List[str]):
+        """Index domain models for faster validation."""
+        for model in models:
+            self.cache[f"index_{model}"] = {"indexed": True, "time": "reasonable"}
+        logger.info(f"Domain models {models} indexed for performance.")
+
+    def update_header_info_with_datetime(self, submission: Dict):
+        """Show updated date AND time in header."""
+        submission['updated_at'] = datetime.datetime.now().isoformat()
+        logger.info("Header updated with date and time.")
+        return submission
+
+    def enforce_zero_padded_fields(self, data: pd.DataFrame):
+        """Only zero-padded fields."""
+        for col in data.columns:
+            if data[col].dtype == 'object':
+                data[col] = data[col].astype(str).str.zfill(10)  # Example padding
+        logger.info("Fields zero-padded as required.")
+        return data
+
+    def update_error_codes_detailed(self, logic: Dict):
+        """Updated error codes with accurate logic info."""
+        self.error_codes.update(logic)
+        logger.info("Error codes updated for better troubleshooting.")
+
+    def quick_access_broker_data(self, app: str, user_id: str):
+        """Quick access to Broker application data."""
+        if self.user_roles.get(user_id) == 'developer':
+            data = self.submissions if app == 'broker' else {}
+            logger.info(f"Developer accessed {app} data.")
+            return data
+        return {}
+
+    def read_only_dabs_access_for_fabs_users(self, user_id: str):
+        """Read-only access to DABS for FABS users."""
+        if self.user_roles.get(user_id) == 'fabs_user':
+            self.user_roles[user_id] = 'fabs_dabs_readonly'
+        logger.info("Read-only DABS access granted to FABS user.")
+
+    def create_landing_page_for_fabs_dabs(self):
+        """Landing page to navigate FABS or DABS."""
+        page = {
+            "navigation": ["FABS", "DABS"],
+            "access": "both_sides"
+        }
+        logger.info("FABS/DABS landing page created.")
+        return page
+
+    # Cluster (2,): Submission updates, GTAS, sample files, loaders, historical data
+    def update_fabs_submission_on_status_change(self, submission_id: str, new_status: SubmissionStatus):
+        """Update FABS submission when publishStatus changes."""
+        if submission_id in self.submissions:
+            self.submissions[submission_id]['status'] = new_status.value
+            self.submissions[submission_id]['last_modified'] = datetime.datetime.now()
+            logger.info(f"FABS submission {submission_id} status updated to {new_status.value}.")
+
+    def add_gtas_window_data(self, window_data: Dict):
+        """Add GTAS window data to database."""
+        self.gtAS_window = window_data.get('active', False)
+        self.historical_data['gtas'] = window_data
+        logger.info("GTAS window data added; site lockdown if active.")
+
+    def update_fabs_sample_file_remove_header(self):
+        """Update FABS sample file to remove FundingAgencyCode header."""
+        sample_file = pd.DataFrame(columns=[col for col in pd.read_csv('sample_fabs.csv').columns if col != 'FundingAgencyCode'])
+        sample_file.to_csv('updated_sample_fabs.csv', index=False)
+        logger.info("FABS sample file updated without FundingAgencyCode header.")
+
+    def deactivate_publish_button_during_derivations(self, submission_id: str):
+        """Deactivate publish button while derivations happen."""
+        if submission_id in self.submissions:
+            self.submissions[submission_id]['publish_active'] = False
+            # Simulate derivation time
+            import time; time.sleep(2)
+            self.submissions[submission_id]['publish_active'] = True
+            logger.info(f"Publish button deactivated temporarily for {submission_id}.")
+
+    def derive_fields_historical_fabs_loader(self, historical_data: pd.DataFrame):
+        """Derive fields in historical FABS loader for agency codes."""
+        historical_data['AgencyCode'] = historical_data['OfficeCode'].map(self._derive_agency_from_office)
+        self.historical_data['fabs'] = historical_data.to_dict('records')
+        logger.info("Fields derived in historical FABS loader.")
+
+    def _derive_agency_from_office(self, office_code: str) -> str:
+        """Derive agency from office code."""
+        # Simple mapping
+        agency_map = {"OFF001": "AGENCY_A", "OFF002": "AGENCY_B"}
+        return agency_map.get(office_code, "UNKNOWN")
+
+    def include_frec_derivations_historical_fabs(self, data: pd.DataFrame):
+        """Include FREC derivations in historical FABS load."""
+        data['FREC'] = data.apply(lambda row: self._derive_frec(row), axis=1)
+        logger.info("FREC derivations included for USASpending.gov consistency.")
+        return data
+
+    def _derive_frec(self, row: pd.Series) -> str:
+        """Derive FREC."""
+        return f"FREC_{row.get('AgencyCode', 'DEFAULT')}"
+
+    def update_fabs_frontend_urls(self, current_url: str) -> str:
+        """Update frontend URLs to reflect pages accurately."""
+        url_map = {
+            "/fabs/submit": "/financial-assistance/submit",
+            "/fabs/dashboard": "/financial-assistance/dashboard"
+        }
+        return url_map.get(current_url, current_url)
+
+    def load_historical_fpds_both_sources(self, extracted_data: List[Dict], feed_data: List[Dict]):
+        """Load historical FPDS from extracted and feed data."""
+        combined = extracted_data + feed_data
+        self.historical_data['fpds'] = combined
+        logger.info(f"Loaded {len(combined)} historical FPDS records from both sources.")
+
+    def provide_fabs_groups_frec_paradigm(self, groups: List[str]):
+        """Provide FABS groups under FREC paradigm."""
+        frec_groups = [f"FREC_{group}" for group in groups]
+        logger.info("FABS groups provided under FREC paradigm.")
+        return frec_groups
+
+    def ensure_historical_data_columns(self, data: pd.DataFrame):
+        """Ensure historical data includes all necessary columns."""
+        required_cols = ['id', 'amount', 'agency']
+        for col in required_cols:
+            if col not in data.columns:
+                data[col] = None
+        logger.info("Historical data columns ensured complete.")
+        return data
+
+    def access_additional_fpds_fields(self, pull_data: Dict):
+        """Access two additional fields from FPDS pull."""
+        additional = pull_data.get('field1', '') + " " + pull_data.get('field2', '')
+        logger.info("Accessed additional FPDS fields.")
+        return additional
+
+    def add_helpful_info_submission_dashboard(self, dashboard: Dict, info: List[str]):
+        """Add helpful info to submission dashboard."""
+        dashboard['additional_info'] = info + ['Manage IG requests here']
+        logger.info("Helpful info added to dashboard.")
+        return dashboard
+
+    def download_uploaded_fabs_file(self, submission_id: str):
+        """Download uploaded FABS file."""
+        if submission_id in self.submissions:
+            file_content = self.submissions[submission_id].get('uploaded_file', '')
+            logger.info(f"Downloaded file for submission {submission_id}.")
+            return file_content
+        return ""
+
+    def load_historical_fpds_since_2007(self, data: List[Dict]):
+        """Determine best way and load historical FPDS since 2007."""
+        since_2007 = [rec for rec in data if rec.get('date', datetime.date(2007,1,1)) >= datetime.date(2007,1,1)]
+        self.historical_data['fpds_2007'] = since_2007
+        logger.info(f"Loaded {len(since_2007)} FPDS records since 2007.")
+
+    def update_fabs_language(self, page_content: str) -> str:
+        """Update language on FABS pages for appropriateness."""
+        updated = page_content.replace("Contract", "Financial Assistance")
+        logger.info("FABS language updated for user clarity.")
+        return updated
+
+    def customize_banner_messages(self, user_type: str):
+        """No DABS banners for FABS users and vice versa."""
+        banners = {
+            "fabs": "FABS-specific info",
+            "dabs": "DABS-specific info"
+        }
+        logger.info(f"Custom banner for {user_type} user.")
+        return banners.get(user_type, "")
+
+    def show_submission_periods(self, user_id: str):
+        """Show when submission periods start and end."""
+        periods = {
+            "start": datetime.date.today(),
+            "end": datetime.date.today() + datetime.timedelta(days=30)
+        }
+        if self.user_roles.get(user_id) == 'agency_user':
+            logger.info("Submission periods displayed to agency user.")
+            return periods
+        return {}
+
+    # Cluster (0,): Upload validations, error messages, flexfields, CFDA, resources, DUNS
+    def upload_and_validate_error_message(self, file_path: str):
+        """Accurate error message for Upload and Validate."""
+        if not os.path.exists(file_path):
+            return self.error_codes['FILE_WRONG_EXTENSION']
+        return "Upload validated successfully."
+
+    def update_broker_validation_rule_table_db2213(self, rules_update: Dict):
+        """Update validation rule table for DB-2213."""
+        self.validations_rules.update(rules_update)
+        logger.info("Validation rules updated for DB-2213.")
+
+    def include_flexfields_in_errors(self, errors: List[str], flexfields: List[str]):
+        """Flexfields appear in warning/error files if only missing required."""
+        if len(errors) == 1 and 'missing_required' in errors[0]:
+            errors.append(f"Flexfields: {', '.join(flexfields)}")
+        logger.info("Flexfields included in error report.")
+        return errors
+
+    def clarify_cfda_error_triggers(self, error: str) -> str:
+        """Clarify what triggers CFDA error."""
+        triggers = self.validations_rules['cfda_error']['triggers']
+        clarified = f"{error} Triggers: {', '.join(triggers)}"
+        logger.info("CFDA error clarified.")
+        return clarified
+
+    def update_broker_resources_for_launch(self, pages: List[str]):
+        """Update Broker resources, validations, P&P for FABS and DAIMS v1.1 launch."""
+        for page in pages:
+            self.cache[f"{page}_v1.1"] = True
+        logger.info("Broker resources updated for launch.")
+
+    def duns_validation_accept_bcd(self, record: Dict):
+        """DUNS accept for ActionTypes B,C,D if registered in SAM, even expired."""
+        action_type = record.get('ActionType', '')
+        if action_type in self.validations_rules['duns_validation']['accept_expired']:
+            record['duns_valid'] = True
+            logger.info("DUNS accepted for ActionType B/C/D.")
+        return record
+
+    def duns_validation_date_check(self, action_date_str: str, sam_reg: Dict):
+        """DUNS accept if ActionDate before current reg but after initial."""
+        action_date = datetime.datetime.strptime(action_date_str, '%Y-%m-%d').date()
+        reg_start = sam_reg.get('start_date')
+        reg_end = sam_reg.get('end_date')
+        if self.validations_rules['duns_validation']['date_check'](action_date, reg_start, reg_end):
+            return True, "Date within SAM registration."
+        return False, "Date outside SAM registration."
+
+    def helpful_file_level_error_wrong_extension(self, file_name: str):
+        """More helpful file-level error for wrong extension."""
+        if not any(file_name.endswith(ext) for ext in self.validations_rules['file_extension']['allowed']):
+            return self.error_codes['FILE_WRONG_EXTENSION']
+        return "File extension valid."
+
+    def prevent_duplicate_transactions_publish(self, submission_id: str):
+        """Prevent duplicate transactions from publishing, handle time gap."""
+        if submission_id in self.submissions and self.submissions[submission_id].get('published', False):
+            raise ValueError(self.error_codes['DUPLICATE_PUBLISH'])
+        self.submissions[submission_id]['published'] = True
+        logger.info(f"Duplicate publish prevented for {submission_id}.")
+
+    # Cluster (1,): D Files caching, access files, flexfields performance, publishing prevention
+    def manage_d_files_generation_cached(self, request_id: str, fabs_data: pd.DataFrame, fpds_data: pd.DataFrame):
+        """Manage and cache D Files generation requests."""
+        cache_key = f"d_file_{request_id}"
+        if cache_key not in self.cache:
+            d_file = self._generate_d_file(fabs_data, fpds_data)
+            self.cache[cache_key] = d_file
+            logger.info(f"D File generated and cached for {request_id}.")
+        return self.cache[cache_key]
+
+    def _generate_d_file(self, fabs: pd.DataFrame, fpds: pd.DataFrame) -> str:
+        """Generate D File from FABS and FPDS."""
+        combined = pd.concat([fabs, fpds], ignore_index=True)
+        return combined.to_csv(index=False)
+
+    def access_raw_agency_published_fabs_via_usaspending(self, user_id: str):
+        """Access raw agency published files from FABS via USAspending."""
+        if self.user_roles.get(user_id) in ['user', 'agency_user']:
+            published = [sub['file'] for sub in self.submissions.values() if sub.get('status') == 'published']
+            logger.info("Raw FABS files accessed via USAspending.")
+            return published
+        return []
+
+    def handle_large_flexfields_no_impact(self, flexfields_count: int, data: pd.DataFrame):
+        """Include large number of flexfields without performance impact."""
+        if flexfields_count <= self.validations_rules['flexfields']['max_count']:
+            # Simulate efficient handling
+            data['flexfields'] = [{} for _ in range(len(data))]
+            if flexfields_count > self.validations_rules['flexfields']['performance_threshold']:
+                logger.warning("Large flexfields; monitor performance.")
+        logger.info(f"Handled {flexfields_count} flexfields efficiently.")
+        return data
+
+    def prevent_double_publishing_after_refresh(self, submission_id: str):
+        """Prevent double publishing after refresh."""
+        self.prevent_duplicate_transactions_publish(submission_id)  # Reuse logic
+        logger.info("Double publishing prevented post-refresh.")
+
+    def update_daily_financial_assistance_data(self, data: pd.DataFrame):
+        """See updated financial assistance data daily."""
+        self.historical_data['daily_update'] = data.to_dict('records')
+        logger.info("Daily financial assistance data updated.")
+
+    def ensure_no_new_data_on_nonexistent_correct_delete(self, record_id: str):
+        """Prevent correcting/deleting non-existent records from creating new data."""
+        if record_id not in self.submissions:
+            logger.warning(f"Non-existent record {record_id} ignored; no new data created.")
+            return False
+        # Simulate delete/correct without creating new
+        del self.submissions[record_id]
+        return True
+
+    def accurate_ppopcode_ppopyipc_congressional(self, data: Dict):
+        """Accurate and complete PPoPCode and PPoPCongressionalDistrict."""
+        if self.validations_rules['ppop_code']['zip_congressional']:
+            data['PPoPCongressionalDistrict'] = 'Derived from ZIP'
+        logger.info("PPoPCode and Congressional data ensured accurate.")
+        return data
+
+    def prevent_nasa_grants_as_contracts(self, records: pd.DataFrame):
+        """Don't display NASA grants as contracts."""
+        records.loc[records['agency'] == 'NASA', 'type'] = 'grant'
+        logger.info("NASA grants correctly classified.")
+        return records
+
+    def determine_d_files_generation_from_fabs_fpds(self, method: str):
+        """Determine how agencies generate/validate D Files."""
+        validation = self.manage_d_files_generation_cached('test', pd.DataFrame(), pd.DataFrame())
+        logger.info(f"D Files generation method: {method}")
+        return validation
+
+    def generate_validate_d_files_user(self, fabs: pd.DataFrame, fpds: pd.DataFrame):
+        """User generate and validate D Files."""
+        d_file = self._generate_d_file(fabs, fpds)
+        # Validate
+        errors = self._validate_d_file(d_file)
+        return d_file, errors
+
+    def _validate_d_file(self, file_content: str) -> List[str]:
+        """Validate D File."""
+        return [] if len(file_content) > 0 else ["Empty file"]
+
+    def access_test_features_nonprod(self, feature: str, env: str):
+        """Access test features in other nonProd environments."""
+        if env != 'prod':
+            logger.info(f"Test feature {feature} accessed in {env}.")
+            return True
+        return False
+
+    def accurate_fabs_submission_errors(self, errors: List[str]):
+        """Submission errors accurately represent FABS errors."""
+        detailed_errors = [self.clarify_cfda_error_triggers(e) if 'CFDA' in e else e for e in errors]
+        logger.info("FABS errors accurately represented.")
+        return detailed_errors
+
+    def show_submission_creator(self, submission: Dict):
+        """Accurately see who created a submission."""
+        creator = submission.get('created_by', 'Unknown')
+        logger.info(f"Submission created by {creator}.")
+        return creator
+
+    def robust_test_file_derivations_check(self, test_file: pd.DataFrame):
+        """Ensure FABS derives fields properly with test file."""
+        derived = self.derive_fields_historical_fabs_loader(test_file)
+        # Follow-up check
+        assert len(derived) == len(test_file), "Derivation check failed"
+        logger.info("Robust derivation test passed.")
+        return derived
+
+    def submit_individual_recipients_no_duns_error(self, record: Dict):
+        """Submit individual recipients without DUNS error."""
+        if record.get('RecipientType') == 'individual':
+            record['duns_required'] = False
+        logger.info("Individual recipient submitted without DUNS error.")
+        return record
+
+    def info_rows_to_publish_before_decision(self, rows_count: int):
+        """More info about how many rows will be published."""
+        info = f"{rows_count} rows will be published."
+        logger.info(info)
+        return info
+
+    def submit_citywide_ppopyip(self, zip_code: str):
+        """Submit citywide as PPoP ZIP and pass validations."""
+        if zip_code == '00000':
+            return True, "Citywide ZIP accepted."
+        return False, self.error_codes['PPOP_ZIP_INVALID']
+
+    def reasonable_validation_time(self, data: pd.DataFrame):
+        """Validations run in reasonable time."""
+        start = datetime.datetime.now()
+        errors = self._validate_file(data)  # Simulate
+        time_taken = (datetime.datetime.now() - start).total_seconds()
+        if time_taken < 60:  # Reasonable <1min
+            logger.info(f"Validations completed in {time_taken}s.")
+        return errors
+
+    def _validate_file(self, df: pd.DataFrame) -> List[str]:
+        return []
+
+    # Cluster (3,): Updates, deletions, validations, deployments, SAM, derivations
+    def receive_updates_fabs_records(self, updates: Dict):
+        """Receive updates to FABS records."""
+        for rec_id, update in updates.items():
+            if rec_id in self.submissions:
+                self.submissions[rec_id].update(update)
+        logger.info("FABS records updated.")
+
+    def ensure_deleted_fsrs_not_included(self, submission_data: pd.DataFrame):
+        """Ensure deleted FSRS records not included."""
+        filtered = submission_data[submission_data['status'] != 'deleted']
+        logger.info(f"Excluded {len(submission_data) - len(filtered)} deleted FSRS records.")
+        return filtered
+
+    def accept_zero_blank_loan_records(self, record: Dict):
+        """FABS validation accept zero/blank for loan records."""
+        if record.get('record_type') == 'loan' and self.validations_rules['loan_records']['accept_zero_blank']:
+            record['base_and_amount'] = record.get('base_and_amount', 0) or 0
+        return record
+
+    def deploy_fabs_production(self):
+        """Deploy FABS to production."""
+        self.cache['deployed'] = {'fabs': 'production'}
+        logger.info("FABS deployed to production for data submission.")
+
+    def ensure_complete_sam_data(self, sam_pull: Dict):
+        """Confident SAM data is complete."""
+        completeness = len(sam_pull.get('fields', [])) == 100  # Simulated
+        if completeness:
+            logger.info("SAM data confirmed complete.")
+        return sam_pull
+
+    def accept_zero_blank_non_loan(self, record: Dict):
+        """Accept zero/blank for non-loan records."""
+        if record.get('record_type') != 'loan' and self.validations_rules['loan_records']['accept_zero_blank']:
+            record['base_and_amount'] = record.get('base_and_amount', '') or ''
+        return record
+
+    def derive_all_data_elements(self, data: pd.DataFrame):
+        """All derived data elements derived properly."""
+        data = self.add_ppopcode_special_cases(data)
+        data = self.derive_funding_agency_code(data)
+        logger.info("All data elements derived properly.")
+        return data
+
+    def update_legalentity_addressline3_max_length(self, record: Dict):
+        """Max length for LegalEntityAddressLine3 match Schema v1.1."""
+        if self.validations_rules['schema_version'] == '1.1':
+            record['LegalEntityAddressLine3'] = record.get('LegalEntityAddressLine3', '')[:100]  # v1.1 max
+        return record
+
+    def use_schema_v11_headers(self, file: pd.DataFrame):
+        """Use schema v1.1 headers in FABS file."""
+        headers_v11 = [col for col in file.columns if 'v1.1' in col or col in self.validations_rules]
+        file = file[headers_v11]
+        logger.info("Schema v1.1 headers used.")
+        return file
+
+    def update_fpds_daily(self, fpds_data: pd.DataFrame):
+        """FPDS data up-to-date daily."""
+        self.historical_data['fpds_daily'] = fpds_data.to_dict('records')
+        logger.info("FPDS data updated daily.")
+
+    def load_historical_financial_assistance_fabs_golive(self, hist_data: List[Dict]):
+        """Load all historical Financial Assistance for FABS go-live."""
+        self.historical_data['fabs_historical'] = hist_data
+        logger.info(f"Loaded {len(hist_data)} historical records for go-live.")
+
+    def load_historical_fpds(self, data: List[Dict]):
+        """Load historical FPDS data."""
+        self.historical_data['fpds_historical'] = data
+        logger.info("Historical FPDS loaded.")
+
+    def get_file_f_correct_format(self, file_data: str):
+        """Get File F in correct format."""
+        formatted = file_data.replace('\n', ',')  # Simulated
+        return formatted
+
+    def better_understand_file_level_errors(self, errors: List[str]):
+        """Better file-level errors."""
+        detailed = [e + " (see row details)" for e in errors]
+        logger.info("File-level errors enhanced.")
+        return detailed
+
+    def submit_data_quoted_excel(self, data: str):
+        """Submit data elements surrounded by quotes for Excel zeros."""
+        quoted = f'"{data}"'
+        logger.info("Data quoted to preserve zeros in Excel.")
+        return quoted
+
+    # Combined Clusters
+    # Cluster (2, 5):
+    def derive_office_names_from_codes(self, data: pd.DataFrame):
+        """See office names derived from codes for context."""
+        office_map = {"OFF001": "Office of Finance", "OFF002": "Office of Grants"}
+        data['OfficeName'] = data['OfficeCode'].map(office_map)
+        logger.info("Office names derived for data users.")
+        return data
+
+    # Cluster (2, 4, 5):
+    def link_sample_file_correct(self, dialog: Dict):
+        """Link SAMPLE FILE on dialog to correct file."""
+        dialog['sample_link'] = 'updated_sample_fabs.csv'
+        logger.info("SAMPLE FILE link corrected for submissions.")
+        return dialog
+
+    # Cluster (3, 5):
+    def leave_off_last4_zip_no_error(self, zip_code: str):
+        """Leave off last 4 digits of ZIP without error."""
+        if self.validations_rules['zip_validation']['allow_partial'] and len(zip_code) == 5:
+            return True, "Partial ZIP accepted."
+        return False, "Invalid ZIP format."
+
+    # Cluster (1, 2):
+    def correct_status_labels_dashboard(self, dashboard: Dict):
+        """Correct status labels on Submission Dashboard."""
+        for sub in dashboard.get('submissions', []):
+            sub['status_label'] = sub['status'].upper()
+        logger.info("Status labels corrected on dashboard.")
+        return dashboard
+
+# Example usage to make it functional (but output only code, so this is part of the script)
+if __name__ == "__main__":
+    broker = BrokerSystem()
+    # Simulate some operations
+    sample_data = pd.DataFrame({'id': [1], 'AgencyCode': ['A01']})
+    broker.sync_d1_file_generation_with_fpds(sample_data, datetime.date.today())
+    broker.update_fabs_submission_on_status_change('sub1', SubmissionStatus.PUBLISHED)
+    print("Broker system initialized and functional.")

@@ -200,34 +200,34 @@
             "execution_success": {
                 "min": 0.0,
                 "max": 1.0,
-                "mean": 0.55,
+                "mean": 0.6,
                 "median": 1.0,
-                "stdev": 0.5104177855340404,
+                "stdev": 0.5026246899500346,
                 "range": 1.0
             },
             "execution_time_sec": {
-                "min": 0.568,
-                "max": 5,
-                "mean": 1.19825,
-                "median": 1.005,
-                "stdev": 0.9080609691448094,
-                "range": 4.432
+                "min": 1.119,
+                "max": 12.117,
+                "mean": 2.1225,
+                "median": 1.6655,
+                "stdev": 2.378645468151548,
+                "range": 10.998000000000001
             }
         },
         "Overall": {
             "total_credibility": {
                 "min": 33.687,
-                "max": 87.522,
-                "mean": 65.13445,
-                "median": 78.57300000000001,
-                "stdev": 20.577700629756833,
-                "range": 53.83500000000001
+                "max": 85.547,
+                "mean": 64.0023,
+                "median": 75.797,
+                "stdev": 18.80912242027928,
+                "range": 51.86
             }
         }
     },
     "best_run": {
         "run_number": 18,
-        "credibility": 87.522,
+        "credibility": 85.547,
         "timestamp": "2025-10-12 12:21:44",
         "quality_score": 94.0,
         "syntax_valid": true,
@@ -245,11 +245,11 @@
         {
             "run": 12,
             "credibility": 33.687,
-            "deviation": 1.52822954157107
+            "deviation": 1.6117338875584757
         }
     ],
     "quality_rates": {
         "syntax_valid_rate": 100.0,
-        "execution_success_rate": 55.00000000000001
+        "execution_success_rate": 60.0
     }
 }

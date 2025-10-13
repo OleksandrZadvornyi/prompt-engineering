@@ -129,9 +129,9 @@
     },
     "semantic_quality_score": 88.0,
     "execution_success": true,
-    "execution_time_sec": 0.903,
-    "exception_type": "APIError",
-    "exception_message": "409 Client Error for http+docker://localnpipe/v1.51/containers/b52ae0360d83d24baaa880e45bc260e69d4cb5bfa826ee24ec4dcab1896bdeb2/logs?stderr=1&stdout=1&timestamps=0&follow=0&tail=all: Conflict (\"can not get logs from container which is dead or marked for removal\")",
-    "runtime_output": "",
-    "total_credibility": 81.904
+    "execution_time_sec": 1.345,
+    "exception_type": "",
+    "exception_message": "",
+    "runtime_output": "Processing deletions from 12-19-2017...\nDeletion processing completed.\nDerived office names: ['Bureau of Economic Analysis', 'Department of Commerce']\nZip validation: True\nIncomplete ZIP OK: False\nScheduled user testing on 2025-10-13 with participants: agency1, agency2\nPublish button enabled: True\nEnhanced logging for submission e1165087-350e-4a30-ba2d-a7f9beaf6462\nReporting user testing results for AgencyX: {'feedback': 'Good UX', 'errors': []}\nLoading historical FABS data from 2020-01-01 00:00:00 to 2024-01-01 00:00:00",
+    "total_credibility": 79.738
 }

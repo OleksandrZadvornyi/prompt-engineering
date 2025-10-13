@@ -76,7 +76,7 @@
     },
     "semantic_quality_score": 63.0,
     "execution_success": false,
-    "execution_time_sec": 1.007,
+    "execution_time_sec": 1.754,
     "exception_type": "ModuleNotFoundError",
     "exception_message": "No module named 'requests'",
     "runtime_output": "Traceback (most recent call last):\n  File \"/app/code.py\", line 5, in <module>\n    import requests\nModuleNotFoundError: No module named 'requests'",

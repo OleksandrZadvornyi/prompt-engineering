@@ -72,7 +72,7 @@
     },
     "semantic_quality_score": 63.0,
     "execution_success": false,
-    "execution_time_sec": 0.918,
+    "execution_time_sec": 1.706,
     "exception_type": "ModuleNotFoundError",
     "exception_message": "No module named 'sqlalchemy'",
     "runtime_output": "Traceback (most recent call last):\n  File \"/app/code.py\", line 5, in <module>\n    from sqlalchemy import create_engine, Column, Integer, String, DateTime, Text, ForeignKey\nModuleNotFoundError: No module named 'sqlalchemy'",

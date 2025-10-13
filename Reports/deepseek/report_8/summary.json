@@ -87,9 +87,9 @@
     },
     "semantic_quality_score": 80.5,
     "execution_success": true,
-    "execution_time_sec": 0.908,
+    "execution_time_sec": 1.49,
     "exception_type": "",
     "exception_message": "",
     "runtime_output": "",
-    "total_credibility": 78.101
+    "total_credibility": 75.249
 }

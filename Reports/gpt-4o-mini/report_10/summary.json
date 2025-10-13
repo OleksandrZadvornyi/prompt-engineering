@@ -46,7 +46,7 @@
     },
     "semantic_quality_score": 48.5,
     "execution_success": false,
-    "execution_time_sec": 0.404,
+    "execution_time_sec": 0.686,
     "exception_type": "RuntimeError",
     "exception_message": "File \"/app/code.py\", line 4\n    class User stories:\n               ^^^^^^^\nSyntaxError: invalid syntax",
     "runtime_output": "File \"/app/code.py\", line 4\n    class User stories:\n               ^^^^^^^\nSyntaxError: invalid syntax",

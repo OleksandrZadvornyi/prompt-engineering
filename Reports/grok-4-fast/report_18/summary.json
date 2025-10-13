@@ -46,7 +46,7 @@
     },
     "semantic_quality_score": 48.5,
     "execution_success": false,
-    "execution_time_sec": 0.559,
+    "execution_time_sec": 0.74,
     "exception_type": "RuntimeError",
     "exception_message": "File \"/app/code.py\", line 109\n    def check_pp op_zip(zip_code: str) -> bool:\n                 ^^^^^^\nSyntaxError: expected '('",
     "runtime_output": "File \"/app/code.py\", line 109\n    def check_pp op_zip(zip_code: str) -> bool:\n                 ^^^^^^\nSyntaxError: expected '('",

@@ -69,9 +69,9 @@
     },
     "semantic_quality_score": 96.5,
     "execution_success": true,
-    "execution_time_sec": 0.729,
+    "execution_time_sec": 1.186,
     "exception_type": "",
     "exception_message": "",
     "runtime_output": "Publishing submission from user agency_user_1\nSubmission has errors. Cannot publish.\nCannot publish due to errors.\nApplying UI styles",
-    "total_credibility": 88.972
+    "total_credibility": 86.732
 }

@@ -78,9 +78,9 @@
     },
     "semantic_quality_score": 94.0,
     "execution_success": true,
-    "execution_time_sec": 1.104,
+    "execution_time_sec": 1.785,
     "exception_type": "",
     "exception_message": "",
-    "runtime_output": "2025-10-12 12:00:26,951 - __main__ - INFO - Processing deletions for 2017-12-19 00:00:00\n2025-10-12 12:00:26,951 - __main__ - INFO - Updated validation rules: {'DB-2213': 'Updated validation rule for PPoPCode'}",
-    "total_credibility": 87.42
+    "runtime_output": "2025-10-13 08:57:54,589 - __main__ - INFO - Processing deletions for 2017-12-19 00:00:00\n2025-10-13 08:57:54,590 - __main__ - INFO - Updated validation rules: {'DB-2213': 'Updated validation rule for PPoPCode'}",
+    "total_credibility": 84.083
 }

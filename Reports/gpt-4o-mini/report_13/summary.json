@@ -68,9 +68,9 @@
     },
     "semantic_quality_score": 91.0,
     "execution_success": true,
-    "execution_time_sec": 0.886,
+    "execution_time_sec": 1.365,
     "exception_type": "",
     "exception_message": "",
     "runtime_output": "INFO:root:UI Report created: User testing was insightful and will guide the next design phase.\nINFO:root:Flexfield added: NewFlexField1\nINFO:root:File uploaded: submission_data.csv\nINFO:root:D1 file generated with updated data.\nINFO:root:Downloading file: submission_data.csv\nsubmission_data.csv content",
-    "total_credibility": 86.138
+    "total_credibility": 83.791
 }

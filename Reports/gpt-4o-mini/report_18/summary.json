@@ -69,9 +69,9 @@
     },
     "semantic_quality_score": 94.5,
     "execution_success": true,
-    "execution_time_sec": 0.803,
+    "execution_time_sec": 1.423,
     "exception_type": "",
     "exception_message": "",
     "runtime_output": "INFO:root:Processing deletions for 12-19-2017\nINFO:root:Redesigning Resources page to match new Broker design styles.\nINFO:root:Scheduled user testing for 2023-12-01\nINFO:root:File submission.csv validated successfully.\nINFO:root:Validating DUNS for record: {'duns_number': '123456789'}\nINFO:root:Data submission_001 published.\nINFO:root:Flexfield limit enforced for records.\nERROR:root:Submission submission_001 failed with error: DUNS not valid",
-    "total_credibility": 87.237
+    "total_credibility": 84.199
 }

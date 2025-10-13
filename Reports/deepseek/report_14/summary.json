@@ -73,9 +73,9 @@
     },
     "semantic_quality_score": 88.0,
     "execution_success": true,
-    "execution_time_sec": 1.085,
+    "execution_time_sec": 1.715,
     "exception_type": "",
     "exception_message": "",
-    "runtime_output": "2025-10-12 12:01:21,849 - __main__ - INFO - Updating submission sub123 to published\n2025-10-12 12:01:21,849 - __main__ - INFO - Validating FABS file: path/to/file.csv with schema 1.1",
-    "total_credibility": 83.064
+    "runtime_output": "2025-10-13 08:59:17,187 - __main__ - INFO - Updating submission sub123 to published\n2025-10-13 08:59:17,187 - __main__ - INFO - Validating FABS file: path/to/file.csv with schema 1.1",
+    "total_credibility": 79.977
 }

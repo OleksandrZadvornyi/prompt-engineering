@@ -69,9 +69,9 @@
     },
     "semantic_quality_score": 93.0,
     "execution_success": true,
-    "execution_time_sec": 1.023,
+    "execution_time_sec": 1.78,
     "exception_type": "",
     "exception_message": "",
     "runtime_output": "INFO:__main__:Uploading and validating file: file_path_to_upload\nINFO:__main__:Processing deletions for date: 12-19-2017\nINFO:__main__:Preventing duplicate publishing for submission 1\nINFO:__main__:Submission 1 published.",
-    "total_credibility": 86.406
+    "total_credibility": 82.697
 }

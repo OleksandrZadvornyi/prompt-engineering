@@ -79,9 +79,9 @@
     },
     "semantic_quality_score": 83.0,
     "execution_success": true,
-    "execution_time_sec": 1.041,
+    "execution_time_sec": 1.785,
     "exception_type": "",
     "exception_message": "",
-    "runtime_output": "2025-10-12 12:00:52,652 - broker_app - INFO - Processing deletions for 2017-12-19 00:00:00\n2025-10-12 12:00:52,652 - broker_app - INFO - Redesigning Resources with Broker Design 2.0 style\n2025-10-12 12:00:52,653 - broker_app - INFO - Scheduled testing for agency1 on 2025-10-19 12:00:52.653035\n2025-10-12 12:00:52,653 - broker_app - INFO - Scheduled testing for agency2 on 2025-10-19 12:00:52.653035\n2025-10-12 12:00:52,653 - broker_app - INFO - Publish lock set for sub123\n2025-10-12 12:00:52,653 - broker_app - INFO - Deriving fields for FABS submission sub123\n2025-10-12 12:00:52,653 - broker_app - INFO - Generated D file for request req456\n2025-10-12 12:00:52,653 - broker_app - INFO - Validating FABS submission sub123\n2025-10-12 12:00:52,653 - broker_app - INFO - Loading historical FABS data with FREC derivations\n2025-10-12 12:00:52,653 - broker_app - INFO - Loading historical FPDS data with feed data",
-    "total_credibility": 81.48
+    "runtime_output": "2025-10-13 08:58:32,726 - broker_app - INFO - Processing deletions for 2017-12-19 00:00:00\n2025-10-13 08:58:32,726 - broker_app - INFO - Redesigning Resources with Broker Design 2.0 style\n2025-10-13 08:58:32,726 - broker_app - INFO - Scheduled testing for agency1 on 2025-10-20 08:58:32.726341\n2025-10-13 08:58:32,726 - broker_app - INFO - Scheduled testing for agency2 on 2025-10-20 08:58:32.726341\n2025-10-13 08:58:32,726 - broker_app - INFO - Publish lock set for sub123\n2025-10-13 08:58:32,726 - broker_app - INFO - Deriving fields for FABS submission sub123\n2025-10-13 08:58:32,726 - broker_app - INFO - Generated D file for request req456\n2025-10-13 08:58:32,726 - broker_app - INFO - Validating FABS submission sub123\n2025-10-13 08:58:32,726 - broker_app - INFO - Loading historical FABS data with FREC derivations\n2025-10-13 08:58:32,726 - broker_app - INFO - Loading historical FPDS data with feed data",
+    "total_credibility": 77.834
 }

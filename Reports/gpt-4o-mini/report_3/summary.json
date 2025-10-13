@@ -66,7 +66,7 @@
     },
     "semantic_quality_score": 86.0,
     "execution_success": false,
-    "execution_time_sec": 0.91,
+    "execution_time_sec": 1.372,
     "exception_type": "ModuleNotFoundError",
     "exception_message": "No module named 'flask'",
     "runtime_output": "Traceback (most recent call last):\n  File \"/app/code.py\", line 3, in <module>\n    from flask import Flask, request, jsonify\nModuleNotFoundError: No module named 'flask'",

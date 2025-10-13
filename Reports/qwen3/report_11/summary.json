@@ -135,9 +135,9 @@
     },
     "semantic_quality_score": 77.0,
     "execution_success": true,
-    "execution_time_sec": 1.236,
+    "execution_time_sec": 1.888,
     "exception_type": "",
     "exception_message": "",
-    "runtime_output": "2025-10-12 12:19:40,934 - INFO - Updated validation rules: 2 rules\n2025-10-12 12:19:40,934 - INFO - Successfully uploaded file: test_file.csv\n2025-10-12 12:19:40,934 - INFO - FABS submission SUB001 processed successfully\n2025-10-12 12:19:40,934 - INFO - FABS submission SUB001 publish status updated to approved\n2025-10-12 12:19:40,934 - INFO - Loaded 2 historical FABS records\nExecuting core user story functions...\nFABS Processing Result: {'submission_id': 'SUB001', 'status': 'processed', 'derived_properties': {'funding_agency_code': 'ABC123', 'popp_zip_plus_4': '12345', 'created_at': '2025-10-12T12:19:40.934605'}, 'validation_errors': [{'field': 'required_field', 'error_type': 'missing_required_element', 'message': 'This field is required'}]}\nAll tests completed successfully!",
-    "total_credibility": 72.533
+    "runtime_output": "2025-10-13 09:43:58,910 - INFO - Updated validation rules: 2 rules\n2025-10-13 09:43:58,911 - INFO - Successfully uploaded file: test_file.csv\n2025-10-13 09:43:58,911 - INFO - FABS submission SUB001 processed successfully\n2025-10-13 09:43:58,911 - INFO - FABS submission SUB001 publish status updated to approved\n2025-10-13 09:43:58,911 - INFO - Loaded 2 historical FABS records\nExecuting core user story functions...\nFABS Processing Result: {'submission_id': 'SUB001', 'status': 'processed', 'derived_properties': {'funding_agency_code': 'ABC123', 'popp_zip_plus_4': '12345', 'created_at': '2025-10-13T09:43:58.911151'}, 'validation_errors': [{'field': 'required_field', 'error_type': 'missing_required_element', 'message': 'This field is required'}]}\nAll tests completed successfully!",
+    "total_credibility": 69.338
 }

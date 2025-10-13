@@ -46,7 +46,7 @@
     },
     "semantic_quality_score": 48.5,
     "execution_success": false,
-    "execution_time_sec": 0.634,
+    "execution_time_sec": 0.757,
     "exception_type": "RuntimeError",
     "exception_message": "File \"/app/code.py\", line 344\n    combined.append({**f, **matching_fpds[0] if matching_fpds else {}})\n                                             ^^\nSyntaxError: invalid syntax",
     "runtime_output": "File \"/app/code.py\", line 344\n    combined.append({**f, **matching_fpds[0] if matching_fpds else {}})\n                                             ^^\nSyntaxError: invalid syntax",

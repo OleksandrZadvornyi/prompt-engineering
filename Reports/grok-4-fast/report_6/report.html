@@ -1374,22 +1374,25 @@ if __name__ == "__main__":
           <tr>
             <th>Execution time (s)</th>
             <td>
-              1.294
+              1.709
             </td>
           </tr>
           <tr>
             <th>Exception type</th>
-            <td>APIError</td>
+            <td>ModuleNotFoundError</td>
           </tr>
           <tr>
             <th>Exception message</th>
-            <td>409 Client Error for http+docker://localnpipe/v1.51/containers/42ca807fb2f59db62879c94cf09a2fa5bbd82537e19d14e403e7c79a15bb8ae7/logs?stderr=1&stdout=1&timestamps=0&follow=0&tail=all: Conflict ("can not get logs from container which is dead or marked for removal")</td>
+            <td>No module named 'pandas'</td>
           </tr>
           <tr>
             <th>Runtime output (preview)</th>
             <td>
               <div class="runtime-output">
-                <pre></pre>
+                <pre>Traceback (most recent call last):
+  File "/app/code.py", line 9, in <module>
+    import pandas as pd
+ModuleNotFoundError: No module named 'pandas'</pre>
               </div>
             </td>
           </tr>

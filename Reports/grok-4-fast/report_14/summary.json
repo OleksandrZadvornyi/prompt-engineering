@@ -46,9 +46,9 @@
     },
     "semantic_quality_score": 48.5,
     "execution_success": false,
-    "execution_time_sec": 0.57,
-    "exception_type": "APIError",
-    "exception_message": "409 Client Error for http+docker://localnpipe/v1.51/containers/c2e3d2ebe1c339b7a65bcc536b9dd8f5da7160046cf39f0c610b46f33991644f/logs?stderr=1&stdout=1&timestamps=0&follow=0&tail=all: Conflict (\"can not get logs from container which is dead or marked for removal\")",
-    "runtime_output": "",
+    "execution_time_sec": 0.79,
+    "exception_type": "RuntimeError",
+    "exception_message": "File \"/app/code.py\", line 110\n    def set_gt as_lock(self, start: str, end: str, locked: bool = True):\n               ^^^^^^^\nSyntaxError: expected '('",
+    "runtime_output": "File \"/app/code.py\", line 110\n    def set_gt as_lock(self, start: str, end: str, locked: bool = True):\n               ^^^^^^^\nSyntaxError: expected '('",
     "total_credibility": 0.0
 }

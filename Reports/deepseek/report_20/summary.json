@@ -73,7 +73,7 @@
     },
     "semantic_quality_score": 79.0,
     "execution_success": false,
-    "execution_time_sec": 0.951,
+    "execution_time_sec": 1.498,
     "exception_type": "ModuleNotFoundError",
     "exception_message": "No module named 'psycopg2'",
     "runtime_output": "Traceback (most recent call last):\n  File \"/app/code.py\", line 5, in <module>\n    import psycopg2\nModuleNotFoundError: No module named 'psycopg2'",

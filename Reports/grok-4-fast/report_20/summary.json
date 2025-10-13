@@ -46,7 +46,7 @@
     },
     "semantic_quality_score": 48.5,
     "execution_success": false,
-    "execution_time_sec": 0.593,
+    "execution_time_sec": 0.726,
     "exception_type": "RuntimeError",
     "exception_message": "File \"/app/code.py\", line 49\n    self.gt as_window_open: bool = False\n            ^^^^^^^^^^^^^^\nSyntaxError: invalid syntax",
     "runtime_output": "File \"/app/code.py\", line 49\n    self.gt as_window_open: bool = False\n            ^^^^^^^^^^^^^^\nSyntaxError: invalid syntax",

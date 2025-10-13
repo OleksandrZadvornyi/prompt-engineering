@@ -929,22 +929,59 @@ if __name__ == "__main__":
           <tr>
             <th>Execution time (s)</th>
             <td>
-              2.152
+              2.556
             </td>
           </tr>
           <tr>
             <th>Exception type</th>
-            <td>APIError</td>
+            <td></td>
           </tr>
           <tr>
             <th>Exception message</th>
-            <td>409 Client Error for http+docker://localnpipe/v1.51/containers/24a931c84a4cb58bcc1b703d0e4f274cbae15307c5578e7b67ae6e756bae1e10/logs?stderr=1&stdout=1&timestamps=0&follow=0&tail=all: Conflict ("can not get logs from container which is dead or marked for removal")</td>
+            <td></td>
           </tr>
           <tr>
             <th>Runtime output (preview)</th>
             <td>
               <div class="runtime-output">
-                <pre></pre>
+                <pre>INFO:__main__:Processing deletions from 12-19-2017...
+INFO:__main__:Deletions processed successfully
+INFO:__main__:Updating validation rule table...
+INFO:__main__:Added validation rule DB2213-001
+INFO:__main__:Added validation rule DB2213-002
+INFO:__main__:Validation rules table updated successfully
+INFO:__main__:Adding GTAS data window from 2024-01-01 00:00:00 to 2024-02-01 00:00:00: Annual GTAS submission window
+INFO:__main__:Created submission SUB001
+INFO:__main__:Updated file for submission SUB001
+INFO:__main__:Validating submission SUB001
+INFO:__main__:Submission SUB001 passed validation
+INFO:__main__:Processing publish request for submission SUB001
+INFO:__main__:Validating submission SUB001
+INFO:__main__:Submission SUB001 passed validation
+ERROR:__main__:Submission must be validated before publishing
+INFO:__main__:Redesigned Resources with new design specs
+INFO:__main__:Editing Help, Round 2
+INFO:__main__:Editing Homepage, Round 2
+INFO:__main__:Editing Help, Round 2
+INFO:__main__:Scheduled user test on 2024-06-15 00:00:00 for 2 participants
+INFO:__main__:Tracked issue: Form layout doesn't adapt well to mobile devices
+INFO:__main__:Created submission SUB002
+INFO:__main__:Updated file for submission SUB002
+INFO:__main__:Created submission SUB003
+INFO:__main__:Derived fields for historical submission SUB001
+Implementing DABS read-only access logic...
+Determining D File generation approach...
+Setting up access to published FABS files...
+Creating UI improvement timeline from SME input...
+Implementing publish button deactivation behavior...
+Enabling access to raw agency published files...
+Setting constraints for LegalEntityAddressLine3 based on Schema v1.1...
+Implementing checks to prevent invalid record manipulations...
+Collecting row count before publishing...
+Allowing ZIP codes without last 4 digits in validations...
+Enabling daily updates for financial assistance data display...
+Improving error messaging accuracy...
+Submission status: {'submission_id': 'SUB001', 'status': 'With Derived Fields', 'publish_status': 'Not Published', 'validation_result': True, 'last_updated': datetime.datetime(2025, 10, 13, 9, 45, 28, 928250)}</pre>
               </div>
             </td>
           </tr>
@@ -952,7 +989,7 @@ if __name__ == "__main__":
       </div>
       
       <h2>Total Credibility (0-100%)</h2>
-      <p><b>Credibility:</b> 69.82%</p>
+      <p><b>Credibility:</b> 67.84%</p>
 
       <h2>Visualizations</h2>
       <div class="visualizations">

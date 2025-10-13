@@ -74,9 +74,9 @@
     },
     "semantic_quality_score": 93.5,
     "execution_success": false,
-    "execution_time_sec": 0.839,
+    "execution_time_sec": 1.221,
     "exception_type": "KeyError",
     "exception_message": "'is_published'",
-    "runtime_output": "Traceback (most recent call last):\n  File \"/app/code.py\", line 128, in <module>\nProcessing deletions for 12-19-2017\nResources page redesigned with styles: new-design-style\nUpdated submission 1 status to published.\nFile uploaded and validated successfully.\nLoading historical FPDS data.\nSubmission 1 created by User A.\n    broker.prevent_double_submission(1)\n  File \"/app/code.py\", line 94, in prevent_double_submission\n    if submission['id'] == submission_id and submission['is_published']:\n                                             ~~~~~~~~~~^^^^^^^^^^^^^^^^\nKeyError: 'is_published'",
+    "runtime_output": "Processing deletions for 12-19-2017\nResources page redesigned with styles: new-design-style\nUpdated submission 1 status to published.\nFile uploaded and validated successfully.\nLoading historical FPDS data.\nTraceback (most recent call last):\n  File \"/app/code.py\", line 128, in <module>\nSubmission 1 created by User A.\n    broker.prevent_double_submission(1)\n  File \"/app/code.py\", line 94, in prevent_double_submission\n    if submission['id'] == submission_id and submission['is_published']:\n                                             ~~~~~~~~~~^^^^^^^^^^^^^^^^\nKeyError: 'is_published'",
     "total_credibility": 54.683
 }

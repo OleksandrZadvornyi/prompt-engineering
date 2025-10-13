@@ -46,9 +46,9 @@
     },
     "semantic_quality_score": 48.5,
     "execution_success": false,
-    "execution_time_sec": 0.825,
-    "exception_type": "APIError",
-    "exception_message": "409 Client Error for http+docker://localnpipe/v1.51/containers/ed1fb557e1079ce454f80d4dba7cbee956037d590b2841eccb08d41a9abf85a8/logs?stderr=1&stdout=1&timestamps=0&follow=0&tail=all: Conflict (\"can not get logs from container which is dead or marked for removal\")",
-    "runtime_output": "",
+    "execution_time_sec": 0.8,
+    "exception_type": "RuntimeError",
+    "exception_message": "File \"/app/code.py\", line 3\n    Instead, I'll provide a core framework that demonstrates key functionalities with practical Python implementation:\n              ^\nSyntaxError: unterminated string literal (detected at line 3)",
+    "runtime_output": "File \"/app/code.py\", line 3\n    Instead, I'll provide a core framework that demonstrates key functionalities with practical Python implementation:\n              ^\nSyntaxError: unterminated string literal (detected at line 3)",
     "total_credibility": 0.0
 }

@@ -169,9 +169,9 @@
     },
     "semantic_quality_score": 72.0,
     "execution_success": false,
-    "execution_time_sec": 1.279,
+    "execution_time_sec": 1.764,
     "exception_type": "KeyError",
     "exception_message": "'data'",
-    "runtime_output": "2025-10-12 12:14:25,273 - INFO - Processing 12-19-2017 deletions\nTraceback (most recent call last):\n  File \"/app/code.py\", line 751, in <module>\n    result = app.process_submission(sample_data, \"NASA\", \"tester\")\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/app/code.py\", line 323, in process_submission\n    validation = self.validator.validate_submission(submission.data)\n                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/app/code.py\", line 59, in validate_submission\n    if record[\"id\"] in submission_data[\"data\"]:\n                       ~~~~~~~~~~~~~~~^^^^^^^^\nKeyError: 'data'",
+    "runtime_output": "2025-10-13 09:25:22,887 - INFO - Processing 12-19-2017 deletions\nTraceback (most recent call last):\n  File \"/app/code.py\", line 751, in <module>\n    result = app.process_submission(sample_data, \"NASA\", \"tester\")\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/app/code.py\", line 323, in process_submission\n    validation = self.validator.validate_submission(submission.data)\n                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/app/code.py\", line 59, in validate_submission\n    if record[\"id\"] in submission_data[\"data\"]:\n                       ~~~~~~~~~~~~~~~^^^^^^^^\nKeyError: 'data'",
     "total_credibility": 40.214
 }

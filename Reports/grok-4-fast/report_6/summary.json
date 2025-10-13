@@ -191,9 +191,9 @@
     },
     "semantic_quality_score": 78.0,
     "execution_success": false,
-    "execution_time_sec": 1.294,
-    "exception_type": "APIError",
-    "exception_message": "409 Client Error for http+docker://localnpipe/v1.51/containers/42ca807fb2f59db62879c94cf09a2fa5bbd82537e19d14e403e7c79a15bb8ae7/logs?stderr=1&stdout=1&timestamps=0&follow=0&tail=all: Conflict (\"can not get logs from container which is dead or marked for removal\")",
-    "runtime_output": "",
+    "execution_time_sec": 1.709,
+    "exception_type": "ModuleNotFoundError",
+    "exception_message": "No module named 'pandas'",
+    "runtime_output": "Traceback (most recent call last):\n  File \"/app/code.py\", line 9, in <module>\n    import pandas as pd\nModuleNotFoundError: No module named 'pandas'",
     "total_credibility": 44.999
 }

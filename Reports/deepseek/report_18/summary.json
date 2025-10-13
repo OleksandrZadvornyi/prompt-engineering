@@ -77,9 +77,9 @@
     },
     "semantic_quality_score": 94.0,
     "execution_success": true,
-    "execution_time_sec": 1.232,
+    "execution_time_sec": 1.635,
     "exception_type": "",
     "exception_message": "",
-    "runtime_output": "2025-10-12 12:01:47,031 - broker_app - INFO - Processing deletions for 12-19-2017\n2025-10-12 12:01:47,031 - broker_app - INFO - Updating FABS submission FABS123 to published\n2025-10-12 12:01:47,031 - broker_app - INFO - Redesigning Resources page\n2025-10-12 12:01:47,031 - broker_app - INFO - Generating D File for DABS456 synced with FPDS",
-    "total_credibility": 87.522
+    "runtime_output": "2025-10-13 08:59:53,498 - broker_app - INFO - Processing deletions for 12-19-2017\n2025-10-13 08:59:53,499 - broker_app - INFO - Updating FABS submission FABS123 to published\n2025-10-13 08:59:53,499 - broker_app - INFO - Redesigning Resources page\n2025-10-13 08:59:53,499 - broker_app - INFO - Generating D File for DABS456 synced with FPDS",
+    "total_credibility": 85.547
 }

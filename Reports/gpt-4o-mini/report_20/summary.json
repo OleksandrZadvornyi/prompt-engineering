@@ -78,9 +78,9 @@
     },
     "semantic_quality_score": 91.5,
     "execution_success": true,
-    "execution_time_sec": 0.681,
-    "exception_type": "APIError",
-    "exception_message": "409 Client Error for http+docker://localnpipe/v1.51/containers/51d5b47e70b6961ba4c2378d64eecd1bd925d6b916cb5cb0cf8bdbfbb2d77463/logs?stderr=1&stdout=1&timestamps=0&follow=0&tail=all: Conflict (\"can not get logs from container which is dead or marked for removal\")",
-    "runtime_output": "",
-    "total_credibility": 88.299
+    "execution_time_sec": 1.178,
+    "exception_type": "",
+    "exception_message": "",
+    "runtime_output": "Processing deletions for 2017-12-19.\nResources page redesigned per new styles.\nUser testing report submitted to Agencies.\nUser testing scheduled.\nLog: Starting to develop features.\nLog: Submission sub-001 updated to published\nFlexfields included in submission.\nUpdates received.\nUser testing summary created.\nEnvironment reset to Staging MAX permissions.",
+    "total_credibility": 85.864
 }

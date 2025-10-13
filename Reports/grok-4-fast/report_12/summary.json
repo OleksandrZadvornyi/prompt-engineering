@@ -163,7 +163,7 @@
     },
     "semantic_quality_score": 72.0,
     "execution_success": false,
-    "execution_time_sec": 1.449,
+    "execution_time_sec": 1.791,
     "exception_type": "ModuleNotFoundError",
     "exception_message": "No module named 'pandas'",
     "runtime_output": "Traceback (most recent call last):\n  File \"/app/code.py\", line 9, in <module>\n    import pandas as pd\nModuleNotFoundError: No module named 'pandas'",

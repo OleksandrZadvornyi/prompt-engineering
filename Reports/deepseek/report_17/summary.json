@@ -77,9 +77,9 @@
     },
     "semantic_quality_score": 81.5,
     "execution_success": true,
-    "execution_time_sec": 0.853,
+    "execution_time_sec": 1.4,
     "exception_type": "",
     "exception_message": "",
-    "runtime_output": "2025-10-12 12:01:40,628 - __main__ - INFO - Updated FABS submission 1 to SubmissionStatus.PUBLISHED\n{'id': 1, 'status': 'draft', 'updated': '2025-10-12T12:01:40.628068'}\nUser Testing Report for NASA\n- Homepage: passed\n- Resources: needs improvement",
-    "total_credibility": 79.75
+    "runtime_output": "{'id': 1, 'status': 'draft', 'updated': '2025-10-13T08:59:44.358906'}\nUser Testing Report for NASA\n- Homepage: passed\n- Resources: needs improvement\n2025-10-13 08:59:44,358 - __main__ - INFO - Updated FABS submission 1 to SubmissionStatus.PUBLISHED",
+    "total_credibility": 77.07
 }

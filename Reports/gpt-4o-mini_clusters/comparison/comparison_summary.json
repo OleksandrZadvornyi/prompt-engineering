@@ -1,0 +1,260 @@
+{
+    "model": "openai/gpt-4o-mini",
+    "total_runs": 20,
+    "statistics": {
+        "LLM Confidence": {
+            "total_tokens": {
+                "min": 670,
+                "max": 1260,
+                "mean": 879.6,
+                "median": 867.5,
+                "stdev": 162.91405548228246,
+                "range": 590
+            },
+            "avg_prob": {
+                "min": 0.5812339003652064,
+                "max": 0.8186075995170217,
+                "mean": 0.7107447331541941,
+                "median": 0.7101658355399132,
+                "stdev": 0.04986521841757501,
+                "range": 0.23737369915181528
+            },
+            "perplexity": {
+                "min": 1.221586509323881,
+                "max": 1.7204777618299114,
+                "mean": 1.41382147621832,
+                "median": 1.4081236727167354,
+                "stdev": 0.10353611712043255,
+                "range": 0.4988912525060305
+            },
+            "total_logprob": {
+                "min": -683.6785461583497,
+                "max": -176.59214217061867,
+                "mean": -307.11428066177643,
+                "median": -279.8834295345863,
+                "stdev": 112.90159699751979,
+                "range": 507.08640398773105
+            }
+        },
+        "Code Structure": {
+            "token_count": {
+                "min": 670,
+                "max": 1260,
+                "mean": 879.6,
+                "median": 867.5,
+                "stdev": 162.91405548228246,
+                "range": 590
+            },
+            "function_count": {
+                "min": 11,
+                "max": 34,
+                "mean": 20.1,
+                "median": 20.0,
+                "stdev": 5.418292603472251,
+                "range": 23
+            },
+            "class_count": {
+                "min": 1,
+                "max": 13,
+                "mean": 4.35,
+                "median": 5.0,
+                "stdev": 3.2971279367927093,
+                "range": 12
+            },
+            "num_lines": {
+                "min": 86,
+                "max": 154,
+                "mean": 118.65,
+                "median": 119.0,
+                "stdev": 18.60751121682345,
+                "range": 68
+            },
+            "num_nonempty_lines": {
+                "min": 70,
+                "max": 118,
+                "mean": 93.65,
+                "median": 95.0,
+                "stdev": 14.305961216073161,
+                "range": 48
+            },
+            "avg_line_len_nonempty_chars": {
+                "min": 37.5679012345679,
+                "max": 50.53913043478261,
+                "mean": 42.77295676456617,
+                "median": 41.62989247311828,
+                "stdev": 3.9589082029958726,
+                "range": 12.971229200214708
+            },
+            "avg_tokens_per_nonempty_line": {
+                "min": 2.7474747474747474,
+                "max": 4.6,
+                "mean": 3.622666228238093,
+                "median": 3.457570473699506,
+                "stdev": 0.5559296054580347,
+                "range": 1.8525252525252522
+            },
+            "ast_depth": {
+                "min": 9,
+                "max": 13,
+                "mean": 10.9,
+                "median": 11.0,
+                "stdev": 0.9119095061289915,
+                "range": 4
+            }
+        },
+        "Imports & Dependencies": {
+            "import_count": {
+                "min": 1,
+                "max": 7,
+                "mean": 2.05,
+                "median": 2.0,
+                "stdev": 1.3168942730211068,
+                "range": 6
+            },
+            "import_redundancy_ratio": {
+                "min": 0.0,
+                "max": 0.2857142857142857,
+                "mean": 0.014285714285714285,
+                "median": 0.0,
+                "stdev": 0.06388765649999399,
+                "range": 0.2857142857142857
+            }
+        },
+        "Code Complexity": {
+            "avg_function_size_lines": {
+                "min": 2.8,
+                "max": 5.722222222222222,
+                "mean": 3.8089418604271548,
+                "median": 3.707692307692308,
+                "stdev": 0.8115896155142667,
+                "range": 2.9222222222222225
+            },
+            "avg_cyclomatic_complexity": {
+                "min": 1.1363636363636365,
+                "max": 1.8928571428571428,
+                "mean": 1.514234012849924,
+                "median": 1.4715821812596006,
+                "stdev": 0.23753945706846805,
+                "range": 0.7564935064935063
+            },
+            "max_cyclomatic_complexity": {
+                "min": 2,
+                "max": 7,
+                "mean": 3.3,
+                "median": 3.0,
+                "stdev": 1.1742858972247996,
+                "range": 5
+            },
+            "module_cyclomatic_complexity": {
+                "min": 22,
+                "max": 53,
+                "mean": 32.95,
+                "median": 32.0,
+                "stdev": 7.903863146055791,
+                "range": 31
+            }
+        },
+        "Code Quality": {
+            "comment_density_percent": {
+                "min": 0.0,
+                "max": 20.408163265306122,
+                "mean": 9.895288370321182,
+                "median": 8.831427581427581,
+                "stdev": 5.875332759798053,
+                "range": 20.408163265306122
+            },
+            "syntax_valid": {
+                "min": 1.0,
+                "max": 1.0,
+                "mean": 1.0,
+                "median": 1.0,
+                "stdev": 0.0,
+                "range": 0.0
+            },
+            "flake8_error_count": {
+                "min": 4,
+                "max": 26,
+                "mean": 10.1,
+                "median": 9.0,
+                "stdev": 5.6837719129020945,
+                "range": 22
+            },
+            "mypy_error_count": {
+                "min": 0,
+                "max": 4,
+                "mean": 0.5,
+                "median": 0.0,
+                "stdev": 1.2354415362426845,
+                "range": 4
+            },
+            "semantic_quality_score": {
+                "min": 87.0,
+                "max": 98.0,
+                "mean": 94.45,
+                "median": 95.25,
+                "stdev": 3.1990952668396404,
+                "range": 11.0
+            }
+        },
+        "Execution": {
+            "execution_success": {
+                "min": 0.0,
+                "max": 1.0,
+                "mean": 0.9,
+                "median": 1.0,
+                "stdev": 0.30779350562554625,
+                "range": 1.0
+            },
+            "execution_time_sec": {
+                "min": 0.768,
+                "max": 1.64,
+                "mean": 1.1322,
+                "median": 1.1195,
+                "stdev": 0.27374432942937255,
+                "range": 0.8719999999999999
+            }
+        },
+        "Overall": {
+            "total_credibility": {
+                "min": 53.163,
+                "max": 90.444,
+                "mean": 83.46955,
+                "median": 86.46000000000001,
+                "stdev": 10.120680331172874,
+                "range": 37.281000000000006
+            }
+        }
+    },
+    "best_run": {
+        "run_number": 20,
+        "credibility": 90.444,
+        "timestamp": "2025-10-12 20:28:25",
+        "quality_score": 98.0,
+        "syntax_valid": true,
+        "execution_success": true
+    },
+    "worst_run": {
+        "run_number": 11,
+        "credibility": 53.163,
+        "timestamp": "2025-10-12 20:24:58",
+        "quality_score": 90.0,
+        "syntax_valid": true,
+        "execution_success": false
+    },
+    "outliers": [
+        {
+            "run": 2,
+            "credibility": 55.813,
+            "deviation": 2.732676963900796
+        },
+        {
+            "run": 11,
+            "credibility": 53.163,
+            "deviation": 2.9945170688429212
+        }
+    ],
+    "quality_rates": {
+        "syntax_valid_rate": 100.0,
+        "execution_success_rate": 90.0
+    }
+}

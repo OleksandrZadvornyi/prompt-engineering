@@ -90,9 +90,9 @@
     },
     "semantic_quality_score": 80.0,
     "execution_success": true,
-    "execution_time_sec": 0.568,
+    "execution_time_sec": 1.119,
     "exception_type": "",
     "exception_message": "",
     "runtime_output": "Processing deletions for 12-19-2017\nApplying new_broker_design styles to Resources page\nPublishing submission 12345\nTrue",
-    "total_credibility": 79.045
+    "total_credibility": 76.345
 }

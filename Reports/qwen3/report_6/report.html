@@ -905,22 +905,48 @@ if __name__ == "__main__":
           <tr>
             <th>Execution time (s)</th>
             <td>
-              1.161
+              1.656
             </td>
           </tr>
           <tr>
             <th>Exception type</th>
-            <td>APIError</td>
+            <td></td>
           </tr>
           <tr>
             <th>Exception message</th>
-            <td>409 Client Error for http+docker://localnpipe/v1.51/containers/4b973767be56a8911dc59861d1bdfef6be7cf8f1fc2e9ce2562c51ff78d5366e/logs?stderr=1&stdout=1&timestamps=0&follow=0&tail=all: Conflict ("can not get logs from container which is dead or marked for removal")</td>
+            <td></td>
           </tr>
           <tr>
             <th>Runtime output (preview)</th>
             <td>
               <div class="runtime-output">
-                <pre></pre>
+                <pre>INFO:__main__:Starting processing of user stories...
+INFO:__main__:Processing 12-19-2017 deletions
+INFO:__main__:Updating FABS validation rules for DB-2213
+INFO:__main__:Adding GTAS window data to database
+INFO:__main__:Caching D file request REQ-123
+INFO:__main__:Redesigning Resources page with new Broker styles
+INFO:__main__:Uploading and validating file
+INFO:__main__:Processing status change for submission SUB-123: draft -> published
+INFO:__main__:Deriving and updating FABS fields
+INFO:__main__:Submitting FABS with quote handling
+INFO:__main__:Checking if submission SUB123 can be published again
+INFO:__main__:Validating ZIP code: 00501
+INFO:__main__:All operations completed successfully.
+Deletions processed successfully
+Validation rules updated successfully
+GTAS window data added successfully
+D file request REQ-123 cached
+Resources page redesigned
+Upload validation result: {'success': True, 'errors': [], 'message': 'File validation complete'}
+Upload result: {'success': True, 'errors': [], 'message': 'File validation complete'}
+Status change recorded for submission SUB-123
+Derived office name for ABC123
+Derived data: {'PPPCode': 'ABC123', 'amount': 100000, 'PPopOfficeName': 'Office for ABC123'}
+Headers with possible quotes: ['LegalEntityZip', 'Amount']
+Publication check for SUB123: Allowed
+Can publish: True
+ZIP valid: True</pre>
               </div>
             </td>
           </tr>
@@ -928,7 +954,7 @@ if __name__ == "__main__":
       </div>
       
       <h2>Total Credibility (0-100%)</h2>
-      <p><b>Credibility:</b> 76.15%</p>
+      <p><b>Credibility:</b> 73.72%</p>
 
       <h2>Visualizations</h2>
       <div class="visualizations">

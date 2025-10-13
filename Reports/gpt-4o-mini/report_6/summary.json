@@ -71,9 +71,9 @@
     },
     "semantic_quality_score": 93.0,
     "execution_success": true,
-    "execution_time_sec": 0.695,
+    "execution_time_sec": 1.254,
     "exception_type": "",
     "exception_message": "",
     "runtime_output": "Processing deletions for date: 12-19-2017\nResources page redesigned to match the new Broker design styles.\nFile path/to/fabs_file.csv uploaded successfully.\nTesting scheduled on 2023-10-25.\nFPDS data loaded successfully.\nGenerating D files synchronized with FPDS data load.\nSubmission by agency_001: Status - error",
-    "total_credibility": 88.868
+    "total_credibility": 86.129
 }

@@ -811,22 +811,25 @@ if __name__ == "__main__":
           <tr>
             <th>Execution time (s)</th>
             <td>
-              0.918
+              1.778
             </td>
           </tr>
           <tr>
             <th>Exception type</th>
-            <td>APIError</td>
+            <td>ModuleNotFoundError</td>
           </tr>
           <tr>
             <th>Exception message</th>
-            <td>409 Client Error for http+docker://localnpipe/v1.51/containers/8e11cb00ef5331ac5c25188fbda25d4999b1a0378bb0d963d1d7e9ab8a4b57c1/logs?stderr=1&stdout=1&timestamps=0&follow=0&tail=all: Conflict ("can not get logs from container which is dead or marked for removal")</td>
+            <td>No module named 'sqlalchemy'</td>
           </tr>
           <tr>
             <th>Runtime output (preview)</th>
             <td>
               <div class="runtime-output">
-                <pre></pre>
+                <pre>Traceback (most recent call last):
+  File "/app/code.py", line 5, in <module>
+    import sqlalchemy as sa
+ModuleNotFoundError: No module named 'sqlalchemy'</pre>
               </div>
             </td>
           </tr>

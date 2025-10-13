@@ -78,7 +78,7 @@
     },
     "semantic_quality_score": 68.0,
     "execution_success": false,
-    "execution_time_sec": 1.0,
+    "execution_time_sec": 1.147,
     "exception_type": "ModuleNotFoundError",
     "exception_message": "No module named 'redis'",
     "runtime_output": "Traceback (most recent call last):\n  File \"/app/code.py\", line 5, in <module>\n    import redis\nModuleNotFoundError: No module named 'redis'",

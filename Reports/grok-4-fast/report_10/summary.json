@@ -166,9 +166,9 @@
     },
     "semantic_quality_score": 90.5,
     "execution_success": false,
-    "execution_time_sec": 1.553,
+    "execution_time_sec": 1.796,
     "exception_type": "TypeError",
     "exception_message": "object of type 'int' has no len()",
-    "runtime_output": "2025-10-12 12:15:59,316 - INFO - Processing deletions for 12-19-2017\nTraceback (most recent call last):\n  File \"/app/code.py\", line 842, in <module>\n    app.process_12_19_2017_deletions()\n  File \"/app/code.py\", line 137, in process_12_19_2017_deletions\n    return len(cursor.rowcount)\n           ^^^^^^^^^^^^^^^^^^^^\nTypeError: object of type 'int' has no len()",
+    "runtime_output": "2025-10-13 09:27:01,096 - INFO - Processing deletions for 12-19-2017\nTraceback (most recent call last):\n  File \"/app/code.py\", line 842, in <module>\n    app.process_12_19_2017_deletions()\n  File \"/app/code.py\", line 137, in process_12_19_2017_deletions\n    return len(cursor.rowcount)\n           ^^^^^^^^^^^^^^^^^^^^\nTypeError: object of type 'int' has no len()",
     "total_credibility": 53.267
 }

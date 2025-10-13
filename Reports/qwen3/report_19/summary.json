@@ -82,9 +82,9 @@
     },
     "semantic_quality_score": 85.5,
     "execution_success": true,
-    "execution_time_sec": 1.106,
+    "execution_time_sec": 1.73,
     "exception_type": "",
     "exception_message": "",
-    "runtime_output": "2025-10-12 12:20:50,633 - INFO - Processing deletions dated 2017-12-19\n2025-10-12 12:20:50,639 - INFO - FABS submission created with ID 1\n2025-10-12 12:20:50,639 - INFO - Publish status change detected for submission 1 from 'draft' to 'validated'\n2025-10-12 12:20:50,646 - INFO - Publish status change detected for submission 1 from 'validated' to 'published'\n2025-10-12 12:20:50,653 - INFO - Issue tracked: Issue with GTAS window blocking submission\n2025-10-12 12:20:50,653 - INFO - Issue tracked: Inaccurate error code for CFDA mismatch\n2025-10-12 12:20:50,654 - INFO - Applying broker styling to Resources\n2025-10-12 12:20:50,654 - INFO - Moved Resources to round 2\n2025-10-12 12:20:50,670 - INFO - Validation rules updated per DB-2213\n2025-10-12 12:20:50,671 - INFO - Published 2023Q2_FABS.csv [csv]\n2025-10-12 12:20:50,671 - INFO - Activity completed\nUser Testing Report Summary:\n========================================\n1: Issue with GTAS window blocking submission [open]\n2: Inaccurate error code for CFDA mismatch [open]",
-    "total_credibility": 79.61
+    "runtime_output": "2025-10-13 09:45:18,282 - INFO - Processing deletions dated 2017-12-19\n2025-10-13 09:45:18,289 - INFO - FABS submission created with ID 1\n2025-10-13 09:45:18,289 - INFO - Publish status change detected for submission 1 from 'draft' to 'validated'\n2025-10-13 09:45:18,295 - INFO - Publish status change detected for submission 1 from 'validated' to 'published'\n2025-10-13 09:45:18,304 - INFO - Issue tracked: Issue with GTAS window blocking submission\n2025-10-13 09:45:18,304 - INFO - Issue tracked: Inaccurate error code for CFDA mismatch\n2025-10-13 09:45:18,304 - INFO - Applying broker styling to Resources\n2025-10-13 09:45:18,304 - INFO - Moved Resources to round 2\n2025-10-13 09:45:18,323 - INFO - Validation rules updated per DB-2213\n2025-10-13 09:45:18,323 - INFO - Published 2023Q2_FABS.csv [csv]\n2025-10-13 09:45:18,323 - INFO - Activity completed\nUser Testing Report Summary:\n========================================\n1: Issue with GTAS window blocking submission [open]\n2: Inaccurate error code for CFDA mismatch [open]",
+    "total_credibility": 76.552
 }

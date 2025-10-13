@@ -46,9 +46,9 @@
     },
     "semantic_quality_score": 48.5,
     "execution_success": false,
-    "execution_time_sec": 0.553,
-    "exception_type": "APIError",
-    "exception_message": "409 Client Error for http+docker://localnpipe/v1.51/containers/a3e1c29d33d0f1942719805ec99199eee5838d8533732c0e79c73d0e581b3e4e/logs?stderr=1&stdout=1&timestamps=0&follow=0&tail=all: Conflict (\"can not get logs from container which is dead or marked for removal\")",
-    "runtime_output": "",
+    "execution_time_sec": 0.674,
+    "exception_type": "RuntimeError",
+    "exception_message": "File \"/app/code.py\", line 51\n    self.gt as_window_active = False\n            ^^^^^^^^^^^^^^^^\nSyntaxError: invalid syntax",
+    "runtime_output": "File \"/app/code.py\", line 51\n    self.gt as_window_active = False\n            ^^^^^^^^^^^^^^^^\nSyntaxError: invalid syntax",
     "total_credibility": 0.0
 }

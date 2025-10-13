@@ -1,0 +1,260 @@
+{
+    "model": "qwen/qwen3-coder-30b-a3b-instruct",
+    "total_runs": 20,
+    "statistics": {
+        "LLM Confidence": {
+            "total_tokens": {
+                "min": 1621,
+                "max": 8322,
+                "mean": 4080.5,
+                "median": 3605.0,
+                "stdev": 1790.0271241696753,
+                "range": 6701
+            },
+            "avg_prob": {
+                "min": 0.6600671654402237,
+                "max": 0.8269187626249364,
+                "mean": 0.7322250305195253,
+                "median": 0.7365802092062478,
+                "stdev": 0.04636810565528295,
+                "range": 0.16685159718471265
+            },
+            "perplexity": {
+                "min": 1.20930863489618,
+                "max": 1.5149973402071324,
+                "mean": 1.3709268339277243,
+                "median": 1.35762579596206,
+                "stdev": 0.087103487033135,
+                "range": 0.3056887053109525
+            },
+            "total_logprob": {
+                "min": -3353.665080843747,
+                "max": -668.2836285808874,
+                "mean": -1256.2328554507917,
+                "median": -1209.2296709691054,
+                "stdev": 600.8223704407526,
+                "range": 2685.38145226286
+            }
+        },
+        "Code Structure": {
+            "token_count": {
+                "min": 1621,
+                "max": 8322,
+                "mean": 4080.5,
+                "median": 3605.0,
+                "stdev": 1790.0271241696753,
+                "range": 6701
+            },
+            "function_count": {
+                "min": 10,
+                "max": 97,
+                "mean": 53.6,
+                "median": 42.0,
+                "stdev": 32.10902480120208,
+                "range": 87
+            },
+            "class_count": {
+                "min": 1,
+                "max": 17,
+                "mean": 5.4,
+                "median": 3.0,
+                "stdev": 5.3841873745450695,
+                "range": 16
+            },
+            "num_lines": {
+                "min": 199,
+                "max": 1257,
+                "mean": 533.85,
+                "median": 484.5,
+                "stdev": 252.9697870455971,
+                "range": 1058
+            },
+            "num_nonempty_lines": {
+                "min": 166,
+                "max": 980,
+                "mean": 444.55,
+                "median": 401.5,
+                "stdev": 207.86039723055015,
+                "range": 814
+            },
+            "avg_line_len_nonempty_chars": {
+                "min": 37.289795918367346,
+                "max": 48.88364779874214,
+                "mean": 42.78316869205263,
+                "median": 41.99111474869282,
+                "stdev": 3.362313958233357,
+                "range": 11.593851880374793
+            },
+            "avg_tokens_per_nonempty_line": {
+                "min": 3.192622950819672,
+                "max": 4.408791208791209,
+                "mean": 3.599294898597898,
+                "median": 3.5123287148364444,
+                "stdev": 0.3047445498966563,
+                "range": 1.2161682579715372
+            },
+            "ast_depth": {
+                "min": 10,
+                "max": 14,
+                "mean": 11.8,
+                "median": 12.0,
+                "stdev": 1.3218806379747876,
+                "range": 4
+            }
+        },
+        "Imports & Dependencies": {
+            "import_count": {
+                "min": 0,
+                "max": 8,
+                "mean": 4.1,
+                "median": 4.0,
+                "stdev": 2.1740091511936384,
+                "range": 8
+            },
+            "import_redundancy_ratio": {
+                "min": 0.0,
+                "max": 0.0,
+                "mean": 0.0,
+                "median": 0.0,
+                "stdev": 0.0,
+                "range": 0.0
+            }
+        },
+        "Code Complexity": {
+            "avg_function_size_lines": {
+                "min": 4.163043478260869,
+                "max": 42,
+                "mean": 10.901202069945883,
+                "median": 8.471694528875378,
+                "stdev": 8.614521551629007,
+                "range": 37.83695652173913
+            },
+            "avg_cyclomatic_complexity": {
+                "min": 1.0217391304347827,
+                "max": 2.6875,
+                "mean": 1.723490456023758,
+                "median": 1.826788218793829,
+                "stdev": 0.6009988222854538,
+                "range": 1.6657608695652173
+            },
+            "max_cyclomatic_complexity": {
+                "min": 2,
+                "max": 10,
+                "mean": 4.8,
+                "median": 4.0,
+                "stdev": 2.4192212753171978,
+                "range": 8
+            },
+            "module_cyclomatic_complexity": {
+                "min": 27,
+                "max": 190,
+                "mean": 80.9,
+                "median": 85.0,
+                "stdev": 33.34177086194622,
+                "range": 163
+            }
+        },
+        "Code Quality": {
+            "comment_density_percent": {
+                "min": 1.056338028169014,
+                "max": 12.737127371273713,
+                "mean": 5.354817638754122,
+                "median": 4.246193632986086,
+                "stdev": 3.701973882789621,
+                "range": 11.6807893431047
+            },
+            "syntax_valid": {
+                "min": 1.0,
+                "max": 1.0,
+                "mean": 1.0,
+                "median": 1.0,
+                "stdev": 0.0,
+                "range": 0.0
+            },
+            "flake8_error_count": {
+                "min": 32,
+                "max": 285,
+                "mean": 83,
+                "median": 75.5,
+                "stdev": 53.27387036022345,
+                "range": 253
+            },
+            "mypy_error_count": {
+                "min": 0,
+                "max": 5,
+                "mean": 1.25,
+                "median": 1.0,
+                "stdev": 1.5517392618742702,
+                "range": 5
+            },
+            "semantic_quality_score": {
+                "min": 76.0,
+                "max": 84.0,
+                "mean": 79.075,
+                "median": 79.0,
+                "stdev": 1.7864622493691416,
+                "range": 8.0
+            }
+        },
+        "Execution": {
+            "execution_success": {
+                "min": 0.0,
+                "max": 1.0,
+                "mean": 0.9,
+                "median": 1.0,
+                "stdev": 0.30779350562554625,
+                "range": 1.0
+            },
+            "execution_time_sec": {
+                "min": 0.776,
+                "max": 2.178,
+                "mean": 1.5465,
+                "median": 1.6055000000000001,
+                "stdev": 0.36796073875232654,
+                "range": 1.402
+            }
+        },
+        "Overall": {
+            "total_credibility": {
+                "min": 43.727,
+                "max": 78.881,
+                "mean": 69.0385,
+                "median": 71.2365,
+                "stdev": 8.246181754382802,
+                "range": 35.154
+            }
+        }
+    },
+    "best_run": {
+        "run_number": 18,
+        "credibility": 78.881,
+        "timestamp": "2025-10-12 19:36:14",
+        "quality_score": 80.5,
+        "syntax_valid": true,
+        "execution_success": true
+    },
+    "worst_run": {
+        "run_number": 2,
+        "credibility": 43.727,
+        "timestamp": "2025-10-12 19:19:02",
+        "quality_score": 79.0,
+        "syntax_valid": true,
+        "execution_success": false
+    },
+    "outliers": [
+        {
+            "run": 2,
+            "credibility": 43.727,
+            "deviation": 3.06948121614553
+        },
+        {
+            "run": 14,
+            "credibility": 48.815,
+            "deviation": 2.452468378986592
+        }
+    ],
+    "quality_rates": {
+        "syntax_valid_rate": 100.0,
+        "execution_success_rate": 90.0
+    }
+}

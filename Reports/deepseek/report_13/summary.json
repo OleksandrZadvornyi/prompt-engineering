@@ -84,7 +84,7 @@
     },
     "semantic_quality_score": 60.0,
     "execution_success": false,
-    "execution_time_sec": 1.091,
+    "execution_time_sec": 2.281,
     "exception_type": "ModuleNotFoundError",
     "exception_message": "No module named 'pytz'",
     "runtime_output": "Traceback (most recent call last):\n  File \"/app/code.py\", line 6, in <module>\n    import pytz\nModuleNotFoundError: No module named 'pytz'",

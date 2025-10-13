@@ -143,7 +143,7 @@
     },
     "semantic_quality_score": 89.0,
     "execution_success": false,
-    "execution_time_sec": 1.161,
+    "execution_time_sec": 1.544,
     "exception_type": "AttributeError",
     "exception_message": "'sqlite3.Connection' object has no attribute 'rowcount'",
     "runtime_output": "Traceback (most recent call last):\n  File \"/app/code.py\", line 838, in <module>\n    broker.process_2017_12_19_deletions([{'date': '2017-12-19', 'id': 1}])\n  File \"/app/code.py\", line 87, in process_2017_12_19_deletions\n    deleted_count += conn.rowcount\n                     ^^^^^^^^^^^^^\nAttributeError: 'sqlite3.Connection' object has no attribute 'rowcount'",

@@ -68,9 +68,9 @@
     },
     "semantic_quality_score": 95.5,
     "execution_success": true,
-    "execution_time_sec": 0.982,
+    "execution_time_sec": 1.73,
     "exception_type": "",
     "exception_message": "",
-    "runtime_output": "2025-10-12 12:04:28,410 - INFO - Processing deletions for 12-19-2017.\n2025-10-12 12:04:28,410 - INFO - Scheduling user testing for 2025-10-12.\n2025-10-12 12:04:28,410 - INFO - Loading FPDS data.\n2025-10-12 12:04:28,410 - INFO - Validation rules updated: ['Rule1', 'Rule2'].",
-    "total_credibility": 88.284
+    "runtime_output": "2025-10-13 09:05:22,190 - INFO - Processing deletions for 12-19-2017.\n2025-10-13 09:05:22,190 - INFO - Scheduling user testing for 2025-10-13.\n2025-10-13 09:05:22,190 - INFO - Loading FPDS data.\n2025-10-13 09:05:22,190 - INFO - Validation rules updated: ['Rule1', 'Rule2'].",
+    "total_credibility": 84.619
 }

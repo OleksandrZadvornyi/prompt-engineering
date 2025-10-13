@@ -93,9 +93,9 @@
     },
     "semantic_quality_score": 78.0,
     "execution_success": true,
-    "execution_time_sec": 1.225,
-    "exception_type": "APIError",
-    "exception_message": "409 Client Error for http+docker://localnpipe/v1.51/containers/615a71ece4f636b004b172b08a0542cf16869814fb3deffaa51c0e01fe9a9caf/logs?stderr=1&stdout=1&timestamps=0&follow=0&tail=all: Conflict (\"can not get logs from container which is dead or marked for removal\")",
-    "runtime_output": "",
-    "total_credibility": 72.604
+    "execution_time_sec": 1.846,
+    "exception_type": "",
+    "exception_message": "",
+    "runtime_output": "INFO:__main__:Processing deletions from 12-19-2017\nINFO:__main__:Redesigning Resources page\nINFO:__main__:Reporting user testing to agencies: ['Agency A', 'Agency B']\nINFO:__main__:Logged issue from Tech Thursday: Missing error codes in FABS\nINFO:__main__:Starting user testing process\nINFO:__main__:Enabling detailed logging for submission: SUB123456\nINFO:__main__:Updated validation rules with 2 new rules\nINFO:__main__:Created new FABS submission: SUB789012\nINFO:__main__:Showing published FABS files\nINFO:__main__:Added 50 flex fields; total now at 50\nINFO:__main__:Processing D file request: REQ001 for submission: SUB123456\nTrue\nAll operations executed successfully.",
+    "total_credibility": 69.561
 }

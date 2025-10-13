@@ -1,0 +1,304 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Models Comparison Report</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            max-width: 1600px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .header h1 { margin: 0 0 10px 0; font-size: 36px; }
+        .header p { margin: 5px 0; opacity: 0.9; font-size: 18px; }
+        .winner-banner {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .winner-banner h2 { margin: 0; font-size: 28px; }
+        .winner-banner .model-name { font-size: 32px; font-weight: bold; margin: 10px 0; }
+        .section {
+            background: white;
+            padding: 30px;
+            margin-bottom: 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .section h2 {
+            color: #667eea;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 10px;
+            margin-top: 0;
+            font-size: 24px;
+        }
+        .models-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+        .model-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .model-card h3 {
+            margin: 0 0 15px 0;
+            font-size: 20px;
+            border-bottom: 2px solid rgba(255,255,255,0.3);
+            padding-bottom: 10px;
+        }
+        .model-stat {
+            display: flex;
+            justify-content: space-between;
+            margin: 8px 0;
+            font-size: 14px;
+        }
+        .model-stat-label { opacity: 0.9; }
+        .model-stat-value { font-weight: bold; font-size: 16px; }
+        .plot-container {
+            margin: 30px 0;
+            text-align: center;
+        }
+        .plot-container h3 {
+            color: #333;
+            margin-bottom: 15px;
+            font-size: 20px;
+        }
+        .plot-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .plot-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+            gap: 30px;
+            margin: 20px 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 14px;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background: #667eea;
+            color: white;
+            font-weight: 600;
+            position: sticky;
+            top: 0;
+        }
+        tr:hover { background: #f5f5f5; }
+        .rank-1 { font-weight: bold; color: #4caf50; }
+        .rank-2 { color: #2196F3; }
+        .rank-3 { color: #ff9800; }
+        .medal {
+            display: inline-block;
+            padding: 2px 8px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: bold;
+            margin-left: 5px;
+        }
+        .gold { background: #FFD700; color: #333; }
+        .silver { background: #C0C0C0; color: #333; }
+        .bronze { background: #CD7F32; color: white; }
+        .comparison-table {
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🏆 Models Comparison Report</h1>
+        <p>Comprehensive comparison of {{ models_count }} LLM models</p>
+        <p><strong>Generated:</strong> {{ generation_time }}</p>
+    </div>
+
+    <div class="winner-banner">
+        <h2>🥇 Overall Winner</h2>
+        <div class="model-name">{{ overall_winner }}</div>
+        <p>Highest mean credibility score</p>
+    </div>
+
+    <!-- Models Overview -->
+    <div class="section">
+        <h2>📊 Models Overview</h2>
+        <div class="models-grid">
+        {% for model_name, metrics in models_metrics.items() %}
+            <div class="model-card">
+                <h3>{{ model_name.split('/')[-1] if '/' in model_name else model_name }}</h3>
+                <div class="model-stat">
+                    <span class="model-stat-label">Total Runs:</span>
+                    <span class="model-stat-value">{{ metrics.total_runs }}</span>
+                </div>
+                <div class="model-stat">
+                    <span class="model-stat-label">Mean Credibility:</span>
+                    <span class="model-stat-value">{{ "%.2f"|format(metrics.mean_credibility) }}</span>
+                </div>
+                <div class="model-stat">
+                    <span class="model-stat-label">Quality Score:</span>
+                    <span class="model-stat-value">{{ "%.1f"|format(metrics.mean_quality_score) }}</span>
+                </div>
+                <div class="model-stat">
+                    <span class="model-stat-label">Execution Success:</span>
+                    <span class="model-stat-value">{{ "%.1f"|format(metrics.execution_success_rate) }}%</span>
+                </div>
+                <div class="model-stat">
+                    <span class="model-stat-label">Syntax Valid:</span>
+                    <span class="model-stat-value">{{ "%.1f"|format(metrics.syntax_valid_rate) }}%</span>
+                </div>
+            </div>
+        {% endfor %}
+        </div>
+    </div>
+
+    <!-- Rankings -->
+    <div class="section">
+        <h2>🏅 Rankings by Category</h2>
+        
+        {% for category, ranking in rankings.items() %}
+        <h3>{{ category }}</h3>
+        <table>
+            <tr>
+                <th style="width: 60px;">Rank</th>
+                <th>Model</th>
+                <th style="text-align: right;">Score</th>
+            </tr>
+            {% for model, score in ranking %}
+            <tr class="rank-{{ loop.index if loop.index <= 3 else 4 }}">
+                <td>
+                    #{{ loop.index }}
+                    {% if loop.index == 1 %}<span class="medal gold">🥇</span>
+                    {% elif loop.index == 2 %}<span class="medal silver">🥈</span>
+                    {% elif loop.index == 3 %}<span class="medal bronze">🥉</span>
+                    {% endif %}
+                </td>
+                <td><strong>{{ model }}</strong></td>
+                <td style="text-align: right;"><strong>{{ "%.2f"|format(score) }}</strong></td>
+            </tr>
+            {% endfor %}
+        </table>
+        {% endfor %}
+    </div>
+
+    <!-- Visual Comparisons -->
+    <div class="section">
+        <h2>📈 Visual Comparisons</h2>
+        
+        <div class="plot-container">
+            <h3>Multi-Dimensional Comparison</h3>
+            <img src="plots/radar_comparison.png" alt="Radar Comparison">
+        </div>
+
+        <div class="plot-container">
+            <h3>Overall Performance Metrics</h3>
+            <img src="plots/overall_metrics_comparison.png" alt="Overall Metrics">
+        </div>
+
+        <div class="plot-grid">
+            <div class="plot-container">
+                <h3>Mean Credibility Score</h3>
+                <img src="plots/credibility_comparison.png" alt="Credibility Comparison">
+            </div>
+            <div class="plot-container">
+                <h3>Semantic Quality Score</h3>
+                <img src="plots/quality_comparison.png" alt="Quality Comparison">
+            </div>
+        </div>
+
+        <div class="plot-grid">
+            <div class="plot-container">
+                <h3>Execution Success Rate</h3>
+                <img src="plots/execution_comparison.png" alt="Execution Comparison">
+            </div>
+            <div class="plot-container">
+                <h3>Mean Perplexity (Lower is Better)</h3>
+                <img src="plots/perplexity_comparison.png" alt="Perplexity Comparison">
+            </div>
+        </div>
+
+        <div class="plot-container">
+            <h3>Code Structure Comparison</h3>
+            <img src="plots/code_structure_comparison.png" alt="Code Structure">
+        </div>
+
+        <div class="plot-container">
+            <h3>Cyclomatic Complexity (Lower is Better)</h3>
+            <img src="plots/complexity_comparison.png" alt="Complexity Comparison">
+        </div>
+    </div>
+
+    <!-- Detailed Metrics Table -->
+    <div class="section">
+        <h2>📋 Detailed Metrics Comparison</h2>
+        <div class="comparison-table">
+            <table>
+                <tr>
+                    <th>Model</th>
+                    <th>Runs</th>
+                    <th>Credibility</th>
+                    <th>Quality</th>
+                    <th>Perplexity</th>
+                    <th>Avg Prob</th>
+                    <th>Functions</th>
+                    <th>Classes</th>
+                    <th>Lines</th>
+                    <th>Complexity</th>
+                    <th>Syntax %</th>
+                    <th>Exec %</th>
+                </tr>
+                {% for model, metrics in models_metrics.items() %}
+                <tr>
+                    <td><strong>{{ model }}</strong></td>
+                    <td>{{ metrics.total_runs }}</td>
+                    <td>{{ "%.2f"|format(metrics.mean_credibility) }}</td>
+                    <td>{{ "%.1f"|format(metrics.mean_quality_score) }}</td>
+                    <td>{{ "%.2f"|format(metrics.mean_perplexity) }}</td>
+                    <td>{{ "%.3f"|format(metrics.mean_avg_prob) }}</td>
+                    <td>{{ "%.1f"|format(metrics.mean_functions) }}</td>
+                    <td>{{ "%.1f"|format(metrics.mean_classes) }}</td>
+                    <td>{{ "%.0f"|format(metrics.mean_lines) }}</td>
+                    <td>{{ "%.2f"|format(metrics.mean_cyclomatic) }}</td>
+                    <td>{{ "%.1f"|format(metrics.syntax_valid_rate) }}%</td>
+                    <td>{{ "%.1f"|format(metrics.execution_success_rate) }}%</td>
+                </tr>
+                {% endfor %}
+            </table>
+        </div>
+    </div>
+
+    <div style="text-align: center; padding: 20px; color: #666; font-size: 14px;">
+        <p>Generated by Models Comparison Tool</p>
+        <p>Compare individual model reports in their respective folders</p>
+    </div>
+</body>
+</html>

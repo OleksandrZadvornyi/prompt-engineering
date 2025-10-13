@@ -46,7 +46,7 @@
     },
     "semantic_quality_score": 48.5,
     "execution_success": false,
-    "execution_time_sec": 0.568,
+    "execution_time_sec": 0.723,
     "exception_type": "RuntimeError",
     "exception_message": "File \"/app/code.py\", line 22\n    self.gt as_window_open = False  # GTAS window flag\n            ^^^^^^^^^^^^^^\nSyntaxError: invalid syntax",
     "runtime_output": "File \"/app/code.py\", line 22\n    self.gt as_window_open = False  # GTAS window flag\n            ^^^^^^^^^^^^^^\nSyntaxError: invalid syntax",

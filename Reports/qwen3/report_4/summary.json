@@ -94,9 +94,9 @@
     },
     "semantic_quality_score": 77.0,
     "execution_success": true,
-    "execution_time_sec": 1.48,
-    "exception_type": "APIError",
-    "exception_message": "409 Client Error for http+docker://localnpipe/v1.51/containers/a6f132a3b310d4af116cad7d3a941a08437945d0a0d894b4238262b4b67a5060/logs?stderr=1&stdout=1&timestamps=0&follow=0&tail=all: Conflict (\"can not get logs from container which is dead or marked for removal\")",
-    "runtime_output": "",
-    "total_credibility": 70.792
+    "execution_time_sec": 1.602,
+    "exception_type": "",
+    "exception_message": "",
+    "runtime_output": "2025-10-13 09:42:51,005 - INFO - Broker logging initialized\nProcessed 0 deletions\n\n        User Testing Summary Report:\n        - Round 2 of DABS/FABS landing page edits completed\n        - Homepage edits passed to leadership for approval\n        - Help page edits moved to round 2\n        - Tech Thursday issues tracked in project board\n        - Initial user testing phase started with SME input\n        \nResources page redesigned with Broker design system\nRound 2 changes to Help pages implemented\nRound 2 homepage updates applied\nD Files generation request processed with cache management\nFlexfield validation handled successfully\nPPoP ZIP+4 derived as: 12345-0000\nHistorical FABS data loaded successfully with proper derivations\nHistorical FPDS data including extracted and feed data loaded successfully\nDashboard enhanced with additional info and clearer status labels\nScheduled user test on 2025-11-12 with 2 participants\nEnhanced Errors: ['Invalid CFDA code - This code indicates an invalid CFDA program number.', 'Missing field']",
+    "total_credibility": 70.194
 }

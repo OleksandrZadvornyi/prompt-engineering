@@ -835,22 +835,25 @@ if __name__ == '__main__':
           <tr>
             <th>Execution time (s)</th>
             <td>
-              0.844
+              1.408
             </td>
           </tr>
           <tr>
             <th>Exception type</th>
-            <td>APIError</td>
+            <td>ModuleNotFoundError</td>
           </tr>
           <tr>
             <th>Exception message</th>
-            <td>409 Client Error for http+docker://localnpipe/v1.51/containers/2dfc3cb97eb06bcd5bf38c50f67835de32a85d922c936328e066b74db68ef88c/logs?stderr=1&stdout=1&timestamps=0&follow=0&tail=all: Conflict ("can not get logs from container which is dead or marked for removal")</td>
+            <td>No module named 'flask'</td>
           </tr>
           <tr>
             <th>Runtime output (preview)</th>
             <td>
               <div class="runtime-output">
-                <pre></pre>
+                <pre>Traceback (most recent call last):
+  File "/app/code.py", line 4, in <module>
+    from flask import Flask, request, jsonify, redirect, url_for, render_template
+ModuleNotFoundError: No module named 'flask'</pre>
               </div>
             </td>
           </tr>

@@ -72,9 +72,9 @@
     },
     "semantic_quality_score": 94.0,
     "execution_success": true,
-    "execution_time_sec": 1.15,
-    "exception_type": "APIError",
-    "exception_message": "409 Client Error for http+docker://localnpipe/v1.51/containers/a399c78f115d4fb45639b9328d76b0f43f716e8a27caa2d2cb66ef60c28f600a/logs?stderr=1&stdout=1&timestamps=0&follow=0&tail=all: Conflict (\"can not get logs from container which is dead or marked for removal\")",
+    "execution_time_sec": 1.449,
+    "exception_type": "",
+    "exception_message": "",
     "runtime_output": "",
-    "total_credibility": 87.039
+    "total_credibility": 85.574
 }

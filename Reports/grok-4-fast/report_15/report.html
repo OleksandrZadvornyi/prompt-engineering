@@ -1415,22 +1415,27 @@ if __name__ == "__main__":
           <tr>
             <th>Execution time (s)</th>
             <td>
-              1.552
+              2.377
             </td>
           </tr>
           <tr>
             <th>Exception type</th>
-            <td>APIError</td>
+            <td>sqlite3.OperationalError</td>
           </tr>
           <tr>
             <th>Exception message</th>
-            <td>409 Client Error for http+docker://localnpipe/v1.51/containers/8eafaadf1ed5399bcf1aa89fa3524e746ec1f419d60d0772948a098d154a9f10/logs?stderr=1&stdout=1&timestamps=0&follow=0&tail=all: Conflict ("can not get logs from container which is dead or marked for removal")</td>
+            <td>no such column: submission_date</td>
           </tr>
           <tr>
             <th>Runtime output (preview)</th>
             <td>
               <div class="runtime-output">
-                <pre></pre>
+                <pre>Traceback (most recent call last):
+  File "/app/code.py", line 809, in <module>
+    app.process_12_19_2017_deletions()
+  File "/app/code.py", line 108, in process_12_19_2017_deletions
+    cursor.execute("DELETE FROM fabs_records WHERE submission_date < ?", (deletion_date.isoformat(),))
+sqlite3.OperationalError: no such column: submission_date</pre>
               </div>
             </td>
           </tr>
