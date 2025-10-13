@@ -10,8 +10,8 @@ import time
 load_dotenv()
 
 # Configuration
-model = "qwen/qwen3-coder-30b-a3b-instruct"
-results_root = Path("Reports/qwen3")
+model = "x-ai/grok-4-fast"
+results_root = Path("Reports/grok-4-fast_clusters")
 results_root.mkdir(exist_ok=True)
 
 
@@ -20,8 +20,7 @@ results_root.mkdir(exist_ok=True)
 ###################################################################
 ###################################################################
 
-
-for i in range(20, 21):
+for i in range(16, 21):
     # --- Step 0: Determine next request number ---
     request_number = i
     run_dir = results_root / f"report_{request_number}"
@@ -51,11 +50,21 @@ for i in range(20, 21):
     
     
     
-    # --- Step 1: Read user stories ---
-    with open("data.txt", "r", encoding="utf-8") as f:
-        user_stories = [line.strip() for line in f if line.strip()]
+    # --- Step 1: Read clustered user stories ---
+    # with open("data.txt", "r", encoding="utf-8") as f:
+    #     user_stories = [line.strip() for line in f if line.strip()]
+        
+    with open("clustered_stories.json", "r", encoding="utf-8") as f:
+        clustered_stories = json.load(f)
     
-    stories_text = "\n".join(user_stories)
+    # Build stories text from clusters
+    stories_parts = []
+    for cluster_id, stories_text in clustered_stories.items():
+        stories_parts.append(f"Cluster {cluster_id}:")
+        stories_parts.append(stories_text)
+        stories_parts.append("")  # Empty line between clusters
+    
+    stories_text = "\n".join(stories_parts).strip()
     
     
     
