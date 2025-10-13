@@ -47,7 +47,7 @@ def compute_code_execution_metrics(code_text, timeout_sec=5):
             cpu_period=100000,  # CPU quota (with quota below, limits to ~0.5 CPU)
             cpu_quota=50000,
             detach=True,
-            remove=True  # Auto-remove container after stop
+            remove=False  # Auto-remove container after stop
         )
 
         # Wait for container to finish or timeout
@@ -55,14 +55,21 @@ def compute_code_execution_metrics(code_text, timeout_sec=5):
             result = container.wait(timeout=timeout_sec)
             exec_time = round(time.time() - start_time, 3)
             execution_success = result["StatusCode"] == 0
+            logs = container.logs().decode("utf-8", errors="ignore").strip()
         except Exception as e:  # Handles timeout
             container.kill()  # Force stop if timed out
             exec_time = timeout_sec
             exception_type = "TimeoutError"
             exception_message = f"Execution exceeded {timeout_sec}s limit"
-
-        # Get logs (stdout + stderr)
-        logs = container.logs().decode("utf-8").strip()
+        finally:
+            try:
+                container.remove(force=True)
+            except Exception:
+                pass
+        
+        # Clean up dead containers periodically
+        # Just in case a crash prevents removal:
+        # docker container prune -f
 
         if not execution_success:
             # Parse exception from logs if possible
