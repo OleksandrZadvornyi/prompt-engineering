@@ -1,0 +1,55 @@
+As a Data user, I want to have the 12-19-2017 deletions processed, so that outdated records are removed from the system.
+As a FABS user, I want to receive a link to a correctly formatted sample file, so that I can use it as a reference for preparing my submissions.
+As a FABS user, I want my submission files validated with improved error reporting, so that I understand what needs correction before publishing.
+As a FABS user, I want the publish button disabled during derivation processes, so that I don't accidentally trigger duplicate publishing actions.
+As a Data user, I want FREC codes derived automatically, so that data consistency across submissions is maintained.
+As a Data user, I want office names derived from codes, so that human-readable information is displayed instead of cryptic identifiers.
+As a Data user, I want historical FABS data loaded including all necessary columns, so that comprehensive reporting can be performed over time.
+As a System Administrator, I want GTAS window data added to the database, so that site lockdown occurs during critical submission periods.
+As a FABS user, I want to retrieve uploaded FABS files with associated errors, so that I can review and correct issues efficiently.
+As a Data Integrator, I want new relief data integrated from external sources, so that up-to-date assistance program information is available.
+As a DABS user, I want D1 file generation synchronized with FPDS data load, so that discrepancies between datasets are minimized.
+As a DABS user, I want accurate error messages provided when issues occur, so that troubleshooting becomes more efficient.
+As a System Administrator, I want to set read-only access for DABS users, so that unauthorized modifications are prevented while allowing viewing rights.
+As a UI Designer, I want to redesign the resources page to match new broker design styles, so that visual consistency is achieved throughout the platform.
+As a Product Manager, I want to schedule user testing events, so that feedback can be collected on planned features and improvements.
+As a Developer, I want to track issues raised in Tech Thursday meetings, so that actionable items are documented and followed through.
+As a Product Manager, I want to report findings of user testing sessions, so that insights can inform future development decisions.
+As a UI Designer, I want to create a summary report of UI changes and improvements requested, so that stakeholders have visibility into upcoming interface updates.
+As a Content Manager, I want to update help pages with latest design iterations, so that documentation stays current with application changes.
+As a UI Designer, I want to implement latest homepage design updates, so that branding and usability align with organizational goals.
+As a Navigation Specialist, I want to update landing page navigation options, so that users find relevant sections easily.
+As a Stakeholder, I want to see UI changes displayed in a standardized format, so that reviews and approvals proceed smoothly.
+As a Validation Engineer, I want to apply DB-2213 rule updates to the validation table, so that business logic remains compliant with evolving standards.
+As a Data Validator, I want PPoPZIP+4 to behave like Legal Entity ZIP, so that consistent postal code formatting is enforced.
+As a Data Validator, I want DUNS records validated per specific rules, so that only acceptable entries pass quality checks.
+As a Compliance Officer, I want clear explanations of what triggers CFDA error codes, so that submitters know how to avoid common mistakes.
+As a Submission Reviewer, I want warnings shown when only missing required elements exist, so that minor omissions do not block entire submissions.
+As a Data Processor, I want zero-padding applied consistently to fields, so that numeric identifiers maintain uniform length.
+As a Data Validator, I want legal entity address line 3 validated against maximum length, so that database constraints are respected.
+As a Loan Data Analyst, I want loan record fields to accept zero/blank values appropriately, so that valid financial data isn’t rejected incorrectly.
+As a Geographic Data Specialist, I want partial ZIP codes allowed for cities, so that broad geographic coverage areas can be submitted without restriction.
+As a Submission Coordinator, I want submission periods checked against expected dates, so that filings happen within designated windows.
+As a File Processor, I want file structure validated by extension, so that incompatible formats are caught early.
+As an Auditor, I want to identify who created each submission, so that accountability is maintained for all data inputs.
+As a Backend Developer, I want enhanced logging capabilities for troubleshooting, so that debugging production issues becomes easier.
+As a Publishing Coordinator, I want duplicate publishing prevented, so that accidental re-submissions don’t corrupt data integrity.
+As a Frontend Developer, I want refresh-based double publishing handled properly, so that user interactions don’t cause unintended side effects.
+As a Database Administrator, I want domain models indexed for better query performance, so that system responsiveness improves under load.
+As a Quality Assurance Engineer, I want nonexistent record error handling fixed, so that incorrect corrections fail gracefully.
+As a Historian, I want historical data loaded for all systems, so that legacy context supports ongoing operations.
+As a Data Architect, I want comprehensive FPDS historical data loaded, so that complete procurement histories are accessible.
+As a Database Developer, I want SQL code clarified for readability, so that maintenance tasks become less error-prone.
+As a Data Verifier, I want submission derivations validated, so that downstream consumers receive clean data.
+As a Performance Engineer, I want D-file generation requests cached, so that redundant computations are avoided.
+As a City Planner, I want to submit city-wide ZIP codes, so that regional programs can cover full municipalities.
+As a Spreadsheet User, I want CSV fields wrapped in quotes, so that special characters don’t break parsing.
+As a Developer, I want quick access to Broker application data, so that diagnostic investigations proceed rapidly.
+As a Systems Analyst, I want to determine the best approach for loading FPDS data, so that optimal ingestion strategies guide implementation.
+As a Program Manager, I want FABS groups supported under the FREC paradigm, so that federal reporting structures reflect reality.
+As a Tester, I want historical data validated for required fields, so that completeness checks ensure reliable archives.
+As a QA Lead, I want test environment access enabled across roles, so that cross-functional teams can verify features independently.
+As a Security Officer, I want environment permissions reset to staging MAX levels, so that unauthorized access risks are mitigated.
+As a UI Subject Matter Expert, I want a summary compiled based on my input, so that leadership understands proposed interface enhancements.
+As a Project Auditor, I want the scope of proposed UI enhancements audited, so that feasibility and impact assessments are thorough.
+As a Project Planner, I want a project timeline defined for UI improvements, so that delivery expectations are realistic and measurable.

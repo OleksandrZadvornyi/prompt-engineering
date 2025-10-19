@@ -1,0 +1,21 @@
+As a system administrator, I want to process deletion tasks from a specific date, so that I can maintain data integrity and remove outdated records.
+As a UI designer, I want to redesign the Resources page with new Broker design styles, so that users have a consistent and modern interface experience.
+As a product manager, I want to generate user testing reports for agencies, so that I can understand user feedback and improve the application.
+As a web developer, I want to edit homepage and help pages with specific round numbers, so that I can implement iterative improvements to the website.
+As a data administrator, I want to update validation rule tables with new changes, so that I can ensure data consistency and accuracy.
+As a data analyst, I want to add GTAS window data to the database, so that I can track and manage time-based data windows.
+As a developer, I want to manage and cache D File generation requests, so that I can optimize file creation and reduce redundant processing.
+As a compliance officer, I want to update FABS submission publish status, so that I can control when submissions become publicly available.
+As a system administrator, I want to prevent double publishing of FABS submissions, so that I can maintain data integrity and avoid duplicate entries.
+As a developer, I want to verify flexfields appear in warnings/errors for missing required elements, so that I can provide clear validation feedback to users.
+As a quality assurance specialist, I want to validate FABS and DABS submissions with detailed messaging, so that I can identify and resolve data issues effectively.
+As a data scientist, I want to load historical FABS data including FREC derivations, so that I can perform comprehensive data analysis.
+As a system administrator, I want to load historical FPDS data, so that I can maintain complete datasets for reporting and analysis.
+As a security administrator, I want to reset the environment to use only Staging MAX permissions, so that I can isolate testing environments from production data.
+As a data analyst, I want to update the FABS sample file by removing FundingAgencyCode, so that I can maintain accurate sample data for testing.
+As a data scientist, I want to derive PPoP congressional district using PPoPZIP+4 logic, so that I can accurately map geographic locations.
+As a system administrator, I want to ensure domain models are properly indexed, so that I can improve validation performance and search capabilities.
+As a support specialist, I want to clarify what triggers each CFDA error, so that I can provide better assistance to users encountering data issues.
+As a developer, I want to handle large numbers of flexfields efficiently, so that I can maintain good performance even with extensive data fields.
+As a project manager, I want to enhance the submission dashboard with helpful information, so that I can monitor submission progress and status easily.
+As a data manager, I want to publish FABS records ensuring accuracy, so that I can make reliable data available to stakeholders.
