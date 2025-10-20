@@ -1,36 +1,138 @@
 {
+    "model_name": "gpt-4o-mini_clusters",
     "total_runs_analyzed": 20,
-    "average_score_mean": 0.757240143418312,
-    "median_score": 0.7853498458862305,
-    "standard_deviation": 0.06951530381466098,
-    "minimum_score": {
-        "value": 0.5640437006950378,
-        "run_number": 5
+    "score_statistics": {
+        "mean": 0.757240143418312,
+        "median": 0.7853498458862305,
+        "std_dev": 0.06951530381466098,
+        "min": 0.5640437006950378,
+        "max": 0.8336979150772095
     },
-    "maximum_score": {
-        "value": 0.8336979150772095,
-        "run_number": 11
+    "story_count_statistics": {
+        "mean": 14.95,
+        "min": 8,
+        "max": 33
     },
-    "all_scores": [
-        0.7842080593109131,
-        0.7214145660400391,
-        0.703179657459259,
-        0.8110311031341553,
-        0.5640437006950378,
-        0.7991705536842346,
-        0.7864916324615479,
-        0.7547508478164673,
-        0.6661456823348999,
-        0.8063504099845886,
-        0.8336979150772095,
-        0.7289336323738098,
-        0.8269904851913452,
-        0.8239346742630005,
-        0.6865366697311401,
-        0.6605843305587769,
-        0.8236199021339417,
-        0.8005393743515015,
-        0.7956851720809937,
-        0.7674944996833801
+    "detailed_runs": [
+        {
+            "run_number": 1,
+            "score": 0.7842080593109131,
+            "story_count": 10,
+            "model_name": "openai/gpt-4o-mini"
+        },
+        {
+            "run_number": 2,
+            "score": 0.7214145660400391,
+            "story_count": 12,
+            "model_name": "openai/gpt-4o-mini"
+        },
+        {
+            "run_number": 3,
+            "score": 0.703179657459259,
+            "story_count": 10,
+            "model_name": "openai/gpt-4o-mini"
+        },
+        {
+            "run_number": 4,
+            "score": 0.8110311031341553,
+            "story_count": 20,
+            "model_name": "openai/gpt-4o-mini"
+        },
+        {
+            "run_number": 5,
+            "score": 0.5640437006950378,
+            "story_count": 10,
+            "model_name": "openai/gpt-4o-mini"
+        },
+        {
+            "run_number": 6,
+            "score": 0.7991705536842346,
+            "story_count": 18,
+            "model_name": "openai/gpt-4o-mini"
+        },
+        {
+            "run_number": 7,
+            "score": 0.7864916324615479,
+            "story_count": 17,
+            "model_name": "openai/gpt-4o-mini"
+        },
+        {
+            "run_number": 8,
+            "score": 0.7547508478164673,
+            "story_count": 10,
+            "model_name": "openai/gpt-4o-mini"
+        },
+        {
+            "run_number": 9,
+            "score": 0.6661456823348999,
+            "story_count": 8,
+            "model_name": "openai/gpt-4o-mini"
+        },
+        {
+            "run_number": 10,
+            "score": 0.8063504099845886,
+            "story_count": 18,
+            "model_name": "openai/gpt-4o-mini"
+        },
+        {
+            "run_number": 11,
+            "score": 0.8336979150772095,
+            "story_count": 9,
+            "model_name": "openai/gpt-4o-mini"
+        },
+        {
+            "run_number": 12,
+            "score": 0.7289336323738098,
+            "story_count": 14,
+            "model_name": "openai/gpt-4o-mini"
+        },
+        {
+            "run_number": 13,
+            "score": 0.8269904851913452,
+            "story_count": 33,
+            "model_name": "openai/gpt-4o-mini"
+        },
+        {
+            "run_number": 14,
+            "score": 0.8239346742630005,
+            "story_count": 20,
+            "model_name": "openai/gpt-4o-mini"
+        },
+        {
+            "run_number": 15,
+            "score": 0.6865366697311401,
+            "story_count": 17,
+            "model_name": "openai/gpt-4o-mini"
+        },
+        {
+            "run_number": 16,
+            "score": 0.6605843305587769,
+            "story_count": 11,
+            "model_name": "openai/gpt-4o-mini"
+        },
+        {
+            "run_number": 17,
+            "score": 0.8236199021339417,
+            "story_count": 15,
+            "model_name": "openai/gpt-4o-mini"
+        },
+        {
+            "run_number": 18,
+            "score": 0.8005393743515015,
+            "story_count": 16,
+            "model_name": "openai/gpt-4o-mini"
+        },
+        {
+            "run_number": 19,
+            "score": 0.7956851720809937,
+            "story_count": 9,
+            "model_name": "openai/gpt-4o-mini"
+        },
+        {
+            "run_number": 20,
+            "score": 0.7674944996833801,
+            "story_count": 22,
+            "model_name": "openai/gpt-4o-mini"
+        }
     ]
 }

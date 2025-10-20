@@ -1,36 +1,138 @@
 {
+    "model_name": "qwen3_clusters",
     "total_runs_analyzed": 20,
-    "average_score_mean": 0.8509377062320709,
-    "median_score": 0.8453419208526611,
-    "standard_deviation": 0.057376949190802086,
-    "minimum_score": {
-        "value": 0.745133638381958,
-        "run_number": 4
+    "score_statistics": {
+        "mean": 0.8509377062320709,
+        "median": 0.8453419208526611,
+        "std_dev": 0.057376949190802086,
+        "min": 0.745133638381958,
+        "max": 0.9398594498634338
     },
-    "maximum_score": {
-        "value": 0.9398594498634338,
-        "run_number": 2
+    "story_count_statistics": {
+        "mean": 49.9,
+        "min": 14,
+        "max": 94
     },
-    "all_scores": [
-        0.748245120048523,
-        0.9398594498634338,
-        0.9135238528251648,
-        0.745133638381958,
-        0.8385388851165771,
-        0.8265652060508728,
-        0.8141843676567078,
-        0.8870611190795898,
-        0.8762627840042114,
-        0.9035718441009521,
-        0.8085955381393433,
-        0.8180760145187378,
-        0.8895605206489563,
-        0.8521449565887451,
-        0.918350875377655,
-        0.9044442772865295,
-        0.9218844175338745,
-        0.830346405506134,
-        0.7678006887435913,
-        0.8146041631698608
+    "detailed_runs": [
+        {
+            "run_number": 1,
+            "score": 0.748245120048523,
+            "story_count": 14,
+            "model_name": "qwen/qwen3-coder-30b-a3b-instruct"
+        },
+        {
+            "run_number": 2,
+            "score": 0.9398594498634338,
+            "story_count": 93,
+            "model_name": "qwen/qwen3-coder-30b-a3b-instruct"
+        },
+        {
+            "run_number": 3,
+            "score": 0.9135238528251648,
+            "story_count": 94,
+            "model_name": "qwen/qwen3-coder-30b-a3b-instruct"
+        },
+        {
+            "run_number": 4,
+            "score": 0.745133638381958,
+            "story_count": 17,
+            "model_name": "qwen/qwen3-coder-30b-a3b-instruct"
+        },
+        {
+            "run_number": 5,
+            "score": 0.8385388851165771,
+            "story_count": 23,
+            "model_name": "qwen/qwen3-coder-30b-a3b-instruct"
+        },
+        {
+            "run_number": 6,
+            "score": 0.8265652060508728,
+            "story_count": 16,
+            "model_name": "qwen/qwen3-coder-30b-a3b-instruct"
+        },
+        {
+            "run_number": 7,
+            "score": 0.8141843676567078,
+            "story_count": 38,
+            "model_name": "qwen/qwen3-coder-30b-a3b-instruct"
+        },
+        {
+            "run_number": 8,
+            "score": 0.8870611190795898,
+            "story_count": 91,
+            "model_name": "qwen/qwen3-coder-30b-a3b-instruct"
+        },
+        {
+            "run_number": 9,
+            "score": 0.8762627840042114,
+            "story_count": 33,
+            "model_name": "qwen/qwen3-coder-30b-a3b-instruct"
+        },
+        {
+            "run_number": 10,
+            "score": 0.9035718441009521,
+            "story_count": 79,
+            "model_name": "qwen/qwen3-coder-30b-a3b-instruct"
+        },
+        {
+            "run_number": 11,
+            "score": 0.8085955381393433,
+            "story_count": 17,
+            "model_name": "qwen/qwen3-coder-30b-a3b-instruct"
+        },
+        {
+            "run_number": 12,
+            "score": 0.8180760145187378,
+            "story_count": 20,
+            "model_name": "qwen/qwen3-coder-30b-a3b-instruct"
+        },
+        {
+            "run_number": 13,
+            "score": 0.8895605206489563,
+            "story_count": 78,
+            "model_name": "qwen/qwen3-coder-30b-a3b-instruct"
+        },
+        {
+            "run_number": 14,
+            "score": 0.8521449565887451,
+            "story_count": 65,
+            "model_name": "qwen/qwen3-coder-30b-a3b-instruct"
+        },
+        {
+            "run_number": 15,
+            "score": 0.918350875377655,
+            "story_count": 86,
+            "model_name": "qwen/qwen3-coder-30b-a3b-instruct"
+        },
+        {
+            "run_number": 16,
+            "score": 0.9044442772865295,
+            "story_count": 88,
+            "model_name": "qwen/qwen3-coder-30b-a3b-instruct"
+        },
+        {
+            "run_number": 17,
+            "score": 0.9218844175338745,
+            "story_count": 91,
+            "model_name": "qwen/qwen3-coder-30b-a3b-instruct"
+        },
+        {
+            "run_number": 18,
+            "score": 0.830346405506134,
+            "story_count": 20,
+            "model_name": "qwen/qwen3-coder-30b-a3b-instruct"
+        },
+        {
+            "run_number": 19,
+            "score": 0.7678006887435913,
+            "story_count": 20,
+            "model_name": "qwen/qwen3-coder-30b-a3b-instruct"
+        },
+        {
+            "run_number": 20,
+            "score": 0.8146041631698608,
+            "story_count": 15,
+            "model_name": "qwen/qwen3-coder-30b-a3b-instruct"
+        }
     ]
 }

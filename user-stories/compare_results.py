@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 # --- ⚙️ CONFIGURATION ---
-MODEL = "grok-4-fast"
+MODEL = "qwen3_clusters"
 BASE_REPORTS_DIR = Path(f"../Reports/{MODEL}/")
 # ---
 
@@ -12,124 +12,157 @@ def analyze_and_compare_results(base_dir: Path):
     """
     Analyzes the results from multiple runs, calculates statistics,
     and generates a comparison plot.
-
-    Args:
-        base_dir: The base directory containing the report folders.
     """
     print(f"🔍 Starting analysis in directory: {base_dir.resolve()}")
 
     if not base_dir.is_dir():
         print(f"❌ Error: The directory '{base_dir.resolve()}' does not exist.")
-        print("Please make sure the BASE_REPORTS_DIR is set correctly.")
         return
 
-    scores = []
-    run_numbers = []
-    found_files = 0
-
-    # Loop to find all report directories
-    for i in range(1, 16):
-        report_dir = base_dir / f"report_{i}"
-        results_file = report_dir / "User-stories" / "analysis_results.json"
+    # --- CHANGED: Use a list of dicts to store all run data ---
+    run_data = []
+    
+    # Loop to find all report directories (increased range for flexibility)
+    for i in range(1, 21):
+        report_dir = base_dir / f"report_{i}" / "User-stories"
+        # --- CHANGED: Updated path to be more generic ---
+        results_file = report_dir / "analysis_results.json"
 
         if results_file.exists():
-            found_files += 1
             try:
                 with open(results_file, "r", encoding="utf-8") as f:
                     data = json.load(f)
+                    # --- CHANGED: Extract more data points ---
                     score = data.get("semantic_consistency_score")
-                    if score is not None:
-                        scores.append(score)
-                        run_numbers.append(i)
+                    story_count = data.get("generated_stories_count")
+                    model_name = data.get("analysis_model")
+
+                    if score is not None and story_count is not None:
+                        run_data.append({
+                            "run_number": i,
+                            "score": score,
+                            "story_count": story_count,
+                            "model_name": model_name
+                        })
                     else:
-                        print(f"⚠️ Warning: 'semantic_consistency_score' not found in {results_file}")
-            except json.JSONDecodeError:
-                print(f"⚠️ Warning: Could not decode JSON from {results_file}")
+                        print(f"⚠️ Warning: Missing data in {results_file}")
             except Exception as e:
                 print(f"⚠️ An unexpected error occurred while reading {results_file}: {e}")
         else:
-            print(f"ℹ️ Info: Results file not found for report_{i}, skipping.")
+            # This is normal if not all runs exist, so no print needed unless debugging
+            pass
 
-    if not scores:
-        print("\n❌ No scores were found. Cannot perform analysis.")
-        print("Please check the directory structure and file names.")
+    if not run_data:
+        print("\n❌ No valid result files were found. Cannot perform analysis.")
         return
 
     # --- Step 1: Calculate Statistics ---
-    print(f"\n✅ Successfully loaded scores from {len(scores)} runs.")
+    print(f"\n✅ Successfully loaded data from {len(run_data)} runs.")
+    
+    # --- CHANGED: Extract data from the list of dicts ---
+    scores = [d['score'] for d in run_data]
+    story_counts = [d['story_count'] for d in run_data]
+    run_numbers = [d['run_number'] for d in run_data]
+    
+    # Score statistics
     mean_score = np.mean(scores)
     median_score = np.median(scores)
-    std_dev = np.std(scores)
+    std_dev_score = np.std(scores)
     min_score = np.min(scores)
     max_score = np.max(scores)
 
-    # --- Step 2: Print Summary to Console ---
+    # --- NEW: Story count statistics ---
+    mean_stories = np.mean(story_counts)
+    min_stories = np.min(story_counts)
+    max_stories = np.max(story_counts)
+
+    # --- Step 2: Print Enhanced Summary to Console ---
     summary_text = f"""
-    {"="*50}
-    📊 Performance Summary
-    {"="*50}
-    - Total Runs Analyzed: {len(scores)}
-    - Average Score (Mean): {mean_score:.4f}
-    - Median Score:         {median_score:.4f}
-    - Standard Deviation:   {std_dev:.4f}
-    - Minimum Score:        {min_score:.4f} (Run {run_numbers[np.argmin(scores)]})
-    - Maximum Score:        {max_score:.4f} (Run {run_numbers[np.argmax(scores)]})
-    {"="*50}
+    {"="*60}
+    📊 Performance Summary for Model: {MODEL}
+    {"="*60}
+    - Total Runs Analyzed: {len(run_data)}
+
+    --- Semantic Consistency Score ---
+    - Average (Mean): {mean_score:.4f}
+    - Median:         {median_score:.4f}
+    - Std Deviation:  {std_dev_score:.4f}
+    - Min Score:      {min_score:.4f} (Run {run_numbers[np.argmin(scores)]})
+    - Max Score:      {max_score:.4f} (Run {run_numbers[np.argmax(scores)]})
+
+    --- Generated User Story Count ---
+    - Average Count: {mean_stories:.2f}
+    - Min Count:     {min_stories} (in Run {run_numbers[np.argmin(story_counts)]})
+    - Max Count:     {max_stories} (in Run {run_numbers[np.argmax(story_counts)]})
+    {"="*60}
     """
     print(summary_text)
     
-    # --- Step 2b: Save Summary Data as JSON ---
+    # --- Step 2b: Save Enhanced Summary Data as JSON ---
     summary_data = {
-        "total_runs_analyzed": len(scores),
-        "average_score_mean": float(mean_score),
-        "median_score": float(median_score),
-        "standard_deviation": float(std_dev),
-        "minimum_score": {
-            "value": float(min_score),
-            "run_number": int(run_numbers[np.argmin(scores)])
+        "model_name": MODEL,
+        "total_runs_analyzed": len(run_data),
+        "score_statistics": {
+            "mean": float(mean_score),
+            "median": float(median_score),
+            "std_dev": float(std_dev_score),
+            "min": float(min_score),
+            "max": float(max_score)
         },
-        "maximum_score": {
-            "value": float(max_score),
-            "run_number": int(run_numbers[np.argmax(scores)])
+        "story_count_statistics": {
+            "mean": float(mean_stories),
+            "min": int(min_stories),
+            "max": int(max_stories)
         },
-        "all_scores": [float(s) for s in scores]
+        "detailed_runs": run_data # <-- CHANGED: Save all detailed data
     }
 
-    # Save the summary to a JSON file
     summary_json_path = base_dir / "comparison_summary.json"
     with open(summary_json_path, "w", encoding="utf-8") as f:
         json.dump(summary_data, f, indent=4)
-    print(f"✅ Summary data saved to: {summary_json_path}")
+    print(f"✅ Enhanced summary data saved to: {summary_json_path}")
 
 
-    # --- Step 3: Create and Save a Visualization ---
+    # --- Step 3: Create and Save an Improved Visualization ---
     plt.style.use('seaborn-v0_8-whitegrid')
-    fig, ax = plt.subplots(figsize=(15, 8))
+    fig, ax1 = plt.subplots(figsize=(15, 8))
 
-    bars = ax.bar(run_numbers, scores, color='skyblue', edgecolor='black', zorder=2)
-    ax.set_title(f'Semantic Consistency Score Across 20 Runs ({MODEL})', fontsize=16, weight='bold')
-    ax.set_xlabel('Run Number', fontsize=12)
-    ax.set_ylabel('Semantic Consistency Score', fontsize=12)
-    ax.set_xticks(range(1, 21)) # Ensure all run numbers are shown
-    ax.set_ylim(bottom=max(0, min_score - 0.05), top=min(1, max_score + 0.05)) # Dynamic y-axis
+    # --- NEW: Dual-axis plot setup ---
+    ax2 = ax1.twinx()
+
+    # Plot bars for scores on the first axis (ax1)
+    bars = ax1.bar(run_numbers, scores, color='skyblue', edgecolor='black', zorder=2, label='Consistency Score')
+    ax1.set_title(f'Performance Analysis for {MODEL}', fontsize=16, weight='bold')
+    ax1.set_xlabel('Run Number', fontsize=12)
+    ax1.set_ylabel('Semantic Consistency Score', fontsize=12, color='skyblue')
+    ax1.tick_params(axis='y', labelcolor='skyblue')
+    ax1.set_xticks(range(1, 21))
+    ax1.set_ylim(bottom=0) # Scores are always positive
 
     # Add a horizontal line for the average score
-    ax.axhline(mean_score, color='r', linestyle='--', linewidth=2, label=f'Average Score: {mean_score:.4f}', zorder=3)
+    ax1.axhline(mean_score, color='dodgerblue', linestyle='--', linewidth=2, label=f'Avg Score: {mean_score:.3f}')
     
-    # Add text labels on top of each bar
+    # Plot line for story counts on the second axis (ax2)
+    ax2.plot(run_numbers, story_counts, color='coral', marker='o', linestyle='-', zorder=3, label='Generated Stories')
+    ax2.set_ylabel('Number of Generated Stories', fontsize=12, color='coral')
+    ax2.tick_params(axis='y', labelcolor='coral')
+    ax2.set_ylim(bottom=0)
+
+    # Add text labels for scores on top of each bar
     for bar in bars:
         yval = bar.get_height()
-        ax.text(bar.get_x() + bar.get_width()/2.0, yval + 0.005, f'{yval:.3f}', ha='center', va='bottom', fontsize=9)
+        ax1.text(bar.get_x() + bar.get_width()/2.0, yval + 0.01, f'{yval:.3f}', ha='center', va='bottom', fontsize=9)
+    
+    # Combine legends from both axes
+    lines, labels = ax1.get_legend_handles_labels()
+    lines2, labels2 = ax2.get_legend_handles_labels()
+    ax2.legend(lines + lines2, labels + labels2, loc='upper left')
 
-    ax.legend()
     plt.tight_layout()
-
-    # Save the plot
     plot_path = base_dir / "scores_comparison_chart.png"
     plt.savefig(plot_path, dpi=300)
-    print(f"✅ Comparison chart saved to: {plot_path}")
-    plt.close() # Free up memory
+    print(f"✅ Dual-axis comparison chart saved to: {plot_path}")
+    plt.close()
 
 if __name__ == "__main__":
     analyze_and_compare_results(BASE_REPORTS_DIR)
-
