@@ -15,7 +15,7 @@ def generate_html_report(all_model_data: list):
     # Sort data by average score for a ranked view
     all_model_data.sort(key=lambda x: x['score_statistics']['mean'], reverse=True)
 
-    # --- HTML Header and Styling ---
+    # --- HTML Header and Styling (Updated) ---
     html_content = """
     <!DOCTYPE html>
     <html lang="en">
@@ -81,23 +81,43 @@ def generate_html_report(all_model_data: list):
                 transform: translateY(-5px);
                 box-shadow: 0 4px 12px rgba(0,0,0,0.1);
             }
-            .card h3 {
-                margin-top: 0;
-                font-size: 1.4em;
-                color: #0056b3;
-            }
+            .card h3 { margin-top: 0; font-size: 1.4em; color: #0056b3; }
             .card p { margin: 10px 0; }
+            .card h4 {
+                margin-top: 25px;
+                margin-bottom: 15px;
+                font-size: 1.1em;
+                color: #495057;
+                border-bottom: 1px solid #f1f1f1;
+                padding-bottom: 8px;
+            }
             .card a {
+                text-decoration: none;
+                border-radius: 5px;
+                font-weight: 500;
+                transition: all 0.2s ease-in-out;
+            }
+            .card a.main-link {
                 display: inline-block;
                 margin-top: 15px;
                 padding: 8px 15px;
                 background-color: #007bff;
                 color: white;
-                text-decoration: none;
-                border-radius: 5px;
-                font-weight: 500;
             }
-            .card a:hover { background-color: #0056b3; }
+            .card a.main-link:hover { background-color: #0056b3; }
+            .run-links {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 8px;
+                margin-top: 10px;
+            }
+            .run-links a {
+                background-color: #e9ecef;
+                color: #495057;
+                padding: 5px 12px;
+                font-size: 0.85em;
+            }
+            .run-links a:hover { background-color: #ced4da; color: #212529; }
             footer {
                 text-align: center;
                 margin-top: 40px;
@@ -130,7 +150,6 @@ def generate_html_report(all_model_data: list):
                 <tbody>
     """
 
-    # Find best score and highest story count for highlighting
     best_score = max(d['score_statistics']['mean'] for d in all_model_data)
     highest_stories = max(d['story_count_statistics']['mean'] for d in all_model_data)
 
@@ -149,13 +168,12 @@ def generate_html_report(all_model_data: list):
         """
     html_content += "</tbody></table>"
 
-    # --- Individual Model Cards ---
+    # --- Individual Model Cards (Updated) ---
     html_content += "<h2>Detailed Model Breakdown</h2><div class='grid'>"
     for data in all_model_data:
         model_name = data['model_name']
         score_stats = data['score_statistics']
         story_stats = data['story_count_statistics']
-        # Relative path from the script's location to the chart
         chart_path = f"../Reports/{model_name}/scores_comparison_chart.png"
 
         html_content += f"""
@@ -165,7 +183,24 @@ def generate_html_report(all_model_data: list):
                 <p><strong>Score Std Dev:</strong> {score_stats['std_dev']:.4f}</p>
                 <p><strong>Avg. Stories:</strong> {story_stats['mean']:.2f} (Min: {story_stats['min']}, Max: {story_stats['max']})</p>
                 <p><strong>Runs Analyzed:</strong> {data['total_runs_analyzed']}</p>
-                <a href="{chart_path}" target="_blank">View Detailed Chart</a>
+                <a href="{chart_path}" target="_blank" class="main-link">View Overall Chart</a>
+                
+                <h4>Individual Run Plots</h4>
+                <div class="run-links">
+        """
+        
+        # Add links for each individual run's t-SNE plot
+        if 'detailed_runs' in data and data['detailed_runs']:
+            sorted_runs = sorted(data['detailed_runs'], key=lambda r: r['run_number'])
+            for run in sorted_runs:
+                run_number = run['run_number']
+                plot_path = f"../Reports/{model_name}/report_{run_number}/User-stories/embedding_visualization.png"
+                html_content += f'<a href="{plot_path}" target="_blank">Run {run_number}</a>'
+        else:
+            html_content += "<p>No individual run data available.</p>"
+
+        html_content += """
+                </div>
             </div>
         """
     html_content += "</div>"
@@ -217,6 +252,6 @@ def main():
     except Exception as e:
         print(f"\n❌ Error: Failed to write HTML file. Reason: {e}")
 
-
 if __name__ == "__main__":
     main()
+
