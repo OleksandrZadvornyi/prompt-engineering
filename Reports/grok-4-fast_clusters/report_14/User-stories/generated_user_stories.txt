@@ -1,0 +1,29 @@
+As a submitter, I want to upload a CSV file for validation, so that I can ensure it meets the required format and content standards before processing.
+As a validator, I want to check the file extension to confirm it's a CSV, so that only compatible files are accepted for further validation.
+As a validator, I want to verify required fields like AwardeeOrRecipientUEI and ActionDate in the uploaded data, so that incomplete submissions are identified and reported.
+As a compliance officer, I want to validate DUNS numbers against simulated SAM registration, so that only active and non-expired entities are processed for specific action types.
+As a compliance officer, I want to ensure ActionDate falls within valid SAM registration periods, so that temporal inconsistencies are caught early.
+As a data quality checker, I want to validate CFDA numbers using the XX.XXX format, so that federal assistance identifiers are correctly formatted.
+As a location verifier, I want to check PPoP ZIP+4 and Legal Entity ZIP+4 codes against a 5-digit or ZIP+4 pattern, so that address data is accurate and standardized.
+As a data processor, I want to derive FundingAgencyCode from AwardingAgencyCode and AwardingSubTierAgencyCode using a mapping, so that agency details are automatically populated without manual input.
+As a data processor, I want to derive PPoPCode based on PPoPCode patterns or ZIP codes to classify as Domestic, Foreign, or Citywide, so that place of performance is correctly categorized.
+As a data processor, I want to derive FREC codes from agency and sub-agency codes, so that unique federal receipt codes are generated for tracking.
+As a data processor, I want to derive OfficeName from AwardingOfficeCode, so that full office descriptions are available in the dataset.
+As a data processor, I want to fill PPoPCongressionalDistrict with 'Unknown' if missing, so that all records have complete location data.
+As an administrator, I want to load historical FABS data into the PublishedAwardFinancialAssistance table after applying derivations, so that past financial assistance records are archived and queryable.
+As an administrator, I want to load historical FPDS data into the HistoricalFPDS table, optionally concatenating with feed data and adding simulated fields, so that contract history is maintained.
+As a fiscal manager, I want to update GTAS windows with start and end dates, so that government-wide treasury reporting periods are tracked in the database.
+As a data cleaner, I want to process deletions by removing records from PublishedAwardFinancialAssistance before a specified date, so that outdated data is purged to maintain database efficiency.
+As a report generator, I want to generate D1 files by merging FABS and FPDS data on FederalAwardIdentifier and deriving FederalActionObligation, so that combined award obligation reports are created with caching for performance.
+As a report generator, I want to generate F files with all fields quoted to preserve leading zeroes, so that CSV exports maintain data integrity during transmission.
+As a packager, I want to create ZIP files containing multiple generated files, so that outputs can be bundled and easily shared or archived.
+As a submission manager, I want to handle file uploads by validating extensions and content, generating error CSVs if issues are found, so that users receive clear feedback on validation status.
+As a publisher, I want to process submissions by applying field derivations and optionally publishing to the database while preventing duplicates via hashing, so that new data is integrated without redundancy.
+As a publisher, I want to check publishStatus to avoid processing if already in 'processing' state, so that concurrent submissions are managed safely.
+As a synchronizer, I want to generate and sync D1 files with FPDS loads based on file modification times, so that reports reflect the latest contract data updates.
+As a data filter, I want to exclude records where NASA agencies have grants misclassified as contracts, so that assistance types are accurately represented in the dataset.
+As a data handler, I want to process large flexfield columns by converting them to strings without performance impact, so that extended data fields are loaded efficiently.
+As a user, I want to be redirected to the appropriate dashboard based on user type (FABS or DABS), so that access to relevant tools is streamlined.
+As a dashboard user, I want to view submission status labels, additional info, and download links, so that I can monitor and manage my submissions effectively.
+As a UI maintainer, I want to log submission status updates with timestamps, so that troubleshooting and auditing of changes is facilitated.
+As a system initializer, I want to set up the SQLite database with tables for awards, historical FPDS, and GTAS windows, so that the backend schema is ready for data operations.

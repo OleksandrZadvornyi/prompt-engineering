@@ -1,0 +1,6 @@
+{
+    "semantic_consistency_score": 0.9129352569580078,
+    "analysis_model": "openai/gpt-4o-mini",
+    "original_stories_count": 98,
+    "generated_stories_count": 78
+}

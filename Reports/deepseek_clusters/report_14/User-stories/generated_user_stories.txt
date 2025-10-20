@@ -1,0 +1,46 @@
+As a system administrator, I want to process deletions from 12-19-2017, so that outdated transaction data is removed from the database.
+As a UI designer, I want to redesign the resources page, so that it matches the new Broker design standards.
+As a data analyst, I want to report user testing results to agencies, so that they can review and act on feedback.
+As a DevOps engineer, I want to configure New Relic for all applications, so that we can monitor performance effectively.
+As a data engineer, I want to sync D1 file generation with FPDS data load, so that reports are always up-to-date.
+As a database administrator, I want to update SQL queries for clarity, so that maintenance becomes easier.
+As a developer, I want to add special cases to PPoPCode derivation logic, so that edge cases are handled correctly.
+As a data steward, I want to derive FundingAgencyCode, so that data quality is improved.
+As a data mapper, I want to map FederalActionObligation to Atom Feed, so that financial data is properly represented.
+As a validator, I want to validate PPoPZIP+4 codes, so that they meet the same standards as Legal Entity ZIPs.
+As a content editor, I want to edit DABS landing pages, so that they are ready for approval.
+As a content editor, I want to edit FABS landing pages, so that they are ready for approval.
+As a content editor, I want to edit Help pages, so that they are ready for approval.
+As a support engineer, I want to enhance logging for submissions, so that troubleshooting becomes easier.
+As a data consumer, I want to get published FABS files, so that I can access the latest data.
+As a data analyst, I want to filter to grant records only, so that I can focus on grant-related data.
+As a project manager, I want to track issues from Tech Thursday, so that we can prioritize fixes.
+As a testing coordinator, I want to create user testing summaries, so that feedback is documented.
+As a testing coordinator, I want to schedule user testing, so that sessions are organized.
+As a UI planner, I want to create a UI improvement schedule, so that we can track progress.
+As a UI auditor, I want to create a UI improvement audit, so that we can assess quality.
+As a system administrator, I want to reset staging permissions, so that environments remain secure.
+As a database administrator, I want to ensure domain models are properly indexed, so that queries perform well.
+As a UI developer, I want to update headers with date and time, so that users see current information.
+As a data formatter, I want to ensure zero-padded fields, so that data formats are consistent.
+As a developer, I want to update error codes, so that users receive better information.
+As a data analyst, I want quick access to Broker application data, so that I can run custom queries.
+As a security administrator, I want to grant read-only DABS access to FABS users, so that permissions are appropriate.
+As a content creator, I want to create landing pages for FABS/DABS navigation, so that users can easily find resources.
+As a submission manager, I want to update FABS submission status, so that workflows are tracked accurately.
+As a data manager, I want to add GTAS windows to the database, so that reporting periods are defined.
+As a data updater, I want to update FABS sample files, so that examples reflect current formats.
+As a UI controller, I want to deactivate publish buttons during derivations, so that users don't submit incomplete data.
+As a data loader, I want to derive fields for historical FABS data, so that records are complete.
+As a data processor, I want to add FREC derivations to historical FABS data, so that agency codes are standardized.
+As a URL manager, I want to normalize frontend URLs, so that navigation is more accurate.
+As a data loader, I want to load both historical and FPDS feed data, so that systems have complete datasets.
+As a group manager, I want to create FABS groups under FREC paradigm, so that data is organized effectively.
+As a data validator, I want to validate historical data columns, so that all necessary information is present.
+As a data extractor, I want to access additional fields from FPDS data, so that more details are available.
+As a dashboard developer, I want to enhance submission info on dashboards, so that users see comprehensive details.
+As a file manager, I want to download uploaded FABS files, so that users can access their submissions.
+As a data loader, I want to load all FPDS data since 2007, so that historical analysis is possible.
+As a content localizer, I want to adapt FABS language for user types, so that messaging is appropriate.
+As a UI filter, I want to filter banners based on user type, so that relevant messages are shown.
+As a period manager, I want to get submission periods for agencies, so that deadlines are clear.

@@ -1,0 +1,11 @@
+As a user, I want to submit data to the system, so that my submission can be processed and tracked.
+As a user, I want to get the status of my submission, so that I can know if it is pending or completed.
+As a user, I want to generate a unique submission ID when I submit data, so that I can easily reference my submission later.
+As a user, I want to receive validation errors if my submission data is incorrect, so that I can correct any issues before resubmitting.
+As a user, I want the system to validate the file extension of the uploaded files, so that I can ensure that I am only submitting supported file types.
+As a user, I want to record my test responses, so that I can review them later or provide feedback on the system.
+As a user, I want to log events related to submission status updates, so that I can maintain an audit trail of actions taken on submissions.
+As a user, I want to process files while checking for validation errors, so that I can ensure my file meets the necessary requirements before submission.
+As an agency, I want to associate submissions with my unique agency code, so that my submitted data is correctly attributed to my agency.
+As a FABS user, I want to access my submission history, so that I can track my submissions over time.
+As a FABS service provider, I want to update submission statuses and log these updates, so that I can manage and monitor the submission lifecycle effectively.

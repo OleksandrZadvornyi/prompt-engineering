@@ -1,0 +1,9 @@
+As a user of the broker application, I want to upload and validate files, so that I can ensure the data meets necessary requirements before submission.
+As a user, I want to receive clear error messages for validation failures, so that I can correct issues in my submissions.
+As a user, I want to track the status of my submissions, so that I can stay informed about their progress.
+As a user, I want to generate D1 files when FPDS data is updated, so that I can maintain up-to-date records.
+As a user, I want to generate FABS files, so that I can comply with reporting requirements.
+As a user, I want to report user testing feedback, so that my comments can be considered for improvements.
+As a user, I want to retrieve a list of published FABS files, so that I can access and review them as needed.
+As a user, I want to derive funding agency codes from submission records, so that I can properly categorize my submissions.
+As a user, I want to add records to validation results, so that I can store and review outcomes of previous submissions.

@@ -1,0 +1,10 @@
+As a FABS user, I want to upload a file, so that I can ensure the data is submitted correctly.
+As an agency user, I want to submit data, so that my submissions can be processed and reviewed.
+As a developer, I want to log errors related to submissions, so that I can track and manage issues effectively.
+As a developer, I want to prevent double publishing of submissions, so that submission integrity is maintained.
+As an agency user, I want to view all submissions, so that I can monitor the status and progress of my data submissions.
+As a UI designer, I want to redesign the resources page, so that it aligns with the new design standards.
+As a scheduler, I want to schedule user testing, so that feedback can be collected at appropriate times.
+As a user, I want to process deletions, so that outdated or incorrect data can be removed efficiently.
+As a user, I want to load FPDS data, so that it can be used in my submissions.
+As a user, I want to generate D files, so that they are synchronized with the loaded FPDS data.

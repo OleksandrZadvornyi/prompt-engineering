@@ -1,0 +1,13 @@
+As a user, I want to process deletions based on a given date, so that I can manage outdated submissions effectively.
+As a user, I want to submit a record, so that I can keep track of important information.
+As a user, I want to update the status of a submission, so that I can reflect its current state accurately.
+As a designer, I want to redesign the Resources page, so that it adheres to the new design styles.
+As a user, I want to report user testing insights, so that I can share findings with relevant agencies.
+As a user, I want to schedule user testing for a specific date, so that I can plan accordingly.
+As a user, I want to upload a file, so that I can store and manage important documents.
+As a user, I want to validate the file format before uploading, so that I can ensure compatibility.
+As a user, I want to validate my submission, so that I can confirm its accuracy.
+As a user, I want to download a file associated with my submission, so that I can access the necessary documents.
+As a developer, I want to log events, so that I can maintain a history of important actions.
+As a developer, I want to prevent double publishing of submissions, so that I can avoid duplicate records.
+As an agency user, I want to include flex fields, so that I can customize data fields as needed.

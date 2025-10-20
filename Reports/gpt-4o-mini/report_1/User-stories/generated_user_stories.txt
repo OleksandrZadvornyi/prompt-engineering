@@ -1,0 +1,13 @@
+As a developer, I want to process deletions for a specified date, so that I can manage outdated or unnecessary data effectively.
+As a user, I want to validate submission data, so that I can ensure all required information is provided and avoid processing errors.
+As a user, I want to upload a FABS file, so that I can save relevant data in the correct format for processing.
+As a user, I want to check the status of a submission by its ID, so that I can track the progress of my submitted data.
+As a user, I want to update a submission with new information, so that I can keep my data current and accurate.
+As a developer, I want to reset permissions in the staging environment, so that I can manage access controls effectively.
+As a designer, I want to report user testing results, so that I can inform relevant stakeholders about user feedback.
+As a designer, I want to schedule user testing for a specific date, so that I can gather user feedback in a timely manner.
+As a designer, I want to move to the next design round for a specific page, so that I can iterate and improve the user interface based on testing feedback.
+As a data manager, I want to load FPDS data, so that I can have access to the necessary financial data for analysis and reporting.
+As a data manager, I want to load historical data from both FPDS and FABS, so that I can perform comprehensive data analysis.
+As a developer, I want to update validation rules, so that I can ensure data integrity for the submissions.
+As a developer, I want to check for duplicate transactions, so that I can maintain uniqueness and reduce errors in the submissions.

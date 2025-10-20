@@ -1,0 +1,79 @@
+As a system administrator, I want to process deletions from a specific date, so that outdated records are properly removed from the system.
+As a UI designer, I want to redesign the Resources page according to new Broker design guidelines, so that users have an improved interface experience.
+As a product manager, I want to report user testing feedback to agencies, so that agency stakeholders can understand user experience insights.
+As a DevOps engineer, I want to configure New Relic monitoring for all applications, so that application performance can be tracked effectively.
+As a data analyst, I want to synchronize D1 file generation with FPDS data load, so that my financial data remains up-to-date and consistent.
+As a developer, I want to improve SQL query clarity, so that maintenance and debugging becomes easier.
+As a data specialist, I want to add special PPoP code cases to derivation logic, so that edge cases are handled correctly in data processing.
+As a business analyst, I want to derive FundingAgencyCode for improved data quality, so that funding information is accurate and standardized.
+As a content manager, I want to map FederalActionObligation to Atom Feed, so that financial obligations are properly exposed to external systems.
+As a data validator, I want to validate PPoPZIP+4 consistency with Legal Entity validation, so that zip code data maintains data integrity.
+As a web designer, I want to handle redesign rounds for landing pages, so that the user interface evolves with user needs.
+As a software engineer, I want to update error codes with better informative messages, so that developers can troubleshoot issues more efficiently.
+As a system administrator, I want to improve logging for troubleshooting, so that system issues can be diagnosed quickly.
+As a data user, I want to access published FABS files, so that I can retrieve and analyze government spending data.
+As a compliance officer, I want to ensure USAspending receives only grant records, so that the data feeds comply with regulations.
+As a UX designer, I want to create content mockups for data submission, so that users have clear guidance on how to submit information.
+As a project manager, I want to track issues raised during Tech Thursday meetings, so that technical concerns are properly documented and addressed.
+As a QA specialist, I want to generate UI testing summary from SME feedback, so that user interface improvements align with expert recommendations.
+As a scheduler, I want to schedule user testing with advance notice, so that participants can prepare adequately for testing sessions.
+As a security administrator, I want to reset environment permissions to staging max only, so that system security is properly maintained.
+As a database administrator, I want to index domain models for faster validation, so that application performance improves.
+As a frontend developer, I want to show updated date and time in header info box, so that users know when data was last refreshed.
+As a data engineer, I want to enforce zero padding in fields, so that data formatting remains consistent.
+As a submission manager, I want to update FABS submission status when publishStatus changes, so that submission tracking stays current.
+As a data manager, I want to add GTAS window data to database, so that transaction windows are properly recorded and managed.
+As a data curator, I want to update FABS sample file by removing obsolete fields, so that sample files remain relevant and useful.
+As a data processor, I want to lock publish button during derivation process, so that users cannot publish incomplete data.
+As a data scientist, I want to derive fields for historical FABS records, so that historical data can be properly enriched.
+As a data analyst, I want to load historical FABS data with FREC derivations, so that data is properly connected to agency structures.
+As a frontend developer, I want to fix frontend URL structure to match pages accessed, so that navigation works intuitively.
+As a data integrator, I want to combine both historical and live FPDS data, so that comprehensive procurement data is available.
+As a data architect, I want to create FABS groups based on FREC paradigm, so that agency groupings reflect organizational structure.
+As a data validator, I want to ensure historical data contains all necessary columns, so that data completeness is maintained.
+As a data integrator, I want to access additional fields from FPDS data pull, so that extended procurement details are available.
+As a dashboard designer, I want to add helpful info to submission dashboard, so that users can monitor submission progress effectively.
+As a data downloader, I want to download uploaded FABS file, so that I can analyze or reprocess submitted data locally.
+As a data specialist, I want to load historical FPDS data since 2007, so that long-term procurement trends can be analyzed.
+As a content writer, I want to update FABS page language to be clear and appropriate, so that users understand the submission process easily.
+As a UI designer, I want to separate banner messages for DABS and FABS, so that users can distinguish between different data types.
+As a data analyst, I want to show submission periods start/end dates, so that users know when they can submit data.
+As a data validator, I want to upload and validate with corrected error messages, so that submission errors are clearly communicated to users.
+As a system administrator, I want to update validation rules based on DB-2213, so that system requirements stay current.
+As a data cleaner, I want to display flexfield errors in warnings/errors files, so that data quality issues are properly identified.
+As a compliance officer, I want to clarify CFDA error code triggers, so that users understand what conditions cause specific errors.
+As a documentation specialist, I want to update resources for FABS/Daim v1.1 launch, so that users have current reference materials.
+As a data validator, I want to handle DUNS validations with action type and date rules, so that organization identification information is properly validated.
+As a data validator, I want to provide more helpful error for wrong file extensions, so that users can correct file upload issues quickly.
+As a data steward, I want to prevent duplicate publication of submissions, so that duplicate data entries are avoided.
+As a data processor, I want to prevent duplicate transaction publishing, so that financial transactions are not redundantly reported.
+As a backend developer, I want to manage and cache D files generation, so that file generation processes are efficient.
+As a data user, I want to access raw published files via USAspending, so that I can work with direct data sources.
+As a data engineer, I want to handle large number of flex fields without performance impact, so that system scalability is maintained.
+As a data processor, I want to prevent double publishing after refresh, so that submission integrity is preserved.
+As a data validator, I want to update validation rules for FABS, so that submission requirements are up-to-date.
+As a deployment specialist, I want to deploy FABS into production, so that new features are available to end users.
+As a data validator, I want to validate SAM data completeness, so that supplier information is complete and reliable.
+As a data quality manager, I want to verify all derived elements are correctly derived, so that data transformations maintain accuracy.
+As a data manager, I want to update LegalEntityAddressLine3 limit to v1.1 standards, so that address data adheres to current specifications.
+As a data integrator, I want to support schema v1.1 headers in FABS file, so that newer data formats are accepted.
+As a data administrator, I want to ensure FPDS data is updated daily, so that procurement information remains current.
+As a data scientist, I want to load all historical FABS data, so that comprehensive analysis spanning years is possible.
+As a data integrator, I want to load historical FPDS data, so that procurement history is accessible for research.
+As a data specialist, I want to get File F in correct format, so that downstream systems receive properly formatted data.
+As a data analyst, I want to better understand file level errors, so that submission problems are clearly identified.
+As a data validator, I want to support quotation marks in submission files, so that data containing quotes is handled correctly.
+As a data user, I want to access FABS files through USAspending, so that government spending data is readily available.
+As a data processor, I want to generate D files from FABS and FPDS data, so that consolidated financial reports can be produced.
+As a QA engineer, I want to enable testing in environments other than Staging, so that development and testing environments are more flexible.
+As a data validator, I want to improve FABS submission error messages, so that users receive clearer guidance on fixes.
+As a data analyst, I want to identify who created a submission, so that accountability and ownership are established.
+As a data scientist, I want to test FABS field derivation accuracy, so that data transformations function as expected.
+As a data validator, I want to allow submission of records for individual recipients, so that recipient-specific data can be submitted.
+As a data analyst, I want to see how many rows will be published, so that I can understand the scale of data being reported.
+As a data validator, I want to allow citywide ZIP submissions, so that bulk geographical submissions are supported.
+As a performance engineer, I want to optimize validation performance, so that large data sets can be processed efficiently.
+As a data architect, I want to derive office names from office codes, so that organizational references are complete.
+As a content manager, I want to update link to correct sample FABS file, so that users access current sample data.
+As a data validator, I want to support partial ZIP codes (without last 4 digits), so that zip code submissions are flexible.
+As a dashboard designer, I want to show correct status labels on submission dashboard, so that users understand submission state accurately.

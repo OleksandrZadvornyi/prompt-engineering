@@ -1,0 +1,78 @@
+As a user, I want to process deletions for a specific date, so that I can manage data efficiently.
+As a user, I want to redesign the Resources page to match new styles, so that it maintains a modern look.
+As a user, I want to report user testing results to relevant agencies, so that they can be informed of findings.
+As a user, I want to move on to the next round of edits for a page, so that the content is updated accordingly.
+As a user, I want to log activities performed in the system, so that I can maintain a record of actions taken.
+As a user, I want to update the status of FABS submissions, so that they accurately reflect their current state.
+As a user, I want to retrieve data from New Relic, so that I can analyze application performance.
+As a user, I want to validate error messages, so that I ensure they convey the correct information.
+As a user, I want to sync D1 file generation with FPDS data load, so that I maintain data consistency.
+As a user, I want to access published FABS files, so that I can review available data.
+As a user, I want to ensure that only grant records are sent, so that data accuracy is maintained.
+As a user, I want to update the Broker validation rule table, so that it reflects the latest requirements.
+As a user, I want to add GTAS window data to the database, so that it is included in future analyses.
+As a user, I want to manage D Files generation requests, so that I can optimize processing requests.
+As a user, I want to access raw agency published files from FABS, so that I can review unprocessed data.
+As a user, I want to include a large number of flexfields without impact, so that I can gather more data without performance issues.
+As a user, I want to track issues from Tech Thursday meetings, so that I can address them in a timely manner.
+As a user, I want to create a summary of user testing, so that I can share insights with stakeholders.
+As a user, I want to schedule user testing sessions, so that we can gather feedback on the application.
+As a user, I want to design a schedule for UI improvements, so that enhancements can be implemented systematically.
+As a user, I want to design an audit for UI improvements, so that I can monitor the effectiveness of changes made.
+As a user, I want to prevent users from double publishing FABS submissions, so that I maintain data integrity.
+As a user, I want to receive updates to FABS records, so that I can stay informed about changes.
+As a user, I want to update the FABS sample file, so that it conforms to the latest standards.
+As a user, I want to ensure deleted FSRS records are not included, so that outdated data is not reflected in reports.
+As a user, I want to view updated financial assistance data daily, so that I have the most current information.
+As a user, I want to deactivate the publish button during derivations, so that premature submissions are prevented.
+As a user, I want to prevent the creation of records from non-existent edits, so that I avoid errors in data entry.
+As a user, I want to reset environment permissions to Staging MAX, so that I can test with the appropriate settings.
+As a user, I want to ensure that flexfields appear in warning and error files, so that I can identify issues effectively.
+As a user, I want to ensure accurate data for PPoPCode and Congressional District, so that reporting is precise.
+As a user, I want to ensure FABS validation rules accept zero and blank values, so that all valid inputs are accommodated.
+As a user, I want to ensure complete data from SAM, so that reports are comprehensive.
+As a user, I want to validate and index domain models, so that the system performs optimally.
+As a user, I want to derive all data elements correctly, so that information is reliable.
+As a user, I want to update SQL codes for clarity, so that they are easier to understand and maintain.
+As a user, I want to derive the FundingAgencyCode accurately, so that the quality of data is improved.
+As a user, I want to check the maximum length for LegalEntityAddressLine3, so that I comply with format standards.
+As a user, I want to use schema v1.1 headers for FABS files, so that they adhere to the specified requirements.
+As a user, I want to map FederalActionObligation correctly to Atom Feed, so that data is accurately represented.
+As a user, I want to set up PPoPZIP+4 validations, so that the data input is validated properly.
+As a user, I want to link sample files in the submission dialog, so that users can reference necessary documents.
+As a user, I want to load FPDS data daily, so that it is always up to date.
+As a user, I want to access raw agency published files from FABS via USAspending, so that I can gather financial data.
+As a user, I want to validate the loading of D Files from FABS and FPDS, so that I ensure accurate data processing.
+As a user, I want to show the updated date and time in the header box, so that users know the last update time.
+As a user, I want to provide helpful file-level error messages, so that users can understand issues better.
+As a user, I want to provide access for testing in multiple environments, so that I can ensure functionality across settings.
+As a user, I want to accurately represent submission errors, so that users can address issues effectively.
+As a user, I want to update frontend URLs for accuracy, so that users navigate correctly.
+As a user, I want to load historical financial assistance data for FABS go-live, so that the system is ready at launch.
+As a user, I want to load historical FPDS data, so that past trends can be analyzed.
+As a user, I want to ensure records show who created submissions, so that accountability is maintained.
+As a user, I want to ensure File F is in the correct format, so that it meets system requirements.
+As a user, I want to provide clarity on file-level errors, so that users understand the context of the errors.
+As a user, I want to provide FABS groups under the FREC paradigm, so that there is organization in data reporting.
+As a user, I want to ensure proper derivation of fields, so that data is accurately represented.
+As a user, I want to ensure only zero-padded fields are used, so that data formats are consistent.
+As a user, I want to submit records for individual recipients, so that I can maintain precise record-keeping.
+As a user, I want to show the row count before publish, so that users are informed about the volume of data being submitted.
+As a user, I want to prevent duplicate transactions during publish, so that errors in data entry are minimized.
+As a user, I want to submit citywide data as PPoPZIP, so that it is categorized correctly.
+As a user, I want to update error codes for accuracy, so that users can respond to issues effectively.
+As a user, I want to allow submissions without the last 4 ZIP digits, so that I accommodate various data inputs.
+As a user, I want to ensure historical data includes all necessary columns, so that nothing relevant is omitted.
+As a user, I want to access additional fields from FPDS data pulls, so that I can have detailed reports.
+As a user, I want to provide additional information in the submission dashboard, so that users have comprehensive insights.
+As a user, I want to download uploaded FABS files, so that I can keep copies for reference.
+As a user, I want to quickly access Broker application data, so that I can analyze it efficiently.
+As a user, I want to determine the best way to load historical FPDS data, so that I can optimize the process.
+As a user, I want to ensure appropriate language is used on FABS pages, so that it is understandable for all users.
+As a user, I want to ensure no DABS messages appear on FABS pages, so that there is clarity and no confusion.
+As a user, I want to provide read-only access to DABS for FABS users, so that they can view data without making changes.
+As a user, I want to ensure validations run in a reasonable time, so that workflow is not hindered.
+As a user, I want to ensure correct status labels are displayed on the Submission Dashboard, so that users can easily recognize submission states.
+As a user, I want to notify users of submission start and end periods, so that they are aware of key deadlines.
+As a user, I want to create a landing page for navigation between FABS and DABS, so that users can access resources quickly.
+As a user, I want to submit data elements surrounded by quotation marks, so that it is formatted correctly for processing.

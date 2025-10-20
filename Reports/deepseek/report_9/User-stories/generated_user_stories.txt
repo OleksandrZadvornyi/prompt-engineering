@@ -1,0 +1,16 @@
+As a user, I want to create a new submission, so that I can track my file submission process.
+As a user, I want to publish my submission, so that my file becomes publicly available.
+As a user, I want to view published files, so that I can access the latest available data.
+As a user, I want to filter published files by agency, so that I can find relevant files more easily.
+As a user, I want to upload a CSV file, so that I can submit my data for processing.
+As a user, I want to see validation rules, so that I can understand the requirements for my submissions.
+As a user, I want to run validation on my submission, so that I can check if my data meets the requirements.
+As a user, I want to view the home page, so that I can access the main portal interface.
+As a user, I want to access resources, so that I can find helpful documentation and materials.
+As a user, I want to view the FABS landing page, so that I can access FABS-specific features.
+As a user, I want to view the DABS landing page, so that I can access DABS-specific features.
+As a user, I want to access the help page, so that I can get assistance when needed.
+As a user, I want to view the submission dashboard, so that I can track all my submissions in one place.
+As a system administrator, I want to monitor application performance, so that I can ensure system reliability.
+As a system administrator, I want to cache validation rules, so that I can improve application performance.
+As a system administrator, I want detailed logging, so that I can troubleshoot issues when they occur.

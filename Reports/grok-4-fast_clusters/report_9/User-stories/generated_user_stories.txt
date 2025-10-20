@@ -1,0 +1,77 @@
+As a FABS Submitter, I want to upload a CSV file for validation, so that I receive immediate feedback on file extension and content errors.
+As a Broker Administrator, I want to update validation rules in the database, so that new rules like DB-2213 can be applied to submissions.
+As a Data Validator, I want to generate error files with flexfields and warnings, so that missing required elements are clearly documented.
+As a FABS Submitter, I want to validate CFDA codes during submission, so that I get accurate error messages for invalid formats like less than 2 digits.
+As a System User, I want to access updated Broker resources for FABS and DAIMS v1.1, so that policies and validations are current.
+As a Data Validator, I want to check DUNS validity for expired but registered entities, so that actions like B, C, D are accepted if within registration dates.
+As a FABS Submitter, I want helpful file-level error messages for wrong extensions, so that I know to use CSV for submissions.
+As a Broker Administrator, I want to prevent duplicate transaction publications, so that submissions are not republished within a short time gap like 5 minutes.
+As a Report Generator, I want to generate and cache D files from FABS and FPDS data, so that repeated requests use cached versions for efficiency.
+As a Agency User, I want to access raw agency-published files via USAspending, so that I can retrieve specific agency FABS data like agency_published_fabs.csv.
+As a Data Processor, I want to handle large flexfields without performance issues, so that submissions with big data are truncated or compressed safely.
+As a FABS Submitter, I want to safely publish after refresh without double publishing, so that the system checks status and prevents concurrent publishes.
+As a System Scheduler, I want to perform daily updates to financial data feeds, so that FPDS and related data stay current automatically.
+As a Data Corrector, I want to safely correct or delete records without creating new ones for non-existent IDs, so that invalid operations are logged but ignored.
+As a Derivation Engineer, I want to derive PPoP Congressional Districts from codes and zips, so that records with '00' codes get appropriate placeholders like CD-UNKNOWN.
+As a Classifier, I want to classify NASA records as grants not contracts, so that agency-specific types like grants are handled correctly.
+As a Validator, I want to validate generated D files for missing required fields, so that row-level errors are reported accurately.
+As a Tester, I want to enable test features in non-production environments like dev or test, so that new functionalities can be validated safely.
+As a FABS Submitter, I want submission errors to accurately reflect FABS-specific issues, so that I see relevant errors like no FABS errors found.
+As a Auditor, I want to see who created a submission, so that accountability is maintained with creator details.
+As a Test Engineer, I want to test field derivations on historical data, so that counts of derived fields like FREC confirm successful loading.
+As a Recipient Manager, I want to submit individual recipients without DUNS errors, so that no DUNS is required for individual types.
+As a Publisher, I want to preview the number of rows before publishing, so that I can decide based on flexfields count.
+As a ZIP Validator, I want to submit citywide PPoP ZIPs like 12345-9998, so that 5-digit or +4 formats are accepted.
+As a FABS Submitter, I want validations to run in reasonable time like 0.5 seconds, so that indexed submissions are processed efficiently.
+As a Record Updater, I want to update individual FABS records with new data, so that fields like DUNS or obligations can be modified via SQL.
+As a FSRS Filter, I want to exclude deleted FSRS records from processing, so that only active records are included in lists.
+As a Loan Validator, I want to accept zero or blank fields for loan records, so that amounts and balances can be empty for loans.
+As a Deployer, I want to simulate FABS deployment to production, so that logging confirms successful rollout.
+As a SAM Validator, I want to ensure SAM data completeness, so that required fields like DUNS, name, and address are present.
+As a Derivation Engineer, I want to perform full derivations on records, so that fields like funding_agency_code, FREC, and congressional district are populated.
+As a Address Validator, I want to enforce max length of 55 for LegalEntityAddressLine3, so that v1.1 schema compliance is maintained.
+As a File Generator, I want to generate FABS files with v1.1 schema headers, so that data like ID and ActionDate is output in the correct format.
+As a Scheduler, I want to update FPDS data daily, so that feeds are pulled and logged for currency.
+As a Historical Loader, I want to load all historical FA data for go-live, so that fabs_records are populated from CSV files.
+As a Historical Loader, I want to load historical FPDS data since 2007, so that yearly files are processed from directories.
+As a File Generator, I want to generate File F in the correct format, so that CSV output matches expected structure.
+As a Error Explainer, I want to get detailed explanations for file-level errors, so that validation rule descriptions are retrieved.
+As a CSV Reader, I want to read quoted CSV files to preserve zeroes, so that QUOTE_ALL quoting handles leading zeros correctly.
+As a Office Deriver, I want to derive office names from codes, so that mappings like 001 to 'Office of Grants' update fpds_data.
+As a Sample File Manager, I want to link sample files to correct versions, so that updated FABS samples without certain codes are accessible.
+As a ZIP Validator, I want to accept short 5-digit ZIPs without errors, so that last 4 digits can be omitted for PPoP.
+As a Dashboard User, I want correct status labels like 'Ready to Edit' for draft, so that dashboard displays user-friendly statuses.
+As a Submission Manager, I want to update submission status on publish changes, so that derivations trigger for published status.
+As a GTAS Administrator, I want to add GTAS windows with start/end dates and lock status, so that periods are tracked in the database.
+As a GTAS Checker, I want to check if current date is in a locked GTAS window, so that submissions are restricted during lock periods.
+As a Sample Updater, I want to update FABS sample files, so that headers exclude fields like FundingAgencyCode.
+As a Publisher, I want the publish button deactivated during derivations, so that concurrent publishes are prevented with status checks.
+As a Historical Loader, I want to load historical FABS with derived fields like funding_agency_code, so that records are inserted with computations.
+As a FREC Deriver, I want to derive FREC from agency codes for historical FABS, so that formats like FREC-ABC are applied.
+As a URL Generator, I want to generate frontend URLs for FABS pages, so that paths like /fabs/submission are created.
+As a FPDS Loader, I want to load historical FPDS from extracted files and feeds, so that id, action_date, and ppop_zip are populated.
+As a Group Manager, I want to provide FABS groups under FREC paradigm, so that lists like FREC-GROUP1 are available.
+As a Column Validator, I want to validate historical data columns like id and duns, so that missing ones are warned.
+As a FPDS Accessor, I want to access two additional fields from FPDS, so that extra data like office_code is retrievable.
+As a Dashboard User, I want additional info like submission counts on dashboard, so that user-specific metrics are displayed.
+As a Downloader, I want to download uploaded FABS files, so that published flexfields generate CSV files.
+As a Historical Loader, I want to load FPDS since 2007 from yearly files, so that data_dir files are processed year by year.
+As a Page Manager, I want appropriate language on FABS pages, so that guides like 'User-friendly FABS submission guide' are set.
+As a Banner Controller, I want no DABS banners on FABS sections, so that section-specific banners like 'FABS Banner Only' are shown.
+As a Period Manager, I want to get submission periods for FABS and DABS, so that dates like 2023-01-01 to 2023-03-31 are listed.
+As a Deletion Processor, I want to process deletions for specific dates like 2017-12-19, so that old fabs_records are removed.
+As a PPoP Deriver, I want to derive PPoPCode for 00**** and 00FORGN cases, so that '00DOMESTIC' or 'FOREIGN' is assigned.
+As a Agency Deriver, I want to derive FundingAgencyCode from agency codes, so that 00-starting codes get -DERIVED suffix.
+As a Obligation Mapper, I want to map FederalActionObligation to Atom Feed structure, so that entry XML with amount is generated.
+As a ZIP Validator, I want to validate PPoP ZIP like Legal Entity ZIP, so that 5 or 5+4 digit patterns are checked.
+As a D1 Generator, I want to sync D1 file generation with FPDS loads, so that cached or regenerated CSV uses last update timestamp.
+As a Logger, I want better logging for submission issues, so that errors in functions are logged with submission ID.
+As a File Accessor, I want to access published FABS files, so that flexfields generate timestamped CSV.
+As a Record Filter, I want USAspending to send only grant records, so that lists are filtered by record_type 'grant'.
+As a Validator, I want domain models indexed for faster validation, so that flexfields checks return errors quickly.
+As a Header Viewer, I want headers to show updated date and time, so that isoformat parses to %Y-%m-%d %H:%M:%S.
+As a Field Padder, I want zero-padded fields for numeric strings, so that digits are zfill(10) for consistency.
+As a Error Getter, I want updated error code details, so that validation_rules descriptions are queried.
+As a Data Querier, I want quick access to Broker data via SQL queries, so that results are returned as dict lists.
+As a Access Controller, I want read-only access to DABS for FABS users, so that role 'FABS_USER' grants permission.
+As a Menu Provider, I want landing page navigation menus, so that lists like 'FABS Pages' are available.

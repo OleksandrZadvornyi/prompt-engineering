@@ -1,0 +1,15 @@
+As a user, I want to delete records from a specified date, so that I can maintain a clean database.
+As a user, I want to redesign the resources page, so that it reflects a new design style for better user experience.
+As a user, I want to report user testing feedback, so that it can be used to improve the application.
+As a user, I want to edit the DABS or FABS landing page, so that my changes can be implemented in the correct round of edits.
+As a user, I want to validate uploaded files for errors, so that I can ensure the data quality before processing.
+As a user, I want to sync the D1 file with updated FPDS data, so that my submissions are based on the latest information.
+As a user, I want to access published FABS files, so that I can view the most up-to-date submissions.
+As a user, I want to submit a FABS submission, so that my data can be processed and stored.
+As a user, I want to retrieve file errors, so that I can review and address issues in my submissions.
+As a user, I want to validate my submission by ID, so that I can confirm it meets the required standards.
+As a user, I want to update historical FABS data, so that I can maintain accurate records over time.
+As a user, I want to prevent double publishing of submissions, so that I avoid duplicate entries in the system.
+As a user, I want to submit a testing summary, so that I can log results from user testing for future reference.
+As a user, I want to perform a performance test on flexfields, so that I can ensure the application runs efficiently under load.
+As a user, I want to configure the user interface, so that it meets my preferences for usage and navigation.

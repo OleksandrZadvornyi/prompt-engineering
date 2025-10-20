@@ -1,20 +1,20 @@
 As a Data user, I want to have the 12-19-2017 deletions processed, so that outdated data is removed from the system.
 As a UI designer, I want to redesign the Resources page, so that it matches the new Broker design styles.
 As a Developer, I want to add the updates on a FABS submission to be modified when the publishStatus changes, so that I know when the status of the submission has changed.
-As a Developer, I want to update the Broker validation rule table to account for the rule updates in DB-2213, so that data validation aligns with current requirements.
+As a Developer, I want to update the Broker validation rule table to account for the rule updates in DB-2213, so that the validation rules remain current and accurate.
 As a UI designer, I want to move on to round 2 of the Help page edits, so that I can get approvals from leadership.
-As a DevOps engineer, I want New Relic to provide useful data across all applications, so that application performance can be effectively monitored.
+As a DevOps engineer, I want New Relic to provide useful data across all applications, so that system performance can be monitored effectively.
 As a Developer, I want to add the GTAS window data to the database, so that I can ensure the site is locked down during the GTAS submission period.
 As an Owner, I want to reset the environment to only take Staging MAX permissions, so that I can ensure that the FABS testers no longer have access.
-As an Agency user, I want to be able to include a large number of flexfields without performance impact, so that I can work efficiently with complex data sets.
+As an Agency user, I want to be able to include a large number of flexfields without performance impact, so that the application remains responsive even with complex data structures.
 As a Developer, I want to prevent users from double publishing FABS submissions after refreshing, so that there are no duplicates.
-As a Broker user, I want to receive reports about user testing results, so that I can understand how users interact with the system.
-As a Developer, I want to manage D Files generation requests and caching, so that file generation is efficient and responsive.
-As a Developer, I want to update FABS sample file to remove FundingAgencyCode, so that the sample file reflects current data requirements.
-As a Developer, I want to load historical FABS data correctly, so that past submissions are accessible and accurate.
-As a Developer, I want to ensure domain models are indexed properly for fast validation, so that system performance is optimized.
+As a Data user, I want to receive reports about user testing results, so that I can understand how users interact with the system.
+As a UI designer, I want to update the homepage for round 2 edits, so that content meets stakeholder expectations.
+As a Developer, I want to modify FABS sample files to remove FundingAgencyCode, so that the sample data reflects current requirements.
+As a Developer, I want to load historical FABS data correctly, so that past records are preserved accurately.
+As a Developer, I want to ensure domain models are indexed for fast validation, so that data validation processes run efficiently.
 As a Developer, I want to prevent incorrect corrections that would create new published data, so that data integrity is maintained.
-As a Developer, I want to ensure flexfields display in error/warning files correctly, so that users can identify and fix issues.
-As a Developer, I want to process PPoP Code derivation including special values, so that location data is accurately derived.
-As a Developer, I want to improve error message accuracy, so that users can better understand and resolve issues.
-As a Developer, I want to process FREC derivations for consistency, so that federal entity data is standardized.
+As a Developer, I want flexfields to display properly in error/warning files, so that issues are clearly communicated.
+As a Developer, I want to implement PPoP Code derivation logic for special cases, so that geographic codes are calculated accurately.
+As a Developer, I want to improve error message accuracy, so that users understand what went wrong and how to fix it.
+As a Developer, I want to process FREC derivations for consistency, so that federal reporting codes are handled uniformly.

@@ -1,0 +1,19 @@
+As a system administrator, I want to process deletions for a specific date, so that I can maintain data cleanliness and compliance.
+As a data analyst, I want to sync D1 file generation with FPDS data load, so that reports are generated with the most current data.
+As a database developer, I want to update SQL code for better clarity, so that queries are easier to understand and maintain.
+As a data manager, I want to derive FundingAgencyCode from agency information, so that data quality is improved.
+As a UI designer, I want to update landing page design for a specific version, so that users have a better experience.
+As a support technician, I want to log submission issues for troubleshooting, so that problems can be tracked and resolved.
+As a QA engineer, I want to schedule user testing with a specific date, so that we can validate system changes with real users.
+As a publisher, I want to update publish status for a submission, so that users know the current state of their submissions.
+As a financial analyst, I want to load GTAS window data for submission period, so that financial reporting is accurate and timely.
+As a compliance officer, I want to update validation rule text, so that rules reflect current requirements.
+As a data steward, I want to prevent duplicate transaction publishing, so that data integrity is maintained.
+As a system operator, I want to manage file generation with optional caching, so that performance is optimized.
+As a data validator, I want to validate flexfields with performance considerations, so that large datasets don't impact system performance.
+As a records manager, I want to ensure deleted FSRS records are not included, so that reports are accurate.
+As a schema validator, I want to validate against schema v1.1 specifications, so that data conforms to standards.
+As an office administrator, I want to derive office names from office codes, so that reports are more readable.
+As a content manager, I want to update sample file link, so that users can access the correct resources.
+As a data entry specialist, I want to validate ZIP code with optional last 4 digits, so that address data is accurate.
+As a submission manager, I want to update status labels for submission dashboard, so that users can easily track progress.

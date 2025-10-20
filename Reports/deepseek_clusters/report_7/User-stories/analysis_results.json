@@ -1,0 +1,6 @@
+{
+    "semantic_consistency_score": 0.8373122215270996,
+    "analysis_model": "deepseek-ai/DeepSeek-V3-0324",
+    "original_stories_count": 98,
+    "generated_stories_count": 37
+}

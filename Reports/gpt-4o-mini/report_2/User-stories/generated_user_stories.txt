@@ -1,0 +1,23 @@
+As a system administrator, I want to process deletions based on a specified date, so that I can manage data integrity effectively.
+As a UI designer, I want to redesign the resources page with new styles, so that it provides an improved user experience.
+As a QA tester, I want to report user testing feedback, so that I can contribute to the continuous improvement of the system.
+As a project manager, I want to move to approval rounds for specific pages, so that I can ensure proper leadership oversight on the project.
+As a developer, I want to log errors that occur during processing, so that I can track issues and improve the system’s reliability.
+As a content manager, I want to update the status of specific submissions, so that I can reflect their current state in the system.
+As a data analyst, I want to load data from the FPDS, so that I can utilize it for reporting and analysis.
+As a data handler, I want to upload files in the correct format, so that I can ensure data quality and avoid processing errors.
+As a compliance officer, I want to generate a D1 file synced with FPDS data, so that I can maintain compliance with regulatory requirements.
+As an accountant, I want to access published FABS files, so that I can review and process the financial data.
+As a documentation specialist, I want to create a user testing summary, so that I can document the feedback and findings from user testing sessions.
+As a policy advisor, I want to update FABS validation rules, so that I can ensure the system adheres to the most current regulations.
+As a database administrator, I want to ensure deletion integrity for records marked as deleted, so that I can prevent data corruption.
+As a submission manager, I want to add FABS submissions to the system, so that I can track and manage them over time.
+As a user, I want to view submission errors, so that I can understand and rectify issues encountered during the submission process.
+As a project stakeholder, I want to view the submission dashboard, so that I can monitor the status of submissions at a glance.
+As a data archivist, I want to add historical FABS files, so that I can maintain a comprehensive history of submissions.
+As a data steward, I want to load historical FPDS data, so that I can analyze trends over time.
+As a team lead, I want to record who created a specific submission, so that I can maintain accountability within the team.
+As a submission reviewer, I want to prevent double submission of the same record, so that I can maintain the accuracy of the submission dataset.
+As a system analyst, I want to derive the office name from an office code, so that I can ensure proper identification of the associated office.
+As a data validator, I want to validate DUNS numbers based on specified action types, so that I can confirm they meet the necessary criteria for processing.
+As a data entry operator, I want to submit records with a valid DUNS number, so that I can ensure all submissions are complete and compliant.

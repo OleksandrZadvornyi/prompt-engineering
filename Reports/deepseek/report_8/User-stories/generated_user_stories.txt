@@ -1,0 +1,21 @@
+1. As a system administrator, I want to configure logging for the broker system, so that all activities are properly recorded and monitored.
+2. As a user, I want to create a FABS submission with an initial status, so that I can track its progress through the publication workflow.
+3. As a validator, I want to update the publish status of a submission, so that its current state is accurately reflected in the system.
+4. As a validator, I want to validate a submission's file content, so that I can ensure it meets all required criteria before publication.
+5. As a publisher, I want to publish a validated submission, so that it becomes publicly available.
+6. As a database administrator, I want to add submissions to the broker database, so that they can be managed and retrieved when needed.
+7. As a user, I want to retrieve a specific submission from the database, so that I can view or modify its details.
+8. As a system administrator, I want to set a GTAS lock period, so that certain operations are restricted during that time.
+9. As a user, I want to check if the GTAS is currently locked, so that I know whether certain operations are allowed.
+10. As a data processor, I want to generate a D file from FABS and FPDS data, so that I can create standardized output files.
+11. As a system administrator, I want to check if FPDS data is up to date, so that I can ensure data accuracy.
+12. As a testing manager, I want to schedule user testing sessions, so that we can validate system functionality.
+13. As a tester, I want to record issues found during testing, so that they can be tracked and resolved.
+14. As a testing manager, I want to generate a test summary, so that I can review testing progress and outstanding issues.
+15. As a validator, I want to apply validation rules to specific fields, so that I can ensure data quality and compliance.
+16. As a UI designer, I want to update and approve page designs, so that the user interface remains consistent and up to date.
+17. As a data analyst, I want to load historical FABS and FPDS data, so that we can maintain comprehensive records and perform historical analysis.
+18. As a system administrator, I want to track application metrics, so that I can monitor system performance and health.
+19. As a security administrator, I want to manage permissions for different environments, so that access is appropriately restricted.
+20. As a security administrator, I want to reset environment permissions to staging defaults, so that I can maintain security standards.
+21. As a user, I want to receive clear error messages, so that I can understand and resolve issues when they occur.

@@ -1,0 +1,9 @@
+As a FABS User, I want to submit a record for an agency, so that I can create a submission entry in the database.
+As a FABS User, I want to download an uploaded FABS file for a specific submission ID, so that I can access previously submitted data.
+As a Developer, I want to update the validation rules for submissions, so that I can ensure compliance with the latest requirements.
+As a Developer, I want to log when the status of a submission changes, so that I can track the history of submission updates.
+As a Data User, I want to access FPDS data, so that I can retrieve information related to federal procurement data.
+As a Data User, I want to receive updates to FABS records, so that I can stay informed about changes and new submissions.
+As an Agency User, I want to validate agency records before submission, so that I can ensure all required information is present and avoid errors.
+As an Agency User, I want to submit FABS data for processing, so that our agency's data can be included in federal financial reports.
+As an Agency User, I want to check submission periods, so that I can confirm the validity of my submission timing and deadlines.

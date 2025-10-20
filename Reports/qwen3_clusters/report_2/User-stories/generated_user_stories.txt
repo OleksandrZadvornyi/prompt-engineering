@@ -1,0 +1,93 @@
+As a system administrator, I want to process 12-19-2017 deletions, so that outdated data is properly removed from the system.
+As a system administrator, I want to update the resources page to match the new Broker design style, so that users have a consistent and modern interface experience.
+As a system analyst, I want to generate a report to agencies about user testing, so that I can track engagement and gather feedback.
+As a developer, I want to synchronize D1 file generation with FPDS data load, so that generated files reflect the most recent data.
+As a developer, I want to update SQL codes for better clarity, so that the codebase becomes easier to understand and maintain.
+As a data specialist, I want to add specific PPoPCode cases to derivation logic, so that zip code formatting is handled correctly.
+As a data specialist, I want to derive FundingAgencyCode for improved data quality, so that agency information is consistently populated.
+As a data specialist, I want to map FederalActionObligation properly to Atom Feed, so that financial obligations are accurately represented.
+As a data specialist, I want to validate PPoPZIP+4 like Legal Entity ZIP validations, so that data integrity is maintained.
+As a system administrator, I want to move DABS/FABS landing page edits to round 2, so that development priorities are managed effectively.
+As a system administrator, I want to move homepage edits to round 2, so that website improvements are staged appropriately.
+As a system administrator, I want to move help page edits to round 3, so that documentation updates align with release cycles.
+As a developer, I want to improve logging for troubleshooting, so that issues can be diagnosed more efficiently.
+As a user, I want to access published FABS files, so that I can retrieve official financial assistance data.
+As a data specialist, I want to ensure USAspending only sends grant records, so that the system receives the correct type of data.
+As a content manager, I want to create content mockups for faster submission, so that content creation is streamlined.
+As a project manager, I want to track issues from Tech Thursday meetings, so that technical concerns are addressed systematically.
+As a product owner, I want to create a summary from UI SME's user testing feedback, so that design improvements are prioritized effectively.
+As a product manager, I want to begin user testing phase, so that software quality is validated with real users.
+As a product manager, I want to schedule user tests with advance notice, so that participants can prepare adequately.
+As a designer, I want to design schedule from UI SME, so that user interface enhancements are planned correctly.
+As a designer, I want to design audit from UI SME, so that UI improvements are evaluated systematically.
+As a system administrator, I want to reset environment to Staging MAX permissions only, so that access controls are properly configured.
+As a developer, I want to index domain models for quick validation access, so that data validation processes are efficient.
+As a user, I want to see updated date and time in header, so that I know when the data was last refreshed.
+As a developer, I want to use zero-padded fields only, so that data consistency is maintained.
+As a developer, I want to provide updated and better error codes, so that troubleshooting is more effective.
+As a user, I want to access broker application data quickly, so that I can retrieve information without delays.
+As a user, I want to have read-only access to DABS, so that I can view data without making changes.
+As a user, I want to navigate to FABS/DABS through a landing page, so that I can find the right system easily.
+As a system administrator, I want to update FABS submission on publish status change, so that record statuses are kept current.
+As a system administrator, I want to add GTAS window data to database, so that system locks are properly tracked.
+As a data specialist, I want to remove FundingAgencyCode from FABS sample file, so that samples don't contain unwanted fields.
+As a user, I want the publish button to be disabled during derivations, so that data integrity is preserved.
+As a data specialist, I want to derive fields in historical FABS loader, so that older records are properly populated.
+As a data specialist, I want to include FREC derivations in historical data, so that federal agency codes are correctly assigned.
+As a developer, I want to make frontend URLs more accurate, so that navigation within the application works properly.
+As a data specialist, I want to load historical FPDS data with extracted and feed data, so that comprehensive historical records exist.
+As a data specialist, I want to provide FABS groups according to FREC paradigm, so that data categorization is standardized.
+As a data specialist, I want to verify all necessary columns in historical data, so that data completeness is ensured.
+As a data specialist, I want to access two additional fields from FPDS data pull, so that more detailed information is available.
+As a user, I want to see helpful info on the submission dashboard, so that I can monitor my submissions effectively.
+As a user, I want to download uploaded FABS files, so that I can save a copy of my submitted data.
+As a data engineer, I want to optimize historical FPDS data loading approach, so that data ingestion is efficient.
+As a user, I want to see appropriate language on FABS pages, so that I can understand the content easily.
+As a user, I want to see separate banner messages for DABS and FABS, so that I'm aware of which system I'm using.
+As a user, I want to see when submission periods start and end, so that I can plan my work accordingly.
+As a user, I want to receive accurate error messages for uploads and validations, so that I can fix issues correctly.
+As a system administrator, I want to update validation rule table to include DB-2213 updates, so that the rules remain current.
+As a user, I want to see warnings for missing required flexfields, so that I can complete my submissions properly.
+As a user, I want clearer descriptions of what triggers CFDA error codes, so that I understand when issues occur.
+As a content manager, I want to update resources, validations, and P&P pages for launch, so that documentation is current.
+As a data specialist, I want to accept DUNS records with expired registrations, so that data entry remains flexible.
+As a data specialist, I want to accept DUNS records with old action dates, so that historical data can be processed.
+As a user, I want more helpful error messages when uploading wrong file extensions, so that upload failures are clear.
+As a system administrator, I want to prevent duplicate publications, so that data is not unnecessarily duplicated.
+As a user, I want to manage D file generation requests with caching, so that system resources are used efficiently.
+As a user, I want to access raw agency published FABS files, so that I can retrieve original data sources.
+As a developer, I want to support many flexfields without performance impact, so that system scalability is maintained.
+As a system administrator, I want to prevent double publishing after refresh, so that data integrity is preserved.
+As a user, I want to see updated financial assistance data daily, so that I have current information.
+As a developer, I want to protect against correcting/deleting non-existent records, so that data integrity is maintained.
+As a data specialist, I want to ensure accurate PPoPCode and PPoPCongressionalDistrict data, so that geographic information is reliable.
+As a user, I want NASA grants to be filtered out from contract display, so that I get the correct category of data.
+As a developer, I want to determine the best approach for generating D files from FABS and FPDS, so that generated files meet standards.
+As a developer, I want to generate and validate D files, so that the output is reliable and conforms to requirements.
+As a developer, I want to allow access to test features in non-staging environments, so that testing is comprehensive.
+As a user, I want to receive accurate FABS submission errors, so that I can fix submission problems correctly.
+As a user, I want to see who created a submission, so that I can track responsibility for data.
+As a data specialist, I want to verify FABS field derivation with test files, so that automated processing is accurate.
+As a user, I want to submit without DUNS errors, so that I can complete forms even with incomplete identifier information.
+As a user, I want to preview how many rows will be published, so that I understand the scope of my publication.
+As a user, I want to submit city-wide zip codes in PPoPZIP, so that broad geographic areas can be represented.
+As a developer, I want to ensure validations run in reasonable time, so that the system remains responsive.
+As a system administrator, I want to receive updates to FABS records, so that the system stays current with data changes.
+As a data specialist, I want to exclude deleted FSRS records from submissions, so that obsolete information is not included.
+As a user, I want to accept zero and blank for loan records, so that incomplete data doesn't cause submission failures.
+As a system administrator, I want to deploy FABS to production, so that the system is available for public use.
+As a data specialist, I want to ensure SAM data completeness, so that agency registration information is accurate.
+As a user, I want to accept zero and blank for non-loan records, so that incomplete data doesn't cause errors.
+As a system administrator, I want to ensure all derived data elements are correct, so that automated calculations are reliable.
+As a data specialist, I want to match max legal entity address line 3 length to schema v1.1, so that form compatibility is maintained.
+As a user, I want to see schema v1.1 headers in FABS file, so that file formats are correct for submission.
+As a system administrator, I want to keep FPDS data up-to-date daily, so that users have the latest information.
+As a data specialist, I want to load all historical financial assistance data, so that complete datasets are available.
+As a data specialist, I want to load historical FPDS data, so that comprehensive historical records exist.
+As a user, I want to have File F in correct format, so that I can submit files per requirements.
+As a user, I want to better understand file-level errors, so that I can resolve submission issues more easily.
+As a user, I want to submit data elements with quoted fields, so that leading/trailing zeros are preserved.
+As a data specialist, I want to derive office names from codes, so that office identifiers are understandable.
+As a developer, I want to update SAMPLE FILE link in submission dialog, so that users access the correct sample.
+As a user, I want to submit without full ZIP codes, so that partial addressing information is still acceptable.
+As a user, I want to see correct status labels on dashboards, so that I can understand submission states accurately.

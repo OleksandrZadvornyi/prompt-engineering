@@ -1,0 +1,10 @@
+As a user, I want to create a submission with necessary data, so that I can initiate a review process.
+As a user, I want to validate the submission data, so that I can ensure all required fields are present and correctly formatted.
+As a user, I want to receive feedback on validation errors, so that I can correct any issues before submission.
+As a user, I want to upload files in CSV format, so that I can ensure data is correctly processed.
+As a user, I want to be notified when a file upload fails due to incorrect format, so that I can take appropriate action.
+As a user, I want to create a UI report with feedback, so that I can document insights and improve future designs.
+As a user, I want to add flexfields, so that I can customize the data structure according to my needs.
+As a user, I want to validate the performance impact of including multiple flexfields, so that I can avoid potential issues with system performance.
+As a user, I want to generate a D1 file when data is updated, so that I can have the latest information synchronized.
+As a user, I want to download files, so that I can access and review the content whenever necessary.

@@ -1,0 +1,65 @@
+As a system administrator, I want to process deletions from a specific date, so that outdated records are removed from the database.
+As a system administrator, I want to synchronize D1 file generation with FPDS data load, so that published D1 files correspond to the correct submission counts.
+As a system administrator, I want to update SQL codes for clarity, so that database queries become easier to understand and maintain.
+As a system administrator, I want to add specific PPoP codes to the derivation logic, so that all relevant geographic locations can be properly categorized.
+As a system administrator, I want to derive Funding Agency Codes to improve data quality, so that funding agencies are accurately identified in the system.
+As a system administrator, I want to map FederalActionObligation to Atom Feed, so that financial obligations are properly exposed in the feed structure.
+As a system administrator, I want to validate PPoPZIP+4 using LegalEntity ZIP validation logic, so that zip code formatting meets regulatory standards.
+As a web developer, I want to redesign the Resources page to match the new Broker style, so that users have a consistent and modern interface experience.
+As a project manager, I want to report user testing results to agencies, so that stakeholders understand how well the system performs.
+As a system administrator, I want to enable New Relic monitoring across applications, so that system performance and issues are tracked effectively.
+As a system administrator, I want to update validation rules based on DB-2213, so that the system enforces current regulatory requirements.
+As a system administrator, I want to enhance error messages for better clarity, so that users understand why their submissions were rejected.
+As a system administrator, I want to prevent multiple publishes by disabling the publish button during processing, so that accidental duplicate publications are avoided.
+As a system administrator, I want to derive fields in the historical FABS loader, so that legacy data is properly formatted.
+As a system administrator, I want to load GTAS window data into the database, so that submission deadlines are correctly tracked.
+As a system administrator, I want to load historical FPDS data, so that existing procurement information is accessible and integrated.
+As a system administrator, I want to set up FABS groups to support the FREC paradigm, so that funding organizations are properly categorized.
+As a system administrator, I want to validate that historical data includes all necessary columns, so that data integrity remains intact.
+As a system administrator, I want to fetch two additional fields from FPDS data pull, so that more complete procurement data is available.
+As a system administrator, I want to enhance the submission dashboard with additional information, so that users gain better insights into their submissions.
+As a system administrator, I want to update the SAMPLE FILE link to the correct path, so that users can easily access example files.
+As a system administrator, I want to update the FABS sample file to remove FundingAgencyCode, so that sample files align with current requirements.
+As a system administrator, I want to enable large numbers of flexfields without performance impact, so that flexibility doesn't compromise speed.
+As a system administrator, I want to prevent duplicate FABS submissions after page refresh, so that accidental duplicate entries are avoided.
+As a system administrator, I want to handle correction/deletion attempts properly, so that invalid operations are safeguarded against.
+As a system administrator, I want to generate D Files from FABS and FPDS data, so that data exports meet compliance needs.
+As a system administrator, I want to enable test environment access, so that cross-environment testing can occur.
+As a system administrator, I want to make FABS submission errors more clear, so that users can resolve issues faster.
+As a system administrator, I want to verify who created a submission, so that accountability is maintained.
+As a system administrator, I want to set up robust field derivation validation, so that complex data transformations function correctly.
+As a system administrator, I want to allow citywide zip input (without 4-digit), so that users can submit simplified zip code formats.
+As a system administrator, I want to show row counts before publishing, so that users know what they're committing.
+As a system administrator, I want to improve validation runtimes, so that submission reviews happen faster.
+As a system administrator, I want to upload with accurate error messages, so that users receive precise feedback about upload failures.
+As a system administrator, I want to fix DUNS validations for B, C, D actions and expired registrations, so that vendor information is accurate.
+As a system administrator, I want to improve file extension error handling, so that upload errors are more informative.
+As a system administrator, I want to prevent duplicates at publish stage, so that no duplicate transactions are made public.
+As a system administrator, I want to provide office names from codes, so that users better understand organizational contexts.
+As a system administrator, I want to update Broker resources for FABS/DAMS launch, so that system documentation reflects current capabilities.
+As a system administrator, I want to improve the flexfield interface management, so that users can better manage dynamic fields.
+As a system administrator, I want to deploy FABS to production, so that the system becomes available for public use.
+As a system administrator, I want to validate SAM data completeness, so that government vendor information is fully accurate.
+As a system administrator, I want to ensure proper derivation of all elements, so that no critical data attributes are missed.
+As a system administrator, I want to validate LegalEntityAddressLine3 length matches Schema v1.1, so that data adheres to official standards.
+As a system administrator, I want to accept V1.1 FABS file headers, so that newer file formats are compatible.
+As a system administrator, I want to ensure FPDS data stays up-to-date daily, so that procurement records are current.
+As a system administrator, I want to load all historical FABS data, so that past data is fully available in the system.
+As a system administrator, I want to load historical FPDS data, so that complete procurement history is preserved.
+As a system administrator, I want to format File F correctly, so that export files meet structural requirements.
+As a system administrator, I want to clarify CFDA error code causes, so that users can debug fund allocation issues.
+As a system administrator, I want to allow file contents quoted/escaped, so that special characters in submissions are handled safely.
+As a system administrator, I want to update submission dashboard labels, so that status indicators are more meaningful.
+As a data analyst, I want to view submission history for recent entries, so that I can review recent activity.
+As a system administrator, I want to hold validation for zero blank records, so that incomplete records don't proceed through validation.
+As a system administrator, I want to ensure FABS is deployed to production, so that the complete system is live.
+As a system administrator, I want to validate SAM data completeness, so that government contractor information is complete.
+As a system administrator, I want to execute complete derivation of data elements, so that all data attributes are properly calculated.
+As a system administrator, I want to check LegalEntityAddressLine3 length constraint, so that data entry follows schema standards.
+As a system administrator, I want to accept Schema v1.1 headers in FABS files, so that newer data formats are supported.
+As a system administrator, I want to ensure daily FPDS data sync, so that federal procurement data remains current.
+As a system administrator, I want to load historical FABS data comprehensively, so that full historical context is available.
+As a system administrator, I want to load historical FPDS data completely, so that complete procurement history is available.
+As a system administrator, I want to apply correct format for File F, so that exported files conform to required specifications.
+As a system administrator, I want to improve CFDA error code traceability, so that funding programs can be identified from error reports.
+As a system administrator, I want to support quoted/escaped input values, so that special characters in imports are handled properly.

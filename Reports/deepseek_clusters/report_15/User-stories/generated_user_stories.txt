@@ -1,0 +1,19 @@
+As a system administrator, I want to process deletions from 12-19-2017, so that old data is properly cleaned up.
+As a data analyst, I want to sync D1 file generation with FPDS data load, so that reports are generated with the latest data.
+As a developer, I want to update PPoPCode derivation logic, so that it includes 00***** and 00FORGN cases.
+As a data manager, I want to derive FundingAgencyCode, so that submissions have accurate agency information.
+As a system integrator, I want to map FederalActionObligation to Atom Feed, so that financial data is correctly displayed.
+As a validator, I want to implement ZIP+4 validation, so that addresses match Legal Entity ZIP validations.
+As a submission manager, I want to update submission when publishStatus changes, so that records reflect the latest status.
+As a site administrator, I want to lock the site during GTAS submission period, so that data integrity is maintained.
+As a content manager, I want to update FABS sample file to remove FundingAgencyCode, so that users have accurate templates.
+As a user interface designer, I want to disable the publish button during derivations, so that users don't submit incomplete data.
+As a historical data specialist, I want to derive fields for historical FABS data, so that legacy records are properly processed.
+As a data processor, I want to include FREC derivations in historical data, so that records are consistent with current standards.
+As a validation manager, I want to update validation rules table, so that rules reflect current requirements.
+As a request handler, I want to cache and manage D Files generation requests, so that processing is efficient.
+As a publishing coordinator, I want to prevent duplicate FABS publishing, so that data isn't submitted multiple times.
+As a UI developer, I want to update header information box with date and time, so that users see current timestamps.
+As a support specialist, I want to update error codes for better clarity, so that users understand issues more easily.
+As an office administrator, I want to derive office names from codes, so that reports display readable names.
+As a data validator, I want to validate ZIP codes without last 4 digits, so that partial ZIPs are still processed correctly.

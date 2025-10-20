@@ -1,0 +1,17 @@
+As a data analyst, I want to process deletions from a specific date, so that I can ensure the data remains accurate and up to date.
+As a UI designer, I want to redesign the Resources page to match new Broker design styles, so that the user experience is consistent and visually appealing.
+As a UI designer, I want to report user testing results to agencies, so that stakeholders are informed about user feedback and necessary improvements.
+As a UI designer, I want to schedule user testing for a specific date, so that I can plan and allocate resources effectively for user evaluations.
+As a UI designer, I want to track issues from Tech Thursday meetings, so that I can address ongoing technical concerns and improve our processes.
+As a DevOps engineer, I want to configure New Relic for monitoring across applications, so that we can collect useful performance data and identify issues proactively.
+As a file generator, I want to sync D1 file generation with FPDS data load, so that the data remains consistent and reliable across systems.
+As a SQL updater, I want to update SQL codes for clarity, so that the database queries are easier to understand and maintain.
+As a derivation logic developer, I want to add PPoPCode cases to derivation logic, so that our data processing accurately reflects all relevant cases.
+As a derivation logic developer, I want to derive the FundingAgencyCode for data quality, so that we maintain high standards of accuracy in our datasets.
+As an Atom Feed mapper, I want to map FederalActionObligation to Atom Feed, so that obligations are correctly represented in our data feeds.
+As a zip validator, I want to validate PPoPZIP+4 according to Legal Entity ZIP rules, so that address data conforms to standard formats and improves data integrity.
+As a submission dashboard developer, I want to show correct status labels on the Submission Dashboard, so that users can easily understand the status of their submissions.
+As a submission handler, I want to deactivate the publish button upon submission click, so that users cannot submit the same data multiple times, preventing duplication.
+As a historical loader, I want to load historical data for FABS and FPDS, so that users have access to valuable historical records for analysis and reporting.
+As a user testing summary developer, I want to create a user testing summary from UI SME input, so that we can compile user feedback and insights for further improvements.
+As an environment management engineer, I want to reset the environment to only allow Staging MAX permissions, so that we maintain a secure and controlled testing environment.

@@ -1,0 +1,88 @@
+As an agency administrator, I want to process deletions from historical files like 2017-12-19, so that outdated records are removed accurately from the published awards table.
+As a UI designer, I want to redesign the resources page to match Broker styles, so that the interface is consistent and user-friendly.
+As a quality assurance specialist, I want to generate and save user testing reports for agencies, so that feedback is documented and shareable.
+As a system monitor, I want to update New Relic metrics with app data, so that performance across applications is tracked effectively.
+As a data integrator, I want to sync D1 file generation with FPDS data loads, so that regeneration is avoided when unnecessary, improving efficiency.
+As a database maintainer, I want to update SQL codes for clarity, so that queries are more readable and maintainable.
+As a data processor, I want to add special cases for PPoPCode like 00***** and 00FORGN in derivation logic, so that derived fields handle edge cases correctly.
+As a data analyst, I want to derive FundingAgencyCode from agency data, so that data quality is enhanced with accurate mappings.
+As a feed integrator, I want to map FederalActionObligation to Atom Feed format, so that obligation data is properly structured for external feeds.
+As a validator, I want to validate PPoP ZIP+4 codes matching Legal Entity ZIP patterns, so that address data consistency is ensured.
+As a UI developer, I want to perform edits on pages like DABS/FABS landing, homepage, or help in rounds, so that iterative improvements are applied systematically.
+As a troubleshooter, I want to log submission events with better details, so that issues are easier to diagnose.
+As a file manager, I want to access published FABS files by ID, so that approved data is retrievable for review.
+As a data filter, I want to filter records to include only grants, so that irrelevant contract data is excluded from processing.
+As a content creator, I want to create mockups for submission processes, so that user interfaces are prototyped efficiently.
+As an issue tracker, I want to log issues from Tech Thursday sessions, so that recurring problems are documented for resolution.
+As a testing coordinator, I want to create summaries from UI SME input for user testing, so that improvements are prioritized.
+As a testing coordinator, I want to begin user testing with a defined plan, so that sessions are initiated smoothly.
+As a scheduling manager, I want to schedule user testing dates, so that participants are organized in advance.
+As a designer, I want to design UI for schedules or audits based on SME data, so that forms meet user requirements.
+As an environment manager, I want to reset staging environments to MAX permissions only, so that access is controlled securely.
+As a performance optimizer, I want to index domain models, so that validation processes run faster.
+As a dashboard maintainer, I want to update headers with full datetime stamps, so that users see precise update information.
+As a data formatter, I want to ensure fields are zero-padded where numeric, so that data aligns with schema requirements.
+As an error handler, I want to generate error codes with detailed logic info, so that validation issues are clearer for fixes.
+As a data querier, I want quick access to Broker data via agency code searches, so that relevant submissions are found rapidly.
+As an access controller, I want to grant read-only DABS access to FABS users, so that cross-system viewing is enabled without edit risks.
+As a navigation designer, I want a landing page for FABS/DABS selection, so that users can choose systems easily.
+As a submission manager, I want to update FABS submission status on changes, so that workflows reflect current states accurately.
+As a period manager, I want to add and lock GTAS windows with start/end dates, so that site access is controlled during reporting periods.
+As a file updater, I want to remove specific headers like FundingAgencyCode from FABS sample files, so that templates match current schemas.
+As a UI controller, I want to deactivate the publish button during derivations, so that incomplete data isn't accidentally published.
+As a historical loader, I want to derive fields like agency codes in historical FABS loading, so that legacy data is enriched properly.
+As a data loader, I want to load historical FPDS with extracted and feed data, so that archives are complete and cached for reuse.
+As a group manager, I want to update FABS groups under the FREC paradigm, so that organizational structures are correctly represented.
+As a data validator, I want to ensure historical data has all required columns, so that loading doesn't fail on missing fields.
+As a field accessor, I want to retrieve additional FPDS fields like custom ones, so that extended data is available without full reloads.
+As a dashboard enhancer, I want to add helpful info like IG requests count to submission dashboards, so that users get contextual guidance.
+As a file downloader, I want to download uploaded FABS files by submission ID, so that originals are accessible for review.
+As a loader planner, I want to determine optimal methods for loading historical FPDS since 2007, so that bulk operations are efficient.
+As a content updater, I want to update language on FABS pages, so that instructions are clear and up-to-date.
+As a UI cleaner, I want to remove inappropriate banners between DABS and FABS, so that each system is focused without distractions.
+As a period displayer, I want to show current submission period start/end dates, so that users know active windows.
+As an uploader, I want to upload files and get accurate validation errors, so that issues are identified precisely from the start.
+As a rule maintainer, I want to update the validation rule table for specific tickets like DB-2213, so that rules stay current.
+As an error includer, I want flexfields to appear in error files when only missing required errors occur, so that warnings are comprehensive.
+As an error clarifier, I want detailed triggers for CFDA errors in messages, so that users understand fix requirements.
+As a resource updater, I want to update Broker resources, validations, and P&P for launches, so that FABS/DAIMS are ready for production.
+As a DUNS validator, I want to check DUNS for action types B,C,D against SAM registrations including expired, so that eligibility is verified correctly.
+As a date validator, I want to accept DUNS if action date falls within registration periods, so that valid historical actions pass.
+As an error reporter, I want helpful messages for wrong file extensions, so that upload failures are easy to resolve.
+As a publish guard, I want to prevent duplicate transactions on publish with timestamp checks, so that data integrity is maintained.
+As a cache manager, I want to cache D Files generation requests, so that repeated computations are avoided for performance.
+As a file generator, I want to generate D Files from input data, so that required outputs are produced on demand.
+As a file accessor, I want to access raw published files from agencies via USAspending, so that source data is retrievable.
+As a flexfield handler, I want to process large flexfield sets without performance hits, so that submissions with many fields succeed.
+As a publish preventer, I want to block double publishes after page refreshes, so that accidental duplicates are avoided.
+As a daily updater, I want financial assistance data refreshed daily, so that users see current information.
+As a record checker, I want to prevent corrections on non-existent records, so that invalid operations are blocked.
+As a data ensurer, I want accurate derivations for PPoPCode and Congressional District, so that location data is reliable.
+As a record filter, I want to exclude NASA grants from contract displays, so that award types are shown correctly.
+As a method determiner, I want to decide D Files generation from FABS/FPDS integration, so that validation is accurate.
+As a file validator, I want to generate and validate D Files from combined data, so that outputs meet standards.
+As a tester, I want access to non-production environments for features, so that testing is isolated from live systems.
+As an error reporter, I want FABS submission errors to accurately reflect issues, so that fixes target the right problems.
+As a visibility provider, I want to see the creator of each submission, so that accountability is maintained.
+As a tester, I want robust tests for FABS derivations, so that logic changes are verified thoroughly.
+As a submitter, I want to submit individual recipient records without DUNS errors, so that personal data flows freely.
+As a decision maker, I want to see row counts before publishing, so that informed choices are possible.
+As a ZIP validator, I want citywide PPoPZIP submissions without errors, so that broad location entries are accepted.
+As a performance tester, I want validations to complete in reasonable time, so that large files process without delays.
+As an updater, I want to receive and apply FABS record updates, so that current statuses are reflected.
+As a filterer, I want to exclude deleted FSRS records, so that only active data is processed.
+As a loan handler, I want to accept zero/blank values for loans, so that valid empty fields aren't rejected.
+As a deployer, I want to deploy FABS to production, so that updates go live seamlessly.
+As a data assurer, I want confirmation of complete SAM data pulls, so that validations are reliable.
+As a deriver, I want all data elements derived properly including funding and PPoP, so that submissions are complete.
+As a formatter, I want AddressLine3 truncated to schema max length, so that validation passes.
+As a header user, I want FABS files to use v1.1 schema headers, so that imports align with standards.
+As an updater, I want FPDS data updated daily, so that contracts reflect latest changes.
+As a loader, I want all historical financial assistance loaded for go-live, so that backfills are complete.
+As a formatter, I want File F output in correct JSON format, so that downstream systems consume it easily.
+As an error improver, I want detailed file-level error explanations, so that issues are easier to diagnose.
+As a submitter, I want data elements with quotes to preserve leading zeros, so that numeric integrity is maintained.
+As a viewer, I want office names derived from codes, so that hierarchies are human-readable.
+As a linker, I want sample file links updated to correct paths, so that downloads work properly.
+As a ZIP handler, I want 5-digit ZIP without last 4 accepted, so that partial addresses validate.
+As a dashboard user, I want correct status labels like 'Pending Review', so that workflow states are clear.

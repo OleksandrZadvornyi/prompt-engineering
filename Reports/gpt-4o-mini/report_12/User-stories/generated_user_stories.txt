@@ -1,0 +1,13 @@
+As a AgencyUser, I want to submit data elements, so that I can log the data for future reference.
+As a AgencyUser, I want to include flexfields, so that I can provide customizable data within my submissions.
+As a AgencyUser, I want to receive an error message for invalid file extensions, so that I know to upload the correct file type.
+As a AgencyUser, I want to check submission periods, so that I can be informed of the time frame for submissions.
+As a FabsUser, I want to upload files, so that I can submit relevant data for processing.
+As a FabsUser, I want to validate submission data, so that I can ensure all necessary information is accurate before submission.
+As a Developer, I want to log submission statuses, so that I can keep track of the state of submissions.
+As a Developer, I want to prevent duplicate submissions, so that I maintain the integrity of the submission process.
+As a UIUser, I want to schedule user testing, so that I can ensure timely feedback on UI changes.
+As a BrokerUser, I want to upload and validate files, so that I can ensure the data meets the required standards.
+As a BrokerUser, I want to retrieve submission history, so that I can review past submissions for analysis.
+As an Owner, I want to create user testing summaries, so that I can document feedback for future improvements.
+As a DevOpsEngineer, I want to ensure integration with New Relic, so that I can monitor the application's performance effectively.

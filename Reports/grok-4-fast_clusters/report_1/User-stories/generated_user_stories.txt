@@ -1,0 +1,46 @@
+As an agency user, I want to upload FABS files for validation, so that I can identify errors like invalid ZIP codes or DUNS issues early.
+As a system administrator, I want to initialize the database schema automatically, so that tables for submissions and historical data are ready for use.
+As a data analyst, I want to load historical FABS data with derived fields like FREC, so that I can access complete records for reporting.
+As a compliance officer, I want to derive funding agency codes from PPoP codes, so that data quality is improved for foreign or specific agency cases.
+As a broker operator, I want to sync D1 file generation with FPDS updates, so that files are only regenerated when necessary to save resources.
+As a data manager, I want to process deletions for specific dates in published awards, so that outdated records are removed accurately.
+As a submitter, I want DUNS validation to accept expired registrations under certain action types, so that valid submissions are not blocked unnecessarily.
+As a validator, I want PPoP ZIP codes to allow citywide formats or optional last 4 digits, so that flexible entry is permitted for legal entities.
+As a file processor, I want to validate federal action obligations for atom feed mapping, so that numeric values are correctly handled.
+As an uploader, I want file extensions to be checked against allowed types like .txt or .csv, so that only compatible files are processed.
+As a publisher, I want duplicate transactions to be prevented from publishing, so that data integrity is maintained across submissions.
+As a FABS user, I want comprehensive validations for flexfields, schema v1.1, and quotes, so that row and file errors are clearly reported.
+As a report generator, I want to generate and cache D files from FABS and FPDS data, so that combined records with derivations are available quickly.
+As a geocoder, I want to derive congressional districts from PPoP ZIP codes, so that location-based fields are accurately populated.
+As a classifier, I want to detect and correct NASA grant misclassifications, so that assistance types are displayed correctly as grants.
+As a historian, I want to load FPDS data since a specific year with added derived fields, so that historical contracts are fully integrated.
+As a formatter, I want to generate F files with zero-padded code fields, so that the output meets the required fixed-width format.
+As a downloader, I want to access uploaded FABS files by submission ID, so that I can retrieve and review previous submissions easily.
+As a UI designer, I want to redesign the Resources page to match Broker styles, so that the interface is consistent and modern.
+As a tester, I want to report user testing results to agencies, so that feedback contributions improve UX iteratively.
+As a content editor, I want to edit landing pages for DABS/FABS, homepage, and help in multiple rounds, so that pages are refined based on approvals.
+As a scheduler, I want to schedule and summarize user testing sessions, so that improvements like navigation are tracked with timelines.
+As a dashboard user, I want headers to show both date and time of updates, so that I can track changes precisely.
+As a submitter, I want status labels on the submission dashboard to be corrected, so that I understand the current state accurately.
+As a publisher, I want the publish button to deactivate during derivations, so that multiple accidental clicks are prevented.
+As a frontend developer, I want URLs and language to be updated for FABS mode with segregated banners, so that application-specific content is clear.
+As a user, I want submission periods to be displayed with start and end dates, so that I know when filing is open.
+As a helper, I want sample files to be linked correctly in dialogs, so that users can access the right templates easily.
+As a DevOps engineer, I want to integrate New Relic for metrics across apps, so that performance data is useful for troubleshooting.
+As a logger, I want enhanced logging for submissions with debug levels, so that issues can be diagnosed quickly.
+As a performance optimizer, I want domain models to be indexed, so that validations run faster without impacting users.
+As an investigator, I want quick access to Broker data via queries, so that investigations into issues are efficient.
+As an environment manager, I want to reset to staging permissions only, so that testers' access is controlled securely.
+As a workflow user, I want to insert new submissions with pending status, so that uploads are tracked from creation.
+As a publisher, I want to update publish status after derivations, so that submissions progress correctly to published.
+As a FABS submitter, I want historical data to include FREC derivations, so that legacy records are fully processed.
+As a individual submitter, I want submissions without DUNS to be allowed for certain types, so that personal awards are not rejected.
+As a loan handler, I want zeros or blanks accepted in fields for loans and non-loans, so that financial data is flexible.
+As a deployer, I want FABS to be deployed to production with SAM data completeness, so that live updates are reliable.
+As a filer, I want AddressLine3 limited to 55 characters in schema v1.1, so that headers and data fit standards.
+As a daily updater, I want FPDS data loaded daily for financial assistance, so that the website reflects current info.
+As a processor, I want File F generated in JSON with padding, so that downstream systems receive formatted output.
+As a tester, I want Tech Thursday issues tracked in user testing logs, so that bugs are addressed in iterations.
+As a validator, I want flexfields optimized to avoid performance impacts, so that large files process reasonably fast.
+As a deriver, I want office names derived from codes, so that additional context is added to records.
+As a full workflow user, I want to run validations before publishing and generate D files, so that the end-to-end process is seamless.

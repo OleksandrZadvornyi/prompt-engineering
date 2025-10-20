@@ -1,0 +1,33 @@
+As a system administrator, I want to process deletions based on a specified date, so that outdated data can be removed.
+As a UI designer, I want to redesign the resources page using new design styles, so that the page looks modern and appealing to users.
+As a QA tester, I want to report user testing results, so that stakeholders can understand user feedback and improve the system.
+As a developer, I want to log New Relic data, so that performance monitoring across applications can be conducted effectively.
+As a data manager, I want to sync the generation of files with data updates, so that the latest data is always reflected in the files.
+As a developer, I want to generate D1 files, so that data compliance and reporting needs are met.
+As a database manager, I want to update SQL codes for clarity, so that the codebase remains maintainable and understandable.
+As a business analyst, I want to add new PPoPCode cases, so that the derivation logic reflects the latest business rules.
+As a developer, I want to derive the Funding Agency Code, so that funding information can be accurately reported.
+As a developer, I want to map Federal Action Obligations to an Atom Feed, so that data can be consumed by other applications seamlessly.
+As a validation specialist, I want to validate ZIP codes against legal entity ZIP validations, so that submitted data adheres to regulatory requirements.
+As a content editor, I want to move on to round 2 edits for specific pages, so that I can continue to enhance the content quality.
+As a content editor, I want to progress to round 3 of Help page edits, so that users can access accurate and helpful information.
+As a project manager, I want to log submission statuses, so that I can track the progress of different submissions in the system.
+As a developer, I want to deactivate the publish button for specific submissions, so that no further publications occur for those submissions.
+As a database administrator, I want to add GTAS window data, so that it can be included in relevant reports and analysis.
+As a project manager, I want to check the submission period, so that I am aware of the time frame for submissions.
+As a user, I want to upload files for processing, so that my data can be validated and utilized in the system.
+As a developer, I want to prevent duplicate publish actions for submissions, so that data integrity is maintained.
+As a user, I want to derive fields from historical submissions, so that I can leverage past data for current needs.
+As a data analyst, I want to add additional information to the submission dashboard, so that I have a complete view of each submission’s status.
+As a user, I want to download uploaded FABS files for my submissions, so that I can review and utilize the data as needed.
+As a project manager, I want to create user testing summaries, so that insights can be shared with the team for continuous improvement.
+As an auditor, I want to design audit schedules based on user interface feedback, so that the system remains compliant and user-friendly.
+As a developer, I want to update error codes for submissions, so that users can understand and rectify issues with their submissions.
+As a developer, I want to recommend zero padding for specific fields, so that data formats are consistent across submissions.
+As a user, I want to ensure that submission information is accurate and complete, so that we can avoid processing delays.
+As a compliance officer, I want to check FABS validation rules, so that submissions meet all necessary regulatory requirements.
+As a data manager, I want to be alerted if files are missing required elements, so that issues can be addressed promptly.
+As a data manager, I want to ensure that the latest FABS data is processed daily, so that our reports reflect current information.
+As a project manager, I want to record feedback on submissions, so that we can track issues and improvements over time.
+As a user, I want to submit FABS data in a structured format, so that it can be processed without errors.
+As a developer, I want to update file-level errors for submissions, so that users receive clear and actionable feedback on their submissions.

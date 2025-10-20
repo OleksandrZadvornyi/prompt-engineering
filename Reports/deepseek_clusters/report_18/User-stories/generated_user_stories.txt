@@ -1,0 +1,60 @@
+As a data analyst, I want to process 2017 deletions, so that outdated data is removed from the system.
+As a UI designer, I want to redesign the Resources page, so that it matches Broker styles.
+As a testing coordinator, I want to report user testing results to agencies, so that they can review feedback.
+As a system administrator, I want to configure New Relic monitoring for applications, so that we can track performance.
+As a data engineer, I want to sync D1 file generation with FPDS data load, so that files are generated with the latest data.
+As a database developer, I want to update SQL queries for clarity, so that they are easier to maintain.
+As a data specialist, I want to add PPoPCode cases, so that special codes are handled correctly.
+As a data analyst, I want to derive FundingAgencyCode, so that data quality is improved.
+As a data mapper, I want to map FederalActionObligation to Atom Feed, so that data is properly formatted.
+As a data validator, I want to validate PPoPZIP+4 codes, so that they match Legal Entity ZIP standards.
+As a content editor, I want to edit landing pages for approval, so that they meet publishing standards.
+As a developer, I want to enhance logging capabilities, so that troubleshooting is easier.
+As a system user, I want to fetch published FABS files, so that I can access the latest data.
+As a data filterer, I want to filter to only grant records, so that I can focus on relevant data.
+As a UI designer, I want to create content mockups, so that stakeholders can review designs.
+As a project manager, I want to track Tech Thursday issues, so that they can be addressed promptly.
+As a testing manager, I want to create user testing summaries, so that results are documented.
+As a testing coordinator, I want to schedule user testing sessions, so that feedback is collected.
+As a system admin, I want to reset environment permissions, so that only authorized users have access.
+As a data architect, I want to properly index domain models, so that queries are optimized.
+As a web developer, I want to show updated timestamps in headers, so that users see current information.
+As a data validator, I want to update error codes, so that they provide better information.
+As a system administrator, I want to grant read-only DABS access to FABS users, so that they can view data.
+As a UI designer, I want to create a unified landing page for FABS and DABS, so that users have a single entry point.
+As a submission manager, I want to update submissions when publishStatus changes, so that data remains consistent.
+As a UI developer, I want to disable the publish button during derivations, so that users don't submit incomplete data.
+As a data manager, I want to add GTAS window data to the database, so that it's available for reporting.
+As a data generator, I want to generate FABS sample files, so that users can understand the format.
+As a historical data analyst, I want to derive agency codes for historical data, so that records are properly categorized.
+As a data engineer, I want to include FREC derivations in historical load, so that data is complete.
+As a data loader, I want to include all FPDS historical data, so that we have comprehensive records.
+As a web developer, I want to update frontend URLs for accuracy, so that users access the correct pages.
+As a dashboard designer, I want to enhance submission info on the dashboard, so that users have more helpful information.
+As a data exporter, I want to download original uploaded FABS files, so that users can retrieve their submissions.
+As a content editor, I want to update language for better understanding, so that users comprehend instructions clearly.
+As a validation specialist, I want to update validation error messages, so that they are more informative.
+As a rule implementer, I want to apply DB-2213 rule updates, so that validation follows current standards.
+As a data validator, I want to ensure flexfields appear in error files, so that users can identify issues.
+As a documentation specialist, I want to update resources for DAIMS v1.1 launch, so that documentation is current.
+As a DUNS validator, I want to validate records with expired DUNS, so that only valid records are processed.
+As a file upload handler, I want to check for correct file extensions, so that only valid files are accepted.
+As a publishing controller, I want to prevent duplicate transaction publishing, so that data integrity is maintained.
+As a file manager, I want to manage and cache D File generation requests, so that performance is optimized.
+As a performance optimizer, I want to handle large numbers of flexfields efficiently, so that the system remains responsive.
+As a data publisher, I want to prevent multiple publishes of the same submission, so that data isn't duplicated.
+As a data processor, I want to update financial assistance data daily, so that users have the latest information.
+As a record validator, I want to validate PPoP fields, so that data quality is maintained.
+As a test environment manager, I want to enable test features in non-production environments, so that testing can be conducted.
+As a status tracker, I want to show who created/updated submissions, so that accountability is maintained.
+As a file generator, I want to generate D Files from FPDS and FABS data, so that users have comprehensive reports.
+As a data updater, I want to refresh FABS records with latest data, so that information is current.
+As a data filterer, I want to remove deleted FSRS records, so that only active data is processed.
+As a schema validator, I want to validate field lengths against schema, so that data conforms to standards.
+As a historical data loader, I want to load historical financial assistance data, so that trends can be analyzed.
+As a data loader, I want to load historical FPDS data, so that we have a complete historical record.
+As a format converter, I want to generate File F in correct format, so that it meets specifications.
+As a data mapper, I want to derive office names from codes, so that users see meaningful labels.
+As a link manager, I want to update sample file links to correct locations, so that users access the right files.
+As a zip code validator, I want to validate partial ZIP codes, so that incomplete data is still usable.
+As a dashboard designer, I want to update status labels for clarity, so that users understand submission states.

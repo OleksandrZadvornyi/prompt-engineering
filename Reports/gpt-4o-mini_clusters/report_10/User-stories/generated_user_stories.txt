@@ -1,0 +1,18 @@
+- As a data manager, I want to process deletions for specific dates, so that outdated records can be effectively removed from our dataset.
+- As a web designer, I want to redesign the Resources page with new styles, so that it provides a more modern and user-friendly experience.
+- As a project manager, I want to report user testing findings, so that stakeholders are informed about user feedback and can make decisions based on it.
+- As a data analyst, I want to sync D1 file generation with the last FPDS update, so that the generated files reflect the most current data.
+- As a database administrator, I want to update SQL codes for clarity, so that the codebase is easier to understand and maintain.
+- As a data quality specialist, I want to add new PPoPCode cases, so that our derivation logic incorporates the latest information.
+- As a data processor, I want to derive a Funding Agency Code based on our data records, so that our data quality and completeness are improved.
+- As a developer, I want to map the Federal Action Obligation to an Atom Feed, so that the data is structured and accessible for consumption.
+- As a data validator, I want to validate ZIP fields according to defined standards, so that the data accuracy is enhanced.
+- As a project lead, I want to log developer issues, so that we can track and resolve problems more effectively.
+- As a testing coordinator, I want to schedule user testing sessions, so that we can gather user feedback on our products at designated times.
+- As a data analyst, I want to create a summary of user testing feedback, so that we can consolidate insights and improve our offerings.
+- As a data submission specialist, I want to generate FABS records, so that all necessary records are available for submission.
+- As a support engineer, I want to handle submission errors by submission ID, so that we can address issues in a systematic manner.
+- As a database administrator, I want to update FABS record statuses, so that we can keep track of the submission lifecycle.
+- As a data manager, I want to load historical data for specific types, so that we can analyze trends and perform comparisons.
+- As a developer, I want to format submission data correctly, so that it is ready for processing and consistent in presentation.
+- As a data processor, I want to process submissions after validating them, so that only correct and complete submissions are recorded.

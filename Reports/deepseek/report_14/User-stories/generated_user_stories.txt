@@ -1,0 +1,17 @@
+As a data administrator, I want to process deletions for a specific date, so that I can maintain data cleanliness and accuracy.
+As a submission manager, I want to update the publication status of a FABS submission, so that I can track and manage submission states.
+As a data validator, I want to validate FABS files against a schema, so that I can ensure data quality and compliance.
+As a data processor, I want to generate D files from FABS and FPDS data, so that I can create consolidated reports.
+As a data analyst, I want to derive funding agency codes based on business rules, so that I can categorize funding records correctly.
+As a UI designer, I want to redesign the Resources page with new styles, so that I can improve user experience and aesthetics.
+As a tester, I want to create user testing reports for agencies, so that I can document findings and recommendations.
+As a help desk agent, I want to update the Help page with new changes, so that users have access to the latest information.
+As a DevOps engineer, I want to configure New Relic monitoring for applications, so that I can ensure system performance and reliability.
+As a database administrator, I want to update validation rules in the database, so that I can enforce data integrity constraints.
+As a data manager, I want to add GTAS window data to the database, so that I can maintain historical records for reporting.
+As a data loader, I want to load historical FABS data into the database, so that I can preserve and analyze past records.
+As a submission processor, I want to process flexfields for a submission, so that I can handle custom data fields appropriately.
+As a system administrator, I want to prevent users from double-publishing the same submission, so that I can avoid data duplication and errors.
+As an auditor, I want to generate audit reports for UI improvements, so that I can track changes and their impacts.
+As a data processor, I want to derive PPoP codes based on business rules, so that I can standardize project or program codes.
+As a data synchronizer, I want to sync D1 file generation with FPDS data load, so that I can ensure data consistency across systems.

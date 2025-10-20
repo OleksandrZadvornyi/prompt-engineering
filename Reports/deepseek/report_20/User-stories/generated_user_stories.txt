@@ -1,0 +1,15 @@
+As a system administrator, I want to process deletions from 12-19-2017, so that outdated data is removed from the system.
+As a data submitter, I want to update FABS submission status, so that I can track the publication status of my submissions.
+As a data submitter, I want to prevent double publishing of submissions, so that data integrity is maintained.
+As a system administrator, I want to update validation rules in the database, so that data quality checks remain current.
+As a data analyst, I want to generate D files from FABS/FPDS data, so that I can access consolidated agency data.
+As a data analyst, I want to cache generated D files, so that I can avoid unnecessary regeneration when data hasn't changed.
+As a UI designer, I want to track UI change requests, so that we can manage rounds of edits effectively.
+As a QA engineer, I want to schedule user testing sessions, so that we can validate system changes with real users.
+As a data engineer, I want to load historical FABS data with proper derivations, so that we maintain complete historical records.
+As a system administrator, I want to configure New Relic monitoring, so that we can monitor application performance.
+As an API user, I want to publish FABS submissions via API, so that I can automate submission workflows.
+As an API user, I want to request UI changes via API, so that I can integrate with change management systems.
+As an API user, I want to schedule test sessions via API, so that I can automate testing workflows.
+As an API user, I want to retrieve D files via API, so that I can access agency data programmatically.
+As an API user, I want to load historical FABS data via API, so that I can automate data migration processes.

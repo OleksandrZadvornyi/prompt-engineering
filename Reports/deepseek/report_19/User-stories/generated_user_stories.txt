@@ -1,0 +1,20 @@
+As a system administrator, I want to process deletions from 12-19-2017, so that historical data is properly cleaned up.
+As a UI designer, I want to redesign the Resources page with new styles, so that the interface matches updated design requirements.
+As a UI designer, I want to report user testing results to agencies, so that they can understand usability feedback.
+As a UI designer, I want to track issues from Tech Thursday sessions, so that we can address user experience problems.
+As a UI designer, I want to schedule user testing with advance notice, so that participants can prepare and attend.
+As a developer, I want to configure enhanced logging, so that we can better debug submission issues.
+As a developer, I want to update FABS submission status, so that users can track their submission progress.
+As a developer, I want to prevent double publishing of submissions, so that data integrity is maintained.
+As a developer, I want to update validation rules from DB-2213, so that submissions are properly validated.
+As a developer, I want to add GTAS window data to the database, so that we can track government-wide transaction data.
+As a broker user, I want to upload and validate files with accurate error messages, so that I can correct any issues before submission.
+As a broker user, I want to generate D files with caching, so that I can quickly access previously generated files.
+As an agency user, I want to upload FABS files with specific schema versions, so that my data complies with requirements.
+As an agency user, I want to view my submission history, so that I can track past submissions and their statuses.
+As a data analyst, I want to derive office names from codes, so that reports display meaningful names instead of codes.
+As a data analyst, I want to process flexfields in submission data, so that we can extract relevant flexible field information.
+As a system monitor, I want to track application metrics in New Relic, so that we can monitor system performance.
+As a system monitor, I want to get metrics for specific applications, so that we can analyze performance trends.
+As a data engineer, I want to load historical FPDS data, so that we can maintain complete historical records.
+As a data engineer, I want to load historical FABS data, so that we have access to past submission information.

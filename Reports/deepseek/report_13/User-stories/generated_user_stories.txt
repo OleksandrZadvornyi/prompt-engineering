@@ -1,0 +1,18 @@
+1. As a user, I want to create a new submission, so that I can track my agency's data submissions.
+2. As a user, I want to view a specific submission, so that I can check its details and status.
+3. As a user, I want to publish a submission, so that it becomes available for further processing.
+4. As a user, I want to prevent concurrent publish operations on the same submission, so that I avoid conflicts and data corruption.
+5. As an administrator, I want to update validation rules, so that I can maintain data quality standards.
+6. As a user, I want to update the publish status of a FABS submission, so that I can manage its lifecycle.
+7. As a user, I want to generate a D file for a DABS submission, so that I can use it for reporting purposes.
+8. As a user, I want to view the resources page, so that I can access helpful documentation and materials.
+9. As a user, I want to view the FABS landing page, so that I can access FABS-specific features and information.
+10. As a user, I want to view the help page, so that I can get assistance when needed.
+11. As a user, I want to view the submission dashboard, so that I can see all submissions at a glance.
+12. As a system administrator, I want to process 2017 deletions, so that I can maintain data accuracy and compliance.
+13. As a system administrator, I want to load historical FABS data, so that I can ensure complete records for analysis.
+14. As a system administrator, I want to derive funding agency codes, so that I can maintain accurate agency references.
+15. As a system administrator, I want to update the database schema, so that I can ensure the application works with the latest data structure.
+16. As a user, I want to have my frequently accessed data cached, so that I can get faster responses for repeated requests.
+17. As a system administrator, I want to monitor application performance, so that I can identify and address issues proactively.
+18. As a developer, I want to log application events, so that I can troubleshoot issues and track system activity.

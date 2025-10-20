@@ -1,0 +1,12 @@
+As a submission manager, I want to process deletions on a specific date, so that I can keep track of submissions that need to be removed.
+As a submission manager, I want to log the status of submissions, so that I can maintain a history of submission updates.
+As a submission manager, I want to update the status of a submission, so that I can reflect the current state of the submission accurately.
+As a UI manager, I want to redesign the resource page, so that it aligns with the new Broker design styles for a better user experience.
+As a UI manager, I want to report user test summaries to agencies, so that they are informed of the testing outcomes.
+As a UI manager, I want to schedule user testing, so that I can ensure timely feedback on new features.
+As a validation manager, I want to validate uploaded files, so that I can ensure only proper file formats are accepted for processing.
+As a validation manager, I want to validate DUNS numbers, so that I can ensure data integrity and compliance with required standards.
+As a data publisher, I want to publish data records, so that I can make new data available for use.
+As a data publisher, I want to prevent republishing existing data, so that I can avoid overwriting previously published information.
+As a flex field manager, I want to enforce a limit on the number of flexfields, so that I can maintain data quality and system performance.
+As an error manager, I want to generate error messages for submissions, so that users can identify and rectify issues promptly.

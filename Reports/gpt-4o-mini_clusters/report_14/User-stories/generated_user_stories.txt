@@ -1,0 +1,20 @@
+As a developer, I want to process deletions for a given date, so that I can maintain data integrity.
+As a web designer, I want to redesign the resources page with new styles, so that it has an updated and appealing visual design.
+As a project manager, I want to report user testing feedback to relevant agencies, so that stakeholders are informed about usability issues.
+As a data analyst, I want to generate a D1 file only if FPDS data has been updated, so that I avoid unnecessary file creations.
+As a database administrator, I want to update SQL codes for clarity, so that the codebase is easier to read and maintain.
+As a compliance officer, I want to add PPoPCode cases, so that I can ensure all relevant cases are considered.
+As a data analyst, I want to derive the funding agency code from provided data, so that I can correctly categorize the funding source.
+As a finance officer, I want to map Federal Action Obligations for specific data, so that I can track financial commitments accurately.
+As a quality assurance tester, I want to validate PPoP ZIP codes, so that I can ensure the correctness of address data.
+As a data manager, I want to access published FABS files, so that I can review and analyze available reports.
+As a user experience researcher, I want to create a user testing summary from feedback, so that I can summarize findings for further analysis.
+As a project coordinator, I want to schedule user testing on a specified date, so that I can ensure timely feedback from users.
+As a program manager, I want to design a schedule and audit process for UI improvements, so that I can monitor the effectiveness of changes.
+As a system administrator, I want to reset environment permissions to staging MAX only, so that I can maintain security and control over the testing environment.
+As a data manager, I want to log submission details with timestamps and success statuses, so that I can keep track of submission history.
+As a compliance officer, I want to invalidate a specific FABS submission, so that I can correct any errors in the submissions.
+As a data entry clerk, I want to submit a FABS record only if it meets validation criteria, so that I can ensure the accuracy of submissions.
+As a data manager, I want to update error codes with descriptions, so that I can keep track of issues and resolutions.
+As a data analyst, I want to derive fields from historical data, so that I can leverage past records for analysis.
+As an administrator, I want to fetch agency submission periods, so that I can understand the timeframes for submissions better.

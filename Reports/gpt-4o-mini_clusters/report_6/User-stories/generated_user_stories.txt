@@ -1,0 +1,18 @@
+As a project manager, I want to add user stories to different clusters, so that I can organize and track project requirements effectively.
+As a developer, I want to process deletions for a specific date, so that I can manage data cleanup efficiently.
+As a designer, I want to redesign the Resources page to match the new Broker design styles, so that the user interface is consistent and modern.
+As a QA tester, I want to report user testing results to the Agencies, so that we can improve Broker UX based on user feedback.
+As a developer, I want to sync D1 file generation with FPDS data load, so that all financial data is up to date and accurate.
+As a software engineer, I want to update SQL codes for clarity, so that the code is easier to understand and maintain.
+As a data analyst, I want to derive the FundingAgencyCode to improve data quality, so that financial reports are more accurate.
+As a compliance officer, I want to validate ZIP codes against Legal Entity ZIP validations, so that the data is reliable and conforms to standards.
+As an analyst, I want to access published FABS files, so that I can review the financial data readily.
+As a project manager, I want to begin user testing, so that I can validate UI improvements with real users.
+As a coordinator, I want to schedule user testing sessions, so that we can gather timely feedback on the application’s usability.
+As a developer, I want to update submission error codes, so that they reflect the correct submission logic for better error handling.
+As a data analyst, I want to upload and validate files, so that I can ensure the accuracy and reliability of the data being processed.
+As a developer, I want to validate files based on allowed extensions, so that invalid file types do not disrupt the application workflow.
+As a financial analyst, I want to sync FABS data with the latest financial records, so that I can maintain updated financial information.
+As a data analyst, I want to load historical FPDS data, so that I can perform a comprehensive analysis of financial trends.
+As a user researcher, I want to collect feedback from user testing sessions, so that I can identify areas for improvement in the application's user experience.
+As a QA tester, I want to log issues found during user testing, so that the development team can address and fix them promptly.

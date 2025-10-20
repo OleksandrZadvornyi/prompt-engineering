@@ -1,0 +1,22 @@
+As a Data Administrator, I want to process deletions by date, so that I can maintain clean and up-to-date records.
+As a UI Designer, I want to redesign the Resources page, so that it matches new Broker design styles.
+As a Reporting Analyst, I want to report user testing results to agencies, so that stakeholders are informed.
+As a System Administrator, I want to get metrics from New Relic for applications, so that I can monitor performance.
+As a Data Engineer, I want to sync D1 file generation with FPDS data load, so that files are generated with the latest data.
+As a Project Manager, I want to get leadership approval for page edits, so that changes are authorized before implementation.
+As a Testing Coordinator, I want to schedule user testing with advanced notice, so that participants are prepared.
+As a Developer, I want to enhance logging for troubleshooting, so that issues can be diagnosed more efficiently.
+As a User, I want to access published FABS files, so that I can retrieve necessary documents.
+As a Data Manager, I want to update submission publish status, so that records reflect current states.
+As a Data Analyst, I want to derive fields for historical FABS data, so that reports are accurate.
+As a Data Loader, I want to load historical FPDS data, so that the system has complete records.
+As a Validation Specialist, I want to update error messages, so that users receive clear feedback.
+As a Compliance Officer, I want to handle DUNS validation with special cases, so that records meet requirements.
+As a File Generator, I want to generate D Files with request caching, so that repeated requests are efficient.
+As a Publisher, I want to prevent duplicate publishing of FABS submissions, so that data integrity is maintained.
+As a Deployment Engineer, I want to deploy FABS to production, so that users can access the latest features.
+As a Data Validator, I want to verify SAM data completeness, so that records are properly formatted.
+As an Office Administrator, I want to derive office names from codes, so that reports are readable.
+As a Content Manager, I want to update sample file links in dialogs, so that users access correct files.
+As a Data Entry Clerk, I want to validate ZIP codes, so that address data is accurate.
+As a Dashboard User, I want to update status labels for submissions, so that I can track progress easily.

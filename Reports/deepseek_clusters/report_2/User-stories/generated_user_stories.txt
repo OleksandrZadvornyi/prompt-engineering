@@ -1,0 +1,26 @@
+As a Data Administrator, I want to process deletions by date, so that I can maintain clean and up-to-date records.
+As a UI Designer, I want to redesign the resources page, so that users have a better experience.
+As a UI Designer, I want to report user testing results to agencies, so that stakeholders are informed about feedback.
+As a DevOps Engineer, I want to configure New Relic monitoring for applications, so that I can track performance and issues.
+As a Data Analyst, I want to generate D1 files with latest FPDS data, so that reports are current and accurate.
+As a Data Analyst, I want to update SQL queries, so that data retrieval remains efficient and correct.
+As a Data Analyst, I want to enhance derivation logic for PPoPCode, so that special cases are handled properly.
+As a Data Analyst, I want to derive FundingAgencyCode, so that data quality is improved.
+As a Content Editor, I want to edit landing pages by type and version, so that content remains relevant and approved.
+As a Developer, I want to enhance logging with submission IDs, so that debugging is easier and more traceable.
+As a Data Manager, I want to get published FABS files, so that I can access recent submissions.
+As a Data Analyst, I want to filter grant records from USAspending data, so that I can focus on relevant information.
+As a Submission Manager, I want to control publish status and button, so that submissions are processed correctly.
+As a Data Engineer, I want to load historical FPDS data, so that comprehensive analysis can be performed.
+As a Data Engineer, I want to load FABS data with FREC derivation, so that records are properly categorized.
+As a System Administrator, I want to update validation error messages, so that users receive clear feedback.
+As a System Administrator, I want to update validation rules, so that data integrity is maintained.
+As a Validator, I want to check DUNS records, so that only valid records are processed.
+As a File Generator, I want to generate D files with caching, so that repeated requests are efficient.
+As a Performance Engineer, I want to handle flexfields in batches, so that processing is optimized.
+As a Deployment Engineer, I want to deploy FABS to production, so that updates are available to users.
+As a Data Validator, I want to validate records for loans, so that only appropriate records are accepted.
+As a Schema Validator, I want to validate records against schema v1.1, so that data conforms to standards.
+As a Navigation Designer, I want to get landing pages by user type, so that users see relevant content.
+As a Navigation Designer, I want to set frontend URLs accurately, so that links work correctly.
+As a Dashboard Manager, I want to update status labels for submissions, so that progress is tracked properly.

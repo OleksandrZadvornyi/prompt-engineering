@@ -1,0 +1,15 @@
+As a data analyst, I want to upload and validate FABS submissions with proper error checking, so that I can ensure my data meets all required criteria before publishing.
+As a compliance officer, I want to validate file extensions for different submission types, so that I can prevent incorrect file formats from being processed.
+As a system administrator, I want to generate clear error messages for different validation rules, so that users can easily understand what went wrong during validation.
+As a government employee, I want to publish FABS submissions only once per agency and file type, so that I can avoid duplicate entries in the system.
+As a data processor, I want to derive funding agency codes from agency codes, so that I can properly categorize and track funding sources.
+As a data specialist, I want to derive PPoP codes using special case logic, so that I can accurately map geographic locations to appropriate categories.
+As a system manager, I want to set and check GTAS submission windows, so that I can control when submissions are accepted.
+As a data curator, I want to load historical FPDS data for specific years, so that I can maintain comprehensive datasets for analysis.
+As a data scientist, I want to load historical FABS data with proper derivations, so that I can perform trend analysis on past submissions.
+As a designer, I want to update UI pages to match new design guidelines, so that users have a consistent and modern interface.
+As a product manager, I want to schedule user testing sessions, so that I can gather feedback on system usability.
+As a quality assurance tester, I want to begin new rounds of user testing, so that I can continuously improve the system based on user experience.
+As a technical lead, I want to update submission statuses when publish status changes, so that I can maintain accurate tracking of submission progress.
+As a business user, I want to validate DUNS records based on action types and registration dates, so that I can ensure only valid entities submit data.
+As a compliance auditor, I want to check if submissions are made within the allowed GTAS window, so that I can enforce timely reporting requirements.

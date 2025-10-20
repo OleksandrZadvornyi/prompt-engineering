@@ -1,0 +1,14 @@
+As a data submitter, I want to create a new FABS submission, so that I can start the publication process for my agency's data.
+As a data submitter, I want to update the status of my submission, so that I can track its progress through the workflow (draft, validated, published).
+As a system administrator, I want to process 2017 deletions, so that I can maintain data cleanliness and compliance.
+As a data processor, I want to generate D files when FPDS data is updated, so that I can ensure data files are current.
+As a UI developer, I want to disable the publish button during processing, so that users don't submit duplicate publication requests.
+As a data validator, I want to validate flexfields in submissions, so that I can ensure all required fields are properly populated.
+As a data analyst, I want to retrieve historical data including FPDS information, so that I can perform trend analysis.
+As a UI designer, I want to redesign the resources page, so that it matches our new style guide.
+As a UX researcher, I want to generate user testing reports, so that I can document findings and improvements for agencies.
+As a testing coordinator, I want to schedule user testing sessions, so that we can gather feedback on new features.
+As an API consumer, I want to retrieve published files, so that I can access the latest published data.
+As a system developer, I want to update validation rules, so that I can improve data quality checks.
+As a submission reviewer, I want to check the status of a submission, so that I can track its current state in the workflow.
+As a system operator, I want to set up logging, so that I can monitor system activities and troubleshoot issues.

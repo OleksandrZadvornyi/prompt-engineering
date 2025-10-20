@@ -1,0 +1,20 @@
+As a system administrator, I want to process deletions for a specific date, so that I can clean up outdated submissions.
+As a data analyst, I want to derive funding agency codes for submissions, so that I can properly categorize funding sources.
+As a data engineer, I want to sync D1 file generation with FPDS data load, so that reports are generated with the most current data.
+As a data manager, I want to load historical FPDS data from a specified year, so that I can maintain comprehensive records.
+As a developer, I want to include both extracted historical data and FPDS feed data, so that reports contain complete information.
+As a UI designer, I want to redesign the Resources page, so that it matches Broker design styles.
+As a project manager, I want to report user testing results to agencies, so that stakeholders are informed about testing outcomes.
+As a content manager, I want to update landing pages, so that users see current information.
+As a validation specialist, I want to update DUNS validation rules, so that they accurately reflect current business rules.
+As a validation specialist, I want to clarify CFDA error messages, so that users understand validation failures better.
+As a file processor, I want to generate D files with caching, so that performance is optimized for repeated requests.
+As a security officer, I want to reset environment permissions, so that only Staging MAX permissions are allowed.
+As a security officer, I want to grant read-only DABS access to FABS users, so that users have appropriate permissions.
+As a dashboard manager, I want to update submission status labels, so that users see clear and consistent statuses.
+As a dashboard manager, I want to add helpful info to submission dashboards, so that users have more context about submissions.
+As a historical data loader, I want to load historical FPDS data, so that older records are available for analysis.
+As a historical data loader, I want to load historical FABS data, so that financial assistance records are complete.
+As a FABS processor, I want to validate PPoPZip codes, so that they meet required formats.
+As a FABS processor, I want to update sample files, so that they reflect current requirements.
+As a file processor, I want to handle file extension errors, so that users receive clear feedback about invalid files.

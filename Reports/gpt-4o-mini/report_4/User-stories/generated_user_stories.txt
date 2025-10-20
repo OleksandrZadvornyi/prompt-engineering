@@ -1,0 +1,14 @@
+- As a DataProcessor, I want to process deletions for a specific date, so that outdated records can be removed efficiently.
+- As a UI designer, I want to redesign the Resources page to match new Broker design styles, so that the interface remains modern and user-friendly.
+- As a UI designer, I want to report user testing results to the agencies, so that stakeholders are informed of user feedback and testing outcomes.
+- As a UI designer, I want to move to the next round of edits for a specific page, so that we can receive approvals from leadership in a timely manner.
+- As a Developer, I want to log errors with details, so that issues can be diagnosed and resolved effectively.
+- As a Developer, I want to update the status of a submission, so that its progress can be tracked and managed appropriately.
+- As a FileManager, I want to upload files, so that documents can be processed and stored in the system.
+- As a FileManager, I want to generate a D1 file only when needed, so that resources are optimized and unnecessary files are not created.
+- As a User, I want to submit data, so that my information can be recorded in the system.
+- As a User, I want to validate my submitted data, so that I can ensure its accuracy and completeness before final submission.
+- As a FlexFieldManager, I want to handle flexfields during submissions, so that a large number of flexible data points can be included efficiently.
+- As an AgencyUser, I want to ensure that only grant records are sent, so that the submissions remain relevant and compliant with requirements.
+- As an AgencyUser, I want to include flexible fields without impacting performance, so that the submissions are both comprehensive and efficient.
+- As a FABSUser, I want to download an uploaded FABS file, so that I can access the data contained within it as needed.

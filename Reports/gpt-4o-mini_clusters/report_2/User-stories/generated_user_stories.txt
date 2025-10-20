@@ -1,0 +1,12 @@
+As a system administrator, I want to add submissions to the system, so that I can manage and track the status of each submission.
+As a user, I want to validate submissions, so that I can ensure that they meet the necessary criteria before proceeding.
+As an agency user, I want to receive updates about FABS records, so that I can stay informed about changes affecting my agency.
+As a developer, I want to update validation logic, so that I can refine and enhance the rules used for validating submissions.
+As a FABS user, I want to submit my submissions for validation, so that I can confirm their accuracy and readiness for processing.
+As a system, I want to process deletions based on a specified date, so that I can maintain an accurate records history.
+As a system, I want to sync data loads, so that I can ensure that all necessary data is refreshed and up-to-date.
+As a system, I want to generate a file for validated submissions, so that I can enable downstream processing and reporting.
+As a system manager, I want to get the status of all files, so that I can monitor the progress and state of submissions in the system.
+As an agency user, I want to report user testing contributions to my agency, so that I can ensure transparency and accountability in the submission process.
+As a user, I want to add error messages to submissions, so that I can document issues encountered during the validation process.
+As a user, I want to update the status of a submission, so that I can reflect changes in its progress through the system.

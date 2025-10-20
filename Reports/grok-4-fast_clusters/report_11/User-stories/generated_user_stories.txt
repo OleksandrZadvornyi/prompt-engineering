@@ -1,0 +1,41 @@
+As an agency user, I want to create a new submission with a file upload, so that I can start the validation process for my financial assistance data.
+As a validator, I want to check DUNS registration against SAM data for specific action types, so that only valid recipients are accepted without unnecessary errors for expired or individual cases.
+As a submitter, I want ZIP codes to be validated flexibly allowing 5-digit formats and citywide entries, so that common address variations do not trigger false errors.
+As a data processor, I want federal action obligations to be verified as numeric values, so that invalid entries are caught early in the pipeline.
+As a file handler, I want only .txt or .csv extensions to be accepted for uploads, so that incompatible files are rejected immediately.
+As an error reporter, I want CFDA errors to include specific trigger details like invalid programs or missing titles, so that I can quickly identify and fix issues.
+As a loan submitter, I want zero or blank values to be allowed for loan obligations but not for non-loans, so that business rules for financial assistance are enforced accurately.
+As an error logger, I want flexfields to be included in all error reports even for missing required fields, so that full context is available for troubleshooting.
+As a file generator, I want D1 files to sync with the latest FPDS data loads and skip regeneration if unchanged, so that processing is efficient and up-to-date.
+As a historical data loader, I want deletions for specific dates like 12-19-2017 to be processed in FPDS feeds, so that outdated records are removed correctly.
+As a derivation specialist, I want funding agency codes to be derived from agency IDs using a mapping table, so that data quality is improved without manual entry.
+As a cache manager, I want D files to be generated and cached based on data hashes to avoid recomputation, so that repeated accesses are fast.
+As a data formatter, I want numeric fields in generated files to be zero-padded to fixed lengths, so that alignment and parsing issues are prevented.
+As a scheduler, I want daily updates for financial assistance files to be automatically triggered, so that website users see current data.
+As a file exporter, I want File F outputs to quote string fields that look numeric to preserve leading zeros in tools like Excel, so that data integrity is maintained.
+As a code deriver, I want PPoP codes to incorporate ZIP and congressional districts with special handling for foreign or wildcard offices, so that location data is complete.
+As a FREC calculator, I want FREC codes to be derived from agency and office codes with grouping logic for special cases like foreign offices, so that reporting is standardized.
+As an office lookup user, I want office names to be derived from codes using a database lookup, so that human-readable labels are available.
+As a submission manager, I want to publish a validated submission while preventing double publishes via locks, so that database integrity is preserved.
+As a historical loader, I want FABS data to be loaded with derived fields like PPoP codes into a dedicated table, so that past submissions can be queried efficiently.
+As a FPDS integrator, I want historical FPDS data from both extracted and feed sources since 2007 to be loaded daily, so that comprehensive archives are maintained.
+As a period manager, I want GTAS submission windows to be added and locked in the system, so that users know when data entry is restricted.
+As a UI designer, I want the resources page to be redesigned with new Broker styles, so that the interface matches the overall application look.
+As a tester, I want user testing feedback to be reported and shared with agencies, so that UX improvements can be prioritized based on contributions.
+As a monitoring admin, I want New Relic integration to track metrics like CPU and memory for the Broker app, so that performance issues are detected early.
+As a submission creator, I want rows without errors to be counted as ready to publish after validation, so that I know the impact before finalizing.
+As a landing page editor, I want to apply round-specific edits to pages like DABS, FABS, Homepage, and Help, so that content is updated for leadership approval.
+As a testing coordinator, I want user testing rounds to be scheduled with status tracking in the database, so that timelines are managed effectively.
+As a UI auditor, I want to design schedules and audits for improvements based on SME input, so that scope and potential issues are clearly defined.
+As a environment admin, I want to reset staging environments to remove FABS access and limit to MAX permissions, so that testing is controlled.
+As a dashboard user, I want submission info including status, row counts, and last update times to be displayed, so that I can manage my submissions easily.
+As a file accessor, I want to download uploaded files directly from the system, so that I can review or reuse my original data.
+As a agency data user, I want to access raw agency files via USAspending limited to grants only, so that contract data like NASA's is excluded.
+As a performance optimizer, I want domain models to be indexed for validation, so that processing large files is faster.
+As a refresh handler, I want double publish attempts after page refreshes to be prevented, so that accidental duplicates are avoided.
+As a cross-app user, I want read-only access to DABS for FABS users, so that I can reference related data without editing risks.
+As a data maintainer, I want deletions for specific dates to be processed in historical feeds, so that cleaned data is available.
+As a FPDS user, I want access to additional fields from FPDS pulls, so that enriched data supports analysis.
+As a update recipient, I want FABS records to receive regular updates excluding deleted FSRS entries, so that submissions remain accurate and clean.
+As a historical archivist, I want all historical financial assistance and FPDS data loaded for go-live, so that the system starts with complete baselines.
+As an error analyzer, I want file-level errors to include detailed messages, so that root causes are easier to understand.

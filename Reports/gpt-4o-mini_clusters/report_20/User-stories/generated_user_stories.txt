@@ -1,0 +1,22 @@
+As a broker system administrator, I want to process deletions as of a specific date, so that I can manage data accurately.
+As a broker system administrator, I want to redesign the Resources page, so that it matches the new Broker design styles for improved user experience.
+As a broker system administrator, I want to report user testing results to agencies, so that they are informed about the testing outcomes.
+As a broker system administrator, I want to log useful data across applications, so that I can monitor application performance effectively.
+As a broker system administrator, I want to synchronize D1 file generation with FPDS data load, so that I ensure consistency between the files.
+As a broker system administrator, I want to update SQL codes for clarity, so that the code is easier to understand and maintain.
+As a broker system administrator, I want to derive the FundingAgencyCode, so that I can enhance data quality and integrity.
+As a broker system administrator, I want to map the FederalActionObligation properly to the Atom Feed, so that data is accurately represented.
+As a broker system administrator, I want to validate PPoPZIP+4 the same as Legal Entity ZIP, so that I can ensure accurate ZIP code entries.
+As a broker system administrator, I want to schedule user testing on specific dates, so that testing can be planned effectively.
+As a broker system administrator, I want to submit records individually after validating DUNS numbers, so that I can ensure each record is accurate before submission.
+As a broker system administrator, I want to update submission statuses, so that I can keep track of progress on submissions.
+As a broker system administrator, I want to update errors for specific submissions, so that I can provide clear and helpful error information.
+As a broker system administrator, I want to load historical FPDS data, so that I can prepare for FABS go-live.
+As a broker system administrator, I want to retrieve updated financial assistance data daily, so that I remain informed about the latest financial information.
+As a broker system administrator, I want to return the requested FABS file using a file ID, so that users can access the correct files.
+As a broker system administrator, I want to link a sample file to a URL, so that users can easily access the sample data.
+As a broker system administrator, I want to leave off the last four digits of a full ZIP code, so that I can standardize ZIP code formats.
+As a broker system administrator, I want to derive office names from codes, so that I can easily reference the correct office information.
+As a broker system administrator, I want to add office code mappings, so that I can maintain a clear association between codes and their corresponding office names.
+As a broker system administrator, I want to add validation rules, so that I can ensure data quality and compliance with standards.
+As a broker system administrator, I want to upload files and validate them, so that I can confirm data accuracy before processing.

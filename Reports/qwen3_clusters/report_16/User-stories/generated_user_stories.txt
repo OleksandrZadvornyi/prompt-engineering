@@ -1,0 +1,88 @@
+As a system administrator, I want to process 12-19-2017 deletions, so that outdated data entries are properly removed from the system.
+As a web developer, I want to redesign the Resources page to match Broker design styles, so that users have a consistent interface experience.
+As a product manager, I want to report user testing findings to agencies, so that agency stakeholders understand usability improvements and areas for enhancement.
+As a DevOps engineer, I want to configure New Relic for full application monitoring, so that I can track application performance and identify issues proactively.
+As a data processor, I want to sync D1 file generation with FPDS data load, so that financial data remains consistent with federal procurement data.
+As a software developer, I want to refactor SQL code for clarity, so that the database queries are easier to maintain and understand.
+As a data analyst, I want to add handling for 00***** and 00FORGN PPoPCode cases, so that special geographic location codes are properly processed.
+As a data processor, I want to derive FundingAgencyCode to improve data quality, so that funding agency information is accurately populated for reporting.
+As a developer, I want to map FederalActionObligation to Atom Feed properly, so that financial obligation data is correctly formatted for external feeds.
+As a quality assurance tester, I want to ensure PPoPZIP+4 works like Legal Entity ZIP validations, so that zip code validation consistency is maintained across the application.
+As a web designer, I want to update landing pages to round 2 of edits, so that users see the most current application interface.
+As a help desk specialist, I want to update the Help page to round 3 of edits, so that user documentation reflects recent system changes.
+As a system administrator, I want to improve the ability to log and troubleshoot, so that debugging and issue resolution becomes more efficient.
+As a website visitor, I want to access published FABS files, so that I can retrieve publicly available federal award data.
+As a data publisher, I want to restrict USAspending to send only grant records, so that the data feed contains relevant grant information.
+As a content creator, I want to create content mockups for efficient data submission, so that users have visual guidance for data entry.
+As a project manager, I want to track issues arising in Tech Thursday meetings, so that technical challenges are documented and addressed systematically.
+As a product manager, I want to create a user testing summary from UI SME, so that key findings and improvement opportunities are consolidated for stakeholder review.
+As a project coordinator, I want to schedule user testing with adequate advance notice, so that participants can plan accordingly and engage effectively.
+As a security administrator, I want to reset environment to only take Staging MAX permissions, so that system access controls are properly managed.
+As a database administrator, I want to index domain models for fast validation, so that data validation processes run more efficiently.
+As a web designer, I want to update header to show date AND time, so that users can easily reference when content was last updated.
+As a data validator, I want to ensure zero-padding is used consistently, so that numeric data fields maintain format integrity.
+As a system administrator, I want to update error codes to accurately reflect logic, so that error reporting provides clear guidance to users.
+As a developer, I want to provide developer access to Broker application data, so that developers can debug and analyze system behavior.
+As a system administrator, I want to ensure FABS users have read-only access to DABS, so that data integrity between systems is preserved.
+As a web designer, I want to create a landing page for navigating between DABS and FABS, so that users can easily switch between different applications.
+As a data processor, I want to update FABS submissions when publishStatus changes, so that submission tracking reflects current status.
+As a data administrator, I want to store GTAS window data in database, so that fiscal period information is readily available for system operations.
+As a data processor, I want to update FABS sample file to remove FundingAgencyCode, so that sample data aligns with current requirements and reduces confusion.
+As a user experience designer, I want to disable publish button during derivation execution, so that users cannot submit data while processing is underway.
+As a data analyst, I want to derive fields in historical FABS data, so that legacy data is enhanced with current information standards.
+As a data processor, I want to load FREC derivations for historical data, so that historical data maintains consistency with current organizational structures.
+As a web developer, I want to update frontend URLs to accurately reflect page access, so that users navigate the application correctly.
+As a data engineer, I want to load both historical FPDS data and FPDS feed data, so that procurement data is comprehensive and up-to-date.
+As a data architect, I want to implement FABS groups based on FREC paradigm, so that organizations are properly categorized for reporting.
+As a data curator, I want to verify all necessary columns in historical data, so that dataset completeness is maintained for analysis.
+As a data processor, I want to access two additional fields from FPDS data pull, so that richer procurement information is included in the system.
+As a dashboard designer, I want to add helpful info to submission dashboard, so that users have contextual information about their submission status.
+As a user, I want to download uploaded FABS files, so that I can retain copies of my submissions for personal records.
+As a data engineer, I want to determine strategy for loading historical FPDS data, so that large datasets can be imported efficiently.
+As a web author, I want to adjust language on FABS pages for appropriateness, so that content is clear and relevant to intended users.
+As a web designer, I want to separate DABS and FABS banner messages, so that users receive application-specific notifications.
+As a system administrator, I want to display submission period start/end dates, so that users know when they can submit data.
+As a developer, I want to update error messages for upload/validate process, so that users understand exactly what went wrong during file submission.
+As a database administrator, I want to update validation rule tables with new rules, so that data validation policies are current and effective.
+As a user experience designer, I want to ensure flexfield errors are shown for missing required items, so that users complete all mandatory fields.
+As a data processor, I want to clarify triggering of CFDA error codes, so that users understand when and why these validation errors occur.
+As a web developer, I want to update Broker resources, validations, and P&P pages, so that users have access to current documentation.
+As a data processor, I want to update DUNS validation to accept specific scenarios, so that vendor verification works with various registration types.
+As a user experience designer, I want to provide more helpful file-level errors for wrong extensions, so that users understand proper file formatting.
+As a system administrator, I want to prevent duplicate publications due to timing gaps, so that identical data is not published multiple times.
+As a data engineer, I want to manage and cache D Files generation requests, so that processing requests are handled efficiently and avoid redundancy.
+As a developer, I want to enable access to raw agency published FABS files, so that agencies can directly access the underlying data.
+As a developer, I want to handle large number of flexfields without performance impact, so that large datasets process quickly.
+As a system administrator, I want to prevent double publishing after refresh, so that users don't accidentally publish the same data twice.
+As a data processor, I want to ensure daily financial assistance data updates, so that the latest information is available for reporting.
+As a system administrator, I want to avoid creating new data on attempt to correct/delete non-existent records, so that data integrity is maintained.
+As a data analyst, I want to ensure accurate PPoPCode and PPoPCongressionalDistrict data, so that geographic information is reliable for analysis.
+As a data processor, I want to exclude NASA grants from appearing as contracts, so that agency classification is accurate.
+As a data architect, I want to determine how agencies generate D Files from data sources, so that standard workflows are established.
+As a data processor, I want to generate D Files from FABS and FPDS data, so that standardized output files are produced for sharing.
+As a QA engineer, I want to enable testing of non-production features in any environment, so that new functionality can be thoroughly tested.
+As a user experience designer, I want to make FABS error messages accurate and helpful, so that users can resolve submission issues more effectively.
+As a system administrator, I want to track who created submissions, so that accountability and ownership of data submissions is maintained.
+As a quality assurance tester, I want to robustly test FABS field derivations, so that automated data enrichment works correctly.
+As a user experience designer, I want to allow submission of records without DUNS error, so that agencies can submit data even if some verification details are missing.
+As a dashboard designer, I want to show row count estimates before publishing, so that users can confirm the scale of their data submission.
+As a data processor, I want to allow citywide entries as PPoPZIP, so that broader geographical areas can be represented properly.
+As a system administrator, I want to improve validation speed, so that users experience faster feedback during data submission and validation.
+As a data processor, I want to receive updates to FABS records, so that the system contains current information from source systems.
+As a data processor, I want to ensure FSRS records are handled correctly in submissions, so that federal reporting requirements are met.
+As a data processor, I want to allow zero and blank values in FABS records, so that data entry flexibility is maintained for various record types.
+As a project manager, I want to deploy FABS to production, so that the new system is made available for agency use.
+As a data administrator, I want to ensure SAM data is complete and up-to-date, so that vendor information used for verification is reliable.
+As a data processor, I want to ensure all derived data elements are correct, so that automated data enrichment produces accurate results.
+As a data architect, I want to adjust length limit for LegalEntityAddressLine3, so that address data can accommodate longer entries.
+As a data processor, I want to use v1.1 headers in FABS files, so that data files conform to updated standards and schemas.
+As a system administrator, I want to ensure FPDS data is updated daily, so that procurement information remains current.
+As a data engineer, I want to load all historical Financial Assistance data for FABS go-live, so that the system has complete historical context.
+As a data engineer, I want to load historical FPDS data, so that procurement data sets contain comprehensive historical records.
+As a data processor, I want to set up File F output format, so that exported data files meet required specifications and standards.
+As a user experience designer, I want to improve clarity of file-level errors, so that submission issues are clearly communicated to users.
+As a data processor, I want to allow submission files with quoted content, so that Excel-generated files are properly accepted.
+As a data processor, I want to derive office names from office codes, so that organizational identifiers are converted to readable text for reporting.
+As a web developer, I want to link sample file correctly, so that agencies can access accurate sample files for reference.
+As a data processor, I want to handle ZIP codes without last 4 digits, so that partial zip information can still be processed without error.
+As a dashboard designer, I want to show correct submission status labels, so that users understand their submission's current stage.

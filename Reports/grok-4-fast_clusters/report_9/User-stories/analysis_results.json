@@ -1,0 +1,6 @@
+{
+    "semantic_consistency_score": 0.8790487051010132,
+    "analysis_model": "x-ai/grok-4-fast",
+    "original_stories_count": 98,
+    "generated_stories_count": 77
+}
