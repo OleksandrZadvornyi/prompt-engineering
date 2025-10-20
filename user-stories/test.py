@@ -4,19 +4,20 @@ from pathlib import Path
 from sentence_transformers import SentenceTransformer
 from sklearn.metrics.pairwise import cosine_similarity
 from sklearn.manifold import TSNE
-from huggingface_hub import InferenceClient
+from os import getenv
+from langchain_openai import ChatOpenAI
 import json
 import matplotlib.pyplot as plt
 import time
 
 # --- ⚙️ CONFIGURATION ---
 # ❗️ Change this path to point to the code file you want to analyze
-MODEL_NAME = "Qwen/Qwen3-Coder-30B-A3B-Instruct"
-for i in range(1, 21):
-    print("Waiting 5 seconds between requests")
+MODEL_NAME = "x-ai/grok-4-fast"
+for i in range(1, 16):
+    print("Waiting 3 seconds between requests")
     time.sleep(3)
     
-    CODE_FILE_TO_ANALYZE = Path(f"../Reports/qwen3/report_{i}/generated_code.py")
+    CODE_FILE_TO_ANALYZE = Path(f"../Reports/grok-4-fast_clusters/report_{i}/generated_code.py")
     # -------------------------
     
     # Load environment variables from .env file
@@ -26,12 +27,6 @@ for i in range(1, 21):
     print("✅ Initializing models...")
     # Initialize the model for creating embeddings
     embedding_model = SentenceTransformer('all-MiniLM-L6-v2')
-    
-    # Initialize NVIDIA hosted model
-    # client = OpenAI(
-    #     base_url="https://integrate.api.nvidia.com/v1",
-    #     api_key=os.getenv("NVIDIA_API_KEY")
-    # )
     
     # --- Step 2: Load Original Stories and Create Embeddings ---
     print("✅ Loading original user stories and creating embeddings...")
@@ -68,40 +63,26 @@ for i in range(1, 21):
         "\n```"
     )
     
-    # response = llm.invoke(("human", reverse_prompt))
-    # print("🧠 Streaming model output...\n")
-    # response_text = ""
-    
-    # stream = client.chat.completions.create(
-    #     model=MODEL_NAME,
-    #     messages=[{"role": "user", "content": reverse_prompt}],
-    #     temperature=0.7,
-    #     top_p=0.8,
-    #     stream=True
-    # )
-    
-    # for chunk in stream:
-    #     delta = chunk.choices[0].delta.content
-    #     if delta is not None:
-    #         print(delta, end="")
-    #         response_text += delta
-    
-    # print("\n✅ Response streaming completed.\n")
-    client = InferenceClient()
-    
-    print("🧠 Querying model via Hugging Face...\n")
-    
-    completion = client.chat.completions.create(
-        model=MODEL_NAME,
-        messages=[{"role": "user", "content": reverse_prompt}],
-        temperature=0.7,
-        top_p=0.8,
+    # Initialize LLM
+    llm = ChatOpenAI(
+        api_key=getenv("OPENROUTER_API_KEY"),
+        base_url=getenv("OPENROUTER_BASE_URL"),
+        model=MODEL_NAME
+    ).bind(
+        logprobs=True,
+        extra_body={
+            "provider": {
+                "order": [
+                    "nebius"
+                ]
+            }
+        }
     )
     
-    response_text = completion.choices[0].message.content
-    print(response_text)
+    msg = llm.invoke(("human", reverse_prompt))
+    bool(msg.response_metadata.get("logprobs"))
     
-    generated_stories = [line.strip() for line in response_text.split('\n') if "As a" in line]
+    generated_stories = [line.strip() for line in msg.content.split('\n') if "As a" in line]
     print(f"   - LLM generated {len(generated_stories)} new stories.")
     
     # --- Step 5: Create Embeddings for Generated Stories ---
