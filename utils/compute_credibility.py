@@ -61,12 +61,19 @@ def compute_credibility(
     semantic_score = 0.6 * flake_score + 0.4 * mypy_score
 
     # Execution Score (does the code run correctly and efficiently?)
-    if execution_metrics.get("execution_success"):
+    exec_succ = execution_metrics.get("execution_success")
+    exception_type = execution_metrics.get("exception_type")
+
+    if exception_type == "EnvironmentMismatch":
+        # Assign a neutral score. The code could not be tested, so we don't penalize it.
+        execution_score = 0.5
+    elif exec_succ:
         time_taken = execution_metrics.get("execution_time_sec", 0)
         time_score = _normalize_score(time_taken, timeout_seconds)
         # 0.5 base score for succeeding, plus a bonus up to 0.5 for speed
         execution_score = 0.5 + 0.5 * time_score
     else:
+        # This handles true code errors (e.g., ValueError) and Timeouts
         execution_score = 0.0
 
     # --- 3. Final Weighted Aggregation ---

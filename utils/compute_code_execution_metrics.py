@@ -57,13 +57,29 @@ def compute_code_execution_metrics(code_text, timeout_sec=15):
             if container:
                 container.kill()
 
-        # This block is guaranteed to work because the container won't be auto-removed.
         if container:
-            metrics["runtime_output"] = container.logs().decode("utf-8", errors="ignore").strip()
-            if not metrics["execution_success"] and not metrics["exception_type"]:
-                metrics["exception_type"], metrics["exception_message"] = _parse_exception_from_logs(
-                    metrics["runtime_output"]
-                )
+            logs = container.logs().decode("utf-8", errors="ignore").strip()
+            metrics["runtime_output"] = logs
+            
+            # Check for known environment errors first
+            is_env_error = False
+            if "ModuleNotFoundError" in logs:
+                is_env_error = True
+            elif "RuntimeError: Directory" in logs and "does not exist" in logs:
+                is_env_error = True
+            elif "ConfigurationError: Unable to open configuration file" in logs:
+                is_env_error = True
+            elif "psycopg2.OperationalError" in logs and "could not translate host name" in logs: # NEW
+                is_env_error = True
+            
+            if is_env_error:
+                metrics["exception_type"] = "EnvironmentMismatch"
+                _, metrics["exception_message"] = _parse_exception_from_logs(logs)
+            
+            # If it's a real code error, parse it as before
+            elif not metrics["execution_success"] and not metrics["exception_type"]:
+                metrics["exception_type"], metrics["exception_message"] = _parse_exception_from_logs(logs)
+
 
     except docker.errors.DockerException as e:
         metrics["exception_type"] = type(e).__name__
