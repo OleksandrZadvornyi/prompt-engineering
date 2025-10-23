@@ -1,0 +1,28 @@
+{
+    "request_number": 2,
+    "timestamp": "2025-10-11 21:21:34",
+    "model": "deepseek/deepseek-chat-v3-0324",
+    "total_tokens": 1504,
+    "total_logprob": -225.70038820036692,
+    "avg_prob": 0.8606505282593638,
+    "perplexity": 1.1619117948169575,
+    "struct_metrics": {
+        "avg_cyclomatic_complexity": 1.3235294117647058,
+        "ast_depth": 13,
+        "avg_function_size_lines": 4.6,
+        "import_redundancy_ratio": 0.0
+    },
+    "semantic_metrics": {
+        "syntax_valid": true,
+        "flake8_error_count": 18,
+        "mypy_error_count": 1
+    },
+    "execution_metrics": {
+        "execution_success": true,
+        "execution_time_sec": 1.19,
+        "exception_type": "",
+        "exception_message": "",
+        "runtime_output": "2025-10-23 15:05:29,306 - root - INFO - Processing deletions for date: 2017-12-19\n2025-10-23 15:05:29,307 - root - INFO - Moving to round 2 for Homepage edits\n2025-10-23 15:05:29,307 - root - INFO - Submission sub-1761231929.307089 status changed to published"
+    },
+    "total_credibility": 60.244
+}

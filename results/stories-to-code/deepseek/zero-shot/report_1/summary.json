@@ -1,0 +1,28 @@
+{
+    "request_number": 1,
+    "timestamp": "2025-10-11 21:17:39",
+    "model": "deepseek/deepseek-chat-v3-0324",
+    "total_tokens": 1878,
+    "total_logprob": -277.62492625576056,
+    "avg_prob": 0.8625776551459309,
+    "perplexity": 1.1593159109029088,
+    "struct_metrics": {
+        "avg_cyclomatic_complexity": 2.28,
+        "ast_depth": 13,
+        "avg_function_size_lines": 9.105263157894736,
+        "import_redundancy_ratio": 0.0
+    },
+    "semantic_metrics": {
+        "syntax_valid": true,
+        "flake8_error_count": 23,
+        "mypy_error_count": 1
+    },
+    "execution_metrics": {
+        "execution_success": false,
+        "execution_time_sec": 1.295,
+        "exception_type": "ModuleNotFoundError",
+        "exception_message": "No module named 'pymysql'",
+        "runtime_output": "Traceback (most recent call last):\n  File \"/app/code.py\", line 4, in <module>\n    import pymysql\nModuleNotFoundError: No module named 'pymysql'"
+    },
+    "total_credibility": 29.175
+}

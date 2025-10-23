@@ -1,0 +1,28 @@
+# config/config.yaml
+
+# --- All Available Models ---
+# Define each model with its full API identifier and a safe name for directories.
+models:
+  gpt-4o-mini:
+    identifier: "openai/gpt-4o-mini"
+    provider: "openai"
+  grok-4-fast:
+    identifier: "x-ai/grok-4-fast"
+    provider: "xai"
+  qwen3-coder:
+    identifier: "qwen/qwen3-coder-30b-a3b-instruct"
+    provider: "nebius"
+  deepseek:
+    identifier: "deepseek/deepseek-chat-v3-0324"
+    provider: "nebius"
+
+# --- Current Experiment Settings ---
+# Select which experiment to run by changing the values here.
+experiment:
+  model_key: "deepseek" # Use the safe key from the 'models' section
+  prompt_variant: "zero-shot"
+
+# --- Project Paths ---
+project_paths:
+  data_dir: "data/"
+  results_dir: "results/"

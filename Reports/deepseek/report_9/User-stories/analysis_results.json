@@ -1,6 +1,0 @@
-{
-    "semantic_consistency_score": 0.6719317436218262,
-    "analysis_model": "deepseek/deepseek-chat-v3-0324",
-    "original_stories_count": 98,
-    "generated_stories_count": 16
-}
