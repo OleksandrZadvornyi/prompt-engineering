@@ -37,9 +37,9 @@ def compute_code_execution_metrics(code_text, timeout_sec=15):
         client = docker.from_env()
         try:
             container = client.containers.run(
-                "python:3.11-slim",
-                command=["python", "/app/code.py"],
-                volumes={tmp_path: {"bind": "/app/code.py", "mode": "ro"}},
+                "python-sandbox",
+                command=["python", "/app/main.py"],
+                volumes={tmp_path: {"bind": "/app/main.py", "mode": "ro"}},
                 network_disabled=True,
                 mem_limit="100m",
                 cpu_period=100000,
