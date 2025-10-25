@@ -1,0 +1,1045 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analysis Report: Run 13</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 24px;
+            background-color: #ffffff;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        h1, h2, h3 {
+            color: #111;
+            margin-top: 1.2em;
+            margin-bottom: 0.6em;
+        }
+        h1 {
+            font-size: 2em;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+        }
+        h2 {
+            font-size: 1.5em;
+            color: #555;
+        }
+        h3 {
+            font-size: 1.2em;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f7f7f7;
+            font-weight: 600;
+            width: 30%;
+        }
+        td {
+            background-color: #fff;
+        }
+        details {
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            margin-bottom: 10px;
+            background-color: #fff;
+        }
+        summary {
+            padding: 12px;
+            font-weight: 600;
+            cursor: pointer;
+            background-color: #f7f7f7;
+        }
+        summary:hover {
+            background-color: #eee;
+        }
+        pre {
+            background-color: #fdfdfd;
+            border-top: 1px solid #eee;
+            padding: 15px;
+            margin: 0;
+            overflow-x: auto;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            font-size: 0.9em;
+            line-height: 1.6;
+        }
+        code {
+            font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+        }
+        .credibility-score {
+            font-size: 1.8em;
+            font-weight: bold;
+            color: #005fdd;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Analysis Report #13</h1>
+        <h2>x-ai/grok-4-fast</h2>
+        <p><strong>Prompt Variant:</strong> zero-shot-clusters</p>
+
+        <h3>Total Credibility Score</h3>
+        <p class="credibility-score">67.12%</p>
+
+        
+    <h3>Key Metrics</h3>
+    <table>
+        <tr><th>Perplexity</th><td>1.1027</td></tr>
+<tr><th>Avg. Probability</th><td>0.9069</td></tr>
+<tr><th>Total Tokens</th><td>8453</td></tr>
+
+    </table>
+    
+        
+    <h3>Execution Metrics</h3>
+    <table>
+        <tr><th>Execution Success</th><td>True</td></tr>
+<tr><th>Execution Time Sec</th><td>3.7990</td></tr>
+<tr><th>Exception Type</th><td></td></tr>
+<tr><th>Exception Message</th><td></td></tr>
+<tr><th>Runtime Output</th><td>/app/main.py:20: MovedIn20Warning: The ``declarative_base()`` function is now available as sqlalchemy.orm.declarative_base(). (deprecated since: 2.0) (Background on SQLAlchemy 2.0 at: https://sqlalche.me/e/b8d9)
+  Base = declarative_base()
+/app/main.py:107: LegacyAPIWarning: The Query.get() method is considered legacy as of the 1.x series of SQLAlchemy and becomes a legacy construct in 2.0. The method is now available as Session.get() (deprecated since: 2.0) (Background on SQLAlchemy 2.0 at: https://sqlalche.me/e/b8d9)
+  submission = self.session.query(SubmissionTable).get(submission_id)
+2025-10-25 18:22:57,773 - INFO - Processed deletion for submission 1
+2025-10-25 18:22:57,773 - INFO - Resources page redesigned
+2025-10-25 18:22:57,773 - INFO - No FPDS updates; skipping D1 regeneration
+2025-10-25 18:22:57,774 - INFO - Derived FundingAgencyCode: Derived_00TEST
+2025-10-25 18:22:57,774 - INFO - Page edits for Homepage: Leadership approval pending round 2
+2025-10-25 18:22:57,774 - INFO - Submission 1: Upload - Timestamp: 2025-10-25 18:22:57.774212
+2025-10-25 18:22:57,774 - INFO - Accessed FABS files for TEST
+2025-10-25 18:22:57,774 - INFO - User testing report sent: {'date': '2025-10-25T18:22:57.774514', 'contributions': 'Improved UX based on feedback', 'agencies': ['AgencyA']}
+/app/main.py:324: LegacyAPIWarning: The Query.get() method is considered legacy as of the 1.x series of SQLAlchemy and becomes a legacy construct in 2.0. The method is now available as Session.get() (deprecated since: 2.0) (Background on SQLAlchemy 2.0 at: https://sqlalche.me/e/b8d9)
+  submission = self.session.query(SubmissionTable).get(submission_id)
+2025-10-25 18:22:57,777 - INFO - Submission 1 status changed to published
+2025-10-25 18:22:57,777 - INFO - Loaded 3 historical FPDS records since 2007
+2025-10-25 18:22:57,777 - INFO - FABS sample file updated
+2025-10-25 18:22:57,778 - INFO - Processed 1 flexfields efficiently
+2025-10-25 18:22:57,778 - INFO - FABS deployed to production
+2025-10-25 18:22:57,778 - INFO - Loaded 3 historical FPDS records since 2007
+2025-10-25 18:22:57,778 - INFO - FPDS updated daily
+2025-10-25 18:22:57,778 - INFO - Derived office: Test Office from 00TEST
+2025-10-25 18:22:57,778 - INFO - FABS sample file updated
+2025-10-25 18:22:57,778 - INFO - SAMPLE FILE linked to: fabs_sample.txt
+2025-10-25 18:22:57,779 - INFO - ZIP 12345 accepted without +4
+2025-10-25 18:22:57,779 - INFO - Status label: Pending
+2025-10-25 18:22:57,779 - INFO - Broker system demo complete
+{"header": "Updated Resources Page", "styles": "Broker design: Modern, responsive, blue theme", "sections": ["Validations", "P&P", "Downloads"]}
+Leadership approval pending round 2
+['TEST_fabs_1.txt', 'TEST_fabs_2.txt', 'TEST_fabs_3.txt']
+{'date': '2025-10-25T18:22:57.774514', 'contributions': 'Improved UX based on feedback', 'agencies': ['AgencyA']}
+Validation passed
+File extension must be .fabs or .txt. Please check and re-upload.
+d_file.zip
+Test Office
+fabs_sample.txt
+True
+Pending</td></tr>
+
+    </table>
+    
+        
+    <h3>Structural Metrics</h3>
+    <table>
+        <tr><th>Avg Cyclomatic Complexity</th><td>1.6238</td></tr>
+<tr><th>Ast Depth</th><td>13</td></tr>
+<tr><th>Avg Function Size Lines</th><td>6.3263</td></tr>
+<tr><th>Import Redundancy Ratio</th><td>0.1538</td></tr>
+
+    </table>
+    
+        
+    <h3>Semantic Metrics</h3>
+    <table>
+        <tr><th>Syntax Valid</th><td>True</td></tr>
+<tr><th>Flake8 Error Count</th><td>23</td></tr>
+<tr><th>Mypy Error Count</th><td>3</td></tr>
+
+    </table>
+    
+
+        <details>
+            <summary>View Full Prompt</summary>
+            <pre>Generate fully functional Python code that implements the following user stories. The code should realistically reflect the described functionality.
+
+Cluster (4,):
+As a Data user, I want to have the 12-19-2017 deletions processed. As a UI designer, I want to redesign the Resources page, so that it matches the new Broker design styles. As a UI designer, I want to report to the Agencies about user testing, so that they are aware of their contributions to making Broker a better UX. As a DevOps engineer, I want New Relic to provide useful data across all applications. As a Broker user, I want the D1 file generation to be synced with the FPDS data load, so that I don&#x27;t have to regenerate a file if no data has been updated. As a broker team member, I want to make some updates to the SQL codes for clarity. As a broker team member, I want to add the 00***** and 00FORGN PPoPCode cases to the derivation logic. As a broker team member, I want to derive FundingAgencyCode, so that the data quality and completeness improves. As a agency user, I want to map the FederalActionObligation properly to the Atom Feed. As a Broker user, I want to have PPoPZIP+4 work the same as the Legal Entity ZIP validations.
+
+Cluster (5,):
+As a UI designer, I want to move on to round 2 of DABS or FABS landing page edits, so that I can get approvals from leadership. As a UI designer, I want to move on to round 2 of Homepage edits, so that I can get approvals from leadership. As a UI designer, I want to move on to round 3 of the Help page edits, so that I can get approvals from leadership. As a Developer , I want to be able to log better, so that I can troubleshoot issues with particular submissions and functions. As a UI designer,  I want to move on to round 2 of the Help page edits, so that I can get approvals from leadership. As a UI designer, I want to move on to round 2 of Homepage edits, so that I can get approvals from leadership. As a Website user, I want to access published FABS files, so that I can see the new files as they come in. As an owner, I want to be sure that USAspending only send grant records to my system. As a Broker user, I want  to help create content mockups, so that I can submit my data efficiently. As a UI designer, I want to track the issues that come up in Tech Thursday, so that I know what to test and what want s to be fixed. As an Owner, I want to create a user testing summary from the UI SME, so that I can know what UI improvements we will follow through on. As a UI designer, I want to begin user testing, so that I can validate stakeholder UI improvement requests. As a UI designer, I want to schedule user testing, so that I can give the testers advanced notice to ensure buy-in. As an Owner, I want to design a schedule from the UI SME, so that I know the potential timeline of the UI improvements wanted. As an Owner, I want to design an audit from the UI SME, so that I know the potential scope of the UI improvements want ed. As an Owner, I want to reset the environment to only take Staging MAX permissions, so that I can ensure that the FABS testers no longer have access. As a Developer , I want my domain models to be indexed properly, so that I can get validation results back in a reasonable amount of time. As an Agency user, I want the header information box to show updated date AND time, so that I know when it was updated. As an owner, I only want zero-padded fields, so that I can justify padding. As a Broker user, I want to have updated error codes that accurately reflect the logic and provide enough information, so that I can fix my submission. As a Developer I want to quickly access Broker application data, so that I can investigate issues. As a FABS user, I want to have read-only access to DABS, so that I can view DABS pages without wanting two sets of permissions. As an agency user, I want a landing page to navigate to either FABS or DABS pages, so that I can access both sides of the site.
+
+Cluster (2,):
+As a Developer, I want to add the updates on a FABS submission to be modified when the publishStatus changes, so that I know when the status of the submission has changed. As a Developer, I want to add the GTAS window data to the database, so that I can ensure the site is locked down during the GTAS submission period. As a Developer , I want to update the FABS sample file to remove FundingAgencyCode after FABS is updated to no longer require the header. As a user, I want the publish button in FABS to deactivate after I click it while the derivations are happening, so that I cannot click it multiple times for the same submission. As a broker user, I want the historical FABS loader to derive fields, so that my agency codes are correct in the PublishedAwardFinancialAssistance table. As a Developer, I want the data loaded from historical FABS to include the FREC derivations, so that I can have consistent FREC data for USASpending.gov. As a FABS user, I want the frontend URLs to more accurately reflect the page I&#x27;m accessing, so that I&#x27;m not confused. As a Developer , I want the historical FPDS data loader to include both extracted historical data and FPDS feed data. As a Developer , I want to provide FABS groups that function under the FREC paradigm. As a FABS user, I want to make sure the historical data includes all necessary columns, so that the information in the database is correct. As a data user, I want to access two additional fields from the FPDS data pull. As a FABS user, I want additional helpful info in the submission dashboard, so that I can better manage submissions and IG requests. As a FABS user, I want to download the uploaded FABS file, so that I can get the uploaded file. As a Developer , I want to determine the best way to load historical FPDS data, so that I can load all FPDS data since 2007. As a FABS user, I want the language on FABS pages to be appropriate for me, so that I am not confused. As a FABS user, I do not want  DABS banner messages and vice versa, so that I have the appropriate information for my application. As an agency user, I want to know when the submission periods start and end, so that I know when the submission starts and ends.
+
+Cluster (0,):
+As a Broker user, I want to Upload and Validate the error message to have accurate text. As a Developer, I want to update the Broker validation rule table to account for the rule updates in DB-2213. As a user, I want the flexfields in my submission file to appear in the warning and error files when the only error is a missing required element. As a Developer , I want to clarify to users what exactly is triggering the CFDA error code in each case. As a broker team member, I want to ensure the Broker resources, validations, and P&amp;P pages are updated appropriately for the launch of FABS and DAIMS v1.1. As a user, I want the DUNS validations to accept records whose ActionTypes are B, C, or D and the DUNS is registered in SAM, even though it may have expired.  As a user, I want the DUNS validations to accept records whose ActionDates are before the current registration date in SAM, but after the initial registration date. As an Agency user, I want to receive a more helpful file-level error when I upload a file with the wrong extension. As a Developer, I want to prevent duplicate transactions from being published and deal with the time gap between validation and the publishing decision.
+
+Cluster (1,):
+As a Developer, I want D Files generation requests to be managed and cached, so that duplicate requests do not cause performance issues. As a user, I want to access the raw agency published files from FABS via USAspending. As an Agency user, I want to be able to include a large number of flexfields without performance impact. As a Developer, I want to prevent users from double publishing FABS submissions after refreshing, so that there are no duplicates. As an Agency user, I want to be able to include a large number of flexfields without performance impact. As a website user, I want to see updated financial assistance data daily. As a Developer , I want to ensure that attempts to correct or delete non-existent records don&#x27;t create new published data. As a user, I want to have accurate and complete data related to PPoPCode and PPoPCongressionalDistrict. As a user, I don&#x27;t want to see NASA grants displayed as contracts. As a user, I want to access the raw agency published files from FABS via USAspending. As a Developer , I want to determine how agencies will generate and validate D Files from FABS and FPDS data. As a user, I want to generate and validate D Files from FABS and FPDS data. As a tester, I want to have access to test features in environments other than Staging, so that I can test any nonProd feature in any environment. As a FABS user, I want to submission errors to accurately represent FABS errors, so that I know why my submission didn&#x27;t work. As an Agency user, I want to accurately see who created a submission, so that I&#x27;m not confused about who last updated a submission. As a tester, I want to ensure that FABS is deriving fields properly through a robust test file plus a follow up check. As a Broker user, I want to submit records for individual recipients without receiving a DUNS error. As a user, I want more information about how many rows will be published prior to deciding whether to publish. As a FABS user, I want to submit a citywide as a PPoPZIP and pass validations. As a FABS user, I want to have my validations run in a reasonable amount of time.
+
+Cluster (3,):
+As an data user, I want to receive updates to FABS records. As an agency user, I want to ensure that deleted FSRS records are not included in submissions. As an agency user, I want the FABS validation rules to accept zero and blank for loan records. As an Agency user, I want FABS deployed into production, so I can submit my Financial Assistance data. As an agency user, I want to be confident that the data coming from SAM is complete. As an agency user, I want the FABS validation rules to accept zero and blank for non-loan records. As an agency user, I want to have all derived data elements derived properly. As an agency user, I want the maximum length allowed for LegalEntityAddressLine3 to match Schema v1.1. As an agency user, I want to use the schema v1.1 headers in my FABS file. As an Agency user, I want FPDS data to be up-to-date daily. As an Agency user, I want all historical Financial Assistance data loaded for FABS go-live. As an Agency user, I want historical FPDS data loaded. As an agency user, I want to get File F in the correct format. As an Agency user, I want to better understand my file-level errors. As an agency user, I want to submit my data elements surrounded by quotation marks, so that Excel won&#x27;t strip off leading and trailing zeroes.
+
+Cluster (2, 5):
+As a data user, I want to see the office names derived from office codes, so that I can have appropriate context for understanding them.
+
+Cluster (2, 4, 5):
+As a FABS user, I want to link the SAMPLE FILE on the &quot;What you want  to submit&quot; dialog to point to the correct file, so that I have an accurate reference for my agency submissions.
+
+Cluster (3, 5):
+As an agency user, I want to leave off the last 4 digits of the ZIP without an error, so that I can complete my submissions.
+
+Cluster (1, 2):
+As a FABS user, I want to see correct status labels on the Submission Dashboard, so that I can quickly see my submission history.
+
+Output only Python code (no markdown formatting or extra text). Do not leave functions empty — implement reasonable logic where needed.</pre>
+        </details>
+        
+        <details>
+            <summary>View Generated Code</summary>
+            <pre><code>import json
+import logging
+import os
+import re
+import zipfile
+from datetime import datetime, timedelta
+from typing import Dict, List, Optional, Tuple
+from dataclasses import dataclass, asdict
+from enum import Enum
+import pandas as pd
+from sqlalchemy import create_engine, Column, String, Integer, DateTime, Boolean, Text
+from sqlalchemy.ext.declarative import declarative_base
+from sqlalchemy.orm import sessionmaker
+
+# Setup logging for better troubleshooting
+logging.basicConfig(level=logging.INFO, format=&#x27;%(asctime)s - %(levelname)s - %(message)s&#x27;)
+logger = logging.getLogger(__name__)
+
+# Database setup for Broker data
+Base = declarative_base()
+engine = create_engine(&#x27;sqlite:///:memory:&#x27;, echo=False)
+Session = sessionmaker(bind=engine)
+
+@dataclass
+class Submission:
+    id: int
+    agency: str
+    file_path: str
+    status: str = &#x27;pending&#x27;
+    publish_status: str = &#x27;unpublished&#x27;
+    created_at: datetime = datetime.now()
+    updated_at: datetime = datetime.now()
+    is_deleted: bool = False
+
+class SubmissionTable(Base):
+    __tablename__ = &#x27;submissions&#x27;
+    id = Column(Integer, primary_key=True)
+    agency = Column(String(100))
+    file_path = Column(String(500))
+    status = Column(String(50))
+    publish_status = Column(String(50))
+    created_at = Column(DateTime)
+    updated_at = Column(DateTime)
+    is_deleted = Column(Boolean, default=False)
+
+Base.metadata.create_all(engine)
+
+# Enums for statuses and types
+class PublishStatus(Enum):
+    UNPUBLISHED = &#x27;unpublished&#x27;
+    PUBLISHED = &#x27;published&#x27;
+    DERIVING = &#x27;deriving&#x27;
+
+class ActionType(Enum):
+    B = &#x27;B&#x27;
+    C = &#x27;C&#x27;
+    D = &#x27;D&#x27;
+
+class FileType(Enum):
+    FABS = &#x27;FABS&#x27;
+    DABS = &#x27;DABS&#x27;
+    FPDS = &#x27;FPDS&#x27;
+
+# Core Broker System Class
+class BrokerSystem:
+    def __init__(self):
+        self.session = Session()
+        self.fpds_data = {}  # Cache for FPDS data
+        self.sam_data = {}   # Mock SAM data
+        self.historical_fabs = []
+        self.error_codes = {
+            &#x27;DUNS_INVALID&#x27;: &#x27;DUNS number is invalid or not registered in SAM.&#x27;,
+            &#x27;ZIP_INVALID&#x27;: &#x27;ZIP code format is invalid.&#x27;,
+            &#x27;CFDA_ERROR&#x27;: &#x27;CFDA code mismatch detected.&#x27;,
+            &#x27;FILE_EXTENSION_WRONG&#x27;: &#x27;File has incorrect extension.&#x27;,
+            &#x27;DUPLICATE_PUBLISH&#x27;: &#x27;Cannot publish duplicate submission.&#x27;,
+            &#x27;MISSING_REQUIRED&#x27;: &#x27;Missing required element in flexfields.&#x27;
+        }
+        self.derived_fields = {}  # Cache for derived fields like FundingAgencyCode
+        self.load_mock_data()
+
+    def load_mock_data(self):
+        &quot;&quot;&quot;Load mock historical and SAM data.&quot;&quot;&quot;
+        # Mock SAM data
+        self.sam_data = {
+            &#x27;123456789&#x27;: {&#x27;registration_date&#x27;: datetime(2017, 1, 1), &#x27;expiration_date&#x27;: datetime(2024, 1, 1), &#x27;status&#x27;: &#x27;active&#x27;},
+            &#x27;987654321&#x27;: {&#x27;registration_date&#x27;: datetime(2018, 1, 1), &#x27;expiration_date&#x27;: datetime(2025, 1, 1), &#x27;status&#x27;: &#x27;expired&#x27;}
+        }
+        # Mock FPDS historical data
+        self.fpds_data = {
+            &#x27;historical&#x27;: [
+                {&#x27;id&#x27;: 1, &#x27;agency_code&#x27;: &#x27;00TEST&#x27;, &#x27;obligation&#x27;: 1000, &#x27;action_date&#x27;: datetime(2007, 1, 1)},
+                {&#x27;id&#x27;: 2, &#x27;agency_code&#x27;: &#x27;00FORGN&#x27;, &#x27;obligation&#x27;: 2000, &#x27;action_date&#x27;: datetime(2008, 1, 1)}
+            ],
+            &#x27;feed&#x27;: [
+                {&#x27;id&#x27;: 3, &#x27;agency_code&#x27;: &#x27;TEST&#x27;, &#x27;obligation&#x27;: 3000, &#x27;action_date&#x27;: datetime.now()}
+            ]
+        }
+        # Mock historical FABS
+        self.historical_fabs = [
+            {&#x27;duns&#x27;: &#x27;123456789&#x27;, &#x27;cfda&#x27;: &#x27;12.000&#x27;, &#x27;amount&#x27;: 5000, &#x27;action_type&#x27;: ActionType.B.value}
+        ]
+
+    # Cluster (4,): Deletions, UI redesign (simulated), reporting, New Relic (logging), D1 sync, SQL updates, derivation logic
+    def process_deletions_2017(self, submission_id: int):
+        &quot;&quot;&quot;Process deletions for 12-19-2017.&quot;&quot;&quot;
+        submission = self.session.query(SubmissionTable).get(submission_id)
+        if submission:
+            submission.is_deleted = True
+            submission.updated_at = datetime.now()
+            self.session.commit()
+            logger.info(f&quot;Processed deletion for submission {submission_id}&quot;)
+        else:
+            logger.warning(f&quot;Submission {submission_id} not found&quot;)
+
+    def redesign_resources_page(self) -&gt; str:
+        &quot;&quot;&quot;Simulate UI redesign for Resources page matching Broker styles.&quot;&quot;&quot;
+        # In a real app, this would generate HTML/CSS; here, return a mock design summary
+        design = {
+            &quot;header&quot;: &quot;Updated Resources Page&quot;,
+            &quot;styles&quot;: &quot;Broker design: Modern, responsive, blue theme&quot;,
+            &quot;sections&quot;: [&quot;Validations&quot;, &quot;P&amp;P&quot;, &quot;Downloads&quot;]
+        }
+        logger.info(&quot;Resources page redesigned&quot;)
+        return json.dumps(design)
+
+    def report_user_testing_to_agencies(self, testing_results: Dict):
+        &quot;&quot;&quot;Report user testing to agencies.&quot;&quot;&quot;
+        report = {
+            &quot;date&quot;: datetime.now().isoformat(),
+            &quot;contributions&quot;: &quot;Improved UX based on feedback&quot;,
+            &quot;agencies&quot;: list(testing_results.keys())
+        }
+        logger.info(f&quot;User testing report sent: {report}&quot;)
+        return report
+
+    def sync_d1_with_fpds(self, fabs_file: str) -&gt; bool:
+        &quot;&quot;&quot;Sync D1 file generation with FPDS data load.&quot;&quot;&quot;
+        if not self.is_fpds_updated():
+            logger.info(&quot;No FPDS updates; skipping D1 regeneration&quot;)
+            return False
+        # Simulate D1 generation
+        d1_path = fabs_file.replace(&#x27;.fabs&#x27;, &#x27;_D1.zip&#x27;)
+        with zipfile.ZipFile(d1_path, &#x27;w&#x27;) as zf:
+            zf.writestr(&#x27;D1.txt&#x27;, &#x27;Mock D1 data synced with FPDS&#x27;)
+        logger.info(f&quot;D1 generated: {d1_path}&quot;)
+        return True
+
+    def is_fpds_updated(self) -&gt; bool:
+        &quot;&quot;&quot;Check if FPDS data has updates.&quot;&quot;&quot;
+        last_load = getattr(self, &#x27;_last_fpds_load&#x27;, datetime.min)
+        return (datetime.now() - last_load).days &lt; 1  # Daily check
+
+    def update_sql_for_clarity(self, sql_code: str) -&gt; str:
+        &quot;&quot;&quot;Update SQL codes for clarity (mock).&quot;&quot;&quot;
+        # Add comments and format
+        updated_sql = f&quot;-- Updated for clarity\n{sql_code}&quot;
+        logger.info(&quot;SQL updated for clarity&quot;)
+        return updated_sql
+
+    def add_ppopcode_cases(self, record: Dict) -&gt; Dict:
+        &quot;&quot;&quot;Add 00***** and 00FORGN PPoPCode cases to derivation logic.&quot;&quot;&quot;
+        ppop_code = record.get(&#x27;PPoPCode&#x27;, &#x27;&#x27;)
+        if re.match(r&#x27;^00\*+\*+\*+\*+\*+$&#x27;, ppop_code) or ppop_code == &#x27;00FORGN&#x27;:
+            record[&#x27;derived_ppop&#x27;] = &#x27;Foreign or Special&#x27;
+        return record
+
+    def derive_funding_agency_code(self, record: Dict) -&gt; Dict:
+        &quot;&quot;&quot;Derive FundingAgencyCode for data quality.&quot;&quot;&quot;
+        agency_code = record.get(&#x27;AgencyCode&#x27;, &#x27;&#x27;)
+        if agency_code.startswith(&#x27;00&#x27;):
+            record[&#x27;FundingAgencyCode&#x27;] = f&quot;Derived_{agency_code}&quot;
+        self.derived_fields[record[&#x27;id&#x27;]] = record[&#x27;FundingAgencyCode&#x27;]
+        logger.info(f&quot;Derived FundingAgencyCode: {record[&#x27;FundingAgencyCode&#x27;]}&quot;)
+        return record
+
+    def map_federal_action_obligation_to_atom(self, obligation: float) -&gt; Dict:
+        &quot;&quot;&quot;Map FederalActionObligation to Atom Feed.&quot;&quot;&quot;
+        atom_entry = {
+            &quot;obligation&quot;: obligation,
+            &quot;updated&quot;: datetime.now().isoformat(),
+            &quot;type&quot;: &quot;financial-assistance&quot;
+        }
+        logger.info(f&quot;Mapped obligation {obligation} to Atom&quot;)
+        return atom_entry
+
+    def validate_ppop_zip4(self, zip_code: str) -&gt; bool:
+        &quot;&quot;&quot;PPoPZIP+4 validation same as Legal Entity ZIP.&quot;&quot;&quot;
+        pattern = r&#x27;^\d{5}(-\d{4})?$&#x27;
+        is_valid = bool(re.match(pattern, zip_code))
+        if not is_valid:
+            logger.warning(f&quot;Invalid ZIP: {zip_code}&quot;)
+        return is_valid
+
+    # Cluster (5,): UI edits (simulated), logging, access files, grant records, content mockups, tracking issues
+    def edit_landing_pages_round2(self, page_type: str) -&gt; str:
+        &quot;&quot;&quot;Round 2 edits for DABS/FABS landing, Homepage, Help pages.&quot;&quot;&quot;
+        edits = {
+            &quot;DABS_FABS&quot;: &quot;Updated navigation and headers for round 2&quot;,
+            &quot;Homepage&quot;: &quot;Leadership approval pending round 2&quot;,
+            &quot;Help&quot;: &quot;Round 3 edits: Added FAQs and search&quot;
+        }
+        summary = edits.get(page_type, &quot;No edits&quot;)
+        logger.info(f&quot;Page edits for {page_type}: {summary}&quot;)
+        return summary
+
+    def improve_logging_for_submissions(self, submission_id: int, event: str):
+        &quot;&quot;&quot;Better logging for troubleshooting submissions.&quot;&quot;&quot;
+        logger.info(f&quot;Submission {submission_id}: {event} - Timestamp: {datetime.now()}&quot;)
+
+    def access_published_fabs_files(self, agency: str) -&gt; List[str]:
+        &quot;&quot;&quot;Access published FABS files.&quot;&quot;&quot;
+        files = [f&quot;{agency}_fabs_{i}.txt&quot; for i in range(1, 4)]
+        logger.info(f&quot;Accessed FABS files for {agency}&quot;)
+        return files
+
+    def ensure_only_grant_records_sent(self, records: List[Dict]) -&gt; List[Dict]:
+        &quot;&quot;&quot;USAspending only sends grant records.&quot;&quot;&quot;
+        grants = [r for r in records if r.get(&#x27;type&#x27;) == &#x27;grant&#x27;]
+        logger.info(f&quot;Filtered to {len(grants)} grant records&quot;)
+        return grants
+
+    def create_content_mockups(self) -&gt; Dict:
+        &quot;&quot;&quot;Create content mockups for efficient submission.&quot;&quot;&quot;
+        mockup = {
+            &quot;sections&quot;: [&quot;Upload&quot;, &quot;Validate&quot;, &quot;Publish&quot;],
+            &quot;guides&quot;: &quot;Step-by-step for FABS submission&quot;
+        }
+        logger.info(&quot;Content mockups created&quot;)
+        return mockup
+
+    def track_tech_thursday_issues(self, issues: List[str]) -&gt; Dict:
+        &quot;&quot;&quot;Track issues from Tech Thursday for testing.&quot;&quot;&quot;
+        tracked = {issue: &quot;To Test/Fix&quot; for issue in issues}
+        logger.info(f&quot;Tracked {len(issues)} issues&quot;)
+        return tracked
+
+    def create_user_testing_summary(self, sme_feedback: Dict) -&gt; Dict:
+        &quot;&quot;&quot;User testing summary from UI SME.&quot;&quot;&quot;
+        summary = {
+            &quot;improvements&quot;: list(sme_feedback.values()),
+            &quot;timeline&quot;: &quot;Q1 2024&quot;
+        }
+        logger.info(&quot;User testing summary created&quot;)
+        return summary
+
+    def begin_user_testing(self, requests: List[str]) -&gt; bool:
+        &quot;&quot;&quot;Begin user testing for UI improvements.&quot;&quot;&quot;
+        logger.info(f&quot;Starting user testing for: {requests}&quot;)
+        return True
+
+    def schedule_user_testing(self, date: datetime) -&gt; str:
+        &quot;&quot;&quot;Schedule user testing.&quot;&quot;&quot;
+        notice = f&quot;User testing scheduled for {date}. Buy-in confirmed.&quot;
+        logger.info(notice)
+        return notice
+
+    def design_ui_schedule(self, sme_schedule: Dict) -&gt; Dict:
+        &quot;&quot;&quot;Design schedule from UI SME.&quot;&quot;&quot;
+        timeline = {k: v for k, v in sme_schedule.items()}
+        logger.info(&quot;UI schedule designed&quot;)
+        return timeline
+
+    def design_ui_audit(self, sme_audit: Dict) -&gt; Dict:
+        &quot;&quot;&quot;Design audit from UI SME.&quot;&quot;&quot;
+        scope = {k: &quot;Scope Defined&quot; for k in sme_audit}
+        logger.info(&quot;UI audit designed&quot;)
+        return scope
+
+    def reset_environment_staging_max(self):
+        &quot;&quot;&quot;Reset environment to Staging MAX permissions.&quot;&quot;&quot;
+        logger.info(&quot;Environment reset: Only Staging MAX permissions. FABS testers access revoked.&quot;)
+        # Simulate permission reset
+
+    def index_domain_models(self) -&gt; bool:
+        &quot;&quot;&quot;Index domain models for validation speed.&quot;&quot;&quot;
+        # Simulate indexing
+        logger.info(&quot;Domain models indexed for faster validation&quot;)
+        return True
+
+    def update_header_info_with_datetime(self, box_data: Dict) -&gt; Dict:
+        &quot;&quot;&quot;Header info shows updated date AND time.&quot;&quot;&quot;
+        box_data[&#x27;updated&#x27;] = datetime.now().strftime(&quot;%Y-%m-%d %H:%M:%S&quot;)
+        logger.info(f&quot;Header updated: {box_data[&#x27;updated&#x27;]}&quot;)
+        return box_data
+
+    def enforce_zero_padded_fields(self, fields: Dict) -&gt; Dict:
+        &quot;&quot;&quot;Only zero-padded fields.&quot;&quot;&quot;
+        for key, value in fields.items():
+            if isinstance(value, str) and re.match(r&#x27;^\d+$&#x27;, value):
+                fields[key] = value.zfill(10)  # Example padding
+        logger.info(&quot;Fields zero-padded&quot;)
+        return fields
+
+    def get_updated_error_codes(self, error_type: str) -&gt; str:
+        &quot;&quot;&quot;Updated error codes with logic info.&quot;&quot;&quot;
+        code = self.error_codes.get(error_type, &#x27;Unknown Error&#x27;)
+        logger.info(f&quot;Error code: {code}&quot;)
+        return code
+
+    def quick_access_broker_data(self, query: str) -&gt; Dict:
+        &quot;&quot;&quot;Quick access to Broker app data for investigation.&quot;&quot;&quot;
+        data = {&#x27;query&#x27;: query, &#x27;results&#x27;: self.fpds_data}
+        logger.info(f&quot;Accessed broker data for: {query}&quot;)
+        return data
+
+    def read_only_dabs_access_for_fabs(self, user: str) -&gt; bool:
+        &quot;&quot;&quot;Read-only access to DABS for FABS users.&quot;&quot;&quot;
+        logger.info(f&quot;{user} granted read-only DABS access&quot;)
+        return True
+
+    def create_landing_page_for_fabs_dabs(self) -&gt; str:
+        &quot;&quot;&quot;Landing page to navigate FABS or DABS.&quot;&quot;&quot;
+        page = {
+            &quot;title&quot;: &quot;FABS/DABS Landing&quot;,
+            &quot;nav&quot;: [&quot;FABS Pages&quot;, &quot;DABS Pages&quot;]
+        }
+        logger.info(&quot;Landing page created&quot;)
+        return json.dumps(page)
+
+    # Cluster (2,): FABS submission updates, GTAS data, sample file, publish button, historical loaders
+    def update_fabs_submission_on_publish_change(self, submission_id: int, new_status: PublishStatus):
+        &quot;&quot;&quot;Update FABS submission when publishStatus changes.&quot;&quot;&quot;
+        submission = self.session.query(SubmissionTable).get(submission_id)
+        if submission:
+            submission.publish_status = new_status.value
+            submission.updated_at = datetime.now()
+            self.session.commit()
+            logger.info(f&quot;Submission {submission_id} status changed to {new_status.value}&quot;)
+
+    def add_gtas_window_data(self, start_date: datetime, end_date: datetime):
+        &quot;&quot;&quot;Add GTAS window data to DB for lockdown.&quot;&quot;&quot;
+        gtas = {
+            &#x27;window_start&#x27;: start_date,
+            &#x27;window_end&#x27;: end_date,
+            &#x27;lockdown&#x27;: True
+        }
+        # Simulate DB insert
+        logger.info(f&quot;GTAS window added: {gtas}&quot;)
+
+    def update_fabs_sample_file(self) -&gt; str:
+        &quot;&quot;&quot;Update FABS sample file to remove FundingAgencyCode header.&quot;&quot;&quot;
+        sample_content = &quot;Header without FundingAgencyCode\nRow1: data\n&quot;
+        path = &#x27;fabs_sample.txt&#x27;
+        with open(path, &#x27;w&#x27;) as f:
+            f.write(sample_content)
+        logger.info(&quot;FABS sample file updated&quot;)
+        return path
+
+    def deactivate_publish_button_during_derivation(self, submission_id: int) -&gt; bool:
+        &quot;&quot;&quot;Deactivate publish button during derivations.&quot;&quot;&quot;
+        # Simulate UI state
+        logger.info(f&quot;Publish button deactivated for {submission_id} during derivation&quot;)
+        return True
+
+    def derive_fields_in_historical_fabs_loader(self, record: Dict) -&gt; Dict:
+        &quot;&quot;&quot;Historical FABS loader derives fields including agency codes.&quot;&quot;&quot;
+        record = self.derive_funding_agency_code(record)
+        record[&#x27;frec_derived&#x27;] = True
+        self.historical_fabs.append(record)
+        logger.info(f&quot;Historical FABS derived: {record[&#x27;id&#x27;]}&quot;)
+        return record
+
+    def load_historical_fabs_with_frec(self, data: List[Dict]):
+        &quot;&quot;&quot;Load historical FABS with FREC derivations.&quot;&quot;&quot;
+        for record in data:
+            self.derive_fields_in_historical_fabs_loader(record)
+        logger.info(f&quot;Loaded {len(data)} historical FABS with FREC&quot;)
+
+    def update_fabs_frontend_urls(self, old_url: str) -&gt; str:
+        &quot;&quot;&quot;Update frontend URLs to reflect pages accurately.&quot;&quot;&quot;
+        new_url = old_url.replace(&#x27;old&#x27;, &#x27;fabs_specific&#x27;)
+        logger.info(f&quot;URL updated: {new_url}&quot;)
+        return new_url
+
+    def load_historical_fpds_data(self):
+        &quot;&quot;&quot;Load historical FPDS from extracted and feed data.&quot;&quot;&quot;
+        combined = self.fpds_data[&#x27;historical&#x27;] + self.fpds_data[&#x27;feed&#x27;]
+        self.fpds_data[&#x27;full_historical&#x27;] = combined
+        self._last_fpds_load = datetime.now()
+        logger.info(f&quot;Loaded {len(combined)} historical FPDS records since 2007&quot;)
+
+    def provide_fabs_groups_frec_paradigm(self) -&gt; List[Dict]:
+        &quot;&quot;&quot;Provide FABS groups under FREC paradigm.&quot;&quot;&quot;
+        groups = [{&#x27;group&#x27;: &#x27;FREC_Test&#x27;, &#x27;records&#x27;: self.historical_fabs[:1]}]
+        logger.info(&quot;FABS groups provided under FREC&quot;)
+        return groups
+
+    def ensure_historical_data_columns(self, data: List[Dict]) -&gt; List[Dict]:
+        &quot;&quot;&quot;Ensure historical data includes all necessary columns.&quot;&quot;&quot;
+        required_cols = [&#x27;duns&#x27;, &#x27;cfda&#x27;, &#x27;amount&#x27;]
+        for record in data:
+            for col in required_cols:
+                if col not in record:
+                    record[col] = &#x27;default&#x27;
+        logger.info(&quot;Historical data columns ensured&quot;)
+        return data
+
+    def access_additional_fpds_fields(self, fields: List[str]) -&gt; Dict:
+        &quot;&quot;&quot;Access two additional fields from FPDS pull.&quot;&quot;&quot;
+        extra = {field: f&quot;FPDS_{field}&quot; for field in fields[:2]}
+        logger.info(f&quot;Accessed additional FPDS fields: {extra}&quot;)
+        return extra
+
+    def add_helpful_info_to_submission_dashboard(self, submission_id: int) -&gt; Dict:
+        &quot;&quot;&quot;Additional helpful info in submission dashboard.&quot;&quot;&quot;
+        info = {
+            &#x27;submission_id&#x27;: submission_id,
+            &#x27;ig_requests&#x27;: 0,
+            &#x27;tips&#x27;: &#x27;Check validations before publish&#x27;
+        }
+        logger.info(f&quot;Dashboard info added for {submission_id}&quot;)
+        return info
+
+    def download_uploaded_fabs_file(self, upload_path: str) -&gt; str:
+        &quot;&quot;&quot;Download uploaded FABS file.&quot;&quot;&quot;
+        download_path = upload_path.replace(&#x27;upload&#x27;, &#x27;download&#x27;)
+        # Simulate copy
+        os.system(f&#x27;cp {upload_path} {download_path}&#x27;)  # Mock
+        logger.info(f&quot;Downloaded: {download_path}&quot;)
+        return download_path
+
+    def determine_best_way_load_historical_fpds(self):
+        &quot;&quot;&quot;Determine best way to load historical FPDS since 2007.&quot;&quot;&quot;
+        method = &quot;Batch load with derivations&quot;
+        self.load_historical_fpds_data()
+        logger.info(f&quot;Best method: {method}&quot;)
+
+    def update_fabs_language(self, page_content: str) -&gt; str:
+        &quot;&quot;&quot;Appropriate language on FABS pages.&quot;&quot;&quot;
+        updated = page_content.replace(&#x27;confusing term&#x27;, &#x27;clear term&#x27;)
+        logger.info(&quot;FABS language updated&quot;)
+        return updated
+
+    def hide_dabs_banners_on_fabs(self, user_type: str) -&gt; bool:
+        &quot;&quot;&quot;No DABS banners on FABS and vice versa.&quot;&quot;&quot;
+        logger.info(f&quot;Banners hidden for {user_type}&quot;)
+        return True
+
+    def show_submission_periods(self, agency: str) -&gt; Dict:
+        &quot;&quot;&quot;Know when submission periods start/end.&quot;&quot;&quot;
+        periods = {
+            &#x27;start&#x27;: datetime.now(),
+            &#x27;end&#x27;: datetime.now() + timedelta(days=30)
+        }
+        logger.info(f&quot;Submission periods for {agency}: {periods}&quot;)
+        return periods
+
+    # Cluster (0,): Upload/validate errors, update validation rules, flexfields warnings, CFDA clarity
+    def upload_and_validate_error_message(self, file_path: str) -&gt; str:
+        &quot;&quot;&quot;Accurate error message for upload and validate.&quot;&quot;&quot;
+        if not file_path.endswith(&#x27;.fabs&#x27;):
+            return self.error_codes[&#x27;FILE_EXTENSION_WRONG&#x27;]
+        return &quot;Validation passed&quot;
+
+    def update_broker_validation_rule_table(self, rule_updates: Dict):
+        &quot;&quot;&quot;Update validation rule table for DB-2213.&quot;&quot;&quot;
+        for rule, update in rule_updates.items():
+            self.error_codes[rule] = update
+        logger.info(&quot;Validation rules updated&quot;)
+
+    def include_flexfields_in_error_files(self, errors: List[str], flexfields: Dict):
+        &quot;&quot;&quot;Flexfields appear in warning/error files if only missing required.&quot;&quot;&quot;
+        if &#x27;missing_required&#x27; in errors:
+            errors.append(f&quot;Flexfields affected: {list(flexfields.keys())}&quot;)
+        logger.warning(f&quot;Errors with flexfields: {errors}&quot;)
+        return errors
+
+    def clarify_cfda_error_triggers(self, record: Dict) -&gt; str:
+        &quot;&quot;&quot;Clarify what triggers CFDA error.&quot;&quot;&quot;
+        trigger = &quot;Mismatch between CFDA in record and SAM&quot;
+        if record.get(&#x27;cfda&#x27;) != self.sam_data.get(record.get(&#x27;duns&#x27;), {}).get(&#x27;cfda&#x27;, &#x27;&#x27;):
+            logger.warning(self.error_codes[&#x27;CFDA_ERROR&#x27;] + f&quot; Trigger: {trigger}&quot;)
+        return trigger
+
+    def update_broker_resources_for_launch(self, version: str = &quot;v1.1&quot;):
+        &quot;&quot;&quot;Update Broker resources, validations, P&amp;P for FABS and DAIMS v1.1.&quot;&quot;&quot;
+        updates = {
+            &quot;resources&quot;: &quot;Updated for v1.1&quot;,
+            &quot;validations&quot;: &quot;Schema aligned&quot;,
+            &quot;pp&quot;: &quot;Policies refreshed&quot;
+        }
+        logger.info(f&quot;Broker updated for {version} launch: {updates}&quot;)
+        return updates
+
+    def validate_duns_for_action_types(self, duns: str, action_type: str, action_date: datetime) -&gt; bool:
+        &quot;&quot;&quot;DUNS validations for B,C,D actions, SAM registered even expired, date checks.&quot;&quot;&quot;
+        if action_type not in [at.value for at in ActionType]:
+            return False
+        sam_entry = self.sam_data.get(duns, {})
+        reg_date = sam_entry.get(&#x27;registration_date&#x27;, datetime.min)
+        exp_date = sam_entry.get(&#x27;expiration_date&#x27;, datetime.max)
+        if action_date &lt; reg_date or action_date &gt; exp_date:
+            if sam_entry.get(&#x27;status&#x27;) == &#x27;active&#x27; or action_date &gt; reg_date:
+                logger.info(f&quot;DUNS {duns} accepted despite date&quot;)
+                return True
+        return bool(sam_entry)
+
+    def helpful_file_level_error(self, file_path: str) -&gt; str:
+        &quot;&quot;&quot;Helpful file-level error for wrong extension.&quot;&quot;&quot;
+        if not file_path.lower().endswith((&#x27;.fabs&#x27;, &#x27;.txt&#x27;)):
+            return &quot;File extension must be .fabs or .txt. Please check and re-upload.&quot;
+        return &quot;File accepted&quot;
+
+    def prevent_duplicate_transactions_publish(self, submission_id: int) -&gt; bool:
+        &quot;&quot;&quot;Prevent duplicate publishes, handle validation to publish gap.&quot;&quot;&quot;
+        existing = self.session.query(SubmissionTable).filter_by(id=submission_id, publish_status=PublishStatus.PUBLISHED.value).first()
+        if existing:
+            logger.warning(self.error_codes[&#x27;DUPLICATE_PUBLISH&#x27;])
+            return False
+        return True
+
+    # Cluster (1,): D Files management, access raw files, flexfields performance, prevent double publish
+    def manage_d_files_generation_cache(self, request_id: str) -&gt; str:
+        &quot;&quot;&quot;Manage and cache D Files generation requests.&quot;&quot;&quot;
+        if request_id in self.derived_fields:
+            logger.info(&quot;Returning cached D File&quot;)
+            return &quot;cached_d_file.zip&quot;
+        d_file = self.generate_d_file()
+        # Cache it
+        self.derived_fields[request_id] = d_file
+        return d_file
+
+    def generate_d_file(self) -&gt; str:
+        &quot;&quot;&quot;Generate D File from FABS and FPDS.&quot;&quot;&quot;
+        content = &quot;D File: Combined FABS + FPDS data&quot;
+        path = &#x27;d_file.zip&#x27;
+        with zipfile.ZipFile(path, &#x27;w&#x27;) as zf:
+            zf.writestr(&#x27;D.txt&#x27;, content)
+        return path
+
+    def access_raw_agency_published_files_usaspending(self, agency: str) -&gt; List[str]:
+        &quot;&quot;&quot;Access raw published FABS files via USAspending.&quot;&quot;&quot;
+        files = [f&quot;{agency}_published_{i}.fabs&quot; for i in range(1, 3)]
+        logger.info(f&quot;Raw files accessed for {agency}&quot;)
+        return files
+
+    def handle_large_flexfields_no_impact(self, flexfields: Dict) -&gt; bool:
+        &quot;&quot;&quot;Include large number of flexfields without performance impact.&quot;&quot;&quot;
+        # Simulate efficient processing
+        processed = {k: v[:100] for k, v in flexfields.items()}  # Truncate for demo
+        logger.info(f&quot;Processed {len(flexfields)} flexfields efficiently&quot;)
+        return True
+
+    def prevent_double_publishing_after_refresh(self, submission_id: int) -&gt; bool:
+        &quot;&quot;&quot;Prevent double publishing after refresh.&quot;&quot;&quot;
+        return self.prevent_duplicate_transactions_publish(submission_id)
+
+    def ensure_daily_financial_assistance_updates(self) -&gt; bool:
+        &quot;&quot;&quot;See updated financial assistance data daily.&quot;&quot;&quot;
+        self.load_historical_fpds_data()  # Simulate daily update
+        logger.info(&quot;Daily FA updates ensured&quot;)
+        return True
+
+    def prevent_correct_delete_nonexistent_records(self, record_id: int) -&gt; bool:
+        &quot;&quot;&quot;Ensure attempts on non-existent records don&#x27;t create new data.&quot;&quot;&quot;
+        if record_id not in [r[&#x27;id&#x27;] for r in self.historical_fabs]:
+            logger.warning(f&quot;Non-existent record {record_id} - no action taken&quot;)
+            return False
+        return True
+
+    def accurate_ppopcode_ppocongressionaldistrict(self, record: Dict) -&gt; Dict:
+        &quot;&quot;&quot;Accurate data for PPoPCode and PPoPCongressionalDistrict.&quot;&quot;&quot;
+        record[&#x27;PPoPCode_accurate&#x27;] = record.get(&#x27;PPoPCode&#x27;, &#x27;derived&#x27;)
+        record[&#x27;PPoPCongressionalDistrict_accurate&#x27;] = &#x27;01&#x27;  # Mock derivation
+        logger.info(&quot;PPoP fields accurate&quot;)
+        return record
+
+    def hide_nasa_grants_as_contracts(self, records: List[Dict]) -&gt; List[Dict]:
+        &quot;&quot;&quot;Don&#x27;t show NASA grants as contracts.&quot;&quot;&quot;
+        filtered = [r for r in records if not (r.get(&#x27;agency&#x27;) == &#x27;NASA&#x27; and r.get(&#x27;type&#x27;) == &#x27;grant&#x27;)]
+        logger.info(f&quot;Filtered NASA grants: {len(filtered)} records&quot;)
+        return filtered
+
+    def determine_d_files_generation_from_fabs_fpds(self) -&gt; str:
+        &quot;&quot;&quot;How agencies generate/validate D Files.&quot;&quot;&quot;
+        method = &quot;Agencies validate via Broker API, generate from combined data&quot;
+        logger.info(method)
+        return method
+
+    def generate_validate_d_files_user(self, fabs_data: List[Dict], fpds_data: List[Dict]) -&gt; bool:
+        &quot;&quot;&quot;User generate/validate D Files.&quot;&quot;&quot;
+        combined = fabs_data + fpds_data
+        validation = all(self.validate_record(r) for r in combined)
+        logger.info(f&quot;D Files generated and validated: {validation}&quot;)
+        return validation
+
+    def access_test_features_other_envs(self, env: str, feature: str) -&gt; bool:
+        &quot;&quot;&quot;Tester access to nonProd features in any env.&quot;&quot;&quot;
+        if env != &#x27;prod&#x27;:
+            logger.info(f&quot;Access granted to {feature} in {env}&quot;)
+            return True
+        return False
+
+    def accurate_fabs_submission_errors(self, errors: List[str]) -&gt; List[str]:
+        &quot;&quot;&quot;Submission errors accurately represent FABS errors.&quot;&quot;&quot;
+        fabs_specific = [e for e in errors if &#x27;FABS&#x27; in e]
+        logger.warning(f&quot;FABS errors: {fabs_specific}&quot;)
+        return fabs_specific
+
+    def show_submission_creator(self, submission: Dict) -&gt; str:
+        &quot;&quot;&quot;Accurately see who created submission.&quot;&quot;&quot;
+        creator = submission.get(&#x27;creator&#x27;, &#x27;Unknown&#x27;)
+        logger.info(f&quot;Creator: {creator}&quot;)
+        return creator
+
+    def robust_test_file_for_derivations(self, test_file: str) -&gt; bool:
+        &quot;&quot;&quot;Robust test file plus check for derivations.&quot;&quot;&quot;
+        # Simulate test
+        derivations_ok = True
+        self.improve_logging_for_submissions(1, &quot;Derivation test passed&quot;)
+        logger.info(&quot;Derivations tested robustly&quot;)
+        return derivations_ok
+
+    def submit_individual_recipients_no_duns_error(self, records: List[Dict]) -&gt; List[Dict]:
+        &quot;&quot;&quot;Submit without DUNS error for individuals.&quot;&quot;&quot;
+        for record in records:
+            if record.get(&#x27;recipient_type&#x27;) == &#x27;individual&#x27;:
+                record[&#x27;duns_error&#x27;] = False
+        logger.info(&quot;Individual recipients submitted no DUNS error&quot;)
+        return records
+
+    def show_rows_to_publish_before_decision(self, rows: int) -&gt; int:
+        &quot;&quot;&quot;Info on how many rows to publish.&quot;&quot;&quot;
+        info = f&quot;Will publish {rows} rows&quot;
+        logger.info(info)
+        return rows
+
+    def submit_citywide_ppopzip(self, zip_code: str = &#x27;00000&#x27;) -&gt; bool:
+        &quot;&quot;&quot;Submit citywide as PPoPZIP and pass.&quot;&quot;&quot;
+        return self.validate_ppop_zip4(zip_code)
+
+    def reasonable_validation_time(self, records: int) -&gt; float:
+        &quot;&quot;&quot;Validations run in reasonable time.&quot;&quot;&quot;
+        time_taken = records * 0.01  # Simulated time
+        logger.info(f&quot;Validation time: {time_taken}s for {records} records&quot;)
+        return time_taken
+
+    # Cluster (3,): FABS updates, deleted FSRS, validation rules zero/blank, deploy, SAM complete
+    def receive_fabs_record_updates(self, updates: List[Dict]):
+        &quot;&quot;&quot;Receive updates to FABS records.&quot;&quot;&quot;
+        for update in updates:
+            # Simulate update
+            logger.info(f&quot;Updated FABS record: {update[&#x27;id&#x27;]}&quot;)
+
+    def exclude_deleted_fsrs_records(self, submissions: List[Dict]) -&gt; List[Dict]:
+        &quot;&quot;&quot;Ensure deleted FSRS records not included.&quot;&quot;&quot;
+        filtered = [s for s in submissions if not s.get(&#x27;fsrs_deleted&#x27;, False)]
+        logger.info(f&quot;Excluded {len(submissions) - len(filtered)} FSRS records&quot;)
+        return filtered
+
+    def accept_zero_blank_loans_nonloans(self, record: Dict, is_loan: bool) -&gt; bool:
+        &quot;&quot;&quot;Validation rules accept zero/blank for loan/non-loan.&quot;&quot;&quot;
+        amount = record.get(&#x27;amount&#x27;, 0)
+        if is_loan or not is_loan:
+            if amount in (0, &#x27;&#x27;, None):
+                return True
+        return bool(amount &gt; 0)
+
+    def deploy_fabs_to_production(self) -&gt; bool:
+        &quot;&quot;&quot;Deploy FABS to production.&quot;&quot;&quot;
+        logger.info(&quot;FABS deployed to production&quot;)
+        return True
+
+    def ensure_sam_data_complete(self, sam_pull: Dict) -&gt; Dict:
+        &quot;&quot;&quot;Confident SAM data is complete.&quot;&quot;&quot;
+        if len(sam_pull) &gt; 0:
+            sam_pull[&#x27;complete&#x27;] = True
+        logger.info(&quot;SAM data completeness ensured&quot;)
+        return sam_pull
+
+    def derive_all_data_elements(self, record: Dict) -&gt; Dict:
+        &quot;&quot;&quot;All derived data elements properly derived.&quot;&quot;&quot;
+        record = self.add_ppopcode_cases(record)
+        record = self.derive_funding_agency_code(record)
+        logger.info(&quot;All derivations complete&quot;)
+        return record
+
+    def max_length_legalentityaddressline3(self, address: str, max_len: int = 55) -&gt; str:
+        &quot;&quot;&quot;Max length for LegalEntityAddressLine3 matching v1.1.&quot;&quot;&quot;
+        if len(address) &gt; max_len:
+            address = address[:max_len]
+        logger.info(&quot;Address length adjusted&quot;)
+        return address
+
+    def use_schema_v11_headers(self, file_headers: List[str]) -&gt; List[str]:
+        &quot;&quot;&quot;Use schema v1.1 headers in FABS file.&quot;&quot;&quot;
+        v11_headers = [&#x27;UEI&#x27;, &#x27;AwardingAgencyCode&#x27;, &#x27;FundingAgencyCode&#x27;]  # Example
+        updated = [h if h in v11_headers else f&quot;v1.1_{h}&quot; for h in file_headers]
+        logger.info(&quot;Headers updated to v1.1&quot;)
+        return updated
+
+    def daily_fpds_up_to_date(self) -&gt; bool:
+        &quot;&quot;&quot;FPDS data up-to-date daily.&quot;&quot;&quot;
+        self.load_historical_fpds_data()
+        logger.info(&quot;FPDS updated daily&quot;)
+        return True
+
+    def load_all_historical_fa_for_go_live(self):
+        &quot;&quot;&quot;Load all historical Financial Assistance for FABS go-live.&quot;&quot;&quot;
+        self.load_historical_fabs_with_frec(self.historical_fabs * 10)  # Simulate volume
+        logger.info(&quot;All historical FA loaded for go-live&quot;)
+
+    def load_historical_fpds_for_agency(self, agency: str):
+        &quot;&quot;&quot;Load historical FPDS.&quot;&quot;&quot;
+        relevant = [r for r in self.fpds_data[&#x27;full_historical&#x27;] if r[&#x27;agency_code&#x27;].startswith(agency)]
+        logger.info(f&quot;Loaded historical FPDS for {agency}: {len(relevant)}&quot;)
+
+    def get_file_f_correct_format(self) -&gt; str:
+        &quot;&quot;&quot;Get File F in correct format.&quot;&quot;&quot;
+        content = &quot;File F: Correctly formatted per schema&quot;
+        path = &#x27;file_f.txt&#x27;
+        with open(path, &#x27;w&#x27;) as f:
+            f.write(content)
+        return path
+
+    def better_understand_file_level_errors(self, errors: List[str]) -&gt; List[str]:
+        &quot;&quot;&quot;Better file-level errors.&quot;&quot;&quot;
+        detailed = [f&quot;File Error: {e} - See line X&quot; for e in errors]
+        logger.warning(&quot;Detailed file errors&quot;)
+        return detailed
+
+    def submit_data_with_quotes(self, data: str) -&gt; str:
+        &quot;&quot;&quot;Submit elements surrounded by quotes to preserve zeroes.&quot;&quot;&quot;
+        quoted = f&#x27;&quot;{data}&quot;&#x27;
+        logger.info(&quot;Data submitted with quotes&quot;)
+        return quoted
+
+    # Combined Clusters
+    # Cluster (2, 5): Derive office names from codes
+    def derive_office_names_from_codes(self, code: str) -&gt; str:
+        &quot;&quot;&quot;See office names derived from codes.&quot;&quot;&quot;
+        names = {&#x27;00TEST&#x27;: &#x27;Test Office&#x27;, &#x27;00FORGN&#x27;: &#x27;Foreign Office&#x27;}
+        name = names.get(code, &#x27;Unknown Office&#x27;)
+        logger.info(f&quot;Derived office: {name} from {code}&quot;)
+        return name
+
+    # Cluster (2, 4, 5): Link SAMPLE FILE correctly
+    def link_sample_file_correctly(self) -&gt; str:
+        &quot;&quot;&quot;Link SAMPLE FILE to correct file on dialog.&quot;&quot;&quot;
+        correct_file = self.update_fabs_sample_file()
+        logger.info(f&quot;SAMPLE FILE linked to: {correct_file}&quot;)
+        return correct_file
+
+    # Cluster (3, 5): Leave off last 4 ZIP digits no error
+    def validate_zip_without_last4(self, zip5: str) -&gt; bool:
+        &quot;&quot;&quot;Leave off last 4 digits without error.&quot;&quot;&quot;
+        pattern = r&#x27;^\d{5}$&#x27;
+        valid = bool(re.match(pattern, zip5))
+        if valid:
+            logger.info(f&quot;ZIP {zip5} accepted without +4&quot;)
+        return valid
+
+    # Cluster (1, 2): Correct status labels on dashboard
+    def correct_status_labels_dashboard(self, submission: Dict) -&gt; str:
+        &quot;&quot;&quot;Correct status labels on Submission Dashboard.&quot;&quot;&quot;
+        label = submission.get(&#x27;status&#x27;, &#x27;Unknown&#x27;).title()
+        logger.info(f&quot;Status label: {label}&quot;)
+        return label
+
+    # Utility validation
+    def validate_record(self, record: Dict) -&gt; bool:
+        &quot;&quot;&quot;Generic record validation.&quot;&quot;&quot;
+        duns_valid = self.validate_duns_for_action_types(record.get(&#x27;duns&#x27;, &#x27;&#x27;), record.get(&#x27;action_type&#x27;, &#x27;&#x27;), record.get(&#x27;action_date&#x27;, datetime.now()))
+        zip_valid = self.validate_ppop_zip4(record.get(&#x27;zip&#x27;, &#x27;&#x27;))
+        return duns_valid and zip_valid
+
+    def create_submission(self, agency: str, file_path: str) -&gt; int:
+        &quot;&quot;&quot;Create a new submission.&quot;&quot;&quot;
+        new_sub = SubmissionTable(agency=agency, file_path=file_path, status=&#x27;pending&#x27;)
+        self.session.add(new_sub)
+        self.session.commit()
+        return new_sub.id
+
+# Example usage - Fully functional demo
+if __name__ == &quot;__main__&quot;:
+    broker = BrokerSystem()
+    
+    # Demo Cluster 4
+    sub_id = broker.create_submission(&#x27;TEST&#x27;, &#x27;test.fabs&#x27;)
+    broker.process_deletions_2017(sub_id)
+    print(broker.redesign_resources_page())
+    broker.sync_d1_with_fpds(&#x27;test.fabs&#x27;)
+    record4 = {&#x27;id&#x27;: 1, &#x27;PPoPCode&#x27;: &#x27;00*****&#x27;, &#x27;AgencyCode&#x27;: &#x27;00TEST&#x27;}
+    record4 = broker.add_ppopcode_cases(record4)
+    record4 = broker.derive_funding_agency_code(record4)
+    
+    # Demo Cluster 5
+    print(broker.edit_landing_pages_round2(&#x27;Homepage&#x27;))
+    broker.improve_logging_for_submissions(sub_id, &#x27;Upload&#x27;)
+    print(broker.access_published_fabs_files(&#x27;TEST&#x27;))
+    testing_results = {&#x27;AgencyA&#x27;: &#x27;Feedback&#x27;}
+    print(broker.report_user_testing_to_agencies(testing_results))
+    
+    # Demo Cluster 2
+    broker.update_fabs_submission_on_publish_change(sub_id, PublishStatus.PUBLISHED)
+    broker.load_historical_fpds_data()
+    broker.update_fabs_sample_file()
+    
+    # Demo Cluster 0
+    print(broker.upload_and_validate_error_message(&#x27;test.fabs&#x27;))
+    print(broker.helpful_file_level_error(&#x27;wrong.ext&#x27;))
+    
+    # Demo Cluster 1
+    print(broker.manage_d_files_generation_cache(&#x27;req1&#x27;))
+    broker.handle_large_flexfields_no_impact({&#x27;field1&#x27;: &#x27;long data&#x27; * 100})
+    
+    # Demo Cluster 3
+    broker.deploy_fabs_to_production()
+    broker.daily_fpds_up_to_date()
+    
+    # Combined
+    print(broker.derive_office_names_from_codes(&#x27;00TEST&#x27;))
+    print(broker.link_sample_file_correctly())
+    print(broker.validate_zip_without_last4(&#x27;12345&#x27;))
+    print(broker.correct_status_labels_dashboard({&#x27;status&#x27;: &#x27;pending&#x27;}))
+    
+    logger.info(&quot;Broker system demo complete&quot;)</code></pre>
+        </details>
+    </div>
+</body>
+</html>
+    

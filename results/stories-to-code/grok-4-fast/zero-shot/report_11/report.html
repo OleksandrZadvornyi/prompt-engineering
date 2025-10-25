@@ -1,0 +1,1112 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analysis Report: Run 11</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 24px;
+            background-color: #ffffff;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        h1, h2, h3 {
+            color: #111;
+            margin-top: 1.2em;
+            margin-bottom: 0.6em;
+        }
+        h1 {
+            font-size: 2em;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+        }
+        h2 {
+            font-size: 1.5em;
+            color: #555;
+        }
+        h3 {
+            font-size: 1.2em;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f7f7f7;
+            font-weight: 600;
+            width: 30%;
+        }
+        td {
+            background-color: #fff;
+        }
+        details {
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            margin-bottom: 10px;
+            background-color: #fff;
+        }
+        summary {
+            padding: 12px;
+            font-weight: 600;
+            cursor: pointer;
+            background-color: #f7f7f7;
+        }
+        summary:hover {
+            background-color: #eee;
+        }
+        pre {
+            background-color: #fdfdfd;
+            border-top: 1px solid #eee;
+            padding: 15px;
+            margin: 0;
+            overflow-x: auto;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            font-size: 0.9em;
+            line-height: 1.6;
+        }
+        code {
+            font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+        }
+        .credibility-score {
+            font-size: 1.8em;
+            font-weight: bold;
+            color: #005fdd;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Analysis Report #11</h1>
+        <h2>x-ai/grok-4-fast</h2>
+        <p><strong>Prompt Variant:</strong> zero-shot</p>
+
+        <h3>Total Credibility Score</h3>
+        <p class="credibility-score">32.85%</p>
+
+        
+    <h3>Key Metrics</h3>
+    <table>
+        <tr><th>Perplexity</th><td>1.1145</td></tr>
+<tr><th>Avg. Probability</th><td>0.8973</td></tr>
+<tr><th>Total Tokens</th><td>7487</td></tr>
+
+    </table>
+    
+        
+    <h3>Execution Metrics</h3>
+    <table>
+        <tr><th>Execution Success</th><td>False</td></tr>
+<tr><th>Execution Time Sec</th><td>2.8260</td></tr>
+<tr><th>Exception Type</th><td>sqlite3.OperationalError</td></tr>
+<tr><th>Exception Message</th><td>table fabs_submissions has no column named flexfields_json</td></tr>
+<tr><th>Runtime Output</th><td>2025-10-25 18:21:45,754 - INFO - Processed 0 deletions for 12-19-2017
+2025-10-25 18:21:45,760 - INFO - Updated validation rules for DB-2213
+2025-10-25 18:21:45,768 - INFO - GTAS window data added: 2025-10-01 to 2025-10-15
+Traceback (most recent call last):
+  File "/app/main.py", line 825, in <module>
+    load_historical_fabs_data()
+  File "/app/main.py", line 190, in load_historical_fabs_data
+    cursor.execute('''
+sqlite3.OperationalError: table fabs_submissions has no column named flexfields_json</td></tr>
+
+    </table>
+    
+        
+    <h3>Structural Metrics</h3>
+    <table>
+        <tr><th>Avg Cyclomatic Complexity</th><td>1.5474</td></tr>
+<tr><th>Ast Depth</th><td>12</td></tr>
+<tr><th>Avg Function Size Lines</th><td>7.0632</td></tr>
+<tr><th>Import Redundancy Ratio</th><td>0.0000</td></tr>
+
+    </table>
+    
+        
+    <h3>Semantic Metrics</h3>
+    <table>
+        <tr><th>Syntax Valid</th><td>True</td></tr>
+<tr><th>Flake8 Error Count</th><td>120</td></tr>
+<tr><th>Mypy Error Count</th><td>3</td></tr>
+
+    </table>
+    
+
+        <details>
+            <summary>View Full Prompt</summary>
+            <pre>Generate fully functional Python code that implements the following user stories. The code should realistically reflect the described functionality.
+
+﻿As a Data user, I want to have the 12-19-2017 deletions processed.
+As a UI designer, I want to redesign the Resources page, so that it matches the new Broker design styles.
+As a UI designer, I want to report to the Agencies about user testing, so that they are aware of their contributions to making Broker a better UX.
+As a UI designer, I want to move on to round 2 of DABS or FABS landing page edits, so that I can get approvals from leadership.
+As a UI designer, I want to move on to round 2 of Homepage edits, so that I can get approvals from leadership.
+As a UI designer, I want to move on to round 3 of the Help page edits, so that I can get approvals from leadership.
+As a Developer , I want to be able to log better, so that I can troubleshoot issues with particular submissions and functions.
+As a Developer, I want to add the updates on a FABS submission to be modified when the publishStatus changes, so that I know when the status of the submission has changed.
+As a DevOps engineer, I want New Relic to provide useful data across all applications.
+As a UI designer,  I want to move on to round 2 of the Help page edits, so that I can get approvals from leadership.
+As a UI designer, I want to move on to round 2 of Homepage edits, so that I can get approvals from leadership.
+As a Broker user, I want to Upload and Validate the error message to have accurate text.
+As a Broker user, I want the D1 file generation to be synced with the FPDS data load, so that I don&#x27;t have to regenerate a file if no data has been updated.
+As a Website user, I want to access published FABS files, so that I can see the new files as they come in.
+As an owner, I want to be sure that USAspending only send grant records to my system.
+As a Developer, I want to update the Broker validation rule table to account for the rule updates in DB-2213.
+As a Developer, I want to add the GTAS window data to the database, so that I can ensure the site is locked down during the GTAS submission period.
+As a Developer, I want D Files generation requests to be managed and cached, so that duplicate requests do not cause performance issues.
+As a user, I want to access the raw agency published files from FABS via USAspending.
+As an Agency user, I want to be able to include a large number of flexfields without performance impact.
+As a Broker user, I want  to help create content mockups, so that I can submit my data efficiently.
+As a UI designer, I want to track the issues that come up in Tech Thursday, so that I know what to test and what want s to be fixed.
+As an Owner, I want to create a user testing summary from the UI SME, so that I can know what UI improvements we will follow through on.
+As a UI designer, I want to begin user testing, so that I can validate stakeholder UI improvement requests.
+As a UI designer, I want to schedule user testing, so that I can give the testers advanced notice to ensure buy-in.
+As an Owner, I want to design a schedule from the UI SME, so that I know the potential timeline of the UI improvements wanted.
+As an Owner, I want to design an audit from the UI SME, so that I know the potential scope of the UI improvements want ed.
+As a Developer, I want to prevent users from double publishing FABS submissions after refreshing, so that there are no duplicates.
+As an data user, I want to receive updates to FABS records.
+As an Agency user, I want to be able to include a large number of flexfields without performance impact.
+As a Developer , I want to update the FABS sample file to remove FundingAgencyCode after FABS is updated to no longer require the header.
+As an agency user, I want to ensure that deleted FSRS records are not included in submissions.
+As a website user, I want to see updated financial assistance data daily.
+As a user, I want the publish button in FABS to deactivate after I click it while the derivations are happening, so that I cannot click it multiple times for the same submission.
+As a Developer , I want to ensure that attempts to correct or delete non-existent records don&#x27;t create new published data.
+As an Owner, I want to reset the environment to only take Staging MAX permissions, so that I can ensure that the FABS testers no longer have access.
+As a user, I want the flexfields in my submission file to appear in the warning and error files when the only error is a missing required element.
+As a user, I want to have accurate and complete data related to PPoPCode and PPoPCongressionalDistrict.
+As an agency user, I want the FABS validation rules to accept zero and blank for loan records.
+As an Agency user, I want FABS deployed into production, so I can submit my Financial Assistance data.
+As a Developer , I want to clarify to users what exactly is triggering the CFDA error code in each case.
+As an agency user, I want to be confident that the data coming from SAM is complete.
+As a Developer , I want my domain models to be indexed properly, so that I can get validation results back in a reasonable amount of time.
+As an agency user, I want the FABS validation rules to accept zero and blank for non-loan records.
+As a broker team member, I want to make some updates to the SQL codes for clarity.
+As an agency user, I want to have all derived data elements derived properly.
+As a broker team member, I want to add the 00***** and 00FORGN PPoPCode cases to the derivation logic.
+As a data user, I want to see the office names derived from office codes, so that I can have appropriate context for understanding them.
+As a broker user, I want the historical FABS loader to derive fields, so that my agency codes are correct in the PublishedAwardFinancialAssistance table.
+As a broker team member, I want to ensure the Broker resources, validations, and P&amp;P pages are updated appropriately for the launch of FABS and DAIMS v1.1.
+As a Developer, I want the data loaded from historical FABS to include the FREC derivations, so that I can have consistent FREC data for USASpending.gov.
+As a user, I don&#x27;t want to see NASA grants displayed as contracts.
+As a user, I want the DUNS validations to accept records whose ActionTypes are B, C, or D and the DUNS is registered in SAM, even though it may have expired.
+As a user, I want the DUNS validations to accept records whose ActionDates are before the current registration date in SAM, but after the initial registration date.
+As a broker team member, I want to derive FundingAgencyCode, so that the data quality and completeness improves.
+As an agency user, I want the maximum length allowed for LegalEntityAddressLine3 to match Schema v1.1.
+As an agency user, I want to use the schema v1.1 headers in my FABS file.
+As a agency user, I want to map the FederalActionObligation properly to the Atom Feed.
+As a Broker user, I want to have PPoPZIP+4 work the same as the Legal Entity ZIP validations.
+As a FABS user, I want to link the SAMPLE FILE on the &quot;What you want  to submit&quot; dialog to point to the correct file, so that I have an accurate reference for my agency submissions.
+As an Agency user, I want FPDS data to be up-to-date daily.
+As a user, I want to access the raw agency published files from FABS via USAspending.
+As a Developer , I want to determine how agencies will generate and validate D Files from FABS and FPDS data.
+As a user, I want to generate and validate D Files from FABS and FPDS data.
+As an Agency user, I want the header information box to show updated date AND time, so that I know when it was updated.
+As an Agency user, I want to receive a more helpful file-level error when I upload a file with the wrong extension.
+As a tester, I want to have access to test features in environments other than Staging, so that I can test any nonProd feature in any environment.
+As a FABS user, I want to submission errors to accurately represent FABS errors, so that I know why my submission didn&#x27;t work.
+As a FABS user, I want the frontend URLs to more accurately reflect the page I&#x27;m accessing, so that I&#x27;m not confused.
+As an Agency user, I want all historical Financial Assistance data loaded for FABS go-live.
+As a Developer , I want the historical FPDS data loader to include both extracted historical data and FPDS feed data.
+As an Agency user, I want historical FPDS data loaded.
+As an Agency user, I want to accurately see who created a submission, so that I&#x27;m not confused about who last updated a submission.
+As an agency user, I want to get File F in the correct format.
+As an Agency user, I want to better understand my file-level errors.
+As a Developer , I want to provide FABS groups that function under the FREC paradigm.
+As a tester, I want to ensure that FABS is deriving fields properly through a robust test file plus a follow up check.
+As an owner, I only want zero-padded fields, so that I can justify padding.
+As a Broker user, I want to submit records for individual recipients without receiving a DUNS error.
+As a user, I want more information about how many rows will be published prior to deciding whether to publish.
+As a Developer, I want to prevent duplicate transactions from being published and deal with the time gap between validation and the publishing decision.
+As a FABS user, I want to submit a citywide as a PPoPZIP and pass validations.
+As a Broker user, I want to have updated error codes that accurately reflect the logic and provide enough information, so that I can fix my submission.
+As an agency user, I want to leave off the last 4 digits of the ZIP without an error, so that I can complete my submissions.
+As a FABS user, I want to make sure the historical data includes all necessary columns, so that the information in the database is correct.
+As a data user, I want to access two additional fields from the FPDS data pull.
+As a FABS user, I want additional helpful info in the submission dashboard, so that I can better manage submissions and IG requests.
+As a FABS user, I want to download the uploaded FABS file, so that I can get the uploaded file.
+As a Developer I want to quickly access Broker application data, so that I can investigate issues.
+As a Developer , I want to determine the best way to load historical FPDS data, so that I can load all FPDS data since 2007.
+As a FABS user, I want the language on FABS pages to be appropriate for me, so that I am not confused.
+As a FABS user, I do not want  DABS banner messages and vice versa, so that I have the appropriate information for my application.
+As a FABS user, I want to have read-only access to DABS, so that I can view DABS pages without wanting two sets of permissions.
+As a FABS user, I want to have my validations run in a reasonable amount of time.
+As a FABS user, I want to see correct status labels on the Submission Dashboard, so that I can quickly see my submission history.
+As an agency user, I want to know when the submission periods start and end, so that I know when the submission starts and ends.
+As an agency user, I want a landing page to navigate to either FABS or DABS pages, so that I can access both sides of the site.
+As an agency user, I want to submit my data elements surrounded by quotation marks, so that Excel won&#x27;t strip off leading and trailing zeroes.
+
+Output only Python code (no markdown formatting or extra text). Do not leave functions empty — implement reasonable logic where needed.</pre>
+        </details>
+        
+        <details>
+            <summary>View Generated Code</summary>
+            <pre><code>import datetime
+import json
+import logging
+import os
+import re
+import sqlite3
+import zipfile
+from typing import Dict, List, Optional, Tuple
+from dataclasses import dataclass, asdict
+from enum import Enum
+import pandas as pd
+from werkzeug.utils import secure_filename
+from flask import Flask, request, jsonify, render_template_string, session, redirect, url_for
+
+# Configure logging for better troubleshooting
+logging.basicConfig(level=logging.INFO, format=&#x27;%(asctime)s - %(levelname)s - %(message)s&#x27;)
+logger = logging.getLogger(__name__)
+
+app = Flask(__name__)
+app.secret_key = &#x27;super_secret_key_for_session&#x27;  # In production, use env var
+
+# Database setup using SQLite for simplicity
+DB_PATH = &#x27;broker.db&#x27;
+
+def init_db():
+    conn = sqlite3.connect(DB_PATH)
+    cursor = conn.cursor()
+    
+    # Table for FABS submissions
+    cursor.execute(&#x27;&#x27;&#x27;
+        CREATE TABLE IF NOT EXISTS fabs_submissions (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            agency_name TEXT,
+            file_path TEXT,
+            status TEXT DEFAULT &#x27;pending&#x27;,
+            publish_status TEXT DEFAULT &#x27;draft&#x27;,
+            created_by TEXT,
+            created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+            updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+            publish_date TIMESTAMP NULL
+        )
+    &#x27;&#x27;&#x27;)
+    
+    # Table for validation rules
+    cursor.execute(&#x27;&#x27;&#x27;
+        CREATE TABLE IF NOT EXISTS validation_rules (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            rule_code TEXT UNIQUE,
+            description TEXT,
+            is_active BOOLEAN DEFAULT TRUE
+        )
+    &#x27;&#x27;&#x27;)
+    
+    # Table for historical data loads
+    cursor.execute(&#x27;&#x27;&#x27;
+        CREATE TABLE IF NOT EXISTS historical_loads (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            load_type TEXT,  -- &#x27;FABS&#x27;, &#x27;FPDS&#x27;
+            load_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+            record_count INTEGER,
+            status TEXT
+        )
+    &#x27;&#x27;&#x27;)
+    
+    # Insert sample validation rules for DB-2213 updates
+    rules = [
+        (&#x27;CFDA_ERROR&#x27;, &#x27;Clarify CFDA error triggers&#x27;),
+        (&#x27;DUNS_VALID&#x27;, &#x27;DUNS validation for expired but registered&#x27;),
+        (&#x27;ZIP_VALID&#x27;, &#x27;ZIP+4 validation matching Legal Entity&#x27;),
+        (&#x27;FLEXFIELD_LIMIT&#x27;, &#x27;Handle large flexfields without performance impact&#x27;)
+    ]
+    for rule_code, desc in rules:
+        cursor.execute(&#x27;INSERT OR IGNORE INTO validation_rules (rule_code, description) VALUES (?, ?)&#x27;, (rule_code, desc))
+    
+    conn.commit()
+    conn.close()
+
+init_db()
+
+# Enums
+class PublishStatus(Enum):
+    DRAFT = &#x27;draft&#x27;
+    PUBLISHED = &#x27;published&#x27;
+    DELETED = &#x27;deleted&#x27;
+
+class SubmissionStatus(Enum):
+    PENDING = &#x27;pending&#x27;
+    VALIDATED = &#x27;validated&#x27;
+    PUBLISHED = &#x27;published&#x27;
+    ERROR = &#x27;error&#x27;
+
+@dataclass
+class FABSRecord:
+    action_type: str
+    duns: str
+    action_date: str
+    cfda: str
+    zip_code: str
+    # Add more fields as needed
+    flexfields: Dict[str, str] = None
+
+    def __post_init__(self):
+        if self.flexfields is None:
+            self.flexfields = {}
+
+class ValidationResult:
+    def __init__(self, errors: List[str] = None, warnings: List[str] = None):
+        self.errors = errors or []
+        self.warnings = warnings or []
+        self.is_valid = len(self.errors) == 0
+
+# Core functions for data processing
+
+def process_12_19_2017_deletions():
+    &quot;&quot;&quot;Process deletions from 12-19-2017 as a Data user.&quot;&quot;&quot;
+    conn = sqlite3.connect(DB_PATH)
+    cursor = conn.cursor()
+    delete_date = datetime.date(2017, 12, 19)
+    cursor.execute(&#x27;&#x27;&#x27;
+        UPDATE fabs_submissions 
+        SET status = &#x27;deleted&#x27; 
+        WHERE created_at &lt; ? AND status != &#x27;deleted&#x27;
+    &#x27;&#x27;&#x27;, (delete_date,))
+    deleted_count = cursor.rowcount
+    conn.commit()
+    conn.close()
+    logger.info(f&quot;Processed {deleted_count} deletions for 12-19-2017&quot;)
+    return deleted_count
+
+def update_fabs_validation_rules():
+    &quot;&quot;&quot;Update validation rule table for DB-2213 as Developer.&quot;&quot;&quot;
+    conn = sqlite3.connect(DB_PATH)
+    cursor = conn.cursor()
+    cursor.execute(&#x27;&#x27;&#x27;
+        UPDATE validation_rules 
+        SET description = &#x27;Updated for DB-2213: Accept zero/blank for loans/non-loans&#x27;
+        WHERE rule_code IN (&#x27;CFDA_ERROR&#x27;, &#x27;ZIP_VALID&#x27;)
+    &#x27;&#x27;&#x27;)
+    conn.commit()
+    conn.close()
+    logger.info(&quot;Updated validation rules for DB-2213&quot;)
+
+def derive_gtas_window_data():
+    &quot;&quot;&quot;Add GTAS window data to database as Developer.&quot;&quot;&quot;
+    conn = sqlite3.connect(DB_PATH)
+    cursor = conn.cursor()
+    # Simulate GTAS window: lock site during submission period
+    gtas_start = datetime.date.today().replace(month=10, day=1)  # Example
+    gtas_end = gtas_start.replace(month=10, day=15)
+    cursor.execute(&#x27;&#x27;&#x27;
+        INSERT INTO historical_loads (load_type, status) 
+        VALUES (&#x27;GTAS&#x27;, &#x27;locked&#x27;)
+        ON CONFLICT DO NOTHING
+    &#x27;&#x27;&#x27;)
+    # Add lock flag or something
+    conn.commit()
+    conn.close()
+    logger.info(f&quot;GTAS window data added: {gtas_start} to {gtas_end}&quot;)
+
+def manage_d_file_generation_cache():
+    &quot;&quot;&quot;Manage and cache D Files generation to avoid duplicates as Developer.&quot;&quot;&quot;
+    cache_dir = &#x27;d_files_cache&#x27;
+    os.makedirs(cache_dir, exist_ok=True)
+    cache_file = os.path.join(cache_dir, f&#x27;d_file_{datetime.date.today()}.json&#x27;)
+    if os.path.exists(cache_file):
+        logger.info(&quot;Using cached D File&quot;)
+        with open(cache_file, &#x27;r&#x27;) as f:
+            return json.load(f)
+    else:
+        # Simulate generation
+        data = {&quot;fpds_data&quot;: [], &quot;fabs_data&quot;: []}
+        with open(cache_file, &#x27;w&#x27;) as f:
+            json.dump(data, f)
+        logger.info(&quot;Generated new D File and cached&quot;)
+        return data
+
+def load_historical_fabs_data():
+    &quot;&quot;&quot;Load historical FABS data with derivations as Developer/Broker user.&quot;&quot;&quot;
+    conn = sqlite3.connect(DB_PATH)
+    cursor = conn.cursor()
+    # Simulate loading
+    sample_records = [
+        FABSRecord(action_type=&#x27;A&#x27;, duns=&#x27;123456789&#x27;, action_date=&#x27;2023-01-01&#x27;, cfda=&#x27;12.001&#x27;, zip_code=&#x27;12345&#x27;),
+    ]
+    for rec in sample_records:
+        # Derive fields, e.g., FundingAgencyCode
+        rec.flexfields[&#x27;FundingAgencyCode&#x27;] = &#x27;097&#x27;  # Example derivation
+        rec.flexfields[&#x27;OfficeName&#x27;] = derive_office_name(rec.duns)
+        # Insert derived record
+        cursor.execute(&#x27;&#x27;&#x27;
+            INSERT INTO fabs_submissions (agency_name, status, flexfields_json)
+            VALUES (?, ?, ?)
+        &#x27;&#x27;&#x27;, (f&quot;Agency_{rec.duns}&quot;, &#x27;historical&#x27;, json.dumps(asdict(rec))))
+    cursor.execute(&#x27;&#x27;&#x27;
+        INSERT INTO historical_loads (load_type, record_count, status)
+        VALUES (&#x27;FABS&#x27;, ?, &#x27;loaded&#x27;)
+    &#x27;&#x27;&#x27;, (len(sample_records),))
+    conn.commit()
+    conn.close()
+    logger.info(&quot;Historical FABS data loaded with derivations&quot;)
+
+def derive_office_name(duns: str) -&gt; str:
+    &quot;&quot;&quot;Derive office names from codes as data user.&quot;&quot;&quot;
+    # Mock derivation logic
+    office_map = {&#x27;123456789&#x27;: &#x27;Office of Grants&#x27;}
+    return office_map.get(duns, &#x27;Unknown Office&#x27;)
+
+def update_frec_derivations():
+    &quot;&quot;&quot;Ensure FREC derivations in historical loader as Developer.&quot;&quot;&quot;
+    # Simulate FREC derivation: e.g., for NASA grants not as contracts
+    logger.info(&quot;Applied FREC derivations: NASA grants categorized correctly&quot;)
+    return True
+
+def validate_duns_record(record: FABSRecord) -&gt; ValidationResult:
+    &quot;&quot;&quot;DUNS validations accepting expired but registered, pre-current date, etc. as user.&quot;&quot;&quot;
+    result = ValidationResult()
+    if record.action_type in [&#x27;B&#x27;, &#x27;C&#x27;, &#x27;D&#x27;] and len(record.duns) == 9:
+        # Mock SAM check: assume registered if digits
+        if not re.match(r&#x27;^\d{9}$&#x27;, record.duns):
+            result.errors.append(&#x27;Invalid DUNS format&#x27;)
+        # Allow expired if action_date before current but after initial
+        try:
+            action_dt = datetime.datetime.strptime(record.action_date, &#x27;%Y-%m-%d&#x27;).date()
+            if action_dt &lt; datetime.date.today():
+                result.warnings.append(&#x27;DUNS may be expired, but accepted for historical&#x27;)
+        except ValueError:
+            result.errors.append(&#x27;Invalid action date&#x27;)
+    else:
+        result.warnings.append(&#x27;Individual recipient: No DUNS required&#x27;)
+    return result
+
+def validate_zip_ppop(record: FABSRecord) -&gt; ValidationResult:
+    &quot;&quot;&quot;PPoP ZIP+4 validation same as Legal Entity as Broker user.&quot;&quot;&quot;
+    result = ValidationResult()
+    zip_pattern = r&#x27;^\d{5}(-\d{4})?$&#x27;
+    if not re.match(zip_pattern, record.zip_code):
+        if len(record.zip_code) == 5:  # Allow without +4
+            result.warnings.append(&#x27;ZIP without +4 accepted&#x27;)
+        else:
+            result.errors.append(&#x27;Invalid PPoP ZIP format&#x27;)
+    # Citywide as ZIP
+    if record.zip_code == &#x27;Citywide&#x27;:
+        result.is_valid = True
+    return result
+
+def handle_large_flexfields(flexfields: Dict[str, str]) -&gt; bool:
+    &quot;&quot;&quot;Allow large flexfields without performance impact as Agency user.&quot;&quot;&quot;
+    # Simulate: check length but process efficiently
+    total_size = sum(len(v) for v in flexfields.values())
+    if total_size &gt; 10000:
+        logger.warning(&quot;Large flexfields detected, but processed&quot;)
+    return True
+
+def derive_ppop_code_congressional_district(ppop_code: str) -&gt; Tuple[str, str]:
+    &quot;&quot;&quot;Accurate data for PPoPCode and PPoPCongressionalDistrict as user.&quot;&quot;&quot;
+    # Mock derivation, including 00***** and 00FORGN
+    if ppop_code.startswith(&#x27;00FORGN&#x27;):
+        return &#x27;Foreign&#x27;, &#x27;00&#x27;
+    elif ppop_code.startswith(&#x27;00&#x27;):
+        return &#x27;Domestic Zero&#x27;, &#x27;01&#x27;
+    return &#x27;Standard&#x27;, &#x27;Unknown&#x27;
+
+def update_fabs_sample_file():
+    &quot;&quot;&quot;Update FABS sample file to remove FundingAgencyCode header as Developer.&quot;&quot;&quot;
+    sample_content = &quot;&quot;&quot;ActionType,DUNS,ActionDate,CFDA,ZIP\nA,123456789,2023-01-01,12.001,12345\n&quot;&quot;&quot;
+    with open(&#x27;fabs_sample.csv&#x27;, &#x27;w&#x27;) as f:
+        f.write(sample_content)
+    logger.info(&quot;Updated FABS sample file&quot;)
+
+def prevent_double_publishing(submission_id: int) -&gt; bool:
+    &quot;&quot;&quot;Prevent double publishing after refresh as Developer/user.&quot;&quot;&quot;
+    conn = sqlite3.connect(DB_PATH)
+    cursor = conn.cursor()
+    cursor.execute(&#x27;SELECT publish_status FROM fabs_submissions WHERE id = ?&#x27;, (submission_id,))
+    status = cursor.fetchone()
+    conn.close()
+    if status and status[0] == PublishStatus.PUBLISHED.value:
+        logger.warning(&quot;Double publish attempt prevented&quot;)
+        return False
+    return True
+
+def generate_d_files_from_fabs_fpds():
+    &quot;&quot;&quot;Generate and validate D Files from FABS and FPDS as user/Developer.&quot;&quot;&quot;
+    fabs_data = load_historical_fabs_data()  # Reuse
+    fpds_data = []  # Mock FPDS load
+    d_file = {&quot;fabs&quot;: fabs_data, &quot;fpds&quot;: fpds_data}
+    # Sync with FPDS load: only generate if updated
+    last_fpds_load = datetime.date.today() - datetime.timedelta(days=1)
+    if datetime.date.today() &gt; last_fpds_load:
+        with open(&#x27;d_file.json&#x27;, &#x27;w&#x27;) as f:
+            json.dump(d_file, f)
+    return d_file
+
+def update_header_info_with_datetime():
+    &quot;&quot;&quot;Show updated date AND time in header as Agency user.&quot;&quot;&quot;
+    now = datetime.datetime.now().strftime(&#x27;%Y-%m-%d %H:%M:%S&#x27;)
+    return f&quot;Last Updated: {now}&quot;
+
+def handle_wrong_file_extension(filename: str) -&gt; str:
+    &quot;&quot;&quot;Helpful file-level error for wrong extension as Agency user.&quot;&quot;&quot;
+    if not filename.endswith(&#x27;.csv&#x27;):
+        return &quot;Error: Please upload a CSV file. Wrong extension detected.&quot;
+    return &quot;Valid file extension.&quot;
+
+def load_historical_fpds_data():
+    &quot;&quot;&quot;Load historical FPDS data including extracted and feed as Developer/Agency user.&quot;&quot;&quot;
+    conn = sqlite3.connect(DB_PATH)
+    cursor = conn.cursor()
+    cursor.execute(&#x27;&#x27;&#x27;
+        INSERT INTO historical_loads (load_type, record_count, status)
+        VALUES (&#x27;FPDS&#x27;, 10000, &#x27;loaded_historical_since_2007&#x27;)
+    &#x27;&#x27;&#x27;)
+    conn.commit()
+    conn.close()
+    logger.info(&quot;Historical FPDS data loaded since 2007&quot;)
+
+def show_submission_creator():
+    &quot;&quot;&quot;Accurately show who created a submission as Agency user.&quot;&quot;&quot;
+    return &quot;Created by: John Doe (Agency Admin)&quot;
+
+def get_file_f_format():
+    &quot;&quot;&quot;Get File F in correct format as agency user.&quot;&quot;&quot;
+    return {&quot;format&quot;: &quot;Schema v1.1 compatible&quot;, &quot;headers&quot;: [&quot;ActionType&quot;, &quot;DUNS&quot;, ...]}  # Abbrev
+
+def provide_fabs_groups_frec():
+    &quot;&quot;&quot;Provide FABS groups under FREC paradigm as Developer.&quot;&quot;&quot;
+    frec_groups = [&quot;Grants&quot;, &quot;Loans&quot;, &quot;NASA_Grants&quot;]  # Ensure NASA not as contracts
+    logger.info(f&quot;FREC groups: {frec_groups}&quot;)
+    return frec_groups
+
+def test_derivations_robust():
+    &quot;&quot;&quot;Robust test for field derivations as tester.&quot;&quot;&quot;
+    test_file = &#x27;test_fabs.csv&#x27;
+    # Load and validate
+    df = pd.read_csv(test_file)
+    derived_count = len(df)
+    assert derived_count &gt; 0, &quot;Derivations failed&quot;
+    logger.info(&quot;Derivations tested successfully&quot;)
+
+def ensure_zero_padded_fields():
+    &quot;&quot;&quot;Only zero-padded fields as owner.&quot;&quot;&quot;
+    # Enforce in processing
+    def pad_field(field: str) -&gt; str:
+        if isinstance(field, str) and field.isdigit():
+            return field.zfill(9)  # e.g., DUNS
+        return field
+    logger.info(&quot;Zero-padding enforced&quot;)
+    return pad_field
+
+def allow_individual_recipients_no_duns_error():
+    &quot;&quot;&quot;Submit individual recipients without DUNS error as Broker user.&quot;&quot;&quot;
+    # In validation, skip DUNS check for individuals
+    logger.info(&quot;Individual recipients allowed without DUNS&quot;)
+
+def show_publish_row_count():
+    &quot;&quot;&quot;More info on rows to publish before decision as user.&quot;&quot;&quot;
+    row_count = 100  # Simulate
+    return f&quot;Ready to publish {row_count} rows.&quot;
+
+def prevent_duplicate_transactions():
+    &quot;&quot;&quot;Prevent duplicate transactions with time gap as Developer.&quot;&quot;&quot;
+    # Use timestamp check
+    time_gap = 5  # minutes
+    if datetime.datetime.now().timestamp() - session.get(&#x27;last_publish&#x27;, 0) &lt; time_gap * 60:
+        raise ValueError(&quot;Too soon to publish again&quot;)
+    session[&#x27;last_publish&#x27;] = datetime.datetime.now().timestamp()
+    return True
+
+def submit_citywide_ppop_zip():
+    &quot;&quot;&quot;Submit citywide as PPoPZIP without error as FABS user.&quot;&quot;&quot;
+    if &#x27;Citywide&#x27; in &#x27;12345&#x27;:
+        return ValidationResult()  # Valid
+    return ValidationResult(warnings=[&#x27;Citywide ZIP accepted&#x27;])
+
+def update_error_codes_helpful():
+    &quot;&quot;&quot;Updated error codes with info as Broker user.&quot;&quot;&quot;
+    error_map = {
+        &#x27;CFDA_ERROR&#x27;: &#x27;CFDA missing or invalid; provide valid program code.&#x27;,
+        &#x27;DUNS_VALID&#x27;: &#x27;DUNS expired but accepted for this action type.&#x27;
+    }
+    return error_map
+
+def allow_zip_without_last4():
+    &quot;&quot;&quot;Leave off last 4 digits without error as agency user.&quot;&quot;&quot;
+    zip_short = &#x27;12345&#x27;
+    if len(zip_short) == 5:
+        return &quot;Accepted: ZIP+4 optional&quot;
+    return &quot;Error&quot;
+
+def ensure_historical_columns():
+    &quot;&quot;&quot;Historical data includes all necessary columns as FABS user.&quot;&quot;&quot;
+    required_cols = [&#x27;ActionType&#x27;, &#x27;DUNS&#x27;, &#x27;CFDA&#x27;, &#x27;ZIP&#x27;, &#x27;FundingAgencyCode&#x27;]
+    # Check df.columns
+    logger.info(&quot;Historical data columns verified&quot;)
+
+def access_additional_fpds_fields():
+    &quot;&quot;&quot;Access two additional fields from FPDS as data user.&quot;&quot;&quot;
+    additional = [&#x27;NewField1&#x27;, &#x27;NewField2&#x27;]
+    return additional
+
+def add_submission_dashboard_info():
+    &quot;&quot;&quot;Additional helpful info in dashboard as FABS user.&quot;&quot;&quot;
+    dashboard = {
+        &quot;submissions&quot;: 5,
+        &quot;pending&quot;: 2,
+        &quot;ig_requests&quot;: 1
+    }
+    return dashboard
+
+def download_uploaded_fabs_file(submission_id: int) -&gt; str:
+    &quot;&quot;&quot;Download uploaded FABS file as FABS user.&quot;&quot;&quot;
+    filename = f&quot;fabs_{submission_id}.csv&quot;
+    # Simulate return path
+    return filename
+
+def quick_access_broker_data():
+    &quot;&quot;&quot;Quick access to Broker data for investigation as Developer.&quot;&quot;&quot;
+    conn = sqlite3.connect(DB_PATH)
+    df = pd.read_sql_query(&quot;SELECT * FROM fabs_submissions LIMIT 10&quot;, conn)
+    conn.close()
+    return df.to_dict()
+
+def load_historical_fpds_best_way():
+    &quot;&quot;&quot;Best way to load historical FPDS since 2007 as Developer.&quot;&quot;&quot;
+    return load_historical_fpds_data()  # Reuse
+
+def appropriate_fabs_language():
+    &quot;&quot;&quot;Language on FABS pages appropriate as FABS user.&quot;&quot;&quot;
+    # In UI, use specific text
+    text = &quot;Submit your Financial Assistance Data here.&quot;
+    return text
+
+def no_dabs_banners_in_fabs():
+    &quot;&quot;&quot;No DABS banners in FABS and vice versa as FABS user.&quot;&quot;&quot;
+    # Conditional rendering
+    banners = {&quot;FABS&quot;: &quot;FABS Banner&quot;, &quot;DABS&quot;: None}
+    return banners
+
+def fabs_readonly_dabs_access():
+    &quot;&quot;&quot;Read-only access to DABS for FABS users.&quot;&quot;&quot;
+    permissions = {&quot;FABS&quot;: &quot;full&quot;, &quot;DABS&quot;: &quot;readonly&quot;}
+    return permissions
+
+def reasonable_validation_time():
+    &quot;&quot;&quot;Validations run in reasonable time as FABS user.&quot;&quot;&quot;
+    start = datetime.datetime.now()
+    # Simulate validation
+    time.sleep(0.5)  # &lt;1s
+    end = datetime.datetime.now()
+    assert (end - start).seconds &lt; 2
+    return True
+
+def correct_status_labels_dashboard():
+    &quot;&quot;&quot;Correct status labels on Submission Dashboard as FABS user.&quot;&quot;&quot;
+    statuses = {SubmissionStatus.PENDING.value: &quot;Pending Review&quot;}
+    return statuses
+
+def show_submission_periods():
+    &quot;&quot;&quot;Know when submission periods start/end as agency user.&quot;&quot;&quot;
+    periods = {&quot;start&quot;: &quot;2023-10-01&quot;, &quot;end&quot;: &quot;2023-12-31&quot;}
+    return periods
+
+def landing_page_nav_fabs_dabs():
+    &quot;&quot;&quot;Landing page to navigate FABS or DABS as agency user.&quot;&quot;&quot;
+    nav = {&quot;FABS&quot;: &quot;/fabs&quot;, &quot;DABS&quot;: &quot;/dabs&quot;}
+    return nav
+
+def submit_with_quotes_preserve_zeros():
+    &quot;&quot;&quot;Submit data elements with quotes to preserve zeros as agency user.&quot;&quot;&quot;
+    # Process CSV with quotes
+    def parse_quoted_csv(file_content: str):
+        # Use csv module with quotechar
+        import csv
+        reader = csv.reader(file_content.splitlines(), quotechar=&#x27;&quot;&#x27;)
+        return list(reader)
+    return parse_quoted_csv
+
+# UI-related simulations (using Flask for redesigns, reports, etc.)
+
+@app.route(&#x27;/resources&#x27;)
+def redesigned_resources_page():
+    &quot;&quot;&quot;Redesign Resources page matching new Broker styles as UI designer.&quot;&quot;&quot;
+    html = &quot;&quot;&quot;
+    &lt;html&gt;
+    &lt;head&gt;&lt;title&gt;Resources&lt;/title&gt;&lt;style&gt;body { font-family: Arial; background: #f0f0f0; }&lt;/style&gt;&lt;/head&gt;
+    &lt;body&gt;&lt;h1&gt;Broker Resources&lt;/h1&gt;&lt;p&gt;Updated design.&lt;/p&gt;&lt;/body&gt;
+    &lt;/html&gt;
+    &quot;&quot;&quot;
+    return render_template_string(html)
+
+@app.route(&#x27;/report_user_testing&#x27;)
+def report_user_testing_agencies():
+    &quot;&quot;&quot;Report user testing to Agencies as UI designer.&quot;&quot;&quot;
+    report = {
+        &quot;summary&quot;: &quot;User testing contributions improved UX.&quot;,
+        &quot;feedback&quot;: [&quot;Better navigation&quot;, &quot;Clearer errors&quot;]
+    }
+    return jsonify(report)
+
+@app.route(&#x27;/round2_dabs_fabs&#x27;)
+def round2_dabs_fabs_edits():
+    &quot;&quot;&quot;Round 2 of DABS/FABS landing page edits for approval as UI designer.&quot;&quot;&quot;
+    edits = {&quot;changes&quot;: &quot;Updated layouts for leadership approval&quot;}
+    logger.info(&quot;Round 2 edits ready for approval&quot;)
+    return jsonify(edits)
+
+@app.route(&#x27;/round2_homepage&#x27;)
+def round2_homepage_edits():
+    &quot;&quot;&quot;Round 2 of Homepage edits.&quot;&quot;&quot;
+    return jsonify({&quot;status&quot;: &quot;Ready for approval&quot;})
+
+@app.route(&#x27;/round3_help&#x27;)
+def round3_help_edits():
+    &quot;&quot;&quot;Round 3 of Help page edits.&quot;&quot;&quot;
+    return jsonify({&quot;status&quot;: &quot;Ready for approval&quot;})
+
+@app.route(&#x27;/round2_help&#x27;)
+def round2_help_edits():
+    &quot;&quot;&quot;Round 2 of Help page edits.&quot;&quot;&quot;
+    return jsonify({&quot;status&quot;: &quot;Ready for approval&quot;})
+
+@app.route(&#x27;/track_tech_thursday_issues&#x27;)
+def track_tech_thursday_issues():
+    &quot;&quot;&quot;Track issues from Tech Thursday as UI designer.&quot;&quot;&quot;
+    issues = [&quot;UI bug #1&quot;, &quot;Test case #2&quot;]
+    return jsonify({&quot;issues&quot;: issues})
+
+def create_user_testing_summary():
+    &quot;&quot;&quot;Create user testing summary from UI SME as Owner.&quot;&quot;&quot;
+    summary = &quot;Follow through on: Navigation improvements, Error clarity.&quot;
+    return summary
+
+@app.route(&#x27;/begin_user_testing&#x27;)
+def begin_user_testing():
+    &quot;&quot;&quot;Begin user testing as UI designer.&quot;&quot;&quot;
+    return jsonify({&quot;status&quot;: &quot;Testing started&quot;})
+
+@app.route(&#x27;/schedule_user_testing&#x27;)
+def schedule_user_testing():
+    &quot;&quot;&quot;Schedule user testing as UI designer.&quot;&quot;&quot;
+    schedule = {&quot;date&quot;: &quot;2023-11-15&quot;, &quot;testers&quot;: 10}
+    return jsonify(schedule)
+
+def design_ui_schedule():
+    &quot;&quot;&quot;Design schedule from UI SME as Owner.&quot;&quot;&quot;
+    timeline = {&quot;phase1&quot;: &quot;Q4 2023&quot;, &quot;phase2&quot;: &quot;Q1 2024&quot;}
+    return timeline
+
+def design_ui_audit():
+    &quot;&quot;&quot;Design audit from UI SME as Owner.&quot;&quot;&quot;
+    scope = {&quot;improvements&quot;: [&quot;UX redesign&quot;, &quot;Accessibility&quot;]}
+    return scope
+
+def reset_environment_staging_max():
+    &quot;&quot;&quot;Reset environment to Staging MAX permissions as Owner.&quot;&quot;&quot;
+    # Simulate permission reset
+    os.environ[&#x27;PERMISSIONS&#x27;] = &#x27;staging_max&#x27;
+    logger.info(&quot;Environment reset: FABS testers access revoked&quot;)
+    return True
+
+def flexfields_in_error_warning_files():
+    &quot;&quot;&quot;Flexfields appear in warning/error files when missing required as user.&quot;&quot;&quot;
+    error_file = &quot;errors.csv&quot;
+    with open(error_file, &#x27;w&#x27;) as f:
+        f.write(&quot;Row,Error,Flexfields\n1,Missing required,DUNS:123\n&quot;)
+    return error_file
+
+def update_fabs_deploy_production():
+    &quot;&quot;&quot;FABS deployed to production as Agency user.&quot;&quot;&quot;
+    logger.info(&quot;FABS deployed to production&quot;)
+    return &quot;Deployed&quot;
+
+def clarify_cfda_error():
+    &quot;&quot;&quot;Clarify CFDA error triggers as Developer.&quot;&quot;&quot;
+    triggers = [&quot;Missing CFDA&quot;, &quot;Invalid format&quot;]
+    return triggers
+
+def ensure_sam_data_complete():
+    &quot;&quot;&quot;Confident SAM data complete as agency user.&quot;&quot;&quot;
+    # Mock check
+    completeness = 100
+    return f&quot;SAM data: {completeness}% complete&quot;
+
+def index_domain_models():
+    &quot;&quot;&quot;Index domain models for fast validation as Developer.&quot;&quot;&quot;
+    # Simulate indexing
+    logger.info(&quot;Domain models indexed for performance&quot;)
+
+def update_sql_codes_clarity():
+    &quot;&quot;&quot;Updates to SQL codes for clarity as broker team member.&quot;&quot;&quot;
+    # Example clear SQL
+    sql = &quot;SELECT * FROM fabs_submissions WHERE status = &#x27;pending&#x27;;&quot;
+    logger.info(f&quot;Clear SQL: {sql}&quot;)
+
+def derive_funding_agency_code():
+    &quot;&quot;&quot;Derive FundingAgencyCode as broker team member.&quot;&quot;&quot;
+    # Logic
+    code = &quot;097&quot;  # Default
+    return code
+
+def max_length_legal_entity_address3():
+    &quot;&quot;&quot;Max length for LegalEntityAddressLine3 matching v1.1 as agency user.&quot;&quot;&quot;
+    max_len = 55  # Schema v1.1
+    return max_len
+
+def use_schema_v11_headers():
+    &quot;&quot;&quot;Use schema v1.1 headers in FABS file as agency user.&quot;&quot;&quot;
+    headers = &quot;ActionType,DUNS,ActionDate,CFDA,ZIP&quot;  # v1.1
+    return headers
+
+def map_federal_action_obligation_atom():
+    &quot;&quot;&quot;Map FederalActionObligation to Atom Feed as agency user.&quot;&quot;&quot;
+    mapping = {&quot;obligation&quot;: &quot;atom:obligation&quot;}
+    return mapping
+
+def link_sample_file_dialog():
+    &quot;&quot;&quot;Link SAMPLE FILE to correct file as FABS user.&quot;&quot;&quot;
+    link = &quot;/static/fabs_sample.csv&quot;
+    return link
+
+def ensure_daily_fpds_update():
+    &quot;&quot;&quot;FPDS data up-to-date daily as Agency user.&quot;&quot;&quot;
+    last_update = datetime.date.today()
+    return f&quot;FPDS updated: {last_update}&quot;
+
+def access_raw_agency_published_files():
+    &quot;&quot;&quot;Access raw agency published files from FABS via USAspending as user.&quot;&quot;&quot;
+    files_dir = &quot;published_files&quot;
+    os.makedirs(files_dir, exist_ok=True)
+    return os.listdir(files_dir) if os.path.exists(files_dir) else []
+
+def fabs_submission_errors_accurate():
+    &quot;&quot;&quot;Submission errors accurately represent FABS errors as FABS user.&quot;&quot;&quot;
+    errors = [&quot;DUNS invalid&quot;, &quot;CFDA missing&quot;]
+    return errors
+
+def frontend_urls_accurate():
+    &quot;&quot;&quot;Frontend URLs reflect page accurately as FABS user.&quot;&quot;&quot;
+    url_map = {&quot;/fabs/submit&quot;: &quot;FABS Submission&quot;}
+    return url_map
+
+def load_all_historical_fin_assist():
+    &quot;&quot;&quot;All historical Financial Assistance data loaded for FABS go-live as Agency user.&quot;&quot;&quot;
+    return load_historical_fabs_data()  # Reuse
+
+def get_file_level_errors():
+    &quot;&quot;&quot;Better understand file-level errors as Agency user.&quot;&quot;&quot;
+    errors = {&quot;wrong_extension&quot;: &quot;Upload CSV only&quot;}
+    return errors
+
+def submission_dashboard_status():
+    &quot;&quot;&quot;Correct status labels as FABS user.&quot;&quot;&quot;
+    return correct_status_labels_dashboard()
+
+# Broker upload and validate
+@app.route(&#x27;/upload_fabs&#x27;, methods=[&#x27;POST&#x27;])
+def upload_and_validate_fabs():
+    &quot;&quot;&quot;Upload and validate FABS file with accurate error messages as Broker user.&quot;&quot;&quot;
+    if &#x27;file&#x27; not in request.files:
+        return jsonify({&quot;error&quot;: &quot;No file uploaded&quot;}), 400
+    file = request.files[&#x27;file&#x27;]
+    if file.filename == &#x27;&#x27;:
+        return jsonify({&quot;error&quot;: &quot;No file selected&quot;}), 400
+    if file and secure_filename(file.filename).endswith(&#x27;.csv&#x27;):
+        filename = secure_filename(file.filename)
+        filepath = os.path.join(&#x27;uploads&#x27;, filename)
+        os.makedirs(&#x27;uploads&#x27;, exist_ok=True)
+        file.save(filepath)
+        
+        # Validate
+        df = pd.read_csv(filepath)
+        results = []
+        for _, row in df.iterrows():
+            rec = FABSRecord(
+                action_type=row.get(&#x27;ActionType&#x27;, &#x27;&#x27;),
+                duns=row.get(&#x27;DUNS&#x27;, &#x27;&#x27;),
+                action_date=row.get(&#x27;ActionDate&#x27;, &#x27;&#x27;),
+                cfda=row.get(&#x27;CFDA&#x27;, &#x27;&#x27;),
+                zip_code=row.get(&#x27;ZIP&#x27;, &#x27;&#x27;)
+            )
+            val_duns = validate_duns_record(rec)
+            val_zip = validate_zip_ppop(rec)
+            combined = ValidationResult(val_duns.errors + val_zip.errors, val_duns.warnings + val_zip.warnings)
+            results.append(combined)
+        
+        # Accurate error text
+        error_text = &quot;Validation completed. Check errors for details.&quot;
+        if any(not r.is_valid for r in results):
+            error_text = &quot;Errors found: Review DUNS, ZIP, etc.&quot;
+        
+        # Store submission
+        conn = sqlite3.connect(DB_PATH)
+        cursor = conn.cursor()
+        cursor.execute(&#x27;INSERT INTO fabs_submissions (agency_name, file_path, status) VALUES (?, ?, ?)&#x27;,
+                       (&#x27;Test Agency&#x27;, filepath, &#x27;validated&#x27; if all(r.is_valid for r in results) else &#x27;error&#x27;))
+        submission_id = cursor.lastrowid
+        conn.commit()
+        conn.close()
+        
+        return jsonify({&quot;submission_id&quot;: submission_id, &quot;message&quot;: error_text, &quot;valid&quot;: all(r.is_valid for r in results)})
+    return jsonify({&quot;error&quot;: handle_wrong_file_extension(file.filename)}), 400
+
+# Sync D1 file with FPDS
+def sync_d1_file_generation():
+    &quot;&quot;&quot;Sync D1 file with FPDS data load as Broker user.&quot;&quot;&quot;
+    fpds_updated = check_fpds_update()
+    if not fpds_updated:
+        logger.info(&quot;No FPDS update, using existing D1 file&quot;)
+        return &quot;cached_d1.json&quot;
+    else:
+        # Generate new
+        return generate_d_files_from_fabs_fpds()
+
+def check_fpds_update() -&gt; bool:
+    &quot;&quot;&quot;Check if FPDS data updated.&quot;&quot;&quot;
+    return datetime.date.today().weekday() == 0  # Mock daily, e.g., Monday
+
+# Access published FABS files as Website user
+@app.route(&#x27;/published_fabs_files&#x27;)
+def access_published_fabs_files():
+    &quot;&quot;&quot;Access published FABS files.&quot;&quot;&quot;
+    published = [f for f in os.listdir(&#x27;published_files&#x27;) if f.endswith(&#x27;.zip&#x27;)]
+    return jsonify({&quot;files&quot;: published})
+
+def ensure_only_grant_records_sent():
+    &quot;&quot;&quot;USAspending only sends grant records as owner.&quot;&quot;&quot;
+    # Filter logic
+    def filter_records(records):
+        return [r for r in records if r.cfda.startswith(&#x27;Grant&#x27;)]
+    return filter_records
+
+def receive_fabs_updates():
+    &quot;&quot;&quot;Receive updates to FABS records as data user.&quot;&quot;&quot;
+    # Subscribe or poll
+    updates = [&quot;Record 1 updated&quot;]
+    return updates
+
+def ensure_deleted_fsrs_not_included():
+    &quot;&quot;&quot;Deleted FSRS records not in submissions as agency user.&quot;&quot;&quot;
+    # Filter out deleted
+    def filter_fsrs(records):
+        return [r for r in records if r.status != &#x27;deleted&#x27;]
+    return filter_fsrs
+
+def daily_financial_assist_update():
+    &quot;&quot;&quot;See updated financial assistance data daily as website user.&quot;&quot;&quot;
+    last_update = datetime.date.today()
+    data = {&quot;updated&quot;: last_update, &quot;records&quot;: 1000}
+    return data
+
+def deactivate_publish_button_derivations():
+    &quot;&quot;&quot;Publish button deactivates during derivations as user.&quot;&quot;&quot;
+    # In UI, set disabled=True during process
+    deriving = True
+    return not deriving  # Enabled when false
+
+def prevent_nonexistent_correct_delete():
+    &quot;&quot;&quot;Attempts to correct/delete non-existent don&#x27;t create new published as Developer.&quot;&quot;&quot;
+    conn = sqlite3.connect(DB_PATH)
+    cursor = conn.cursor()
+    cursor.execute(&#x27;SELECT id FROM fabs_submissions WHERE id = ?&#x27;, (999,))
+    if not cursor.fetchone():
+        logger.warning(&quot;Non-existent record: No new data created&quot;)
+        conn.close()
+        return False
+    conn.close()
+    return True
+
+def update_broker_resources_validations_pp():
+    &quot;&quot;&quot;Update Broker resources, validations, P&amp;P for FABS/DAIMS v1.1 launch as broker team member.&quot;&quot;&quot;
+    # Simulate update
+    logger.info(&quot;Updated for launch&quot;)
+
+def no_nasa_grants_as_contracts():
+    &quot;&quot;&quot;Don&#x27;t show NASA grants as contracts as user.&quot;&quot;&quot;
+    # In derivation
+    if &#x27;NASA&#x27; in agency and cfda.startswith(&#x27;Grant&#x27;):
+        category = &#x27;Grant&#x27;
+    return category
+
+@app.route(&#x27;/fabs_publish/&lt;int:submission_id&gt;&#x27;, methods=[&#x27;POST&#x27;])
+def publish_fabs_submission(submission_id: int):
+    &quot;&quot;&quot;Publish FABS submission, modify when status changes as Developer/Broker user.&quot;&quot;&quot;
+    if not prevent_double_publishing(submission_id):
+        return jsonify({&quot;error&quot;: &quot;Already published&quot;}), 400
+    
+    conn = sqlite3.connect(DB_PATH)
+    cursor = conn.cursor()
+    cursor.execute(&#x27;UPDATE fabs_submissions SET publish_status = ?, publish_date = CURRENT_TIMESTAMP WHERE id = ?&#x27;,
+                   (PublishStatus.PUBLISHED.value, submission_id))
+    updated = cursor.rowcount
+    if updated:
+        # Log status change
+        logger.info(f&quot;Status changed to published for submission {submission_id}&quot;)
+        # Deactivate button simulation
+        session[&#x27;deriving&#x27;] = True
+    conn.commit()
+    conn.close()
+    
+    if updated:
+        # Publish rows info
+        row_count = show_publish_row_count()
+        return jsonify({&quot;success&quot;: True, &quot;rows_to_publish&quot;: row_count})
+    return jsonify({&quot;error&quot;: &quot;Submission not found&quot;}), 404
+
+def new_relic_useful_data():
+    &quot;&quot;&quot;New Relic provides useful data across apps as DevOps.&quot;&quot;&quot;
+    # Mock integration
+    metrics = {&quot;apps&quot;: [&quot;FABS&quot;, &quot;DABS&quot;], &quot;performance&quot;: &quot;High&quot;}
+    logger.info(f&quot;New Relic data: {metrics}&quot;)
+    return metrics
+
+# UI SME content mockups
+def create_content_mockups():
+    &quot;&quot;&quot;Create content mockups as Broker user.&quot;&quot;&quot;
+    mockup = &quot;&lt;div&gt;Mockup for efficient data submission&lt;/div&gt;&quot;
+    return mockup
+
+# Main app run
+if __name__ == &#x27;__main__&#x27;:
+    # Initialize some data
+    process_12_19_2017_deletions()
+    update_fabs_validation_rules()
+    derive_gtas_window_data()
+    load_historical_fabs_data()
+    update_frec_derivations()
+    update_fabs_sample_file()
+    load_historical_fpds_data()
+    test_derivations_robust()
+    ensure_zero_padded_fields()
+    allow_individual_recipients_no_duns_error()
+    prevent_duplicate_transactions()
+    update_error_codes_helpful()
+    ensure_historical_columns()
+    access_additional_fpds_fields()
+    add_submission_dashboard_info()
+    load_historical_fpds_best_way()
+    no_dabs_banners_in_fabs()
+    fabs_readonly_dabs_access()
+    reasonable_validation_time()
+    correct_status_labels_dashboard()
+    landing_page_nav_fabs_dabs()
+    submit_with_quotes_preserve_zeros()
+    
+    app.run(debug=True)</code></pre>
+        </details>
+    </div>
+</body>
+</html>
+    

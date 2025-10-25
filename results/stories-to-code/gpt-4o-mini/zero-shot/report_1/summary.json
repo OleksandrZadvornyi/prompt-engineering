@@ -2,75 +2,27 @@
     "request_number": 1,
     "timestamp": "2025-10-11 15:53:39",
     "model": "openai/gpt-4o-mini",
+    "prompt_variant": "zero-shot",
     "total_tokens": 917,
-    "total_logprob": -359.20235688490146,
     "avg_prob": 0.6758969368106233,
     "perplexity": 1.4795155082648135,
-    "token_count": 917,
-    "function_count": 17,
-    "class_count": 4,
-    "num_lines": 127,
-    "num_nonempty_lines": 101,
-    "avg_line_len_all_chars": 32.69291338582677,
-    "avg_line_len_nonempty_chars": 40.83168316831683,
-    "avg_tokens_per_nonempty_line": 3.267326732673267,
-    "ast_depth": 12,
-    "import_count": 2,
-    "import_names": [
-        "datetime",
-        "logging"
-    ],
-    "import_redundancy_ratio": 0.0,
-    "avg_function_size_lines": 4.882352941176471,
-    "comment_density_percent": 9.900990099009901,
-    "per_function_cyclomatic": {
-        "FABSSubmission": 2,
-        "__init__": 1,
-        "process_deletions": 1,
-        "validate_submission": 3,
-        "upload_fabs_file": 3,
-        "get_submission_status": 1,
-        "update_submission": 2,
-        "reset_permissions": 1,
-        "UIDesign": 2,
-        "report_user_testing": 1,
-        "schedule_user_testing": 1,
-        "move_to_next_design_round": 2,
-        "DataLoader": 2,
-        "load_fpds_data": 1,
-        "load_historical_data": 1,
-        "DeveloperTools": 2,
-        "update_validation_rules": 1,
-        "check_for_duplicates": 1
+    "struct_metrics": {
+        "avg_cyclomatic_complexity": 1.4761904761904763,
+        "ast_depth": 12,
+        "avg_function_size_lines": 4.882352941176471,
+        "import_redundancy_ratio": 0.0
     },
-    "avg_cyclomatic_complexity": 1.5555555555555556,
-    "max_cyclomatic_complexity": 3,
-    "module_cyclomatic_complexity": 28,
-    "syntax_valid": true,
-    "flake8_error_count": 9,
-    "flake8_error_breakdown": {
-        "E": 1,
-        "F": 0,
-        "W": 8,
-        "C": 0,
-        "N": 0,
-        "total": 9
+    "semantic_metrics": {
+        "syntax_valid": true,
+        "flake8_error_count": 9,
+        "mypy_error_count": 0
     },
-    "mypy_error_count": 0,
-    "mypy_error_breakdown": {
-        "return_type": 0,
-        "argument_type": 0,
-        "missing_return": 0,
-        "attribute_error": 0,
-        "annotation_issue": 0,
-        "other": 0,
-        "total": 0
+    "execution_metrics": {
+        "execution_success": true,
+        "execution_time_sec": 0.504,
+        "exception_type": "",
+        "exception_message": "",
+        "runtime_output": "2025-10-25 18:19:27,723 - INFO - Processing deletions for 12-19-2017.\n2025-10-25 18:19:27,723 - INFO - Scheduling user testing for 2025-10-25.\n2025-10-25 18:19:27,724 - INFO - Loading FPDS data.\n2025-10-25 18:19:27,724 - INFO - Validation rules updated: ['Rule1', 'Rule2']."
     },
-    "semantic_quality_score": 95.5,
-    "execution_success": true,
-    "execution_time_sec": 1.73,
-    "exception_type": "",
-    "exception_message": "",
-    "runtime_output": "2025-10-13 09:05:22,190 - INFO - Processing deletions for 12-19-2017.\n2025-10-13 09:05:22,190 - INFO - Scheduling user testing for 2025-10-13.\n2025-10-13 09:05:22,190 - INFO - Loading FPDS data.\n2025-10-13 09:05:22,190 - INFO - Validation rules updated: ['Rule1', 'Rule2'].",
-    "total_credibility": 84.619
+    "total_credibility": 82.48
 }

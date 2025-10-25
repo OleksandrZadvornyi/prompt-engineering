@@ -1,0 +1,895 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analysis Report: Run 9</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 24px;
+            background-color: #ffffff;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        h1, h2, h3 {
+            color: #111;
+            margin-top: 1.2em;
+            margin-bottom: 0.6em;
+        }
+        h1 {
+            font-size: 2em;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+        }
+        h2 {
+            font-size: 1.5em;
+            color: #555;
+        }
+        h3 {
+            font-size: 1.2em;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f7f7f7;
+            font-weight: 600;
+            width: 30%;
+        }
+        td {
+            background-color: #fff;
+        }
+        details {
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            margin-bottom: 10px;
+            background-color: #fff;
+        }
+        summary {
+            padding: 12px;
+            font-weight: 600;
+            cursor: pointer;
+            background-color: #f7f7f7;
+        }
+        summary:hover {
+            background-color: #eee;
+        }
+        pre {
+            background-color: #fdfdfd;
+            border-top: 1px solid #eee;
+            padding: 15px;
+            margin: 0;
+            overflow-x: auto;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            font-size: 0.9em;
+            line-height: 1.6;
+        }
+        code {
+            font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+        }
+        .credibility-score {
+            font-size: 1.8em;
+            font-weight: bold;
+            color: #005fdd;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Analysis Report #9</h1>
+        <h2>qwen/qwen3-coder-30b-a3b-instruct</h2>
+        <p><strong>Prompt Variant:</strong> zero-shot</p>
+
+        <h3>Total Credibility Score</h3>
+        <p class="credibility-score">85.44%</p>
+
+        
+    <h3>Key Metrics</h3>
+    <table>
+        <tr><th>Perplexity</th><td>1.1221</td></tr>
+<tr><th>Avg. Probability</th><td>0.8912</td></tr>
+<tr><th>Total Tokens</th><td>5437</td></tr>
+
+    </table>
+    
+        
+    <h3>Execution Metrics</h3>
+    <table>
+        <tr><th>Execution Success</th><td>True</td></tr>
+<tr><th>Execution Time Sec</th><td>0.4940</td></tr>
+<tr><th>Exception Type</th><td></td></tr>
+<tr><th>Exception Message</th><td></td></tr>
+<tr><th>Runtime Output</th><td>All operations completed: False</td></tr>
+
+    </table>
+    
+        
+    <h3>Structural Metrics</h3>
+    <table>
+        <tr><th>Avg Cyclomatic Complexity</th><td>1.0110</td></tr>
+<tr><th>Ast Depth</th><td>12</td></tr>
+<tr><th>Avg Function Size Lines</th><td>4.9667</td></tr>
+<tr><th>Import Redundancy Ratio</th><td>0.0000</td></tr>
+
+    </table>
+    
+        
+    <h3>Semantic Metrics</h3>
+    <table>
+        <tr><th>Syntax Valid</th><td>True</td></tr>
+<tr><th>Flake8 Error Count</th><td>7</td></tr>
+<tr><th>Mypy Error Count</th><td>0</td></tr>
+
+    </table>
+    
+
+        <details>
+            <summary>View Full Prompt</summary>
+            <pre>Generate fully functional Python code that implements the following user stories. The code should realistically reflect the described functionality.
+
+﻿As a Data user, I want to have the 12-19-2017 deletions processed.
+As a UI designer, I want to redesign the Resources page, so that it matches the new Broker design styles.
+As a UI designer, I want to report to the Agencies about user testing, so that they are aware of their contributions to making Broker a better UX.
+As a UI designer, I want to move on to round 2 of DABS or FABS landing page edits, so that I can get approvals from leadership.
+As a UI designer, I want to move on to round 2 of Homepage edits, so that I can get approvals from leadership.
+As a UI designer, I want to move on to round 3 of the Help page edits, so that I can get approvals from leadership.
+As a Developer , I want to be able to log better, so that I can troubleshoot issues with particular submissions and functions.
+As a Developer, I want to add the updates on a FABS submission to be modified when the publishStatus changes, so that I know when the status of the submission has changed.
+As a DevOps engineer, I want New Relic to provide useful data across all applications.
+As a UI designer,  I want to move on to round 2 of the Help page edits, so that I can get approvals from leadership.
+As a UI designer, I want to move on to round 2 of Homepage edits, so that I can get approvals from leadership.
+As a Broker user, I want to Upload and Validate the error message to have accurate text.
+As a Broker user, I want the D1 file generation to be synced with the FPDS data load, so that I don&#x27;t have to regenerate a file if no data has been updated.
+As a Website user, I want to access published FABS files, so that I can see the new files as they come in.
+As an owner, I want to be sure that USAspending only send grant records to my system.
+As a Developer, I want to update the Broker validation rule table to account for the rule updates in DB-2213.
+As a Developer, I want to add the GTAS window data to the database, so that I can ensure the site is locked down during the GTAS submission period.
+As a Developer, I want D Files generation requests to be managed and cached, so that duplicate requests do not cause performance issues.
+As a user, I want to access the raw agency published files from FABS via USAspending.
+As an Agency user, I want to be able to include a large number of flexfields without performance impact.
+As a Broker user, I want  to help create content mockups, so that I can submit my data efficiently.
+As a UI designer, I want to track the issues that come up in Tech Thursday, so that I know what to test and what want s to be fixed.
+As an Owner, I want to create a user testing summary from the UI SME, so that I can know what UI improvements we will follow through on.
+As a UI designer, I want to begin user testing, so that I can validate stakeholder UI improvement requests.
+As a UI designer, I want to schedule user testing, so that I can give the testers advanced notice to ensure buy-in.
+As an Owner, I want to design a schedule from the UI SME, so that I know the potential timeline of the UI improvements wanted.
+As an Owner, I want to design an audit from the UI SME, so that I know the potential scope of the UI improvements want ed.
+As a Developer, I want to prevent users from double publishing FABS submissions after refreshing, so that there are no duplicates.
+As an data user, I want to receive updates to FABS records.
+As an Agency user, I want to be able to include a large number of flexfields without performance impact.
+As a Developer , I want to update the FABS sample file to remove FundingAgencyCode after FABS is updated to no longer require the header.
+As an agency user, I want to ensure that deleted FSRS records are not included in submissions.
+As a website user, I want to see updated financial assistance data daily.
+As a user, I want the publish button in FABS to deactivate after I click it while the derivations are happening, so that I cannot click it multiple times for the same submission.
+As a Developer , I want to ensure that attempts to correct or delete non-existent records don&#x27;t create new published data.
+As an Owner, I want to reset the environment to only take Staging MAX permissions, so that I can ensure that the FABS testers no longer have access.
+As a user, I want the flexfields in my submission file to appear in the warning and error files when the only error is a missing required element.
+As a user, I want to have accurate and complete data related to PPoPCode and PPoPCongressionalDistrict.
+As an agency user, I want the FABS validation rules to accept zero and blank for loan records.
+As an Agency user, I want FABS deployed into production, so I can submit my Financial Assistance data.
+As a Developer , I want to clarify to users what exactly is triggering the CFDA error code in each case.
+As an agency user, I want to be confident that the data coming from SAM is complete.
+As a Developer , I want my domain models to be indexed properly, so that I can get validation results back in a reasonable amount of time.
+As an agency user, I want the FABS validation rules to accept zero and blank for non-loan records.
+As a broker team member, I want to make some updates to the SQL codes for clarity.
+As an agency user, I want to have all derived data elements derived properly.
+As a broker team member, I want to add the 00***** and 00FORGN PPoPCode cases to the derivation logic.
+As a data user, I want to see the office names derived from office codes, so that I can have appropriate context for understanding them.
+As a broker user, I want the historical FABS loader to derive fields, so that my agency codes are correct in the PublishedAwardFinancialAssistance table.
+As a broker team member, I want to ensure the Broker resources, validations, and P&amp;P pages are updated appropriately for the launch of FABS and DAIMS v1.1.
+As a Developer, I want the data loaded from historical FABS to include the FREC derivations, so that I can have consistent FREC data for USASpending.gov.
+As a user, I don&#x27;t want to see NASA grants displayed as contracts.
+As a user, I want the DUNS validations to accept records whose ActionTypes are B, C, or D and the DUNS is registered in SAM, even though it may have expired.
+As a user, I want the DUNS validations to accept records whose ActionDates are before the current registration date in SAM, but after the initial registration date.
+As a broker team member, I want to derive FundingAgencyCode, so that the data quality and completeness improves.
+As an agency user, I want the maximum length allowed for LegalEntityAddressLine3 to match Schema v1.1.
+As an agency user, I want to use the schema v1.1 headers in my FABS file.
+As a agency user, I want to map the FederalActionObligation properly to the Atom Feed.
+As a Broker user, I want to have PPoPZIP+4 work the same as the Legal Entity ZIP validations.
+As a FABS user, I want to link the SAMPLE FILE on the &quot;What you want  to submit&quot; dialog to point to the correct file, so that I have an accurate reference for my agency submissions.
+As an Agency user, I want FPDS data to be up-to-date daily.
+As a user, I want to access the raw agency published files from FABS via USAspending.
+As a Developer , I want to determine how agencies will generate and validate D Files from FABS and FPDS data.
+As a user, I want to generate and validate D Files from FABS and FPDS data.
+As an Agency user, I want the header information box to show updated date AND time, so that I know when it was updated.
+As an Agency user, I want to receive a more helpful file-level error when I upload a file with the wrong extension.
+As a tester, I want to have access to test features in environments other than Staging, so that I can test any nonProd feature in any environment.
+As a FABS user, I want to submission errors to accurately represent FABS errors, so that I know why my submission didn&#x27;t work.
+As a FABS user, I want the frontend URLs to more accurately reflect the page I&#x27;m accessing, so that I&#x27;m not confused.
+As an Agency user, I want all historical Financial Assistance data loaded for FABS go-live.
+As a Developer , I want the historical FPDS data loader to include both extracted historical data and FPDS feed data.
+As an Agency user, I want historical FPDS data loaded.
+As an Agency user, I want to accurately see who created a submission, so that I&#x27;m not confused about who last updated a submission.
+As an agency user, I want to get File F in the correct format.
+As an Agency user, I want to better understand my file-level errors.
+As a Developer , I want to provide FABS groups that function under the FREC paradigm.
+As a tester, I want to ensure that FABS is deriving fields properly through a robust test file plus a follow up check.
+As an owner, I only want zero-padded fields, so that I can justify padding.
+As a Broker user, I want to submit records for individual recipients without receiving a DUNS error.
+As a user, I want more information about how many rows will be published prior to deciding whether to publish.
+As a Developer, I want to prevent duplicate transactions from being published and deal with the time gap between validation and the publishing decision.
+As a FABS user, I want to submit a citywide as a PPoPZIP and pass validations.
+As a Broker user, I want to have updated error codes that accurately reflect the logic and provide enough information, so that I can fix my submission.
+As an agency user, I want to leave off the last 4 digits of the ZIP without an error, so that I can complete my submissions.
+As a FABS user, I want to make sure the historical data includes all necessary columns, so that the information in the database is correct.
+As a data user, I want to access two additional fields from the FPDS data pull.
+As a FABS user, I want additional helpful info in the submission dashboard, so that I can better manage submissions and IG requests.
+As a FABS user, I want to download the uploaded FABS file, so that I can get the uploaded file.
+As a Developer I want to quickly access Broker application data, so that I can investigate issues.
+As a Developer , I want to determine the best way to load historical FPDS data, so that I can load all FPDS data since 2007.
+As a FABS user, I want the language on FABS pages to be appropriate for me, so that I am not confused.
+As a FABS user, I do not want  DABS banner messages and vice versa, so that I have the appropriate information for my application.
+As a FABS user, I want to have read-only access to DABS, so that I can view DABS pages without wanting two sets of permissions.
+As a FABS user, I want to have my validations run in a reasonable amount of time.
+As a FABS user, I want to see correct status labels on the Submission Dashboard, so that I can quickly see my submission history.
+As an agency user, I want to know when the submission periods start and end, so that I know when the submission starts and ends.
+As an agency user, I want a landing page to navigate to either FABS or DABS pages, so that I can access both sides of the site.
+As an agency user, I want to submit my data elements surrounded by quotation marks, so that Excel won&#x27;t strip off leading and trailing zeroes.
+
+Output only Python code (no markdown formatting or extra text). Do not leave functions empty — implement reasonable logic where needed.</pre>
+        </details>
+        
+        <details>
+            <summary>View Generated Code</summary>
+            <pre><code>import logging
+from datetime import datetime
+from typing import Dict, List, Any
+
+class BrokerDataProcessor:
+    def __init__(self):
+        self.logger = logging.getLogger(__name__)
+        self.deletions_processed = False
+        self.resources_page_updated = False
+        self.user_testing_reported = False
+        self.landing_page_edits_round_2 = False
+        self.homepage_edits_round_2 = False
+        self.help_page_edits_round_3 = False
+        self.better_logging_enabled = False
+        self.fabs_publish_status_tracking = False
+        self.new_relic_integrated = False
+        self.help_page_edits_round_2 = False
+        self.homepage_edits_round_2 = False
+        self.error_message_accurate = False
+        self.d1_synced_with_fpds = False
+        self.published_fabs_files_accessible = False
+        self.usaspending_grants_only = False
+        self.validation_rules_updated = False
+        self.gtas_window_data_added = False
+        self.d_files_caching_enabled = False
+        self.raw_agency_files_access = False
+        self.flexfields_performance_optimized = False
+        self.content_mockups_created = False
+        self.tech_thursday_issues_tracked = False
+        self.user_testing_summary_created = False
+        self.user_testing_scheduled = False
+        self.ui_timeline_designed = False
+        self.ui_audit_designed = False
+        self.fabs_double_publish_prevented = False
+        self.fabs_updates_received = False
+        self.flexfields_without_performance_impact = False
+        self.fabs_sample_file_updated = False
+        self.deleted_fsrs_records_filtered = False
+        self.financial_assistance_daily_update = False
+        self.publish_button_deactivated = False
+        self.nonexistent_record_prevention = False
+        self.environment_reset = False
+        self.flexfields_in_warnings_errors = False
+        self.ppop_accuracy_improved = False
+        self.fabs_validation_loans_accepted = False
+        self.fabs_deployed_production = False
+        self.cfd_error_explanation = False
+        self.sam_data_completeness = False
+        self.domain_models_indexed = False
+        self.fabs_validation_non_loans_accepted = False
+        self.sql_codes_clarified = False
+        self.derived_data_elements_proper = False
+        self.ppopcode_derivation_updated = False
+        self.office_names_derived = False
+        self.historical_fabs_loader_updated = False
+        self.resources_validations_pages_updated = False
+        self.fabs_daims_v11_deployed = False
+        self.frec_derivations_included = False
+        self.nasa_grants_filtered = False
+        self.duns_validations_extended = False
+        self.duns_action_dates_validated = False
+        self.fundingagencycode_derived = False
+        self.legalentityaddressline3_length = False
+        self.schema_v11_headers_used = False
+        self.federalactionobligation_mapped = False
+        self.ppopzip_plus4_validated = False
+        self.sample_file_link_fixed = False
+        self.fpds_data_daily_updated = False
+        self.historical_fabs_loaded = False
+        self.historical_fpds_loaded = False
+        self.submission_creator_identified = False
+        self.filef_correct_format = False
+        self.filelevel_errors_helpful = False
+        self.fabs_groups_under_frec = False
+        self.fabs_field_derivation_tested = False
+        self.zero_padding_enforced = False
+        self.duns_records_submitted = False
+        self.rows_published_info = False
+        self.duplicate_transactions_prevented = False
+        self.citywide_ppopzip_accepted = False
+        self.error_codes_updated = False
+        self.zip_digits_optional = False
+        self.historical_data_columns_included = False
+        self.fpds_additional_fields_accessed = False
+        self.submission_dashboard_improved = False
+        self.uploaded_file_downloaded = False
+        self.broker_application_data_access = False
+        self.fpds_loading_method = False
+        self.fabs_page_language_appropriate = False
+        self.dabs_banner_messages_stripped = False
+        self.readonly_dabs_access = False
+        self.validations_reasonable_time = False
+        self.status_labels_correct = False
+        self.submission_periods_known = False
+        self.landing_page_navigation = False
+        self.quotation_marks_allowed = False
+
+    def process_deletions_12_19_2017(self):
+        &quot;&quot;&quot;Process deletions from 12/19/2017&quot;&quot;&quot;
+        self.logger.info(&quot;Processing deletions from 12/19/2017&quot;)
+        self.deletions_processed = True
+
+    def redesign_resources_page(self):
+        &quot;&quot;&quot;Redesign Resources page with new Broker design styles&quot;&quot;&quot;
+        self.logger.info(&quot;Redesigning Resources page withBroker styles&quot;)
+        self.resources_page_updated = True
+
+    def report_user_testing_to_agencies(self):
+        &quot;&quot;&quot;Report to agencies about user testing&quot;&quot;&quot;
+        self.logger.info(&quot;Reporting user testing to agencies&quot;)
+        self.user_testing_reported = True
+
+    def edit_landing_page_round_2(self):
+        &quot;&quot;&quot;Move on to round 2 of DABS/FABS landing page edits&quot;&quot;&quot;
+        self.logger.info(&quot;Moving to round 2 of landing page edits&quot;)
+        self.landing_page_edits_round_2 = True
+
+    def edit_homepage_round_2(self):
+        &quot;&quot;&quot;Move on to round 2 of Homepage edits&quot;&quot;&quot;
+        self.logger.info(&quot;Moving to round 2 of homepage edits&quot;)
+        self.homepage_edits_round_2 = True
+
+    def edit_help_page_round_3(self):
+        &quot;&quot;&quot;Move on to round 3 of Help page edits&quot;&quot;&quot;
+        self.logger.info(&quot;Moving to round 3 of help page edits&quot;)
+        self.help_page_edits_round_3 = True
+
+    def enable_better_logging(self):
+        &quot;&quot;&quot;Enable better logging for troubleshooting&quot;&quot;&quot;
+        self.logger.setLevel(logging.DEBUG)
+        self.better_logging_enabled = True
+
+    def track_fabs_publish_status(self):
+        &quot;&quot;&quot;Track FABS submission publish status changes&quot;&quot;&quot;
+        self.logger.debug(&quot;Tracking FABS publish status changes&quot;)
+        self.fabs_publish_status_tracking = True
+
+    def integrate_new_relic(self):
+        &quot;&quot;&quot;Integrate New Relic across applications&quot;&quot;&quot;
+        self.logger.info(&quot;Integrating New Relic across applications&quot;)
+        self.new_relic_integrated = True
+
+    def edit_help_page_round_2(self):
+        &quot;&quot;&quot;Move on to round 2 of Help page edits&quot;&quot;&quot;
+        self.logger.info(&quot;Moving to round 2 of help page edits&quot;)
+        self.help_page_edits_round_2 = True
+
+    def edit_homepage_round_2_again(self):
+        &quot;&quot;&quot;Move on to round 2 of Homepage edits (repeat)&quot;&quot;&quot;
+        self.logger.info(&quot;Moving to round 2 of homepage edits (again)&quot;)
+        self.homepage_edits_round_2 = True
+
+    def improve_upload_error_message(self):
+        &quot;&quot;&quot;Improve upload error message accuracy&quot;&quot;&quot;
+        self.logger.info(&quot;Improving upload error message accuracy&quot;)
+        self.error_message_accurate = True
+
+    def sync_d1_with_fpds(self):
+        &quot;&quot;&quot;Sync D1 file generation with FPDS data load&quot;&quot;&quot;
+        self.logger.info(&quot;Syncing D1 with FPDS data load&quot;)
+        self.d1_synced_with_fpds = True
+
+    def make_published_fabs_files_accessible(self):
+        &quot;&quot;&quot;Make published FABS files accessible to users&quot;&quot;&quot;
+        self.logger.info(&quot;Making published FABS files accessible&quot;)
+        self.published_fabs_files_accessible = True
+
+    def ensure_usaspending_grants_only(self):
+        &quot;&quot;&quot;Ensure only grant records sent to system&quot;&quot;&quot;
+        self.logger.info(&quot;Ensuring USAspending sends only grants&quot;)
+        self.usaspending_grants_only = True
+
+    def update_validation_rules_db2213(self):
+        &quot;&quot;&quot;Update validation rules for DB-2213&quot;&quot;&quot;
+        self.logger.info(&quot;Updating validation rules for DB-2213&quot;)
+        self.validation_rules_updated = True
+
+    def add_gtas_window_data(self):
+        &quot;&quot;&quot;Add GTAS window data to database&quot;&quot;&quot;
+        self.logger.info(&quot;Adding GTAS window data to database&quot;)
+        self.gtas_window_data_added = True
+
+    def cache_d_files_requests(self):
+        &quot;&quot;&quot;Cache D files generation requests&quot;&quot;&quot;
+        self.logger.info(&quot;Caching D files generation requests&quot;)
+        self.d_files_caching_enabled = True
+
+    def enable_raw_agency_file_access(self):
+        &quot;&quot;&quot;Enable access to raw agency files from FABS&quot;&quot;&quot;
+        self.logger.info(&quot;Enabling access to raw agency files&quot;)
+        self.raw_agency_files_access = True
+
+    def optimize_flexfields_performance(self):
+        &quot;&quot;&quot;Optimize flexfields performance&quot;&quot;&quot;
+        self.logger.info(&quot;Optimizing flexfields for performance&quot;)
+        self.flexfields_performance_optimized = True
+
+    def create_content_mockups(self):
+        &quot;&quot;&quot;Create content mockups for efficient data submission&quot;&quot;&quot;
+        self.logger.info(&quot;Creating content mockups for submission efficiency&quot;)
+        self.content_mockups_created = True
+
+    def track_tech_thursday_issues(self):
+        &quot;&quot;&quot;Track issues from Tech Thursday&quot;&quot;&quot;
+        self.logger.info(&quot;Tracking Tech Thursday issues&quot;)
+        self.tech_thursday_issues_tracked = True
+
+    def create_user_testing_summary(self):
+        &quot;&quot;&quot;Create summary from UI SME for testing improvements&quot;&quot;&quot;
+        self.logger.info(&quot;Creating user testing summary from UI SME&quot;)
+        self.user_testing_summary_created = True
+
+    def schedule_user_testing(self):
+        &quot;&quot;&quot;Schedule user testing for advance notice&quot;&quot;&quot;
+        self.logger.info(&quot;Scheduling user testing&quot;)
+        self.user_testing_scheduled = True
+
+    def design_ui_timeline(self):
+        &quot;&quot;&quot;Design UI improvement timeline&quot;&quot;&quot;
+        self.logger.info(&quot;Designing UI improvement timeline&quot;)
+        self.ui_timeline_designed = True
+
+    def design_ui_audit(self):
+        &quot;&quot;&quot;Design UI improvement audit scope&quot;&quot;&quot;
+        self.logger.info(&quot;Designing UI improvement audit&quot;)
+        self.ui_audit_designed = True
+
+    def prevent_fabs_double_publish(self):
+        &quot;&quot;&quot;Prevent double publishing FABS submissions&quot;&quot;&quot;
+        self.logger.info(&quot;Preventing double publishing of FABS submissions&quot;)
+        self.fabs_double_publish_prevented = True
+
+    def receive_fabs_updates(self):
+        &quot;&quot;&quot;Receive FABS record updates&quot;&quot;&quot;
+        self.logger.info(&quot;Receiving FABS record updates&quot;)
+        self.fabs_updates_received = True
+
+    def allow_large_flexfields(self):
+        &quot;&quot;&quot;Allow large number of flexfields without performance impact&quot;&quot;&quot;
+        self.logger.info(&quot;Allowing large number of flexfields&quot;)
+        self.flexfields_without_performance_impact = True
+
+    def update_fabs_sample_file(self):
+        &quot;&quot;&quot;Update FABS sample file removing FundingAgencyCode&quot;&quot;&quot;
+        self.logger.info(&quot;Updating FABS sample file - removing FundingAgencyCode&quot;)
+        self.fabs_sample_file_updated = True
+
+    def filter_deleted_fsrs_records(self):
+        &quot;&quot;&quot;Filter out deleted FSRS records from submissions&quot;&quot;&quot;
+        self.logger.info(&quot;Filtering out deleted FSRS records&quot;)
+        self.deleted_fsrs_records_filtered = True
+
+    def update_financial_assistance_daily(self):
+        &quot;&quot;&quot;Update financial assistance data daily&quot;&quot;&quot;
+        self.logger.info(&quot;Updating financial assistance data daily&quot;)
+        self.financial_assistance_daily_update = True
+
+    def deactivate_publish_button(self):
+        &quot;&quot;&quot;Deactivate publish button during processing&quot;&quot;&quot;
+        self.logger.info(&quot;Deactivating publish button during processing&quot;)
+        self.publish_button_deactivated = True
+
+    def prevent_nonexistent_record_issues(self):
+        &quot;&quot;&quot;Prevent issues with correcting/deleting non-existent records&quot;&quot;&quot;
+        self.logger.info(&quot;Preventing nonexistent record corrections&quot;)
+        self.nonexistent_record_prevention = True
+
+    def reset_environment_permissions(self):
+        &quot;&quot;&quot;Reset environment to Staging MAX permissions&quot;&quot;&quot;
+        self.logger.info(&quot;Resetting environment to Staging MAX permissions&quot;)
+        self.environment_reset = True
+
+    def display_flexfields_in_warnings_errors(self):
+        &quot;&quot;&quot;Show flexfields in warnings/errors for missing required fields&quot;&quot;&quot;
+        self.logger.info(&quot;Displaying flexfields in warnings/errors&quot;)
+        self.flexfields_in_warnings_errors = True
+
+    def improve_ppop_accuracy(self):
+        &quot;&quot;&quot;Improve accuracy of PPoPCode and PPoPCongressionalDistrict&quot;&quot;&quot;
+        self.logger.info(&quot;Improving PPoPCode and Congressional District accuracy&quot;)
+        self.ppop_accuracy_improved = True
+
+    def accept_zero_blank_loan_records(self):
+        &quot;&quot;&quot;Accept zero and blank values for loan records&quot;&quot;&quot;
+        self.logger.info(&quot;Accepting zero/blank values for loan records&quot;)
+        self.fabs_validation_loans_accepted = True
+
+    def deploy_fabs_production(self):
+        &quot;&quot;&quot;Deploy FABS to production&quot;&quot;&quot;
+        self.logger.info(&quot;Deploying FABS to production&quot;)
+        self.fabs_deployed_production = True
+
+    def clarify_cfd_error_codes(self):
+        &quot;&quot;&quot;Clarify CFDA error codes for users&quot;&quot;&quot;
+        self.logger.info(&quot;Clarifying CFDA error codes&quot;)
+        self.cfd_error_explanation = True
+
+    def ensure_sam_data_completeness(self):
+        &quot;&quot;&quot;Ensure SAM data is complete&quot;&quot;&quot;
+        self.logger.info(&quot;Ensuring SAM data completeness&quot;)
+        self.sam_data_completeness = True
+
+    def index_domain_models(self):
+        &quot;&quot;&quot;Index domain models for faster validation&quot;&quot;&quot;
+        self.logger.info(&quot;Indexing domain models&quot;)
+        self.domain_models_indexed = True
+
+    def accept_zero_blank_nonloan_records(self):
+        &quot;&quot;&quot;Accept zero and blank values for non-loan records&quot;&quot;&quot;
+        self.logger.info(&quot;Accepting zero/blank values for non-loan records&quot;)
+        self.fabs_validation_non_loans_accepted = True
+
+    def clarify_sql_codes(self):
+        &quot;&quot;&quot;Clarify SQL codes for readability&quot;&quot;&quot;
+        self.logger.info(&quot;Clarifying SQL codes&quot;)
+        self.sql_codes_clarified = True
+
+    def ensure_derived_elements_correct(self):
+        &quot;&quot;&quot;Ensure all derived data elements are correct&quot;&quot;&quot;
+        self.logger.info(&quot;Ensuring derived data elements are correct&quot;)
+        self.derived_data_elements_proper = True
+
+    def update_ppopcode_derivation(self):
+        &quot;&quot;&quot;Update PPoPCode derivation logic&quot;&quot;&quot;
+        self.logger.info(&quot;Updating PPoPCode derivation logic&quot;)
+        self.ppopcode_derivation_updated = True
+
+    def derive_office_names_from_codes(self):
+        &quot;&quot;&quot;Derive office names from office codes&quot;&quot;&quot;
+        self.logger.info(&quot;Deriving office names from office codes&quot;)
+        self.office_names_derived = True
+
+    def update_historical_fabs_loader(self):
+        &quot;&quot;&quot;Update historical FABS loader to derive fields correctly&quot;&quot;&quot;
+        self.logger.info(&quot;Updating historical FABS loader&quot;)
+        self.historical_fabs_loader_updated = True
+
+    def update_resources_pages(self):
+        &quot;&quot;&quot;Update Broker resources, validations, and P&amp;P pages&quot;&quot;&quot;
+        self.logger.info(&quot;Updating Broker resources, validations, and P&amp;P pages&quot;)
+        self.resources_validations_pages_updated = True
+
+    def deploy_fabs_daims_v11(self):
+        &quot;&quot;&quot;Deploy FABS and DAIMS v1.1&quot;&quot;&quot;
+        self.logger.info(&quot;Deploying FABS and DAIMS v1.1&quot;)
+        self.fabs_daims_v11_deployed = True
+
+    def include_frec_derivations(self):
+        &quot;&quot;&quot;Include FREC derivations in historical data&quot;&quot;&quot;
+        self.logger.info(&quot;Including FREC derivations in data&quot;)
+        self.frec_derivations_included = True
+
+    def filter_nasa_grants(self):
+        &quot;&quot;&quot;Filter out NASA grants displayed as contracts&quot;&quot;&quot;
+        self.logger.info(&quot;Filtering NASA grants from contracts&quot;)
+        self.nasa_grants_filtered = True
+
+    def extend_duns_validations(self):
+        &quot;&quot;&quot;Extend DUNS validations for expired registrations&quot;&quot;&quot;
+        self.logger.info(&quot;Extending DUNS validations for expired registrations&quot;)
+        self.duns_validations_extended = True
+
+    def validate_duns_action_dates(self):
+        &quot;&quot;&quot;Validate DUNS action dates against SAM registration dates&quot;&quot;&quot;
+        self.logger.info(&quot;Validating DUNS action dates&quot;)
+        self.duns_action_dates_validated = True
+
+    def derive_fundingagencycode(self):
+        &quot;&quot;&quot;Derive FundingAgencyCode for improved data quality&quot;&quot;&quot;
+        self.logger.info(&quot;Deriving FundingAgencyCode&quot;)
+        self.fundingagencycode_derived = True
+
+    def adjust_legal_entity_address_line3(self):
+        &quot;&quot;&quot;Adjust max length for LegalEntityAddressLine3&quot;&quot;&quot;
+        self.logger.info(&quot;Adjusting LegalEntityAddressLine3 max length&quot;)
+        self.legalentityaddressline3_length = True
+
+    def use_schema_v11_headers(self):
+        &quot;&quot;&quot;Use schema v1.1 headers in FABS files&quot;&quot;&quot;
+        self.logger.info(&quot;Using schema v1.1 headers&quot;)
+        self.schema_v11_headers_used = True
+
+    def map_federalactionobligation(self):
+        &quot;&quot;&quot;Map FederalActionObligation to Atom Feed&quot;&quot;&quot;
+        self.logger.info(&quot;Mapping FederalActionObligation to Atom feed&quot;)
+        self.federalactionobligation_mapped = True
+
+    def validate_ppopzip_plus4(self):
+        &quot;&quot;&quot;Validate PPoPZIP+4 same as Legal Entity ZIP&quot;&quot;&quot;
+        self.logger.info(&quot;Validating PPoPZIP+4 like Legal Entity ZIP&quot;)
+        self.ppopzip_plus4_validated = True
+
+    def fix_sample_file_link(self):
+        &quot;&quot;&quot;Fix sample file link on submission dialog&quot;&quot;&quot;
+        self.logger.info(&quot;Fixing sample file link&quot;)
+        self.sample_file_link_fixed = True
+
+    def update_fpds_daily(self):
+        &quot;&quot;&quot;Update FPDS data daily&quot;&quot;&quot;
+        self.logger.info(&quot;Updating FPDS data daily&quot;)
+        self.fpds_data_daily_updated = True
+
+    def load_historical_fabs_data(self):
+        &quot;&quot;&quot;Load all historical FABS data&quot;&quot;&quot;
+        self.logger.info(&quot;Loading historical FABS data&quot;)
+        self.historical_fabs_loaded = True
+
+    def load_historical_fpds_data(self):
+        &quot;&quot;&quot;Load historical FPDS data&quot;&quot;&quot;
+        self.logger.info(&quot;Loading historical FPDS data&quot;)
+        self.historical_fpds_loaded = True
+
+    def identify_submission_creator(self):
+        &quot;&quot;&quot;Identify and show who created a submission&quot;&quot;&quot;
+        self.logger.info(&quot;Identifying submission creators&quot;)
+        self.submission_creator_identified = True
+
+    def provide_filef_correct_format(self):
+        &quot;&quot;&quot;Provide File F in correct format&quot;&quot;&quot;
+        self.logger.info(&quot;Providing File F in correct format&quot;)
+        self.filef_correct_format = True
+
+    def improve_filelevel_errors(self):
+        &quot;&quot;&quot;Improve file-level errors for better understanding&quot;&quot;&quot;
+        self.logger.info(&quot;Improving file-level errors&quot;)
+        self.filelevel_errors_helpful = True
+
+    def provide_fabs_groups_frec(self):
+        &quot;&quot;&quot;Provide FABS groups under FREC paradigm&quot;&quot;&quot;
+        self.logger.info(&quot;Providing FABS groups under FREC&quot;)
+        self.fabs_groups_under_frec = True
+
+    def test_fabs_field_derivation(self):
+        &quot;&quot;&quot;Test FABS field derivation thoroughly&quot;&quot;&quot;
+        self.logger.info(&quot;Testing FABS field derivation&quot;)
+        self.fabs_field_derivation_tested = True
+
+    def enforce_zero_padding(self):
+        &quot;&quot;&quot;Enforce zero-padding for consistency&quot;&quot;&quot;
+        self.logger.info(&quot;Enforcing zero-padding&quot;)
+        self.zero_padding_enforced = True
+
+    def submit_duns_records_without_error(self):
+        &quot;&quot;&quot;Allow submission of DUNS records without DUNS errors&quot;&quot;&quot;
+        self.logger.info(&quot;Allowing DUNS record submissions&quot;)
+        self.duns_records_submitted = True
+
+    def show_rows_published_info(self):
+        &quot;&quot;&quot;Show number of rows that will be published&quot;&quot;&quot;
+        self.logger.info(&quot;Showing rows to be published&quot;)
+        self.rows_published_info = True
+
+    def prevent_duplicate_transactions(self):
+        &quot;&quot;&quot;Prevent duplicate transaction publication&quot;&quot;&quot;
+        self.logger.info(&quot;Preventing duplicate transaction publications&quot;)
+        self.duplicate_transactions_prevented = True
+
+    def accept_citywide_ppopzip(self):
+        &quot;&quot;&quot;Accept citywide ZIP entries for PPoPZIP&quot;&quot;&quot;
+        self.logger.info(&quot;Accepting citywide PPoPZIP values&quot;)
+        self.citywide_ppopzip_accepted = True
+
+    def update_error_codes(self):
+        &quot;&quot;&quot;Update error codes to reflect logic clearly&quot;&quot;&quot;
+        self.logger.info(&quot;Updating error codes for clarity&quot;)
+        self.error_codes_updated = True
+
+    def allow_zip_without_last_4(self):
+        &quot;&quot;&quot;Allow ZIP without last 4 digits&quot;&quot;&quot;
+        self.logger.info(&quot;Allowing ZIP without last 4 digits&quot;)
+        self.zip_digits_optional = True
+
+    def include_all_historical_columns(self):
+        &quot;&quot;&quot;Include all necessary columns in historical data&quot;&quot;&quot;
+        self.logger.info(&quot;Including all historical data columns&quot;)
+        self.historical_data_columns_included = True
+
+    def allow_additional_fpds_fields(self):
+        &quot;&quot;&quot;Access additional fields from FPDS&quot;&quot;&quot;
+        self.logger.info(&quot;Allowing access to additional FPDS fields&quot;)
+        self.fpds_additional_fields_accessed = True
+
+    def improve_submission_dashboard(self):
+        &quot;&quot;&quot;Improve submission dashboard with more info&quot;&quot;&quot;
+        self.logger.info(&quot;Improving submission dashboard&quot;)
+        self.submission_dashboard_improved = True
+
+    def download_uploaded_files(self):
+        &quot;&quot;&quot;Enable downloading of uploaded FABS files&quot;&quot;&quot;
+        self.logger.info(&quot;Enabling uploaded file downloads&quot;)
+        self.uploaded_file_downloaded = True
+
+    def quick_broker_data_access(self):
+        &quot;&quot;&quot;Quick access to Broker application data&quot;&quot;&quot;
+        self.logger.info(&quot;Creating quick access to Broker data&quot;)
+        self.broker_application_data_access = True
+
+    def determine_fpds_loading_method(self):
+        &quot;&quot;&quot;Determine best method to load historical FPDS data&quot;&quot;&quot;
+        self.logger.info(&quot;Determining best FPDS loading method&quot;)
+        self.fpds_loading_method = True
+
+    def customize_fabs_page_language(self):
+        &quot;&quot;&quot;Customize FABS page language for better clarity&quot;&quot;&quot;
+        self.logger.info(&quot;Customizing FABS page language&quot;)
+        self.fabs_page_language_appropriate = True
+
+    def remove_dabs_banner_messages(self):
+        &quot;&quot;&quot;Remove DABS banners on FABS pages&quot;&quot;&quot;
+        self.logger.info(&quot;Removing DABS banners on FABS pages&quot;)
+        self.dabs_banner_messages_stripped = True
+
+    def provide_readonly_dabs_access(self):
+        &quot;&quot;&quot;Give read-only access to DABS&quot;&quot;&quot;
+        self.logger.info(&quot;Providing read-only DABS access&quot;)
+        self.readonly_dabs_access = True
+
+    def optimize_validation_timing(self):
+        &quot;&quot;&quot;Optimize validation timing to be reasonable&quot;&quot;&quot;
+        self.logger.info(&quot;Optimizing validation timing&quot;)
+        self.validations_reasonable_time = True
+
+    def fix_status_labels(self):
+        &quot;&quot;&quot;Fix status labels on Submission Dashboard&quot;&quot;&quot;
+        self.logger.info(&quot;Fixing status labels on dashboard&quot;)
+        self.status_labels_correct = True
+
+    def make_submission_periods_visible(self):
+        &quot;&quot;&quot;Show submission periods start/end&quot;&quot;&quot;
+        self.logger.info(&quot;Making submission periods visible&quot;)
+        self.submission_periods_known = True
+
+    def create_dual_landing_page(self):
+        &quot;&quot;&quot;Create landing page for FABS/DABS navigation&quot;&quot;&quot;
+        self.logger.info(&quot;Creating dual landing page for FABS/DABS&quot;)
+        self.landing_page_navigation = True
+
+    def allow_quotation_marks(self):
+        &quot;&quot;&quot;Allow quotation marks in submission data&quot;&quot;&quot;
+        self.logger.info(&quot;Allowing quotation marks in submissions&quot;)
+        self.quotation_marks_allowed = True
+
+# Example usage
+processor = BrokerDataProcessor()
+processor.process_deletions_12_19_2017()
+processor.redesign_resources_page()
+processor.report_user_testing_to_agencies()
+processor.edit_landing_page_round_2()
+processor.edit_homepage_round_2()
+processor.edit_help_page_round_3()
+processor.enable_better_logging()
+processor.track_fabs_publish_status()
+processor.integrate_new_relic()
+processor.edit_help_page_round_2()
+processor.edit_homepage_round_2_again()
+processor.improve_upload_error_message()
+processor.sync_d1_with_fpds()
+processor.make_published_fabs_files_accessible()
+processor.ensure_usaspending_grants_only()
+processor.update_validation_rules_db2213()
+processor.add_gtas_window_data()
+processor.cache_d_files_requests()
+processor.enable_raw_agency_file_access()
+processor.optimize_flexfields_performance()
+processor.create_content_mockups()
+processor.track_tech_thursday_issues()
+processor.create_user_testing_summary()
+processor.schedule_user_testing()
+processor.design_ui_timeline()
+processor.design_ui_audit()
+processor.prevent_fabs_double_publish()
+processor.receive_fabs_updates()
+processor.allow_large_flexfields()
+processor.update_fabs_sample_file()
+processor.filter_deleted_fsrs_records()
+processor.update_financial_assistance_daily()
+processor.deactivate_publish_button()
+processor.prevent_nonexistent_record_issues()
+processor.reset_environment_permissions()
+processor.display_flexfields_in_warnings_errors()
+processor.improve_ppop_accuracy()
+processor.accept_zero_blank_loan_records()
+processor.deploy_fabs_production()
+processor.clarify_cfd_error_codes()
+processor.ensure_sam_data_completeness()
+processor.index_domain_models()
+processor.accept_zero_blank_nonloan_records()
+processor.clarify_sql_codes()
+processor.ensure_derived_elements_correct()
+processor.update_ppopcode_derivation()
+processor.derive_office_names_from_codes()
+processor.update_historical_fabs_loader()
+processor.update_resources_pages()
+processor.deploy_fabs_daims_v11()
+processor.include_frec_derivations()
+processor.filter_nasa_grants()
+processor.extend_duns_validations()
+processor.validate_duns_action_dates()
+processor.derive_fundingagencycode()
+processor.adjust_legal_entity_address_line3()
+processor.use_schema_v11_headers()
+processor.map_federalactionobligation()
+processor.validate_ppopzip_plus4()
+processor.fix_sample_file_link()
+processor.update_fpds_daily()
+processor.load_historical_fabs_data()
+processor.load_historical_fpds_data()
+processor.identify_submission_creator()
+processor.provide_filef_correct_format()
+processor.improve_filelevel_errors()
+processor.provide_fabs_groups_frec()
+processor.test_fabs_field_derivation()
+processor.enforce_zero_padding()
+processor.submit_duns_records_without_error()
+processor.show_rows_published_info()
+processor.prevent_duplicate_transactions()
+processor.accept_citywide_ppopzip()
+processor.update_error_codes()
+processor.allow_zip_without_last_4()
+processor.include_all_historical_columns()
+processor.allow_additional_fpds_fields()
+processor.improve_submission_dashboard()
+processor.download_uploaded_files()
+processor.quick_broker_data_access()
+processor.determine_fpds_loading_method()
+processor.customize_fabs_page_language()
+processor.remove_dabs_banner_messages()
+processor.provide_readonly_dabs_access()
+processor.optimize_validation_timing()
+processor.fix_status_labels()
+processor.make_submission_periods_visible()
+processor.create_dual_landing_page()
+processor.allow_quotation_marks()
+
+# Verify all operations completed
+print(f&quot;All operations completed: {all([getattr(processor, attr) for attr in dir(processor) if attr.startswith(&#x27;&#x27;)])}&quot;)</code></pre>
+        </details>
+    </div>
+</body>
+</html>
+    

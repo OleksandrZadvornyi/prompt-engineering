@@ -2,76 +2,27 @@
     "request_number": 15,
     "timestamp": "2025-10-11 16:17:52",
     "model": "openai/gpt-4o-mini",
+    "prompt_variant": "zero-shot",
     "total_tokens": 785,
-    "total_logprob": -224.13318788826786,
     "avg_prob": 0.7516233201586076,
     "perplexity": 1.3304536636635755,
-    "token_count": 785,
-    "function_count": 18,
-    "class_count": 7,
-    "num_lines": 120,
-    "num_nonempty_lines": 90,
-    "avg_line_len_all_chars": 29.566666666666666,
-    "avg_line_len_nonempty_chars": 39.28888888888889,
-    "avg_tokens_per_nonempty_line": 3.1666666666666665,
-    "ast_depth": 11,
-    "import_count": 2,
-    "import_names": [
-        "datetime",
-        "typing"
-    ],
-    "import_redundancy_ratio": 0.0,
-    "avg_function_size_lines": 4.5,
-    "comment_density_percent": 5.555555555555555,
-    "per_function_cyclomatic": {
-        "main": 1,
-        "Submission": 3,
-        "__init__": 1,
-        "validate": 3,
-        "publish": 2,
-        "update_last_modified": 1,
-        "User": 2,
-        "upload_file": 1,
-        "AgencyUser": 3,
-        "create_submission": 2,
-        "BrokerUser": 3,
-        "submit_data": 2,
-        "Developer": 2,
-        "access_broker_data": 1,
-        "prevent_double_publish": 2,
-        "FABSUser": 2,
-        "submit_file": 1,
-        "UISetting": 2,
-        "apply_styles": 1
+    "struct_metrics": {
+        "avg_cyclomatic_complexity": 1.64,
+        "ast_depth": 11,
+        "avg_function_size_lines": 4.5,
+        "import_redundancy_ratio": 0.0
     },
-    "avg_cyclomatic_complexity": 1.8421052631578947,
-    "max_cyclomatic_complexity": 3,
-    "module_cyclomatic_complexity": 35,
-    "syntax_valid": true,
-    "flake8_error_count": 5,
-    "flake8_error_breakdown": {
-        "E": 1,
-        "F": 1,
-        "W": 3,
-        "C": 0,
-        "N": 0,
-        "total": 5
+    "semantic_metrics": {
+        "syntax_valid": true,
+        "flake8_error_count": 5,
+        "mypy_error_count": 1
     },
-    "mypy_error_count": 1,
-    "mypy_error_breakdown": {
-        "return_type": 0,
-        "argument_type": 0,
-        "missing_return": 0,
-        "attribute_error": 0,
-        "annotation_issue": 1,
-        "other": 0,
-        "total": 1
+    "execution_metrics": {
+        "execution_success": true,
+        "execution_time_sec": 0.438,
+        "exception_type": "",
+        "exception_message": "",
+        "runtime_output": "Publishing submission from user agency_user_1\nSubmission has errors. Cannot publish.\nCannot publish due to errors.\nApplying UI styles"
     },
-    "semantic_quality_score": 96.5,
-    "execution_success": true,
-    "execution_time_sec": 1.186,
-    "exception_type": "",
-    "exception_message": "",
-    "runtime_output": "Publishing submission from user agency_user_1\nSubmission has errors. Cannot publish.\nCannot publish due to errors.\nApplying UI styles",
-    "total_credibility": 86.732
+    "total_credibility": 84.1
 }

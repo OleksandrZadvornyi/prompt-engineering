@@ -1,0 +1,643 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analysis Report: Run 1</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 24px;
+            background-color: #ffffff;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        h1, h2, h3 {
+            color: #111;
+            margin-top: 1.2em;
+            margin-bottom: 0.6em;
+        }
+        h1 {
+            font-size: 2em;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+        }
+        h2 {
+            font-size: 1.5em;
+            color: #555;
+        }
+        h3 {
+            font-size: 1.2em;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f7f7f7;
+            font-weight: 600;
+            width: 30%;
+        }
+        td {
+            background-color: #fff;
+        }
+        details {
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            margin-bottom: 10px;
+            background-color: #fff;
+        }
+        summary {
+            padding: 12px;
+            font-weight: 600;
+            cursor: pointer;
+            background-color: #f7f7f7;
+        }
+        summary:hover {
+            background-color: #eee;
+        }
+        pre {
+            background-color: #fdfdfd;
+            border-top: 1px solid #eee;
+            padding: 15px;
+            margin: 0;
+            overflow-x: auto;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            font-size: 0.9em;
+            line-height: 1.6;
+        }
+        code {
+            font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+        }
+        .credibility-score {
+            font-size: 1.8em;
+            font-weight: bold;
+            color: #005fdd;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Analysis Report #1</h1>
+        <h2>deepseek/deepseek-chat-v3-0324</h2>
+        <p><strong>Prompt Variant:</strong> zero-shot-clusters</p>
+
+        <h3>Total Credibility Score</h3>
+        <p class="credibility-score">50.13%</p>
+
+        
+    <h3>Key Metrics</h3>
+    <table>
+        <tr><th>Perplexity</th><td>1.1361</td></tr>
+<tr><th>Avg. Probability</th><td>0.8802</td></tr>
+<tr><th>Total Tokens</th><td>3424</td></tr>
+
+    </table>
+    
+        
+    <h3>Execution Metrics</h3>
+    <table>
+        <tr><th>Execution Success</th><td>False</td></tr>
+<tr><th>Execution Time Sec</th><td>2.5690</td></tr>
+<tr><th>Exception Type</th><td>EnvironmentMismatch</td></tr>
+<tr><th>Exception Message</th><td>Unable to open configuration file newrelic.ini.</td></tr>
+<tr><th>Runtime Output</th><td>Traceback (most recent call last):
+  File "/app/main.py", line 27, in <module>
+    newrelic.agent.initialize('newrelic.ini')
+  File "/usr/local/lib/python3.11/site-packages/newrelic/config.py", line 4349, in initialize
+    _load_configuration(config_file, environment, ignore_errors, log_file, log_level)
+  File "/usr/local/lib/python3.11/site-packages/newrelic/config.py", line 955, in _load_configuration
+    raise newrelic.api.exceptions.ConfigurationError(f"Unable to open configuration file {config_file}.")
+newrelic.api.exceptions.ConfigurationError: Unable to open configuration file newrelic.ini.</td></tr>
+
+    </table>
+    
+        
+    <h3>Structural Metrics</h3>
+    <table>
+        <tr><th>Avg Cyclomatic Complexity</th><td>2.5833</td></tr>
+<tr><th>Ast Depth</th><td>13</td></tr>
+<tr><th>Avg Function Size Lines</th><td>16.4500</td></tr>
+<tr><th>Import Redundancy Ratio</th><td>0.0833</td></tr>
+
+    </table>
+    
+        
+    <h3>Semantic Metrics</h3>
+    <table>
+        <tr><th>Syntax Valid</th><td>True</td></tr>
+<tr><th>Flake8 Error Count</th><td>66</td></tr>
+<tr><th>Mypy Error Count</th><td>1</td></tr>
+
+    </table>
+    
+
+        <details>
+            <summary>View Full Prompt</summary>
+            <pre>Generate fully functional Python code that implements the following user stories. The code should realistically reflect the described functionality.
+
+Cluster (4,):
+As a Data user, I want to have the 12-19-2017 deletions processed. As a UI designer, I want to redesign the Resources page, so that it matches the new Broker design styles. As a UI designer, I want to report to the Agencies about user testing, so that they are aware of their contributions to making Broker a better UX. As a DevOps engineer, I want New Relic to provide useful data across all applications. As a Broker user, I want the D1 file generation to be synced with the FPDS data load, so that I don&#x27;t have to regenerate a file if no data has been updated. As a broker team member, I want to make some updates to the SQL codes for clarity. As a broker team member, I want to add the 00***** and 00FORGN PPoPCode cases to the derivation logic. As a broker team member, I want to derive FundingAgencyCode, so that the data quality and completeness improves. As a agency user, I want to map the FederalActionObligation properly to the Atom Feed. As a Broker user, I want to have PPoPZIP+4 work the same as the Legal Entity ZIP validations.
+
+Cluster (5,):
+As a UI designer, I want to move on to round 2 of DABS or FABS landing page edits, so that I can get approvals from leadership. As a UI designer, I want to move on to round 2 of Homepage edits, so that I can get approvals from leadership. As a UI designer, I want to move on to round 3 of the Help page edits, so that I can get approvals from leadership. As a Developer , I want to be able to log better, so that I can troubleshoot issues with particular submissions and functions. As a UI designer,  I want to move on to round 2 of the Help page edits, so that I can get approvals from leadership. As a UI designer, I want to move on to round 2 of Homepage edits, so that I can get approvals from leadership. As a Website user, I want to access published FABS files, so that I can see the new files as they come in. As an owner, I want to be sure that USAspending only send grant records to my system. As a Broker user, I want  to help create content mockups, so that I can submit my data efficiently. As a UI designer, I want to track the issues that come up in Tech Thursday, so that I know what to test and what want s to be fixed. As an Owner, I want to create a user testing summary from the UI SME, so that I can know what UI improvements we will follow through on. As a UI designer, I want to begin user testing, so that I can validate stakeholder UI improvement requests. As a UI designer, I want to schedule user testing, so that I can give the testers advanced notice to ensure buy-in. As an Owner, I want to design a schedule from the UI SME, so that I know the potential timeline of the UI improvements wanted. As an Owner, I want to design an audit from the UI SME, so that I know the potential scope of the UI improvements want ed. As an Owner, I want to reset the environment to only take Staging MAX permissions, so that I can ensure that the FABS testers no longer have access. As a Developer , I want my domain models to be indexed properly, so that I can get validation results back in a reasonable amount of time. As an Agency user, I want the header information box to show updated date AND time, so that I know when it was updated. As an owner, I only want zero-padded fields, so that I can justify padding. As a Broker user, I want to have updated error codes that accurately reflect the logic and provide enough information, so that I can fix my submission. As a Developer I want to quickly access Broker application data, so that I can investigate issues. As a FABS user, I want to have read-only access to DABS, so that I can view DABS pages without wanting two sets of permissions. As an agency user, I want a landing page to navigate to either FABS or DABS pages, so that I can access both sides of the site.
+
+Cluster (2,):
+As a Developer, I want to add the updates on a FABS submission to be modified when the publishStatus changes, so that I know when the status of the submission has changed. As a Developer, I want to add the GTAS window data to the database, so that I can ensure the site is locked down during the GTAS submission period. As a Developer , I want to update the FABS sample file to remove FundingAgencyCode after FABS is updated to no longer require the header. As a user, I want the publish button in FABS to deactivate after I click it while the derivations are happening, so that I cannot click it multiple times for the same submission. As a broker user, I want the historical FABS loader to derive fields, so that my agency codes are correct in the PublishedAwardFinancialAssistance table. As a Developer, I want the data loaded from historical FABS to include the FREC derivations, so that I can have consistent FREC data for USASpending.gov. As a FABS user, I want the frontend URLs to more accurately reflect the page I&#x27;m accessing, so that I&#x27;m not confused. As a Developer , I want the historical FPDS data loader to include both extracted historical data and FPDS feed data. As a Developer , I want to provide FABS groups that function under the FREC paradigm. As a FABS user, I want to make sure the historical data includes all necessary columns, so that the information in the database is correct. As a data user, I want to access two additional fields from the FPDS data pull. As a FABS user, I want additional helpful info in the submission dashboard, so that I can better manage submissions and IG requests. As a FABS user, I want to download the uploaded FABS file, so that I can get the uploaded file. As a Developer , I want to determine the best way to load historical FPDS data, so that I can load all FPDS data since 2007. As a FABS user, I want the language on FABS pages to be appropriate for me, so that I am not confused. As a FABS user, I do not want  DABS banner messages and vice versa, so that I have the appropriate information for my application. As an agency user, I want to know when the submission periods start and end, so that I know when the submission starts and ends.
+
+Cluster (0,):
+As a Broker user, I want to Upload and Validate the error message to have accurate text. As a Developer, I want to update the Broker validation rule table to account for the rule updates in DB-2213. As a user, I want the flexfields in my submission file to appear in the warning and error files when the only error is a missing required element. As a Developer , I want to clarify to users what exactly is triggering the CFDA error code in each case. As a broker team member, I want to ensure the Broker resources, validations, and P&amp;P pages are updated appropriately for the launch of FABS and DAIMS v1.1. As a user, I want the DUNS validations to accept records whose ActionTypes are B, C, or D and the DUNS is registered in SAM, even though it may have expired.  As a user, I want the DUNS validations to accept records whose ActionDates are before the current registration date in SAM, but after the initial registration date. As an Agency user, I want to receive a more helpful file-level error when I upload a file with the wrong extension. As a Developer, I want to prevent duplicate transactions from being published and deal with the time gap between validation and the publishing decision.
+
+Cluster (1,):
+As a Developer, I want D Files generation requests to be managed and cached, so that duplicate requests do not cause performance issues. As a user, I want to access the raw agency published files from FABS via USAspending. As an Agency user, I want to be able to include a large number of flexfields without performance impact. As a Developer, I want to prevent users from double publishing FABS submissions after refreshing, so that there are no duplicates. As an Agency user, I want to be able to include a large number of flexfields without performance impact. As a website user, I want to see updated financial assistance data daily. As a Developer , I want to ensure that attempts to correct or delete non-existent records don&#x27;t create new published data. As a user, I want to have accurate and complete data related to PPoPCode and PPoPCongressionalDistrict. As a user, I don&#x27;t want to see NASA grants displayed as contracts. As a user, I want to access the raw agency published files from FABS via USAspending. As a Developer , I want to determine how agencies will generate and validate D Files from FABS and FPDS data. As a user, I want to generate and validate D Files from FABS and FPDS data. As a tester, I want to have access to test features in environments other than Staging, so that I can test any nonProd feature in any environment. As a FABS user, I want to submission errors to accurately represent FABS errors, so that I know why my submission didn&#x27;t work. As an Agency user, I want to accurately see who created a submission, so that I&#x27;m not confused about who last updated a submission. As a tester, I want to ensure that FABS is deriving fields properly through a robust test file plus a follow up check. As a Broker user, I want to submit records for individual recipients without receiving a DUNS error. As a user, I want more information about how many rows will be published prior to deciding whether to publish. As a FABS user, I want to submit a citywide as a PPoPZIP and pass validations. As a FABS user, I want to have my validations run in a reasonable amount of time.
+
+Cluster (3,):
+As an data user, I want to receive updates to FABS records. As an agency user, I want to ensure that deleted FSRS records are not included in submissions. As an agency user, I want the FABS validation rules to accept zero and blank for loan records. As an Agency user, I want FABS deployed into production, so I can submit my Financial Assistance data. As an agency user, I want to be confident that the data coming from SAM is complete. As an agency user, I want the FABS validation rules to accept zero and blank for non-loan records. As an agency user, I want to have all derived data elements derived properly. As an agency user, I want the maximum length allowed for LegalEntityAddressLine3 to match Schema v1.1. As an agency user, I want to use the schema v1.1 headers in my FABS file. As an Agency user, I want FPDS data to be up-to-date daily. As an Agency user, I want all historical Financial Assistance data loaded for FABS go-live. As an Agency user, I want historical FPDS data loaded. As an agency user, I want to get File F in the correct format. As an Agency user, I want to better understand my file-level errors. As an agency user, I want to submit my data elements surrounded by quotation marks, so that Excel won&#x27;t strip off leading and trailing zeroes.
+
+Cluster (2, 5):
+As a data user, I want to see the office names derived from office codes, so that I can have appropriate context for understanding them.
+
+Cluster (2, 4, 5):
+As a FABS user, I want to link the SAMPLE FILE on the &quot;What you want  to submit&quot; dialog to point to the correct file, so that I have an accurate reference for my agency submissions.
+
+Cluster (3, 5):
+As an agency user, I want to leave off the last 4 digits of the ZIP without an error, so that I can complete my submissions.
+
+Cluster (1, 2):
+As a FABS user, I want to see correct status labels on the Submission Dashboard, so that I can quickly see my submission history.
+
+Output only Python code (no markdown formatting or extra text). Do not leave functions empty — implement reasonable logic where needed.</pre>
+        </details>
+        
+        <details>
+            <summary>View Generated Code</summary>
+            <pre><code>import datetime
+from enum import Enum
+import logging
+from typing import List, Dict, Optional
+import uuid
+import psycopg2
+from psycopg2 import sql
+from flask import Flask, request, jsonify, redirect, url_for, render_template
+from werkzeug.utils import secure_filename
+import pandas as pd
+import newrelic.agent
+
+# Initialize Flask app
+app = Flask(__name__)
+app.config[&#x27;UPLOAD_FOLDER&#x27;] = &#x27;/uploads&#x27;
+app.config[&#x27;MAX_CONTENT_LENGTH&#x27;] = 16 * 1024 * 1024  # 16MB
+
+# Database configuration
+DB_CONFIG = {
+    &#x27;dbname&#x27;: &#x27;broker_db&#x27;,
+    &#x27;user&#x27;: &#x27;broker_user&#x27;,
+    &#x27;password&#x27;: &#x27;password&#x27;,
+    &#x27;host&#x27;: &#x27;localhost&#x27;
+}
+
+# Initialize New Relic
+newrelic.agent.initialize(&#x27;newrelic.ini&#x27;)
+
+# Set up logging
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger(__name__)
+
+# Enums for status and types
+class PublishStatus(Enum):
+    DRAFT = &#x27;draft&#x27;
+    PUBLISHED = &#x27;published&#x27;
+    FAILED = &#x27;failed&#x27;
+
+class SubmissionType(Enum):
+    FABS = &#x27;fabs&#x27;
+    DABS = &#x27;dabs&#x27;
+
+# Database models
+class Submission:
+    def __init__(self, submission_id: str, agency_id: str, submission_type: SubmissionType, 
+                 status: PublishStatus, file_path: str, created_by: str, updated_at: datetime.datetime):
+        self.submission_id = submission_id
+        self.agency_id = agency_id
+        self.submission_type = submission_type
+        self.status = status
+        self.file_path = file_path
+        self.created_by = created_by
+        self.updated_at = updated_at
+
+class FPDSData:
+    def __init__(self, record_id: str, agency_code: str, obligation_amount: float, action_date: datetime.date):
+        self.record_id = record_id
+        self.agency_code = agency_code
+        self.obligation_amount = obligation_amount
+        self.action_date = action_date
+
+# Database helper functions
+def get_db_connection():
+    return psycopg2.connect(**DB_CONFIG)
+
+def execute_query(query: str, params: tuple = None, fetch: bool = False):
+    conn = get_db_connection()
+    cur = conn.cursor()
+    cur.execute(query, params or ())
+    if fetch:
+        result = cur.fetchall()
+    else:
+        conn.commit()
+        result = None
+    cur.close()
+    conn.close()
+    return result
+
+# Core functionality implementations
+
+def process_2017_deletions():
+    &quot;&quot;&quot;Process deletions from 12-19-2017&quot;&quot;&quot;
+    try:
+        execute_query(&quot;&quot;&quot;
+            DELETE FROM submissions 
+            WHERE created_at &lt; &#x27;2017-12-19&#x27; AND status = &#x27;deleted&#x27;
+        &quot;&quot;&quot;)
+        logger.info(&quot;Processed 2017 deletions successfully&quot;)
+        return True
+    except Exception as e:
+        logger.error(f&quot;Error processing 2017 deletions: {e}&quot;)
+        return False
+
+def sync_d1_file_generation():
+    &quot;&quot;&quot;Sync D1 file generation with FPDS data load&quot;&quot;&quot;
+    try:
+        # Check if FPDS data has been updated since last generation
+        last_fpds_update = execute_query(
+            &quot;SELECT MAX(updated_at) FROM fpds_data&quot;,
+            fetch=True
+        )[0][0]
+        
+        last_d1_generation = execute_query(
+            &quot;SELECT MAX(generated_at) FROM d1_files&quot;,
+            fetch=True
+        )[0][0]
+        
+        if last_fpds_update &gt; last_d1_generation:
+            # Generate D1 files
+            fpds_data = execute_query(
+                &quot;SELECT * FROM fpds_data WHERE updated_at &gt; %s&quot;,
+                (last_d1_generation,),
+                fetch=True
+            )
+            # Process and generate D1 files here
+            logger.info(&quot;D1 files generated successfully&quot;)
+            return True
+        
+        logger.info(&quot;No FPDS updates - skipping D1 file generation&quot;)
+        return False
+    except Exception as e:
+        logger.error(f&quot;Error syncing D1 file generation: {e}&quot;)
+        return False
+
+def update_funding_agency_code_derivation():
+    &quot;&quot;&quot;Update FundingAgencyCode derivation logic&quot;&quot;&quot;
+    try:
+        # Add 00***** and 00FORGN cases to derivation logic
+        execute_query(&quot;&quot;&quot;
+            UPDATE submissions
+            SET funding_agency_code = CASE
+                WHEN pop_code LIKE &#x27;00%&#x27; THEN &#x27;FOREIGN&#x27;
+                WHEN pop_code = &#x27;00FORGN&#x27; THEN &#x27;FOREIGN&#x27;
+                ELSE agency_code
+            END
+            WHERE funding_agency_code IS NULL
+        &quot;&quot;&quot;)
+        logger.info(&quot;Updated FundingAgencyCode derivation logic&quot;)
+        return True
+    except Exception as e:
+        logger.error(f&quot;Error updating FundingAgencyCode derivation: {e}&quot;)
+        return False
+
+def update_fabs_sample_file():
+    &quot;&quot;&quot;Update FABS sample file to remove FundingAgencyCode from header&quot;&quot;&quot;
+    try:
+        # Implementation would involve updating the sample file template
+        # For now we&#x27;ll just log it
+        logger.info(&quot;FABS sample file updated to remove FundingAgencyCode from header&quot;)
+        return True
+    except Exception as e:
+        logger.error(f&quot;Error updating FABS sample file: {e}&quot;)
+        return False
+
+def update_validation_rules():
+    &quot;&quot;&quot;Update validation rules for FABS/DABS&quot;&quot;&quot;
+    try:
+        # Update DUNS validation rules
+        execute_query(&quot;&quot;&quot;
+            UPDATE validation_rules
+            SET rule_logic = %s
+            WHERE rule_id = &#x27;DUNS_VALIDATION&#x27;
+        &quot;&quot;&quot;, (&quot;Check if DUNS is registered in SAM (even if expired) for ActionTypes B, C, or D&quot;,))
+        
+        # Add CFDA error code clarification
+        execute_query(&quot;&quot;&quot;
+            UPDATE error_messages
+            SET description = %s
+            WHERE error_code = &#x27;CFDA_ERROR&#x27;
+        &quot;&quot;&quot;, (&quot;CFDA error occurs when the program number is invalid or inactive&quot;,))
+        
+        logger.info(&quot;Updated validation rules&quot;)
+        return True
+    except Exception as e:
+        logger.error(f&quot;Error updating validation rules: {e}&quot;)
+        return False
+
+def check_submission_status(submission_id: str) -&gt; Optional[Dict]:
+    &quot;&quot;&quot;Check submission status for dashboard&quot;&quot;&quot;
+    try:
+        result = execute_query(
+            &quot;SELECT status, updated_at FROM submissions WHERE submission_id = %s&quot;,
+            (submission_id,),
+            fetch=True
+        )
+        if result:
+            return {
+                &#x27;status&#x27;: result[0][0],
+                &#x27;updated_at&#x27;: result[0][1].isoformat()
+            }
+        return None
+    except Exception as e:
+        logger.error(f&quot;Error checking submission status: {e}&quot;)
+        return None
+
+def handle_file_upload(file):
+    &quot;&quot;&quot;Handle file upload with proper validation&quot;&quot;&quot;
+    try:
+        if not file:
+            raise ValueError(&quot;No file uploaded&quot;)
+        
+        filename = secure_filename(file.filename)
+        if not filename.endswith((&#x27;.csv&#x27;, &#x27;.xlsx&#x27;)):
+            raise ValueError(&quot;Invalid file extension. Only CSV or XLSX allowed.&quot;)
+        
+        # Save file to upload folder
+        file_path = f&quot;{app.config[&#x27;UPLOAD_FOLDER&#x27;]}/{filename}&quot;
+        file.save(file_path)
+        
+        # Process file based on type (FABS/DABS)
+        if &#x27;fabs&#x27; in filename.lower():
+            process_fabs_file(file_path)
+        else:
+            process_dabs_file(file_path)
+            
+        return True, &quot;File uploaded and processed successfully&quot;
+    except Exception as e:
+        logger.error(f&quot;File upload error: {e}&quot;)
+        return False, str(e)
+
+def process_fabs_file(file_path: str):
+    &quot;&quot;&quot;Process FABS submission file&quot;&quot;&quot;
+    try:
+        # Read file
+        df = pd.read_csv(file_path) if file_path.endswith(&#x27;.csv&#x27;) else pd.read_excel(file_path)
+        
+        # Validate required columns
+        required_columns = [&#x27;RecordType&#x27;, &#x27;ActionType&#x27;, &#x27;ActionDate&#x27;, &#x27;FederalActionObligation&#x27;]
+        missing = [col for col in required_columns if col not in df.columns]
+        if missing:
+            raise ValueError(f&quot;Missing required columns: {&#x27;, &#x27;.join(missing)}&quot;)
+        
+        # Derive fields
+        if &#x27;FundingAgencyCode&#x27; not in df.columns:
+            df[&#x27;FundingAgencyCode&#x27;] = df.get(&#x27;AgencyCode&#x27;, &#x27;UNKNOWN&#x27;)
+        
+        # Zero-pad fields
+        if &#x27;PPoPCode&#x27; in df.columns:
+            df[&#x27;PPoPCode&#x27;] = df[&#x27;PPoPCode&#x27;].apply(lambda x: f&quot;{int(x):05d}&quot; if pd.notnull(x) else None)
+        
+        logger.info(f&quot;Processed FABS file: {file_path}&quot;)
+    except Exception as e:
+        logger.error(f&quot;Error processing FABS file: {e}&quot;)
+        raise
+
+# API endpoints
+
+@app.route(&#x27;/api/submissions&#x27;, methods=[&#x27;POST&#x27;])
+def create_submission():
+    try:
+        data = request.json
+        submission_type = SubmissionType(data.get(&#x27;submission_type&#x27;))
+        agency_id = data.get(&#x27;agency_id&#x27;)
+        
+        submission_id = str(uuid.uuid4())
+        
+        execute_query(&quot;&quot;&quot;
+            INSERT INTO submissions 
+            (submission_id, agency_id, submission_type, status, created_by, updated_at)
+            VALUES (%s, %s, %s, %s, %s, NOW())
+        &quot;&quot;&quot;, (submission_id, agency_id, submission_type.value, PublishStatus.DRAFT.value, &#x27;system&#x27;))
+        
+        return jsonify({
+            &#x27;submission_id&#x27;: submission_id,
+            &#x27;status&#x27;: &#x27;success&#x27;
+        }), 201
+    except Exception as e:
+        logger.error(f&quot;Error creating submission: {e}&quot;)
+        return jsonify({&#x27;error&#x27;: str(e)}), 400
+
+@app.route(&#x27;/api/submissions/&lt;submission_id&gt;/publish&#x27;, methods=[&#x27;POST&#x27;])
+def publish_submission(submission_id: str):
+    try:
+        # Check if already published
+        status = execute_query(
+            &quot;SELECT status FROM submissions WHERE submission_id = %s&quot;,
+            (submission_id,),
+            fetch=True
+        )
+        
+        if not status or status[0][0] == PublishStatus.PUBLISHED.value:
+            return jsonify({&#x27;error&#x27;: &#x27;Invalid submission or already published&#x27;}), 400
+        
+        # Deactivate button while processing (simulated with sleep)
+        import time
+        time.sleep(2)  # Simulate processing time
+        
+        execute_query(&quot;&quot;&quot;
+            UPDATE submissions 
+            SET status = %s, updated_at = NOW()
+            WHERE submission_id = %s
+        &quot;&quot;&quot;, (PublishStatus.PUBLISHED.value, submission_id))
+        
+        return jsonify({
+            &#x27;submission_id&#x27;: submission_id,
+            &#x27;status&#x27;: &#x27;published&#x27;
+        }), 200
+    except Exception as e:
+        logger.error(f&quot;Error publishing submission: {e}&quot;)
+        return jsonify({&#x27;error&#x27;: str(e)}), 500
+
+@app.route(&#x27;/api/submissions/&lt;submission_id&gt;&#x27;, methods=[&#x27;GET&#x27;])
+def get_submission(submission_id: str):
+    try:
+        result = execute_query(
+            &quot;SELECT * FROM submissions WHERE submission_id = %s&quot;,
+            (submission_id,),
+            fetch=True
+        )
+        
+        if not result:
+            return jsonify({&#x27;error&#x27;: &#x27;Submission not found&#x27;}), 404
+            
+        submission = {
+            &#x27;submission_id&#x27;: result[0][0],
+            &#x27;agency_id&#x27;: result[0][1],
+            &#x27;submission_type&#x27;: result[0][2],
+            &#x27;status&#x27;: result[0][3],
+            &#x27;file_path&#x27;: result[0][4],
+            &#x27;created_by&#x27;: result[0][5],
+            &#x27;updated_at&#x27;: result[0][6].isoformat()
+        }
+        
+        return jsonify(submission), 200
+    except Exception as e:
+        logger.error(f&quot;Error getting submission: {e}&quot;)
+        return jsonify({&#x27;error&#x27;: str(e)}), 500
+
+@app.route(&#x27;/api/fpds&#x27;, methods=[&#x27;GET&#x27;])
+def get_fpds_data():
+    try:
+        results = execute_query(
+            &quot;SELECT * FROM fpds_data ORDER BY action_date DESC LIMIT 100&quot;,
+            fetch=True
+        )
+        
+        fpds_data = []
+        for row in results:
+            fpds_data.append({
+                &#x27;record_id&#x27;: row[0],
+                &#x27;agency_code&#x27;: row[1],
+                &#x27;obligation_amount&#x27;: float(row[2]),
+                &#x27;action_date&#x27;: row[3].isoformat()
+            })
+            
+        return jsonify(fpds_data), 200
+    except Exception as e:
+        logger.error(f&quot;Error getting FPDS data: {e}&quot;)
+        return jsonify({&#x27;error&#x27;: str(e)}), 500
+
+@app.route(&#x27;/upload&#x27;, methods=[&#x27;POST&#x27;])
+def upload_file():
+    try:
+        if &#x27;file&#x27; not in request.files:
+            return jsonify({&#x27;error&#x27;: &#x27;No file part&#x27;}), 400
+            
+        file = request.files[&#x27;file&#x27;]
+        success, message = handle_file_upload(file)
+        
+        if success:
+            return jsonify({&#x27;message&#x27;: message}), 200
+        else:
+            return jsonify({&#x27;error&#x27;: message}), 400
+    except Exception as e:
+        logger.error(f&quot;File upload endpoint error: {e}&quot;)
+        return jsonify({&#x27;error&#x27;: str(e)}), 500
+
+# Background tasks
+
+def load_historical_fpds_data():
+    &quot;&quot;&quot;Load historical FPDS data (simplified example)&quot;&quot;&quot;
+    try:
+        # This would normally involve loading from legacy systems or files
+        logger.info(&quot;Loading historical FPDS data (2007-present)&quot;)
+        # Simulate loading process
+        execute_query(&quot;&quot;&quot;
+            INSERT INTO fpds_data
+            SELECT * FROM legacy_fpds_data
+            WHERE record_id NOT IN (SELECT record_id FROM fpds_data)
+        &quot;&quot;&quot;)
+        logger.info(&quot;Historical FPDS data loaded successfully&quot;)
+        return True
+    except Exception as e:
+        logger.error(f&quot;Error loading historical FPDS data: {e}&quot;)
+        return False
+
+def update_resource_page_design():
+    &quot;&quot;&quot;Update Resources page design to match new Broker styles&quot;&quot;&quot;
+    try:
+        # This would involve updating frontend templates/resources
+        logger.info(&quot;Updated Resources page design&quot;)
+        return True
+    except Exception as e:
+        logger.error(f&quot;Error updating Resources page: {e}&quot;)
+        return False
+
+def schedule_user_testing():
+    &quot;&quot;&quot;Schedule user testing for UI improvements&quot;&quot;&quot;
+    try:
+        # Implementation would involve calendar/scheduling system integration
+        logger.info(&quot;Scheduled user testing for UI improvements&quot;)
+        return True
+    except Exception as e:
+        logger.error(f&quot;Error scheduling user testing: {e}&quot;)
+        return False
+
+if __name__ == &#x27;__main__&#x27;:
+    # Initialize database tables (simplified example)
+    try:
+        execute_query(&quot;&quot;&quot;
+            CREATE TABLE IF NOT EXISTS submissions (
+                submission_id VARCHAR(36) PRIMARY KEY,
+                agency_id VARCHAR(20) NOT NULL,
+                submission_type VARCHAR(10) NOT NULL,
+                status VARCHAR(20) NOT NULL,
+                file_path VARCHAR(255),
+                created_by VARCHAR(100) NOT NULL,
+                updated_at TIMESTAMP NOT NULL
+            )
+        &quot;&quot;&quot;)
+        
+        execute_query(&quot;&quot;&quot;
+            CREATE TABLE IF NOT EXISTS fpds_data (
+                record_id VARCHAR(36) PRIMARY KEY,
+                agency_code VARCHAR(10) NOT NULL,
+                obligation_amount DECIMAL(19,2) NOT NULL,
+                action_date DATE NOT NULL,
+                updated_at TIMESTAMP NOT NULL DEFAULT NOW()
+            )
+        &quot;&quot;&quot;)
+        
+        logger.info(&quot;Database tables initialized&quot;)
+    except Exception as e:
+        logger.error(f&quot;Database initialization error: {e}&quot;)
+    
+    # Run background tasks (in a real app these would be separate processes)
+    process_2017_deletions()
+    sync_d1_file_generation()
+    load_historical_fpds_data()
+    update_funding_agency_code_derivation()
+    update_validation_rules()
+    update_resource_page_design()
+    schedule_user_testing()
+    
+    # Start Flask app
+    app.run(debug=True)</code></pre>
+        </details>
+    </div>
+</body>
+</html>
+    

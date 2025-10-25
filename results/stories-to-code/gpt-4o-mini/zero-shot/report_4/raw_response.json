@@ -20947,5 +20947,6 @@
             ],
             "refusal": []
         }
-    }
+    },
+    "prompt_variant": "zero-shot"
 }

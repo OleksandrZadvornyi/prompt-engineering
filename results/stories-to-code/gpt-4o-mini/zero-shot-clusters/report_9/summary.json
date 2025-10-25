@@ -2,74 +2,27 @@
     "request_number": 9,
     "timestamp": "2025-10-12 20:24:16",
     "model": "openai/gpt-4o-mini",
+    "prompt_variant": "zero-shot-clusters",
     "total_tokens": 709,
-    "total_logprob": -256.6073280876459,
     "avg_prob": 0.6963321326089641,
     "perplexity": 1.4360963011333059,
-    "token_count": 709,
-    "function_count": 17,
-    "class_count": 5,
-    "num_lines": 101,
-    "num_nonempty_lines": 80,
-    "avg_line_len_all_chars": 31.84158415841584,
-    "avg_line_len_nonempty_chars": 40.05,
-    "avg_tokens_per_nonempty_line": 3.175,
-    "ast_depth": 13,
-    "import_count": 1,
-    "import_names": [
-        "datetime"
-    ],
-    "import_redundancy_ratio": 0.0,
-    "avg_function_size_lines": 4.411764705882353,
-    "comment_density_percent": 11.25,
-    "per_function_cyclomatic": {
-        "main": 1,
-        "BrokerSubmission": 3,
-        "__init__": 1,
-        "upload_file": 1,
-        "parse_file": 1,
-        "validate_submission": 5,
-        "is_ppop_code_valid": 2,
-        "is_funding_agency_code_valid": 2,
-        "FABSUser": 3,
-        "submit_data": 3,
-        "AgencyUser": 2,
-        "receive_submission_updates": 1,
-        "UIDesigner": 2,
-        "redesign_resources_page": 1,
-        "schedule_user_testing": 1,
-        "Developer": 2,
-        "update_validator_rules": 1,
-        "generate_d_files": 1
+    "struct_metrics": {
+        "avg_cyclomatic_complexity": 1.6818181818181819,
+        "ast_depth": 13,
+        "avg_function_size_lines": 4.411764705882353,
+        "import_redundancy_ratio": 0.0
     },
-    "avg_cyclomatic_complexity": 1.8333333333333333,
-    "max_cyclomatic_complexity": 5,
-    "module_cyclomatic_complexity": 33,
-    "syntax_valid": true,
-    "flake8_error_count": 11,
-    "flake8_error_breakdown": {
-        "E": 7,
-        "F": 0,
-        "W": 4,
-        "C": 0,
-        "N": 0,
-        "total": 11
+    "semantic_metrics": {
+        "syntax_valid": true,
+        "flake8_error_count": 11,
+        "mypy_error_count": 0
     },
-    "mypy_error_count": 0,
-    "mypy_error_breakdown": {
-        "return_type": 0,
-        "argument_type": 0,
-        "missing_return": 0,
-        "attribute_error": 0,
-        "annotation_issue": 0,
-        "other": 0,
-        "total": 0
+    "execution_metrics": {
+        "execution_success": true,
+        "execution_time_sec": 0.594,
+        "exception_type": "",
+        "exception_message": "",
+        "runtime_output": "Uploading file: submission_file.csv\nSubmission is valid and ready for processing.\nUser testing scheduled for 2023-10-30\nUpdated validation rules: ['Rule 1', 'Rule 2']\nGenerating D Files...\nD_File_20251025_182133"
     },
-    "semantic_quality_score": 94.5,
-    "execution_success": true,
-    "execution_time_sec": 0.795,
-    "exception_type": "",
-    "exception_message": "",
-    "runtime_output": "Uploading file: submission_file.csv\nSubmission is valid and ready for processing.\nUser testing scheduled for 2023-10-30\nUpdated validation rules: ['Rule 1', 'Rule 2']\nGenerating D Files...\nD_File_20251013_091647",
-    "total_credibility": 88.957
+    "total_credibility": 81.15
 }

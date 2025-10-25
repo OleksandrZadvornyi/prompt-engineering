@@ -1,0 +1,1070 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analysis Report: Run 2</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 24px;
+            background-color: #ffffff;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        h1, h2, h3 {
+            color: #111;
+            margin-top: 1.2em;
+            margin-bottom: 0.6em;
+        }
+        h1 {
+            font-size: 2em;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+        }
+        h2 {
+            font-size: 1.5em;
+            color: #555;
+        }
+        h3 {
+            font-size: 1.2em;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f7f7f7;
+            font-weight: 600;
+            width: 30%;
+        }
+        td {
+            background-color: #fff;
+        }
+        details {
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            margin-bottom: 10px;
+            background-color: #fff;
+        }
+        summary {
+            padding: 12px;
+            font-weight: 600;
+            cursor: pointer;
+            background-color: #f7f7f7;
+        }
+        summary:hover {
+            background-color: #eee;
+        }
+        pre {
+            background-color: #fdfdfd;
+            border-top: 1px solid #eee;
+            padding: 15px;
+            margin: 0;
+            overflow-x: auto;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            font-size: 0.9em;
+            line-height: 1.6;
+        }
+        code {
+            font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+        }
+        .credibility-score {
+            font-size: 1.8em;
+            font-weight: bold;
+            color: #005fdd;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Analysis Report #2</h1>
+        <h2>x-ai/grok-4-fast</h2>
+        <p><strong>Prompt Variant:</strong> zero-shot</p>
+
+        <h3>Total Credibility Score</h3>
+        <p class="credibility-score">0.00%</p>
+
+        
+    <h3>Key Metrics</h3>
+    <table>
+        <tr><th>Perplexity</th><td>1.1071</td></tr>
+<tr><th>Avg. Probability</th><td>0.9032</td></tr>
+<tr><th>Total Tokens</th><td>9569</td></tr>
+
+    </table>
+    
+        
+    <h3>Execution Metrics</h3>
+    <table>
+        <tr><th>Execution Success</th><td>False</td></tr>
+<tr><th>Execution Time Sec</th><td>0.6800</td></tr>
+<tr><th>Exception Type</th><td>RuntimeError</td></tr>
+<tr><th>Exception Message</th><td>File "/app/main.py", line 22
+    self.gt as_window = False  # GTAS window flag
+            ^^^^^^^^^
+SyntaxError: invalid syntax</td></tr>
+<tr><th>Runtime Output</th><td>File "/app/main.py", line 22
+    self.gt as_window = False  # GTAS window flag
+            ^^^^^^^^^
+SyntaxError: invalid syntax</td></tr>
+
+    </table>
+    
+        
+    <h3>Structural Metrics</h3>
+    <table>
+        <tr><th>Avg Cyclomatic Complexity</th><td>-1.0000</td></tr>
+<tr><th>Ast Depth</th><td>-1</td></tr>
+<tr><th>Avg Function Size Lines</th><td>-1.0000</td></tr>
+<tr><th>Import Redundancy Ratio</th><td>-1.0000</td></tr>
+
+    </table>
+    
+        
+    <h3>Semantic Metrics</h3>
+    <table>
+        <tr><th>Syntax Valid</th><td>False</td></tr>
+<tr><th>Flake8 Error Count</th><td>-1</td></tr>
+<tr><th>Mypy Error Count</th><td>-1</td></tr>
+
+    </table>
+    
+
+        <details>
+            <summary>View Full Prompt</summary>
+            <pre>Generate fully functional Python code that implements the following user stories. The code should realistically reflect the described functionality.
+
+﻿As a Data user, I want to have the 12-19-2017 deletions processed.
+As a UI designer, I want to redesign the Resources page, so that it matches the new Broker design styles.
+As a UI designer, I want to report to the Agencies about user testing, so that they are aware of their contributions to making Broker a better UX.
+As a UI designer, I want to move on to round 2 of DABS or FABS landing page edits, so that I can get approvals from leadership.
+As a UI designer, I want to move on to round 2 of Homepage edits, so that I can get approvals from leadership.
+As a UI designer, I want to move on to round 3 of the Help page edits, so that I can get approvals from leadership.
+As a Developer , I want to be able to log better, so that I can troubleshoot issues with particular submissions and functions.
+As a Developer, I want to add the updates on a FABS submission to be modified when the publishStatus changes, so that I know when the status of the submission has changed.
+As a DevOps engineer, I want New Relic to provide useful data across all applications.
+As a UI designer,  I want to move on to round 2 of the Help page edits, so that I can get approvals from leadership.
+As a UI designer, I want to move on to round 2 of Homepage edits, so that I can get approvals from leadership.
+As a Broker user, I want to Upload and Validate the error message to have accurate text.
+As a Broker user, I want the D1 file generation to be synced with the FPDS data load, so that I don&#x27;t have to regenerate a file if no data has been updated.
+As a Website user, I want to access published FABS files, so that I can see the new files as they come in.
+As an owner, I want to be sure that USAspending only send grant records to my system.
+As a Developer, I want to update the Broker validation rule table to account for the rule updates in DB-2213.
+As a Developer, I want to add the GTAS window data to the database, so that I can ensure the site is locked down during the GTAS submission period.
+As a Developer, I want D Files generation requests to be managed and cached, so that duplicate requests do not cause performance issues.
+As a user, I want to access the raw agency published files from FABS via USAspending.
+As an Agency user, I want to be able to include a large number of flexfields without performance impact.
+As a Broker user, I want  to help create content mockups, so that I can submit my data efficiently.
+As a UI designer, I want to track the issues that come up in Tech Thursday, so that I know what to test and what want s to be fixed.
+As an Owner, I want to create a user testing summary from the UI SME, so that I can know what UI improvements we will follow through on.
+As a UI designer, I want to begin user testing, so that I can validate stakeholder UI improvement requests.
+As a UI designer, I want to schedule user testing, so that I can give the testers advanced notice to ensure buy-in.
+As an Owner, I want to design a schedule from the UI SME, so that I know the potential timeline of the UI improvements wanted.
+As an Owner, I want to design an audit from the UI SME, so that I know the potential scope of the UI improvements want ed.
+As a Developer, I want to prevent users from double publishing FABS submissions after refreshing, so that there are no duplicates.
+As an data user, I want to receive updates to FABS records.
+As an Agency user, I want to be able to include a large number of flexfields without performance impact.
+As a Developer , I want to update the FABS sample file to remove FundingAgencyCode after FABS is updated to no longer require the header.
+As an agency user, I want to ensure that deleted FSRS records are not included in submissions.
+As a website user, I want to see updated financial assistance data daily.
+As a user, I want the publish button in FABS to deactivate after I click it while the derivations are happening, so that I cannot click it multiple times for the same submission.
+As a Developer , I want to ensure that attempts to correct or delete non-existent records don&#x27;t create new published data.
+As an Owner, I want to reset the environment to only take Staging MAX permissions, so that I can ensure that the FABS testers no longer have access.
+As a user, I want the flexfields in my submission file to appear in the warning and error files when the only error is a missing required element.
+As a user, I want to have accurate and complete data related to PPoPCode and PPoPCongressionalDistrict.
+As an agency user, I want the FABS validation rules to accept zero and blank for loan records.
+As an Agency user, I want FABS deployed into production, so I can submit my Financial Assistance data.
+As a Developer , I want to clarify to users what exactly is triggering the CFDA error code in each case.
+As an agency user, I want to be confident that the data coming from SAM is complete.
+As a Developer , I want my domain models to be indexed properly, so that I can get validation results back in a reasonable amount of time.
+As an agency user, I want the FABS validation rules to accept zero and blank for non-loan records.
+As a broker team member, I want to make some updates to the SQL codes for clarity.
+As an agency user, I want to have all derived data elements derived properly.
+As a broker team member, I want to add the 00***** and 00FORGN PPoPCode cases to the derivation logic.
+As a data user, I want to see the office names derived from office codes, so that I can have appropriate context for understanding them.
+As a broker user, I want the historical FABS loader to derive fields, so that my agency codes are correct in the PublishedAwardFinancialAssistance table.
+As a broker team member, I want to ensure the Broker resources, validations, and P&amp;P pages are updated appropriately for the launch of FABS and DAIMS v1.1.
+As a Developer, I want the data loaded from historical FABS to include the FREC derivations, so that I can have consistent FREC data for USASpending.gov.
+As a user, I don&#x27;t want to see NASA grants displayed as contracts.
+As a user, I want the DUNS validations to accept records whose ActionTypes are B, C, or D and the DUNS is registered in SAM, even though it may have expired.
+As a user, I want the DUNS validations to accept records whose ActionDates are before the current registration date in SAM, but after the initial registration date.
+As a broker team member, I want to derive FundingAgencyCode, so that the data quality and completeness improves.
+As an agency user, I want the maximum length allowed for LegalEntityAddressLine3 to match Schema v1.1.
+As an agency user, I want to use the schema v1.1 headers in my FABS file.
+As a agency user, I want to map the FederalActionObligation properly to the Atom Feed.
+As a Broker user, I want to have PPoPZIP+4 work the same as the Legal Entity ZIP validations.
+As a FABS user, I want to link the SAMPLE FILE on the &quot;What you want  to submit&quot; dialog to point to the correct file, so that I have an accurate reference for my agency submissions.
+As an Agency user, I want FPDS data to be up-to-date daily.
+As a user, I want to access the raw agency published files from FABS via USAspending.
+As a Developer , I want to determine how agencies will generate and validate D Files from FABS and FPDS data.
+As a user, I want to generate and validate D Files from FABS and FPDS data.
+As an Agency user, I want the header information box to show updated date AND time, so that I know when it was updated.
+As an Agency user, I want to receive a more helpful file-level error when I upload a file with the wrong extension.
+As a tester, I want to have access to test features in environments other than Staging, so that I can test any nonProd feature in any environment.
+As a FABS user, I want to submission errors to accurately represent FABS errors, so that I know why my submission didn&#x27;t work.
+As a FABS user, I want the frontend URLs to more accurately reflect the page I&#x27;m accessing, so that I&#x27;m not confused.
+As an Agency user, I want all historical Financial Assistance data loaded for FABS go-live.
+As a Developer , I want the historical FPDS data loader to include both extracted historical data and FPDS feed data.
+As an Agency user, I want historical FPDS data loaded.
+As an Agency user, I want to accurately see who created a submission, so that I&#x27;m not confused about who last updated a submission.
+As an agency user, I want to get File F in the correct format.
+As an Agency user, I want to better understand my file-level errors.
+As a Developer , I want to provide FABS groups that function under the FREC paradigm.
+As a tester, I want to ensure that FABS is deriving fields properly through a robust test file plus a follow up check.
+As an owner, I only want zero-padded fields, so that I can justify padding.
+As a Broker user, I want to submit records for individual recipients without receiving a DUNS error.
+As a user, I want more information about how many rows will be published prior to deciding whether to publish.
+As a Developer, I want to prevent duplicate transactions from being published and deal with the time gap between validation and the publishing decision.
+As a FABS user, I want to submit a citywide as a PPoPZIP and pass validations.
+As a Broker user, I want to have updated error codes that accurately reflect the logic and provide enough information, so that I can fix my submission.
+As an agency user, I want to leave off the last 4 digits of the ZIP without an error, so that I can complete my submissions.
+As a FABS user, I want to make sure the historical data includes all necessary columns, so that the information in the database is correct.
+As a data user, I want to access two additional fields from the FPDS data pull.
+As a FABS user, I want additional helpful info in the submission dashboard, so that I can better manage submissions and IG requests.
+As a FABS user, I want to download the uploaded FABS file, so that I can get the uploaded file.
+As a Developer I want to quickly access Broker application data, so that I can investigate issues.
+As a Developer , I want to determine the best way to load historical FPDS data, so that I can load all FPDS data since 2007.
+As a FABS user, I want the language on FABS pages to be appropriate for me, so that I am not confused.
+As a FABS user, I do not want  DABS banner messages and vice versa, so that I have the appropriate information for my application.
+As a FABS user, I want to have read-only access to DABS, so that I can view DABS pages without wanting two sets of permissions.
+As a FABS user, I want to have my validations run in a reasonable amount of time.
+As a FABS user, I want to see correct status labels on the Submission Dashboard, so that I can quickly see my submission history.
+As an agency user, I want to know when the submission periods start and end, so that I know when the submission starts and ends.
+As an agency user, I want a landing page to navigate to either FABS or DABS pages, so that I can access both sides of the site.
+As an agency user, I want to submit my data elements surrounded by quotation marks, so that Excel won&#x27;t strip off leading and trailing zeroes.
+
+Output only Python code (no markdown formatting or extra text). Do not leave functions empty — implement reasonable logic where needed.</pre>
+        </details>
+        
+        <details>
+            <summary>View Generated Code</summary>
+            <pre><code>import logging
+import json
+import csv
+import os
+from datetime import datetime, date
+from typing import Dict, List, Any, Optional
+import hashlib
+from functools import lru_cache
+import re
+
+# Configure logging for better troubleshooting
+logging.basicConfig(level=logging.INFO, format=&#x27;%(asctime)s - %(levelname)s - %(message)s&#x27;)
+logger = logging.getLogger(__name__)
+
+class BrokerSystem:
+    def __init__(self):
+        self.database = {}  # In-memory simulation of database
+        self.validation_rules = self._load_validation_rules()
+        self.cache = {}  # For caching D1 files and requests
+        self.submissions = {}  # Track submissions
+        self.publish_status = {}  # Track publish statuses
+        self.gt as_window = False  # GTAS window flag
+        self.historical_fabs_loaded = False
+        self.fpds_data = {}  # Simulated FPDS data
+        self.sam_data = {}  # Simulated SAM data
+        self.new_relic_data = {}  # Simulated New Relic metrics
+
+    def _load_validation_rules(self) -&gt; Dict[str, Any]:
+        # Simulate loading updated validation rules from DB-2213
+        rules = {
+            &#x27;cfda_error&#x27;: &#x27;Clarify CFDA title mismatch or invalid code.&#x27;,
+            &#x27;duns_accept&#x27;: [&#x27;B&#x27;, &#x27;C&#x27;, &#x27;D&#x27;],  # Action types that accept expired DUNS if registered
+            &#x27;zip_validation&#x27;: r&#x27;^\d{5}(-\d{4})?$&#x27;,  # ZIP+4 pattern
+            &#x27;loan_records&#x27;: {&#x27;accept_zero_blank&#x27;: True},
+            &#x27;non_loan_records&#x27;: {&#x27;accept_zero_blank&#x27;: True},
+            &#x27;flexfields&#x27;: {&#x27;max_length&#x27;: 1000},  # No performance impact for large flexfields
+            &#x27;ppop_congressional_district&#x27;: {&#x27;required&#x27;: True},
+            &#x27;funding_agency_code&#x27;: {&#x27;derive&#x27;: True},
+            &#x27;legal_entity_address_line3&#x27;: {&#x27;max_length&#x27;: 55},  # Match schema v1.1
+            &#x27;schema_v1_1_headers&#x27;: [&#x27;ActionDate&#x27;, &#x27;UniqueAwardID&#x27;, ...],  # Placeholder
+            &#x27;d_file_cache_ttl&#x27;: 3600,  # Cache TTL
+            &#x27;delete_12_19_2017&#x27;: True  # Process deletions
+        }
+        logger.info(&quot;Validation rules loaded for DB-2213 updates.&quot;)
+        return rules
+
+    def process_deletions_12_19_2017(self, records: List[Dict]) -&gt; List[Dict]:
+        &quot;&quot;&quot;As a Data user, process 12-19-2017 deletions.&quot;&quot;&quot;
+        processed = [rec for rec in records if rec.get(&#x27;date&#x27;) != &#x27;12-19-2017&#x27; or self.validation_rules[&#x27;delete_12_19_2017&#x27;]]
+        logger.info(f&quot;Processed {len(records) - len(processed)} deletions from 12-19-2017.&quot;)
+        self.database.update({hashlib.md5(str(rec).encode()).hexdigest(): rec for rec in processed})
+        return processed
+
+    def redesign_resources_page(self, styles: Dict) -&gt; str:
+        &quot;&quot;&quot;As a UI designer, redesign Resources page to match new Broker styles. Simulate with JSON config.&quot;&quot;&quot;
+        # Simulate redesign by generating a config file
+        config = {
+            &quot;resources_page&quot;: {
+                &quot;styles&quot;: styles,
+                &quot;broker_design&quot;: True,
+                &quot;elements&quot;: [&quot;header&quot;, &quot;content&quot;, &quot;footer&quot;]
+            }
+        }
+        with open(&#x27;resources_page_config.json&#x27;, &#x27;w&#x27;) as f:
+            json.dump(config, f)
+        logger.info(&quot;Resources page redesigned with Broker styles.&quot;)
+        return &quot;Redesign complete: resources_page_config.json&quot;
+
+    def report_user_testing_to_agencies(self, testing_results: Dict) -&gt; str:
+        &quot;&quot;&quot;As a UI designer, report user testing to Agencies.&quot;&quot;&quot;
+        report = {
+            &quot;summary&quot;: &quot;User testing contributions to better UX in Broker.&quot;,
+            &quot;results&quot;: testing_results,
+            &quot;date&quot;: datetime.now().isoformat()
+        }
+        report_file = &#x27;user_testing_report.json&#x27;
+        with open(report_file, &#x27;w&#x27;) as f:
+            json.dump(report, f)
+        logger.info(f&quot;User testing report generated: {report_file}&quot;)
+        return f&quot;Report sent to Agencies: {report_file}&quot;
+
+    def move_to_round_2_dabs_fabs_landing(self, edits: List[str]) -&gt; bool:
+        &quot;&quot;&quot;As a UI designer, move to round 2 of DABS or FABS landing page edits.&quot;&quot;&quot;
+        self.database[&#x27;landing_edits_round2&#x27;] = edits
+        logger.info(&quot;Round 2 edits for DABS/FABS landing page prepared for leadership approval.&quot;)
+        return True
+
+    def move_to_round_2_homepage(self, edits: List[str]) -&gt; bool:
+        &quot;&quot;&quot;As a UI designer, move to round 2 of Homepage edits.&quot;&quot;&quot;
+        self.database[&#x27;homepage_edits_round2&#x27;] = edits
+        logger.info(&quot;Round 2 edits for Homepage prepared for leadership approval.&quot;)
+        return True
+
+    def move_to_round_3_help_page(self, edits: List[str]) -&gt; bool:
+        &quot;&quot;&quot;As a UI designer, move to round 3 of Help page edits.&quot;&quot;&quot;
+        self.database[&#x27;help_edits_round3&#x27;] = edits
+        logger.info(&quot;Round 3 edits for Help page prepared for leadership approval.&quot;)
+        return True
+
+    def move_to_round_2_help_page(self, edits: List[str]) -&gt; bool:
+        &quot;&quot;&quot;Duplicate: As a UI designer, move to round 2 of Help page edits.&quot;&quot;&quot;
+        return self.move_to_round_2_help_page(edits)  # Note: Assuming typo, treat as round 2
+
+    def enhance_logging(self, submission_id: str, function: str, error: Optional[str] = None) -&gt; None:
+        &quot;&quot;&quot;As a Developer, log better for troubleshooting submissions and functions.&quot;&quot;&quot;
+        log_entry = {
+            &#x27;submission_id&#x27;: submission_id,
+            &#x27;function&#x27;: function,
+            &#x27;timestamp&#x27;: datetime.now(),
+            &#x27;error&#x27;: error
+        }
+        logger.info(f&quot;Troubleshooting log: {json.dumps(log_entry)}&quot;)
+        self.database.setdefault(&#x27;logs&#x27;, []).append(log_entry)
+
+    def update_fabs_submission_publish_status(self, submission_id: str, new_status: str) -&gt; None:
+        &quot;&quot;&quot;As a Developer, modify FABS submission when publishStatus changes.&quot;&quot;&quot;
+        if submission_id in self.submissions:
+            self.submissions[submission_id][&#x27;publishStatus&#x27;] = new_status
+            self.publish_status[submission_id] = new_status
+            logger.info(f&quot;FABS submission {submission_id} status updated to {new_status}.&quot;)
+            self.enhance_logging(submission_id, &#x27;publish_status_update&#x27;, None)
+
+    def integrate_new_relic(self, app_data: Dict) -&gt; None:
+        &quot;&quot;&quot;As a DevOps engineer, provide useful New Relic data across applications.&quot;&quot;&quot;
+        self.new_relic_data.update(app_data)
+        logger.info(&quot;New Relic integration: Data collected across apps.&quot;)
+        # Simulate metric push
+        print(&quot;New Relic metrics:&quot;, json.dumps(self.new_relic_data, indent=2))
+
+    def upload_and_validate_error_message(self, file_path: str) -&gt; Dict[str, List[str]]:
+        &quot;&quot;&quot;As a Broker user, upload and validate with accurate error messages.&quot;&quot;&quot;
+        errors = []
+        with open(file_path, &#x27;r&#x27;) as f:
+            reader = csv.DictReader(f)
+            for row_num, row in enumerate(reader, 1):
+                if not re.match(self.validation_rules[&#x27;zip_validation&#x27;], row.get(&#x27;PPoPZIP&#x27;, &#x27;&#x27;)):
+                    errors.append(f&quot;Row {row_num}: Invalid ZIP format.&quot;)
+        if errors:
+            logger.warning(&quot;Validation errors found with accurate messages.&quot;)
+        return {&#x27;errors&#x27;: errors, &#x27;warnings&#x27;: []}
+
+    def sync_d1_file_generation_with_fpds(self, fpds_timestamp: str) -&gt; str:
+        &quot;&quot;&quot;As a Broker user, sync D1 file generation with FPDS data load.&quot;&quot;&quot;
+        cache_key = f&quot;d1_{fpds_timestamp}&quot;
+        if cache_key in self.cache and (datetime.now() - self.cache[cache_key][&#x27;time&#x27;]).seconds &lt; 3600:
+            logger.info(&quot;D1 file retrieved from cache - no regeneration needed.&quot;)
+            return self.cache[cache_key][&#x27;file&#x27;]
+        else:
+            d1_file = self._generate_d1_file(fpds_timestamp)
+            self.cache[cache_key] = {&#x27;file&#x27;: d1_file, &#x27;time&#x27;: datetime.now()}
+            logger.info(&quot;D1 file generated and cached.&quot;)
+            return d1_file
+
+    def _generate_d1_file(self, fpds_timestamp: str) -&gt; str:
+        &quot;&quot;&quot;Internal: Generate D1 file.&quot;&quot;&quot;
+        return f&quot;D1 data synced with FPDS at {fpds_timestamp}&quot;
+
+    def access_published_fabs_files(self, user_id: str) -&gt; List[str]:
+        &quot;&quot;&quot;As a Website user, access published FABS files.&quot;&quot;&quot;
+        published_files = [k for k, v in self.database.items() if v.get(&#x27;status&#x27;) == &#x27;published&#x27; and &#x27;fabs&#x27; in k.lower()]
+        logger.info(f&quot;User {user_id} accessed {len(published_files)} published FABS files.&quot;)
+        return published_files
+
+    def ensure_only_grant_records_sent(self, records: List[Dict]) -&gt; List[Dict]:
+        &quot;&quot;&quot;As an owner, ensure USAspending only sends grant records.&quot;&quot;&quot;
+        grants = [rec for rec in records if rec.get(&#x27;record_type&#x27;) == &#x27;grant&#x27;]
+        logger.info(f&quot;Filtered to {len(grants)} grant records only.&quot;)
+        return grants
+
+    def update_validation_rule_table_db2213(self) -&gt; None:
+        &quot;&quot;&quot;As a Developer, update validation rule table for DB-2213.&quot;&quot;&quot;
+        self.validation_rules.update({&#x27;db2213_updated&#x27;: True})
+        logger.info(&quot;Validation rule table updated for DB-2213.&quot;)
+
+    def add_gtas_window_data(self, start_date: str, end_date: str) -&gt; None:
+        &quot;&quot;&quot;As a Developer, add GTAS window data to database.&quot;&quot;&quot;
+        self.gt as_window = True
+        self.database[&#x27;gtas_window&#x27;] = {&#x27;start&#x27;: start_date, &#x27;end&#x27;: end_date}
+        logger.info(&quot;GTAS window data added; site lockdown during submission period.&quot;)
+
+    @lru_cache(maxsize=128)
+    def manage_d_files_generation(self, request_id: str) -&gt; str:
+        &quot;&quot;&quot;As a Developer, manage and cache D Files generation requests.&quot;&quot;&quot;
+        if request_id in self.cache:
+            logger.info(&quot;D File retrieved from cache.&quot;)
+            return self.cache[request_id]
+        d_file = self._generate_d_file(request_id)
+        self.cache[request_id] = d_file
+        logger.info(&quot;D File generated and cached.&quot;)
+        return d_file
+
+    def _generate_d_file(self, request_id: str) -&gt; str:
+        &quot;&quot;&quot;Internal: Generate D File.&quot;&quot;&quot;
+        return f&quot;D File for request {request_id} from FABS and FPDS data.&quot;
+
+    def access_raw_agency_published_files_fabs(self, agency_id: str) -&gt; List[str]:
+        &quot;&quot;&quot;As a user, access raw agency published files from FABS via USAspending.&quot;&quot;&quot;
+        files = [v for k, v in self.database.items() if agency_id in k and &#x27;published&#x27; in v.get(&#x27;status&#x27;, &#x27;&#x27;)]
+        logger.info(f&quot;Accessed {len(files)} raw FABS files for agency {agency_id}.&quot;)
+        return files
+
+    def handle_large_flexfields(self, flexfields: List[str]) -&gt; bool:
+        &quot;&quot;&quot;As an Agency user, include large number of flexfields without performance impact.&quot;&quot;&quot;
+        # Simulate efficient processing
+        processed = [ff[:self.validation_rules[&#x27;flexfields&#x27;][&#x27;max_length&#x27;]] for ff in flexfields]
+        self.database[&#x27;flexfields&#x27;] = processed
+        logger.info(&quot;Large flexfields processed efficiently.&quot;)
+        return True
+
+    def create_content_mockups(self, data: Dict) -&gt; str:
+        &quot;&quot;&quot;As a Broker user, help create content mockups.&quot;&quot;&quot;
+        mockup = json.dumps(data, indent=2)
+        mockup_file = &#x27;content_mockups.json&#x27;
+        with open(mockup_file, &#x27;w&#x27;) as f:
+            f.write(mockup)
+        logger.info(&quot;Content mockups created for efficient data submission.&quot;)
+        return mockup_file
+
+    def track_tech_thursday_issues(self, issues: List[str]) -&gt; None:
+        &quot;&quot;&quot;As a UI designer, track issues from Tech Thursday.&quot;&quot;&quot;
+        self.database[&#x27;tech_thursday_issues&#x27;] = issues
+        logger.info(&quot;Tech Thursday issues tracked for testing and fixes.&quot;)
+
+    def create_user_testing_summary(self, ui_sme_input: Dict) -&gt; str:
+        &quot;&quot;&quot;As an Owner, create user testing summary from UI SME.&quot;&quot;&quot;
+        summary = {
+            &quot;ui_improvements&quot;: ui_sme_input.get(&#x27;improvements&#x27;, []),
+            &quot;follow_through&quot;: True
+        }
+        summary_file = &#x27;user_testing_summary.json&#x27;
+        with open(summary_file, &#x27;w&#x27;) as f:
+            json.dump(summary, f)
+        logger.info(&quot;User testing summary created.&quot;)
+        return summary_file
+
+    def begin_user_testing(self, requests: List[str]) -&gt; bool:
+        &quot;&quot;&quot;As a UI designer, begin user testing to validate stakeholder requests.&quot;&quot;&quot;
+        self.database[&#x27;user_testing_active&#x27;] = {&#x27;requests&#x27;: requests, &#x27;status&#x27;: &#x27;begun&#x27;}
+        logger.info(&quot;User testing begun for UI improvements.&quot;)
+        return True
+
+    def schedule_user_testing(self, date_time: datetime) -&gt; bool:
+        &quot;&quot;&quot;As a UI designer, schedule user testing.&quot;&quot;&quot;
+        self.database[&#x27;user_testing_schedule&#x27;] = {&#x27;scheduled_at&#x27;: date_time}
+        logger.info(f&quot;User testing scheduled for {date_time} to ensure buy-in.&quot;)
+        return True
+
+    def design_ui_schedule_from_sme(self, sme_timeline: Dict) -&gt; str:
+        &quot;&quot;&quot;As an Owner, design schedule from UI SME.&quot;&quot;&quot;
+        schedule = {&quot;timeline&quot;: sme_timeline, &quot;potential_duration&quot;: &quot;Q1 2024&quot;}
+        schedule_file = &#x27;ui_improvements_schedule.json&#x27;
+        with open(schedule_file, &#x27;w&#x27;) as f:
+            json.dump(schedule, f)
+        logger.info(&quot;UI improvements schedule designed.&quot;)
+        return schedule_file
+
+    def design_ui_audit_from_sme(self, sme_scope: Dict) -&gt; str:
+        &quot;&quot;&quot;As an Owner, design audit from UI SME.&quot;&quot;&quot;
+        audit = {&quot;scope&quot;: sme_scope, &quot;potential_issues&quot;: []}
+        audit_file = &#x27;ui_improvements_audit.json&#x27;
+        with open(audit_file, &#x27;w&#x27;) as f:
+            json.dump(audit, f)
+        logger.info(&quot;UI improvements audit designed.&quot;)
+        return audit_file
+
+    def prevent_double_publishing_fabs(self, submission_id: str, is_refresh: bool = False) -&gt; bool:
+        &quot;&quot;&quot;As a Developer, prevent double publishing after refresh.&quot;&quot;&quot;
+        if submission_id in self.publish_status and self.publish_status[submission_id] == &#x27;publishing&#x27;:
+            logger.warning(f&quot;Double publish attempt prevented for {submission_id}.&quot;)
+            return False
+        self.publish_status[submission_id] = &#x27;publishing&#x27;
+        # Simulate publishing
+        self.update_fabs_submission_publish_status(submission_id, &#x27;published&#x27;)
+        if is_refresh:
+            logger.info(&quot;Refresh-handled publishing completed without duplicates.&quot;)
+        return True
+
+    def receive_fabs_updates(self, updates: List[Dict]) -&gt; None:
+        &quot;&quot;&quot;As a data user, receive updates to FABS records.&quot;&quot;&quot;
+        for update in updates:
+            key = hashlib.md5(str(update).encode()).hexdigest()
+            self.database[key] = update
+        logger.info(f&quot;Received and stored {len(updates)} FABS updates.&quot;)
+
+    def update_fabs_sample_file(self) -&gt; None:
+        &quot;&quot;&quot;As a Developer, update FABS sample file to remove FundingAgencyCode header.&quot;&quot;&quot;
+        sample_headers = [h for h in self.validation_rules[&#x27;schema_v1_1_headers&#x27;] if h != &#x27;FundingAgencyCode&#x27;]
+        sample_file = &#x27;fabs_sample.csv&#x27;
+        with open(sample_file, &#x27;w&#x27;) as f:
+            writer = csv.writer(f)
+            writer.writerow(sample_headers)
+        logger.info(&quot;FABS sample file updated: FundingAgencyCode header removed.&quot;)
+
+    def ensure_deleted_fsrs_not_included(self, records: List[Dict]) -&gt; List[Dict]:
+        &quot;&quot;&quot;As an agency user, ensure deleted FSRS records not included.&quot;&quot;&quot;
+        filtered = [rec for rec in records if rec.get(&#x27;status&#x27;) != &#x27;deleted&#x27;]
+        logger.info(f&quot;Filtered out {len(records) - len(filtered)} deleted FSRS records.&quot;)
+        return filtered
+
+    def update_financial_assistance_daily(self) -&gt; None:
+        &quot;&quot;&quot;As a website user, see updated financial assistance data daily.&quot;&quot;&quot;
+        today = date.today().isoformat()
+        self.database[&#x27;financial_assistance_update&#x27;] = today
+        logger.info(f&quot;Financial assistance data updated for {today}.&quot;)
+
+    def deactivate_publish_button_during_derivations(self, submission_id: str) -&gt; bool:
+        &quot;&quot;&quot;As a user, deactivate publish button during derivations.&quot;&quot;&quot;
+        # Simulate derivation process
+        self.publish_status[submission_id] = &#x27;deriving&#x27;
+        # Placeholder derivation logic
+        self._derive_fields(submission_id)
+        self.publish_status[submission_id] = &#x27;ready&#x27;
+        logger.info(&quot;Publish button managed during derivations.&quot;)
+        return True
+
+    def _derive_fields(self, submission_id: str) -&gt; None:
+        &quot;&quot;&quot;Internal: Derive fields like PPoPCode, etc.&quot;&quot;&quot;
+        if submission_id in self.submissions:
+            rec = self.submissions[submission_id]
+            rec[&#x27;derived_ppop_code&#x27;] = self._derive_ppop_code(rec)
+
+    def prevent_nonexistent_record_operations(self, record_id: str, operation: str) -&gt; bool:
+        &quot;&quot;&quot;As a Developer, ensure attempts to correct/delete non-existent records don&#x27;t create new data.&quot;&quot;&quot;
+        if record_id not in self.database:
+            logger.warning(f&quot;Non-existent record {record_id} - {operation} prevented.&quot;)
+            return False
+        # Perform operation
+        if operation == &#x27;delete&#x27;:
+            del self.database[record_id]
+        logger.info(f&quot;{operation.capitalize()} performed on existing record {record_id}.&quot;)
+        return True
+
+    def reset_environment_permissions(self, max_permissions: str = &#x27;Staging MAX&#x27;) -&gt; None:
+        &quot;&quot;&quot;As an Owner, reset environment to only Staging MAX permissions.&quot;&quot;&quot;
+        self.database[&#x27;permissions&#x27;] = {&#x27;level&#x27;: max_permissions, &#x27;fabs_testers_access&#x27;: False}
+        logger.info(&quot;Environment reset: FABS testers no longer have access.&quot;)
+
+    def flexfields_in_error_files_missing_required(self, submission: Dict) -&gt; Dict:
+        &quot;&quot;&quot;As a user, flexfields appear in warning/error files when only missing required element.&quot;&quot;&quot;
+        errors = []
+        if not submission.get(&#x27;required_element&#x27;):
+            errors.append(&quot;Missing required element; flexfields included.&quot;)
+            # Include flexfields in error output
+            submission[&#x27;flexfields_in_error&#x27;] = True
+        return {&#x27;errors&#x27;: errors, &#x27;submission&#x27;: submission}
+
+    def ensure_accurate_ppopcode_pp op_congressional_district(self, record: Dict) -&gt; Dict:
+        &quot;&quot;&quot;As a user, accurate data for PPoPCode and PPoPCongressionalDistrict.&quot;&quot;&quot;
+        record[&#x27;PPoPCode&#x27;] = self._derive_ppop_code(record)
+        record[&#x27;PPoPCongressionalDistrict&#x27;] = &#x27;01&#x27;  # Placeholder derivation
+        logger.info(&quot;PPoPCode and Congressional District derived accurately.&quot;)
+        return record
+
+    def _derive_ppop_code(self, record: Dict) -&gt; str:
+        &quot;&quot;&quot;Derive PPoPCode, including 00***** and 00FORGN cases.&quot;&quot;&quot;
+        code = record.get(&#x27;OfficeCode&#x27;, &#x27;&#x27;)
+        if code.startswith(&#x27;00&#x27;) and (&#x27;*****&#x27; in code or &#x27;FORGN&#x27; in code):
+            return f&quot;Derived_{code}&quot;
+        return code
+
+    def accept_zero_blank_loans(self, record: Dict) -&gt; bool:
+        &quot;&quot;&quot;As an agency user, FABS validation accepts zero/blank for loan records.&quot;&quot;&quot;
+        if self.validation_rules[&#x27;loan_records&#x27;][&#x27;accept_zero_blank&#x27;] and record.get(&#x27;record_type&#x27;) == &#x27;loan&#x27;:
+            # Allow zero or blank for certain fields, e.g., Obligation
+            record[&#x27;obligation&#x27;] = record.get(&#x27;obligation&#x27;, 0) or 0
+            return True
+        return False
+
+    def deploy_fabs_production(self) -&gt; bool:
+        &quot;&quot;&quot;As an Agency user, deploy FABS to production.&quot;&quot;&quot;
+        self.database[&#x27;deployment&#x27;] = {&#x27;status&#x27;: &#x27;production&#x27;, &#x27;date&#x27;: datetime.now()}
+        logger.info(&quot;FABS deployed to production for Financial Assistance submissions.&quot;)
+        return True
+
+    def clarify_cfda_error(self, record: Dict) -&gt; str:
+        &quot;&quot;&quot;As a Developer, clarify CFDA error triggers.&quot;&quot;&quot;
+        error_msg = self.validation_rules[&#x27;cfda_error&#x27;]
+        if not re.match(r&#x27;^\d{2}\.\d{3}$&#x27;, record.get(&#x27;CFDA&#x27;, &#x27;&#x27;)):
+            return f&quot;{error_msg}: Invalid format in {record.get(&#x27;title&#x27;, &#x27;N/A&#x27;)}.&quot;
+        return &quot;No CFDA error.&quot;
+
+    def ensure_complete_sam_data(self, record: Dict) -&gt; bool:
+        &quot;&quot;&quot;As an agency user, confident SAM data is complete.&quot;&quot;&quot;
+        # Simulate SAM check
+        duns = record.get(&#x27;DUNS&#x27;)
+        if duns in self.sam_data:
+            record.update(self.sam_data[duns])  # Merge complete data
+            logger.info(&quot;SAM data completed for DUNS.&quot;)
+            return True
+        logger.warning(&quot;Incomplete SAM data.&quot;)
+        return False
+
+    def index_domain_models(self, models: List[str]) -&gt; None:
+        &quot;&quot;&quot;As a Developer, index domain models for fast validation.&quot;&quot;&quot;
+        for model in models:
+            self.database[model] = {&#x27;indexed&#x27;: True}
+        logger.info(&quot;Domain models indexed for reasonable validation time.&quot;)
+
+    def accept_zero_blank_non_loans(self, record: Dict) -&gt; bool:
+        &quot;&quot;&quot;As an agency user, accept zero/blank for non-loan records.&quot;&quot;&quot;
+        if self.validation_rules[&#x27;non_loan_records&#x27;][&#x27;accept_zero_blank&#x27;] and record.get(&#x27;record_type&#x27;) != &#x27;loan&#x27;:
+            record[&#x27;obligation&#x27;] = record.get(&#x27;obligation&#x27;, &#x27;&#x27;) or &#x27;&#x27;
+            return True
+        return False
+
+    def update_sql_codes_for_clarity(self, sql_queries: List[str]) -&gt; List[str]:
+        &quot;&quot;&quot;As a broker team member, update SQL codes for clarity.&quot;&quot;&quot;
+        clarified = [q + &quot; -- Clarified for Broker&quot; for q in sql_queries]
+        logger.info(&quot;SQL codes updated for clarity.&quot;)
+        return clarified
+
+    def derive_all_data_elements(self, record: Dict) -&gt; Dict:
+        &quot;&quot;&quot;As an agency user, all derived data elements properly derived.&quot;&quot;&quot;
+        derivations = {
+            &#x27;FundingAgencyCode&#x27;: self._derive_funding_agency_code(record),
+            &#x27;OfficeName&#x27;: self._derive_office_name(record.get(&#x27;OfficeCode&#x27;, &#x27;&#x27;)),
+            &#x27;FREC&#x27;: self._derive_frec(record)
+        }
+        record.update(derivations)
+        logger.info(&quot;All data elements derived properly.&quot;)
+        return record
+
+    def _derive_funding_agency_code(self, record: Dict) -&gt; str:
+        &quot;&quot;&quot;Derive FundingAgencyCode.&quot;&quot;&quot;
+        return record.get(&#x27;AgencyCode&#x27;, &#x27;Derived_FAC&#x27;)
+
+    def _derive_office_name(self, code: str) -&gt; str:
+        &quot;&quot;&quot;Derive office name from code.&quot;&quot;&quot;
+        names = {&#x27;123&#x27;: &#x27;Office of Finance&#x27;, &#x27;456&#x27;: &#x27;Procurement Office&#x27;}  # Simulated
+        return names.get(code, &#x27;Unknown Office&#x27;)
+
+    def add_00_cases_to_derivation(self, record: Dict) -&gt; None:
+        &quot;&quot;&quot;As a broker team member, add 00***** and 00FORGN to derivation logic.&quot;&quot;&quot;
+        self._derive_ppop_code(record)  # Uses updated logic
+        logger.info(&quot;00***** and 00FORGN cases added to PPoPCode derivation.&quot;)
+
+    def update_broker_resources_validations_pp(self) -&gt; None:
+        &quot;&quot;&quot;As a broker team member, update Broker resources, validations, P&amp;P for FABS and DAIMS v1.1 launch.&quot;&quot;&quot;
+        self.validation_rules[&#x27;v1_1_launch&#x27;] = True
+        logger.info(&quot;Broker pages updated for FABS/DAIMS v1.1 launch.&quot;)
+
+    def load_historical_fabs_with_frec(self, data: List[Dict]) -&gt; None:
+        &quot;&quot;&quot;As a Developer, load historical FABS with FREC derivations.&quot;&quot;&quot;
+        for rec in data:
+            rec[&#x27;FREC&#x27;] = self._derive_frec(rec)
+            key = hashlib.md5(str(rec).encode()).hexdigest()
+            self.database[key] = rec
+        self.historical_fabs_loaded = True
+        logger.info(&quot;Historical FABS loaded with FREC derivations for USASpending.gov.&quot;)
+
+    def _derive_frec(self, record: Dict) -&gt; str:
+        &quot;&quot;&quot;Derive FREC.&quot;&quot;&quot;
+        return f&quot;FREC_{record.get(&#x27;AgencyCode&#x27;, &#x27;&#x27;)}&quot;
+
+    def prevent_nasa_grants_as_contracts(self, records: List[Dict]) -&gt; List[Dict]:
+        &quot;&quot;&quot;As a user, don&#x27;t see NASA grants as contracts.&quot;&quot;&quot;
+        corrected = []
+        for rec in records:
+            if rec.get(&#x27;agency&#x27;) == &#x27;NASA&#x27; and rec.get(&#x27;type&#x27;) == &#x27;grant&#x27;:
+                rec[&#x27;display_type&#x27;] = &#x27;grant&#x27;
+            corrected.append(rec)
+        logger.info(&quot;NASA grants corrected to not display as contracts.&quot;)
+        return corrected
+
+    def validate_duns_for_action_types(self, record: Dict) -&gt; bool:
+        &quot;&quot;&quot;As a user, DUNS validations accept B,C,D actions if registered in SAM, even expired.&quot;&quot;&quot;
+        action_type = record.get(&#x27;ActionType&#x27;)
+        duns = record.get(&#x27;DUNS&#x27;)
+        action_date = datetime.strptime(record.get(&#x27;ActionDate&#x27;, &#x27;&#x27;), &#x27;%Y-%m-%d&#x27;)
+        if action_type in self.validation_rules[&#x27;duns_accept&#x27;]:
+            if duns in self.sam_data:
+                reg_start = self.sam_data[duns].get(&#x27;reg_start&#x27;)
+                reg_end = self.sam_data[duns].get(&#x27;reg_end&#x27;, datetime.now())
+                if action_date &gt; reg_start and (action_date &lt; reg_end or reg_end &gt; datetime.now()):
+                    return True
+        logger.warning(&quot;DUNS validation failed.&quot;)
+        return False
+
+    def validate_duns_date_registration(self, record: Dict) -&gt; bool:
+        &quot;&quot;&quot;As a user, accept DUNS if ActionDate before current reg but after initial.&quot;&quot;&quot;
+        # Integrated into above, but separate for clarity
+        return self.validate_duns_for_action_types(record)
+
+    def derive_funding_agency_code(self, record: Dict) -&gt; str:
+        &quot;&quot;&quot;As a broker team member, derive FundingAgencyCode for data quality.&quot;&quot;&quot;
+        derived = self._derive_funding_agency_code(record)
+        record[&#x27;FundingAgencyCode&#x27;] = derived
+        logger.info(&quot;FundingAgencyCode derived for improved quality.&quot;)
+        return derived
+
+    def update_legal_entity_address_line3_max_length(self, record: Dict) -&gt; bool:
+        &quot;&quot;&quot;As an agency user, max length for LegalEntityAddressLine3 matches schema v1.1.&quot;&quot;&quot;
+        max_len = self.validation_rules[&#x27;legal_entity_address_line3&#x27;][&#x27;max_length&#x27;]
+        addr3 = record.get(&#x27;LegalEntityAddressLine3&#x27;, &#x27;&#x27;)[:max_len]
+        record[&#x27;LegalEntityAddressLine3&#x27;] = addr3
+        logger.info(f&quot;AddressLine3 truncated to {max_len} per v1.1 schema.&quot;)
+        return True
+
+    def use_schema_v1_1_headers(self, file_path: str) -&gt; bool:
+        &quot;&quot;&quot;As an agency user, use schema v1.1 headers in FABS file.&quot;&quot;&quot;
+        expected = set(self.validation_rules[&#x27;schema_v1_1_headers&#x27;])
+        with open(file_path, &#x27;r&#x27;) as f:
+            reader = csv.reader(f)
+            headers = set(next(reader))
+        if headers == expected:
+            logger.info(&quot;Schema v1.1 headers validated.&quot;)
+            return True
+        logger.warning(&quot;Headers do not match v1.1 schema.&quot;)
+        return False
+
+    def map_federal_action_obligation_to_atom_feed(self, obligation: float) -&gt; Dict:
+        &quot;&quot;&quot;As a agency user, map FederalActionObligation to Atom Feed.&quot;&quot;&quot;
+        atom_entry = {&#x27;obligation&#x27;: obligation, &#x27;feed_type&#x27;: &#x27;atom&#x27;}
+        logger.info(&quot;FederalActionObligation mapped to Atom Feed.&quot;)
+        return atom_entry
+
+    def validate_pp op_zip4_like_legal_entity(self, zip_code: str) -&gt; bool:
+        &quot;&quot;&quot;As a Broker user, PPoPZIP+4 works like Legal Entity ZIP validations.&quot;&quot;&quot;
+        return bool(re.match(self.validation_rules[&#x27;zip_validation&#x27;], zip_code))
+
+    def link_sample_file_in_dialog(self, dialog_text: str) -&gt; str:
+        &quot;&quot;&quot;As a FABS user, link SAMPLE FILE to correct file in dialog.&quot;&quot;&quot;
+        updated_dialog = dialog_text.replace(&quot;SAMPLE FILE&quot;, &quot;fabs_sample.csv&quot;)
+        logger.info(&quot;Sample file link updated in submission dialog.&quot;)
+        return updated_dialog
+
+    def update_fpds_daily(self) -&gt; None:
+        &quot;&quot;&quot;As an Agency user, FPDS data up-to-date daily.&quot;&quot;&quot;
+        today = date.today().isoformat()
+        self.fpds_data[&#x27;last_update&#x27;] = today
+        logger.info(f&quot;FPDS updated for {today}.&quot;)
+
+    def determine_d_files_generation_from_fabs_fpds(self, fabs_data: List, fpds_data: List) -&gt; str:
+        &quot;&quot;&quot;As a Developer, determine how agencies generate/validate D Files from FABS/FPDS.&quot;&quot;&quot;
+        method = &quot;Agencies upload FABS, system merges with daily FPDS, generates D File via Broker.&quot;
+        logger.info(method)
+        return method
+
+    def generate_validate_d_files(self, fabs_path: str, fpds_path: str) -&gt; Dict:
+        &quot;&quot;&quot;As a user, generate and validate D Files from FABS and FPDS.&quot;&quot;&quot;
+        # Load and merge
+        fabs = self._load_csv(fabs_path)
+        fpds = self._load_csv(fpds_path)
+        d_data = self._merge_fabs_fpds(fabs, fpds)
+        validation = self._validate_d_data(d_data)
+        d_file = self.manage_d_files_generation(&#x27;user_request&#x27;)
+        return {&#x27;d_file&#x27;: d_file, &#x27;validation&#x27;: validation}
+
+    def _load_csv(self, path: str) -&gt; List[Dict]:
+        &quot;&quot;&quot;Load CSV to list of dicts.&quot;&quot;&quot;
+        with open(path, &#x27;r&#x27;) as f:
+            return list(csv.DictReader(f))
+
+    def _merge_fabs_fpds(self, fabs: List[Dict], fpds: List[Dict]) -&gt; List[Dict]:
+        &quot;&quot;&quot;Merge FABS and FPDS data.&quot;&quot;&quot;
+        for f in fabs:
+            f[&#x27;fpds_info&#x27;] = next((p for p in fpds if p.get(&#x27;id&#x27;) == f.get(&#x27;id&#x27;)), {})
+        return fabs
+
+    def _validate_d_data(self, data: List[Dict]) -&gt; Dict:
+        &quot;&quot;&quot;Validate merged data.&quot;&quot;&quot;
+        return {&#x27;errors&#x27;: [], &#x27;valid&#x27;: True}
+
+    def update_header_info_box_datetime(self, box_content: str) -&gt; str:
+        &quot;&quot;&quot;As an Agency user, show updated date AND time in header.&quot;&quot;&quot;
+        now = datetime.now().strftime(&#x27;%Y-%m-%d %H:%M:%S&#x27;)
+        updated = box_content + f&quot; | Updated: {now}&quot;
+        logger.info(&quot;Header info box updated with date and time.&quot;)
+        return updated
+
+    def helpful_file_level_error_wrong_extension(self, file_path: str) -&gt; str:
+        &quot;&quot;&quot;As an Agency user, more helpful error for wrong file extension.&quot;&quot;&quot;
+        ext = os.path.splitext(file_path)[1]
+        if ext != &#x27;.csv&#x27;:
+            return f&quot;Error: Invalid extension &#x27;{ext}&#x27;. Expected .csv for FABS submissions. Please rename and try again.&quot;
+        return &quot;File extension valid.&quot;
+
+    def access_test_features_other_envs(self, feature: str, env: str) -&gt; bool:
+        &quot;&quot;&quot;As a tester, access test features in non-Staging envs.&quot;&quot;&quot;
+        if env != &#x27;Staging&#x27;:
+            self.database[f&#x27;test_{feature}_{env}&#x27;] = True
+            logger.info(f&quot;Test feature {feature} accessed in {env}.&quot;)
+            return True
+        return False
+
+    def accurate_submission_errors_fabs(self, errors: List[str]) -&gt; List[str]:
+        &quot;&quot;&quot;As a FABS user, submission errors accurately represent FABS errors.&quot;&quot;&quot;
+        # Simulate precise mapping
+        fabs_errors = [e + &quot; (FABS-specific)&quot; for e in errors]
+        logger.info(&quot;FABS errors accurately represented.&quot;)
+        return fabs_errors
+
+    def update_frontend_urls(self, current_url: str) -&gt; str:
+        &quot;&quot;&quot;As a FABS user, frontend URLs reflect accessed page accurately.&quot;&quot;&quot;
+        # Simulate URL mapping
+        accurate_url = current_url.replace(&#x27;old&#x27;, &#x27;fabs_&#x27;)
+        logger.info(f&quot;URL updated to {accurate_url}.&quot;)
+        return accurate_url
+
+    def load_all_historical_financial_assistance(self) -&gt; None:
+        &quot;&quot;&quot;As an Agency user, all historical Financial Assistance data loaded for FABS go-live.&quot;&quot;&quot;
+        # Simulate load
+        self.historical_fabs_loaded = True
+        self.database[&#x27;historical_fa&#x27;] = &quot;Loaded&quot;
+        logger.info(&quot;All historical Financial Assistance data loaded for FABS go-live.&quot;)
+
+    def load_historical_fpds_both_sources(self, extracted_data: List, feed_data: List) -&gt; None:
+        &quot;&quot;&quot;As a Developer, load historical FPDS from extracted and feed data.&quot;&quot;&quot;
+        self.fpds_data.update({f&quot;extracted_{i}&quot;: rec for i, rec in enumerate(extracted_data)})
+        self.fpds_data.update({f&quot;feed_{i}&quot;: rec for i, rec in enumerate(feed_data)})
+        logger.info(&quot;Historical FPDS loaded from both sources since 2007.&quot;)
+
+    def load_historical_fpds(self) -&gt; None:
+        &quot;&quot;&quot;As an Agency user, historical FPDS data loaded.&quot;&quot;&quot;
+        self.load_historical_fpds_both_sources([], [])  # Placeholder data
+
+    def show_submission_creator(self, submission_id: str) -&gt; str:
+        &quot;&quot;&quot;As an Agency user, accurately see who created submission.&quot;&quot;&quot;
+        creator = self.submissions.get(submission_id, {}).get(&#x27;creator&#x27;, &#x27;Unknown&#x27;)
+        logger.info(f&quot;Creator for submission {submission_id}: {creator}&quot;)
+        return creator
+
+    def get_file_f_correct_format(self, file_path: str) -&gt; bool:
+        &quot;&quot;&quot;As an agency user, get File F in correct format.&quot;&quot;&quot;
+        # Assume validation
+        return self.use_schema_v1_1_headers(file_path)
+
+    def better_file_level_errors(self, errors: List[str]) -&gt; List[str]:
+        &quot;&quot;&quot;As an Agency user, better understand file-level errors.&quot;&quot;&quot;
+        improved = [e + &quot; - Recommendation: Check headers and data types.&quot; for e in errors]
+        logger.info(&quot;File-level errors enhanced with explanations.&quot;)
+        return improved
+
+    def provide_fabs_frec_groups(self) -&gt; None:
+        &quot;&quot;&quot;As a Developer, provide FABS groups under FREC paradigm.&quot;&quot;&quot;
+        self.validation_rules[&#x27;frec_groups&#x27;] = True
+        logger.info(&quot;FABS FREC groups provided.&quot;)
+
+    def robust_test_fabs_derivations(self, test_file: str) -&gt; Dict:
+        &quot;&quot;&quot;As a tester, ensure FABS derivations with robust test file and check.&quot;&quot;&quot;
+        data = self._load_csv(test_file)
+        for rec in data:
+            self.derive_all_data_elements(rec)
+        check = all(rec.get(&#x27;derived_ppop_code&#x27;) for rec in data)
+        logger.info(f&quot;FABS derivations tested: {&#x27;Pass&#x27; if check else &#x27;Fail&#x27;}&quot;)
+        return {&#x27;pass&#x27;: check, &#x27;derived&#x27;: data}
+
+    def ensure_zero_padded_fields_only(self, records: List[Dict]) -&gt; List[Dict]:
+        &quot;&quot;&quot;As an owner, only zero-padded fields.&quot;&quot;&quot;
+        padded = []
+        for rec in records:
+            for key, val in rec.items():
+                if isinstance(val, str) and re.match(r&#x27;^\d+$&#x27;, val):
+                    rec[key] = val.zfill(10)  # Example padding
+            padded.append(rec)
+        logger.info(&quot;Fields zero-padded as required.&quot;)
+        return padded
+
+    def submit_individual_recipients_no_duns_error(self, records: List[Dict]) -&gt; bool:
+        &quot;&quot;&quot;As a Broker user, submit individual recipients without DUNS error.&quot;&quot;&quot;
+        for rec in records:
+            if rec.get(&#x27;recipient_type&#x27;) == &#x27;individual&#x27;:
+                rec[&#x27;duns_validation&#x27;] = &#x27;skipped&#x27;
+        logger.info(&quot;Individual recipients submitted without DUNS error.&quot;)
+        self.database.update({hashlib.md5(str(rec).encode()).hexdigest(): rec for rec in records})
+        return True
+
+    def info_rows_before_publish(self, submission_id: str) -&gt; int:
+        &quot;&quot;&quot;As a user, more info on rows to publish before deciding.&quot;&quot;&quot;
+        rows = len([k for k, v in self.submissions.items() if v.get(&#x27;to_publish&#x27;)])
+        logger.info(f&quot;Pre-publish info: {rows} rows will be published for {submission_id}.&quot;)
+        return rows
+
+    def prevent_duplicate_transactions(self, submission_id: str) -&gt; bool:
+        &quot;&quot;&quot;As a Developer, prevent duplicate transactions between validation and publish.&quot;&quot;&quot;
+        # Cache validation time
+        if submission_id in self.cache and self.cache[submission_id][&#x27;validated&#x27;]:
+            self.prevent_double_publishing_fabs(submission_id)
+            return True
+        logger.warning(&quot;Validation-publish gap: Duplicate prevented.&quot;)
+        return False
+
+    def submit_citywide_pp op_zip(self, zip_code: str) -&gt; bool:
+        &quot;&quot;&quot;As a FABS user, submit citywide as PPoPZIP and pass validations.&quot;&quot;&quot;
+        citywide_zip = zip_code.replace(&#x27;+4&#x27;, &#x27;&#x27;)[:5]
+        return self.validate_pp op_zip4_like_legal_entity(citywide_zip)
+
+    def update_error_codes_accuracy(self, errors: List[str]) -&gt; List[str]:
+        &quot;&quot;&quot;As a Broker user, updated error codes with accurate logic and info.&quot;&quot;&quot;
+        detailed = [e + &quot; - Fix: Update field X to match rule Y.&quot; for e in errors]
+        logger.info(&quot;Error codes updated for accuracy.&quot;)
+        return detailed
+
+    def allow_zip_without_last4(self, zip_code: str) -&gt; bool:
+        &quot;&quot;&quot;As an agency user, leave off last 4 ZIP digits without error.&quot;&quot;&quot;
+        if len(zip_code) == 5:
+            return True
+        return self.validate_pp op_zip4_like_legal_entity(zip_code)
+
+    def ensure_historical_data_columns(self, data: List[Dict]) -&gt; List[Dict]:
+        &quot;&quot;&quot;As a FABS user, historical data includes all necessary columns.&quot;&quot;&quot;
+        required_cols = [&#x27;ActionDate&#x27;, &#x27;UniqueAwardID&#x27;, &#x27;PPoPCode&#x27;]
+        for rec in data:
+            for col in required_cols:
+                if col not in rec:
+                    rec[col] = &#x27;&#x27;
+        logger.info(&quot;Historical data columns ensured.&quot;)
+        return data
+
+    def access_additional_fpds_fields(self, fields: List[str]) -&gt; Dict:
+        &quot;&quot;&quot;As a data user, access two additional fields from FPDS pull.&quot;&quot;&quot;
+        additional = {field: self.fpds_data.get(field, &#x27;N/A&#x27;) for field in fields[:2]}
+        logger.info(&quot;Additional FPDS fields accessed.&quot;)
+        return additional
+
+    def additional_submission_dashboard_info(self, submission_id: str) -&gt; Dict:
+        &quot;&quot;&quot;As a FABS user, additional helpful info in dashboard.&quot;&quot;&quot;
+        info = {
+            &#x27;ig_requests&#x27;: 0,
+            &#x27;status&#x27;: self.publish_status.get(submission_id, &#x27;pending&#x27;),
+            &#x27;rows&#x27;: self.info_rows_before_publish(submission_id)
+        }
+        logger.info(&quot;Dashboard info enhanced.&quot;)
+        return info
+
+    def download_uploaded_fabs_file(self, upload_id: str) -&gt; str:
+        &quot;&quot;&quot;As a FABS user, download uploaded FABS file.&quot;&quot;&quot;
+        file_path = f&quot;uploads/{upload_id}.csv&quot;
+        # Simulate download
+        logger.info(f&quot;Downloaded uploaded file: {file_path}&quot;)
+        return file_path
+
+    def quick_access_broker_data(self, query: str) -&gt; Dict:
+        &quot;&quot;&quot;As a Developer, quickly access Broker app data.&quot;&quot;&quot;
+        results = {k: v for k, v in self.database.items() if query in k}
+        logger.info(f&quot;Quick access to Broker data for query &#x27;{query}&#x27;.&quot;)
+        return results
+
+    def load_historical_fpds_best_way(self, since_year: int = 2007) -&gt; None:
+        &quot;&quot;&quot;As a Developer, best way to load historical FPDS since 2007.&quot;&quot;&quot;
+        self.load_historical_fpds_both_sources([], [])  # Uses best method: combined sources
+        logger.info(f&quot;Historical FPDS loaded since {since_year}.&quot;)
+
+    def appropriate_fabs_language(self, page_content: str) -&gt; str:
+        &quot;&quot;&quot;As a FABS user, appropriate language on FABS pages.&quot;&quot;&quot;
+        # Simulate language check/replace
+        updated = page_content.replace(&quot;DABS&quot;, &quot;FABS&quot;)  # Avoid confusion
+        logger.info(&quot;FABS page language made appropriate.&quot;)
+        return updated
+
+    def no_cross_banner_messages(self, current_app: str) -&gt; str:
+        &quot;&quot;&quot;As a FABS user, no DABS banners in FABS and vice versa.&quot;&quot;&quot;
+        banners = {&#x27;fabs&#x27;: &#x27;FABS Banner&#x27;, &#x27;dabs&#x27;: &#x27;DABS Banner&#x27;}
+        return banners.get(current_app.lower(), &#x27;&#x27;)
+
+    def read_only_access_dabs(self, user_id: str) -&gt; bool:
+        &quot;&quot;&quot;As a FABS user, read-only access to DABS.&quot;&quot;&quot;
+        self.database[f&#x27;user_{user_id}&#x27;] = {&#x27;dabs_access&#x27;: &#x27;read_only&#x27;}
+        logger.info(f&quot;Read-only DABS access granted to {user_id}.&quot;)
+        return True
+
+    def reasonable_validation_time(self, file_path: str) -&gt; float:
+        &quot;&quot;&quot;As a FABS user, validations run in reasonable time.&quot;&quot;&quot;
+        start = datetime.now()
+        self.upload_and_validate_error_message(file_path)
+        time_taken = (datetime.now() - start).total_seconds()
+        if time_taken &gt; 30:  # Threshold
+            logger.warning(&quot;Validation time exceeded reasonable limit.&quot;)
+        else:
+            logger.info(f&quot;Validation completed in {time_taken}s.&quot;)
+        return time_taken
+
+    def correct_status_labels_dashboard(self, submission_id: str) -&gt; str:
+        &quot;&quot;&quot;As a FABS user, correct status labels on dashboard.&quot;&quot;&quot;
+        status = self.publish_status.get(submission_id, &#x27;Unknown&#x27;).title()
+        logger.info(f&quot;Dashboard status label: {status}&quot;)
+        return status
+
+    def submission_periods_start_end(self, periods: Dict) -&gt; Dict:
+        &quot;&quot;&quot;As an agency user, know when submission periods start/end.&quot;&quot;&quot;
+        # Assume periods provided or current
+        current_period = {&#x27;start&#x27;: datetime.now(), &#x27;end&#x27;: datetime.now() + timedelta(days=30)}
+        logger.info(&quot;Submission periods info provided.&quot;)
+        return current_period
+
+    def landing_page_nav_fabs_dabs(self) -&gt; str:
+        &quot;&quot;&quot;As an agency user, landing page to navigate FABS or DABS.&quot;&quot;&quot;
+        nav = &quot;&lt;nav&gt;&lt;a href=&#x27;/fabs&#x27;&gt;FABS&lt;/a&gt; &lt;a href=&#x27;/dabs&#x27;&gt;DABS&lt;/a&gt;&lt;/nav&gt;&quot;  # Simulated HTML
+        logger.info(&quot;Landing page navigation for FABS/DABS.&quot;)
+        return nav
+
+    def submit_data_with_quotes(self, data: List[str]) -&gt; List[str]:
+        &quot;&quot;&quot;As an agency user, submit data elements in quotes to preserve zeroes.&quot;&quot;&quot;
+        quoted = [f&#x27;&quot;{d}&quot;&#x27; for d in data]
+        logger.info(&quot;Data submitted with quotes to preserve leading/trailing zeroes from Excel.&quot;)
+        return quoted
+
+# Example usage to demonstrate functionality
+if __name__ == &quot;__main__&quot;:
+    broker = BrokerSystem()
+    broker.update_validation_rule_table_db2213()
+    broker.add_gtas_window_data(&#x27;2024-01-01&#x27;, &#x27;2024-01-31&#x27;)
+    test_record = {&#x27;AgencyCode&#x27;: &#x27;123&#x27;, &#x27;OfficeCode&#x27;: &#x27;00*****&#x27;, &#x27;record_type&#x27;: &#x27;loan&#x27;}
+    broker.derive_all_data_elements(test_record)
+    print(&quot;Broker system initialized and sample derivation:&quot;, test_record[&#x27;OfficeName&#x27;])</code></pre>
+        </details>
+    </div>
+</body>
+</html>
+    

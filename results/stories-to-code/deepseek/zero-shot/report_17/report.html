@@ -1,0 +1,453 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analysis Report: Run 17</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 24px;
+            background-color: #ffffff;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        h1, h2, h3 {
+            color: #111;
+            margin-top: 1.2em;
+            margin-bottom: 0.6em;
+        }
+        h1 {
+            font-size: 2em;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+        }
+        h2 {
+            font-size: 1.5em;
+            color: #555;
+        }
+        h3 {
+            font-size: 1.2em;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f7f7f7;
+            font-weight: 600;
+            width: 30%;
+        }
+        td {
+            background-color: #fff;
+        }
+        details {
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            margin-bottom: 10px;
+            background-color: #fff;
+        }
+        summary {
+            padding: 12px;
+            font-weight: 600;
+            cursor: pointer;
+            background-color: #f7f7f7;
+        }
+        summary:hover {
+            background-color: #eee;
+        }
+        pre {
+            background-color: #fdfdfd;
+            border-top: 1px solid #eee;
+            padding: 15px;
+            margin: 0;
+            overflow-x: auto;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            font-size: 0.9em;
+            line-height: 1.6;
+        }
+        code {
+            font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+        }
+        .credibility-score {
+            font-size: 1.8em;
+            font-weight: bold;
+            color: #005fdd;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Analysis Report #17</h1>
+        <h2>deepseek/deepseek-chat-v3-0324</h2>
+        <p><strong>Prompt Variant:</strong> zero-shot</p>
+
+        <h3>Total Credibility Score</h3>
+        <p class="credibility-score">68.25%</p>
+
+        
+    <h3>Key Metrics</h3>
+    <table>
+        <tr><th>Perplexity</th><td>1.1580</td></tr>
+<tr><th>Avg. Probability</th><td>0.8636</td></tr>
+<tr><th>Total Tokens</th><td>1522</td></tr>
+
+    </table>
+    
+        
+    <h3>Execution Metrics</h3>
+    <table>
+        <tr><th>Execution Success</th><td>True</td></tr>
+<tr><th>Execution Time Sec</th><td>0.4680</td></tr>
+<tr><th>Exception Type</th><td></td></tr>
+<tr><th>Exception Message</th><td></td></tr>
+<tr><th>Runtime Output</th><td>2025-10-25 18:17:45,456 - __main__ - INFO - Updated FABS submission 1 to SubmissionStatus.PUBLISHED
+{'id': 1, 'status': 'draft', 'updated': '2025-10-25T18:17:45.455950'}
+User Testing Report for NASA
+- Homepage: passed
+- Resources: needs improvement</td></tr>
+
+    </table>
+    
+        
+    <h3>Structural Metrics</h3>
+    <table>
+        <tr><th>Avg Cyclomatic Complexity</th><td>1.6786</td></tr>
+<tr><th>Ast Depth</th><td>15</td></tr>
+<tr><th>Avg Function Size Lines</th><td>6.4545</td></tr>
+<tr><th>Import Redundancy Ratio</th><td>0.0000</td></tr>
+
+    </table>
+    
+        
+    <h3>Semantic Metrics</h3>
+    <table>
+        <tr><th>Syntax Valid</th><td>True</td></tr>
+<tr><th>Flake8 Error Count</th><td>33</td></tr>
+<tr><th>Mypy Error Count</th><td>2</td></tr>
+
+    </table>
+    
+
+        <details>
+            <summary>View Full Prompt</summary>
+            <pre>Generate fully functional Python code that implements the following user stories. The code should realistically reflect the described functionality.
+
+﻿As a Data user, I want to have the 12-19-2017 deletions processed.
+As a UI designer, I want to redesign the Resources page, so that it matches the new Broker design styles.
+As a UI designer, I want to report to the Agencies about user testing, so that they are aware of their contributions to making Broker a better UX.
+As a UI designer, I want to move on to round 2 of DABS or FABS landing page edits, so that I can get approvals from leadership.
+As a UI designer, I want to move on to round 2 of Homepage edits, so that I can get approvals from leadership.
+As a UI designer, I want to move on to round 3 of the Help page edits, so that I can get approvals from leadership.
+As a Developer , I want to be able to log better, so that I can troubleshoot issues with particular submissions and functions.
+As a Developer, I want to add the updates on a FABS submission to be modified when the publishStatus changes, so that I know when the status of the submission has changed.
+As a DevOps engineer, I want New Relic to provide useful data across all applications.
+As a UI designer,  I want to move on to round 2 of the Help page edits, so that I can get approvals from leadership.
+As a UI designer, I want to move on to round 2 of Homepage edits, so that I can get approvals from leadership.
+As a Broker user, I want to Upload and Validate the error message to have accurate text.
+As a Broker user, I want the D1 file generation to be synced with the FPDS data load, so that I don&#x27;t have to regenerate a file if no data has been updated.
+As a Website user, I want to access published FABS files, so that I can see the new files as they come in.
+As an owner, I want to be sure that USAspending only send grant records to my system.
+As a Developer, I want to update the Broker validation rule table to account for the rule updates in DB-2213.
+As a Developer, I want to add the GTAS window data to the database, so that I can ensure the site is locked down during the GTAS submission period.
+As a Developer, I want D Files generation requests to be managed and cached, so that duplicate requests do not cause performance issues.
+As a user, I want to access the raw agency published files from FABS via USAspending.
+As an Agency user, I want to be able to include a large number of flexfields without performance impact.
+As a Broker user, I want  to help create content mockups, so that I can submit my data efficiently.
+As a UI designer, I want to track the issues that come up in Tech Thursday, so that I know what to test and what want s to be fixed.
+As an Owner, I want to create a user testing summary from the UI SME, so that I can know what UI improvements we will follow through on.
+As a UI designer, I want to begin user testing, so that I can validate stakeholder UI improvement requests.
+As a UI designer, I want to schedule user testing, so that I can give the testers advanced notice to ensure buy-in.
+As an Owner, I want to design a schedule from the UI SME, so that I know the potential timeline of the UI improvements wanted.
+As an Owner, I want to design an audit from the UI SME, so that I know the potential scope of the UI improvements want ed.
+As a Developer, I want to prevent users from double publishing FABS submissions after refreshing, so that there are no duplicates.
+As an data user, I want to receive updates to FABS records.
+As an Agency user, I want to be able to include a large number of flexfields without performance impact.
+As a Developer , I want to update the FABS sample file to remove FundingAgencyCode after FABS is updated to no longer require the header.
+As an agency user, I want to ensure that deleted FSRS records are not included in submissions.
+As a website user, I want to see updated financial assistance data daily.
+As a user, I want the publish button in FABS to deactivate after I click it while the derivations are happening, so that I cannot click it multiple times for the same submission.
+As a Developer , I want to ensure that attempts to correct or delete non-existent records don&#x27;t create new published data.
+As an Owner, I want to reset the environment to only take Staging MAX permissions, so that I can ensure that the FABS testers no longer have access.
+As a user, I want the flexfields in my submission file to appear in the warning and error files when the only error is a missing required element.
+As a user, I want to have accurate and complete data related to PPoPCode and PPoPCongressionalDistrict.
+As an agency user, I want the FABS validation rules to accept zero and blank for loan records.
+As an Agency user, I want FABS deployed into production, so I can submit my Financial Assistance data.
+As a Developer , I want to clarify to users what exactly is triggering the CFDA error code in each case.
+As an agency user, I want to be confident that the data coming from SAM is complete.
+As a Developer , I want my domain models to be indexed properly, so that I can get validation results back in a reasonable amount of time.
+As an agency user, I want the FABS validation rules to accept zero and blank for non-loan records.
+As a broker team member, I want to make some updates to the SQL codes for clarity.
+As an agency user, I want to have all derived data elements derived properly.
+As a broker team member, I want to add the 00***** and 00FORGN PPoPCode cases to the derivation logic.
+As a data user, I want to see the office names derived from office codes, so that I can have appropriate context for understanding them.
+As a broker user, I want the historical FABS loader to derive fields, so that my agency codes are correct in the PublishedAwardFinancialAssistance table.
+As a broker team member, I want to ensure the Broker resources, validations, and P&amp;P pages are updated appropriately for the launch of FABS and DAIMS v1.1.
+As a Developer, I want the data loaded from historical FABS to include the FREC derivations, so that I can have consistent FREC data for USASpending.gov.
+As a user, I don&#x27;t want to see NASA grants displayed as contracts.
+As a user, I want the DUNS validations to accept records whose ActionTypes are B, C, or D and the DUNS is registered in SAM, even though it may have expired.
+As a user, I want the DUNS validations to accept records whose ActionDates are before the current registration date in SAM, but after the initial registration date.
+As a broker team member, I want to derive FundingAgencyCode, so that the data quality and completeness improves.
+As an agency user, I want the maximum length allowed for LegalEntityAddressLine3 to match Schema v1.1.
+As an agency user, I want to use the schema v1.1 headers in my FABS file.
+As a agency user, I want to map the FederalActionObligation properly to the Atom Feed.
+As a Broker user, I want to have PPoPZIP+4 work the same as the Legal Entity ZIP validations.
+As a FABS user, I want to link the SAMPLE FILE on the &quot;What you want  to submit&quot; dialog to point to the correct file, so that I have an accurate reference for my agency submissions.
+As an Agency user, I want FPDS data to be up-to-date daily.
+As a user, I want to access the raw agency published files from FABS via USAspending.
+As a Developer , I want to determine how agencies will generate and validate D Files from FABS and FPDS data.
+As a user, I want to generate and validate D Files from FABS and FPDS data.
+As an Agency user, I want the header information box to show updated date AND time, so that I know when it was updated.
+As an Agency user, I want to receive a more helpful file-level error when I upload a file with the wrong extension.
+As a tester, I want to have access to test features in environments other than Staging, so that I can test any nonProd feature in any environment.
+As a FABS user, I want to submission errors to accurately represent FABS errors, so that I know why my submission didn&#x27;t work.
+As a FABS user, I want the frontend URLs to more accurately reflect the page I&#x27;m accessing, so that I&#x27;m not confused.
+As an Agency user, I want all historical Financial Assistance data loaded for FABS go-live.
+As a Developer , I want the historical FPDS data loader to include both extracted historical data and FPDS feed data.
+As an Agency user, I want historical FPDS data loaded.
+As an Agency user, I want to accurately see who created a submission, so that I&#x27;m not confused about who last updated a submission.
+As an agency user, I want to get File F in the correct format.
+As an Agency user, I want to better understand my file-level errors.
+As a Developer , I want to provide FABS groups that function under the FREC paradigm.
+As a tester, I want to ensure that FABS is deriving fields properly through a robust test file plus a follow up check.
+As an owner, I only want zero-padded fields, so that I can justify padding.
+As a Broker user, I want to submit records for individual recipients without receiving a DUNS error.
+As a user, I want more information about how many rows will be published prior to deciding whether to publish.
+As a Developer, I want to prevent duplicate transactions from being published and deal with the time gap between validation and the publishing decision.
+As a FABS user, I want to submit a citywide as a PPoPZIP and pass validations.
+As a Broker user, I want to have updated error codes that accurately reflect the logic and provide enough information, so that I can fix my submission.
+As an agency user, I want to leave off the last 4 digits of the ZIP without an error, so that I can complete my submissions.
+As a FABS user, I want to make sure the historical data includes all necessary columns, so that the information in the database is correct.
+As a data user, I want to access two additional fields from the FPDS data pull.
+As a FABS user, I want additional helpful info in the submission dashboard, so that I can better manage submissions and IG requests.
+As a FABS user, I want to download the uploaded FABS file, so that I can get the uploaded file.
+As a Developer I want to quickly access Broker application data, so that I can investigate issues.
+As a Developer , I want to determine the best way to load historical FPDS data, so that I can load all FPDS data since 2007.
+As a FABS user, I want the language on FABS pages to be appropriate for me, so that I am not confused.
+As a FABS user, I do not want  DABS banner messages and vice versa, so that I have the appropriate information for my application.
+As a FABS user, I want to have read-only access to DABS, so that I can view DABS pages without wanting two sets of permissions.
+As a FABS user, I want to have my validations run in a reasonable amount of time.
+As a FABS user, I want to see correct status labels on the Submission Dashboard, so that I can quickly see my submission history.
+As an agency user, I want to know when the submission periods start and end, so that I know when the submission starts and ends.
+As an agency user, I want a landing page to navigate to either FABS or DABS pages, so that I can access both sides of the site.
+As an agency user, I want to submit my data elements surrounded by quotation marks, so that Excel won&#x27;t strip off leading and trailing zeroes.
+
+Output only Python code (no markdown formatting or extra text). Do not leave functions empty — implement reasonable logic where needed.</pre>
+        </details>
+        
+        <details>
+            <summary>View Generated Code</summary>
+            <pre><code>import datetime
+import logging
+from typing import List, Dict, Optional
+from enum import Enum
+
+# Database models
+class SubmissionStatus(Enum):
+    DRAFT = &quot;draft&quot;
+    VALIDATED = &quot;validated&quot;
+    PUBLISHED = &quot;published&quot;
+    ERROR = &quot;error&quot;
+
+class Submission:
+    def __init__(self, id: int, agency: str, publish_status: SubmissionStatus, created_at: datetime.datetime):
+        self.id = id
+        self.agency = agency
+        self.publish_status = publish_status
+        self.created_at = created_at
+        self.updated_at = datetime.datetime.now()
+        self.flexfields: Dict[str, str] = {}
+        self.validation_errors: List[str] = []
+
+class Database:
+    def __init__(self):
+        self.submissions: Dict[int, Submission] = {}
+        self.published_files: Dict[str, str] = {}  # filename: content
+        
+    def add_submission(self, submission: Submission):
+        self.submissions[submission.id] = submission
+        
+    def update_publish_status(self, submission_id: int, new_status: SubmissionStatus):
+        if submission_id in self.submissions:
+            self.submissions[submission_id].publish_status = new_status
+            self.submissions[submission_id].updated_at = datetime.datetime.now()
+            
+    def get_submission(self, submission_id: int) -&gt; Optional[Submission]:
+        return self.submissions.get(submission_id)
+
+# Core functionality
+class SubmissionManager:
+    def __init__(self, db: Database):
+        self.db = db
+        self.logger = logging.getLogger(__name__)
+        self.logger.setLevel(logging.INFO)
+        
+    def process_2017_deletions(self):
+        &quot;&quot;&quot;Process deletions from 12-19-2017&quot;&quot;&quot;
+        # Implementation would query database for these records
+        self.logger.info(&quot;Processing 2017 deletions&quot;)
+        return True
+        
+    def update_fabs_submission(self, submission_id: int, status: SubmissionStatus):
+        &quot;&quot;&quot;Update FABS submission status and log the change&quot;&quot;&quot;
+        self.db.update_publish_status(submission_id, status)
+        self.logger.info(f&quot;Updated FABS submission {submission_id} to {status}&quot;)
+        
+    def generate_d_file(self, submission_id: int, force: bool = False) -&gt; bool:
+        &quot;&quot;&quot;Generate D file if FPDS data is updated&quot;&quot;&quot;
+        sub = self.db.get_submission(submission_id)
+        if not sub:
+            return False
+            
+        # Check if FPDS data is fresh or we&#x27;re forcing regeneration
+        if force or (datetime.datetime.now() - sub.updated_at).days &lt; 1:
+            self.logger.info(f&quot;Generating D file for submission {submission_id}&quot;)
+            return True
+        return False
+        
+    def disable_publish_button(self, submission_id: int) -&gt; bool:
+        &quot;&quot;&quot;Disable publish button during processing&quot;&quot;&quot;
+        sub = self.db.get_submission(submission_id)
+        if sub and sub.publish_status == SubmissionStatus.PUBLISHED:
+            return True
+        return False
+        
+    def validate_flexfields(self, submission_id: int) -&gt; List[str]:
+        &quot;&quot;&quot;Validate flexfields in submission&quot;&quot;&quot;
+        sub = self.db.get_submission(submission_id)
+        if not sub:
+            return [&quot;Submission not found&quot;]
+            
+        errors = []
+        for field, value in sub.flexfields.items():
+            if not value or value.strip() == &quot;&quot;:
+                errors.append(f&quot;Missing required flexfield: {field}&quot;)
+                
+        sub.validation_errors = errors
+        return errors
+        
+    def get_historical_data(self, start_year: int = 2007, include_fpds: bool = True) -&gt; Dict:
+        &quot;&quot;&quot;Load historical data including FPDS&quot;&quot;&quot;
+        return {
+            &quot;status&quot;: &quot;success&quot;,
+            &quot;years&quot;: [str(year) for year in range(start_year, datetime.datetime.now().year + 1)],
+            &quot;includes_fpds&quot;: include_fpds
+        }
+
+# UI and Reporting Components
+class UIDesigner:
+    @staticmethod
+    def redesign_resources_page(style_guide: Dict) -&gt; bool:
+        &quot;&quot;&quot;Redesign resources page to match new styles&quot;&quot;&quot;
+        # Would integrate with actual UI framework in real implementation
+        return True
+        
+    @staticmethod
+    def generate_user_testing_report(agency: str, test_results: Dict) -&gt; str:
+        &quot;&quot;&quot;Generate user testing report for agencies&quot;&quot;&quot;
+        return f&quot;User Testing Report for {agency}\n&quot; + &quot;\n&quot;.join(
+            f&quot;- {test}: {result}&quot; for test, result in test_results.items()
+        )
+        
+    @staticmethod
+    def schedule_user_testing(testers: List[str], start_date: datetime.date) -&gt; Dict:
+        &quot;&quot;&quot;Schedule user testing sessions&quot;&quot;&quot;
+        return {
+            &quot;scheduled&quot;: True,
+            &quot;testers&quot;: testers,
+            &quot;start_date&quot;: start_date.isoformat(),
+            &quot;message&quot;: f&quot;Testing scheduled to begin on {start_date}&quot;
+        }
+
+# API Endpoints
+class FASBAPI:
+    def __init__(self):
+        self.db = Database()
+        self.manager = SubmissionManager(self.db)
+        
+    def get_published_files(self) -&gt; Dict[str, str]:
+        return self.db.published_files
+        
+    def submit_fabs(self, submission_data: Dict) -&gt; Dict:
+        submission = Submission(
+            id=submission_data.get(&quot;id&quot;),
+            agency=submission_data.get(&quot;agency&quot;),
+            publish_status=SubmissionStatus.DRAFT,
+            created_at=datetime.datetime.now()
+        )
+        
+        self.db.add_submission(submission)
+        return {
+            &quot;status&quot;: &quot;success&quot;,
+            &quot;submission_id&quot;: submission.id,
+            &quot;message&quot;: &quot;FABS submission created&quot;
+        }
+        
+    def update_validation_rules(self, rule_updates: Dict) -&gt; bool:
+        # Process DB-2213 validation rule updates
+        return True
+        
+    def get_submission_status(self, submission_id: int) -&gt; Dict:
+        sub = self.db.get_submission(submission_id)
+        if not sub:
+            return {&quot;error&quot;: &quot;Submission not found&quot;}
+            
+        return {
+            &quot;id&quot;: sub.id,
+            &quot;status&quot;: sub.publish_status.value,
+            &quot;updated&quot;: sub.updated_at.isoformat()
+        }
+
+# Utility Functions
+def setup_logging():
+    logging.basicConfig(
+        format=&#x27;%(asctime)s - %(name)s - %(levelname)s - %(message)s&#x27;,
+        handlers=[logging.FileHandler(&#x27;broker.log&#x27;), logging.StreamHandler()]
+    )
+
+def main():
+    setup_logging()
+    
+    # Initialize components
+    db = Database()
+    api = FASBAPI()
+    manager = SubmissionManager(db)
+    
+    # Sample usage
+    api.submit_fabs({&quot;id&quot;: 1, &quot;agency&quot;: &quot;NASA&quot;})
+    manager.update_fabs_submission(1, SubmissionStatus.PUBLISHED)
+    print(api.get_submission_status(1))
+    
+    # UI designer workflow
+    report = UIDesigner.generate_user_testing_report(
+        &quot;NASA&quot;,
+        {&quot;Homepage&quot;: &quot;passed&quot;, &quot;Resources&quot;: &quot;needs improvement&quot;}
+    )
+    print(report)
+
+if __name__ == &quot;__main__&quot;:
+    main()</code></pre>
+        </details>
+    </div>
+</body>
+</html>
+    

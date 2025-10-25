@@ -1,0 +1,932 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analysis Report: Run 7</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 24px;
+            background-color: #ffffff;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        h1, h2, h3 {
+            color: #111;
+            margin-top: 1.2em;
+            margin-bottom: 0.6em;
+        }
+        h1 {
+            font-size: 2em;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+        }
+        h2 {
+            font-size: 1.5em;
+            color: #555;
+        }
+        h3 {
+            font-size: 1.2em;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f7f7f7;
+            font-weight: 600;
+            width: 30%;
+        }
+        td {
+            background-color: #fff;
+        }
+        details {
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            margin-bottom: 10px;
+            background-color: #fff;
+        }
+        summary {
+            padding: 12px;
+            font-weight: 600;
+            cursor: pointer;
+            background-color: #f7f7f7;
+        }
+        summary:hover {
+            background-color: #eee;
+        }
+        pre {
+            background-color: #fdfdfd;
+            border-top: 1px solid #eee;
+            padding: 15px;
+            margin: 0;
+            overflow-x: auto;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            font-size: 0.9em;
+            line-height: 1.6;
+        }
+        code {
+            font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+        }
+        .credibility-score {
+            font-size: 1.8em;
+            font-weight: bold;
+            color: #005fdd;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Analysis Report #7</h1>
+        <h2>qwen/qwen3-coder-30b-a3b-instruct</h2>
+        <p><strong>Prompt Variant:</strong> zero-shot</p>
+
+        <h3>Total Credibility Score</h3>
+        <p class="credibility-score">70.17%</p>
+
+        
+    <h3>Key Metrics</h3>
+    <table>
+        <tr><th>Perplexity</th><td>1.3199</td></tr>
+<tr><th>Avg. Probability</th><td>0.7576</td></tr>
+<tr><th>Total Tokens</th><td>2768</td></tr>
+
+    </table>
+    
+        
+    <h3>Execution Metrics</h3>
+    <table>
+        <tr><th>Execution Success</th><td>True</td></tr>
+<tr><th>Execution Time Sec</th><td>0.5300</td></tr>
+<tr><th>Exception Type</th><td></td></tr>
+<tr><th>Exception Message</th><td></td></tr>
+<tr><th>Runtime Output</th><td>2025-10-25 18:24:09,833 - broker_app - INFO - Running demonstrations...
+2025-10-25 18:24:09,833 - broker_app - INFO - Running demonstrations...
+2025-10-25 18:24:09,833 - broker_app - INFO - Running demonstrations...
+2025-10-25 18:24:09,833 - broker_app - INFO - Running demonstrations...
+2025-10-25 18:24:09,833 - broker_app - INFO - Running demonstrations...
+2025-10-25 18:24:09,833 - broker_app - INFO - Running demonstrations...
+2025-10-25 18:24:09,833 - broker_app - INFO - Running demonstrations...
+2025-10-25 18:24:09,833 - broker_app - INFO - Running demonstrations...
+2025-10-25 18:24:09,833 - broker_app - INFO - Running demonstrations...
+2025-10-25 18:24:09,833 - broker_app - INFO - Running demonstrations...
+2025-10-25 18:24:09,833 - broker_app - INFO - Running demonstrations...
+2025-10-25 18:24:09,833 - broker_app - INFO - Running demonstrations...
+2025-10-25 18:24:09,833 - broker_app - INFO - Running demonstrations...
+2025-10-25 18:24:09,833 - broker_app - INFO - Running demonstrations...
+2025-10-25 18:24:09,833 - broker_app - INFO - Running demonstrations...
+2025-10-25 18:24:09,833 - broker_app - INFO - Running demonstrations...
+2025-10-25 18:24:09,833 - broker_app - INFO - Processing 12-19-2017 deletions
+2025-10-25 18:24:09,833 - broker_app - INFO - Processing 12-19-2017 deletions
+2025-10-25 18:24:09,833 - broker_app - INFO - Processing 12-19-2017 deletions
+2025-10-25 18:24:09,833 - broker_app - INFO - Processing 12-19-2017 deletions
+2025-10-25 18:24:09,833 - broker_app - INFO - Processing 12-19-2017 deletions
+2025-10-25 18:24:09,833 - broker_app - INFO - Processing 12-19-2017 deletions
+2025-10-25 18:24:09,833 - broker_app - INFO - Processing 12-19-2017 deletions
+2025-10-25 18:24:09,833 - broker_app - INFO - Processing 12-19-2017 deletions
+2025-10-25 18:24:09,833 - broker_app - INFO - Processing 12-19-2017 deletions
+2025-10-25 18:24:09,833 - broker_app - INFO - Processing 12-19-2017 deletions
+2025-10-25 18:24:09,833 - broker_app - INFO - Processing 12-19-2017 deletions
+2025-10-25 18:24:09,833 - broker_app - INFO - Processing 12-19-2017 deletions
+2025-10-25 18:24:09,833 - broker_app - INFO - Processing 12-19-2017 deletions
+2025-10-25 18:24:09,833 - broker_app - INFO - Processing 12-19-2017 deletions
+2025-10-25 18:24:09,833 - broker_app - INFO - Processing 12-19-2017 deletions
+2025-10-25 18:24:09,833 - broker_app - INFO - Processing 12-19-2017 deletions
+2025-10-25 18:24:09,834 - broker_app - INFO - Updating FABS submission sub123 status from submitted to validated
+2025-10-25 18:24:09,834 - broker_app - INFO - Updating FABS submission sub123 status from submitted to validated
+2025-10-25 18:24:09,834 - broker_app - INFO - Updating FABS submission sub123 status from submitted to validated
+2025-10-25 18:24:09,834 - broker_app - INFO - Updating FABS submission sub123 status from submitted to validated
+2025-10-25 18:24:09,834 - broker_app - INFO - Updating FABS submission sub123 status from submitted to validated
+2025-10-25 18:24:09,834 - broker_app - INFO - Updating FABS submission sub123 status from submitted to validated
+2025-10-25 18:24:09,834 - broker_app - INFO - Updating FABS submission sub123 status from submitted to validated
+2025-10-25 18:24:09,834 - broker_app - INFO - Updating FABS submission sub123 status from submitted to validated
+2025-10-25 18:24:09,834 - broker_app - INFO - Updating FABS submission sub123 status from submitted to validated
+2025-10-25 18:24:09,834 - broker_app - INFO - Updating FABS submission sub123 status from submitted to validated
+2025-10-25 18:24:09,834 - broker_app - INFO - Updating FABS submission sub123 status from submitted to validated
+2025-10-25 18:24:09,834 - broker_app - INFO - Updating FABS submission sub123 status from submitted to validated
+2025-10-25 18:24:09,834 - broker_app - INFO - Updating FABS submission sub123 status from submitted to validated
+2025-10-25 18:24:09,834 - broker_app - INFO - Updating FABS submission sub123 status from submitted to validated
+2025-10-25 18:24:09,834 - broker_app - INFO - Updating FABS submission sub123 status from submitted to validated
+2025-10-25 18:24:09,834 - broker_app - INFO - Updating FABS submission sub123 status from submitted to validated
+2025-10-25 18:24:09,834 - broker_app - INFO - Updating validation rules for DB-2213
+2025-10-25 18:24:09,834 - broker_app - INFO - Updating validation rules for DB-2213
+2025-10-25 18:24:09,834 - broker_app - INFO - Updating validation rules for DB-2213
+2025-10-25 18:24:09,834 - broker_app - INFO - Updating validation rules for DB-2213
+2025-10-25 18:24:09,834 - broker_app - INFO - Updating validation rules for DB-2213
+2025-10-25 18:24:09,834 - broker_app - INFO - Updating validation rules for DB-2213
+2025-10-25 18:24:09,834 - broker_app - INFO - Updating validation rules for DB-2213
+2025-10-25 18:24:09,834 - broker_app - INFO - Updating validation rules for DB-2213
+2025-10-25 18:24:09,834 - broker_app - INFO - Updating validation rules for DB-2213
+2025-10-25 18:24:09,834 - broker_app - INFO - Updating validation rules for DB-2213
+2025-10-25 18:24:09,834 - broker_app - INFO - Updating validation rules for DB-2213
+2025-10-25 18:24:09,834 - broker_app - INFO - Updating validation rules for DB-2213
+2025-10-25 18:24:09,834 - broker_app - INFO - Updating validation rules for DB-2213
+2025-10-25 18:24:09,834 - broker_app - INFO - Updating validation rules for DB-2213
+2025-10-25 18:24:09,834 - broker_app - INFO - Updating validation rules for DB-2213
+2025-10-25 18:24:09,834 - broker_app - INFO - Updating validation rules for DB-2213
+2025-10-25 18:24:09,835 - broker_app - INFO - Added GTAS window data for period 2023-01-01 to 2023-01-15
+2025-10-25 18:24:09,835 - broker_app - INFO - Added GTAS window data for period 2023-01-01 to 2023-01-15
+2025-10-25 18:24:09,835 - broker_app - INFO - Added GTAS window data for period 2023-01-01 to 2023-01-15
+2025-10-25 18:24:09,835 - broker_app - INFO - Added GTAS window data for period 2023-01-01 to 2023-01-15
+2025-10-25 18:24:09,835 - broker_app - INFO - Added GTAS window data for period 2023-01-01 to 2023-01-15
+2025-10-25 18:24:09,835 - broker_app - INFO - Added GTAS window data for period 2023-01-01 to 2023-01-15
+2025-10-25 18:24:09,835 - broker_app - INFO - Added GTAS window data for period 2023-01-01 to 2023-01-15
+2025-10-25 18:24:09,835 - broker_app - INFO - Added GTAS window data for period 2023-01-01 to 2023-01-15
+2025-10-25 18:24:09,835 - broker_app - INFO - Added GTAS window data for period 2023-01-01 to 2023-01-15
+2025-10-25 18:24:09,835 - broker_app - INFO - Added GTAS window data for period 2023-01-01 to 2023-01-15
+2025-10-25 18:24:09,835 - broker_app - INFO - Added GTAS window data for period 2023-01-01 to 2023-01-15
+2025-10-25 18:24:09,835 - broker_app - INFO - Added GTAS window data for period 2023-01-01 to 2023-01-15
+2025-10-25 18:24:09,835 - broker_app - INFO - Added GTAS window data for period 2023-01-01 to 2023-01-15
+2025-10-25 18:24:09,835 - broker_app - INFO - Added GTAS window data for period 2023-01-01 to 2023-01-15
+2025-10-25 18:24:09,835 - broker_app - INFO - Added GTAS window data for period 2023-01-01 to 2023-01-15
+2025-10-25 18:24:09,835 - broker_app - INFO - Added GTAS window data for period 2023-01-01 to 2023-01-15
+2025-10-25 18:24:09,835 - broker_app - INFO - Adding 2 flexfields
+2025-10-25 18:24:09,835 - broker_app - INFO - Adding 2 flexfields
+2025-10-25 18:24:09,835 - broker_app - INFO - Adding 2 flexfields
+2025-10-25 18:24:09,835 - broker_app - INFO - Adding 2 flexfields
+2025-10-25 18:24:09,835 - broker_app - INFO - Adding 2 flexfields
+2025-10-25 18:24:09,835 - broker_app - INFO - Adding 2 flexfields
+2025-10-25 18:24:09,835 - broker_app - INFO - Adding 2 flexfields
+2025-10-25 18:24:09,835 - broker_app - INFO - Adding 2 flexfields
+2025-10-25 18:24:09,835 - broker_app - INFO - Adding 2 flexfields
+2025-10-25 18:24:09,835 - broker_app - INFO - Adding 2 flexfields
+2025-10-25 18:24:09,835 - broker_app - INFO - Adding 2 flexfields
+2025-10-25 18:24:09,835 - broker_app - INFO - Adding 2 flexfields
+2025-10-25 18:24:09,835 - broker_app - INFO - Adding 2 flexfields
+2025-10-25 18:24:09,835 - broker_app - INFO - Adding 2 flexfields
+2025-10-25 18:24:09,835 - broker_app - INFO - Adding 2 flexfields
+2025-10-25 18:24:09,835 - broker_app - INFO - Adding 2 flexfields
+2025-10-25 18:24:09,836 - broker_app - INFO - Updating file-level errors for submission sub123
+2025-10-25 18:24:09,836 - broker_app - INFO - Updating file-level errors for submission sub123
+2025-10-25 18:24:09,836 - broker_app - INFO - Updating file-level errors for submission sub123
+2025-10-25 18:24:09,836 - broker_app - INFO - Updating file-level errors for submission sub123
+2025-10-25 18:24:09,836 - broker_app - INFO - Updating file-level errors for submission sub123
+2025-10-25 18:24:09,836 - broker_app - INFO - Updating file-level errors for submission sub123
+2025-10-25 18:24:09,836 - broker_app - INFO - Updating file-level errors for submission sub123
+2025-10-25 18:24:09,836 - broker_app - INFO - Updating file-level errors for submission sub123
+2025-10-25 18:24:09,836 - broker_app - INFO - Updating file-level errors for submission sub123
+2025-10-25 18:24:09,836 - broker_app - INFO - Updating file-level errors for submission sub123
+2025-10-25 18:24:09,836 - broker_app - INFO - Updating file-level errors for submission sub123
+2025-10-25 18:24:09,836 - broker_app - INFO - Updating file-level errors for submission sub123
+2025-10-25 18:24:09,836 - broker_app - INFO - Updating file-level errors for submission sub123
+2025-10-25 18:24:09,836 - broker_app - INFO - Updating file-level errors for submission sub123
+2025-10-25 18:24:09,836 - broker_app - INFO - Updating file-level errors for submission sub123
+2025-10-25 18:24:09,836 - broker_app - INFO - Updating file-level errors for submission sub123
+2025-10-25 18:24:09,836 - broker_app - INFO - Loading historical FABS data
+2025-10-25 18:24:09,836 - broker_app - INFO - Loading historical FABS data
+2025-10-25 18:24:09,836 - broker_app - INFO - Loading historical FABS data
+2025-10-25 18:24:09,836 - broker_app - INFO - Loading historical FABS data
+2025-10-25 18:24:09,836 - broker_app - INFO - Loading historical FABS data
+2025-10-25 18:24:09,836 - broker_app - INFO - Loading historical FABS data
+2025-10-25 18:24:09,836 - broker_app - INFO - Loading historical FABS data
+2025-10-25 18:24:09,836 - broker_app - INFO - Loading historical FABS data
+2025-10-25 18:24:09,836 - broker_app - INFO - Loading historical FABS data
+2025-10-25 18:24:09,836 - broker_app - INFO - Loading historical FABS data
+2025-10-25 18:24:09,836 - broker_app - INFO - Loading historical FABS data
+2025-10-25 18:24:09,836 - broker_app - INFO - Loading historical FABS data
+2025-10-25 18:24:09,836 - broker_app - INFO - Loading historical FABS data
+2025-10-25 18:24:09,836 - broker_app - INFO - Loading historical FABS data
+2025-10-25 18:24:09,836 - broker_app - INFO - Loading historical FABS data
+2025-10-25 18:24:09,836 - broker_app - INFO - Loading historical FABS data
+2025-10-25 18:24:09,837 - broker_app - INFO - Loading historical FPDS data
+2025-10-25 18:24:09,837 - broker_app - INFO - Loading historical FPDS data
+2025-10-25 18:24:09,837 - broker_app - INFO - Loading historical FPDS data
+2025-10-25 18:24:09,837 - broker_app - INFO - Loading historical FPDS data
+2025-10-25 18:24:09,837 - broker_app - INFO - Loading historical FPDS data
+2025-10-25 18:24:09,837 - broker_app - INFO - Loading historical FPDS data
+2025-10-25 18:24:09,837 - broker_app - INFO - Loading historical FPDS data
+2025-10-25 18:24:09,837 - broker_app - INFO - Loading historical FPDS data
+2025-10-25 18:24:09,837 - broker_app - INFO - Loading historical FPDS data
+2025-10-25 18:24:09,837 - broker_app - INFO - Loading historical FPDS data
+2025-10-25 18:24:09,837 - broker_app - INFO - Loading historical FPDS data
+2025-10-25 18:24:09,837 - broker_app - INFO - Loading historical FPDS data
+2025-10-25 18:24:09,837 - broker_app - INFO - Loading historical FPDS data
+2025-10-25 18:24:09,837 - broker_app - INFO - Loading historical FPDS data
+2025-10-25 18:24:09,837 - broker_app - INFO - Loading historical FPDS data
+2025-10-25 18:24:09,837 - broker_app - INFO - Loading historical FPDS data
+2025-10-25 18:24:09,839 - broker_app - INFO - Including FPDS feed data
+2025-10-25 18:24:09,839 - broker_app - INFO - Including FPDS feed data
+2025-10-25 18:24:09,839 - broker_app - INFO - Including FPDS feed data
+2025-10-25 18:24:09,839 - broker_app - INFO - Including FPDS feed data
+2025-10-25 18:24:09,839 - broker_app - INFO - Including FPDS feed data
+2025-10-25 18:24:09,839 - broker_app - INFO - Including FPDS feed data
+2025-10-25 18:24:09,839 - broker_app - INFO - Including FPDS feed data
+2025-10-25 18:24:09,839 - broker_app - INFO - Including FPDS feed data
+2025-10-25 18:24:09,839 - broker_app - INFO - Including FPDS feed data
+2025-10-25 18:24:09,839 - broker_app - INFO - Including FPDS feed data
+2025-10-25 18:24:09,839 - broker_app - INFO - Including FPDS feed data
+2025-10-25 18:24:09,839 - broker_app - INFO - Including FPDS feed data
+2025-10-25 18:24:09,839 - broker_app - INFO - Including FPDS feed data
+2025-10-25 18:24:09,839 - broker_app - INFO - Including FPDS feed data
+2025-10-25 18:24:09,839 - broker_app - INFO - Including FPDS feed data
+2025-10-25 18:24:09,839 - broker_app - INFO - Including FPDS feed data
+2025-10-25 18:24:09,840 - broker_app - INFO - Setting zero and blank acceptance for loan records
+2025-10-25 18:24:09,840 - broker_app - INFO - Setting zero and blank acceptance for loan records
+2025-10-25 18:24:09,840 - broker_app - INFO - Setting zero and blank acceptance for loan records
+2025-10-25 18:24:09,840 - broker_app - INFO - Setting zero and blank acceptance for loan records
+2025-10-25 18:24:09,840 - broker_app - INFO - Setting zero and blank acceptance for loan records
+2025-10-25 18:24:09,840 - broker_app - INFO - Setting zero and blank acceptance for loan records
+2025-10-25 18:24:09,840 - broker_app - INFO - Setting zero and blank acceptance for loan records
+2025-10-25 18:24:09,840 - broker_app - INFO - Setting zero and blank acceptance for loan records
+2025-10-25 18:24:09,840 - broker_app - INFO - Setting zero and blank acceptance for loan records
+2025-10-25 18:24:09,840 - broker_app - INFO - Setting zero and blank acceptance for loan records
+2025-10-25 18:24:09,840 - broker_app - INFO - Setting zero and blank acceptance for loan records
+2025-10-25 18:24:09,840 - broker_app - INFO - Setting zero and blank acceptance for loan records
+2025-10-25 18:24:09,840 - broker_app - INFO - Setting zero and blank acceptance for loan records
+2025-10-25 18:24:09,840 - broker_app - INFO - Setting zero and blank acceptance for loan records
+2025-10-25 18:24:09,840 - broker_app - INFO - Setting zero and blank acceptance for loan records
+2025-10-25 18:24:09,840 - broker_app - INFO - Setting zero and blank acceptance for loan records
+2025-10-25 18:24:09,841 - broker_app - INFO - Resources page redesigned with modern_broker_design
+2025-10-25 18:24:09,841 - broker_app - INFO - Resources page redesigned with modern_broker_design
+2025-10-25 18:24:09,841 - broker_app - INFO - Resources page redesigned with modern_broker_design
+2025-10-25 18:24:09,841 - broker_app - INFO - Resources page redesigned with modern_broker_design
+2025-10-25 18:24:09,841 - broker_app - INFO - Resources page redesigned with modern_broker_design
+2025-10-25 18:24:09,841 - broker_app - INFO - Resources page redesigned with modern_broker_design
+2025-10-25 18:24:09,841 - broker_app - INFO - Resources page redesigned with modern_broker_design
+2025-10-25 18:24:09,841 - broker_app - INFO - Resources page redesigned with modern_broker_design
+2025-10-25 18:24:09,841 - broker_app - INFO - Resources page redesigned with modern_broker_design
+2025-10-25 18:24:09,841 - broker_app - INFO - Resources page redesigned with modern_broker_design
+2025-10-25 18:24:09,841 - broker_app - INFO - Resources page redesigned with modern_broker_design
+2025-10-25 18:24:09,841 - broker_app - INFO - Resources page redesigned with modern_broker_design
+2025-10-25 18:24:09,841 - broker_app - INFO - Resources page redesigned with modern_broker_design
+2025-10-25 18:24:09,841 - broker_app - INFO - Resources page redesigned with modern_broker_design
+2025-10-25 18:24:09,841 - broker_app - INFO - Resources page redesigned with modern_broker_design
+2025-10-25 18:24:09,841 - broker_app - INFO - Resources page redesigned with modern_broker_design
+2025-10-25 18:24:09,841 - broker_app - INFO - Beginning user testing round 1
+2025-10-25 18:24:09,841 - broker_app - INFO - Beginning user testing round 1
+2025-10-25 18:24:09,841 - broker_app - INFO - Beginning user testing round 1
+2025-10-25 18:24:09,841 - broker_app - INFO - Beginning user testing round 1
+2025-10-25 18:24:09,841 - broker_app - INFO - Beginning user testing round 1
+2025-10-25 18:24:09,841 - broker_app - INFO - Beginning user testing round 1
+2025-10-25 18:24:09,841 - broker_app - INFO - Beginning user testing round 1
+2025-10-25 18:24:09,841 - broker_app - INFO - Beginning user testing round 1
+2025-10-25 18:24:09,841 - broker_app - INFO - Beginning user testing round 1
+2025-10-25 18:24:09,841 - broker_app - INFO - Beginning user testing round 1
+2025-10-25 18:24:09,841 - broker_app - INFO - Beginning user testing round 1
+2025-10-25 18:24:09,841 - broker_app - INFO - Beginning user testing round 1
+2025-10-25 18:24:09,841 - broker_app - INFO - Beginning user testing round 1
+2025-10-25 18:24:09,841 - broker_app - INFO - Beginning user testing round 1
+2025-10-25 18:24:09,841 - broker_app - INFO - Beginning user testing round 1
+2025-10-25 18:24:09,841 - broker_app - INFO - Beginning user testing round 1
+2025-10-25 18:24:09,841 - broker_app - INFO - Scheduling user testing for 2023-05-15
+2025-10-25 18:24:09,841 - broker_app - INFO - Scheduling user testing for 2023-05-15
+2025-10-25 18:24:09,841 - broker_app - INFO - Scheduling user testing for 2023-05-15
+2025-10-25 18:24:09,841 - broker_app - INFO - Scheduling user testing for 2023-05-15
+2025-10-25 18:24:09,841 - broker_app - INFO - Scheduling user testing for 2023-05-15
+2025-10-25 18:24:09,841 - broker_app - INFO - Scheduling user testing for 2023-05-15
+2025-10-25 18:24:09,841 - broker_app - INFO - Scheduling user testing for 2023-05-15
+2025-10-25 18:24:09,841 - broker_app - INFO - Scheduling user testing for 2023-05-15
+2025-10-25 18:24:09,841 - broker_app - INFO - Scheduling user testing for 2023-05-15
+2025-10-25 18:24:09,841 - broker_app - INFO - Scheduling user testing for 2023-05-15
+2025-10-25 18:24:09,841 - broker_app - INFO - Scheduling user testing for 2023-05-15
+2025-10-25 18:24:09,841 - broker_app - INFO - Scheduling user testing for 2023-05-15
+2025-10-25 18:24:09,841 - broker_app - INFO - Scheduling user testing for 2023-05-15
+2025-10-25 18:24:09,841 - broker_app - INFO - Scheduling user testing for 2023-05-15
+2025-10-25 18:24:09,841 - broker_app - INFO - Scheduling user testing for 2023-05-15
+2025-10-25 18:24:09,841 - broker_app - INFO - Scheduling user testing for 2023-05-15
+2025-10-25 18:24:09,842 - broker_app - INFO - Accessed test features in DEV
+2025-10-25 18:24:09,842 - broker_app - INFO - Accessed test features in DEV
+2025-10-25 18:24:09,842 - broker_app - INFO - Accessed test features in DEV
+2025-10-25 18:24:09,842 - broker_app - INFO - Accessed test features in DEV
+2025-10-25 18:24:09,842 - broker_app - INFO - Accessed test features in DEV
+2025-10-25 18:24:09,842 - broker_app - INFO - Accessed test features in DEV
+2025-10-25 18:24:09,842 - broker_app - INFO - Accessed test features in DEV
+2025-10-25 18:24:09,842 - broker_app - INFO - Accessed test features in DEV
+2025-10-25 18:24:09,842 - broker_app - INFO - Accessed test features in DEV
+2025-10-25 18:24:09,842 - broker_app - INFO - Accessed test features in DEV
+2025-10-25 18:24:09,842 - broker_app - INFO - Accessed test features in DEV
+2025-10-25 18:24:09,842 - broker_app - INFO - Accessed test features in DEV
+2025-10-25 18:24:09,842 - broker_app - INFO - Accessed test features in DEV
+2025-10-25 18:24:09,842 - broker_app - INFO - Accessed test features in DEV
+2025-10-25 18:24:09,842 - broker_app - INFO - Accessed test features in DEV
+2025-10-25 18:24:09,842 - broker_app - INFO - Accessed test features in DEV
+2025-10-25 18:24:09,842 - broker_app - INFO - Loading FABS records
+2025-10-25 18:24:09,842 - broker_app - INFO - Loading FABS records
+2025-10-25 18:24:09,842 - broker_app - INFO - Loading FABS records
+2025-10-25 18:24:09,842 - broker_app - INFO - Loading FABS records
+2025-10-25 18:24:09,842 - broker_app - INFO - Loading FABS records
+2025-10-25 18:24:09,842 - broker_app - INFO - Loading FABS records
+2025-10-25 18:24:09,842 - broker_app - INFO - Loading FABS records
+2025-10-25 18:24:09,842 - broker_app - INFO - Loading FABS records
+2025-10-25 18:24:09,842 - broker_app - INFO - Loading FABS records
+2025-10-25 18:24:09,842 - broker_app - INFO - Loading FABS records
+2025-10-25 18:24:09,842 - broker_app - INFO - Loading FABS records
+2025-10-25 18:24:09,842 - broker_app - INFO - Loading FABS records
+2025-10-25 18:24:09,842 - broker_app - INFO - Loading FABS records
+2025-10-25 18:24:09,842 - broker_app - INFO - Loading FABS records
+2025-10-25 18:24:09,842 - broker_app - INFO - Loading FABS records
+2025-10-25 18:24:09,842 - broker_app - INFO - Loading FABS records
+2025-10-25 18:24:09,842 - broker_app - INFO - Displaying submission status for sub123
+2025-10-25 18:24:09,842 - broker_app - INFO - Displaying submission status for sub123
+2025-10-25 18:24:09,842 - broker_app - INFO - Displaying submission status for sub123
+2025-10-25 18:24:09,842 - broker_app - INFO - Displaying submission status for sub123
+2025-10-25 18:24:09,842 - broker_app - INFO - Displaying submission status for sub123
+2025-10-25 18:24:09,842 - broker_app - INFO - Displaying submission status for sub123
+2025-10-25 18:24:09,842 - broker_app - INFO - Displaying submission status for sub123
+2025-10-25 18:24:09,842 - broker_app - INFO - Displaying submission status for sub123
+2025-10-25 18:24:09,842 - broker_app - INFO - Displaying submission status for sub123
+2025-10-25 18:24:09,842 - broker_app - INFO - Displaying submission status for sub123
+2025-10-25 18:24:09,842 - broker_app - INFO - Displaying submission status for sub123
+2025-10-25 18:24:09,842 - broker_app - INFO - Displaying submission status for sub123
+2025-10-25 18:24:09,842 - broker_app - INFO - Displaying submission status for sub123
+2025-10-25 18:24:09,842 - broker_app - INFO - Displaying submission status for sub123
+2025-10-25 18:24:09,842 - broker_app - INFO - Displaying submission status for sub123
+2025-10-25 18:24:09,842 - broker_app - INFO - Displaying submission status for sub123
+2025-10-25 18:24:09,842 - broker_app - INFO - Downloading file for submission sub123
+2025-10-25 18:24:09,842 - broker_app - INFO - Downloading file for submission sub123
+2025-10-25 18:24:09,842 - broker_app - INFO - Downloading file for submission sub123
+2025-10-25 18:24:09,842 - broker_app - INFO - Downloading file for submission sub123
+2025-10-25 18:24:09,842 - broker_app - INFO - Downloading file for submission sub123
+2025-10-25 18:24:09,842 - broker_app - INFO - Downloading file for submission sub123
+2025-10-25 18:24:09,842 - broker_app - INFO - Downloading file for submission sub123
+2025-10-25 18:24:09,842 - broker_app - INFO - Downloading file for submission sub123
+2025-10-25 18:24:09,842 - broker_app - INFO - Downloading file for submission sub123
+2025-10-25 18:24:09,842 - broker_app - INFO - Downloading file for submission sub123
+2025-10-25 18:24:09,842 - broker_app - INFO - Downloading file for submission sub123
+2025-10-25 18:24:09,842 - broker_app - INFO - Downloading file for submission sub123
+2025-10-25 18:24:09,842 - broker_app - INFO - Downloading file for submission sub123
+2025-10-25 18:24:09,842 - broker_app - INFO - Downloading file for submission sub123
+2025-10-25 18:24:09,842 - broker_app - INFO - Downloading file for submission sub123
+2025-10-25 18:24:09,842 - broker_app - INFO - Downloading file for submission sub123
+2025-10-25 18:24:09,843 - broker_app - INFO - Downloading raw agency published files
+2025-10-25 18:24:09,843 - broker_app - INFO - Downloading raw agency published files
+2025-10-25 18:24:09,843 - broker_app - INFO - Downloading raw agency published files
+2025-10-25 18:24:09,843 - broker_app - INFO - Downloading raw agency published files
+2025-10-25 18:24:09,843 - broker_app - INFO - Downloading raw agency published files
+2025-10-25 18:24:09,843 - broker_app - INFO - Downloading raw agency published files
+2025-10-25 18:24:09,843 - broker_app - INFO - Downloading raw agency published files
+2025-10-25 18:24:09,843 - broker_app - INFO - Downloading raw agency published files
+2025-10-25 18:24:09,843 - broker_app - INFO - Downloading raw agency published files
+2025-10-25 18:24:09,843 - broker_app - INFO - Downloading raw agency published files
+2025-10-25 18:24:09,843 - broker_app - INFO - Downloading raw agency published files
+2025-10-25 18:24:09,843 - broker_app - INFO - Downloading raw agency published files
+2025-10-25 18:24:09,843 - broker_app - INFO - Downloading raw agency published files
+2025-10-25 18:24:09,843 - broker_app - INFO - Downloading raw agency published files
+2025-10-25 18:24:09,843 - broker_app - INFO - Downloading raw agency published files
+2025-10-25 18:24:09,843 - broker_app - INFO - Downloading raw agency published files
+2025-10-25 18:24:09,843 - broker_app - INFO - Validating FABS file at /path/to/fabs.csv with schema v1.1
+2025-10-25 18:24:09,843 - broker_app - INFO - Validating FABS file at /path/to/fabs.csv with schema v1.1
+2025-10-25 18:24:09,843 - broker_app - INFO - Validating FABS file at /path/to/fabs.csv with schema v1.1
+2025-10-25 18:24:09,843 - broker_app - INFO - Validating FABS file at /path/to/fabs.csv with schema v1.1
+2025-10-25 18:24:09,843 - broker_app - INFO - Validating FABS file at /path/to/fabs.csv with schema v1.1
+2025-10-25 18:24:09,843 - broker_app - INFO - Validating FABS file at /path/to/fabs.csv with schema v1.1
+2025-10-25 18:24:09,843 - broker_app - INFO - Validating FABS file at /path/to/fabs.csv with schema v1.1
+2025-10-25 18:24:09,843 - broker_app - INFO - Validating FABS file at /path/to/fabs.csv with schema v1.1
+2025-10-25 18:24:09,843 - broker_app - INFO - Validating FABS file at /path/to/fabs.csv with schema v1.1
+2025-10-25 18:24:09,843 - broker_app - INFO - Validating FABS file at /path/to/fabs.csv with schema v1.1
+2025-10-25 18:24:09,843 - broker_app - INFO - Validating FABS file at /path/to/fabs.csv with schema v1.1
+2025-10-25 18:24:09,843 - broker_app - INFO - Validating FABS file at /path/to/fabs.csv with schema v1.1
+2025-10-25 18:24:09,843 - broker_app - INFO - Validating FABS file at /path/to/fabs.csv with schema v1.1
+2025-10-25 18:24:09,843 - broker_app - INFO - Validating FABS file at /path/to/fabs.csv with schema v1.1
+2025-10-25 18:24:09,843 - broker_app - INFO - Validating FABS file at /path/to/fabs.csv with schema v1.1
+2025-10-25 18:24:09,843 - broker_app - INFO - Validating FABS file at /path/to/fabs.csv with schema v1.1
+{'status': 'processed', 'date': '2017-12-19'}
+{'updated': True, 'submission_id': 'sub123', 'new_status': 'validated'}
+True
+{'status': 'updated'}
+{'status': 'added', 'data': {'start_date': '2023-01-01', 'end_date': '2023-01-15', 'description': 'GTAS Window for Q1'}}
+{'generated_at': '2025-10-25T18:24:09.835735', 'signature': '4272be833bc50485228c67f2b994a33f', 'status': 'completed'}
+True
+{'error_message': 'Please review the uploaded file for incorrect extension', 'fixed': True}
+{'status': 'loaded', 'source': 'historical'}
+{'status': 'loaded', 'with_feed': True}
+{'status': 'configured', 'type': 'loan'}
+{'status': 'redesigned', 'new_style': 'modern_broker_design'}
+{'round': 2}
+{'status': 'started', 'round': 1}
+{'scheduled': True, 'date': '2023-05-15'}
+{'access_granted': True, 'environment': 'DEV'}
+{'status': 'loaded', 'count': 0}
+{'status': 'displayed', 'labels': {'submitted': 'Submitted', 'validating': 'Validating', 'published': 'Published'}}
+{'file_downloaded': True, 'submission': 'sub123'}
+{'downloaded': True, 'count': 5}
+{'valid': True, 'issues': [], 'version': 'v1.1'}</td></tr>
+
+    </table>
+    
+        
+    <h3>Structural Metrics</h3>
+    <table>
+        <tr><th>Avg Cyclomatic Complexity</th><td>1.5000</td></tr>
+<tr><th>Ast Depth</th><td>11</td></tr>
+<tr><th>Avg Function Size Lines</th><td>6.0227</td></tr>
+<tr><th>Import Redundancy Ratio</th><td>0.0000</td></tr>
+
+    </table>
+    
+        
+    <h3>Semantic Metrics</h3>
+    <table>
+        <tr><th>Syntax Valid</th><td>True</td></tr>
+<tr><th>Flake8 Error Count</th><td>68</td></tr>
+<tr><th>Mypy Error Count</th><td>0</td></tr>
+
+    </table>
+    
+
+        <details>
+            <summary>View Full Prompt</summary>
+            <pre>Generate fully functional Python code that implements the following user stories. The code should realistically reflect the described functionality.
+
+﻿As a Data user, I want to have the 12-19-2017 deletions processed.
+As a UI designer, I want to redesign the Resources page, so that it matches the new Broker design styles.
+As a UI designer, I want to report to the Agencies about user testing, so that they are aware of their contributions to making Broker a better UX.
+As a UI designer, I want to move on to round 2 of DABS or FABS landing page edits, so that I can get approvals from leadership.
+As a UI designer, I want to move on to round 2 of Homepage edits, so that I can get approvals from leadership.
+As a UI designer, I want to move on to round 3 of the Help page edits, so that I can get approvals from leadership.
+As a Developer , I want to be able to log better, so that I can troubleshoot issues with particular submissions and functions.
+As a Developer, I want to add the updates on a FABS submission to be modified when the publishStatus changes, so that I know when the status of the submission has changed.
+As a DevOps engineer, I want New Relic to provide useful data across all applications.
+As a UI designer,  I want to move on to round 2 of the Help page edits, so that I can get approvals from leadership.
+As a UI designer, I want to move on to round 2 of Homepage edits, so that I can get approvals from leadership.
+As a Broker user, I want to Upload and Validate the error message to have accurate text.
+As a Broker user, I want the D1 file generation to be synced with the FPDS data load, so that I don&#x27;t have to regenerate a file if no data has been updated.
+As a Website user, I want to access published FABS files, so that I can see the new files as they come in.
+As an owner, I want to be sure that USAspending only send grant records to my system.
+As a Developer, I want to update the Broker validation rule table to account for the rule updates in DB-2213.
+As a Developer, I want to add the GTAS window data to the database, so that I can ensure the site is locked down during the GTAS submission period.
+As a Developer, I want D Files generation requests to be managed and cached, so that duplicate requests do not cause performance issues.
+As a user, I want to access the raw agency published files from FABS via USAspending.
+As an Agency user, I want to be able to include a large number of flexfields without performance impact.
+As a Broker user, I want  to help create content mockups, so that I can submit my data efficiently.
+As a UI designer, I want to track the issues that come up in Tech Thursday, so that I know what to test and what want s to be fixed.
+As an Owner, I want to create a user testing summary from the UI SME, so that I can know what UI improvements we will follow through on.
+As a UI designer, I want to begin user testing, so that I can validate stakeholder UI improvement requests.
+As a UI designer, I want to schedule user testing, so that I can give the testers advanced notice to ensure buy-in.
+As an Owner, I want to design a schedule from the UI SME, so that I know the potential timeline of the UI improvements wanted.
+As an Owner, I want to design an audit from the UI SME, so that I know the potential scope of the UI improvements want ed.
+As a Developer, I want to prevent users from double publishing FABS submissions after refreshing, so that there are no duplicates.
+As an data user, I want to receive updates to FABS records.
+As an Agency user, I want to be able to include a large number of flexfields without performance impact.
+As a Developer , I want to update the FABS sample file to remove FundingAgencyCode after FABS is updated to no longer require the header.
+As an agency user, I want to ensure that deleted FSRS records are not included in submissions.
+As a website user, I want to see updated financial assistance data daily.
+As a user, I want the publish button in FABS to deactivate after I click it while the derivations are happening, so that I cannot click it multiple times for the same submission.
+As a Developer , I want to ensure that attempts to correct or delete non-existent records don&#x27;t create new published data.
+As an Owner, I want to reset the environment to only take Staging MAX permissions, so that I can ensure that the FABS testers no longer have access.
+As a user, I want the flexfields in my submission file to appear in the warning and error files when the only error is a missing required element.
+As a user, I want to have accurate and complete data related to PPoPCode and PPoPCongressionalDistrict.
+As an agency user, I want the FABS validation rules to accept zero and blank for loan records.
+As an Agency user, I want FABS deployed into production, so I can submit my Financial Assistance data.
+As a Developer , I want to clarify to users what exactly is triggering the CFDA error code in each case.
+As an agency user, I want to be confident that the data coming from SAM is complete.
+As a Developer , I want my domain models to be indexed properly, so that I can get validation results back in a reasonable amount of time.
+As an agency user, I want the FABS validation rules to accept zero and blank for non-loan records.
+As a broker team member, I want to make some updates to the SQL codes for clarity.
+As an agency user, I want to have all derived data elements derived properly.
+As a broker team member, I want to add the 00***** and 00FORGN PPoPCode cases to the derivation logic.
+As a data user, I want to see the office names derived from office codes, so that I can have appropriate context for understanding them.
+As a broker user, I want the historical FABS loader to derive fields, so that my agency codes are correct in the PublishedAwardFinancialAssistance table.
+As a broker team member, I want to ensure the Broker resources, validations, and P&amp;P pages are updated appropriately for the launch of FABS and DAIMS v1.1.
+As a Developer, I want the data loaded from historical FABS to include the FREC derivations, so that I can have consistent FREC data for USASpending.gov.
+As a user, I don&#x27;t want to see NASA grants displayed as contracts.
+As a user, I want the DUNS validations to accept records whose ActionTypes are B, C, or D and the DUNS is registered in SAM, even though it may have expired.
+As a user, I want the DUNS validations to accept records whose ActionDates are before the current registration date in SAM, but after the initial registration date.
+As a broker team member, I want to derive FundingAgencyCode, so that the data quality and completeness improves.
+As an agency user, I want the maximum length allowed for LegalEntityAddressLine3 to match Schema v1.1.
+As an agency user, I want to use the schema v1.1 headers in my FABS file.
+As a agency user, I want to map the FederalActionObligation properly to the Atom Feed.
+As a Broker user, I want to have PPoPZIP+4 work the same as the Legal Entity ZIP validations.
+As a FABS user, I want to link the SAMPLE FILE on the &quot;What you want  to submit&quot; dialog to point to the correct file, so that I have an accurate reference for my agency submissions.
+As an Agency user, I want FPDS data to be up-to-date daily.
+As a user, I want to access the raw agency published files from FABS via USAspending.
+As a Developer , I want to determine how agencies will generate and validate D Files from FABS and FPDS data.
+As a user, I want to generate and validate D Files from FABS and FPDS data.
+As an Agency user, I want the header information box to show updated date AND time, so that I know when it was updated.
+As an Agency user, I want to receive a more helpful file-level error when I upload a file with the wrong extension.
+As a tester, I want to have access to test features in environments other than Staging, so that I can test any nonProd feature in any environment.
+As a FABS user, I want to submission errors to accurately represent FABS errors, so that I know why my submission didn&#x27;t work.
+As a FABS user, I want the frontend URLs to more accurately reflect the page I&#x27;m accessing, so that I&#x27;m not confused.
+As an Agency user, I want all historical Financial Assistance data loaded for FABS go-live.
+As a Developer , I want the historical FPDS data loader to include both extracted historical data and FPDS feed data.
+As an Agency user, I want historical FPDS data loaded.
+As an Agency user, I want to accurately see who created a submission, so that I&#x27;m not confused about who last updated a submission.
+As an agency user, I want to get File F in the correct format.
+As an Agency user, I want to better understand my file-level errors.
+As a Developer , I want to provide FABS groups that function under the FREC paradigm.
+As a tester, I want to ensure that FABS is deriving fields properly through a robust test file plus a follow up check.
+As an owner, I only want zero-padded fields, so that I can justify padding.
+As a Broker user, I want to submit records for individual recipients without receiving a DUNS error.
+As a user, I want more information about how many rows will be published prior to deciding whether to publish.
+As a Developer, I want to prevent duplicate transactions from being published and deal with the time gap between validation and the publishing decision.
+As a FABS user, I want to submit a citywide as a PPoPZIP and pass validations.
+As a Broker user, I want to have updated error codes that accurately reflect the logic and provide enough information, so that I can fix my submission.
+As an agency user, I want to leave off the last 4 digits of the ZIP without an error, so that I can complete my submissions.
+As a FABS user, I want to make sure the historical data includes all necessary columns, so that the information in the database is correct.
+As a data user, I want to access two additional fields from the FPDS data pull.
+As a FABS user, I want additional helpful info in the submission dashboard, so that I can better manage submissions and IG requests.
+As a FABS user, I want to download the uploaded FABS file, so that I can get the uploaded file.
+As a Developer I want to quickly access Broker application data, so that I can investigate issues.
+As a Developer , I want to determine the best way to load historical FPDS data, so that I can load all FPDS data since 2007.
+As a FABS user, I want the language on FABS pages to be appropriate for me, so that I am not confused.
+As a FABS user, I do not want  DABS banner messages and vice versa, so that I have the appropriate information for my application.
+As a FABS user, I want to have read-only access to DABS, so that I can view DABS pages without wanting two sets of permissions.
+As a FABS user, I want to have my validations run in a reasonable amount of time.
+As a FABS user, I want to see correct status labels on the Submission Dashboard, so that I can quickly see my submission history.
+As an agency user, I want to know when the submission periods start and end, so that I know when the submission starts and ends.
+As an agency user, I want a landing page to navigate to either FABS or DABS pages, so that I can access both sides of the site.
+As an agency user, I want to submit my data elements surrounded by quotation marks, so that Excel won&#x27;t strip off leading and trailing zeroes.
+
+Output only Python code (no markdown formatting or extra text). Do not leave functions empty — implement reasonable logic where needed.</pre>
+        </details>
+        
+        <details>
+            <summary>View Generated Code</summary>
+            <pre><code>import logging
+from datetime import datetime
+from typing import List, Dict, Any
+import hashlib
+
+class LoggerService:
+    def __init__(self):
+        self.logger = logging.getLogger(&#x27;broker_app&#x27;)
+        handler = logging.StreamHandler()
+        formatter = logging.Formatter(&#x27;%(asctime)s - %(name)s - %(levelname)s - %(message)s&#x27;)
+        handler.setFormatter(formatter)
+        self.logger.addHandler(handler)
+        self.logger.setLevel(logging.INFO)
+
+    def log_info(self, message: str):
+        self.logger.info(message)
+
+    def log_error(self, message: str):
+        self.logger.error(message)
+
+    def log_debug(self, message: str):
+        self.logger.debug(message)
+
+class FABSSubmissionManager:
+    def __init__(self):
+        self.submissions = {}
+        self.logger_service = LoggerService()
+    
+    def process_deletions_2017_12_19(self):
+        self.logger_service.log_info(&quot;Processing 12-19-2017 deletions&quot;)
+        # Simulating deletion processing
+        return {&quot;status&quot;: &quot;processed&quot;, &quot;date&quot;: &quot;2017-12-19&quot;}
+    
+    def modify_fabs_submission_on_publish_status_change(
+        self, submission_id: str, old_status: str, new_status: str
+    ):
+        self.logger_service.log_info(f&quot;Updating FABS submission {submission_id} status from {old_status} to {new_status}&quot;)
+        # Update database logic here
+        return {&quot;updated&quot;: True, &quot;submission_id&quot;: submission_id, &quot;new_status&quot;: new_status}
+    
+    def prevent_double_publish(self, submission_id: str) -&gt; bool:
+        if submission_id in self.submissions:
+            if self.submissions[submission_id][&quot;publish_status&quot;] == &quot;published&quot;:
+                self.logger_service.log_error(&quot;Submission already published - prevented double publish&quot;)
+                return False
+        return True
+    
+    def update_sample_file_remove_funding_agency_code(self):
+        self.logger_service.log_info(&quot;Updating FABS sample file to remove FundingAgencyCode&quot;)
+        return {&quot;status&quot;: &quot;updated&quot;}
+
+class ValidationRuleTable:
+    def __init__(self):
+        self.rules = {}
+        self.logger_service = LoggerService()
+    
+    def update_validation_rules_for_db2213(self):
+        self.logger_service.log_info(&quot;Updating validation rules for DB-2213&quot;)
+        self.rules = {
+            &quot;rule_1&quot;: &quot;Updated rule for DB-2213&quot;,
+            &quot;rule_2&quot;: &quot;Another updated rule&quot;
+        }
+        return {&quot;status&quot;: &quot;updated&quot;}
+
+class GTASWindowData:
+    def __init__(self):
+        self.gtas_data = []
+        self.logger_service = LoggerService()
+    
+    def add_gtas_window_data(self, start_date: str, end_date: str, description: str):
+        self.gtas_data.append({
+            &quot;start_date&quot;: start_date,
+            &quot;end_date&quot;: end_date,
+            &quot;description&quot;: description
+        })
+        self.logger_service.log_info(f&quot;Added GTAS window data for period {start_date} to {end_date}&quot;)
+        return {&quot;status&quot;: &quot;added&quot;, &quot;data&quot;: self.gtas_data[-1]}
+
+class DFilesGenerationManager:
+    def __init__(self):
+        self.cache = {}
+        self.logger_service = LoggerService()
+    
+    def manage_d_files_generation_requests(self, request_signature: str):
+        cached_result = self.cache.get(request_signature)
+        if cached_result:
+            self.logger_service.log_debug(f&quot;Duplicates detected for request: {request_signature}&quot;)
+            return cached_result
+        
+        # Simulate processing
+        result = {
+            &quot;generated_at&quot;: datetime.now().isoformat(),
+            &quot;signature&quot;: request_signature,
+            &quot;status&quot;: &quot;completed&quot;
+        }
+        
+        self.cache[request_signature] = result
+        self.logger_service.log_debug(f&quot;Generated D files for request signature: {request_signature}&quot;)
+        return result
+
+class FlexFieldsManager:
+    def __init__(self):
+        self.flexfield_max_count = 50  # Limit of flexfields allowed
+        self.logger_service = LoggerService()
+    
+    def add_flex_fields(self, fields: List[str]) -&gt; bool:
+        if len(fields) &gt; self.flexfield_max_count:
+            self.logger_service.log_error(&quot;Exceeded max allowable flexfields&quot;)
+            return False
+        
+        self.logger_service.log_info(f&quot;Adding {len(fields)} flexfields&quot;)
+        return True
+
+class SubmissionErrorManager:
+    def __init__(self):
+        self.logger_service = LoggerService()
+    
+    def submit_errors_to_be_more_helpful(self, submission_id: str, error_details: Dict[str, Any]):
+        self.logger_service.log_info(f&quot;Updating file-level errors for submission {submission_id}&quot;)
+        return {&quot;error_message&quot;: &quot;Please review the uploaded file for incorrect extension&quot;, &quot;fixed&quot;: True}
+
+class HistoricalLoader:
+    def __init__(self):
+        self.logger_service = LoggerService()
+    
+    def load_historical_fabs_data(self):
+        self.logger_service.log_info(&quot;Loading historical FABS data&quot;)
+        return {&quot;status&quot;: &quot;loaded&quot;, &quot;source&quot;: &quot;historical&quot;}
+
+    def load_historical_fpds_data(self, include_feed: bool = True):
+        self.logger_service.log_info(&quot;Loading historical FPDS data&quot;)
+        if include_feed:
+            self.logger_service.log_info(&quot;Including FPDS feed data&quot;)
+        return {&quot;status&quot;: &quot;loaded&quot;, &quot;with_feed&quot;: include_feed}
+
+class FABSValidationRules:
+    def __init__(self):
+        self.logger_service = LoggerService()
+    
+    def set_zero_and_blank_acceptance(self, record_type: str):
+        self.logger_service.log_info(f&quot;Setting zero and blank acceptance for {record_type} records&quot;)
+        return {&quot;status&quot;: &quot;configured&quot;, &quot;type&quot;: record_type}
+
+class UIComponentManager:
+    def __init__(self):
+        self.resources_page_design = &quot;Broker_v1&quot;
+        self.help_page_edits_round = 1
+        self.homepage_edits_round = 1
+        self.logger_service = LoggerService()
+    
+    def redesign_resources_page(self, new_style: str):
+        self.resources_page_design = new_style
+        self.logger_service.log_info(f&quot;Resources page redesigned with {new_style}&quot;)
+        return {&quot;status&quot;: &quot;redesigned&quot;, &quot;new_style&quot;: new_style}
+    
+    def advance_edits_round(self, component: str):
+        if component == &quot;help&quot;:
+            self.help_page_edits_round += 1
+            return {&quot;round&quot;: self.help_page_edits_round}
+        elif component == &quot;homepage&quot;:
+            self.homepage_edits_round += 1
+            return {&quot;round&quot;: self.homepage_edits_round}
+        return {&quot;error&quot;: &quot;Invalid component&quot;}
+
+class UserTestingManager:
+    def __init__(self):
+        self.user_testing_summary = &quot;&quot;
+        self.logger_service = LoggerService()
+    
+    def conduct_user_testing_round_1(self):
+        self.logger_service.log_info(&quot;Beginning user testing round 1&quot;)
+        return {&quot;status&quot;: &quot;started&quot;, &quot;round&quot;: 1}
+    
+    def schedule_user_testing(self, date: str):
+        self.logger_service.log_info(f&quot;Scheduling user testing for {date}&quot;)
+        return {&quot;scheduled&quot;: True, &quot;date&quot;: date}
+    
+    def generate_ui_sme_report(self):
+        self.user_testing_summary = &quot;UI SME completed analysis with suggestions for improvements&quot;
+        self.logger_service.log_info(&quot;Generated UI SME report&quot;)
+        return {&quot;report&quot;: self.user_testing_summary}
+
+class TestEnvironmentAccess:
+    def __init__(self):
+        self.environments = [&quot;Staging&quot;, &quot;Production&quot;, &quot;DEV&quot;]
+        self.logger_service = LoggerService()
+    
+    def access_test_features(self, env_name: str):
+        if env_name in self.environments:
+            self.logger_service.log_info(f&quot;Accessed test features in {env_name}&quot;)
+            return {&quot;access_granted&quot;: True, &quot;environment&quot;: env_name}
+        else:
+            self.logger_service.log_error(f&quot;Environment {env_name} not valid for testing&quot;)
+            return {&quot;access_granted&quot;: False}
+
+class DataLoader:
+    def __init__(self):
+        self.fabs_records = []
+        self.fpds_records = []
+        self.logger_service = LoggerService()
+    
+    def load_fabs_records(self):
+        self.logger_service.log_info(&quot;Loading FABS records&quot;)
+        return {&quot;status&quot;: &quot;loaded&quot;, &quot;count&quot;: len(self.fabs_records)}
+    
+    def load_fpds_records(self):
+        self.logger_service.log_info(&quot;Loading FPDS records with historical data&quot;)
+        return {&quot;status&quot;: &quot;loaded&quot;, &quot;count&quot;: len(self.fpds_records)}
+
+class SubmissionDashboard:
+    def __init__(self):
+        self.submission_history = []
+        self.logger_service = LoggerService()
+    
+    def display_submission_status(self, submission_id: str):
+        self.logger_service.log_info(f&quot;Displaying submission status for {submission_id}&quot;)
+        status_labels = {
+            &quot;submitted&quot;: &quot;Submitted&quot;,
+            &quot;validating&quot;: &quot;Validating&quot;, 
+            &quot;published&quot;: &quot;Published&quot;
+        }
+        return {&quot;status&quot;: &quot;displayed&quot;, &quot;labels&quot;: status_labels}
+
+class FABSFileDownloader:
+    def __init__(self):
+        self.logger_service = LoggerService()
+    
+    def download_uploaded_file(self, submission_id: str):
+        self.logger_service.log_info(f&quot;Downloading file for submission {submission_id}&quot;)
+        return {&quot;file_downloaded&quot;: True, &quot;submission&quot;: submission_id}
+    
+    def download_raw_agency_published_files(self):
+        self.logger_service.log_info(&quot;Downloading raw agency published files&quot;)
+        return {&quot;downloaded&quot;: True, &quot;count&quot;: 5}
+
+class FABSFileValidator:
+    def __init__(self):
+        self.logger_service = LoggerService()
+    
+    def validate_fabs_file(self, file_path: str, schema_version: str = &quot;v1.1&quot;):
+        self.logger_service.log_info(f&quot;Validating FABS file at {file_path} with schema {schema_version}&quot;)
+        
+        if schema_version == &quot;v1.1&quot;:
+            return {&quot;valid&quot;: True, &quot;issues&quot;: [], &quot;version&quot;: schema_version}
+        else:
+            return {&quot;valid&quot;: False, &quot;issues&quot;: [&quot;Incorrect schema version&quot;], &quot;version&quot;: schema_version}
+
+# Entry point to demonstrate functionality
+def main():
+    logger_service = LoggerService()
+    
+    # Create instances
+    fabs_mgr = FABSSubmissionManager()
+    validation_rule_table = ValidationRuleTable()
+    gtas_data = GTASWindowData()
+    dfiles_mgr = DFilesGenerationManager()
+    flex_mgr = FlexFieldsManager()
+    error_mgr = SubmissionErrorManager()
+    historical_loader = HistoricalLoader()
+    fabs_rules = FABSValidationRules()
+    ui_mgr = UIComponentManager()
+    user_test_mgr = UserTestingManager()
+    test_env_access = TestEnvironmentAccess()
+    data_loader = DataLoader()
+    dashboard = SubmissionDashboard()
+    file_downloader = FABSFileDownloader()
+    validator = FABSFileValidator()
+    
+    # Demonstrate core functionality
+    logger_service.log_info(&quot;Running demonstrations...&quot;)
+    
+    # Process deletions
+    print(fabs_mgr.process_deletions_2017_12_19())
+    
+    # Modify FABS submission on status change
+    print(fabs_mgr.modify_fabs_submission_on_publish_status_change(&quot;sub123&quot;, &quot;submitted&quot;, &quot;validated&quot;))
+    
+    # Prevent double publish
+    print(fabs_mgr.prevent_double_publish(&quot;sub123&quot;))
+    
+    # Update validation rules
+    print(validation_rule_table.update_validation_rules_for_db2213())
+    
+    # Add GTAS data
+    print(gtas_data.add_gtas_window_data(&quot;2023-01-01&quot;, &quot;2023-01-15&quot;, &quot;GTAS Window for Q1&quot;))
+    
+    # Manage D files generations
+    sig = hashlib.md5(b&quot;dfile_request_01&quot;).hexdigest()
+    print(dfiles_mgr.manage_d_files_generation_requests(sig))
+    
+    # Handle flexfields
+    print(flex_mgr.add_flex_fields([&quot;flex1&quot;, &quot;flex2&quot;]))
+    
+    # Update errors for submissions
+    print(error_mgr.submit_errors_to_be_more_helpful(&quot;sub123&quot;, {&quot;code&quot;: &quot;INVALID_EXTENSION&quot;}))
+    
+    # Load historical data
+    print(historical_loader.load_historical_fabs_data())
+    print(historical_loader.load_historical_fpds_data())
+    
+    # Set validation rules
+    print(fabs_rules.set_zero_and_blank_acceptance(&quot;loan&quot;))
+    
+    # Redesign UI
+    print(ui_mgr.redesign_resources_page(&quot;modern_broker_design&quot;))
+    
+    # Advance to next edit round
+    print(ui_mgr.advance_edits_round(&quot;help&quot;))
+    
+    # Conduct user testing
+    print(user_test_mgr.conduct_user_testing_round_1())
+    
+    # Schedule testing
+    print(user_test_mgr.schedule_user_testing(&quot;2023-05-15&quot;))
+    
+    # Access test environments
+    print(test_env_access.access_test_features(&quot;DEV&quot;))
+    
+    # Load data
+    print(data_loader.load_fabs_records())
+    
+    # Display status
+    print(dashboard.display_submission_status(&quot;sub123&quot;))
+    
+    # Download files
+    print(file_downloader.download_uploaded_file(&quot;sub123&quot;))
+    print(file_downloader.download_raw_agency_published_files())
+    
+    # Validate files with schema
+    print(validator.validate_fabs_file(&quot;/path/to/fabs.csv&quot;, &quot;v1.1&quot;))
+
+if __name__ == &quot;__main__&quot;:
+    main()</code></pre>
+        </details>
+    </div>
+</body>
+</html>
+    

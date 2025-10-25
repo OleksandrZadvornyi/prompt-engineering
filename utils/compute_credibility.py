@@ -90,13 +90,13 @@ def compute_credibility(
     ) / total_w
 
     # --- START: Added Print Commands ---
-    print("\n--- Credibility Calculation ---")
-    print(f"  - Confidence: {confidence_score:.2f} (weight: {weights['confidence']:.2f})")
-    print(f"  - Structure:  {structure_score:.2f} (weight: {weights['structure']:.2f})")
-    print(f"  - Semantic:   {semantic_score:.2f} (weight: {weights['semantic']:.2f})")
-    print(f"  - Execution:  {execution_score:.2f} (weight: {weights['execution']:.2f})")
-    print("-" * 31)
-    print(f"--- Final Score: {final_score * 100:.2f} ---\n")
+    # print("\n--- Credibility Calculation ---")
+    # print(f"  - Confidence: {confidence_score:.2f} (weight: {weights['confidence']:.2f})")
+    # print(f"  - Structure:  {structure_score:.2f} (weight: {weights['structure']:.2f})")
+    # print(f"  - Semantic:   {semantic_score:.2f} (weight: {weights['semantic']:.2f})")
+    # print(f"  - Execution:  {execution_score:.2f} (weight: {weights['execution']:.2f})")
+    # print("-" * 31)
+    # print(f"--- Final Score: {final_score * 100:.2f} ---\n")
     # --- END: Added Print Commands ---
 
     return round(final_score * 100, 2)

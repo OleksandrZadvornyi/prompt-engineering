@@ -2,73 +2,27 @@
     "request_number": 3,
     "timestamp": "2025-10-11 15:58:28",
     "model": "openai/gpt-4o-mini",
+    "prompt_variant": "zero-shot",
     "total_tokens": 995,
-    "total_logprob": -344.7175362212294,
     "avg_prob": 0.7071943300550313,
     "perplexity": 1.4140384863127842,
-    "token_count": 995,
-    "function_count": 15,
-    "class_count": 0,
-    "num_lines": 122,
-    "num_nonempty_lines": 104,
-    "avg_line_len_all_chars": 37.07377049180328,
-    "avg_line_len_nonempty_chars": 43.49038461538461,
-    "avg_tokens_per_nonempty_line": 3.423076923076923,
-    "ast_depth": 8,
-    "import_count": 3,
-    "import_names": [
-        "datetime",
-        "flask",
-        "logging"
-    ],
-    "import_redundancy_ratio": 0.0,
-    "avg_function_size_lines": 4.8,
-    "comment_density_percent": 5.769230769230769,
-    "per_function_cyclomatic": {
-        "delete_records": 1,
-        "redesign_resources": 1,
-        "report_user_testing": 1,
-        "edit_dabs_or_fabs_landing": 2,
-        "upload_validate": 2,
-        "sync_d1_file": 2,
-        "access_fabs_files": 1,
-        "submit_fabs": 1,
-        "get_file_errors": 1,
-        "validate_submission": 1,
-        "update_historical_data": 1,
-        "prevent_double_publish": 3,
-        "submit_testing_summary": 1,
-        "flexfields_performance_test": 2,
-        "configure_ui": 1
+    "struct_metrics": {
+        "avg_cyclomatic_complexity": 1.4,
+        "ast_depth": 8,
+        "avg_function_size_lines": 4.8,
+        "import_redundancy_ratio": 0.0
     },
-    "avg_cyclomatic_complexity": 1.4,
-    "max_cyclomatic_complexity": 3,
-    "module_cyclomatic_complexity": 21,
-    "syntax_valid": true,
-    "flake8_error_count": 20,
-    "flake8_error_breakdown": {
-        "E": 16,
-        "F": 3,
-        "W": 1,
-        "C": 0,
-        "N": 0,
-        "total": 20
+    "semantic_metrics": {
+        "syntax_valid": true,
+        "flake8_error_count": 20,
+        "mypy_error_count": 4
     },
-    "mypy_error_count": 4,
-    "mypy_error_breakdown": {
-        "return_type": 0,
-        "argument_type": 0,
-        "missing_return": 0,
-        "attribute_error": 0,
-        "annotation_issue": 4,
-        "other": 0,
-        "total": 4
+    "execution_metrics": {
+        "execution_success": false,
+        "execution_time_sec": 15.567,
+        "exception_type": "TimeoutError",
+        "exception_message": "Execution exceeded 15s limit",
+        "runtime_output": "* Serving Flask app 'main'\n * Debug mode: on\nINFO:werkzeug:\u001b[31m\u001b[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.\u001b[0m\n * Running on http://127.0.0.1:5000\nINFO:werkzeug:\u001b[33mPress CTRL+C to quit\u001b[0m\nINFO:werkzeug: * Restarting with stat\nWARNING:werkzeug: * Debugger is active!\nINFO:werkzeug: * Debugger PIN: 889-931-271"
     },
-    "semantic_quality_score": 86.0,
-    "execution_success": false,
-    "execution_time_sec": 1.372,
-    "exception_type": "ModuleNotFoundError",
-    "exception_message": "No module named 'flask'",
-    "runtime_output": "Traceback (most recent call last):\n  File \"/app/code.py\", line 3, in <module>\n    from flask import Flask, request, jsonify\nModuleNotFoundError: No module named 'flask'",
-    "total_credibility": 50.264
+    "total_credibility": 36.94
 }
