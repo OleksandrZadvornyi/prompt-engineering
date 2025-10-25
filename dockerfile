@@ -5,7 +5,7 @@ FROM python:3.11-slim
 WORKDIR /app
 
 # Install a set of common and useful Python libraries
-RUN pip install --no-cache-dir numpy pandas psycopg2-binary openpyxl redis scikit-learn requests pymysql sqlalchemy flask_sqlalchemy fastapi flask newrelic
+RUN pip install --no-cache-dir numpy pandas psycopg2-binary cachetools openpyxl redis scikit-learn requests pymysql sqlalchemy flask_sqlalchemy fastapi flask newrelic
 
 # Set a default command
 CMD ["python", "main.py"]
