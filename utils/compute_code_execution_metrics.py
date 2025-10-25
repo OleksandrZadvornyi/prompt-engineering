@@ -69,7 +69,9 @@ def compute_code_execution_metrics(code_text, timeout_sec=15):
                 is_env_error = True
             elif "ConfigurationError: Unable to open configuration file" in logs:
                 is_env_error = True
-            elif "psycopg2.OperationalError" in logs and "could not translate host name" in logs: # NEW
+            elif "psycopg2.OperationalError" in logs and "could not translate host name" in logs:
+                is_env_error = True
+            elif "OperationalError" in logs and "no such table" in logs:
                 is_env_error = True
             
             if is_env_error:
