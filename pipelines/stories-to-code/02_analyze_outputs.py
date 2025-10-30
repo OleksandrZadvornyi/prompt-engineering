@@ -57,10 +57,10 @@ def analyze_all_reports(config):
         summary_path = run_dir / "summary.json"
         
         # Check if this report has already been analyzed
-        if summary_path.exists():
-            print(f"Skipping (summary exists): {run_dir.relative_to(search_path)}")
-            skipped_count += 1
-            continue
+        # if summary_path.exists():
+        #     print(f"Skipping (summary exists): {run_dir.relative_to(search_path)}")
+        #     skipped_count += 1
+        #     continue
         
         # --- Step 1: Load raw response data ---
         with open(raw_json_path, "r", encoding="utf-8") as f:
