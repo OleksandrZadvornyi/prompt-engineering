@@ -78,7 +78,7 @@ def compute_credibility(
 
     # --- 3. Final Weighted Aggregation ---
     if weights is None:
-        weights = {"confidence": 0.10, "structure": 0.25, "semantic": 0.30, "execution": 0.35}
+        weights = {"confidence": 0.30, "structure": 0.15, "semantic": 0.25, "execution": 0.30}
     
     total_w = sum(weights.values()) or 1.0
     
