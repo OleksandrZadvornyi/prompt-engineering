@@ -10,7 +10,7 @@ from sklearn.mixture import GaussianMixture
 from sklearn.metrics import silhouette_score, davies_bouldin_score, calinski_harabasz_score
 from sklearn.preprocessing import MinMaxScaler
 
-df = pd.read_csv("D:\Dev\python-projects\prompt-engineering\Experiment\data.txt",
+df = pd.read_csv("data/user-stories.txt",
                  delimiter="\t",
                  header=None,
                  names=["text"],
@@ -21,7 +21,7 @@ df = pd.read_csv("D:\Dev\python-projects\prompt-engineering\Experiment\data.txt"
 df['tokens'] = df['text'].apply(lambda x: x.lower().split())
 
 # Навчання моделі Word2Vec (враховуючи версію gensim 4.3.2)
-w2v_model = Word2Vec(sentences=df['tokens'], vector_size=200, window=5, min_count=1, workers=-1)
+w2v_model = Word2Vec(sentences=df['tokens'], vector_size=500, window=5, min_count=3, workers=-1)
 
 # Отримання векторів-ембедингів для кожного рядка (усереднення векторів слів)
 def get_embedding(tokens):
@@ -128,7 +128,7 @@ from collections import defaultdict
 # Приклад масиву
 data = np.array(probabilities)
 
-threshold = 0.2
+threshold = 0.1
 groups = defaultdict(list)
 
 for i, row in enumerate(data):
@@ -163,18 +163,18 @@ for key, values in groups.items():
 combined_texts = {key: df['text'].str.cat(sep=' ') for key, df in d.items()}
 
 
-
-
-
-
-
-
-
-
-
-
 import json
-with open("clustered_stories2.json", "w", encoding="utf-8") as f:
+with open("clustered_stories.json", "w", encoding="utf-8") as f:
     json.dump(combined_texts, f, ensure_ascii=False, indent=2)
+
+w2v_model.save("data/original_w2v.model")
+
+
+
+
+
+
+
+
 
 
