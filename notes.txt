@@ -1,15 +1,39 @@
 Models that support logprobs (14:40 23.10.2025):
 - openai/gpt-4o-mini (openai)
-- deepseek/deepseek-chat-v3-0324 (crusoe)
+- deepseek/deepseek-chat-v3-0324 (crusoe!, fireworks)
+- qwen/qwen3-coder (cerebras, fireworks)
+- meta-llama/llama-3.3-70b-instruct (crusoe!, cerebras, fireworks)
 
-Models that do not support logprobs (23.10.2025)
-- qwen/qwen3-coder-30b-a3b-instruct
-- x-ai/grok-4-fast $0.20/M
+
+Providers that support logprobs (25.10.2025):
+- Crusoe
+- Fireworks
 
 Zero-shot prompt:
 prompt = (
     "Generate fully functional Python code that implements the following user stories. "
     "The code should realistically reflect the described functionality.\n\n"
+    f"{stories_text}\n\n"
+    "Output only Python code (no markdown formatting or extra text). "
+    "Do not leave functions empty — implement reasonable logic where needed."
+)
+
+# Chain-of-Thought Prompt:
+prompt = (
+    "First, think step-by-step to outline the necessary classes, functions, and logic. "
+    "Place your reasoning and plan as comments within the Python code. "
+    "Then, generate the fully functional Python code that implements the following user stories. "
+    "The code should realistically reflect the described functionality.\n\n"
+    f"{stories_text}\n\n"
+    "Output only Python code (no markdown formatting or extra text). "
+    "Do not leave functions empty — implement reasonable logic where needed."
+)
+
+# Persona-Based Prompt:
+prompt = (
+    "You are an expert senior Python developer with over 20 years of experience writing high-quality, "
+    "maintainable, and robust code. Your task is to generate fully functional Python code that "
+    "implements the following user stories. The code should realistically reflect the described functionality.\n\n"
     f"{stories_text}\n\n"
     "Output only Python code (no markdown formatting or extra text). "
     "Do not leave functions empty — implement reasonable logic where needed."
