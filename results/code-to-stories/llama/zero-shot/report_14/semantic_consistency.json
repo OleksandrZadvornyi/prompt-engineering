@@ -1,0 +1,8 @@
+{
+    "model": "meta-llama/llama-3.3-70b-instruct",
+    "prompt_variant": "zero-shot",
+    "semantic_consistency_score": 0.7515162825584412,
+    "embedding_model": "all-MiniLM-L6-v2",
+    "original_stories_count": 98,
+    "generated_stories_count": 18
+}

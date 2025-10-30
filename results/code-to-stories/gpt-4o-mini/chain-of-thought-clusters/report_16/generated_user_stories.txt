@@ -1,0 +1,15 @@
+As a Agency User, I want to submit a submission, so that I can have my work reviewed and processed.
+
+As a Developer, I want to update validation rules, so that the submission process is aligned with the latest requirements.
+
+As a UI Designer, I want to redesign pages, so that the user interface reflects current design standards.
+
+As a Broker User, I want to upload files, so that I can provide necessary documentation for submissions.
+
+As a FABS User, I want to download FABS files, so that I can access the information needed for my tasks.
+
+As a System, I want to process submissions, so that I can validate and handle each submission appropriately.
+
+As a Submission, I want to validate my data, so that I can ensure that I meet all necessary requirements before submission.
+
+As a System, I want to store submissions, so that I can keep track of all submissions made by users.

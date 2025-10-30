@@ -1,0 +1,17 @@
+Here are the user stories derived from the Python code:
+
+1. As a DATA_USER, I want to create a FABS submission, so that I can manage and track my agency's data submissions.  
+2. As a DATA_USER, I want to update the publish status of my submission, so that I can track its progress through the workflow.  
+3. As a DATA_USER, I want to derive additional fields for my submission, so that I can enrich the data before publication.  
+4. As a UI_DESIGNER, I want to apply new styles to the UI resources page, so that I can match the latest Broker design standards.  
+5. As a TESTER, I want to generate a user testing report, so that I can document test results for review.  
+6. As a DEVELOPER, I want to update validation rules, so that I can ensure submissions meet current requirements.  
+7. As a DEVELOPER, I want to generate a D file, so that I can process data requests efficiently, using caching when possible.  
+8. As a DATA_USER, I want to load historical FABS data, so that I can analyze past submissions.  
+9. As a DATA_USER, I want to load historical FPDS data, so that I can access procurement records.  
+10. As a DEVELOPER, I want to add flexible fields, so that I can extend the data model while respecting system limits.  
+11. As a UI_DESIGNER, I want to track UI improvements, so that I can prioritize and schedule enhancements.  
+12. As a USER, I want to receive clear error messages, so that I can understand and resolve issues quickly.  
+13. As a DATA_USER, I want to publish my submission, so that it can be made available to others.  
+14. As a DEVELOPER, I want to process deletions, so that I can maintain data integrity.  
+15. As a UI_DESIGNER, I want to redesign the resources page, so that I can improve the user experience.

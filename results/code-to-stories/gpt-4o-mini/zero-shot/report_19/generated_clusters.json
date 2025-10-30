@@ -1,0 +1,7 @@
+{
+  "(0,)": "As a user, I want to upload a submission, so that I can submit data for processing As a broker, I want to process deletions for a given date, so that I can manage outdated or irrelevant data",
+  "(2,)": "As a broker, I want to add users, so that I can manage their submissions and access As a broker, I want to get a list of published FABS files, so that I can review and access successful submissions",
+  "(1,)": "As a broker, I want to prevent duplicate publishing of submissions, so that I can maintain data integrity and avoid errors As a validator, I want to validate DUNS records, so that I can ensure that submissions contain valid identifiers As a broker, I want to upload and validate files, so that I can systematically manage new data submissions",
+  "(3,)": "As a user, I want to publish a submission if it is validated, so that others can access the finalized data",
+  "(4,)": "As a validator, I want to validate required fields in a record, so that I can ensure all necessary information is provided for compliance"
+}

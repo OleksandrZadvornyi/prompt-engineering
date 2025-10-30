@@ -1,0 +1,28 @@
+{
+    "request_number": 19,
+    "timestamp": "2025-10-26 22:17:30",
+    "model": "deepseek/deepseek-chat-v3-0324",
+    "prompt_variant": "chain-of-thought",
+    "total_tokens": 1577,
+    "avg_prob": 0.9158186089319648,
+    "perplexity": 1.0919192842851362,
+    "struct_metrics": {
+        "avg_cyclomatic_complexity": 1.46875,
+        "ast_depth": 12,
+        "avg_function_size_lines": 4.7727272727272725,
+        "import_redundancy_ratio": 0.0
+    },
+    "semantic_metrics": {
+        "syntax_valid": true,
+        "flake8_error_count": 13,
+        "mypy_error_count": 0
+    },
+    "execution_metrics": {
+        "execution_success": true,
+        "execution_time_sec": 0.504,
+        "exception_type": "",
+        "exception_message": "",
+        "runtime_output": "INFO:__main__:New FABS submission created by John Doe\nINFO:__main__:File test_file.csv uploaded to uploads/test_file.csv\nINFO:__main__:Submission FABS_20251030055422 status updated to VALIDATED\nINFO:__main__:Submission FABS_20251030055422 status updated to PUBLISHED\nINFO:__main__:Submission FABS_20251030055422 published successfully\nINFO:__main__:Design updated for Resources\nINFO:__main__:Test FABS UI Test scheduled for 2023-12-01 00:00:00\nPublish successful"
+    },
+    "total_credibility": 85.74
+}

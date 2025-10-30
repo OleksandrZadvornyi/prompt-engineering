@@ -1,0 +1,28 @@
+{
+    "request_number": 1,
+    "timestamp": "2025-10-26 15:01:48",
+    "model": "meta-llama/llama-3.3-70b-instruct",
+    "prompt_variant": "zero-shot",
+    "total_tokens": 967,
+    "avg_prob": 0.8913621866081621,
+    "perplexity": 1.1218784182501949,
+    "struct_metrics": {
+        "avg_cyclomatic_complexity": 1,
+        "ast_depth": 8,
+        "avg_function_size_lines": 5.761904761904762,
+        "import_redundancy_ratio": 0.0
+    },
+    "semantic_metrics": {
+        "syntax_valid": true,
+        "flake8_error_count": 25,
+        "mypy_error_count": 0
+    },
+    "execution_metrics": {
+        "execution_success": true,
+        "execution_time_sec": 0.436,
+        "exception_type": "",
+        "exception_message": "",
+        "runtime_output": "INFO:__main__:Processing deletions for 12-19-2017\nINFO:__main__:Redesigning Resources page\nINFO:__main__:Reporting user testing results\nINFO:__main__:Updating FABS sample file\nINFO:__main__:Validating FABS submissions\nINFO:__main__:Updating Broker validation rules\nINFO:__main__:Adding GTAS window data\nINFO:__main__:Managing D Files generation\nINFO:__main__:Accessing raw agency files\nINFO:__main__:Updating FABS validation rules\nINFO:__main__:Deriving FundingAgencyCode\nINFO:__main__:Preventing duplicate FABS submissions\nINFO:__main__:Updating FABS derivations\nINFO:__main__:Loading historical FPDS data\nINFO:__main__:Loading historical FABS data\nINFO:__main__:Updating DUNS validations\nINFO:__main__:Generating D Files\nINFO:__main__:Displaying submission errors\nINFO:__main__:Improving user experience\nINFO:__main__:Optimizing database performance"
+    },
+    "total_credibility": 79.58
+}

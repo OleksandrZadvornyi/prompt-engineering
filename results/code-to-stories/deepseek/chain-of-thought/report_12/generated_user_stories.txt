@@ -1,0 +1,19 @@
+Here are the user stories derived from the Python code:
+
+1. As a user, I want to create a submission (FABS or DABS), so that I can submit my data for processing.  
+2. As a user, I want to update the publish status of my submission, so that I can track its progress.  
+3. As a user, I want to add errors to my submission, so that I can identify issues during validation.  
+4. As a user, I want to validate my FABS submission, so that I can ensure it meets requirements before publishing.  
+5. As a user, I want to validate my DABS submission, so that I can ensure it meets requirements before publishing.  
+6. As a system administrator, I want to create and manage submissions in the broker system, so that I can oversee data processing.  
+7. As a system administrator, I want to publish a submission, so that the data can be processed and shared.  
+8. As a system administrator, I want to retrieve a submission by its ID, so that I can review or modify it.  
+9. As a system administrator, I want to process deletions of failed submissions, so that I can clean up outdated records.  
+10. As a system administrator, I want to add an agency, so that I can manage agency-specific submissions.  
+11. As a UI designer, I want to redesign the resources page, so that it matches the latest design standards.  
+12. As a UI designer, I want to report user testing results to an agency, so that feedback can be incorporated into improvements.  
+13. As a UI designer, I want to handle page edits in rounds, so that I can iteratively improve the UI.  
+14. As a DevOps engineer, I want to configure New Relic, so that I can monitor application performance.  
+15. As a data processor, I want to sync D1 file generation with FPDS data load, so that data remains consistent.  
+16. As a data processor, I want to update validation rules, so that submissions are checked against current standards.  
+17. As a data processor, I want to load GTAS window data, so that it is available for analysis and reporting.

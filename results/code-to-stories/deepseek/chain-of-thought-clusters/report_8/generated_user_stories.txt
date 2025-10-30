@@ -1,0 +1,30 @@
+Here are the user stories derived from the Python code:
+
+1. As an Agency User, I want to create a submission, so that I can upload and manage my files.  
+2. As a User, I want to update the publish status of my submission, so that I can track its progress.  
+3. As a Developer, I want to validate submissions, so that I can ensure data accuracy.  
+4. As a Data User, I want to process deletions for a specific date, so that outdated records are removed.  
+5. As a Developer, I want to sync D1 file generation with FPDS data load, so that data consistency is maintained.  
+6. As a Data User, I want to derive FundingAgencyCode, so that funding sources are properly categorized.  
+7. As a Developer, I want to update SQL codes, so that queries are clearer and more efficient.  
+8. As a Developer, I want to add special PPoPCode cases, so that all funding scenarios are covered.  
+9. As a Data User, I want to load historical FPDS data, so that past records are accessible.  
+10. As a Data User, I want to load historical FABS data, so that past records are accessible.  
+11. As a UI Designer, I want to redesign the Resources page, so that it matches the new Broker design styles.  
+12. As a Tester, I want to report user testing results to agencies, so that feedback can be incorporated.  
+13. As a Tester, I want to schedule user testing, so that tests are conducted systematically.  
+14. As a Tester, I want to begin user testing, so that usability issues can be identified.  
+15. As a Developer, I want to track Tech Thursday issues, so that they can be resolved promptly.  
+16. As a Tester, I want to create a user testing summary, so that results are documented and analyzed.  
+17. As a Developer, I want to update DUNS validations, so that data integrity is maintained.  
+18. As a Developer, I want to clarify CFDA error codes, so that validation feedback is more informative.  
+19. As a Developer, I want to generate a D file for a submission, so that data can be processed further.  
+20. As a Developer, I want to map FederalActionObligation, so that it can be included in the Atom Feed.  
+21. As a Developer, I want to validate ZIP codes, so that address data is correct.  
+22. As a User, I want to download FABS files, so that I can access submitted data.  
+23. As a Developer, I want to set up New Relic monitoring, so that system performance can be tracked.  
+24. As a Developer, I want to log submission activity, so that actions are auditable.  
+25. As a Tester, I want to create a user testing plan, so that testing is structured and thorough.  
+26. As a Tester, I want to conduct user testing, so that I can gather feedback on usability.  
+27. As a Tester, I want to generate a user testing report, so that findings are documented and shared.  
+28. As an Owner, I want to manage submissions via a dashboard, so that I can oversee all file activities.

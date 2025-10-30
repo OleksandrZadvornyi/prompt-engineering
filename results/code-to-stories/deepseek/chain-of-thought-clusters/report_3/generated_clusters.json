@@ -1,0 +1,7 @@
+{
+  "(3,)": "As a Data Submitter, I want to upload files for publication, so that my data can be processed and published As a Data Analyst, I want to retrieve previously published files, so that I can analyze historical data As a System User, I want to check for FPDS data freshness before processing, so that only up-to-date data is used for file generation",
+  "(0,)": "As a Data Submitter, I want to track the status of my submissions, so that I know if they are draft, pending, published, or failed As a Validator, I want to add or modify validation rules, so that data quality standards are enforced dynamically",
+  "(2,)": "As a System Administrator, I want to manage database sessions and connections, so that the system interacts reliably with the database As a UI Developer, I want to fetch UI resources with the latest styling, so that the interface remains consistent and up-to-date",
+  "(1,)": "As a Validator, I want to run validation rules on submissions, so that errors can be identified before publishing As a UI Developer, I want to report user testing results, so that agencies can improve usability As a Developer, I want to log important events, so that issues can be diagnosed and resolved quickly",
+  "(4,)": "As a Publisher, I want to publish validated submissions, so that they become available for use As a Publisher, I want to generate D files from FPDS data, so that they meet agency-specific requirements As a Monitoring Engineer, I want to track application health metrics, so that system reliability is maintained"
+}

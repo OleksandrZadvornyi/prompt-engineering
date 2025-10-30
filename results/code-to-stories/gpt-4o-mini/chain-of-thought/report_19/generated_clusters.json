@@ -1,0 +1,5 @@
+{
+  "(0,)": "As a Developer, I want to log issues, so that I can troubleshoot problems effectively As a BrokerUser, I want to upload files, so that necessary documents can be transmitted successfully",
+  "(2,)": "As a UIUser, I want to report contributions to agencies, so that user testing feedback is communicated properly",
+  "(1,)": "As a FABSUser, I want to submit FABS with a specific ID, so that my submissions are tracked and managed correctly As a system administrator, I want to process deletions for a specified date, so that outdated or irrelevant data is removed from the system As a designer, I want to redesign the Resources page to match new design styles, so that the user interface remains modern and user-friendly As a system administrator, I want to update the FABS submission status, so that users are informed about the current state of their submissions"
+}

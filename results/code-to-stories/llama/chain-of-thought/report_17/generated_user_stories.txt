@@ -1,0 +1,13 @@
+As an Agency User, I want to submit data, so that I can track and manage my submissions.
+As an Agency User, I want to load FABS files, so that I can access and utilize the data.
+As an Agency User, I want to load FPDS data, so that I can access and utilize the data.
+As an Agency User, I want to load DABS data, so that I can access and utilize the data.
+As a Developer, I want to add validation rules, so that I can ensure data quality and integrity.
+As a Developer, I want to process submissions, so that I can execute business logic and workflows.
+As a Developer, I want to validate submissions, so that I can verify compliance with established rules and standards.
+As a System Administrator, I want to log messages and events, so that I can monitor and debug the system.
+As a System Administrator, I want to track UI improvements, so that I can identify areas for enhancement and optimization.
+As a System Administrator, I want to manage submissions, so that I can oversee and control the submission process.
+As a Data Analyst, I want to load and access FABS files, so that I can extract and analyze the data.
+As a Data Analyst, I want to load and access FPDS data, so that I can extract and analyze the data.
+As a Data Analyst, I want to load and access DABS data, so that I can extract and analyze the data.

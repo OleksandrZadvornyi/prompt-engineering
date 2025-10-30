@@ -19,10 +19,10 @@
     },
     "execution_metrics": {
         "execution_success": true,
-        "execution_time_sec": 0.435,
+        "execution_time_sec": 0.387,
         "exception_type": "",
         "exception_message": "",
         "runtime_output": "Updated submit ID 1 publish status to Published\nDUNS 123456789 is valid.\nIntegrating New Relic with the following data: {'app': 'Broker', 'metric': 'response_time'}"
     },
-    "total_credibility": 78.4
+    "total_credibility": 80.22
 }

@@ -1,0 +1,23 @@
+As a user, I want to create a new submission, so that I can start the process of submitting my work.
+
+As a user, I want to update the status of my submission, so that I can reflect its current progress.
+
+As a user, I want to publish my submission, so that it can be officially reviewed and accepted.
+
+As a user, I want to log activities related to my submission, so that I can keep track of important events and milestones.
+
+As a user, I want to deactivate the publish button for my submission, so that it is clear that the submission cannot be published again.
+
+As a user, I want to generate a FABS file, so that I can save and share relevant content for my agency.
+
+As an admin, I want to add users to the system, so that they can participate in submissions and reviews.
+
+As an admin, I want to add agencies to the system, so that submissions can be associated with the correct organization.
+
+As a user, I want to remove the last four digits from a ZIP code, so that I can obtain a cleaner version for processing.
+
+As a developer, I want to access submissions by their ID, so that I can retrieve specific information when needed.
+
+As a developer, I want to access users by their ID, so that I can retrieve user-specific information for functionality or auditing.
+
+As a developer, I want to access agencies by their ID, so that I can retrieve agency-specific information for functionality or reporting.

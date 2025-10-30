@@ -1,0 +1,63 @@
+Here are the user stories derived from the Python code:
+
+As a data analyst, I want to process deletions for a specific date, so that I can maintain clean and up-to-date data.
+
+As a UI designer, I want to redesign the Resources page, so that it matches the new styles and improves user experience.
+
+As a UI designer, I want to report user testing results to agencies, so that they can review and provide feedback.
+
+As a database administrator, I want to update SQL code for better clarity, so that it is easier to understand and maintain.
+
+As a database administrator, I want to add 00***** and 00FORGN PPoPCode cases to derivation logic, so that the system handles these cases correctly.
+
+As a data engineer, I want to derive FundingAgencyCode, so that data quality is improved.
+
+As a data engineer, I want to sync D1 file generation with FPDS data load, so that the data remains consistent.
+
+As a data validator, I want to validate ZIP+4 codes, so that they meet the required standards like Legal Entity ZIP.
+
+As a UI designer, I want to edit the landing page for a specific round, so that it reflects current requirements.
+
+As a tester, I want to schedule user testing with advanced notice, so that participants are well-prepared.
+
+As a support technician, I want to track issues from Tech Thursday, so that they can be resolved promptly.
+
+As a data analyst, I want to retrieve published FABS files, so that I can analyze the latest data.
+
+As a data analyst, I want to filter records to only include grants, so that I can focus on grant-specific data.
+
+As a system administrator, I want to update the header info box with the current date and time, so that users see accurate timestamps.
+
+As a data manager, I want to update FABS submission status, so that the system reflects the latest state.
+
+As a data manager, I want to load historical FPDS data, so that it can be used for analysis and reporting.
+
+As a system administrator, I want to deactivate the publish button during derivations, so that users cannot publish incomplete data.
+
+As a data engineer, I want to include FREC derivations in historical data, so that it is comprehensive.
+
+As a developer, I want to update frontend URLs to reflect the current page, so that navigation remains accurate.
+
+As a developer, I want to update error message text, so that users receive clear and helpful feedback.
+
+As a data validator, I want to prevent duplicate transactions from being published, so that data integrity is maintained.
+
+As a data validator, I want to validate DUNS numbers based on action type and date, so that they meet business rules.
+
+As a system administrator, I want to cache D File generation requests, so that performance is optimized.
+
+As a data engineer, I want to handle a large number of flexfields without performance impact, so that the system remains efficient.
+
+As a data manager, I want to prevent double publishing of FABS submissions, so that data consistency is maintained.
+
+As a data formatter, I want to format FABS files according to a schema, so that they meet standards.
+
+As a data validator, I want to validate loan records, accepting zero and blank, so that edge cases are handled.
+
+As a data analyst, I want to derive office names from office codes, so that data is more interpretable.
+
+As a UI designer, I want to update the sample file link to point to the correct file, so that users access the right resources.
+
+As a data validator, I want to validate ZIP codes, optionally allowing truncation, so that they meet requirements.
+
+As a data manager, I want to update status labels for submissions, so that their current state is clear.

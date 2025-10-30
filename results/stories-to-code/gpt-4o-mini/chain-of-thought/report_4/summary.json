@@ -1,0 +1,28 @@
+{
+    "request_number": 4,
+    "timestamp": "2025-10-26 21:34:14",
+    "model": "openai/gpt-4o-mini",
+    "prompt_variant": "chain-of-thought",
+    "total_tokens": 803,
+    "avg_prob": 0.8310720830439248,
+    "perplexity": 1.2032650601586228,
+    "struct_metrics": {
+        "avg_cyclomatic_complexity": 1.5,
+        "ast_depth": 11,
+        "avg_function_size_lines": 3.45,
+        "import_redundancy_ratio": 0.0
+    },
+    "semantic_metrics": {
+        "syntax_valid": true,
+        "flake8_error_count": 16,
+        "mypy_error_count": 0
+    },
+    "execution_metrics": {
+        "execution_success": true,
+        "execution_time_sec": 0.507,
+        "exception_type": "",
+        "exception_message": "",
+        "runtime_output": "Processing deletions for date: 2017-12-19\nMoving on to round 2 of Homepage edits for approvals.\nLogging issue: Issue with submission ID 101.\nUpdating validation rule 1 with updates: {'required': 'FundingAgencyCode'}\nFile uploaded successfully for submission ID 101"
+    },
+    "total_credibility": 82.79
+}

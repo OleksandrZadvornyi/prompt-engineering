@@ -19,10 +19,10 @@
     },
     "execution_metrics": {
         "execution_success": true,
-        "execution_time_sec": 0.547,
+        "execution_time_sec": 0.431,
         "exception_type": "",
         "exception_message": "",
-        "runtime_output": "INFO:root:User began testing on the FABS submission interface.\nINFO:root:Submission 101 changed status to Published.\nProcessing deletions for 12-19-2017...\nRedesigning the Resources page to match new Broker design styles.\nReporting to Agencies: User testing findings for UX improvements.\nMoving on to round 2 of DABS or FABS landing page edits.\nMoving on to round 2 of Homepage edits.\nMoving on to round 3 of Help page edits.\nSubmission 101 changed status to Published.\nValidating file: sample_file.csv\nAccessing published FABS files.\nEnsuring that only grant records are sent to the system.\nUpdating validation rule table with: DB-2213 compliance updates.\nAdding GTAS window data: GTAS Window Data\nManaging and caching D File generation requests to prevent duplicates.\nCreating user testing summary from: UI SME findings summary\nScheduling user testing on: 2025-10-25 18:19:36.233753\nResetting environment to Staging MAX permissions."
+        "runtime_output": "INFO:root:User began testing on the FABS submission interface.\nINFO:root:Submission 101 changed status to Published.\nProcessing deletions for 12-19-2017...\nRedesigning the Resources page to match new Broker design styles.\nReporting to Agencies: User testing findings for UX improvements.\nMoving on to round 2 of DABS or FABS landing page edits.\nMoving on to round 2 of Homepage edits.\nMoving on to round 3 of Help page edits.\nSubmission 101 changed status to Published.\nValidating file: sample_file.csv\nAccessing published FABS files.\nEnsuring that only grant records are sent to the system.\nUpdating validation rule table with: DB-2213 compliance updates.\nAdding GTAS window data: GTAS Window Data\nManaging and caching D File generation requests to prevent duplicates.\nCreating user testing summary from: UI SME findings summary\nScheduling user testing on: 2025-10-30 05:58:48.187728\nResetting environment to Staging MAX permissions."
     },
-    "total_credibility": 71.31
+    "total_credibility": 74.5
 }

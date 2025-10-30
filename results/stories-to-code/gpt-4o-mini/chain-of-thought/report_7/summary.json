@@ -1,0 +1,28 @@
+{
+    "request_number": 7,
+    "timestamp": "2025-10-26 21:35:17",
+    "model": "openai/gpt-4o-mini",
+    "prompt_variant": "chain-of-thought",
+    "total_tokens": 785,
+    "avg_prob": 0.8548670976055764,
+    "perplexity": 1.169772474342422,
+    "struct_metrics": {
+        "avg_cyclomatic_complexity": 1.6071428571428572,
+        "ast_depth": 15,
+        "avg_function_size_lines": 3.25,
+        "import_redundancy_ratio": 0.0
+    },
+    "semantic_metrics": {
+        "syntax_valid": true,
+        "flake8_error_count": 9,
+        "mypy_error_count": 0
+    },
+    "execution_metrics": {
+        "execution_success": true,
+        "execution_time_sec": 0.484,
+        "exception_type": "",
+        "exception_message": "",
+        "runtime_output": "Processing deletions for date: 12-19-2017\nRedesigning Resources page to match new styles.\nReporting user testing results to Agencies.\nMoving on to round 2 of DABS or FABS landing page edits.\nMoving on to round 2 of Homepage edits.\nMoving on to round 3 of Help page edits.\nTracking issues from Tech Thursday.\nLogging issue: Debugging submission issues.\nUpdating validation rules with: DB-2213 updates\nPreventing double publishing for: submission_123\nClarifying error for code: CFDA error\nIncluding a large number of flexfields without performance impact.\nDeploying FABS into production.\nSubmitting data efficiently.\nUploading and validating with accurate error messages.\nGenerating D Files from FABS and FPDS data.\nDownloading the uploaded FABS file."
+    },
+    "total_credibility": 86.7
+}

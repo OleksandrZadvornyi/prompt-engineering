@@ -19,10 +19,10 @@
     },
     "execution_metrics": {
         "execution_success": true,
-        "execution_time_sec": 0.839,
+        "execution_time_sec": 0.415,
         "exception_type": "",
         "exception_message": "",
         "runtime_output": "Processing deletions for date: 12-19-2017\nResources page redesigned with new styles.\nReporting to Agency1: Feedback on usability.\nReporting to Agency2: Feedback on usability.\nGenerating D1 file as FPDS data has been updated.\nUpdating SQL code: SELECT * from table1\nUpdating SQL code: UPDATE table2 SET col1 = value\nAdding PPoPCode case: 00*****\nAdding PPoPCode case: 00FORGN\nDerived FundingAgencyCode: 123\nAccessing published FABS files: []"
     },
-    "total_credibility": 83.8
+    "total_credibility": 85.59
 }

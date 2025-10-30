@@ -1,0 +1,26 @@
+As a Data User, I want to process deletions for a given date, so that I can maintain accurate records.
+As a UI Designer, I want to redesign the Resources page, so that it matches the new Broker design styles.
+As a UI Designer, I want to report to Agencies about user testing, so that they are informed of the results.
+As a UI Designer, I want to move on to round 2 of DABS landing page edits, so that the design is improved.
+As a UI Designer, I want to move on to round 2 of Homepage edits, so that the design is improved.
+As a UI Designer, I want to move on to round 3 of Help page edits, so that the design is improved.
+As a Developer, I want to log better, so that I can troubleshoot issues with particular submissions and functions.
+As a Developer, I want to add updates to FABS submission, so that the data is up-to-date when the publishStatus changes.
+As a Developer, I want to update the Broker validation rule table, so that it accounts for the rule updates in DB-2213.
+As a Developer, I want to add GTAS window data, so that it is available in the database.
+As a Developer, I want to manage D Files generation requests, so that duplicate requests are prevented.
+As a Developer, I want to prevent duplicate transactions, so that data integrity is maintained.
+As a DevOps Engineer, I want to provide useful data, so that it can be used across all applications.
+As a Broker User, I want to upload and validate error messages, so that they are accurate.
+As a Broker User, I want to sync D1 file generation with the FPDS data load, so that the data is consistent.
+As a Website User, I want to access published FABS files, so that I can view the data.
+As an Owner, I want to reset the environment, so that it only takes Staging MAX permissions.
+As an Owner, I want to create a user testing summary, so that the results are documented.
+As an Owner, I want to design an audit, so that the UI SME is evaluated.
+As an Agency User, I want to submit FABS data, so that it is available for reporting.
+As an Agency User, I want to include a large number of flexfields, so that the data is comprehensive.
+As an Agency User, I want to get File F, so that I can use the data.
+As a FABS User, I want to submit FABS data, so that it is available for reporting.
+As a FABS User, I want to download the uploaded FABS file, so that I can access the data.
+As a FABS User, I want to see correct status labels, so that I can track the submission status.
+As a Tester, I want to test features, so that they work as expected in environments other than Staging.

@@ -1,0 +1,27 @@
+As a user, I want to upload a submission, so that I can initiate the submission process.
+
+As a user, I want to validate a submission, so that I can ensure the submission is correct before publishing.
+
+As a user, I want to publish a validated submission, so that it can be made available to others.
+
+As a UI designer, I want to redesign the resources page, so that it aligns with the new Broker design styles.
+
+As a UI designer, I want to report user testing results to agencies, so that stakeholders are informed of the outcomes.
+
+As a UI designer, I want to schedule user testing, so that I can gather feedback from stakeholders.
+
+As a UI designer, I want to create a user testing summary, so that I can document the findings from the testing.
+
+As a developer, I want to log my activity, so that I can keep track of changes and updates made in the system.
+
+As a developer, I want to update validation rules, so that the submission process adheres to the latest requirements.
+
+As a developer, I want to prevent double publishing of submissions, so that duplicate entries are avoided.
+
+As a data user, I want to process deletions, so that I can ensure outdated or incorrect data is removed.
+
+As an agency user, I want to load the latest FPDS data, so that I can work with up-to-date information.
+
+As an agency user, I want to submit data for my agency, so that I can contribute relevant information to the system.
+
+As a broker user, I want to create content mockups for data submissions, so that I can visualize how the submissions will appear in the system.

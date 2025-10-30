@@ -1,0 +1,19 @@
+As a FABS user, I want to submit a submission, so that I can record my data accurately.
+
+As an Agency user, I want to ensure data integrity for my submissions, so that I can avoid processing invalid data.
+
+As an Agency user, I want to check validation rules for my submissions, so that I can confirm that my loan records are valid.
+
+As a Developer, I want to update validation rules, so that I can ensure data compliance with the latest standards.
+
+As a Developer, I want to manage and cache requests, so that I can improve system performance.
+
+As a UI user, I want to update the design of a specific page, so that I can enhance the user interface.
+
+As a UI user, I want to schedule user testing, so that I can gather feedback on the design before it goes live.
+
+As a Broker user, I want to validate uploads for submissions, so that I can ensure the integrity of the data being processed.
+
+As a Broker user, I want to sync data with a specified data source, so that I can keep my records up-to-date.
+
+As a user of the submission dashboard, I want to display all submissions, so that I can review their status and details easily.

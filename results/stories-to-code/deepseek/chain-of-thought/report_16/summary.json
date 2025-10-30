@@ -1,0 +1,28 @@
+{
+    "request_number": 16,
+    "timestamp": "2025-10-26 22:13:30",
+    "model": "deepseek/deepseek-chat-v3-0324",
+    "prompt_variant": "chain-of-thought",
+    "total_tokens": 2580,
+    "avg_prob": 0.9311900541344068,
+    "perplexity": 1.0738946314558266,
+    "struct_metrics": {
+        "avg_cyclomatic_complexity": 1.9787234042553192,
+        "ast_depth": 13,
+        "avg_function_size_lines": 6.970588235294118,
+        "import_redundancy_ratio": 0.0
+    },
+    "semantic_metrics": {
+        "syntax_valid": true,
+        "flake8_error_count": 22,
+        "mypy_error_count": 5
+    },
+    "execution_metrics": {
+        "execution_success": true,
+        "execution_time_sec": 0.504,
+        "exception_type": "",
+        "exception_message": "",
+        "runtime_output": "2025-10-30 05:54:16,825 - BrokerApp - INFO - Processed deletions for 12-19-2017\n2025-10-30 05:54:16,825 - BrokerApp - INFO - Advanced to round 2 for Homepage page\n2025-10-30 05:54:16,825 - BrokerApp - INFO - Reporting to agencies: User testing completed for new Resources page design\n2025-10-30 05:54:16,825 - BrokerApp - INFO - Created new FABS submission: sub-20251030055416\n2025-10-30 05:54:16,825 - BrokerApp - INFO - Submission sub-20251030055416 status updated to Pending\n2025-10-30 05:54:16,825 - BrokerApp - INFO - Submission sub-20251030055416 status updated to Published\n2025-10-30 05:54:16,826 - BrokerApp - INFO - Successfully published submission sub-20251030055416\n2025-10-30 05:54:16,826 - BrokerApp - INFO - Loading historical FABS data...\n2025-10-30 05:54:16,826 - BrokerApp - INFO - Successfully loaded historical FABS data"
+    },
+    "total_credibility": 76.05
+}

@@ -1,0 +1,330 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparison: meta-llama/llama-3.3-70b-instruct - chain-of-thought-clusters</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 24px;
+            background-color: #ffffff;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        h1, h2, h3 {
+            color: #111;
+            margin-top: 1.2em;
+            margin-bottom: 0.6em;
+        }
+        h1 {
+            font-size: 2em;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+        }
+        h2 {
+            font-size: 1.5em;
+            color: #555;
+        }
+        h3 {
+            font-size: 1.2em;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f7f7f7;
+            font-weight: 600;
+        }
+        td {
+            background-color: #fff;
+        }
+        td:first-child {
+            font-weight: 500;
+        }
+        a {
+            color: #005fdd;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Comparison Report</h1>
+        <h2>meta-llama/llama-3.3-70b-instruct</h2>
+        <p><strong>Prompt Variant:</strong> chain-of-thought-clusters</p>
+
+        <h3>Aggregate Statistics</h3><table><tr><th>Metric</th><th>Average</th><th>Min</th><th>Max</th><th>Std. Dev.</th></tr>
+            <tr>
+                <td>Total Credibility</td>
+                <td>72.58</td>
+                <td>28.52</td>
+                <td>82.70</td>
+                <td>11.59</td>
+            </tr>
+            
+            <tr>
+                <td>Perplexity</td>
+                <td>1.09</td>
+                <td>1.06</td>
+                <td>1.15</td>
+                <td>0.02</td>
+            </tr>
+            
+            <tr>
+                <td>Avg. Probability</td>
+                <td>0.91</td>
+                <td>0.87</td>
+                <td>0.94</td>
+                <td>0.02</td>
+            </tr>
+            
+            <tr>
+                <td>Total Tokens</td>
+                <td>1759.10</td>
+                <td>947.00</td>
+                <td>3518.00</td>
+                <td>639.62</td>
+            </tr>
+            
+            <tr>
+                <td>Execution Success (Rate)</td>
+                <td>0.95</td>
+                <td>0.00</td>
+                <td>1.00</td>
+                <td>0.22</td>
+            </tr>
+            
+            <tr>
+                <td>Syntax Valid (Rate)</td>
+                <td>1.00</td>
+                <td>1.00</td>
+                <td>1.00</td>
+                <td>0.00</td>
+            </tr>
+            
+            <tr>
+                <td>Avg. Flake8 Errors</td>
+                <td>24.05</td>
+                <td>10.00</td>
+                <td>85.00</td>
+                <td>15.79</td>
+            </tr>
+            
+            <tr>
+                <td>Avg. MyPy Errors</td>
+                <td>1.50</td>
+                <td>0.00</td>
+                <td>16.00</td>
+                <td>3.85</td>
+            </tr>
+            </table>
+        
+        <h3>Detailed Runs</h3><table><tr><th>Run #</th><th>Credibility</th><th>Perplexity</th><th>Exec. Success</th><th>Syntax Valid</th><th>Report Link</th></tr>
+        <tr>
+            <td>1</td>
+            <td>73.22</td>
+            <td>1.09</td>
+            <td>True</td>
+            <td>True</td>
+            <td><a href="report_1/report.html">View Report</a></td>
+        </tr>
+        
+        <tr>
+            <td>2</td>
+            <td>73.64</td>
+            <td>1.08</td>
+            <td>True</td>
+            <td>True</td>
+            <td><a href="report_2/report.html">View Report</a></td>
+        </tr>
+        
+        <tr>
+            <td>3</td>
+            <td>28.52</td>
+            <td>1.12</td>
+            <td>False</td>
+            <td>True</td>
+            <td><a href="report_3/report.html">View Report</a></td>
+        </tr>
+        
+        <tr>
+            <td>4</td>
+            <td>76.48</td>
+            <td>1.09</td>
+            <td>True</td>
+            <td>True</td>
+            <td><a href="report_4/report.html">View Report</a></td>
+        </tr>
+        
+        <tr>
+            <td>5</td>
+            <td>72.84</td>
+            <td>1.11</td>
+            <td>True</td>
+            <td>True</td>
+            <td><a href="report_5/report.html">View Report</a></td>
+        </tr>
+        
+        <tr>
+            <td>6</td>
+            <td>80.27</td>
+            <td>1.07</td>
+            <td>True</td>
+            <td>True</td>
+            <td><a href="report_6/report.html">View Report</a></td>
+        </tr>
+        
+        <tr>
+            <td>7</td>
+            <td>76.62</td>
+            <td>1.07</td>
+            <td>True</td>
+            <td>True</td>
+            <td><a href="report_7/report.html">View Report</a></td>
+        </tr>
+        
+        <tr>
+            <td>8</td>
+            <td>77.89</td>
+            <td>1.07</td>
+            <td>True</td>
+            <td>True</td>
+            <td><a href="report_8/report.html">View Report</a></td>
+        </tr>
+        
+        <tr>
+            <td>9</td>
+            <td>72.19</td>
+            <td>1.09</td>
+            <td>True</td>
+            <td>True</td>
+            <td><a href="report_9/report.html">View Report</a></td>
+        </tr>
+        
+        <tr>
+            <td>10</td>
+            <td>69.64</td>
+            <td>1.09</td>
+            <td>True</td>
+            <td>True</td>
+            <td><a href="report_10/report.html">View Report</a></td>
+        </tr>
+        
+        <tr>
+            <td>11</td>
+            <td>82.70</td>
+            <td>1.12</td>
+            <td>True</td>
+            <td>True</td>
+            <td><a href="report_11/report.html">View Report</a></td>
+        </tr>
+        
+        <tr>
+            <td>12</td>
+            <td>75.18</td>
+            <td>1.07</td>
+            <td>True</td>
+            <td>True</td>
+            <td><a href="report_12/report.html">View Report</a></td>
+        </tr>
+        
+        <tr>
+            <td>13</td>
+            <td>64.13</td>
+            <td>1.08</td>
+            <td>True</td>
+            <td>True</td>
+            <td><a href="report_13/report.html">View Report</a></td>
+        </tr>
+        
+        <tr>
+            <td>14</td>
+            <td>81.51</td>
+            <td>1.15</td>
+            <td>True</td>
+            <td>True</td>
+            <td><a href="report_14/report.html">View Report</a></td>
+        </tr>
+        
+        <tr>
+            <td>15</td>
+            <td>75.09</td>
+            <td>1.12</td>
+            <td>True</td>
+            <td>True</td>
+            <td><a href="report_15/report.html">View Report</a></td>
+        </tr>
+        
+        <tr>
+            <td>16</td>
+            <td>79.35</td>
+            <td>1.10</td>
+            <td>True</td>
+            <td>True</td>
+            <td><a href="report_16/report.html">View Report</a></td>
+        </tr>
+        
+        <tr>
+            <td>17</td>
+            <td>79.32</td>
+            <td>1.12</td>
+            <td>True</td>
+            <td>True</td>
+            <td><a href="report_17/report.html">View Report</a></td>
+        </tr>
+        
+        <tr>
+            <td>18</td>
+            <td>78.42</td>
+            <td>1.10</td>
+            <td>True</td>
+            <td>True</td>
+            <td><a href="report_18/report.html">View Report</a></td>
+        </tr>
+        
+        <tr>
+            <td>19</td>
+            <td>71.39</td>
+            <td>1.06</td>
+            <td>True</td>
+            <td>True</td>
+            <td><a href="report_19/report.html">View Report</a></td>
+        </tr>
+        
+        <tr>
+            <td>20</td>
+            <td>63.27</td>
+            <td>1.07</td>
+            <td>True</td>
+            <td>True</td>
+            <td><a href="report_20/report.html">View Report</a></td>
+        </tr>
+        </table>
+        
+    </div>
+</body>
+</html>
+    

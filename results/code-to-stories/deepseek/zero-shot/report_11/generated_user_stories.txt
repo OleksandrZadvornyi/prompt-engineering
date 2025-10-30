@@ -1,0 +1,18 @@
+Here are the user stories based on the Python code:
+
+1. As a system administrator, I want to log submission status changes, so that I can track the processing of FABS submissions.  
+2. As a data processor, I want to update FABS submission statuses, so that submissions progress through the correct workflow stages.  
+3. As a system architect, I want to prevent double publishing of submissions, so that we avoid duplicate data in the system.  
+4. As a compliance officer, I want to check GTAS window status, so that I know when the system is locked down for reporting periods.  
+5. As a data validator, I want to update validation rules, so that data quality checks remain current with requirements.  
+6. As a data cleaner, I want to process historical deletions, so that obsolete data is removed from the system.  
+7. As a data analyst, I want to generate D files from FPDS and FABS data, so that we have consolidated reporting files.  
+8. As a data validator, I want to validate flex fields, so that we maintain system performance while handling custom fields.  
+9. As a data processor, I want to derive FundingAgencyCode, so that submissions with special PPoPCodes get proper agency codes.  
+10. As a UX researcher, I want to generate user testing reports, so that we can improve the user experience for agencies.  
+11. As a UI designer, I want to redesign the Resources page, so that it matches our new design system standards.  
+12. As a testing coordinator, I want to schedule user testing, so that we can gather feedback with proper advance notice.  
+13. As a data validator, I want to validate loan records, so that we properly handle zero and blank amount values.  
+14. As a documentation specialist, I want to update the FABS sample file, so that it reflects the current schema requirements.  
+15. As a data processor, I want to sync D1 generation with FPDS updates, so that reports always use the most current data.  
+16. As a system monitor, I want to check if FPDS data has been updated, so that I know when to trigger report regeneration.

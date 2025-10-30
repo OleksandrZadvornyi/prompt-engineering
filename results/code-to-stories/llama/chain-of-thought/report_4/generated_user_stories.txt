@@ -1,0 +1,11 @@
+As a system administrator, I want to add users to the system, so that I can manage user accounts.
+As a data analyst, I want to load data from FPDS, FABS, and DABS data sources, so that I can access and process the data.
+As a developer, I want to create a submission dashboard to track and manage submissions, so that I can monitor the status of submissions.
+As a quality assurance engineer, I want to validate FABS submissions against a set of predefined rules, so that I can ensure data quality and accuracy.
+As a system operator, I want to process FABS submissions, so that I can automate the workflow and improve efficiency.
+As an application owner, I want to monitor my applications with New Relic, so that I can detect performance issues and optimize application performance.
+As a system user, I want to run the Broker app, so that I can access its features and functionality.
+As a data manager, I want to add validation rules to the FABS validator, so that I can customize the validation process and enforce data standards.
+As a submission manager, I want to add submissions to the submission dashboard, so that I can track and manage the submission workflow.
+As a monitoring specialist, I want to add applications to the New Relic monitor, so that I can monitor their performance and detect issues.
+As a system maintainer, I want to get a list of users, submissions, and applications, so that I can perform maintenance and troubleshooting tasks.

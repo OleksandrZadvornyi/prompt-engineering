@@ -1,0 +1,8 @@
+{
+  "(2,)": "As a system administrator, I want to set up logging, so that I can monitor and troubleshoot system activities effectively As a system administrator, I want to add new validation rules, so that I can adapt to changing requirements",
+  "(1,)": "As a developer, I want to define enumeration types for publish status, submission types, and action types, so that I can standardize and restrict possible values in the system As a developer, I want to encapsulate related functionality in services (SubmissionService, UIEditor, DataService), so that the code remains organized and maintainable",
+  "(5,)": "As a validator, I want to define validation rules with descriptions and error messages, so that I can ensure data quality and consistency",
+  "(0,)": "As a system, I want to validate submissions against predefined rules, so that I can catch errors before publication",
+  "(4,)": "As a UI designer, I want to create new design versions for pages, so that I can iterate on user interfaces As a UI designer, I want to submit designs for approval, so that they can be reviewed and deployed",
+  "(3,)": "As a data manager, I want to process data deletions for specific dates, so that I can maintain data hygiene As a data consumer, I want to get published files by submission type, so that I can access relevant data efficiently"
+}

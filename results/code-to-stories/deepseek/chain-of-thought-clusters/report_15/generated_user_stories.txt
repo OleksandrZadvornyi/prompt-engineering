@@ -1,0 +1,40 @@
+Here are the user stories for the provided Python code:
+
+As a Data Administrator, I want to process deletions for a specific date, so that data remains clean and up-to-date.  
+As a UI Designer, I want to redesign the Resources page, so that it matches new Broker styles.  
+As a UI Designer, I want to report user testing results to agencies, so that they can review feedback.  
+As a DevOps Engineer, I want to configure New Relic for all applications, so that we can monitor performance and errors.  
+As a Broker User, I want to sync D1 file generation with FPDS data load, so that files are generated only when data is updated.  
+As a Broker User, I want to update SQL codes for clarity, so that queries are easier to maintain.  
+As a Broker User, I want to improve PPoPCode derivation logic, so that it includes special cases like 00***** and 00FORGN.  
+As a Broker User, I want to derive FundingAgencyCode, so that data quality is improved.  
+As a Broker User, I want to map FederalActionObligation to Atom Feed, so that financial data is accurately reflected.  
+As a Broker User, I want to validate PPoP ZIP codes, so that they match Legal Entity ZIP entries.  
+As a UI Designer, I want to edit landing pages (DABS/FABS/Homepage/Help), so that content remains current.  
+As a UI Designer, I want to schedule user testing with advanced notice, so that participants are prepared.  
+As a UI Designer, I want to track Tech Thursday issues, so that they can be addressed in testing.  
+As a UI Designer, I want to create a summary of UI testing results, so that improvements can be documented.  
+As a Developer, I want to enhance logging for troubleshooting, so that issues are easier to diagnose.  
+As a Developer, I want to ensure only grant records are sent to USAspending, so that data integrity is maintained.  
+As a Developer, I want to update the header info box with date and time, so that users see accurate timestamps.  
+As a Website User, I want to access published FABS files, so that I can review the latest data.  
+As a Developer, I want to update FABS submission status when publishStatus changes, so that records stay synchronized.  
+As a Developer, I want to add GTAS window data to the database, so that financial tracking is complete.  
+As a Developer, I want to update the FABS sample file, so that outdated fields like FundingAgencyCode are removed.  
+As a Developer, I want to deactivate the publish button during derivations, so that users don’t submit incomplete data.  
+As a Developer, I want to load historical FABS data with derived fields, so that past records are consistent.  
+As a FABS User, I want to get accurate frontend URLs for pages, so that navigation is seamless.  
+As a FABS User, I want to get additional helpful info for the submission dashboard, so that I can track progress.  
+As a Broker User, I want to update error message text for accuracy, so that users receive clear feedback.  
+As a Broker User, I want to update validation rules, so that they align with latest requirements.  
+As a User, I want to validate DUNS based on ActionType and dates, so that records meet compliance standards.  
+As a Developer, I want to cache D Files generation requests, so that duplicate processing is avoided.  
+As a Developer, I want to prevent double publishing of FABS submissions, so that data isn’t duplicated.  
+As an Agency User, I want to handle large numbers of flexfields efficiently, so that performance isn’t impacted.  
+As an Agency User, I want to validate FABS records for zero/blank values, so that loan data is accurate.  
+As an Agency User, I want to ensure SAM data is complete, so that records are reliable.  
+As a Data User, I want to get daily updates for FABS records, so that I stay informed.  
+As a Developer, I want to derive office names from office codes, so that displays are user-friendly.  
+As a Developer, I want to update the SAMPLE FILE link in the dialog, so that users access the correct resource.  
+As a Developer, I want to handle partial ZIP codes, so that validation is flexible.  
+As a Developer, I want to update status labels on the Submission Dashboard, so that progress is clearly indicated.

@@ -1,0 +1,6 @@
+{
+  "(1,)": "As a Broker user, I want to upload and validate a file, so that I can ensure the file is in the correct format and can be processed As a DevOps Engineer, I want to configure New Relic, so that I can monitor and optimize the system's performance",
+  "(2,)": "As a FABS user, I want to submit a FABS file, so that I can provide financial data to the system As a Developer, I want to add GTAS window data to the database, so that I can provide up-to-date financial information to the system As a Data user, I want to process deletions, so that I can remove outdated or unnecessary data from the system",
+  "(0,)": "As a Developer, I want to update the Broker validation rule table, so that I can ensure the system is using the latest validation rules",
+  "(3,)": "As a UI Designer, I want to redesign the Resources page, so that I can improve the user experience As a UI Designer, I want to report user testing results, so that I can identify areas for improvement"
+}

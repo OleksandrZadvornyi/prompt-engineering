@@ -1,0 +1,7 @@
+{
+  "(2,)": "As a FABSUser, I want to upload files in .xls or .csv format, so that I can contribute data to the system As a DataUser, I want to access additional fields from the FPDS data pull, so that I can enhance the data I am working with",
+  "(4,)": "As a FABSUser, I want to download my uploaded files, so that I can access them whenever necessary",
+  "(1,)": "As a BrokerUser, I want to submit records with required fields, so that I can ensure compliance with data standards As a BrokerUser, I want to validate my records before submission, so that I can avoid errors and ensure data integrity As a DataUser, I want to update FABS records, so that I can keep data current and accurate As a Developer, I want to update the validation rule table, so that I can maintain accurate data validation logic As a Developer, I want to validate FABS submissions, so that I can ensure that the data being submitted meets specified criteria",
+  "(0,)": "As a UIComponent, I want to redesign the Resources page, so that it aligns with the new Broker design styles for a better user experience",
+  "(3,)": "As a Developer, I want to prevent double publishing of submissions, so that I can mitigate the risk of data duplication As a SubmissionDashboard, I want to add submissions to the dashboard, so that I can track and manage submissions effectively As a SubmissionDashboard, I want to display the status of submissions, so that I can keep users informed about the progress of their submissions"
+}

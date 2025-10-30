@@ -19,10 +19,10 @@
     },
     "execution_metrics": {
         "execution_success": true,
-        "execution_time_sec": 0.663,
+        "execution_time_sec": 0.432,
         "exception_type": "",
         "exception_message": "",
         "runtime_output": "Submission 1 processed successfully.\nRedesigning Resources page to match new Broker design styles.\nGenerating report for Agencies based on user testing results.\nSynchronizing D1 file generation with FPDS data load.\nTracking issues from Tech Thursday for testing."
     },
-    "total_credibility": 75.4
+    "total_credibility": 78.37
 }

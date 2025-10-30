@@ -1,0 +1,28 @@
+{
+    "request_number": 4,
+    "timestamp": "2025-10-26 15:06:01",
+    "model": "meta-llama/llama-3.3-70b-instruct",
+    "prompt_variant": "zero-shot",
+    "total_tokens": 1250,
+    "avg_prob": 0.9057521486467488,
+    "perplexity": 1.1040547919141714,
+    "struct_metrics": {
+        "avg_cyclomatic_complexity": 1,
+        "ast_depth": 8,
+        "avg_function_size_lines": 3.8125,
+        "import_redundancy_ratio": 0.0
+    },
+    "semantic_metrics": {
+        "syntax_valid": true,
+        "flake8_error_count": 20,
+        "mypy_error_count": 0
+    },
+    "execution_metrics": {
+        "execution_success": true,
+        "execution_time_sec": 0.551,
+        "exception_type": "",
+        "exception_message": "",
+        "runtime_output": "INFO:root:Processing deletions for 12-19-2017\nINFO:root:Redesigning Resources page\nINFO:root:Submission 123: Submission created\nINFO:root:Updating FABS submission 123 to Published\nINFO:root:Preventing double publishing for FABS submission 123\nINFO:root:Validating error message: Error message\nINFO:root:Validating PPoPZIP: Citywide PPoPZIP\nINFO:root:Updating error code: Error code\nINFO:root:Accessing Broker application data\nINFO:root:Granting read-only access to DABS\nINFO:root:Surrounding Data element with quotation marks\nINFO:root:Getting submission period\nINFO:root:Updating SAMPLE FILE link\nINFO:root:Updating status labels on Submission Dashboard\nINFO:root:Updating PPoPCode and PPoPCongressionalDistrict data\nINFO:root:Downloading uploaded FABS file"
+    },
+    "total_credibility": 82.37
+}

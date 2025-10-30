@@ -1,0 +1,8 @@
+{
+  "(2,)": "As a user, I want to upload data entries, so that I can maintain a record of transactions",
+  "(1,)": "As a user, I want to validate uploaded entries for DUNS and required fields, so that I can ensure data integrity before processing As a user, I want to generate D files from validated submissions, so that I can proceed with the next steps in processing As a user, I want to derive office names from their codes, so that I can present human-readable information in my reports As a user, I want to sync data with FPDS, so that I can keep my records up to date and ensure compliance",
+  "(5,)": "As a user, I want to receive error messages for validation failures, so that I can correct any issues before submitting the data",
+  "(0,)": "As a user, I want to update validation rules, so that I can adapt to new data requirements as necessary",
+  "(3,)": "As a user, I want to process submissions and receive status updates, so that I can track the progress of my entries As a user, I want to retrieve the history of submissions and their statuses, so that I can review past actions and outcomes",
+  "(4,)": "As a user, I want to log submission errors with their IDs, so that I have a clear record of issues to address"
+}

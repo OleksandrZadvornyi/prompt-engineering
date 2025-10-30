@@ -1,0 +1,5 @@
+{
+  "(2,)": "As a FABS User, I want to submit a record for an agency, so that I can create a submission entry in the database As a FABS User, I want to download an uploaded FABS file for a specific submission ID, so that I can access previously submitted data As a Developer, I want to log when the status of a submission changes, so that I can track the history of submission updates",
+  "(0,)": "As a Developer, I want to update the validation rules for submissions, so that I can ensure compliance with the latest requirements",
+  "(1,)": "As a Data User, I want to access FPDS data, so that I can retrieve information related to federal procurement data As a Data User, I want to receive updates to FABS records, so that I can stay informed about changes and new submissions"
+}

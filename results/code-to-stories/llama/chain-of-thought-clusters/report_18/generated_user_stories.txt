@@ -1,0 +1,92 @@
+As a BrokerUser, I want to upload and validate error messages, so that I can ensure errors are properly documented and addressed.
+As a BrokerUser, I want to submit records, so that I can share my data with others.
+As a FabUser, I want to submit FABS files, so that I can share my financial assistance data.
+As a FabUser, I want to get submission status, so that I can track the progress of my submissions.
+As an AgencyUser, I want to get file-level errors, so that I can identify and fix issues with my files.
+As an AgencyUser, I want to submit data elements, so that I can share my data with others.
+As a Developer, I want to update the Broker validation rule table, so that I can ensure data quality and accuracy.
+As a Developer, I want to clarify CFDA error codes, so that I can better understand and address errors.
+As a Developer, I want to prevent duplicate transactions, so that I can maintain data integrity.
+As a DataUser, I want to access raw agency published files, so that I can analyze and use the data.
+As a DataUser, I want to get updated financial assistance data, so that I can have the latest information.
+As a Tester, I want to test features in environments, so that I can ensure the system works as expected.
+As a Tester, I want to ensure FABS is deriving fields properly, so that I can trust the data.
+As an administrator, I want to process deletions, so that I can maintain data integrity.
+As an administrator, I want to redesign the resources page, so that I can improve the user experience.
+As an administrator, I want to report to agencies, so that I can fulfill my reporting obligations.
+As an administrator, I want to provide useful data, so that I can support decision-making.
+As an administrator, I want to sync D1 file generation, so that I can ensure data consistency.
+As an administrator, I want to update SQL codes, so that I can maintain data accuracy.
+As an administrator, I want to add PPoPCode cases, so that I can improve data quality.
+As an administrator, I want to derive funding agency codes, so that I can accurately identify funding sources.
+As an administrator, I want to map federal action obligations, so that I can understand the scope of federal actions.
+As an administrator, I want to make PPoPZIP+4 work, so that I can improve data quality.
+As an administrator, I want to move on to round 2 of DABS landing page edits, so that I can continue improving the user experience.
+As an administrator, I want to move on to round 2 of homepage edits, so that I can continue improving the user experience.
+As an administrator, I want to move on to round 3 of help page edits, so that I can continue improving the user experience.
+As an administrator, I want to log better, so that I can improve system performance and debugging.
+As an administrator, I want to access published FABS files, so that I can analyze and use the data.
+As an administrator, I want to send grant records, so that I can fulfill my reporting obligations.
+As an administrator, I want to create content mockups, so that I can plan and design new content.
+As an administrator, I want to track issues, so that I can identify and address problems.
+As an administrator, I want to create a user testing summary, so that I can evaluate system usability.
+As an administrator, I want to begin user testing, so that I can evaluate system usability.
+As an administrator, I want to schedule user testing, so that I can plan and coordinate testing.
+As an administrator, I want to design a schedule, so that I can plan and manage my work.
+As an administrator, I want to design an audit, so that I can evaluate system performance and compliance.
+As an administrator, I want to reset the environment, so that I can start with a clean slate.
+As an administrator, I want to index domain models, so that I can improve system performance and data quality.
+As an administrator, I want to show the updated date and time, so that I can provide accurate and timely information.
+As an administrator, I want to justify padding, so that I can improve system performance and usability.
+As an administrator, I want to update error codes, so that I can improve system accuracy and reliability.
+As an administrator, I want to access Broker application data, so that I can analyze and use the data.
+As an administrator, I want to have read-only access to DABS, so that I can view but not modify data.
+As an administrator, I want to navigate to FABS or DABS pages, so that I can access and use the data.
+As an administrator, I want to add updates to FABS submission, so that I can improve data quality and accuracy.
+As an administrator, I want to add GTAS window data, so that I can provide accurate and timely information.
+As an administrator, I want to update the FABS sample file, so that I can provide accurate and helpful examples.
+As an administrator, I want to deactivate the publish button, so that I can control access to data.
+As an administrator, I want to derive fields in the historical FABS loader, so that I can improve data quality and accuracy.
+As an administrator, I want to include FREC derivations, so that I can improve data quality and accuracy.
+As an administrator, I want to update frontend URLs, so that I can improve system usability and navigation.
+As an administrator, I want to include historical FPDS data, so that I can provide accurate and complete information.
+As an administrator, I want to provide FABS groups, so that I can improve data organization and usability.
+As an administrator, I want to include necessary columns, so that I can provide accurate and complete information.
+As an administrator, I want to access additional fields, so that I can analyze and use the data.
+As an administrator, I want to add helpful information to the submission dashboard, so that I can improve system usability and user experience.
+As an administrator, I want to download uploaded FABS files, so that I can analyze and use the data.
+As an administrator, I want to determine the best way to load historical FPDS data, so that I can improve data quality and accuracy.
+As an administrator, I want to use appropriate language, so that I can improve system usability and user experience.
+As an administrator, I want to not show DABS banner messages, so that I can control the user experience.
+As an administrator, I want to know submission periods, so that I can plan and manage my work.
+As an administrator, I want to upload and validate error messages, so that I can ensure errors are properly documented and addressed.
+As an administrator, I want to update the Broker validation rule table, so that I can ensure data quality and accuracy.
+As an administrator, I want to appear in warning and error files, so that I can identify and address issues.
+As an administrator, I want to clarify CFDA error codes, so that I can better understand and address errors.
+As an administrator, I want to ensure Broker resources are updated, so that I can provide accurate and helpful information.
+As an administrator, I want to accept zero and blank for loan records, so that I can improve data quality and accuracy.
+As an administrator, I want to receive updates to FABS records, so that I can stay informed and up-to-date.
+As an administrator, I want to ensure deleted FSRS records are not included, so that I can maintain data integrity.
+As an administrator, I want to accept zero and blank for non-loan records, so that I can improve data quality and accuracy.
+As an administrator, I want to derive data elements properly, so that I can improve data quality and accuracy.
+As an administrator, I want to match the max length for LegalEntityAddressLine3, so that I can improve data quality and accuracy.
+As an administrator, I want to use schema v1.1 headers, so that I can improve data quality and accuracy.
+As an administrator, I want to deploy FABS into production, so that I can make the system available to users.
+As an administrator, I want to ensure data from SAM is complete, so that I can provide accurate and complete information.
+As an administrator, I want to get File F in the correct format, so that I can improve data quality and accuracy.
+As an administrator, I want to understand file-level errors, so that I can identify and address issues.
+As an administrator, I want to submit data elements surrounded by quotation marks, so that I can improve data quality and accuracy.
+As an administrator, I want to manage D Files generation requests, so that I can control and coordinate data generation.
+As an administrator, I want to access raw agency published files, so that I can analyze and use the data.
+As an administrator, I want to include a large number of flexfields, so that I can improve data quality and accuracy.
+As an administrator, I want to prevent double publishing FABS submissions, so that I can maintain data integrity.
+As an administrator, I want to see updated financial assistance data daily, so that I can stay informed and up-to-date.
+As an administrator, I want to prevent correct or delete non-existent records, so that I can maintain data integrity.
+As an administrator, I want to have accurate and complete data, so that I can provide reliable and trustworthy information.
+As an administrator, I want to not see NASA grants as contracts, so that I can improve data quality and accuracy.
+As an administrator, I want to determine the best way to load historical FPDS data, so that I can improve data quality and accuracy.
+As an administrator, I want to generate and validate D Files, so that I can improve data quality and accuracy.
+As an administrator, I want to test features in environments, so that I can ensure the system works as expected.
+As an administrator, I want to see correct status labels on the Submission Dashboard, so that I can improve system usability and user experience.
+As an administrator, I want to link the SAMPLE FILE, so that I can provide accurate and helpful examples.
+As an administrator, I want to leave off the last 4 digits of ZIP, so that I can improve data quality and accuracy.

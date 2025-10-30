@@ -1,0 +1,28 @@
+{
+    "request_number": 10,
+    "timestamp": "2025-10-26 15:53:16",
+    "model": "meta-llama/llama-3.3-70b-instruct",
+    "prompt_variant": "zero-shot-clusters",
+    "total_tokens": 3998,
+    "avg_prob": 0.9704903360160844,
+    "perplexity": 1.0304069632522612,
+    "struct_metrics": {
+        "avg_cyclomatic_complexity": 1,
+        "ast_depth": 8,
+        "avg_function_size_lines": 4,
+        "import_redundancy_ratio": 0.0
+    },
+    "semantic_metrics": {
+        "syntax_valid": true,
+        "flake8_error_count": 96,
+        "mypy_error_count": 2
+    },
+    "execution_metrics": {
+        "execution_success": true,
+        "execution_time_sec": 0.412,
+        "exception_type": "",
+        "exception_message": "",
+        "runtime_output": "Processing deletions for 12-19-2017\nRedesigned Resources page\nReported user testing to Agencies\nProvided New Relic data\nSynced D1 file generation\nUpdated SQL codes\nAdded PPoPCode cases\nDerived FundingAgencyCode\nMapped FederalActionObligation\nValidated PPoPZIP\nMoved to round 2 of DABS or FABS landing page edits\nMoved to round 2 of Homepage edits\nMoved to round 3 of the Help page edits\nImproved logging\nAccessed published FABS files\nSent grant records\nCreated content mockups\nTracked issues\nCreated user testing summary\nBegan user testing\nScheduled user testing\nDesigned schedule\nDesigned audit\nReset environment\nIndexed domain models\nUpdated header information box\nJustified padding\nUpdated error codes\nAccessed Broker application data\nViewed DABS pages\nNavigated to FABS or DABS pages\nUpdated FABS submission\nAdded GTAS window data\nUpdated FABS sample file\nDeactivated publish button\nDerived fields\nIncluded FREC derivations\nUpdated frontend URLs\nLoaded historical FPDS data\nProvided FABS groups\nIncluded necessary columns\nAccessed additional fields\nDisplayed submission errors\nDownloaded FABS file\nDetermined best way to load FPDS data\nDisplayed language\nHid DABS banner messages\nDisplayed submission periods\nUploaded and validated error message\nUpdated Broker validation rule table\nDisplayed flexfields\nClarified CFDA error code\nUpdated Broker resources\nAccepted DUNS validations\nReceived file-level error\nPrevented duplicate transactions\nManaged D Files generation requests\nAccessed raw agency published files\nIncluded large number of flexfields\nPrevented double publishing\nDisplayed updated financial assistance data\nPrevented non-existent records\nAccessed PPoPCode and PPoPCongressionalDistrict data\nHid NASA grants\nGenerated and validated D Files\nTested features\nDisplayed submission status\nDerived fields properly\nSubmitted records\nDisplayed publishing information\nValidated PPoPZIP\nRan validations\nReceived FABS updates\nExcluded deleted FSRS records\nAccepted zero and blank\nDeployed FABS\nEnsured complete data\nDerived data elements\nUpdated LegalEntityAddressLine3\nUsed schema v1.1 headers\nLoaded FPDS data\nLoaded historical Financial Assistance data\nLoaded historical FPDS data\nGot File F\nUnderstood file-level errors\nSubmitted data with quotation marks\nDerived office names\nLinked SAMPLE FILE\nLeft off last 4 digits of ZIP\nDisplayed correct status labels"
+    },
+    "total_credibility": 76.66
+}

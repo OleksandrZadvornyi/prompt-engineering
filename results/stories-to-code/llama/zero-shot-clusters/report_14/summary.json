@@ -1,0 +1,28 @@
+{
+    "request_number": 14,
+    "timestamp": "2025-10-26 15:55:08",
+    "model": "meta-llama/llama-3.3-70b-instruct",
+    "prompt_variant": "zero-shot-clusters",
+    "total_tokens": 883,
+    "avg_prob": 0.8862464132592659,
+    "perplexity": 1.1283543549952355,
+    "struct_metrics": {
+        "avg_cyclomatic_complexity": 1.4,
+        "ast_depth": 9,
+        "avg_function_size_lines": 3.45,
+        "import_redundancy_ratio": 0.0
+    },
+    "semantic_metrics": {
+        "syntax_valid": true,
+        "flake8_error_count": 20,
+        "mypy_error_count": 1
+    },
+    "execution_metrics": {
+        "execution_success": true,
+        "execution_time_sec": 0.435,
+        "exception_type": "",
+        "exception_message": "",
+        "runtime_output": "SUBMITTED\n['Record 1', 'Record 2', 'Record 3', 'Record 4', 'Record 5', 'Record 6', 'Record 7', 'Record 8', 'Record 9', 'Record 10']\nD file for submission 1\nDerived PPoP code"
+    },
+    "total_credibility": 80.92
+}

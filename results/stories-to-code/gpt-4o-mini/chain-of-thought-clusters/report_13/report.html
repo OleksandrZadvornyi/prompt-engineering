@@ -1,0 +1,434 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analysis Report: Run 13</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 24px;
+            background-color: #ffffff;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        h1, h2, h3 {
+            color: #111;
+            margin-top: 1.2em;
+            margin-bottom: 0.6em;
+        }
+        h1 {
+            font-size: 2em;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+        }
+        h2 {
+            font-size: 1.5em;
+            color: #555;
+        }
+        h3 {
+            font-size: 1.2em;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f7f7f7;
+            font-weight: 600;
+            width: 30%;
+        }
+        td {
+            background-color: #fff;
+        }
+        details {
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            margin-bottom: 10px;
+            background-color: #fff;
+        }
+        summary {
+            padding: 12px;
+            font-weight: 600;
+            cursor: pointer;
+            background-color: #f7f7f7;
+        }
+        summary:hover {
+            background-color: #eee;
+        }
+        pre {
+            background-color: #fdfdfd;
+            border-top: 1px solid #eee;
+            padding: 15px;
+            margin: 0;
+            overflow-x: auto;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            font-size: 0.9em;
+            line-height: 1.6;
+        }
+        code {
+            font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+        }
+        .credibility-score {
+            font-size: 1.8em;
+            font-weight: bold;
+            color: #005fdd;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Analysis Report #13</h1>
+        <h2>openai/gpt-4o-mini</h2>
+        <p><strong>Prompt Variant:</strong> chain-of-thought-clusters</p>
+
+        <h3>Total Credibility Score</h3>
+        <p class="credibility-score">90.46%</p>
+
+        
+    <h3>Key Metrics</h3>
+    <table>
+        <tr><th>Perplexity</th><td>1.0864</td></tr>
+<tr><th>Avg. Probability</th><td>0.9204</td></tr>
+<tr><th>Total Tokens</th><td>2333</td></tr>
+
+    </table>
+    
+        
+    <h3>Execution Metrics</h3>
+    <table>
+        <tr><th>Execution Success</th><td>True</td></tr>
+<tr><th>Execution Time Sec</th><td>0.5050</td></tr>
+<tr><th>Exception Type</th><td></td></tr>
+<tr><th>Exception Message</th><td></td></tr>
+<tr><th>Runtime Output</th><td>Processing Cluster 4:
+ - Data user: Process the 12-19-2017 deletions
+ - UI designer: Redesign the Resources page to match new Broker design styles
+ - UI designer: Report to the Agencies about user testing
+ - DevOps engineer: New Relic to provide useful data across all applications
+ - Broker user: Sync D1 file generation with FPDS data load
+ - Broker team member: Update SQL codes for clarity
+ - Broker team member: Add 00***** and 00FORGN PPoPCode cases to derivation logic
+ - Broker team member: Derive FundingAgencyCode for data quality
+ - Agency user: Map FederalActionObligation properly to the Atom Feed
+ - Broker user: Ensure PPoPZIP+4 works same as Legal Entity ZIP validations
+Processing Cluster 5:
+ - UI designer: Move on to round 2 of DABS or FABS landing page edits
+ - UI designer: Move on to round 2 of Homepage edits
+ - UI designer: Move on to round 3 of Help page edits
+ - Developer: Log better for troubleshooting
+ - Website user: Access published FABS files
+ - Owner: Ensure USAspending only sends grant records
+ - Broker user: Help create content mockups
+ - UI designer: Track issues from Tech Thursday
+ - Owner: Create user testing summary from UI SME
+ - UI designer: Begin user testing to validate UI requests
+ - UI designer: Schedule user testing
+ - Owner: Design a schedule from UI SME
+ - Owner: Design an audit from UI SME
+ - Owner: Reset environment to Staging MAX permissions
+ - Developer: Index domain models properly
+ - Agency user: Show updated date AND time in header info
+ - Owner: Only allow zero-padded fields
+ - Broker user: Update error codes for clarity
+ - Developer: Quickly access Broker application data
+ - FABS user: Have read-only access to DABS
+ - Agency user: Create a landing page for FABS and DABS navigation
+Processing Cluster 2:
+ - Developer: Add updates on FABS submission when publishStatus changes
+ - Developer: Add GTAS window data to database
+ - Developer: Update FABS sample file to remove FundingAgencyCode
+ - User: Deactivate publish button after clicking
+ - Broker user: Derive fields in historical FABS loader
+ - Developer: Include FREC derivations from historical FABS data load
+ - FABS user: Improve frontend URL accuracy
+ - Developer: Include extracted historical data in FPDS loader
+ - Developer: Provide FABS groups under FREC paradigm
+ - FABS user: Ensure historical data includes necessary columns
+ - Data user: Access two additional fields from FPDS data pull
+ - FABS user: Include additional info in submission dashboard
+ - FABS user: Download uploaded FABS file
+ - Developer: Determine best way to load historical FPDS data
+ - FABS user: Ensure FABS page language is appropriate
+ - FABS user: Avoid DABS banner messages on FABS pages
+ - Agency user: Know when submission periods start and end
+Processing Cluster 0:
+ - Broker user: Upload and validate error message accuracy
+ - Developer: Update Broker validation rule table for rule updates
+ - User: Flexfields appear in warning/error files on missing required element
+ - Developer: Clarify CFDA error code triggers
+ - Broker team member: Ensure resources and validations updated for FABS launch
+ - User: DUNS validations accept records with ActionTypes B, C, or D
+ - User: DUNS validations accept records with ActionDates before registration date
+ - Agency user: Receive helpful file-level error for wrong extension uploads
+ - Developer: Prevent duplicate transactions on publish decisions
+Processing Cluster 1:
+ - Developer: Manage and cache D Files generation requests
+ - User: Access raw agency published files from FABS
+ - Agency user: Include large number of flexfields without performance impact
+ - Developer: Prevent double publishing after refreshing
+ - Agency user: Include large number of flexfields without performance impact
+ - Website user: See updated financial assistance data daily
+ - Developer: Prevent attempts to correct or delete non-existent records
+ - User: Have accurate and complete data for PPoPCode and PPoPCongressionalDistrict
+ - User: Avoid seeing NASA grants displayed as contracts
+ - User: Access raw agency published files from FABS
+ - Developer: Determine how agencies will generate and validate D Files
+ - User: Generate and validate D Files from FABS and FPDS data
+ - Tester: Access test features in nonProd environments
+ - FABS user: Ensure submission errors represent FABS errors accurately
+ - Agency user: See who created a submission accurately
+ - Tester: Ensure FABS derives fields properly with a robust test file
+ - Broker user: Submit records for individual recipients without DUNS error
+ - User: Know how many rows will be published before publishing
+ - FABS user: Submit citywide as PPoPZIP without errors
+ - FABS user: Ensure validations run in a reasonable time
+Processing Cluster 3:
+ - Data user: Receive updates to FABS records
+ - Agency user: Ensure deleted FSRS records are excluded from submissions
+ - Agency user: FABS validation rules accept zero and blank for loan records
+ - Agency user: Deploy FABS into production for data submission
+ - Agency user: Ensure data from SAM is complete
+ - Agency user: FABS validation rules accept zero and blank for non-loan records
+ - Agency user: Derive all required data elements properly
+ - Agency user: Match LegalEntityAddressLine3 length to Schema v1.1
+ - Agency user: Use schema v1.1 headers in FABS file
+ - Agency user: Update FPDS data daily
+ - Agency user: Load all historical Financial Assistance data for FABS go-live
+ - Agency user: Load historical FPDS data
+ - Agency user: Get File F in correct format
+ - Agency user: Understand file-level errors better
+ - Agency user: Submit data elements surrounded by quotation marks</td></tr>
+
+    </table>
+    
+        
+    <h3>Structural Metrics</h3>
+    <table>
+        <tr><th>Avg Cyclomatic Complexity</th><td>1.5000</td></tr>
+<tr><th>Ast Depth</th><td>11</td></tr>
+<tr><th>Avg Function Size Lines</th><td>2.7143</td></tr>
+<tr><th>Import Redundancy Ratio</th><td>0.0000</td></tr>
+
+    </table>
+    
+        
+    <h3>Semantic Metrics</h3>
+    <table>
+        <tr><th>Syntax Valid</th><td>True</td></tr>
+<tr><th>Flake8 Error Count</th><td>4</td></tr>
+<tr><th>Mypy Error Count</th><td>0</td></tr>
+
+    </table>
+    
+
+        <details>
+            <summary>View Full Prompt</summary>
+            <pre>First, think step-by-step to outline the necessary classes, functions, and logic. Then, generate the fully functional Python code that implements the following user stories. The code should realistically reflect the described functionality.
+
+Cluster (4,):
+As a Data user, I want to have the 12-19-2017 deletions processed. As a UI designer, I want to redesign the Resources page, so that it matches the new Broker design styles. As a UI designer, I want to report to the Agencies about user testing, so that they are aware of their contributions to making Broker a better UX. As a DevOps engineer, I want New Relic to provide useful data across all applications. As a Broker user, I want the D1 file generation to be synced with the FPDS data load, so that I don&#x27;t have to regenerate a file if no data has been updated. As a broker team member, I want to make some updates to the SQL codes for clarity. As a broker team member, I want to add the 00***** and 00FORGN PPoPCode cases to the derivation logic. As a broker team member, I want to derive FundingAgencyCode, so that the data quality and completeness improves. As a agency user, I want to map the FederalActionObligation properly to the Atom Feed. As a Broker user, I want to have PPoPZIP+4 work the same as the Legal Entity ZIP validations.
+
+Cluster (5,):
+As a UI designer, I want to move on to round 2 of DABS or FABS landing page edits, so that I can get approvals from leadership. As a UI designer, I want to move on to round 2 of Homepage edits, so that I can get approvals from leadership. As a UI designer, I want to move on to round 3 of the Help page edits, so that I can get approvals from leadership. As a Developer , I want to be able to log better, so that I can troubleshoot issues with particular submissions and functions. As a UI designer,  I want to move on to round 2 of the Help page edits, so that I can get approvals from leadership. As a UI designer, I want to move on to round 2 of Homepage edits, so that I can get approvals from leadership. As a Website user, I want to access published FABS files, so that I can see the new files as they come in. As an owner, I want to be sure that USAspending only send grant records to my system. As a Broker user, I want  to help create content mockups, so that I can submit my data efficiently. As a UI designer, I want to track the issues that come up in Tech Thursday, so that I know what to test and what want s to be fixed. As an Owner, I want to create a user testing summary from the UI SME, so that I can know what UI improvements we will follow through on. As a UI designer, I want to begin user testing, so that I can validate stakeholder UI improvement requests. As a UI designer, I want to schedule user testing, so that I can give the testers advanced notice to ensure buy-in. As an Owner, I want to design a schedule from the UI SME, so that I know the potential timeline of the UI improvements wanted. As an Owner, I want to design an audit from the UI SME, so that I know the potential scope of the UI improvements want ed. As an Owner, I want to reset the environment to only take Staging MAX permissions, so that I can ensure that the FABS testers no longer have access. As a Developer , I want my domain models to be indexed properly, so that I can get validation results back in a reasonable amount of time. As an Agency user, I want the header information box to show updated date AND time, so that I know when it was updated. As an owner, I only want zero-padded fields, so that I can justify padding. As a Broker user, I want to have updated error codes that accurately reflect the logic and provide enough information, so that I can fix my submission. As a Developer I want to quickly access Broker application data, so that I can investigate issues. As a FABS user, I want to have read-only access to DABS, so that I can view DABS pages without wanting two sets of permissions. As an agency user, I want a landing page to navigate to either FABS or DABS pages, so that I can access both sides of the site.
+
+Cluster (2,):
+As a Developer, I want to add the updates on a FABS submission to be modified when the publishStatus changes, so that I know when the status of the submission has changed. As a Developer, I want to add the GTAS window data to the database, so that I can ensure the site is locked down during the GTAS submission period. As a Developer , I want to update the FABS sample file to remove FundingAgencyCode after FABS is updated to no longer require the header. As a user, I want the publish button in FABS to deactivate after I click it while the derivations are happening, so that I cannot click it multiple times for the same submission. As a broker user, I want the historical FABS loader to derive fields, so that my agency codes are correct in the PublishedAwardFinancialAssistance table. As a Developer, I want the data loaded from historical FABS to include the FREC derivations, so that I can have consistent FREC data for USASpending.gov. As a FABS user, I want the frontend URLs to more accurately reflect the page I&#x27;m accessing, so that I&#x27;m not confused. As a Developer , I want the historical FPDS data loader to include both extracted historical data and FPDS feed data. As a Developer , I want to provide FABS groups that function under the FREC paradigm. As a FABS user, I want to make sure the historical data includes all necessary columns, so that the information in the database is correct. As a data user, I want to access two additional fields from the FPDS data pull. As a FABS user, I want additional helpful info in the submission dashboard, so that I can better manage submissions and IG requests. As a FABS user, I want to download the uploaded FABS file, so that I can get the uploaded file. As a Developer , I want to determine the best way to load historical FPDS data, so that I can load all FPDS data since 2007. As a FABS user, I want the language on FABS pages to be appropriate for me, so that I am not confused. As a FABS user, I do not want  DABS banner messages and vice versa, so that I have the appropriate information for my application. As an agency user, I want to know when the submission periods start and end, so that I know when the submission starts and ends.
+
+Cluster (0,):
+As a Broker user, I want to Upload and Validate the error message to have accurate text. As a Developer, I want to update the Broker validation rule table to account for the rule updates in DB-2213. As a user, I want the flexfields in my submission file to appear in the warning and error files when the only error is a missing required element. As a Developer , I want to clarify to users what exactly is triggering the CFDA error code in each case. As a broker team member, I want to ensure the Broker resources, validations, and P&amp;P pages are updated appropriately for the launch of FABS and DAIMS v1.1. As a user, I want the DUNS validations to accept records whose ActionTypes are B, C, or D and the DUNS is registered in SAM, even though it may have expired.  As a user, I want the DUNS validations to accept records whose ActionDates are before the current registration date in SAM, but after the initial registration date. As an Agency user, I want to receive a more helpful file-level error when I upload a file with the wrong extension. As a Developer, I want to prevent duplicate transactions from being published and deal with the time gap between validation and the publishing decision.
+
+Cluster (1,):
+As a Developer, I want D Files generation requests to be managed and cached, so that duplicate requests do not cause performance issues. As a user, I want to access the raw agency published files from FABS via USAspending. As an Agency user, I want to be able to include a large number of flexfields without performance impact. As a Developer, I want to prevent users from double publishing FABS submissions after refreshing, so that there are no duplicates. As an Agency user, I want to be able to include a large number of flexfields without performance impact. As a website user, I want to see updated financial assistance data daily. As a Developer , I want to ensure that attempts to correct or delete non-existent records don&#x27;t create new published data. As a user, I want to have accurate and complete data related to PPoPCode and PPoPCongressionalDistrict. As a user, I don&#x27;t want to see NASA grants displayed as contracts. As a user, I want to access the raw agency published files from FABS via USAspending. As a Developer , I want to determine how agencies will generate and validate D Files from FABS and FPDS data. As a user, I want to generate and validate D Files from FABS and FPDS data. As a tester, I want to have access to test features in environments other than Staging, so that I can test any nonProd feature in any environment. As a FABS user, I want to submission errors to accurately represent FABS errors, so that I know why my submission didn&#x27;t work. As an Agency user, I want to accurately see who created a submission, so that I&#x27;m not confused about who last updated a submission. As a tester, I want to ensure that FABS is deriving fields properly through a robust test file plus a follow up check. As a Broker user, I want to submit records for individual recipients without receiving a DUNS error. As a user, I want more information about how many rows will be published prior to deciding whether to publish. As a FABS user, I want to submit a citywide as a PPoPZIP and pass validations. As a FABS user, I want to have my validations run in a reasonable amount of time.
+
+Cluster (3,):
+As an data user, I want to receive updates to FABS records. As an agency user, I want to ensure that deleted FSRS records are not included in submissions. As an agency user, I want the FABS validation rules to accept zero and blank for loan records. As an Agency user, I want FABS deployed into production, so I can submit my Financial Assistance data. As an agency user, I want to be confident that the data coming from SAM is complete. As an agency user, I want the FABS validation rules to accept zero and blank for non-loan records. As an agency user, I want to have all derived data elements derived properly. As an agency user, I want the maximum length allowed for LegalEntityAddressLine3 to match Schema v1.1. As an agency user, I want to use the schema v1.1 headers in my FABS file. As an Agency user, I want FPDS data to be up-to-date daily. As an Agency user, I want all historical Financial Assistance data loaded for FABS go-live. As an Agency user, I want historical FPDS data loaded. As an agency user, I want to get File F in the correct format. As an Agency user, I want to better understand my file-level errors. As an agency user, I want to submit my data elements surrounded by quotation marks, so that Excel won&#x27;t strip off leading and trailing zeroes.
+
+Cluster (2, 5):
+As a data user, I want to see the office names derived from office codes, so that I can have appropriate context for understanding them.
+
+Cluster (2, 4, 5):
+As a FABS user, I want to link the SAMPLE FILE on the &quot;What you want  to submit&quot; dialog to point to the correct file, so that I have an accurate reference for my agency submissions.
+
+Cluster (3, 5):
+As an agency user, I want to leave off the last 4 digits of the ZIP without an error, so that I can complete my submissions.
+
+Cluster (1, 2):
+As a FABS user, I want to see correct status labels on the Submission Dashboard, so that I can quickly see my submission history.
+
+Output only Python code (no markdown formatting or extra text). Do not leave functions empty — implement reasonable logic where needed.</pre>
+        </details>
+        
+        <details>
+            <summary>View Generated Code</summary>
+            <pre><code>class UserStory:
+    def __init__(self, user_type, description):
+        self.user_type = user_type
+        self.description = description
+
+class Cluster:
+    def __init__(self, cluster_id):
+        self.cluster_id = cluster_id
+        self.user_stories = []
+
+    def add_user_story(self, user_story):
+        self.user_stories.append(user_story)
+
+class System:
+    def __init__(self):
+        self.clusters = {}
+
+    def add_cluster(self, cluster):
+        self.clusters[cluster.cluster_id] = cluster
+
+    def process_user_stories(self):
+        for cluster in self.clusters.values():
+            print(f&quot;Processing Cluster {cluster.cluster_id}:&quot;)
+            for story in cluster.user_stories:
+                self.handle_user_story(story)
+
+    def handle_user_story(self, story):
+        print(f&quot; - {story.user_type}: {story.description}&quot;)
+
+# Initializing the system
+system = System()
+
+# Clusters and user stories
+cluster_4 = Cluster(4)
+cluster_4.add_user_story(UserStory(&quot;Data user&quot;, &quot;Process the 12-19-2017 deletions&quot;))
+cluster_4.add_user_story(UserStory(&quot;UI designer&quot;, &quot;Redesign the Resources page to match new Broker design styles&quot;))
+cluster_4.add_user_story(UserStory(&quot;UI designer&quot;, &quot;Report to the Agencies about user testing&quot;))
+cluster_4.add_user_story(UserStory(&quot;DevOps engineer&quot;, &quot;New Relic to provide useful data across all applications&quot;))
+cluster_4.add_user_story(UserStory(&quot;Broker user&quot;, &quot;Sync D1 file generation with FPDS data load&quot;))
+cluster_4.add_user_story(UserStory(&quot;Broker team member&quot;, &quot;Update SQL codes for clarity&quot;))
+cluster_4.add_user_story(UserStory(&quot;Broker team member&quot;, &quot;Add 00***** and 00FORGN PPoPCode cases to derivation logic&quot;))
+cluster_4.add_user_story(UserStory(&quot;Broker team member&quot;, &quot;Derive FundingAgencyCode for data quality&quot;))
+cluster_4.add_user_story(UserStory(&quot;Agency user&quot;, &quot;Map FederalActionObligation properly to the Atom Feed&quot;))
+cluster_4.add_user_story(UserStory(&quot;Broker user&quot;, &quot;Ensure PPoPZIP+4 works same as Legal Entity ZIP validations&quot;))
+
+cluster_5 = Cluster(5)
+cluster_5.add_user_story(UserStory(&quot;UI designer&quot;, &quot;Move on to round 2 of DABS or FABS landing page edits&quot;))
+cluster_5.add_user_story(UserStory(&quot;UI designer&quot;, &quot;Move on to round 2 of Homepage edits&quot;))
+cluster_5.add_user_story(UserStory(&quot;UI designer&quot;, &quot;Move on to round 3 of Help page edits&quot;))
+cluster_5.add_user_story(UserStory(&quot;Developer&quot;, &quot;Log better for troubleshooting&quot;))
+cluster_5.add_user_story(UserStory(&quot;Website user&quot;, &quot;Access published FABS files&quot;))
+cluster_5.add_user_story(UserStory(&quot;Owner&quot;, &quot;Ensure USAspending only sends grant records&quot;))
+cluster_5.add_user_story(UserStory(&quot;Broker user&quot;, &quot;Help create content mockups&quot;))
+cluster_5.add_user_story(UserStory(&quot;UI designer&quot;, &quot;Track issues from Tech Thursday&quot;))
+cluster_5.add_user_story(UserStory(&quot;Owner&quot;, &quot;Create user testing summary from UI SME&quot;))
+cluster_5.add_user_story(UserStory(&quot;UI designer&quot;, &quot;Begin user testing to validate UI requests&quot;))
+cluster_5.add_user_story(UserStory(&quot;UI designer&quot;, &quot;Schedule user testing&quot;))
+cluster_5.add_user_story(UserStory(&quot;Owner&quot;, &quot;Design a schedule from UI SME&quot;))
+cluster_5.add_user_story(UserStory(&quot;Owner&quot;, &quot;Design an audit from UI SME&quot;))
+cluster_5.add_user_story(UserStory(&quot;Owner&quot;, &quot;Reset environment to Staging MAX permissions&quot;))
+cluster_5.add_user_story(UserStory(&quot;Developer&quot;, &quot;Index domain models properly&quot;))
+cluster_5.add_user_story(UserStory(&quot;Agency user&quot;, &quot;Show updated date AND time in header info&quot;))
+cluster_5.add_user_story(UserStory(&quot;Owner&quot;, &quot;Only allow zero-padded fields&quot;))
+cluster_5.add_user_story(UserStory(&quot;Broker user&quot;, &quot;Update error codes for clarity&quot;))
+cluster_5.add_user_story(UserStory(&quot;Developer&quot;, &quot;Quickly access Broker application data&quot;))
+cluster_5.add_user_story(UserStory(&quot;FABS user&quot;, &quot;Have read-only access to DABS&quot;))
+cluster_5.add_user_story(UserStory(&quot;Agency user&quot;, &quot;Create a landing page for FABS and DABS navigation&quot;))
+
+cluster_2 = Cluster(2)
+cluster_2.add_user_story(UserStory(&quot;Developer&quot;, &quot;Add updates on FABS submission when publishStatus changes&quot;))
+cluster_2.add_user_story(UserStory(&quot;Developer&quot;, &quot;Add GTAS window data to database&quot;))
+cluster_2.add_user_story(UserStory(&quot;Developer&quot;, &quot;Update FABS sample file to remove FundingAgencyCode&quot;))
+cluster_2.add_user_story(UserStory(&quot;User&quot;, &quot;Deactivate publish button after clicking&quot;))
+cluster_2.add_user_story(UserStory(&quot;Broker user&quot;, &quot;Derive fields in historical FABS loader&quot;))
+cluster_2.add_user_story(UserStory(&quot;Developer&quot;, &quot;Include FREC derivations from historical FABS data load&quot;))
+cluster_2.add_user_story(UserStory(&quot;FABS user&quot;, &quot;Improve frontend URL accuracy&quot;))
+cluster_2.add_user_story(UserStory(&quot;Developer&quot;, &quot;Include extracted historical data in FPDS loader&quot;))
+cluster_2.add_user_story(UserStory(&quot;Developer&quot;, &quot;Provide FABS groups under FREC paradigm&quot;))
+cluster_2.add_user_story(UserStory(&quot;FABS user&quot;, &quot;Ensure historical data includes necessary columns&quot;))
+cluster_2.add_user_story(UserStory(&quot;Data user&quot;, &quot;Access two additional fields from FPDS data pull&quot;))
+cluster_2.add_user_story(UserStory(&quot;FABS user&quot;, &quot;Include additional info in submission dashboard&quot;))
+cluster_2.add_user_story(UserStory(&quot;FABS user&quot;, &quot;Download uploaded FABS file&quot;))
+cluster_2.add_user_story(UserStory(&quot;Developer&quot;, &quot;Determine best way to load historical FPDS data&quot;))
+cluster_2.add_user_story(UserStory(&quot;FABS user&quot;, &quot;Ensure FABS page language is appropriate&quot;))
+cluster_2.add_user_story(UserStory(&quot;FABS user&quot;, &quot;Avoid DABS banner messages on FABS pages&quot;))
+cluster_2.add_user_story(UserStory(&quot;Agency user&quot;, &quot;Know when submission periods start and end&quot;))
+
+cluster_0 = Cluster(0)
+cluster_0.add_user_story(UserStory(&quot;Broker user&quot;, &quot;Upload and validate error message accuracy&quot;))
+cluster_0.add_user_story(UserStory(&quot;Developer&quot;, &quot;Update Broker validation rule table for rule updates&quot;))
+cluster_0.add_user_story(UserStory(&quot;User&quot;, &quot;Flexfields appear in warning/error files on missing required element&quot;))
+cluster_0.add_user_story(UserStory(&quot;Developer&quot;, &quot;Clarify CFDA error code triggers&quot;))
+cluster_0.add_user_story(UserStory(&quot;Broker team member&quot;, &quot;Ensure resources and validations updated for FABS launch&quot;))
+cluster_0.add_user_story(UserStory(&quot;User&quot;, &quot;DUNS validations accept records with ActionTypes B, C, or D&quot;))
+cluster_0.add_user_story(UserStory(&quot;User&quot;, &quot;DUNS validations accept records with ActionDates before registration date&quot;))
+cluster_0.add_user_story(UserStory(&quot;Agency user&quot;, &quot;Receive helpful file-level error for wrong extension uploads&quot;))
+cluster_0.add_user_story(UserStory(&quot;Developer&quot;, &quot;Prevent duplicate transactions on publish decisions&quot;))
+
+cluster_1 = Cluster(1)
+cluster_1.add_user_story(UserStory(&quot;Developer&quot;, &quot;Manage and cache D Files generation requests&quot;))
+cluster_1.add_user_story(UserStory(&quot;User&quot;, &quot;Access raw agency published files from FABS&quot;))
+cluster_1.add_user_story(UserStory(&quot;Agency user&quot;, &quot;Include large number of flexfields without performance impact&quot;))
+cluster_1.add_user_story(UserStory(&quot;Developer&quot;, &quot;Prevent double publishing after refreshing&quot;))
+cluster_1.add_user_story(UserStory(&quot;Agency user&quot;, &quot;Include large number of flexfields without performance impact&quot;))
+cluster_1.add_user_story(UserStory(&quot;Website user&quot;, &quot;See updated financial assistance data daily&quot;))
+cluster_1.add_user_story(UserStory(&quot;Developer&quot;, &quot;Prevent attempts to correct or delete non-existent records&quot;))
+cluster_1.add_user_story(UserStory(&quot;User&quot;, &quot;Have accurate and complete data for PPoPCode and PPoPCongressionalDistrict&quot;))
+cluster_1.add_user_story(UserStory(&quot;User&quot;, &quot;Avoid seeing NASA grants displayed as contracts&quot;))
+cluster_1.add_user_story(UserStory(&quot;User&quot;, &quot;Access raw agency published files from FABS&quot;))
+cluster_1.add_user_story(UserStory(&quot;Developer&quot;, &quot;Determine how agencies will generate and validate D Files&quot;))
+cluster_1.add_user_story(UserStory(&quot;User&quot;, &quot;Generate and validate D Files from FABS and FPDS data&quot;))
+cluster_1.add_user_story(UserStory(&quot;Tester&quot;, &quot;Access test features in nonProd environments&quot;))
+cluster_1.add_user_story(UserStory(&quot;FABS user&quot;, &quot;Ensure submission errors represent FABS errors accurately&quot;))
+cluster_1.add_user_story(UserStory(&quot;Agency user&quot;, &quot;See who created a submission accurately&quot;))
+cluster_1.add_user_story(UserStory(&quot;Tester&quot;, &quot;Ensure FABS derives fields properly with a robust test file&quot;))
+cluster_1.add_user_story(UserStory(&quot;Broker user&quot;, &quot;Submit records for individual recipients without DUNS error&quot;))
+cluster_1.add_user_story(UserStory(&quot;User&quot;, &quot;Know how many rows will be published before publishing&quot;))
+cluster_1.add_user_story(UserStory(&quot;FABS user&quot;, &quot;Submit citywide as PPoPZIP without errors&quot;))
+cluster_1.add_user_story(UserStory(&quot;FABS user&quot;, &quot;Ensure validations run in a reasonable time&quot;))
+
+cluster_3 = Cluster(3)
+cluster_3.add_user_story(UserStory(&quot;Data user&quot;, &quot;Receive updates to FABS records&quot;))
+cluster_3.add_user_story(UserStory(&quot;Agency user&quot;, &quot;Ensure deleted FSRS records are excluded from submissions&quot;))
+cluster_3.add_user_story(UserStory(&quot;Agency user&quot;, &quot;FABS validation rules accept zero and blank for loan records&quot;))
+cluster_3.add_user_story(UserStory(&quot;Agency user&quot;, &quot;Deploy FABS into production for data submission&quot;))
+cluster_3.add_user_story(UserStory(&quot;Agency user&quot;, &quot;Ensure data from SAM is complete&quot;))
+cluster_3.add_user_story(UserStory(&quot;Agency user&quot;, &quot;FABS validation rules accept zero and blank for non-loan records&quot;))
+cluster_3.add_user_story(UserStory(&quot;Agency user&quot;, &quot;Derive all required data elements properly&quot;))
+cluster_3.add_user_story(UserStory(&quot;Agency user&quot;, &quot;Match LegalEntityAddressLine3 length to Schema v1.1&quot;))
+cluster_3.add_user_story(UserStory(&quot;Agency user&quot;, &quot;Use schema v1.1 headers in FABS file&quot;))
+cluster_3.add_user_story(UserStory(&quot;Agency user&quot;, &quot;Update FPDS data daily&quot;))
+cluster_3.add_user_story(UserStory(&quot;Agency user&quot;, &quot;Load all historical Financial Assistance data for FABS go-live&quot;))
+cluster_3.add_user_story(UserStory(&quot;Agency user&quot;, &quot;Load historical FPDS data&quot;))
+cluster_3.add_user_story(UserStory(&quot;Agency user&quot;, &quot;Get File F in correct format&quot;))
+cluster_3.add_user_story(UserStory(&quot;Agency user&quot;, &quot;Understand file-level errors better&quot;))
+cluster_3.add_user_story(UserStory(&quot;Agency user&quot;, &quot;Submit data elements surrounded by quotation marks&quot;))
+
+# Adding clusters to the system
+system.add_cluster(cluster_4)
+system.add_cluster(cluster_5)
+system.add_cluster(cluster_2)
+system.add_cluster(cluster_0)
+system.add_cluster(cluster_1)
+system.add_cluster(cluster_3)
+
+# Process user stories
+system.process_user_stories()</code></pre>
+        </details>
+    </div>
+</body>
+</html>
+    

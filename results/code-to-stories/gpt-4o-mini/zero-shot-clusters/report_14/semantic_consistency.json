@@ -1,0 +1,8 @@
+{
+    "model": "openai/gpt-4o-mini",
+    "prompt_variant": "zero-shot-clusters",
+    "semantic_consistency_score": 0.7983051538467407,
+    "embedding_model": "all-MiniLM-L6-v2",
+    "original_stories_count": 98,
+    "generated_stories_count": 19
+}

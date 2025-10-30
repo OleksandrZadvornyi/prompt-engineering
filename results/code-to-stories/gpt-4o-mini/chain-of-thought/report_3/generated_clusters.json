@@ -1,0 +1,6 @@
+{
+  "(2,)": "As a user, I want to create a submission, so that I can track my work As a FABSUser, I want to submit a record, so that I can contribute my data to the system As a user, I want to publish my submission, so that I can make it available for review or use",
+  "(1,)": "As a Developer, I want to log issues, so that I can track problems that need to be addressed As a Developer, I want to update validation rules, so that I can ensure the submission process meets current standards As a BrokerUser, I want to upload and validate files, so that I can ensure data integrity and compliance As a FlexFieldManager, I want to process flexfields, so that I can manage additional data dimensions in submissions As a SubmissionManager, I want to validate submissions, so that I can ensure they meet requirements before publishing",
+  "(0,)": "As a UIDesigner, I want to redesign a page, so that it aligns with new design principles and aesthetics",
+  "(3,)": "As a UIDesigner, I want to report user testing results, so that I can communicate feedback on user experience As a SubmissionManager, I want to add submissions to the system, so that I can keep track of all user submissions"
+}

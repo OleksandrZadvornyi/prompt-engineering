@@ -1,0 +1,28 @@
+{
+    "request_number": 11,
+    "timestamp": "2025-10-27 10:49:26",
+    "model": "deepseek/deepseek-chat-v3-0324",
+    "prompt_variant": "chain-of-thought-clusters",
+    "total_tokens": 947,
+    "avg_prob": 0.8962091430471841,
+    "perplexity": 1.115810977558116,
+    "struct_metrics": {
+        "avg_cyclomatic_complexity": 1.7,
+        "ast_depth": 11,
+        "avg_function_size_lines": 3.75,
+        "import_redundancy_ratio": 0.0
+    },
+    "semantic_metrics": {
+        "syntax_valid": true,
+        "flake8_error_count": 10,
+        "mypy_error_count": 0
+    },
+    "execution_metrics": {
+        "execution_success": true,
+        "execution_time_sec": 0.493,
+        "exception_type": "",
+        "exception_message": "",
+        "runtime_output": "INFO:__main__:Submission sub123 status updated to PublishStatus.PUBLISHED\nGTAS window active: False\nValid DUNS: True\nValid ZIP: True\nLanding page options: {'FABS': '/fabs', 'DABS': '/dabs'}\nD file data: {'request_id': 'req123', 'data': 'sample data'}"
+    },
+    "total_credibility": 86.84
+}

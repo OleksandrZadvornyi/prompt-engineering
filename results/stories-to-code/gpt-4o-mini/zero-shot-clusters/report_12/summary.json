@@ -19,10 +19,10 @@
     },
     "execution_metrics": {
         "execution_success": true,
-        "execution_time_sec": 0.589,
+        "execution_time_sec": 0.409,
         "exception_type": "",
         "exception_message": "",
         "runtime_output": "[({'DUNS': '123456789', 'amount': 1000}, 'Submission successful.'), ({'DUNS': '987654321', 'amount': 0}, 'Submission successful.')]\nNo errors found.\n[\"Error in record: {'is_valid': False}\"]\n{1: 'submitted', 2: 'failed'}\nTracking issue: Issue 1\nTracking issue: Issue 2"
     },
-    "total_credibility": 78.72
+    "total_credibility": 80.7
 }

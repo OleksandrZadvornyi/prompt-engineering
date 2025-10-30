@@ -1,0 +1,12 @@
+As an Agency User, I want to submit FABS data, so that I can provide financial assistance information to the system.
+As an Agency User, I want to submit FPDS data, so that I can update the system with procurement data.
+As a Developer, I want to add updates to FABS submissions, so that I can ensure data accuracy and completeness.
+As a Developer, I want to add GTAS window data to the database, so that I can support financial reporting.
+As a Developer, I want to update FABS sample files, so that I can maintain data quality and consistency.
+As a UI User, I want to access published FABS files, so that I can view financial assistance information.
+As a UI User, I want to view FABS pages, so that I can navigate the system and access relevant data.
+As a UI User, I want to navigate to FABS or DABS pages, so that I can access the relevant financial information.
+As a Data User, I want to access raw agency published files, so that I can analyze financial assistance data.
+As a Data User, I want to view updated financial assistance data, so that I can stay informed about the latest financial information.
+As a System Administrator, I want to generate D files from FABS and FPDS data, so that I can support financial reporting and compliance.
+As a System Administrator, I want to prevent duplicate transactions from being published, so that I can maintain data integrity and accuracy.

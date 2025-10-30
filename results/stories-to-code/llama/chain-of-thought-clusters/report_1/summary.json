@@ -1,0 +1,28 @@
+{
+    "request_number": 1,
+    "timestamp": "2025-10-26 22:51:36",
+    "model": "meta-llama/llama-3.3-70b-instruct",
+    "prompt_variant": "chain-of-thought-clusters",
+    "total_tokens": 830,
+    "avg_prob": 0.9161621809637054,
+    "perplexity": 1.0915098011883726,
+    "struct_metrics": {
+        "avg_cyclomatic_complexity": 1.6,
+        "ast_depth": 10,
+        "avg_function_size_lines": 5.117647058823529,
+        "import_redundancy_ratio": 0.0
+    },
+    "semantic_metrics": {
+        "syntax_valid": true,
+        "flake8_error_count": 12,
+        "mypy_error_count": 0
+    },
+    "execution_metrics": {
+        "execution_success": true,
+        "execution_time_sec": 0.412,
+        "exception_type": "",
+        "exception_message": "",
+        "runtime_output": "Data submitted successfully for NASA\nFinancial assistance data submitted successfully for NASA\nJohn Doe is updating FABS sample file\nJohn Doe is adding GTAS window data\nNASA is viewing DABS pages\nJane Doe is uploading and validating error message\nCreating user testing summary for John Smith"
+    },
+    "total_credibility": 86.24
+}

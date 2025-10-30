@@ -1,0 +1,28 @@
+{
+    "request_number": 5,
+    "timestamp": "2025-10-26 22:00:35",
+    "model": "deepseek/deepseek-chat-v3-0324",
+    "prompt_variant": "chain-of-thought",
+    "total_tokens": 1293,
+    "avg_prob": 0.9320792765648043,
+    "perplexity": 1.072870114316369,
+    "struct_metrics": {
+        "avg_cyclomatic_complexity": 1.7037037037037037,
+        "ast_depth": 13,
+        "avg_function_size_lines": 5.117647058823529,
+        "import_redundancy_ratio": 0.0
+    },
+    "semantic_metrics": {
+        "syntax_valid": true,
+        "flake8_error_count": 14,
+        "mypy_error_count": 2
+    },
+    "execution_metrics": {
+        "execution_success": true,
+        "execution_time_sec": 0.45,
+        "exception_type": "",
+        "exception_message": "",
+        "runtime_output": "2025-10-30 05:54:31,812 - __main__ - INFO - Created new submission sub-1761803671.812371 of type SubmissionType.FABS\n2025-10-30 05:54:31,812 - __main__ - INFO - Updating status of submission sub-1761803671.812371 to PublishStatus.PUBLISHED\n2025-10-30 05:54:31,812 - __main__ - INFO - Published submission sub-1761803671.812371\n2025-10-30 05:54:31,812 - __main__ - INFO - Created new design design-Resources-v2\n2025-10-30 05:54:31,812 - __main__ - INFO - Submitted design design-Resources-v2 for approval\n2025-10-30 05:54:31,813 - __main__ - INFO - Processing deletions for deletions-12-19-2017"
+    },
+    "total_credibility": 83.42
+}

@@ -1,0 +1,75 @@
+Here are the user stories derived from the Python code:  
+
+1. **As a** Data Processor, **I want to** process deletions for a specific date, **so that** outdated records are removed.  
+2. **As a** UI Designer, **I want to** redesign the Resources page, **so that** it matches Broker styles.  
+3. **As a** UI Designer, **I want to** report user testing results to agencies, **so that** they can review feedback.  
+4. **As a** DevOps Engineer, **I want to** configure New Relic, **so that** all applications are monitored.  
+5. **As a** Broker User, **I want to** sync D1 file generation with FPDS data, **so that** records are consistent.  
+6. **As a** Broker Team Member, **I want to** update SQL codes, **so that** they are clearer.  
+7. **As a** Broker Team Member, **I want to** add 00***** and 00FORGN PPoPCode cases, **so that** derivation logic is complete.  
+8. **As a** Broker Team Member, **I want to** derive FundingAgencyCode, **so that** funding data is accurate.  
+9. **As an** Agency User, **I want to** map FederalActionObligation to Atom Feed, **so that** data is correctly transferred.  
+10. **As an** Agency User, **I want to** validate PPoPZIP+4, **so that** addresses are correctly formatted.  
+11. **As a** UI Designer, **I want to** perform landing page edits for a round, **so that** the UI stays up to date.  
+12. **As a** UI Designer, **I want to** perform help page edits, **so that** guidance is clear.  
+13. **As a** UI Designer, **I want to** track Tech Thursday issues, **so that** problems are resolved.  
+14. **As a** UI Designer, **I want to** schedule user testing, **so that** feedback is collected.  
+15. **As a** UI Designer, **I want to** begin user testing, **so that** usability can be assessed.  
+16. **As a** Developer, **I want to** improve logging, **so that** troubleshooting is easier.  
+17. **As a** Developer, **I want to** index domain models, **so that** data queries are faster.  
+18. **As a** Developer, **I want to** access Broker application data, **so that** I can analyze system behavior.  
+19. **As a** Website User, **I want to** access published FABS files, **so that** I can download them.  
+20. **As an** Owner, **I want to** restrict records to grants only, **so that** data integrity is maintained.  
+21. **As an** Owner, **I want to** create a user testing summary, **so that** results are documented.  
+22. **As an** Owner, **I want to** design a UI improvement schedule, **so that** updates are planned.  
+23. **As an** Owner, **I want to** design a UI improvement audit, **so that** issues are identified.  
+24. **As an** Owner, **I want to** reset environment permissions, **so that** access is controlled.  
+25. **As an** Owner, **I want to** ensure zero-padded fields, **so that** data formatting is consistent.  
+26. **As an** Agency User, **I want to** update header info with date/time, **so that** users see accurate timestamps.  
+27. **As an** Agency User, **I want to** update error codes, **so that** issues are clearer.  
+28. **As an** Agency User, **I want to** request a FABS/DABS landing page, **so that** navigation is easier.  
+29. **As a** Developer, **I want to** update FABS submission on status change, **so that** data reflects the latest state.  
+30. **As a** Developer, **I want to** add GTAS window data, **so that** financial tracking is accurate.  
+31. **As a** Developer, **I want to** update the FABS sample file, **so that** users have correct examples.  
+32. **As a** Developer, **I want to** deactivate the publish button during derivations, **so that** data isn’t corrupted.  
+33. **As a** Developer, **I want to** include FREC derivations in historical FABS data, **so that** records are complete.  
+34. **As a** Developer, **I want to** update frontend URLs, **so that** links are accurate.  
+35. **As a** Developer, **I want to** load historical FPDS data, **so that** past records are accessible.  
+36. **As a** Developer, **I want to** create FABS groups under the FREC paradigm, **so that** data is categorized correctly.  
+37. **As a** Developer, **I want to** add helpful info to the submission dashboard, **so that** users are better informed.  
+38. **As a** Developer, **I want to** determine the best way to load historical FPDS data, **so that** performance is optimized.  
+39. **As a** Developer, **I want to** update FABS page language, **so that** instructions are clearer.  
+40. **As a** Developer, **I want to** separate DABS/FABS banner messages, **so that** users see relevant alerts.  
+41. **As a** FABS User, **I want to** download an uploaded FABS file, **so that** I can review it locally.  
+42. **As a** FABS User, **I want to** check submission periods, **so that** I know when deadlines are.  
+43. **As a** Broker User, **I want to** update error message text, **so that** users get better feedback.  
+44. **As a** Broker User, **I want to** update validation rules, **so that** data quality is enforced.  
+45. **As a** Broker User, **I want to** handle flexfields in warning/error files, **so that** issues are documented correctly.  
+46. **As a** Broker User, **I want to** clarify CFDA error codes, **so that** users understand corrections.  
+47. **As a** Broker User, **I want to** validate DUNS based on action type and status, **so that** only valid records are processed.  
+48. **As a** Broker User, **I want to** prevent duplicate transactions, **so that** data integrity is maintained.  
+49. **As a** Developer, **I want to** manage D Files requests, **so that** generation is efficient.  
+50. **As a** Developer, **I want to** prevent double publishing, **so that** duplicates are avoided.  
+51. **As a** Developer, **I want to** handle non-existent record corrections, **so that** errors are minimized.  
+52. **As a** Developer, **I want to** generate D Files, **so that** data is available for analysis.  
+53. **As a** Developer, **I want to** ensure proper field derivation, **so that** records are accurate.  
+54. **As a** User, **I want to** access raw agency files, **so that** I can work with the original data.  
+55. **As a** User, **I want to** include flexfields without performance impact, **so that** additional data is accessible.  
+56. **As a** User, **I want to** check data accuracy, **so that** I can trust the records.  
+57. **As a** User, **I want to** get publish info, **so that** I know how many rows will be affected.  
+58. **As a** User, **I want to** validate PPoPZIP, **so that** addresses are correct.  
+59. **As a** User, **I want to** check validation time, **so that** performance issues are identified.  
+60. **As an** Agency User, **I want to** ensure FABS record updates, **so that** data is current.  
+61. **As an** Agency User, **I want to** validate loan records, **so that** financial data is correct.  
+62. **As an** Agency User, **I want to** check SAM data completeness, **so that** records are reliable.  
+63. **As an** Agency User, **I want to** deploy FABS to production, **so that** the system is live.  
+64. **As an** Agency User, **I want to** validate LegalEntityAddressLine3 length, **so that** addresses meet standards.  
+65. **As an** Agency User, **I want to** use schema v1.1 headers, **so that** data conforms to standards.  
+66. **As an** Agency User, **I want to** get File F in the correct format, **so that** it can be processed.  
+67. **As an** Agency User, **I want to** quote data elements, **so that** parsing is consistent.  
+68. **As a** Data User, **I want to** derive office names from codes, **so that** reports are readable.  
+69. **As a** FABS User, **I want to** update the sample file link, **so that** users get the latest version.  
+70. **As an** Agency User, **I want to** handle ZIP codes without last 4 digits, **so that** addresses are still usable.  
+71. **As a** FABS User, **I want to** update status labels on the Submission Dashboard, **so that** progress is clear.  
+
+These user stories capture the functionality described by each method in the code. Let me know if you'd like any refinements!

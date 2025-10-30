@@ -19,10 +19,10 @@
     },
     "execution_metrics": {
         "execution_success": false,
-        "execution_time_sec": 1.635,
+        "execution_time_sec": 1.471,
         "exception_type": "NameError",
         "exception_message": "name 'Base' is not defined. Did you mean: 'False'?",
         "runtime_output": "Traceback (most recent call last):\n  File \"/app/main.py\", line 23, in <module>\n    class FABSSubmission(Base):\n                         ^^^^\nNameError: name 'Base' is not defined. Did you mean: 'False'?"
     },
-    "total_credibility": 31.45
+    "total_credibility": 42.55
 }

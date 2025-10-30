@@ -1,0 +1,6 @@
+{
+  "(2,)": "As a user, I want to upload and validate error messages, so that I have accurate text As a user, I want to have accurate and complete data related to PPoPCode and PPoPCongressionalDistrict, so that I can ensure the quality of the information",
+  "(1,)": "As a developer, I want to update the Broker validation rule table, so that it accounts for the rule updates in DB-2213 As a UI designer, I want to redesign the Resources page, so that it matches the new Broker design styles",
+  "(0,)": "As a user, I want to access the raw agency published files from FABS via USAspending, so that I can retrieve necessary information As a developer, I want to update FABS submissions when the publishStatus changes, so that the data remains current",
+  "(3,)": "As a UI designer, I want to track issues that arise during Tech Thursday, so that I know what to test and what needs fixing"
+}

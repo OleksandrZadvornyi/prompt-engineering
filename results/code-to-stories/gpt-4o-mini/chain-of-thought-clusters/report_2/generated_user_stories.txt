@@ -1,0 +1,23 @@
+As a user, I want to upload and validate error messages, so that I have accurate text.
+
+As a developer, I want to update the Broker validation rule table, so that it accounts for the rule updates in DB-2213.
+
+As a developer, I want D Files generation requests to be managed and cached, so that duplicate requests do not cause performance issues.
+
+As a user, I want to access the raw agency published files from FABS via USAspending, so that I can retrieve necessary information.
+
+As a developer, I want to update FABS submissions when the publishStatus changes, so that the data remains current.
+
+As a user, I want to have accurate and complete data related to PPoPCode and PPoPCongressionalDistrict, so that I can ensure the quality of the information.
+
+As an agency user, I want to ensure that deleted FSRS records are not included in submissions, so that my submissions are correct.
+
+As an agency user, I want to receive File F in the correct format, so that I can process it without issues.
+
+As a UI designer, I want to redesign the Resources page, so that it matches the new Broker design styles.
+
+As a DevOps engineer, I want New Relic to provide useful data across all applications, so that I can monitor performance effectively.
+
+As a UI designer, I want to track issues that arise during Tech Thursday, so that I know what to test and what needs fixing.
+
+As an agency user, I want to leave off the last 4 digits of the ZIP without an error, so that I can complete my submissions successfully.

@@ -1,0 +1,28 @@
+{
+    "request_number": 13,
+    "timestamp": "2025-10-27 10:52:45",
+    "model": "deepseek/deepseek-chat-v3-0324",
+    "prompt_variant": "chain-of-thought-clusters",
+    "total_tokens": 3518,
+    "avg_prob": 0.9243324434809165,
+    "perplexity": 1.0818618420815451,
+    "struct_metrics": {
+        "avg_cyclomatic_complexity": 1.5747126436781609,
+        "ast_depth": 14,
+        "avg_function_size_lines": 4.651515151515151,
+        "import_redundancy_ratio": 0.18181818181818182
+    },
+    "semantic_metrics": {
+        "syntax_valid": true,
+        "flake8_error_count": 31,
+        "mypy_error_count": 3
+    },
+    "execution_metrics": {
+        "execution_success": true,
+        "execution_time_sec": 1.289,
+        "exception_type": "",
+        "exception_message": "",
+        "runtime_output": "/app/main.py:13: MovedIn20Warning: The ``declarative_base()`` function is now available as sqlalchemy.orm.declarative_base(). (deprecated since: 2.0) (Background on SQLAlchemy 2.0 at: https://sqlalche.me/e/b8d9)\n  Base = declarative_base()"
+    },
+    "total_credibility": 73.15
+}

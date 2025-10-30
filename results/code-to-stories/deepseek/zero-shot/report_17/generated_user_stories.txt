@@ -1,0 +1,16 @@
+Here are the user stories derived from the Python code:
+
+1. As a data submitter, I want to create a new FABS submission, so that I can initiate the publication process for my agency's data.  
+2. As a data submitter, I want to update the status of my submission, so that I can track its progress through the workflow.  
+3. As a data submitter, I want to validate my submission's flexfields, so that I can ensure all required data is provided before publishing.  
+4. As a data processor, I want to generate D files when FPDS data is updated, so that I can maintain accurate procurement records.  
+5. As a system administrator, I want to process 2017 deletions, so that I can clean up outdated records from the database.  
+6. As a system administrator, I want to update validation rules, so that I can ensure data quality meets current standards.  
+7. As a UI designer, I want to redesign the resources page, so that it matches our new style guide.  
+8. As a UI designer, I want to generate user testing reports, so that I can communicate findings to agencies.  
+9. As a UI designer, I want to schedule user testing sessions, so that we can validate interface improvements.  
+10. As an API consumer, I want to check submission status, so that I can monitor my submissions programmatically.  
+11. As an API consumer, I want to retrieve published files, so that I can access finalized data.  
+12. As an analyst, I want to access historical data including FPDS records, so that I can perform longitudinal analysis.  
+13. As a system, I want to disable the publish button during processing, so that users don't submit duplicate requests.  
+14. As a developer, I want to log system activities, so that I can troubleshoot issues when they occur.

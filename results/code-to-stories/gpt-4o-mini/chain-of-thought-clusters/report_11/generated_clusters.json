@@ -1,0 +1,5 @@
+{
+  "(2,)": "As a UI User, I want to request changes to a specific UI page, so that I can enhance the user experience based on my feedback As a Developer, I want to log errors related to submissions, so that I can track issues and improve the system As a System Admin, I want to submit data from users to the system, so that all submissions are recorded and managed centrally",
+  "(0,)": "As a FABS User, I want to download files by file ID, so that I can access necessary documents easily As a Data User, I want to access specific data by its ID, so that I can retrieve relevant information for analysis As a Broker User, I want to validate submissions, so that I can ensure the data meets required standards before processing As a System Admin, I want to fetch FPDS and FABS data, so that I can retrieve necessary data for reporting and decision-making",
+  "(1,)": "As a User Testing Coordinator, I want to schedule user testing sessions, so that I can gather feedback on new features and improvements As a System Admin, I want to schedule user testing, so that I can ensure user feedback is incorporated into the development process"
+}

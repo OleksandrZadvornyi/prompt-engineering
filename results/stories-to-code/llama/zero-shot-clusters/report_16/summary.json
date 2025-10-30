@@ -1,0 +1,28 @@
+{
+    "request_number": 16,
+    "timestamp": "2025-10-26 15:55:57",
+    "model": "meta-llama/llama-3.3-70b-instruct",
+    "prompt_variant": "zero-shot-clusters",
+    "total_tokens": 1513,
+    "avg_prob": 0.9365433817575579,
+    "perplexity": 1.067756197394035,
+    "struct_metrics": {
+        "avg_cyclomatic_complexity": 1.9189189189189189,
+        "ast_depth": 13,
+        "avg_function_size_lines": 6.586206896551724,
+        "import_redundancy_ratio": 0.0
+    },
+    "semantic_metrics": {
+        "syntax_valid": true,
+        "flake8_error_count": 13,
+        "mypy_error_count": 0
+    },
+    "execution_metrics": {
+        "execution_success": false,
+        "execution_time_sec": 0.515,
+        "exception_type": "FileNotFoundError",
+        "exception_message": "[Errno 2] No such file or directory: 'fabs_file.csv'",
+        "runtime_output": "Traceback (most recent call last):\n  File \"/app/main.py\", line 234, in <module>\n    main()\n  File \"/app/main.py\", line 218, in main\n    fabs_user.submit_fabs(fabs_file)\n  File \"/app/main.py\", line 11, in submit_fabs\n    if not self.validate_file(file):\n           ^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/app/main.py\", line 24, in validate_file\n    with open(file, 'r') as f:\n         ^^^^^^^^^^^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: 'fabs_file.csv'"
+    },
+    "total_credibility": 56.21
+}

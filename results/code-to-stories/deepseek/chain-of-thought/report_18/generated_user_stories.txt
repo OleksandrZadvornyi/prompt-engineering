@@ -1,0 +1,33 @@
+Here are the user stories derived from the code:
+
+As a system administrator, I want to track submission status changes, so that I can monitor publishing lifecycle.
+
+As a data analyst, I want to derive fields for FABS submissions, so that I can ensure proper data categorization.
+
+As a data validator, I want to validate FABS submission files, so that I can ensure only properly formatted CSVs are processed.
+
+As a publisher, I want to prevent duplicate publishing attempts, so that I can avoid data duplication.
+
+As a historical researcher, I want to load FPDS data from specific years, so that I can analyze historical trends.
+
+As a data engineer, I want to synchronize with FPDS feeds, so that I can maintain up-to-date procurement data.
+
+As a developer, I want to implement a singleton D file generator, so that I can avoid duplicate file generation.
+
+As a UI designer, I want to update the Resources page design, so that I can improve user experience.
+
+As a QA tester, I want to schedule user testing sessions, so that I can gather feedback on new features.
+
+As a support engineer, I want to track issues from testing sessions, so that I can prioritize bug fixes.
+
+As a data steward, I want to validate DUNS numbers, so that I can ensure proper business entity identification.
+
+As a compliance officer, I want to validate PPoP codes, so that I can maintain data standards.
+
+As a postal data specialist, I want to validate ZIP codes, so that I can ensure proper geographic information.
+
+As a system operator, I want to process deletion requests, so that I can maintain data hygiene.
+
+As a database administrator, I want to update validation rules, so that I can adapt to changing business requirements.
+
+As a system integrator, I want to log all important activities, so that I can troubleshoot issues effectively.

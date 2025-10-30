@@ -1,0 +1,25 @@
+As a developer, I want to create user stories with a cluster and description, so that I can track and process user story information.
+As a developer, I want to process user stories, so that I can execute the actions associated with each story.
+As a data user, I want to have deletions processed, so that I can ensure data accuracy and consistency.
+As a UI designer, I want to move on to the next round of landing page edits, so that I can get approvals from leadership and improve the user interface.
+As a developer, I want to update FABS submissions when the publish status changes, so that I can track changes to the submission status.
+As a broker user, I want to upload and validate error messages, so that I can ensure accurate text and improve the user experience.
+As a developer, I want to manage and cache D Files generation requests, so that I can prevent performance issues caused by duplicate requests.
+As a data user, I want to receive updates to FABS records, so that I can stay informed about changes to the data.
+As a developer, I want to manage FABS submissions, so that I can track and update the status of submissions.
+As a developer, I want to validate FABS submissions against a set of rules, so that I can ensure submissions meet the required criteria.
+As a developer, I want to generate D Files for FABS submissions, so that I can provide the necessary data for processing.
+As a developer, I want to deploy FABS to production, so that I can make the system available to users.
+As a developer, I want to check the status of FSRS records, so that I can ensure data accuracy and consistency.
+As a developer, I want to validate DUNS numbers, so that I can ensure accurate and valid data.
+As a developer, I want to validate PPoP ZIP codes, so that I can ensure accurate and valid data.
+As a developer, I want to validate loan records, so that I can ensure accurate and valid data.
+As a developer, I want to validate non-loan records, so that I can ensure accurate and valid data.
+As a developer, I want to validate schema v1.1 headers, so that I can ensure accurate and valid data.
+As a developer, I want to update FPDS data, so that I can ensure data accuracy and consistency.
+As a developer, I want to generate File F, so that I can provide the necessary data for processing.
+As a developer, I want to handle file-level errors, so that I can prevent data corruption and ensure system reliability.
+As a developer, I want to derive office names from office codes, so that I can provide accurate and meaningful data.
+As a developer, I want to update sample file links, so that I can provide accurate and up-to-date information to users.
+As a developer, I want to handle ZIP codes, so that I can ensure accurate and valid data.
+As a developer, I want to retrieve submission status labels, so that I can provide accurate and meaningful information to users.

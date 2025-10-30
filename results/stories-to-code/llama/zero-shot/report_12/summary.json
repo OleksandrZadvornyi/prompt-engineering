@@ -1,0 +1,28 @@
+{
+    "request_number": 12,
+    "timestamp": "2025-10-26 15:14:22",
+    "model": "meta-llama/llama-3.3-70b-instruct",
+    "prompt_variant": "zero-shot",
+    "total_tokens": 1454,
+    "avg_prob": 0.9480193551400472,
+    "perplexity": 1.0548307843907616,
+    "struct_metrics": {
+        "avg_cyclomatic_complexity": -1.0,
+        "ast_depth": -1,
+        "avg_function_size_lines": -1.0,
+        "import_redundancy_ratio": -1.0
+    },
+    "semantic_metrics": {
+        "syntax_valid": false,
+        "flake8_error_count": -1,
+        "mypy_error_count": -1
+    },
+    "execution_metrics": {
+        "execution_success": false,
+        "execution_time_sec": 0.457,
+        "exception_type": "RuntimeError",
+        "exception_message": "File \"/app/main.py\", line 91\n    classBrokerUser:\n                    ^\nSyntaxError: invalid syntax",
+        "runtime_output": "File \"/app/main.py\", line 91\n    classBrokerUser:\n                    ^\nSyntaxError: invalid syntax"
+    },
+    "total_credibility": 0.0
+}

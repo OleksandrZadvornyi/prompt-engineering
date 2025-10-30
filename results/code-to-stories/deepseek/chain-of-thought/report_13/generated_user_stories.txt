@@ -1,0 +1,18 @@
+Here is the list of user stories derived from the Python code:  
+
+1. As a **System Administrator**, I want to **process data deletions for a specific date**, so that **obsolete data is properly removed**.  
+2. As a **UI Designer**, I want to **redesign the Resources page**, so that **it matches the new Broker styles**.  
+3. As a **UI Designer**, I want to **report user testing feedback to an agency**, so that **they can review and improve usability**.  
+4. As a **UI Designer**, I want to **start a new round of edits for a page**, so that **it can be refined based on feedback**.  
+5. As a **Developer**, I want to **update the publish status of a FABS submission**, so that **its state is accurately reflected**.  
+6. As a **Developer**, I want to **add GTAS window data to the database**, so that **financial records are synchronized**.  
+7. As a **Developer**, I want to **prevent double publishing of FABS submissions**, so that **data integrity is maintained**.  
+8. As a **DevOps Engineer**, I want to **configure New Relic for an application**, so that **performance is monitored effectively**.  
+9. As a **Broker User**, I want to **upload and validate a file**, so that **errors are caught before processing**.  
+10. As a **Broker User**, I want to **sync D1 file generation with FPDS data**, so that **records remain consistent**.  
+11. As a **Website User**, I want to **access published FABS files**, so that **I can review submission data**.  
+12. As an **Agency User**, I want to **submit a large number of flexfields**, so that **my data is correctly processed**.  
+13. As an **Agency User**, I want to **ensure deleted FSRS records are excluded from submissions**, so that **inaccurate data is not included**.  
+14. As an **Owner**, I want to **reset environment permissions**, so that **access control remains secure**.  
+15. As an **Owner**, I want to **create a user testing summary**, so that **feedback is organized and actionable**.  
+16. As a **Tester**, I want to **test if derived fields are correctly populated**, so that **data processing is accurate**.

@@ -1,0 +1,28 @@
+{
+    "request_number": 12,
+    "timestamp": "2025-10-27 11:04:38",
+    "model": "meta-llama/llama-3.3-70b-instruct",
+    "prompt_variant": "chain-of-thought-clusters",
+    "total_tokens": 1068,
+    "avg_prob": 0.9210348843546929,
+    "perplexity": 1.085735206110714,
+    "struct_metrics": {
+        "avg_cyclomatic_complexity": 1.1904761904761905,
+        "ast_depth": 9,
+        "avg_function_size_lines": 3.0588235294117645,
+        "import_redundancy_ratio": 0.0
+    },
+    "semantic_metrics": {
+        "syntax_valid": true,
+        "flake8_error_count": 12,
+        "mypy_error_count": 0
+    },
+    "execution_metrics": {
+        "execution_success": true,
+        "execution_time_sec": 0.424,
+        "exception_type": "",
+        "exception_message": "",
+        "runtime_output": "Processing deletions for 12-19-2017...\nRedesigning Resources page...\nReporting user testing...\nProviding useful data across all applications...\nMapping Federal Action Obligation to Atom Feed...\nLogging better...\nAdding GTAS window data to database...\nPreventing duplicate transactions from being published...\nUpdating FABS sample file to remove FundingAgencyCode...\nGenerating D Files from FABS and FPDS data...\nDetermining the best way to load historical FPDS data...\nLoading historical FPDS data...\nManaging D Files generation requests...\nCaching D Files generation requests...\nPreventing users from double publishing FABS submissions...\nEnsuring attempts to correct or delete non-existent records don't create new published data...\nSubmitting FABS file...\nDownloading uploaded FABS file..."
+    },
+    "total_credibility": 86.71
+}

@@ -1,0 +1,33 @@
+As a Data user, I want to have deletions processed, so that I can maintain accurate data.
+As a Broker user, I want to help create content mockups, so that I can submit my data efficiently.
+As a Broker user, I want the historical FABS loader to derive fields, so that my agency codes are correct in the PublishedAwardFinancialAssistance table.
+As a UI designer, I want to redesign the Resources page, so that it matches the new Broker design styles.
+As a UI designer, I want to report to the Agencies about user testing, so that they are aware of their contributions to making Broker a better UX.
+As a UI designer, I want to move on to round 2 of DABS or FABS landing page edits, so that I can get approvals from leadership.
+As a UI designer, I want to move on to round 2 of Homepage edits, so that I can get approvals from leadership.
+As a UI designer, I want to move on to round 3 of the Help page edits, so that I can get approvals from leadership.
+As a UI designer, I want to track the issues that come up in Tech Thursday, so that I know what to test and what wants to be fixed.
+As a UI designer, I want to schedule user testing, so that I can give the testers advanced notice to ensure buy-in.
+As a UI designer, I want to begin user testing, so that I can validate stakeholder UI improvement requests.
+As a Developer, I want to be able to log better, so that I can troubleshoot issues with particular submissions and functions.
+As a Developer, I want to add the updates on a FABS submission to be modified when the publishStatus changes, so that I know when the status of the submission has changed.
+As a Developer, I want to prevent duplicate transactions from being published and deal with the time gap between validation and the publishing decision.
+As a Developer, I want to update the Broker validation rule table to account for the rule updates in DB-2213.
+As a Developer, I want to add the GTAS window data to the database, so that I can ensure the site is locked down during the GTAS submission period.
+As a Developer, I want D Files generation requests to be managed and cached, so that duplicate requests do not cause performance issues.
+As a Broker user, I want to Upload and Validate the error message to have accurate text.
+As a Broker user, I want the D1 file generation to be synced with the FPDS data load, so that I don't have to regenerate a file if no data has been updated.
+As a Website user, I want to access published FABS files, so that I can see the new files as they come in.
+As an owner, I want to be sure that USAspending only send grant records to my system.
+As an Agency user, I want to be able to include a large number of flexfields without performance impact.
+As an agency user, I want to ensure that deleted FSRS records are not included in submissions.
+As a website user, I want to see updated financial assistance data daily.
+As an Agency user, I want FABS deployed into production, so I can submit my Financial Assistance data.
+As an agency user, I want the FABS validation rules to accept zero and blank for loan records.
+As an agency user, I want to map the FederalActionObligation properly to the Atom Feed.
+As a user, I want to access the raw agency published files from FABS via USAspending.
+As a user, I want to generate and validate D Files from FABS and FPDS data.
+As a Broker user, I want to submit records for individual recipients without receiving a DUNS error.
+As a FABS user, I want to see correct status labels on the Submission Dashboard, so that I can quickly see my submission history.
+As an Agency user, I want to better understand my file-level errors.
+As an agency user, I want to have all derived data elements derived properly.

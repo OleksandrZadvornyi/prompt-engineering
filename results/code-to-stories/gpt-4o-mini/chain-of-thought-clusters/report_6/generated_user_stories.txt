@@ -1,0 +1,19 @@
+As a Developer, I want to update validation rules, so that I can ensure that submissions adhere to the most current standards.
+
+As an Agency User, I want to submit data, so that I can contribute necessary information to the system.
+
+As a Broker User, I want to generate a D1 file, so that I can sync data with FPDS effectively.
+
+As a UI Designer, I want to redesign a page, so that I can improve the user experience and visual layout.
+
+As a Data User, I want to access additional data fields, so that I can retrieve more detailed information for analysis.
+
+As a Developer, I want to log errors related to submissions, so that I can keep track of issues that need to be addressed.
+
+As an Agency User, I want to check for file errors, so that I can ensure the files I submit are error-free.
+
+As a Broker User, I want to update error codes, so that I can maintain an accurate record of submission issues.
+
+As a Developer, I want to validate submissions, so that I can confirm they meet the required criteria before processing.
+
+As a UIDesigner, I want to track issues from user testing, so that I can address and resolve them in the design process.

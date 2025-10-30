@@ -1,0 +1,28 @@
+{
+    "request_number": 1,
+    "timestamp": "2025-10-26 21:55:06",
+    "model": "deepseek/deepseek-chat-v3-0324",
+    "prompt_variant": "chain-of-thought",
+    "total_tokens": 1518,
+    "avg_prob": 0.9063110886803519,
+    "perplexity": 1.1033738994146758,
+    "struct_metrics": {
+        "avg_cyclomatic_complexity": 1.3461538461538463,
+        "ast_depth": 13,
+        "avg_function_size_lines": 5.769230769230769,
+        "import_redundancy_ratio": 0.2222222222222222
+    },
+    "semantic_metrics": {
+        "syntax_valid": true,
+        "flake8_error_count": 21,
+        "mypy_error_count": 12
+    },
+    "execution_metrics": {
+        "execution_success": true,
+        "execution_time_sec": 2.673,
+        "exception_type": "",
+        "exception_message": "",
+        "runtime_output": "/app/main.py:18: MovedIn20Warning: The ``declarative_base()`` function is now available as sqlalchemy.orm.declarative_base(). (deprecated since: 2.0) (Background on SQLAlchemy 2.0 at: https://sqlalche.me/e/b8d9)\n  Base = declarative_base()\n2025-10-30 05:54:03,328 - __main__ - INFO - Created submission 1 for agency 1\n/app/main.py:102: LegacyAPIWarning: The Query.get() method is considered legacy as of the 1.x series of SQLAlchemy and becomes a legacy construct in 2.0. The method is now available as Session.get() (deprecated since: 2.0) (Background on SQLAlchemy 2.0 at: https://sqlalche.me/e/b8d9)\n  submission = self.session.query(Submission).get(submission_id)\n2025-10-30 05:54:03,329 - __main__ - INFO - Validated submission 1 - found 0 errors\n2025-10-30 05:54:03,331 - __main__ - INFO - Updated metadata for file /data/published/file1.csv\n2025-10-30 05:54:03,331 - __main__ - INFO - Processed 10 deletions for date 2017-12-19 00:00:00\n2025-10-30 05:54:03,331 - __main__ - INFO - Synced FPDS data with D1 file generation"
+    },
+    "total_credibility": 68.9
+}

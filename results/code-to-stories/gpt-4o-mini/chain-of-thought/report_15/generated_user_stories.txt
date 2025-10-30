@@ -1,0 +1,17 @@
+As a FABS User, I want to submit data for a submission, so that I can have my data processed and stored.
+
+As a FABS User, I want to download a file related to a submission, so that I can access the necessary documents.
+
+As an Agency User, I want to include flexfields in a submission, so that I can provide additional data required for processing.
+
+As a UI Designer, I want to report to agencies, so that I can communicate the status of project-related tasks.
+
+As a UI Designer, I want to move on to the next round of edits for a page, so that I can continue improving the user interface.
+
+As a Developer, I want to update validation rules, so that the system can check data according to the latest requirements.
+
+As a Developer, I want to manage submission requests, so that I can ensure the proper handling of user submissions.
+
+As an Owner, I want to create a user testing summary, so that I can document the results of user feedback and testing.
+
+As an Owner, I want to reset the environment, so that I can ensure the system is prepared for testing in a controlled state.

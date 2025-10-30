@@ -1,0 +1,7 @@
+{
+  "(2,)": "As a FABS user, I want to submit a record with a valid DUNS number, so that I can ensure my submission is successful As a FABS user, I want to submit a record with an invalid DUNS number, so that I can be informed of validation errors As a developer, I want to update validation rules, so that I can enforce new criteria for record submissions",
+  "(1,)": "As a FABS user, I want to view my submission history, so that I can keep track of my submissions and their statuses As a submission dashboard user, I want to add submissions to my dashboard, so that I can monitor their statuses As a submission dashboard user, I want to retrieve the submission status for each record, so that I can understand the outcome of my submissions",
+  "(0,)": "As a data user, I want to receive updates on records that have been updated today, so that I can keep my records current",
+  "(3,)": "As a broker, I want to upload and validate multiple records, so that I can identify any errors in the data I am handling As a project manager, I want to track issues that arise during testing, so that I can monitor and address concerns effectively",
+  "(4,)": "As a broker, I want to generate updated error codes based on the latest validation rules, so that I can ensure my error management is up to date As a project manager, I want to create user testing summaries, so that I can document the outcomes of my testing processes"
+}

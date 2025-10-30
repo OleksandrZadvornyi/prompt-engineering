@@ -1,0 +1,6 @@
+{
+  "(2,)": "As a Data user, I want to have the 12-19-2017 deletions processed, so that I can ensure that the data is accurate and up to date",
+  "(1,)": "As a Developer, I want to log errors, so that I can keep track of issues that need to be addressed As a User, I want to submit data, so that I can provide necessary information for processing and analysis As a User, I want to upload files, so that I can include external data in my submissions As a User, I want to download files, so that I can access previously submitted or processed information",
+  "(3,)": "As a Developer, I want to update submission status, so that I can reflect the current state of the submission accurately As a Validation Handler, I want to validate DUNS status, so that I can ensure compliance with submission requirements As a Validation Handler, I want to validate FABS submissions, so that I can prevent the processing of already published submissions",
+  "(0,)": "As a UI Designer, I want to request user testing, so that I can gather feedback on the design and functionality of the user interface"
+}

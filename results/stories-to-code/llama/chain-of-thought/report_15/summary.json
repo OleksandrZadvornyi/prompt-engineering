@@ -1,0 +1,28 @@
+{
+    "request_number": 15,
+    "timestamp": "2025-10-26 21:48:46",
+    "model": "meta-llama/llama-3.3-70b-instruct",
+    "prompt_variant": "chain-of-thought",
+    "total_tokens": 929,
+    "avg_prob": 0.9114434031240335,
+    "perplexity": 1.097160829265353,
+    "struct_metrics": {
+        "avg_cyclomatic_complexity": 1.4333333333333333,
+        "ast_depth": 11,
+        "avg_function_size_lines": 4.260869565217392,
+        "import_redundancy_ratio": 0.0
+    },
+    "semantic_metrics": {
+        "syntax_valid": true,
+        "flake8_error_count": 3,
+        "mypy_error_count": 0
+    },
+    "execution_metrics": {
+        "execution_success": true,
+        "execution_time_sec": 0.483,
+        "exception_type": "",
+        "exception_message": "",
+        "runtime_output": "INFO:__main__:Developer 1: This is a log message\nINFO:__main__:Developer 1: Updated broker validation rule table\nINFO:__main__:Developer 1: Added GTAS window data\nINFO:__main__:Developer 1: Managed D files generation requests\nSubmissions for Agency User 1:\nSubmission 1: Data 1\nSubmission 2: Data 2\nFABS Submissions for FABS User 1:\nSubmission 1: FABS Data 1\nSubmission 2: FABS Data 2\nUser Testing Summary:\nTest 1: Test 1 result\nTest 2: Test 2 result\n\nSubmissions for Broker User 1:\nSubmission 1: Broker Data 1\nSubmission 2: Broker Data 2"
+    },
+    "total_credibility": 90.74
+}

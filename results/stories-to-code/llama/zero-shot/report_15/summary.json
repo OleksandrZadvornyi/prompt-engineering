@@ -1,0 +1,28 @@
+{
+    "request_number": 15,
+    "timestamp": "2025-10-26 15:15:55",
+    "model": "meta-llama/llama-3.3-70b-instruct",
+    "prompt_variant": "zero-shot",
+    "total_tokens": 1320,
+    "avg_prob": 0.9025670011602355,
+    "perplexity": 1.1079509872558115,
+    "struct_metrics": {
+        "avg_cyclomatic_complexity": 1.2564102564102564,
+        "ast_depth": 9,
+        "avg_function_size_lines": 3.7,
+        "import_redundancy_ratio": 0.0
+    },
+    "semantic_metrics": {
+        "syntax_valid": true,
+        "flake8_error_count": 29,
+        "mypy_error_count": 0
+    },
+    "execution_metrics": {
+        "execution_success": true,
+        "execution_time_sec": 0.482,
+        "exception_type": "",
+        "exception_message": "",
+        "runtime_output": "INFO:__main__:Processing deletions for 12-19-2017\nINFO:__main__:Redesigning resources page\nINFO:__main__: Reporting user testing results\nINFO:__main__:Moving to round 2 of DABS or FABS landing page edits\nINFO:__main__:Improving logging\nINFO:__main__:Updating FABS sample file\nINFO:__main__:Ensuring deleted FSRS records are not included in submissions\nINFO:__main__:Updating FABS validation rules\nINFO:__main__:Adding GTAS window data to database\nINFO:__main__:Managing and caching D files generation requests\nINFO:__main__:Preventing duplicate transactions from being published\nINFO:__main__:Providing FABS groups that function under the FREC paradigm\nINFO:__main__:Error code 001: Invalid submission format\nINFO:__main__:Error messages: []"
+    },
+    "total_credibility": 77.73
+}

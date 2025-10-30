@@ -1,0 +1,28 @@
+{
+    "request_number": 19,
+    "timestamp": "2025-10-27 10:39:24",
+    "model": "openai/gpt-4o-mini",
+    "prompt_variant": "chain-of-thought-clusters",
+    "total_tokens": 899,
+    "avg_prob": 0.8192381861476142,
+    "perplexity": 1.2206462258581965,
+    "struct_metrics": {
+        "avg_cyclomatic_complexity": 1.2439024390243902,
+        "ast_depth": 9,
+        "avg_function_size_lines": 2.6451612903225805,
+        "import_redundancy_ratio": 0.0
+    },
+    "semantic_metrics": {
+        "syntax_valid": true,
+        "flake8_error_count": 19,
+        "mypy_error_count": 0
+    },
+    "execution_metrics": {
+        "execution_success": true,
+        "execution_time_sec": 0.435,
+        "exception_type": "",
+        "exception_message": "",
+        "runtime_output": "Processing deletions for date: 12-19-2017\nRedesigning the Resources page to match new Broker design styles.\nReporting user testing contributions to agencies.\nProviding useful data across all applications with New Relic.\nSyncing D1 file generation with FPDS data load.\nUpdating SQL codes for clarity.\nMapping FederalActionObligation properly to the Atom Feed.\nAccessing published FABS files to see new entries.\nCreating a user testing summary from the UI SME.\nShowing correct status labels on the Submission Dashboard."
+    },
+    "total_credibility": 81.37
+}

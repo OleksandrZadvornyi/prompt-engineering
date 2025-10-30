@@ -1,0 +1,32 @@
+As a Data user, I want to process deletions from 12-19-2017, so that I can maintain accurate data records.
+As a Data user, I want to receive updates to FABS records, so that I can have the most up-to-date information.
+As a Data user, I want to access raw agency published files from FABS via USAspending, so that I can analyze the data.
+As a UI designer, I want to move on to round 2 of DABS or FABS landing page edits, so that I can improve the user interface.
+As a UI designer, I want to move on to round 2 of Homepage edits, so that I can enhance the user experience.
+As a UI designer, I want to move on to round 3 of the Help page edits, so that I can provide clear guidance to users.
+As a UI designer, I want to redesign the Resources page to match the new Broker design styles, so that the website has a consistent look and feel.
+As a UI designer, I want to report to the Agencies about user testing, so that I can gather feedback and make improvements.
+As a DevOps engineer, I want New Relic to provide useful data across all applications, so that I can monitor and optimize system performance.
+As a DevOps engineer, I want to log better to troubleshoot issues, so that I can quickly identify and resolve problems.
+As a DevOps engineer, I want to track the issues that come up in Tech Thursday, so that I can stay informed and address technical concerns.
+As an agency user, I want to map the FederalActionObligation properly to the Atom Feed, so that I can ensure data accuracy and compliance.
+As an agency user, I want to access published FABS files, so that I can retrieve and analyze the data.
+As an agency user, I want to derive FundingAgencyCode to improve data quality and completeness, so that I can make informed decisions.
+As an agency user, I want to sync the D1 file generation with the FPDS data load, so that I can ensure data consistency and integrity.
+As an agency user, I want to ensure deleted FSRS records are not included in submissions, so that I can maintain accurate and up-to-date records.
+As an agency user, I want to use the schema v1.1 headers in FABS file, so that I can ensure data compliance and standards.
+As an agency user, I want to load historical Financial Assistance data for FABS go-live, so that I can prepare for the launch.
+As a broker team member, I want to derive FundingAgencyCode to improve data quality and completeness, so that I can make informed decisions.
+As a broker team member, I want to update the SQL codes for clarity, so that I can improve data management and analysis.
+As a broker team member, I want to create content mockups to submit data efficiently, so that I can streamline data submission processes.
+As a broker team member, I want to have updated error codes that accurately reflect the logic, so that I can troubleshoot and resolve issues effectively.
+As a FABS user, I want to add updates on a FABS submission to be modified when the publishStatus changes, so that I can ensure data accuracy and integrity.
+As a FABS user, I want to add the GTAS window data to the database, so that I can enhance data analysis and reporting.
+As a FABS user, I want to access published FABS files, so that I can retrieve and analyze the data.
+As a FABS user, I want to view DABS pages without wanting two sets of permissions, so that I can simplify access and navigation.
+As a Developer, I want to make updates to the SQL codes for clarity, so that I can improve data management and analysis.
+As a Developer, I want to add the 00***** and 00FORGN PPoPCode cases to the derivation logic, so that I can enhance data accuracy and completeness.
+As a Developer, I want to log better to troubleshoot issues, so that I can quickly identify and resolve problems.
+As a Developer, I want to index domain models properly, so that I can improve data organization and retrieval.
+As a Developer, I want to manage and cache D Files generation requests, so that I can optimize system performance and prevent duplicate requests.
+As a Developer, I want to prevent users from double publishing FABS submissions after refreshing, so that I can ensure data integrity and prevent errors.

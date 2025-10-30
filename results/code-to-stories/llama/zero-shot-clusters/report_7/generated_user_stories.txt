@@ -1,0 +1,31 @@
+As a system administrator, I want to configure the Broker System, so that it can process user stories.
+As a developer, I want to add user stories to the Broker System, so that I can track project requirements.
+As a system administrator, I want to update the resources page, so that users have access to the latest information.
+As a system administrator, I want to configure New Relic, so that system performance can be monitored.
+As a data analyst, I want to load FPDS data, so that it can be used for analysis.
+As a system administrator, I want to generate the D1 file, so that it can be used for reporting.
+As a developer, I want to update SQL codes, so that database queries are optimized.
+As a data analyst, I want to update derivation logic, so that data is accurately derived.
+As a data analyst, I want to derive the funding agency code, so that it can be used for reporting.
+
+As a system administrator, I want to configure the FABS System, so that it can process user stories.
+As a developer, I want to add user stories to the FABS System, so that I can track project requirements.
+As a system administrator, I want to update the landing page, so that users have a better experience.
+As a system administrator, I want to update the homepage, so that users have access to the latest information.
+As a system administrator, I want to update the help page, so that users can find help when needed.
+As a system administrator, I want to update the submission dashboard, so that users can track their submissions.
+As a data analyst, I want to upload the FABS file, so that it can be used for analysis.
+As a system administrator, I want to include flexfields, so that users can customize their experience.
+
+As a system administrator, I want to configure the DABS System, so that it can process user stories.
+As a developer, I want to add user stories to the DABS System, so that I can track project requirements.
+As a system administrator, I want to update the landing page, so that users have a better experience.
+As a data analyst, I want to upload the DABS file, so that it can be used for analysis.
+As a system administrator, I want to include flexfields, so that users can customize their experience.
+
+As a system administrator, I want to configure the USASpending System, so that it can process user stories.
+As a developer, I want to add user stories to the USASpending System, so that I can track project requirements.
+As a system administrator, I want to update the publish button, so that users can publish their data.
+As a data analyst, I want to configure FABS groups, so that data can be accurately grouped.
+As a data analyst, I want to load historical data, so that it can be used for analysis.
+As a data analyst, I want to configure the FPDS data loader, so that data can be loaded efficiently.

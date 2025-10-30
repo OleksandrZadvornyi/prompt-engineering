@@ -1,0 +1,8 @@
+{
+  "(2,)": "As a FABS user, I want to add a cluster, so that I can organize related user stories As a FABS user, I want to add a user story to a cluster, so that I can track specific tasks associated with that cluster As a UIDesigner, I want to report user testing contributions to Agencies, so that stakeholders are informed of user feedback",
+  "(1,)": "As a FABS user, I want to process all clusters, so that I can execute the tasks defined in the user stories As a Developer, I want to modify FABS submission based on publish status change, so that submissions reflect the most current status As a FABS user, I want to download uploaded FABS files, so that I can access the necessary documents",
+  "(5,)": "As a User, I want to process deletions for a specific date, so that I can manage data accurately As a UIDesigner, I want to schedule user testing for stakeholders, so that users can provide feedback on new designs As a DevOps Engineer, I want to provide useful data from New Relic across all applications, so that the development team can monitor application performance",
+  "(0,)": "As a UIDesigner, I want to redesign the Resources page to match new Broker design styles, so that the user interface is consistent and modern",
+  "(3,)": "As a Broker User, I want to sync D1 file generation with FPDS data load, so that data processes are aligned As a Broker User, I want to validate PPoPZIP+4 according to Legal Entity ZIP validations, so that data integrity is maintained",
+  "(4,)": "As a Developer, I want to improve logging for better troubleshooting, so that I can identify issues more efficiently"
+}

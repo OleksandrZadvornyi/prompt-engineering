@@ -1,0 +1,28 @@
+{
+    "request_number": 8,
+    "timestamp": "2025-10-26 22:54:43",
+    "model": "meta-llama/llama-3.3-70b-instruct",
+    "prompt_variant": "chain-of-thought-clusters",
+    "total_tokens": 1808,
+    "avg_prob": 0.9562118301670043,
+    "perplexity": 1.0457933780481967,
+    "struct_metrics": {
+        "avg_cyclomatic_complexity": 1.0454545454545454,
+        "ast_depth": 13,
+        "avg_function_size_lines": 2.923076923076923,
+        "import_redundancy_ratio": 0.0
+    },
+    "semantic_metrics": {
+        "syntax_valid": true,
+        "flake8_error_count": 6,
+        "mypy_error_count": 0
+    },
+    "execution_metrics": {
+        "execution_success": true,
+        "execution_time_sec": 0.406,
+        "exception_type": "",
+        "exception_message": "",
+        "runtime_output": "Processing Cluster: 4\nProcessing deletions for 2017-12-19\nRedesigning Resources page\nReporting to agencies\nConfiguring New Relic\nSyncing D1 file generation\nUpdating SQL codes\nDeriving Funding Agency Code\nMapping Federal Action Obligation\nValidating PPoPZIP\nProcessing Cluster: 5\nMoving to round 2 of DABS or FABS landing page edits\nMoving to round 2 of Homepage edits\nMoving to round 3 of Help page edits\nImproving logging\nTracking issues in Tech Thursday\nCreating user testing summary\nBeginning user testing\nScheduling user testing\nDesigning schedule from UI SME\nDesigning audit from UI SME\nResetting environment\nIndexing domain models\nUpdating header information box\nJustifying zero-padded fields\nUpdating error codes\nAccessing Broker application data\nGranting read-only access to DABS\nCreating landing page\nProcessing Cluster: 2\nUpdating FABS submission status\nAdding GTAS window data to database\nUpdating FABS sample file\nDeactivating publish button\nDeriving fields in historical FABS loader\nLoading historical FABS data\nLoading historical FPDS data\nProviding FABS groups\nDownloading uploaded FABS file\nDetermining best way to load historical FPDS data\nProcessing Cluster: 0\nUploading and validating error message\nUpdating Broker validation rule table\nUpdating DUNS validations\nReceiving file-level error\nPreventing duplicate transactions\nProcessing Cluster: 1\nManaging and caching D files generation requests\nAccessing raw agency published files\nIncluding large number of flexfields\nPreventing double publishing FABS submissions\nSeeing updated financial assistance data daily\nEnsuring attempts to correct non-existent records\nGenerating and validating D files\nProcessing Clusters: 2, 5\nSeeing office names derived from office codes\nProcessing Clusters: 2, 4, 5\nLinking sample file to correct file\nProcessing Clusters: 3, 5\nLeaving off last 4 digits of ZIP\nProcessing Clusters: 1, 2\nSeeing correct status labels on Submission Dashboard"
+    },
+    "total_credibility": 90.46
+}

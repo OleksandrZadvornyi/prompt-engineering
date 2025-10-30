@@ -1,0 +1,28 @@
+{
+    "request_number": 17,
+    "timestamp": "2025-10-26 21:38:44",
+    "model": "openai/gpt-4o-mini",
+    "prompt_variant": "chain-of-thought",
+    "total_tokens": 681,
+    "avg_prob": 0.8360626629338517,
+    "perplexity": 1.1960825956404644,
+    "struct_metrics": {
+        "avg_cyclomatic_complexity": 1.4444444444444444,
+        "ast_depth": 9,
+        "avg_function_size_lines": 3.823529411764706,
+        "import_redundancy_ratio": 0.0
+    },
+    "semantic_metrics": {
+        "syntax_valid": true,
+        "flake8_error_count": 12,
+        "mypy_error_count": 0
+    },
+    "execution_metrics": {
+        "execution_success": true,
+        "execution_time_sec": 0.435,
+        "exception_type": "",
+        "exception_message": "",
+        "runtime_output": "Processing deletions for date: 12-19-2017\nRedesigning Resources page to match new Broker design styles.\nReporting user testing: User testing report summary.\nLogging issue for submission: SUB123 - Error found during submission.\nPreventing duplicate publish for submission: SUB123\nIncluding flexfields: ['flex1', 'flex2']\nSubmitting data elements: ['\"element1\"', '\"element2\"']\nUploading and validating file: file1.csv\nCreating content mockups for efficient data submission.\nDownloading uploaded FABS file with ID: file123\nValidating FABS submission: {'data': 'sample_data'}\nResetting environment to only take Staging MAX permissions.\nUpdating publish status for submission SUB123 to Published\nTracking issue: Issue found during testing."
+    },
+    "total_credibility": 84.96
+}

@@ -1,0 +1,21 @@
+As a user, I want to create a submission with specific data and a draft status, so that I can prepare it for validation and potential publishing.
+
+As a FABS user, I want to upload my submission to the system, so that it can be processed and validated.
+
+As a FABS user, I want to validate my submission to ensure all required fields are present, so that I can avoid errors during publishing.
+
+As a FABS user, I want to publish my submission, so that it is officially submitted and available to the relevant parties.
+
+As a UI designer, I want to report user testing results to agencies, so that they are informed of feedback and can make necessary adjustments.
+
+As a UI designer, I want to move on to the next round of edits for a specific page type, so that I can refine the design based on user feedback.
+
+As a developer, I want to log errors associated with a submission, so that I can keep track of issues and address them accordingly.
+
+As a developer, I want to prevent the same submission from being published multiple times, so that I maintain the integrity of the publishing process.
+
+As a data user, I want to process deletions for a specified date, so that I can manage outdated data effectively.
+
+As an agency user, I want to request a specific file format, so that I can receive data in the format that I need.
+
+As an agency user, I want to submit data elements in a specific format, so that my submissions adhere to the required standards.

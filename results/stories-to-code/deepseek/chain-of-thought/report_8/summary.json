@@ -1,0 +1,28 @@
+{
+    "request_number": 8,
+    "timestamp": "2025-10-26 22:04:06",
+    "model": "deepseek/deepseek-chat-v3-0324",
+    "prompt_variant": "chain-of-thought",
+    "total_tokens": 1312,
+    "avg_prob": 0.9303343578718881,
+    "perplexity": 1.0748823705570436,
+    "struct_metrics": {
+        "avg_cyclomatic_complexity": 1.4193548387096775,
+        "ast_depth": 11,
+        "avg_function_size_lines": 3.9130434782608696,
+        "import_redundancy_ratio": 0.0
+    },
+    "semantic_metrics": {
+        "syntax_valid": true,
+        "flake8_error_count": 10,
+        "mypy_error_count": 2
+    },
+    "execution_metrics": {
+        "execution_success": true,
+        "execution_time_sec": 0.481,
+        "exception_type": "",
+        "exception_message": "",
+        "runtime_output": "2025-10-30 05:54:37,455 - __main__ - INFO - File uploaded for submission FABS123: valid_file.csv\n2025-10-30 05:54:37,455 - __main__ - INFO - Submission FABS123 status updated to pending\n2025-10-30 05:54:37,455 - __main__ - INFO - Submission FABS123 status updated to published\n2025-10-30 05:54:37,456 - __main__ - INFO - Alice is redesigning Resources\n2025-10-30 05:54:37,456 - __main__ - INFO - Alice is conducting user testing for Homepage edits\n2025-10-30 05:54:37,456 - __main__ - INFO - Bob from NASA submitted data FABS123\n2025-10-30 05:54:37,456 - __main__ - ERROR - Submission FABS123 is not in draft status"
+    },
+    "total_credibility": 85.62
+}

@@ -1,0 +1,48 @@
+As a developer of the USASpending application, I want to update FABS records, so that I can ensure the accuracy and completeness of the data.
+As a user of the USASpending application, I want to derive the FundingAgencyCode, so that I can identify the funding agency for a specific record.
+As a user of the USASpending application, I want to map FederalActionObligation to Atom Feed, so that I can easily access and share the data.
+As a user of the USASpending application, I want to validate PPoPZIP+4, so that I can ensure the accuracy of the location data.
+As a user of the USASpending application, I want to generate a D1 file, so that I can submit the required data to the relevant authorities.
+As a developer of the USASpending application, I want to get New Relic data, so that I can monitor the application's performance and troubleshoot issues.
+As a developer of the USASpending application, I want to update SQL codes, so that I can improve the application's efficiency and security.
+As a user of the USASpending application, I want to add 00***** and 00FORGN PPoPCode cases, so that I can handle special cases and exceptions.
+As a developer of the USASpending application, I want to report user testing, so that I can identify and address any issues or concerns.
+
+As a FABS user, I want to submit a FABS file, so that I can report my financial data.
+As a FABS user, I want to validate a FABS file, so that I can ensure the accuracy and completeness of the data.
+As a FABS user, I want to derive fields, so that I can easily access and analyze the data.
+As a FABS user, I want to get FABS data, so that I can access and review my financial records.
+As a FABS user, I want to update the FABS sample file, so that I can ensure the file is accurate and up-to-date.
+As a FABS user, I want to add GTAS window data, so that I can track and manage my financial transactions.
+As a FABS user, I want to deactivate the publish button, so that I can prevent accidental publication of incomplete or inaccurate data.
+As a FABS user, I want to load historical FABS data, so that I can analyze and compare past financial records.
+As a FABS user, I want to load historical FPDS data, so that I can analyze and compare past financial records.
+
+As a DABS user, I want to submit a DABS file, so that I can report my financial data.
+As a DABS user, I want to validate a DABS file, so that I can ensure the accuracy and completeness of the data.
+As a DABS user, I want to derive fields, so that I can easily access and analyze the data.
+As a DABS user, I want to get DABS data, so that I can access and review my financial records.
+As a DABS user, I want to update the DABS sample file, so that I can ensure the file is accurate and up-to-date.
+
+As a Broker, I want to upload and validate an error message, so that I can troubleshoot and resolve issues.
+As a Broker, I want to update the Broker validation rule table, so that I can ensure the accuracy and completeness of the data.
+As a Broker, I want to clarify the CFDA error code, so that I can understand and address the issue.
+As a Broker, I want to update Broker resources, so that I can improve the application's efficiency and security.
+As a Broker, I want to update Broker validations, so that I can ensure the accuracy and completeness of the data.
+As a Broker, I want to update Broker P&P pages, so that I can improve the application's user experience and documentation.
+
+As an Agency User, I want to receive a file-level error, so that I can identify and address issues with my submissions.
+As an Agency User, I want to submit a FABS file, so that I can report my financial data.
+As an Agency User, I want to validate a FABS file, so that I can ensure the accuracy and completeness of the data.
+As an Agency User, I want to derive fields, so that I can easily access and analyze the data.
+As an Agency User, I want to get FABS data, so that I can access and review my financial records.
+As an Agency User, I want to update the FABS sample file, so that I can ensure the file is accurate and up-to-date.
+
+As a Developer, I want to log better, so that I can troubleshoot and resolve issues.
+As a Developer, I want to troubleshoot issues, so that I can identify and address problems with the application.
+As a Developer, I want to update domain models, so that I can improve the application's efficiency and security.
+As a Developer, I want to index domain models, so that I can improve the application's performance and scalability.
+As a Developer, I want to access Broker application data, so that I can monitor and analyze the application's performance.
+
+As a Tester, I want to test features, so that I can ensure the application is working as expected.
+As a Tester, I want to ensure FABS is deriving fields properly, so that I can verify the accuracy and completeness of the data.

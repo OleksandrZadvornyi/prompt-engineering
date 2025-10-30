@@ -1,0 +1,28 @@
+{
+    "request_number": 10,
+    "timestamp": "2025-10-26 21:36:20",
+    "model": "openai/gpt-4o-mini",
+    "prompt_variant": "chain-of-thought",
+    "total_tokens": 931,
+    "avg_prob": 0.8528949988693768,
+    "perplexity": 1.172477270151226,
+    "struct_metrics": {
+        "avg_cyclomatic_complexity": 1.2777777777777777,
+        "ast_depth": 11,
+        "avg_function_size_lines": 2.2222222222222223,
+        "import_redundancy_ratio": 0.0
+    },
+    "semantic_metrics": {
+        "syntax_valid": true,
+        "flake8_error_count": 11,
+        "mypy_error_count": 1
+    },
+    "execution_metrics": {
+        "execution_success": true,
+        "execution_time_sec": 0.441,
+        "exception_type": "",
+        "exception_message": "",
+        "runtime_output": "Processing deletions for date: 12-19-2017\nRedesigning the Resources page to match new Broker design styles.\nLogging issue: Issue with submission ID 12.\nIncluding flexfields: ['field1', 'field2']\nSubmission ID 1: Status - Completed\nSubmitting data elements: {'field1': 'value1', 'field2': 'value2'}"
+    },
+    "total_credibility": 84.98
+}

@@ -1,0 +1,28 @@
+{
+    "request_number": 20,
+    "timestamp": "2025-10-26 15:58:02",
+    "model": "meta-llama/llama-3.3-70b-instruct",
+    "prompt_variant": "zero-shot-clusters",
+    "total_tokens": 1975,
+    "avg_prob": 0.9530108479637696,
+    "perplexity": 1.0493059991254337,
+    "struct_metrics": {
+        "avg_cyclomatic_complexity": 1.1206896551724137,
+        "ast_depth": 8,
+        "avg_function_size_lines": 4.745098039215686,
+        "import_redundancy_ratio": 0.0
+    },
+    "semantic_metrics": {
+        "syntax_valid": true,
+        "flake8_error_count": 1,
+        "mypy_error_count": 0
+    },
+    "execution_metrics": {
+        "execution_success": true,
+        "execution_time_sec": 0.403,
+        "exception_type": "",
+        "exception_message": "",
+        "runtime_output": "None\nderived_funding_agency_code\nmapped_federal_action_obligation\nvalidated_ppopzip\ngenerated_d1_file\n{'new_relic_data': 'loaded'}\nupdated_sql_codes\nadded_ppopcode_cases\nsubmitted_fabs_file\nvalidated_fabs_file\nderived_fields\n{'fabs_data': 'loaded'}\nupdated_fabs_sample_file\nadded_gtas_window_data\ndeactivated_publish_button\nloaded_historical_fabs_data\nloaded_historical_fpds_data\nsubmitted_dabs_file\nvalidated_dabs_file\nderived_fields\n{'dabs_data': 'loaded'}\nupdated_dabs_sample_file\nuploaded_and_validated_error_message\nupdated_broker_validation_rule_table\nclarified_cfda_error_code\nupdated_broker_resources\nupdated_broker_validations\nupdated_broker_pp_pages\nreceived_file_level_error\nsubmitted_fabs_file\nvalidated_fabs_file\nderived_fields\n{'fabs_data': 'loaded'}\nupdated_fabs_sample_file\nlogged_better\ntroubleshooted_issues\nupdated_domain_models\nindexed_domain_models\naccessed_broker_application_data\ntested_features\nensured_fabs_is_deriving_fields_properly"
+    },
+    "total_credibility": 92.72
+}

@@ -1,0 +1,35 @@
+Here are the user stories derived from the Python code:
+
+As a data administrator, I want to process deletions for a specific date, so that data cleanup is performed accurately.  
+As a UI designer, I want to redesign the Resources page, so that it matches new Broker design styles.  
+As a tester, I want to report user testing feedback to agencies, so that they can improve their applications.  
+As a DevOps engineer, I want to configure New Relic for applications, so that monitoring is enabled.  
+As a data processor, I want to sync D1 file generation with FPDS data load, so that files are generated with the latest data.  
+As a SQL developer, I want to update SQL code for better clarity, so that queries are easier to maintain.  
+As a data analyst, I want to add PPoPCode cases to derivation logic, so that data processing is more comprehensive.  
+As a data engineer, I want to derive FundingAgencyCode, so that data quality is improved.  
+As a developer, I want to map FederalActionObligation to Atom Feed, so that financial data is properly represented.  
+As a validation specialist, I want to validate ZIP+4 codes, so that address data is accurate.  
+As a content manager, I want to edit the landing page for a specific round, so that users see updated information.  
+As a system administrator, I want to enhance logging for submissions, so that debugging is easier.  
+As a security officer, I want to provide FABS file access to users, so that authorized personnel can retrieve published data.  
+As a testing coordinator, I want to schedule user testing with advanced notice, so that participants are prepared.  
+As a data architect, I want to ensure domain models are indexed, so that query performance is optimized.  
+As a frontend developer, I want to update header information with date and time, so that users see the latest updates.  
+As an error handler, I want to update error codes with descriptive messages, so that issues are easier to diagnose.  
+As a submission manager, I want to update FABS submissions on publishStatus change, so that data stays synchronized.  
+As a database administrator, I want to add GTAS window data, so that financial records are up-to-date.  
+As a data loader, I want to derive fields for historical FABS data, so that legacy records are complete.  
+As a web developer, I want to update frontend URLs, so that navigation is accurate.  
+As a validation manager, I want to update Broker validation rules, so that data integrity is maintained.  
+As a submission processor, I want to include flexfields in error files if required elements are missing, so that validation is thorough.  
+As a compliance officer, I want to validate DUNS numbers based on ActionType and dates, so that records meet standards.  
+As a file manager, I want to manage D Files generation requests, so that processing is efficient.  
+As an optimization specialist, I want to optimize submissions with large numbers of flexfields, so that performance is improved.  
+As a data analyst, I want to load historical FPDS data, so that trends can be analyzed.  
+As a data cleaner, I want to exclude deleted FSRS records from submissions, so that only active data is processed.  
+As a validator, I want to validate loan records allowing zero and blank values, so that financial data is accurate.  
+As a schema manager, I want to update file headers to match schema versions, so that data compatibility is maintained.  
+As a data processor, I want to derive office names from office codes, so that records are more readable.  
+As a UI developer, I want to update sample file links in dialogs, so that users get correct resources.  
+As a dashboard manager, I want to update status labels on the Submission Dashboard, so that users see clear statuses.

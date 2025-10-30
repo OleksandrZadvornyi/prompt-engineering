@@ -1,0 +1,29 @@
+As a Data Processor, I want to process deletions for a specific date, so that I can ensure data accuracy and consistency.
+As a Data Processor, I want to update SQL codes, so that I can improve data clarity and readability.
+As a Data Processor, I want to add derivation logic, so that I can improve data quality and completeness.
+As a Data Processor, I want to derive funding agency codes, so that I can provide accurate and reliable data.
+As a Data Processor, I want to map federal action obligations, so that I can ensure data consistency and accuracy.
+As a Data Processor, I want to validate PPoPZIP+4, so that I can ensure data quality and accuracy.
+As a UI Updater, I want to redesign the resources page, so that I can improve user experience and engagement.
+As a UI Updater, I want to report to agencies, so that I can keep them informed about user testing and feedback.
+As a UI Updater, I want to track issues, so that I can identify and resolve problems quickly.
+As a UI Updater, I want to schedule user testing, so that I can gather feedback and improve the user interface.
+As a UI Updater, I want to begin user testing, so that I can validate stakeholder UI improvement requests.
+As a New Relic Monitor, I want to provide useful data, so that I can help improve application performance and reliability.
+As a DevOps Engineer, I want to sync D1 file generation, so that I can ensure data consistency and accuracy.
+As a FABS User, I want to update FABS submissions, so that I can ensure data accuracy and consistency.
+As a FABS User, I want to add GTAS window data, so that I can improve data quality and completeness.
+As a FABS User, I want to update the FABS sample file, so that I can ensure data accuracy and consistency.
+As a FABS User, I want to deactivate the publish button, so that I can prevent errors and ensure data integrity.
+As a FABS Loader, I want to derive fields, so that I can improve data quality and completeness.
+As a FABS Loader, I want to include FREC derivations, so that I can provide accurate and reliable data.
+As a Broker User, I want to create content mockups, so that I can improve data submission efficiency.
+As a Broker User, I want to submit records, so that I can provide accurate and reliable data.
+As an Agency User, I want to leave off the last 4 digits of ZIP, so that I can submit data without errors.
+As an Agency User, I want to map header information, so that I can view updated date and time information.
+As an Agency User, I want to include a large number of flexfields, so that I can improve data quality and completeness.
+As a Developer, I want to index domain models, so that I can improve validation results and data quality.
+As a Developer, I want to access broker application data, so that I can investigate issues and improve the application.
+As a USASpending User, I want to access raw agency published files, so that I can view and analyze data.
+As a DFiles Generator, I want to manage D Files generation requests, so that I can prevent performance issues and ensure data quality.
+As a FABS Uploader, I want to prevent duplicate transactions, so that I can ensure data accuracy and consistency.

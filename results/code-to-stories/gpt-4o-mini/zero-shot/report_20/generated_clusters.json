@@ -1,0 +1,7 @@
+{
+  "(2,)": "As a Developer, I want to log messages, so that I can troubleshoot issues effectively As a Developer, I want to update the status of submissions, so that I can reflect their current state As a FABS User, I want to submit data, so that I can contribute necessary information post-validation",
+  "(0,)": "As a UI Designer, I want to redesign the Resources page, so that it aligns with new design standards As a UI Designer, I want to report user testing results, so that stakeholders are informed of findings As a UI Designer, I want to schedule user testing, so that user interactions can be evaluated timely",
+  "(1,)": "As a Data User, I want to receive updates on FABS records, so that I stay informed of changes As a System, I want to access published files, so that I can obtain necessary data for reporting or analysis",
+  "(4,)": "As a System, I want to process deletions for a specific date, so that outdated submissions can be managed effectively",
+  "(3,)": "As a System, I want to generate a D1 file synchronized with data loading, so that data integrity is maintained across systems"
+}

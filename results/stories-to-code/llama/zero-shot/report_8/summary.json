@@ -1,0 +1,28 @@
+{
+    "request_number": 8,
+    "timestamp": "2025-10-26 15:10:12",
+    "model": "meta-llama/llama-3.3-70b-instruct",
+    "prompt_variant": "zero-shot",
+    "total_tokens": 2380,
+    "avg_prob": 0.9239329916624727,
+    "perplexity": 1.0823295726248032,
+    "struct_metrics": {
+        "avg_cyclomatic_complexity": 1.1964285714285714,
+        "ast_depth": 9,
+        "avg_function_size_lines": 4.4222222222222225,
+        "import_redundancy_ratio": 0.0
+    },
+    "semantic_metrics": {
+        "syntax_valid": true,
+        "flake8_error_count": 17,
+        "mypy_error_count": 0
+    },
+    "execution_metrics": {
+        "execution_success": true,
+        "execution_time_sec": 0.461,
+        "exception_type": "",
+        "exception_message": "",
+        "runtime_output": "Processing deletions for 12-19-2017\nRedesigning Resources page\nReporting user testing\nMoving on to round 2 of DABS or FABS landing page edits\nMoving on to round 2 of Homepage edits\nMoving on to round 3 of Help page edits\nTracking issues\nScheduling user testing\nBeginning user testing\nLogging better\nUpdating FABS submission\nPreventing duplicate transactions\nUpdating Broker validation rule table\nAdding GTAS window data\nManaging D Files generation requests\nUploading and validating example.txt at /path/to/file\nGenerating D1 file\nAccessing published FABS files\nEnsuring USAspending only sends grant records\nIncluding large number of flexfields\nEnsuring deleted FSRS records are not included in submissions\nSeeing updated financial assistance data daily\nSubmitting FABS data\nValidating FABS rules\nMapping FederalActionObligation to Atom Feed\nAccessing raw agency published files from FABS via USAspending\nGenerating and validating D Files\nSubmitting records for individual recipients\nSeeing correct status labels on Submission Dashboard\nGetting file level error\nDeriving fields"
+    },
+    "total_credibility": 84.12
+}

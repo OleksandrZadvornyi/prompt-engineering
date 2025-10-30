@@ -1,0 +1,17 @@
+Here are the user stories derived from the Python code:
+
+1. As a system administrator, I want to set up logging, so that I can monitor and troubleshoot system activities effectively.  
+2. As a developer, I want to define enumeration types for publish status, submission types, and action types, so that I can standardize and restrict possible values in the system.  
+3. As an agency user, I want to create a submission with a unique ID, so that I can start preparing my data for publication.  
+4. As an agency user, I want to update the status of my submission, so that I can track its progress through different stages (draft, published, pending).  
+5. As an agency user, I want to add fields to my submission, so that I can include all necessary data for processing.  
+6. As a validator, I want to define validation rules with descriptions and error messages, so that I can ensure data quality and consistency.  
+7. As a system, I want to validate submissions against predefined rules, so that I can catch errors before publication.  
+8. As an agency user, I want to publish my submission after validation, so that my data becomes available for use.  
+9. As a system administrator, I want to add new validation rules, so that I can adapt to changing requirements.  
+10. As a UI designer, I want to create new design versions for pages, so that I can iterate on user interfaces.  
+11. As a UI designer, I want to submit designs for approval, so that they can be reviewed and deployed.  
+12. As a data manager, I want to process data deletions for specific dates, so that I can maintain data hygiene.  
+13. As a data consumer, I want to get published files by submission type, so that I can access relevant data efficiently.  
+14. As a user, I want the system to automatically track creation and update timestamps, so that I can audit changes to submissions.  
+15. As a developer, I want to encapsulate related functionality in services (SubmissionService, UIEditor, DataService), so that the code remains organized and maintainable.

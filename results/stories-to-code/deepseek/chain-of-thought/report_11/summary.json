@@ -1,0 +1,28 @@
+{
+    "request_number": 11,
+    "timestamp": "2025-10-26 22:07:19",
+    "model": "deepseek/deepseek-chat-v3-0324",
+    "prompt_variant": "chain-of-thought",
+    "total_tokens": 1672,
+    "avg_prob": 0.9206678765350621,
+    "perplexity": 1.0861680150756479,
+    "struct_metrics": {
+        "avg_cyclomatic_complexity": 1.6923076923076923,
+        "ast_depth": 11,
+        "avg_function_size_lines": 4.6923076923076925,
+        "import_redundancy_ratio": 0.0
+    },
+    "semantic_metrics": {
+        "syntax_valid": true,
+        "flake8_error_count": 19,
+        "mypy_error_count": 2
+    },
+    "execution_metrics": {
+        "execution_success": true,
+        "execution_time_sec": 0.575,
+        "exception_type": "",
+        "exception_message": "",
+        "runtime_output": "2025-10-30 05:54:07,426 - __main__ - INFO - Processing deletions for 12-19-2017\n2025-10-30 05:54:07,426 - __main__ - INFO - UI styles updated to match new Broker design\n2025-10-30 05:54:07,427 - __main__ - INFO - Submission sub123 status changed to VALIDATED\nUser Testing Report for NASA\n2025-10-30 05:54:07,472 - __main__ - INFO - Generated user testing report for NASA\nGenerated at: 2025-10-30 05:54:07.472746\nResults:\n- Test 1 passed\n- Test 2 failed"
+    },
+    "total_credibility": 80.63
+}

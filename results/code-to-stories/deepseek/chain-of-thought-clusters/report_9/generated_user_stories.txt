@@ -1,0 +1,17 @@
+Here are the user stories derived from the Python code:
+
+1. As a system administrator, I want to add validation rules, so that I can ensure data integrity and compliance.  
+2. As a user, I want to validate DUNS numbers for specific action types, so that I can confirm they are registered in SAM.  
+3. As a user, I want to validate file extensions, so that I ensure only CSV or XLSX files are processed.  
+4. As a user, I want to generate D files with unique request IDs, so that I can track and cache file content efficiently.  
+5. As a user, I want to prevent duplicate file publishing, so that submissions are not processed multiple times.  
+6. As a data analyst, I want to load historical FPDS data, so that I can analyze trends over time.  
+7. As a system integrator, I want to sync FPDS data with D1 generation, so that the system remains up-to-date.  
+8. As a data processor, I want to derive funding agency codes from records, so that I can categorize funding data correctly.  
+9. As an agency user, I want to update publish status for FABS submissions, so that I can track submission progress.  
+10. As an agency user, I want to validate loan records, so that submissions with invalid loan amounts are flagged.  
+11. As a UX designer, I want to schedule user testing sessions, so that I can gather feedback on new features.  
+12. As a UX designer, I want to report user testing results, so that I can document usability improvements.  
+13. As a user, I want to update submission status labels in the dashboard, so that I can track submission states in real-time.  
+14. As a user, I want to view submission history, so that I can audit past actions and outcomes.  
+15. As a data administrator, I want to derive office names from codes, so that system data is more readable and user-friendly.

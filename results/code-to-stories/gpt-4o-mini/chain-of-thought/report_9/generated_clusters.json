@@ -1,0 +1,7 @@
+{
+  "(2,)": "As a user, I want to upload a file, so that I can submit my data for processing As a project manager, I want to process deletions for a specific date, so that I can manage data efficiently As a user, I want to submit data specific to my role, so that I can fulfill my responsibilities effectively",
+  "(4,)": "As a FABS user, I want to validate my file upload, so that I can ensure it meets the required format",
+  "(0,)": "As a FABS user, I want to check for errors in my file upload, so that I can address any issues before submission",
+  "(3,)": "As a developer, I want to log issues related to submission failures, so that I can keep track of problems that need to be addressed",
+  "(1,)": "As a project manager, I want to add user testing reports, so that I can maintain records of user feedback As a project manager, I want to request resource redesigns, so that I can improve project resources based on user needs"
+}

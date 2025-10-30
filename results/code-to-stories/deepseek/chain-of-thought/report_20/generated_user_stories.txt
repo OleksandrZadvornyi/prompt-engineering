@@ -1,0 +1,14 @@
+Here are the user stories derived from the code:
+
+1. As a user, I want to create a submission, so that I can start working on a new data submission.  
+2. As a user, I want to update the publish status of my submission, so that I can manage its lifecycle (draft, published, pending).  
+3. As a user, I want to retrieve my submission details, so that I can review or modify it.  
+4. As a UI designer, I want to add a new UI component, so that I can track its design iterations.  
+5. As a UI designer, I want to update a component's design, so that the UI reflects the latest changes.  
+6. As a data validator, I want to add a new validation rule, so that I can enforce data quality checks.  
+7. As a data validator, I want to toggle a validation rule's status, so that I can enable or disable it as needed.  
+8. As a developer, I want to log application events, so that I can track system behavior for debugging.  
+9. As a developer, I want to retrieve logs, so that I can analyze system activity.  
+10. As an agency user, I want to process deletions for a specific date, so that I can maintain data accuracy.  
+11. As an agency user, I want to notify agencies with a report, so that I can share important updates.  
+12. As an admin, I want to lock the site during GTAS, so that I can prevent changes during scheduled maintenance.

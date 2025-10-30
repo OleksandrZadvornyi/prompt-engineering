@@ -1,0 +1,7 @@
+{
+  "(4,)": "As a user, I want to upload a file, so that I can submit my data for processing As a FABS user, I want to submit a FABS file, so that my specific data can be processed and validated As a user, I want to receive error messages when my submission contains errors, so that I can correct them before publishing",
+  "(2,)": "As a broker user, I want to submit data to the system, so that it can be processed and published if valid As a developer, I want to access broker application data, so that I can work with the submitted information",
+  "(0,)": "As a developer, I want to prevent double publishing of submissions, so that I avoid errors due to multiple submissions",
+  "(1,)": "As a submission object, I want to validate the submission data, so that I can determine if it is valid or contains errors As a submission object, I want to update my last modified timestamp when published, so that the latest modification time is recorded",
+  "(3,)": "As a UI setting manager, I want to apply styles to the UI components, so that the user interface can be visually customized"
+}

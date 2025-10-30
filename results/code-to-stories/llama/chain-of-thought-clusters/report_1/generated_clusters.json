@@ -1,0 +1,6 @@
+{
+  "(2,)": "As a FABS user, I want to submit data, so that I can upload information for my agency As a DABS user, I want to view DABS pages, so that I can access DABS information As a developer, I want to add GTAS window data, so that I can update GTAS information",
+  "(0,)": "As a developer, I want to update the FABS sample file, so that I can keep the sample file up to date As a developer, I want to be able to test the system's functionality, so that I can ensure the system works as expected",
+  "(1,)": "As a broker user, I want to upload and validate error messages, so that I can report and validate errors As a system administrator, I want to validate user-submitted data, so that I can ensure data quality and prevent errors",
+  "(3,)": "As a UI SME, I want to create a user testing summary, so that I can document user testing results"
+}

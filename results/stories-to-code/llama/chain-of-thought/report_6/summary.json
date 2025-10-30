@@ -1,0 +1,28 @@
+{
+    "request_number": 6,
+    "timestamp": "2025-10-26 21:43:04",
+    "model": "meta-llama/llama-3.3-70b-instruct",
+    "prompt_variant": "chain-of-thought",
+    "total_tokens": 1160,
+    "avg_prob": 0.9387984063133653,
+    "perplexity": 1.0651914119954375,
+    "struct_metrics": {
+        "avg_cyclomatic_complexity": 2.074074074074074,
+        "ast_depth": 10,
+        "avg_function_size_lines": 7.7,
+        "import_redundancy_ratio": 0.0
+    },
+    "semantic_metrics": {
+        "syntax_valid": true,
+        "flake8_error_count": 12,
+        "mypy_error_count": 0
+    },
+    "execution_metrics": {
+        "execution_success": true,
+        "execution_time_sec": 0.447,
+        "exception_type": "",
+        "exception_message": "",
+        "runtime_output": "Testing Broker user functions:\nFile not found.\nFalse\nTesting Agency user functions:\nTrue\nTesting FABS user functions:\nFile not found.\nFalse\nTesting Developer functions:\nTrue\nTrue\nTesting UI designer functions:\nTrue\nTrue\nTesting Data user functions:\nTrue\nTesting DevOps engineer functions:\nTrue"
+    },
+    "total_credibility": 86.13
+}

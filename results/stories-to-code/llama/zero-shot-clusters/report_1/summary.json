@@ -1,0 +1,28 @@
+{
+    "request_number": 1,
+    "timestamp": "2025-10-26 15:47:51",
+    "model": "meta-llama/llama-3.3-70b-instruct",
+    "prompt_variant": "zero-shot-clusters",
+    "total_tokens": 1359,
+    "avg_prob": 0.8967970657465841,
+    "perplexity": 1.115079473601421,
+    "struct_metrics": {
+        "avg_cyclomatic_complexity": 1.4634146341463414,
+        "ast_depth": 10,
+        "avg_function_size_lines": 4.4411764705882355,
+        "import_redundancy_ratio": 0.0
+    },
+    "semantic_metrics": {
+        "syntax_valid": true,
+        "flake8_error_count": 26,
+        "mypy_error_count": 0
+    },
+    "execution_metrics": {
+        "execution_success": false,
+        "execution_time_sec": 0.39,
+        "exception_type": "TypeError",
+        "exception_message": "'FabSubmission' object is not subscriptable",
+        "runtime_output": "Traceback (most recent call last):\n  File \"/app/main.py\", line 194, in <module>\nProcessing user story 4: As a Data user, I want to have the 12-19-2017 deletions processed.\nProcessing user story 5: As a UI designer, I want to move on to round 2 of DABS or FABS landing page edits, so that I can get approvals from leadership.\nProcessing user story 2: As a Developer, I want to add the updates on a FABS submission to be modified when the publishStatus changes, so that I know when the status of the submission has changed.\nProcessing user story 0: As a Broker user, I want to Upload and Validate the error message to have accurate text.\nProcessing user story 1: As a Developer, I want D Files generation requests to be managed and cached, so that duplicate requests do not cause performance issues.\nProcessing user story 3: As an data user, I want to receive updates to FABS records.\n    main()\n  File \"/app/main.py\", line 154, in main\n    print(fab_submissions.get_submission_status(1))\n          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/app/main.py\", line 32, in get_submission_status\n    if submission['id'] == submission_id:\n       ~~~~~~~~~~^^^^^^\nTypeError: 'FabSubmission' object is not subscriptable"
+    },
+    "total_credibility": 49.43
+}

@@ -1,0 +1,9 @@
+{
+  "(2,)": "As a user, I want to receive specific error messages for validation failures, so that I can correct my input accurately",
+  "(4,)": "As a system, I want to prevent duplicate file processing, so that I maintain data integrity and avoid redundancy",
+  "(0,)": "As a user, I want to retrieve cached agency files by ID, so that I can access previously processed data quickly As a system, I want to derive funding agency codes from submission data, so that I can classify funding sources correctly",
+  "(5,)": "As a system, I want to cache generated D files with unique request IDs, so that I can track and retrieve them later",
+  "(3,)": "As a data manager, I want to update the publish status of submissions, so that I can track their progress through the workflow As a user, I want to validate ZIP codes without requiring the last 4 digits, so that I can submit addresses more conveniently",
+  "(6,)": "As a compliance officer, I want to check SAM data completeness, so that I can ensure all required information is present",
+  "(1,)": "As a UI designer, I want to redesign the resources page with new styles, so that I can improve user experience As a product owner, I want to generate user testing reports for agencies, so that I can gather feedback on new features As a DevOps engineer, I want to configure New Relic for applications, so that I can monitor system performance As a tester, I want to schedule user testing sessions, so that I can organize feedback collection efficiently As a stakeholder, I want to receive summarized user testing feedback, so that I can make informed product decisions As a developer, I want to link sample files during testing, so that I can verify file processing functionality"
+}

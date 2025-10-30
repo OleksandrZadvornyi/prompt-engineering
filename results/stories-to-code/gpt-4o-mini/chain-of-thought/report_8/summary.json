@@ -1,0 +1,28 @@
+{
+    "request_number": 8,
+    "timestamp": "2025-10-26 21:35:36",
+    "model": "openai/gpt-4o-mini",
+    "prompt_variant": "chain-of-thought",
+    "total_tokens": 782,
+    "avg_prob": 0.8594638733590653,
+    "perplexity": 1.163516037144963,
+    "struct_metrics": {
+        "avg_cyclomatic_complexity": 1.6666666666666667,
+        "ast_depth": 11,
+        "avg_function_size_lines": 3.3333333333333335,
+        "import_redundancy_ratio": 0.0
+    },
+    "semantic_metrics": {
+        "syntax_valid": true,
+        "flake8_error_count": 12,
+        "mypy_error_count": 0
+    },
+    "execution_metrics": {
+        "execution_success": true,
+        "execution_time_sec": 0.487,
+        "exception_type": "",
+        "exception_message": "",
+        "runtime_output": "Processing deletions for 12-19-2017...\n2025-10-30 05:58:00.958263: FABS User performed action: Upload Submission\n2025-10-30 05:58:00.958296: FABS User performed action: Publish Submission\nReported to agencies: User testing completed with positive feedback.\nUser testing scheduled for 01-15-2024."
+    },
+    "total_credibility": 85.23
+}

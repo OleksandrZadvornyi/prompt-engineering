@@ -1,0 +1,28 @@
+{
+    "request_number": 14,
+    "timestamp": "2025-10-27 10:37:25",
+    "model": "openai/gpt-4o-mini",
+    "prompt_variant": "chain-of-thought-clusters",
+    "total_tokens": 707,
+    "avg_prob": 0.7961699950649954,
+    "perplexity": 1.2560131708032591,
+    "struct_metrics": {
+        "avg_cyclomatic_complexity": 1.6538461538461537,
+        "ast_depth": 11,
+        "avg_function_size_lines": 2.888888888888889,
+        "import_redundancy_ratio": 0.0
+    },
+    "semantic_metrics": {
+        "syntax_valid": true,
+        "flake8_error_count": 1,
+        "mypy_error_count": 0
+    },
+    "execution_metrics": {
+        "execution_success": true,
+        "execution_time_sec": 0.534,
+        "exception_type": "",
+        "exception_message": "",
+        "runtime_output": "Data user wants have the 12-19-2017 deletions processed because \nDUNS is valid: True\nFile uploaded successfully.\nSubmission status updated to published.\nSubmission periods are active.\nUser testing scheduled for approval."
+    },
+    "total_credibility": 89.59
+}

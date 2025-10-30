@@ -19,10 +19,10 @@
     },
     "execution_metrics": {
         "execution_success": true,
-        "execution_time_sec": 0.682,
+        "execution_time_sec": 0.443,
         "exception_type": "",
         "exception_message": "",
         "runtime_output": "Processing deletions for 2017-12-19.\nResources page redesigned per new styles.\nUser testing report submitted to Agencies.\nUser testing scheduled.\nLog: Starting to develop features.\nLog: Submission sub-001 updated to published\nFlexfields included in submission.\nUpdates received.\nUser testing summary created.\nEnvironment reset to Staging MAX permissions."
     },
-    "total_credibility": 78.19
+    "total_credibility": 81.44
 }

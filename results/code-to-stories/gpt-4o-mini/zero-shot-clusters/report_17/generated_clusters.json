@@ -1,0 +1,7 @@
+{
+  "(2,)": "As a FABS application user, I want to upload and validate submissions, so that I can ensure the data meets required standards As a developer, I want to update validation rules, so that I can adapt to changing requirements and ensure data integrity As a file manager, I want to generate FABS reports, so that I can provide detailed insights based on submitted data",
+  "(1,)": "As a FABS application user, I want to receive error messages when my submission is invalid, so that I can correct any issues before resubmitting As a FABS application user, I want to generate files once my submission is validated, so that I can have a record of successful submissions As a broker user, I want to submit individual records, so that I can track and manage my submissions effectively",
+  "(0,)": "As a UI designer, I want to add projects to my list, so that I can manage different design tasks efficiently As a UI designer, I want to track issues related to my projects, so that I can resolve them promptly and improve project outcomes As a UI designer, I want to schedule user testing sessions, so that I can gather feedback on the designs and make necessary adjustments",
+  "(4,)": "As a developer, I want to cache file requests, so that I can optimize file handling and improve system performance As a developer, I want to log issues, so that I can keep a record of problems encountered and address them systematically",
+  "(3,)": "As a file manager, I want to download FABS files, so that users have access to relevant data and reports"
+}

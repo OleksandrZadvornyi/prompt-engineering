@@ -19,10 +19,10 @@
     },
     "execution_metrics": {
         "execution_success": true,
-        "execution_time_sec": 0.438,
+        "execution_time_sec": 0.445,
         "exception_type": "",
         "exception_message": "",
         "runtime_output": "Publishing submission from user agency_user_1\nSubmission has errors. Cannot publish.\nCannot publish due to errors.\nApplying UI styles"
     },
-    "total_credibility": 84.1
+    "total_credibility": 85.76
 }

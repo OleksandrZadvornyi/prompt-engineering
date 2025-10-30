@@ -1,0 +1,19 @@
+As a system administrator, I want to process deletions for a specific date, so that I can manage data effectively.
+As a developer, I want to update the Broker validation rule table, so that I can maintain accurate validation rules.
+As a developer, I want to add GTAS window data, so that I can provide up-to-date information.
+As a developer, I want to update the FABS sample file, so that I can ensure data consistency.
+As a UI designer, I want to redesign the Resources page, so that I can improve user experience.
+As a system administrator, I want to report to agencies, so that I can keep them informed.
+As a system administrator, I want to receive useful data from New Relic, so that I can make data-driven decisions.
+As a system administrator, I want to generate D1 files, so that I can create required documents.
+As a data loader, I want to load FPDS data, so that I can update the system with the latest information.
+As a data loader, I want to load FABS data, so that I can update the system with the latest information.
+As a system administrator, I want to sync D1 file generation with FPDS data load, so that I can ensure data consistency.
+As a developer, I want to add PPoPCode cases to derivation logic, so that I can improve data accuracy.
+As a developer, I want to derive FundingAgencyCode, so that I can accurately identify funding agencies.
+As a developer, I want to map FederalActionObligation to Atom Feed, so that I can provide data in a standardized format.
+As a developer, I want to make PPoPZIP+4 work like Legal Entity ZIP validations, so that I can ensure consistent data validation.
+As an agency user, I want to submit data, so that I can provide required information.
+As an agency user, I want to validate my data, so that I can ensure it meets the required standards.
+As a FABS user, I want to submit data with a FABS file, so that I can provide complete information.
+As a broker user, I want to upload and validate files, so that I can ensure data accuracy.

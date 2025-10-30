@@ -1,0 +1,7 @@
+{
+  "(1,)": "As a BrokerUser, I want to upload a file, so that I can submit it for validation and further processing As a Developer, I want to log messages, so that I can track system events and troubleshoot issues",
+  "(2,)": "As a BrokerUser, I want to validate an error message, so that I can ensure it is correctly formatted and relevant",
+  "(0,)": "As a BrokerUser, I want to submit records, so that they can be processed and stored in the system As a FABSUser, I want to submit a FABS file, so that it can be validated and processed",
+  "(3,)": "As a FABSUser, I want to retrieve the submission status, so that I can track the progress of my submission",
+  "(4,)": "As a Developer, I want to update Broker validation rules, so that the system can enforce the latest rules and regulations As a Developer, I want to add GTAS window data, so that the system can provide accurate and up-to-date information"
+}

@@ -1,0 +1,13 @@
+As an Agency User, I want to submit data, so that I can store and track my submissions.
+As an Agency User, I want to view my submissions, so that I can review and verify my data.
+As a FABS User, I want to submit FABS data, so that I can store and track my FABS submissions.
+As a FABS User, I want to view my FABS submissions, so that I can review and verify my FABS data.
+As a Developer, I want to log messages, so that I can track and debug my development activities.
+As a Developer, I want to update the broker validation rule table, so that I can ensure accurate validation of broker data.
+As a Developer, I want to add GTAS window data, so that I can manage and track GTAS-related information.
+As a Developer, I want to manage D files generation requests, so that I can efficiently generate and distribute D files.
+As an Owner, I want to create a user testing summary, so that I can track and analyze user testing results.
+As an Owner, I want to set a UI SME, so that I can assign user testing responsibilities.
+As a UI SME, I want to provide user testing results, so that I can contribute to the user testing summary.
+As a Broker User, I want to submit data, so that I can store and track my submissions.
+As a Broker User, I want to view my submissions, so that I can review and verify my data.

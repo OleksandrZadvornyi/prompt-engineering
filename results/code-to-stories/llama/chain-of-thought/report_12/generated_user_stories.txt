@@ -1,0 +1,10 @@
+As a data validator, I want to validate loan records, so that I can ensure loan amounts are either zero or empty.
+As a data validator, I want to validate non-loan records, so that I can ensure non-loan amounts are either zero or empty.
+As a data loader, I want to load historical data, so that I can access past FPDS data for analysis.
+As a data submitter, I want to submit data, so that I can send data for processing and storage.
+As a data submitter, I want to get the status of my submission, so that I can track the progress of my data submission.
+As a data helper, I want to retrieve the PPoPZIP for a given zip code, so that I can perform location-based tasks.
+As a data helper, I want to retrieve the legal entity address, so that I can perform address-based tasks.
+As a page user, I want to get the language of the page, so that I can display content in the correct language.
+As a page user, I want to get banner messages for my user type, so that I can display relevant messages and notifications.
+As a system administrator, I want to create a user that can interact with the FABS system, so that I can manage system access and functionality.

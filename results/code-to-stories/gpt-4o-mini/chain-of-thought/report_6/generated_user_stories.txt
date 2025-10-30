@@ -1,0 +1,19 @@
+As a Developer, I want to log an issue, so that I can keep track of problems that need addressing.  
+As a Developer, I want to update validation rules, so that the system can enforce the latest requirements.  
+As a Developer, I want to prevent duplicate publication of submissions, so that there are no conflicting entries in the system.  
+As a Developer, I want to clarify error codes, so that I can provide accurate information regarding issues.  
+As a UI Designer, I want to redesign the resources page, so that it aligns with the new Broker styles for better user experience.  
+As a UI Designer, I want to report user testing feedback, so that the team can improve the design based on user input.  
+As a UI Designer, I want to schedule user testing, so that I can gather feedback on designs at specific times.  
+As an Agency User, I want to submit data elements, so that the necessary information is recorded in the system.  
+As an Agency User, I want to check submission periods, so that I can ensure compliance with deadlines.  
+As a Broker User, I want to upload files, so that I can share necessary data with the system.  
+As a Broker User, I want to validate error messages, so that I can ensure they provide accurate feedback to users.  
+As a FABS User, I want to download uploaded files, so that I can access the data for further analysis.  
+As a FABS User, I want to see the status of my submission, so that I can track its progress.  
+As an Owner, I want to create a user testing summary, so that I can document the results of user testing sessions.  
+As a Data User, I want to access FPDS data, so that I can retrieve specific fields for analysis.  
+As a DevOps Engineer, I want to monitor application data, so that I can ensure system performance and stability.  
+As a System Administrator, I want to add users to the system, so that I can manage access and roles effectively.  
+As a System Administrator, I want to process deletions, so that I can maintain the integrity of the system's data.  
+As a System Administrator, I want to update FABS submissions, so that the status of submissions is accurately reflected.

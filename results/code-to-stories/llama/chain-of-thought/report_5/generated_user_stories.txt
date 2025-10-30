@@ -1,0 +1,13 @@
+As a FABS user, I want to submit FABS data, so that I can successfully complete the FABS submission process.
+As a FABS user, I want to validate FABS data, so that I can ensure the accuracy and completeness of the submitted data.
+As a FABS user, I want to retrieve the status of my FABS submission, so that I can track the progress of my submission.
+As a DABS user, I want to submit DABS data, so that I can successfully complete the DABS submission process.
+As a DABS user, I want to validate DABS data, so that I can ensure the accuracy and completeness of the submitted data.
+As an agency user, I want to submit financial assistance data, so that I can provide financial assistance to eligible recipients.
+As a data user, I want to retrieve FABS records, so that I can access and analyze the submitted data.
+As a developer, I want to update the FABS sample file, so that I can ensure the file remains current and accurate.
+As a developer, I want to add GTAS window data, so that I can manage and track GTAS data effectively.
+As a developer, I want to manage D files generation, so that I can efficiently generate and manage D files.
+As a UI user, I want to access published FABS files, so that I can easily access and view published FABS data.
+As a broker user, I want to upload and validate error messages, so that I can identify and resolve errors in the system.
+As a broker user, I want to create content mockups, so that I can design and develop content for the system.

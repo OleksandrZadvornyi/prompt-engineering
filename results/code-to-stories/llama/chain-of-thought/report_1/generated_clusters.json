@@ -1,0 +1,8 @@
+{
+  "(4,)": "As a Data User, I want to process deletions, so that I can remove outdated data As a Data User, I want to process updates, so that I can keep my data up to date As a Broker User, I want to upload and validate error messages, so that I can ensure data accuracy",
+  "(2,)": "As a UI Designer, I want to redesign the resources page, so that users have a better experience",
+  "(5,)": "As a UI Designer, I want to report to agencies about user testing, so that they can improve their services",
+  "(0,)": "As a Developer, I want to improve logging, so that I can better track system issues As a DevOps Engineer, I want to configure New Relic, so that I can monitor system performance As a Broker User, I want to generate D1 files, so that I can fulfill reporting requirements As a Tester, I want to test FABS, so that I can ensure system functionality",
+  "(3,)": "As a Developer, I want to update FABS submission, so that data is accurately submitted As a FABS User, I want to submit FABS data, so that I can fulfill reporting requirements As a FABS User, I want to download uploaded FABS files, so that I can review submitted data",
+  "(1,)": "As a Website User, I want to access raw agency published files, so that I can review data"
+}

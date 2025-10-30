@@ -19,10 +19,10 @@
     },
     "execution_metrics": {
         "execution_success": true,
-        "execution_time_sec": 11.063,
+        "execution_time_sec": 10.963,
         "exception_type": "",
         "exception_message": "",
         "runtime_output": "INFO:__main__:Processing deletions from 12-19-2017\nINFO:__main__:Deletions processed successfully\nINFO:__main__:Redesigning Resources page with new styles: {'color': 'blue', 'layout': 'responsive'}\nINFO:__main__:Reporting user testing results to Agency1: {'result': 'positive', 'issues': 2}\nINFO:__main__:Enhanced logging configured\nINFO:__main__:Submission sub123 status updated to published\nERROR:__main__:File upload failed: [Errno 2] No such file or directory: 'sample.csv'\nINFO:__main__:User user123 uploading FABS file with schema 1.1\nINFO:__main__:New Relic - BrokerApp:response_time = 0.45\nINFO:__main__:Loading FPDS data from 2007 to 2023\nINFO:__main__:Processing year 2007\nINFO:__main__:Processing year 2008\nINFO:__main__:Processing year 2009\nINFO:__main__:Processing year 2010\nINFO:__main__:Processing year 2011\nINFO:__main__:Processing year 2012\nINFO:__main__:Processing year 2013\nINFO:__main__:Processing year 2014\nINFO:__main__:Processing year 2015\nINFO:__main__:Processing year 2016\nINFO:__main__:Processing year 2017\nINFO:__main__:Processing year 2018\nINFO:__main__:Processing year 2019\nINFO:__main__:Processing year 2020\nINFO:__main__:Processing year 2021\nINFO:__main__:Processing year 2022\nINFO:__main__:Processing year 2023"
     },
-    "total_credibility": 57.2
+    "total_credibility": 64.76
 }

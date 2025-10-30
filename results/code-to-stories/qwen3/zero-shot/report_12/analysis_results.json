@@ -1,6 +1,0 @@
-{
-    "semantic_consistency_score": 0.8142551183700562,
-    "analysis_model": "Qwen/Qwen3-Coder-30B-A3B-Instruct",
-    "original_stories_count": 98,
-    "generated_stories_count": 19
-}

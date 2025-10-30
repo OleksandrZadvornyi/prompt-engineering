@@ -1,0 +1,26 @@
+Here are the user stories derived from the Python code:
+
+1. As a data manager, I want to process deletions for a specific date, so that I can clean up outdated records.  
+2. As a data manager, I want to update FABS submission status, so that submission states are accurately reflected.  
+3. As a system administrator, I want to sync D1 file generation with FPDS data load, so that data consistency is maintained.  
+4. As a UI designer, I want to redesign the Resources page, so that users have a better experience.  
+5. As a tester, I want to report user testing results to agencies, so that feedback can be incorporated.  
+6. As a UI designer, I want to get approvals for page edits, so that changes comply with stakeholder requirements.  
+7. As a DevOps engineer, I want to configure New Relic for applications, so that system performance is monitored.  
+8. As a submission manager, I want to update status labels on the dashboard, so that users see current submission states.  
+9. As a submission manager, I want to provide additional info on the dashboard, so that users have helpful context.  
+10. As a data validator, I want to update validation rules, so that data quality is maintained.  
+11. As a data validator, I want to validate flexfields in submissions, so that errors are caught early.  
+12. As a database administrator, I want to add GTAS window data, so that complete records are maintained.  
+13. As a database administrator, I want to index domain models, so that queries are optimized.  
+14. As a file manager, I want to generate and cache D files, so that processing is efficient.  
+15. As a file manager, I want to handle file uploads, so that user submissions are processed correctly.  
+16. As a system administrator, I want to reset user permissions, so that security policies are enforced.  
+17. As a system administrator, I want to grant read-only access to users, so that data access is controlled.  
+18. As a testing coordinator, I want to schedule user testing, so that feedback is collected on time.  
+19. As a testing coordinator, I want to generate test summaries, so that results are documented.  
+20. As a data analyst, I want to load historical FABS data, so that past records are accessible.  
+21. As a data analyst, I want to load historical FPDS data, so that trend analysis can be performed.  
+22. As an agency user, I want to submit FABS data, so that my agency's information is updated.  
+23. As an agency user, I want to get correct file formats, so that submissions meet requirements.  
+24. As a system user, I want to process different types of requests through a unified interface, so that operations are streamlined.

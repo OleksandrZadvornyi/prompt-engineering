@@ -1,0 +1,8 @@
+{
+  "(2,)": "As a system administrator, I want to add users to the system, so that I can manage user access and permissions As a system administrator, I want to add submissions to the system, so that I can track and process user submissions",
+  "(5,)": "As a system administrator, I want to process deletions for a given date, so that I can maintain data integrity and remove outdated information As a submission manager, I want to run validations for submissions, so that I can ensure data quality and accuracy As a submission manager, I want to derive fields for submissions, so that I can automate data processing and reduce manual errors",
+  "(0,)": "As a system administrator, I want to derive a funding agency code, so that I can accurately track and report on funding sources",
+  "(1,)": "As a data validator, I want to validate PPoPZIP+4 codes, so that I can ensure accurate and reliable data entry As a data analyst, I want to load historical data, so that I can perform trend analysis and make informed decisions",
+  "(3,)": "As a submission manager, I want to update the status of submissions, so that I can track progress and notify users of changes",
+  "(4,)": "As a user, I want to submit data, so that I can contribute to the system and receive feedback on my submissions"
+}

@@ -1,0 +1,28 @@
+{
+    "request_number": 9,
+    "timestamp": "2025-10-26 21:46:36",
+    "model": "meta-llama/llama-3.3-70b-instruct",
+    "prompt_variant": "chain-of-thought",
+    "total_tokens": 2576,
+    "avg_prob": 0.9421840425600139,
+    "perplexity": 1.0613637620977894,
+    "struct_metrics": {
+        "avg_cyclomatic_complexity": 1.0142857142857142,
+        "ast_depth": 9,
+        "avg_function_size_lines": 3.9420289855072466,
+        "import_redundancy_ratio": 0.0
+    },
+    "semantic_metrics": {
+        "syntax_valid": true,
+        "flake8_error_count": 6,
+        "mypy_error_count": 0
+    },
+    "execution_metrics": {
+        "execution_success": true,
+        "execution_time_sec": 0.433,
+        "exception_type": "",
+        "exception_message": "",
+        "runtime_output": "INFO:__main__:Processing deletions for 12-19-2017\nINFO:__main__:Redesigning Resources page\nINFO:__main__:Reporting user testing results\nINFO:__main__:Moving to round 2 of DABS landing page edits\nINFO:__main__:Moving to round 2 of Homepage edits\nINFO:__main__:Moving to round 3 of Help page edits\nINFO:__main__:Improving logging\nINFO:__main__:Updating FABS submission\nINFO:__main__:Adding GTAS window data\nINFO:__main__:Managing D Files generation requests\nINFO:__main__:Updating Broker validation rule table\nINFO:__main__:Ensuring USAspending grant records\nINFO:__main__:Adding FABS sample file\nINFO:__main__:Preventing duplicate publishing\nINFO:__main__:Updating FABS records\nINFO:__main__:Updating FABS validation rules\nINFO:__main__:Deploying FABS to production\nINFO:__main__:Clarifying CFDA error code\nINFO:__main__:Ensuring SAM data\nINFO:__main__:Indexing domain models\nINFO:__main__:Updating SQL codes\nINFO:__main__:Deriving FABS fields\nINFO:__main__:Updating Broker resources and validations\nINFO:__main__:Loading historical FABS data\nINFO:__main__:Ensuring data quality and completeness\nINFO:__main__:Updating LegalEntityAddressLine3\nINFO:__main__:Using Schema v1.1 headers\nINFO:__main__:Mapping FederalActionObligation\nINFO:__main__:Updating PPoPZIP validations\nINFO:__main__:Updating SAMPLE FILE link\nINFO:__main__:Ensuring FPDS data\nINFO:__main__:Accessing raw agency files\nINFO:__main__:Generating D Files\nINFO:__main__:Updating header information\nINFO:__main__:Providing file-level errors\nINFO:__main__:Ensuring test features access\nINFO:__main__:Updating submission errors\nINFO:__main__:Updating frontend URLs\nINFO:__main__:Loading historical Financial Assistance data\nINFO:__main__:Updating historical FPDS data loader\nINFO:__main__:Ensuring historical FPDS data\nINFO:__main__:Updating submission creator\nINFO:__main__:Providing File F\nINFO:__main__:Updating file-level errors\nINFO:__main__:Providing FABS groups\nINFO:__main__:Testing FABS derivation\nINFO:__main__:Ensuring zero-padded fields\nINFO:__main__:Submitting individual recipient records\nINFO:__main__:Providing publishing information\nINFO:__main__:Preventing duplicate transactions\nINFO:__main__:Submitting citywide PPoPZIP\nINFO:__main__:Updating error codes\nINFO:__main__:Leaving off last 4 digits of ZIP\nINFO:__main__:Ensuring historical data\nINFO:__main__:Accessing additional fields\nINFO:__main__:Updating submission dashboard\nINFO:__main__:Downloading FABS file\nINFO:__main__:Accessing Broker data\nINFO:__main__:Loading historical FPDS data\nINFO:__main__:Updating FABS pages\nINFO:__main__:Preventing DABS banner messages\nINFO:__main__:Providing read-only access\nINFO:__main__:Ensuring validation time\nINFO:__main__:Updating status labels\nINFO:__main__:Providing submission periods\nINFO:__main__:Creating landing page\nINFO:__main__:Submitting data elements"
+    },
+    "total_credibility": 90.12
+}

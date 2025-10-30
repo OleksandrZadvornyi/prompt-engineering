@@ -19,10 +19,10 @@
     },
     "execution_metrics": {
         "execution_success": true,
-        "execution_time_sec": 0.623,
+        "execution_time_sec": 0.385,
         "exception_type": "",
         "exception_message": "",
         "runtime_output": "Submission successful for user 1!\nNo errors for submission 1.\nUpdated validation rules: {'CFDA': 'New rule for CFDA validation'}\nSubmission period is closed.\nSubmitting FABS data for agency user 101\nCreating content mockup."
     },
-    "total_credibility": 81.96
+    "total_credibility": 83.67
 }

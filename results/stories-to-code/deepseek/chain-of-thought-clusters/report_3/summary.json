@@ -1,0 +1,28 @@
+{
+    "request_number": 3,
+    "timestamp": "2025-10-26 22:28:13",
+    "model": "deepseek/deepseek-chat-v3-0324",
+    "prompt_variant": "chain-of-thought-clusters",
+    "total_tokens": 1905,
+    "avg_prob": 0.8956416729170799,
+    "perplexity": 1.1165179448864053,
+    "struct_metrics": {
+        "avg_cyclomatic_complexity": 1.5357142857142858,
+        "ast_depth": 13,
+        "avg_function_size_lines": 8.666666666666666,
+        "import_redundancy_ratio": 0.14285714285714285
+    },
+    "semantic_metrics": {
+        "syntax_valid": true,
+        "flake8_error_count": 30,
+        "mypy_error_count": 6
+    },
+    "execution_metrics": {
+        "execution_success": false,
+        "execution_time_sec": 1.499,
+        "exception_type": "TypeError",
+        "exception_message": "ValidationRule.__init__() missing 1 required positional argument: 'rule_id'",
+        "runtime_output": "Traceback (most recent call last):\n  File \"/app/main.py\", line 239, in <module>\n    val_manager.update_duns_validation()\n  File \"/app/main.py\", line 183, in update_duns_validation\n    self.add_validation_rule(\n  File \"/app/main.py\", line 170, in add_validation_rule\n    rule = ValidationRule(\n           ^^^^^^^^^^^^^^^\nTypeError: ValidationRule.__init__() missing 1 required positional argument: 'rule_id'"
+    },
+    "total_credibility": 40.73
+}

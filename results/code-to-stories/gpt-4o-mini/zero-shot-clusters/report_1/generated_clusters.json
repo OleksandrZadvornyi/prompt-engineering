@@ -1,0 +1,6 @@
+{
+  "(2,)": "As a FABS user, I want to submit a record, so that my submission can be processed and considered for approval As a FABS user, I want to validate my submission upon submission, so that I can ensure it meets the necessary requirements",
+  "(0,)": "As a FABS user, I want to view any errors in my submissions, so that I can correct them before they are finalized",
+  "(1,)": "As a developer, I want to update the validation rules for submissions, so that I can ensure the data meets the current standards As a developer, I want to log each submission, so that I have a record of user submissions for future reference As a UI user, I want to create content mockups, so that I can visualize the user interface before development As a UI user, I want to request user testing, so that I can gather feedback on the usability of the interface",
+  "(3,)": "As a developer, I want to determine data loading methods, so that I can efficiently handle historical data"
+}

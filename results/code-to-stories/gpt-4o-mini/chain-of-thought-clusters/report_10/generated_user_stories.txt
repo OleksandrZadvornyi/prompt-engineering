@@ -1,0 +1,25 @@
+As a User, I want to have different user types (UI, Developer, Agency, Broker, FABS), so that I can represent various roles within the system.
+
+As a FileGenerator, I want to validate submissions before generating files, so that I can ensure files are only created from valid submissions.
+
+As a FileGenerator, I want to generate files from valid submissions, so that I can process data accurately and reflect the correct status.
+
+As a FileGenerator, I want to update error messages, so that I can provide relevant feedback based on validation conditions.
+
+As a FABSValidator, I want to validate FABS data, so that I can ensure the integrity and correctness of the data being processed.
+
+As a DataLoader, I want to load FPDS and FABS data, so that I can import the necessary datasets for processing and analysis.
+
+As a UIHandler, I want to redesign the resources page, so that I can ensure it aligns with new design styles and improves user experience.
+
+As a UIHandler, I want to report user testing results to an agency, so that I can keep stakeholders informed of the outcomes.
+
+As a UserTesting, I want to schedule user testing sessions, so that I can gather feedback on the system's usability and functionality.
+
+As a UserTesting, I want to summarize user testing results, so that I can provide a clear overview of findings and recommendations.
+
+As a SystemAdmin, I want to reset the environment to Staging MAX permissions, so that I can maintain control over the system's state and access.
+
+As a SystemAdmin, I want to map FederalActionObligation to Atom Feed, so that I can ensure proper data integration and reporting.
+
+As a Developer, I want to work with various user roles and file generation processes, so that I can build and maintain the system effectively.

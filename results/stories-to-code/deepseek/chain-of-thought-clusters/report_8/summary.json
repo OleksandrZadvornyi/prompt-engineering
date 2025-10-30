@@ -1,0 +1,28 @@
+{
+    "request_number": 8,
+    "timestamp": "2025-10-26 22:35:12",
+    "model": "deepseek/deepseek-chat-v3-0324",
+    "prompt_variant": "chain-of-thought-clusters",
+    "total_tokens": 1623,
+    "avg_prob": 0.9327408491905305,
+    "perplexity": 1.0721091510764642,
+    "struct_metrics": {
+        "avg_cyclomatic_complexity": 1.3396226415094339,
+        "ast_depth": 10,
+        "avg_function_size_lines": 3.473684210526316,
+        "import_redundancy_ratio": 0.0
+    },
+    "semantic_metrics": {
+        "syntax_valid": true,
+        "flake8_error_count": 19,
+        "mypy_error_count": 0
+    },
+    "execution_metrics": {
+        "execution_success": true,
+        "execution_time_sec": 0.461,
+        "exception_type": "",
+        "exception_message": "",
+        "runtime_output": "Error: FABS001 - Sample FABS validation error"
+    },
+    "total_credibility": 83.26
+}

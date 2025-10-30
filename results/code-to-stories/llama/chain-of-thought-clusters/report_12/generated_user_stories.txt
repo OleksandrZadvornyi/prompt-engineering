@@ -1,0 +1,24 @@
+As a Data user, I want to have deletions processed for a specific date, so that I can keep my data up to date.
+As a UI designer, I want to redesign the Resources page, so that it matches the new Broker design styles.
+As a UI designer, I want to report to the Agencies about user testing, so that they are aware of their contributions to making Broker a better UX.
+As a Broker user, I want to derive the Funding Agency Code, so that I can accurately process my data.
+As a Broker user, I want to add 00***** and 00FORGN PPoPCode cases to derivation logic, so that my data is comprehensive.
+As a DevOps engineer, I want to provide useful data across all applications, so that the development process is efficient.
+As an Agency user, I want to map Federal Action Obligation to Atom Feed, so that my data is properly formatted.
+As an Agency user, I want to get File F in the correct format, so that I can use it for my purposes.
+As a Developer, I want to log better, so that I can track issues and improve the system.
+As a Developer, I want to add GTAS window data to the database, so that the data is accurate and up to date.
+As a Developer, I want to prevent duplicate transactions from being published, so that the data remains consistent.
+As a Developer, I want to update the FABS sample file to remove FundingAgencyCode, so that the data is accurate.
+As a Developer, I want to generate D Files from FABS and FPDS data, so that the data is properly formatted.
+As a Developer, I want to determine the best way to load historical FPDS data, so that the data is handled efficiently.
+As a Developer, I want to load historical FPDS data, so that the system has a complete dataset.
+As a Developer, I want to manage D Files generation requests, so that the process is efficient and organized.
+As a Developer, I want to cache D Files generation requests, so that the system can handle a high volume of requests.
+As a Developer, I want to prevent users from double publishing FABS submissions, so that the data remains consistent.
+As a Developer, I want to ensure attempts to correct or delete non-existent records don't create new published data, so that the data remains accurate.
+As a FABS user, I want to submit a FABS file, so that my data is included in the system.
+As a FABS user, I want to download an uploaded FABS file, so that I can verify its contents.
+As a User, I want to create user stories, so that I can track my requirements.
+As a User, I want to create clusters, so that I can organize my user stories.
+As a User, I want to view user stories in a cluster, so that I can see the requirements for a specific feature.

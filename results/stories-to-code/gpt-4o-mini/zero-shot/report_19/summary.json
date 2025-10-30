@@ -19,10 +19,10 @@
     },
     "execution_metrics": {
         "execution_success": true,
-        "execution_time_sec": 0.655,
+        "execution_time_sec": 0.545,
         "exception_type": "",
         "exception_message": "",
         "runtime_output": "INFO:__main__:Uploading and validating file: file_path_to_upload\nINFO:__main__:Processing deletions for date: 12-19-2017\nINFO:__main__:Preventing duplicate publishing for submission 1\nINFO:__main__:Submission 1 published."
     },
-    "total_credibility": 78.97
+    "total_credibility": 81.61
 }

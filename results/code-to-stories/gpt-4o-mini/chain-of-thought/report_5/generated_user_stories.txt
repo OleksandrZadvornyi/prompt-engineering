@@ -1,0 +1,39 @@
+As a Developer, I want to log issues, so that I can track and manage problems effectively.
+
+As a Developer, I want to update submission statuses, so that I can communicate changes in progress to stakeholders.
+
+As a Developer, I want to prevent duplicate publications, so that I can ensure data integrity and avoid confusion.
+
+As a UI Designer, I want to redesign the resources page, so that it aligns with the Broker design styles for a consistent user experience.
+
+As a UI Designer, I want to report user testing results to an agency, so that I can provide insights and findings from user interactions.
+
+As a UI Designer, I want to track issues from Tech Thursday, so that I can address and resolve them in a timely manner.
+
+As a UI Designer, I want to create a user testing summary, so that I can document outcomes and share them with stakeholders.
+
+As a UI Designer, I want to schedule user testing, so that I can gather feedback on designs and improve usability.
+
+As an Agency User, I want to use the FABS schema, so that I can ensure compliance with federal reporting requirements.
+
+As an Agency User, I want to include flexfields in submissions, so that I can enhance data granularity without affecting performance.
+
+As a Broker User, I want to upload and validate files, so that I can ensure data quality and correctness before processing.
+
+As a Broker User, I want to download uploaded FABS files, so that I can access and review submitted data as needed.
+
+As a Data User, I want to access FPDS fields, so that I can retrieve necessary information for reporting and analysis.
+
+As a FABS User, I want to submit FABS files, so that I can ensure timely compliance with federal filing requirements.
+
+As a FABS User, I want to view the submission dashboard, so that I can monitor the status of my submissions and address any issues.
+
+As a System, I want to process deletions for a specific date, so that I can maintain accurate records and data integrity.
+
+As a System, I want to synchronize FPDS data load, so that I can ensure timely and accurate data generation.
+
+As a System, I want to load historical FPDS data, so that I can maintain a complete dataset for reporting and analysis.
+
+As a System, I want to validate submission errors, so that I can identify and rectify issues before finalizing submissions.
+
+As a System, I want to generate D files from FABS and FPDS data, so that I can provide necessary outputs for compliance and analysis.

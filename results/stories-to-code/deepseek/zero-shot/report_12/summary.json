@@ -19,10 +19,10 @@
     },
     "execution_metrics": {
         "execution_success": true,
-        "execution_time_sec": 2.775,
+        "execution_time_sec": 2.721,
         "exception_type": "",
         "exception_message": "",
         "runtime_output": "/app/main.py:22: MovedIn20Warning: The ``declarative_base()`` function is now available as sqlalchemy.orm.declarative_base(). (deprecated since: 2.0) (Background on SQLAlchemy 2.0 at: https://sqlalche.me/e/b8d9)\n  Base = declarative_base()"
     },
-    "total_credibility": 53.13
+    "total_credibility": 62.11
 }

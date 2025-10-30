@@ -19,10 +19,10 @@
     },
     "execution_metrics": {
         "execution_success": true,
-        "execution_time_sec": 1.52,
+        "execution_time_sec": 1.675,
         "exception_type": "",
         "exception_message": "",
         "runtime_output": "/app/main.py:13: MovedIn20Warning: The ``declarative_base()`` function is now available as sqlalchemy.orm.declarative_base(). (deprecated since: 2.0) (Background on SQLAlchemy 2.0 at: https://sqlalche.me/e/b8d9)\n  Base = declarative_base()\nERROR:__main__:Error processing deletions: Textual SQL expression '\\n                    DELE...' should be explicitly declared as text('\\n                    DELE...')\nERROR:__main__:Error syncing D1 files: Textual SQL expression 'SELECT MAX(update_date) F...' should be explicitly declared as text('SELECT MAX(update_date) F...')"
     },
-    "total_credibility": 55.98
+    "total_credibility": 63.37
 }

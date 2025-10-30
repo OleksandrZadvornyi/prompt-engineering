@@ -1,0 +1,28 @@
+{
+    "request_number": 20,
+    "timestamp": "2025-10-26 22:49:20",
+    "model": "deepseek/deepseek-chat-v3-0324",
+    "prompt_variant": "chain-of-thought-clusters",
+    "total_tokens": 1723,
+    "avg_prob": 0.938480560076675,
+    "perplexity": 1.065552172884965,
+    "struct_metrics": {
+        "avg_cyclomatic_complexity": 1.6666666666666667,
+        "ast_depth": 14,
+        "avg_function_size_lines": 5.615384615384615,
+        "import_redundancy_ratio": 0.42857142857142855
+    },
+    "semantic_metrics": {
+        "syntax_valid": true,
+        "flake8_error_count": 17,
+        "mypy_error_count": 16
+    },
+    "execution_metrics": {
+        "execution_success": true,
+        "execution_time_sec": 1.423,
+        "exception_type": "",
+        "exception_message": "",
+        "runtime_output": "/app/main.py:9: MovedIn20Warning: The ``declarative_base()`` function is now available as sqlalchemy.orm.declarative_base(). (deprecated since: 2.0) (Background on SQLAlchemy 2.0 at: https://sqlalche.me/e/b8d9)\n  Base = declarative_base()\n/app/main.py:88: LegacyAPIWarning: The Query.get() method is considered legacy as of the 1.x series of SQLAlchemy and becomes a legacy construct in 2.0. The method is now available as Session.get() (deprecated since: 2.0) (Background on SQLAlchemy 2.0 at: https://sqlalche.me/e/b8d9)\n  submission = self.session.query(Submission).get(submission_id)\nDUNS validation result: True"
+    },
+    "total_credibility": 72.08
+}

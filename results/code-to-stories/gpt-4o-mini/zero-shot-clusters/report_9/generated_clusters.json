@@ -1,0 +1,5 @@
+{
+  "(2,)": "As a data submitter, I want to upload a file, so that I can begin the process of submitting data for validation As a data submitter, I want to receive feedback on any validation errors, so that I can correct the submission as needed",
+  "(0,)": "As a UI designer, I want to redesign the resources page, so that the page reflects updated styles and improves user experience As a UI designer, I want to schedule user testing for the redesigned resources page, so that I can gather feedback and make necessary adjustments",
+  "(1,)": "As a developer, I want to update validation rules, so that the system can enforce the most current data requirements As a developer, I want to generate D files for valid submissions, so that the necessary documentation can be created for processing"
+}

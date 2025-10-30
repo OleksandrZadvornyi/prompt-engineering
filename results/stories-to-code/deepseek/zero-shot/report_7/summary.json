@@ -19,10 +19,10 @@
     },
     "execution_metrics": {
         "execution_success": true,
-        "execution_time_sec": 0.401,
+        "execution_time_sec": 0.441,
         "exception_type": "",
         "exception_message": "",
         "runtime_output": "Processing deletions for 12-19-2017\nApplying new_broker_design styles to Resources page\nPublishing submission 12345\nTrue"
     },
-    "total_credibility": 69.59
+    "total_credibility": 75.11
 }

@@ -1,0 +1,28 @@
+{
+    "request_number": 13,
+    "timestamp": "2025-10-26 15:54:49",
+    "model": "meta-llama/llama-3.3-70b-instruct",
+    "prompt_variant": "zero-shot-clusters",
+    "total_tokens": 2494,
+    "avg_prob": 0.9330026019311415,
+    "perplexity": 1.0718083721633642,
+    "struct_metrics": {
+        "avg_cyclomatic_complexity": 1.4545454545454546,
+        "ast_depth": 9,
+        "avg_function_size_lines": 5.703703703703703,
+        "import_redundancy_ratio": 0.0
+    },
+    "semantic_metrics": {
+        "syntax_valid": true,
+        "flake8_error_count": 4,
+        "mypy_error_count": 1
+    },
+    "execution_metrics": {
+        "execution_success": true,
+        "execution_time_sec": 0.418,
+        "exception_type": "",
+        "exception_message": "",
+        "runtime_output": "None\nNone\nNone\nNone\nNone\nApplication not found\nNone\nNone\nNone\nNone\nNone\nNone\nNone\nNone\nNone\nNone\nNone\nNone\nNone\nNone\nNone\nNone\nNone\nNone\nNone\nNone\nNone\nNone\nNone\nNone\nNone\nNone\nNone"
+    },
+    "total_credibility": 89.58
+}

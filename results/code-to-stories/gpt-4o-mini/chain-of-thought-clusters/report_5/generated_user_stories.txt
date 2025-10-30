@@ -1,0 +1,8 @@
+As a FABS user, I want to submit a record, so that I can ensure the submission is processed if its status is published.  
+As an agency user, I want to validate a submission, so that I can confirm it has a valid agency code before processing.  
+As an agency user, I want to check submission periods, so that I can be informed about the time frame for submitting records.  
+As a FABS user, I want to view submissions, so that I can keep track of the status of my submissions.  
+As a developer, I want to update validation rules, so that I can improve the submission validation process.  
+As a developer, I want to load historical data, so that I can analyze past submissions and improve the system's functionality.  
+As a UI designer, I want to submit a design for approval, so that I can get feedback and make necessary changes.  
+As a UI designer, I want to track issues, so that I can manage and resolve problems efficiently.

@@ -1,0 +1,13 @@
+As a data analyst, I want to upload and validate error messages, so that I can ensure accurate text in the system.
+As a system administrator, I want to update the broker validation rule table, so that I can account for rule updates in the database.
+As a data processor, I want to perform DUNS validations, so that I can accept records with valid ActionTypes and registered DUNS in SAM.
+As a user, I want to receive helpful file-level errors, so that I can upload files with the correct extensions.
+As a system administrator, I want to prevent duplicate transactions from being published, so that I can maintain data integrity.
+As a FABS processor, I want to determine the best way to load historical FPDS data, so that I can optimize data loading processes.
+As a FABS submission reviewer, I want to get FABS submission errors, so that I can accurately represent FABS errors.
+As a FABS validator, I want to get FABS validation rules, so that I can validate FABS submissions.
+As a user, I want to submit FABS files, so that I can share data with the system.
+As a user, I want to get the FABS sample file, so that I can understand the required file format.
+As a financial analyst, I want to get updated financial assistance data daily, so that I can analyze the latest financial data.
+As a data analyst, I want to get raw agency published files from FABS via USAspending, so that I can access the latest published data.
+As a data analyst, I want to get accurate and complete data related to PPoPCode and PPoPCongressionalDistrict, so that I can analyze accurate data.

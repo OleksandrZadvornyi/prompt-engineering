@@ -1,0 +1,23 @@
+As a Data User, I want to process deletions for a specific date, so that I can track and manage data removal.
+As a UI Designer, I want to redesign the Resources page, so that users can have a better experience.
+As a UI Designer, I want to report user testing to agencies, so that they can track progress and provide feedback.
+As a UI Designer, I want to move on to the next round of edits for a page, so that I can refine the design.
+As a UI Designer, I want to track issues from Tech Thursday, so that I can identify and resolve problems.
+As a Developer, I want to improve logging, so that I can better diagnose and fix issues.
+As a Developer, I want to update FABS submission when the publish status changes, so that the data remains up-to-date.
+As a Developer, I want to update the Broker validation rule table, so that data validation is accurate and reliable.
+As a Developer, I want to add GTAS window data to the database, so that it can be used for reporting and analysis.
+As a Developer, I want to manage and cache D files generation requests, so that the system can handle a high volume of requests efficiently.
+As a DevOps Engineer, I want to provide useful data across all applications, so that I can monitor and optimize system performance.
+As a Broker User, I want to upload and validate error messages, so that I can ensure data accuracy and integrity.
+As a Broker User, I want to sync D1 file generation with FPDS data load, so that data is consistent and up-to-date.
+As a Website User, I want to access published FABS files, so that I can view and use the data.
+As an Owner, I want to ensure USAspending only sends grant records, so that data is accurate and compliant with regulations.
+As an Owner, I want to create a user testing summary from the UI SME, so that I can track progress and make informed decisions.
+As an Owner, I want to design a schedule from the UI SME, so that I can plan and manage project timelines.
+As an Owner, I want to design an audit from the UI SME, so that I can ensure compliance and identify areas for improvement.
+As an Agency User, I want to include a large number of flexfields without performance impact, so that I can customize the system to meet my needs.
+As an Agency User, I want to ensure deleted FSRS records are not included in submissions, so that data is accurate and up-to-date.
+As a FABS User, I want to link the sample file to the correct file, so that I can ensure data accuracy and integrity.
+As a FABS User, I want to access raw agency published files, so that I can view and use the data.
+As a FABS User, I want to generate and validate D files, so that I can ensure data accuracy and compliance with regulations.

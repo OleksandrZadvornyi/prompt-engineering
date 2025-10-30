@@ -1,0 +1,1356 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analysis Report: Run 19</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 24px;
+            background-color: #ffffff;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        h1, h2, h3 {
+            color: #111;
+            margin-top: 1.2em;
+            margin-bottom: 0.6em;
+        }
+        h1 {
+            font-size: 2em;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+        }
+        h2 {
+            font-size: 1.5em;
+            color: #555;
+        }
+        h3 {
+            font-size: 1.2em;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f7f7f7;
+            font-weight: 600;
+            width: 30%;
+        }
+        td {
+            background-color: #fff;
+        }
+        details {
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            margin-bottom: 10px;
+            background-color: #fff;
+        }
+        summary {
+            padding: 12px;
+            font-weight: 600;
+            cursor: pointer;
+            background-color: #f7f7f7;
+        }
+        summary:hover {
+            background-color: #eee;
+        }
+        pre {
+            background-color: #fdfdfd;
+            border-top: 1px solid #eee;
+            padding: 15px;
+            margin: 0;
+            overflow-x: auto;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            font-size: 0.9em;
+            line-height: 1.6;
+        }
+        code {
+            font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+        }
+        .credibility-score {
+            font-size: 1.8em;
+            font-weight: bold;
+            color: #005fdd;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Analysis Report #19</h1>
+        <h2>meta-llama/llama-3.3-70b-instruct</h2>
+        <p><strong>Prompt Variant:</strong> chain-of-thought</p>
+
+        <h3>Total Credibility Score</h3>
+        <p class="credibility-score">60.16%</p>
+
+        
+    <h3>Key Metrics</h3>
+    <table>
+        <tr><th>Perplexity</th><td>1.0331</td></tr>
+<tr><th>Avg. Probability</th><td>0.9680</td></tr>
+<tr><th>Total Tokens</th><td>7599</td></tr>
+
+    </table>
+    
+        
+    <h3>Execution Metrics</h3>
+    <table>
+        <tr><th>Execution Success</th><td>False</td></tr>
+<tr><th>Execution Time Sec</th><td>0.4730</td></tr>
+<tr><th>Exception Type</th><td>FileNotFoundError</td></tr>
+<tr><th>Exception Message</th><td>[Errno 2] No such file or directory: 'fabs_sample.txt'</td></tr>
+<tr><th>Runtime Output</th><td>Traceback (most recent call last):
+  File "/app/main.py", line 1011, in <module>
+Submission 1 received successfully
+Field_1:Value 1
+Field_2:Value 2
+True
+    update_fabs_sample_file()
+  File "/app/main.py", line 113, in update_fabs_sample_file
+    sample_file = open("fabs_sample.txt", "r")
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'fabs_sample.txt'</td></tr>
+
+    </table>
+    
+        
+    <h3>Structural Metrics</h3>
+    <table>
+        <tr><th>Avg Cyclomatic Complexity</th><td>1.1900</td></tr>
+<tr><th>Ast Depth</th><td>11</td></tr>
+<tr><th>Avg Function Size Lines</th><td>7.3571</td></tr>
+<tr><th>Import Redundancy Ratio</th><td>0.0000</td></tr>
+
+    </table>
+    
+        
+    <h3>Semantic Metrics</h3>
+    <table>
+        <tr><th>Syntax Valid</th><td>True</td></tr>
+<tr><th>Flake8 Error Count</th><td>5</td></tr>
+<tr><th>Mypy Error Count</th><td>1</td></tr>
+
+    </table>
+    
+
+        <details>
+            <summary>View Full Prompt</summary>
+            <pre>First, think step-by-step to outline the necessary classes, functions, and logic. Then, generate the fully functional Python code that implements the following user stories. The code should realistically reflect the described functionality.
+
+﻿As a Data user, I want to have the 12-19-2017 deletions processed.
+As a UI designer, I want to redesign the Resources page, so that it matches the new Broker design styles.
+As a UI designer, I want to report to the Agencies about user testing, so that they are aware of their contributions to making Broker a better UX.
+As a UI designer, I want to move on to round 2 of DABS or FABS landing page edits, so that I can get approvals from leadership.
+As a UI designer, I want to move on to round 2 of Homepage edits, so that I can get approvals from leadership.
+As a UI designer, I want to move on to round 3 of the Help page edits, so that I can get approvals from leadership.
+As a Developer , I want to be able to log better, so that I can troubleshoot issues with particular submissions and functions.
+As a Developer, I want to add the updates on a FABS submission to be modified when the publishStatus changes, so that I know when the status of the submission has changed.
+As a DevOps engineer, I want New Relic to provide useful data across all applications.
+As a UI designer,  I want to move on to round 2 of the Help page edits, so that I can get approvals from leadership.
+As a UI designer, I want to move on to round 2 of Homepage edits, so that I can get approvals from leadership.
+As a Broker user, I want to Upload and Validate the error message to have accurate text.
+As a Broker user, I want the D1 file generation to be synced with the FPDS data load, so that I don&#x27;t have to regenerate a file if no data has been updated.
+As a Website user, I want to access published FABS files, so that I can see the new files as they come in.
+As an owner, I want to be sure that USAspending only send grant records to my system.
+As a Developer, I want to update the Broker validation rule table to account for the rule updates in DB-2213.
+As a Developer, I want to add the GTAS window data to the database, so that I can ensure the site is locked down during the GTAS submission period.
+As a Developer, I want D Files generation requests to be managed and cached, so that duplicate requests do not cause performance issues.
+As a user, I want to access the raw agency published files from FABS via USAspending.
+As an Agency user, I want to be able to include a large number of flexfields without performance impact.
+As a Broker user, I want  to help create content mockups, so that I can submit my data efficiently.
+As a UI designer, I want to track the issues that come up in Tech Thursday, so that I know what to test and what want s to be fixed.
+As an Owner, I want to create a user testing summary from the UI SME, so that I can know what UI improvements we will follow through on.
+As a UI designer, I want to begin user testing, so that I can validate stakeholder UI improvement requests.
+As a UI designer, I want to schedule user testing, so that I can give the testers advanced notice to ensure buy-in.
+As an Owner, I want to design a schedule from the UI SME, so that I know the potential timeline of the UI improvements wanted.
+As an Owner, I want to design an audit from the UI SME, so that I know the potential scope of the UI improvements want ed.
+As a Developer, I want to prevent users from double publishing FABS submissions after refreshing, so that there are no duplicates.
+As an data user, I want to receive updates to FABS records.
+As an Agency user, I want to be able to include a large number of flexfields without performance impact.
+As a Developer , I want to update the FABS sample file to remove FundingAgencyCode after FABS is updated to no longer require the header.
+As an agency user, I want to ensure that deleted FSRS records are not included in submissions.
+As a website user, I want to see updated financial assistance data daily.
+As a user, I want the publish button in FABS to deactivate after I click it while the derivations are happening, so that I cannot click it multiple times for the same submission.
+As a Developer , I want to ensure that attempts to correct or delete non-existent records don&#x27;t create new published data.
+As an Owner, I want to reset the environment to only take Staging MAX permissions, so that I can ensure that the FABS testers no longer have access.
+As a user, I want the flexfields in my submission file to appear in the warning and error files when the only error is a missing required element.
+As a user, I want to have accurate and complete data related to PPoPCode and PPoPCongressionalDistrict.
+As an agency user, I want the FABS validation rules to accept zero and blank for loan records.
+As an Agency user, I want FABS deployed into production, so I can submit my Financial Assistance data.
+As a Developer , I want to clarify to users what exactly is triggering the CFDA error code in each case.
+As an agency user, I want to be confident that the data coming from SAM is complete.
+As a Developer , I want my domain models to be indexed properly, so that I can get validation results back in a reasonable amount of time.
+As an agency user, I want the FABS validation rules to accept zero and blank for non-loan records.
+As a broker team member, I want to make some updates to the SQL codes for clarity.
+As an agency user, I want to have all derived data elements derived properly.
+As a broker team member, I want to add the 00***** and 00FORGN PPoPCode cases to the derivation logic.
+As a data user, I want to see the office names derived from office codes, so that I can have appropriate context for understanding them.
+As a broker user, I want the historical FABS loader to derive fields, so that my agency codes are correct in the PublishedAwardFinancialAssistance table.
+As a broker team member, I want to ensure the Broker resources, validations, and P&amp;P pages are updated appropriately for the launch of FABS and DAIMS v1.1.
+As a Developer, I want the data loaded from historical FABS to include the FREC derivations, so that I can have consistent FREC data for USASpending.gov.
+As a user, I don&#x27;t want to see NASA grants displayed as contracts.
+As a user, I want the DUNS validations to accept records whose ActionTypes are B, C, or D and the DUNS is registered in SAM, even though it may have expired.
+As a user, I want the DUNS validations to accept records whose ActionDates are before the current registration date in SAM, but after the initial registration date.
+As a broker team member, I want to derive FundingAgencyCode, so that the data quality and completeness improves.
+As an agency user, I want the maximum length allowed for LegalEntityAddressLine3 to match Schema v1.1.
+As an agency user, I want to use the schema v1.1 headers in my FABS file.
+As a agency user, I want to map the FederalActionObligation properly to the Atom Feed.
+As a Broker user, I want to have PPoPZIP+4 work the same as the Legal Entity ZIP validations.
+As a FABS user, I want to link the SAMPLE FILE on the &quot;What you want  to submit&quot; dialog to point to the correct file, so that I have an accurate reference for my agency submissions.
+As an Agency user, I want FPDS data to be up-to-date daily.
+As a user, I want to access the raw agency published files from FABS via USAspending.
+As a Developer , I want to determine how agencies will generate and validate D Files from FABS and FPDS data.
+As a user, I want to generate and validate D Files from FABS and FPDS data.
+As an Agency user, I want the header information box to show updated date AND time, so that I know when it was updated.
+As an Agency user, I want to receive a more helpful file-level error when I upload a file with the wrong extension.
+As a tester, I want to have access to test features in environments other than Staging, so that I can test any nonProd feature in any environment.
+As a FABS user, I want to submission errors to accurately represent FABS errors, so that I know why my submission didn&#x27;t work.
+As a FABS user, I want the frontend URLs to more accurately reflect the page I&#x27;m accessing, so that I&#x27;m not confused.
+As an Agency user, I want all historical Financial Assistance data loaded for FABS go-live.
+As a Developer , I want the historical FPDS data loader to include both extracted historical data and FPDS feed data.
+As an Agency user, I want historical FPDS data loaded.
+As an Agency user, I want to accurately see who created a submission, so that I&#x27;m not confused about who last updated a submission.
+As an agency user, I want to get File F in the correct format.
+As an Agency user, I want to better understand my file-level errors.
+As a Developer , I want to provide FABS groups that function under the FREC paradigm.
+As a tester, I want to ensure that FABS is deriving fields properly through a robust test file plus a follow up check.
+As an owner, I only want zero-padded fields, so that I can justify padding.
+As a Broker user, I want to submit records for individual recipients without receiving a DUNS error.
+As a user, I want more information about how many rows will be published prior to deciding whether to publish.
+As a Developer, I want to prevent duplicate transactions from being published and deal with the time gap between validation and the publishing decision.
+As a FABS user, I want to submit a citywide as a PPoPZIP and pass validations.
+As a Broker user, I want to have updated error codes that accurately reflect the logic and provide enough information, so that I can fix my submission.
+As an agency user, I want to leave off the last 4 digits of the ZIP without an error, so that I can complete my submissions.
+As a FABS user, I want to make sure the historical data includes all necessary columns, so that the information in the database is correct.
+As a data user, I want to access two additional fields from the FPDS data pull.
+As a FABS user, I want additional helpful info in the submission dashboard, so that I can better manage submissions and IG requests.
+As a FABS user, I want to download the uploaded FABS file, so that I can get the uploaded file.
+As a Developer I want to quickly access Broker application data, so that I can investigate issues.
+As a Developer , I want to determine the best way to load historical FPDS data, so that I can load all FPDS data since 2007.
+As a FABS user, I want the language on FABS pages to be appropriate for me, so that I am not confused.
+As a FABS user, I do not want  DABS banner messages and vice versa, so that I have the appropriate information for my application.
+As a FABS user, I want to have read-only access to DABS, so that I can view DABS pages without wanting two sets of permissions.
+As a FABS user, I want to have my validations run in a reasonable amount of time.
+As a FABS user, I want to see correct status labels on the Submission Dashboard, so that I can quickly see my submission history.
+As an agency user, I want to know when the submission periods start and end, so that I know when the submission starts and ends.
+As an agency user, I want a landing page to navigate to either FABS or DABS pages, so that I can access both sides of the site.
+As an agency user, I want to submit my data elements surrounded by quotation marks, so that Excel won&#x27;t strip off leading and trailing zeroes.
+
+Output only Python code (no markdown formatting or extra text). Do not leave functions empty — implement reasonable logic where needed.</pre>
+        </details>
+        
+        <details>
+            <summary>View Generated Code</summary>
+            <pre><code>from datetime import datetime, timedelta
+import os
+import logging
+
+# Define a class to handle FABS submissions
+class FABS:
+    def __init__(self):
+        self.submissions = []
+
+    def submit(self, data):
+        # Validate the submission data
+        if self.validate(data):
+            self.submissions.append(data)
+            return f&quot;Submission {len(self.submissions)} received successfully&quot;
+        else:
+            return &quot;Submission failed due to validation errors&quot;
+
+    def validate(self, data):
+        # Check for missing required fields
+        required_fields = [&quot;PPoPCode&quot;, &quot;PPoPCongressionalDistrict&quot;]
+        for field in required_fields:
+            if field not in data:
+                return False
+
+        # Check for valid PPoPCode
+        if not self.is_valid_ppop_code(data[&quot;PPoPCode&quot;]):
+            return False
+
+        return True
+
+    def is_valid_ppop_code(self, ppop_code):
+        # Check if PPoPCode is in the correct format
+        if len(ppop_code) != 9:
+            return False
+
+        return True
+
+    def get_submissions(self):
+        return self.submissions
+
+
+# Define a class to handle DABS submissions
+class DABS:
+    def __init__(self):
+        self.submissions = []
+
+    def submit(self, data):
+        # Validate the submission data
+        if self.validate(data):
+            self.submissions.append(data)
+            return f&quot;Submission {len(self.submissions)} received successfully&quot;
+        else:
+            return &quot;Submission failed due to validation errors&quot;
+
+    def validate(self, data):
+        # Check for missing required fields
+        required_fields = [&quot;DUNS&quot;, &quot;FundingAgencyCode&quot;]
+        for field in required_fields:
+            if field not in data:
+                return False
+
+        # Check for valid DUNS
+        if not self.is_valid_duns(data[&quot;DUNS&quot;]):
+            return False
+
+        return True
+
+    def is_valid_duns(self, duns):
+        # Check if DUNS is in the correct format
+        if len(duns) != 9:
+            return False
+
+        return True
+
+    def get_submissions(self):
+        return self.submissions
+
+
+# Define a function to generate D Files
+def generate_d_file(fabs_data, fpds_data):
+    # Combine FABS and FPDS data
+    combined_data = {**fabs_data, **fpds_data}
+
+    # Generate D File
+    d_file = []
+    for key, value in combined_data.items():
+        d_file.append(f&quot;{key}:{value}&quot;)
+
+    return &quot;\n&quot;.join(d_file)
+
+
+# Define a function to validate D Files
+def validate_d_file(d_file):
+    # Split the D File into lines
+    lines = d_file.split(&quot;\n&quot;)
+
+    # Check for valid format
+    for line in lines:
+        if &quot;:&quot; not in line:
+            return False
+
+    return True
+
+
+# Define a function to log better
+def log(message):
+    logging.info(message)
+
+
+# Define a function to update FABS sample file
+def update_fabs_sample_file():
+    # Remove FundingAgencyCode from the sample file
+    sample_file = open(&quot;fabs_sample.txt&quot;, &quot;r&quot;)
+    lines = sample_file.readlines()
+    sample_file.close()
+
+    updated_lines = []
+    for line in lines:
+        if &quot;FundingAgencyCode&quot; not in line:
+            updated_lines.append(line)
+
+    sample_file = open(&quot;fabs_sample.txt&quot;, &quot;w&quot;)
+    sample_file.writelines(updated_lines)
+    sample_file.close()
+
+
+# Define a function to get FPDS data
+def get_fpds_data():
+    # Simulate getting FPDS data
+    fpds_data = {
+        &quot;FPDS_ID&quot;: &quot;123456&quot;,
+        &quot;FundingAgencyCode&quot;: &quot;ABC123&quot;
+    }
+
+    return fpds_data
+
+
+# Define a function to get FABS data
+def get_fabs_data():
+    # Simulate getting FABS data
+    fabs_data = {
+        &quot;FABS_ID&quot;: &quot;789012&quot;,
+        &quot;PPoPCode&quot;: &quot;123456789&quot;
+    }
+
+    return fabs_data
+
+
+# Define a function to get USASpending data
+def get_usaspending_data():
+    # Simulate getting USASpending data
+    usaspending_data = {
+        &quot;USASpending_ID&quot;: &quot;345678&quot;,
+        &quot;FundingAgencyCode&quot;: &quot;DEF456&quot;
+    }
+
+    return usaspending_data
+
+
+# Define a function to get SAM data
+def get_sam_data():
+    # Simulate getting SAM data
+    sam_data = {
+        &quot;SAM_ID&quot;: &quot;901234&quot;,
+        &quot;DUNS&quot;: &quot;123456789&quot;
+    }
+
+    return sam_data
+
+
+# Define a function to get GTAS window data
+def get_gtas_window_data():
+    # Simulate getting GTAS window data
+    gtas_window_data = {
+        &quot;GTAS_Window_ID&quot;: &quot;567890&quot;,
+        &quot;Start_Date&quot;: datetime.now(),
+        &quot;End_Date&quot;: datetime.now() + timedelta(days=30)
+    }
+
+    return gtas_window_data
+
+
+# Define a function to derive fields
+def derive_fields(data):
+    # Derive fields based on the data
+    derived_fields = {
+        &quot;Derived_Field_1&quot;: data[&quot;Field_1&quot;] + data[&quot;Field_2&quot;],
+        &quot;Derived_Field_2&quot;: data[&quot;Field_3&quot;] - data[&quot;Field_4&quot;]
+    }
+
+    return derived_fields
+
+
+# Define a function to update Broker validation rule table
+def update_broker_validation_rule_table():
+    # Update the Broker validation rule table
+    validation_rules = {
+        &quot;Rule_1&quot;: &quot;Validation Rule 1&quot;,
+        &quot;Rule_2&quot;: &quot;Validation Rule 2&quot;
+    }
+
+    return validation_rules
+
+
+# Define a function to add GTAS window data to the database
+def add_gtas_window_data_to_database(gtas_window_data):
+    # Add GTAS window data to the database
+    database = {
+        &quot;GTAS_Window_Data&quot;: gtas_window_data
+    }
+
+    return database
+
+
+# Define a function to manage and cache D Files generation requests
+def manage_and_cache_d_files_generation_requests():
+    # Manage and cache D Files generation requests
+    cache = {
+        &quot;D_File_1&quot;: &quot;Generated D File 1&quot;,
+        &quot;D_File_2&quot;: &quot;Generated D File 2&quot;
+    }
+
+    return cache
+
+
+# Define a function to access raw agency published files from FABS via USASpending
+def access_raw_agency_published_files_from_fabs_via_usaspending():
+    # Simulate accessing raw agency published files from FABS via USASpending
+    files = [&quot;File_1.txt&quot;, &quot;File_2.txt&quot;]
+
+    return files
+
+
+# Define a function to include a large number of flexfields without performance impact
+def include_large_number_of_flexfields_without_performance_impact():
+    # Include a large number of flexfields without performance impact
+    flexfields = {
+        &quot;Flexfield_1&quot;: &quot;Value 1&quot;,
+        &quot;Flexfield_2&quot;: &quot;Value 2&quot;
+    }
+
+    return flexfields
+
+
+# Define a function to help create content mockups
+def help_create_content_mockups():
+    # Help create content mockups
+    mockups = {
+        &quot;Mockup_1&quot;: &quot;Content Mockup 1&quot;,
+        &quot;Mockup_2&quot;: &quot;Content Mockup 2&quot;
+    }
+
+    return mockups
+
+
+# Define a function to track issues that come up in Tech Thursday
+def track_issues_that_come_up_in_tech_thursday():
+    # Track issues that come up in Tech Thursday
+    issues = {
+        &quot;Issue_1&quot;: &quot;Description 1&quot;,
+        &quot;Issue_2&quot;: &quot;Description 2&quot;
+    }
+
+    return issues
+
+
+# Define a function to create a user testing summary from the UI SME
+def create_user_testing_summary_from_ui_sme():
+    # Create a user testing summary from the UI SME
+    summary = {
+        &quot;Summary_1&quot;: &quot;Description 1&quot;,
+        &quot;Summary_2&quot;: &quot;Description 2&quot;
+    }
+
+    return summary
+
+
+# Define a function to begin user testing
+def begin_user_testing():
+    # Begin user testing
+    testing = {
+        &quot;Test_1&quot;: &quot;Result 1&quot;,
+        &quot;Test_2&quot;: &quot;Result 2&quot;
+    }
+
+    return testing
+
+
+# Define a function to schedule user testing
+def schedule_user_testing():
+    # Schedule user testing
+    schedule = {
+        &quot;Test_1&quot;: &quot;Date 1&quot;,
+        &quot;Test_2&quot;: &quot;Date 2&quot;
+    }
+
+    return schedule
+
+
+# Define a function to design a schedule from the UI SME
+def design_schedule_from_ui_sme():
+    # Design a schedule from the UI SME
+    schedule = {
+        &quot;Schedule_1&quot;: &quot;Description 1&quot;,
+        &quot;Schedule_2&quot;: &quot;Description 2&quot;
+    }
+
+    return schedule
+
+
+# Define a function to design an audit from the UI SME
+def design_audit_from_ui_sme():
+    # Design an audit from the UI SME
+    audit = {
+        &quot;Audit_1&quot;: &quot;Description 1&quot;,
+        &quot;Audit_2&quot;: &quot;Description 2&quot;
+    }
+
+    return audit
+
+
+# Define a function to prevent users from double publishing FABS submissions after refreshing
+def prevent_double_publishing_fabs_submissions_after_refreshing():
+    # Prevent users from double publishing FABS submissions after refreshing
+    submissions = {
+        &quot;Submission_1&quot;: &quot;Status 1&quot;,
+        &quot;Submission_2&quot;: &quot;Status 2&quot;
+    }
+
+    return submissions
+
+
+# Define a function to receive updates to FABS records
+def receive_updates_to_fabs_records():
+    # Receive updates to FABS records
+    updates = {
+        &quot;Update_1&quot;: &quot;Description 1&quot;,
+        &quot;Update_2&quot;: &quot;Description 2&quot;
+    }
+
+    return updates
+
+
+# Define a function to ensure that deleted FSRS records are not included in submissions
+def ensure_deleted_fsrs_records_are_not_included_in_submissions():
+    # Ensure that deleted FSRS records are not included in submissions
+    records = {
+        &quot;Record_1&quot;: &quot;Status 1&quot;,
+        &quot;Record_2&quot;: &quot;Status 2&quot;
+    }
+
+    return records
+
+
+# Define a function to see updated financial assistance data daily
+def see_updated_financial_assistance_data_daily():
+    # See updated financial assistance data daily
+    data = {
+        &quot;Data_1&quot;: &quot;Description 1&quot;,
+        &quot;Data_2&quot;: &quot;Description 2&quot;
+    }
+
+    return data
+
+
+# Define a function to deactivate the publish button in FABS after clicking it while derivations are happening
+def deactivate_publish_button_in_fabs_after_clicking_it_while_derivations_are_happening():
+    # Deactivate the publish button in FABS after clicking it while derivations are happening
+    button_status = {
+        &quot;Button_1&quot;: &quot;Disabled&quot;,
+        &quot;Button_2&quot;: &quot;Enabled&quot;
+    }
+
+    return button_status
+
+
+# Define a function to ensure that attempts to correct or delete non-existent records don&#x27;t create new published data
+def ensure_attempts_to_correct_or_delete_non_existent_records_dont_create_new_published_data():
+    # Ensure that attempts to correct or delete non-existent records don&#x27;t create new published data
+    attempts = {
+        &quot;Attempt_1&quot;: &quot;Result 1&quot;,
+        &quot;Attempt_2&quot;: &quot;Result 2&quot;
+    }
+
+    return attempts
+
+
+# Define a function to reset the environment to only take Staging MAX permissions
+def reset_environment_to_only_take_staging_max_permissions():
+    # Reset the environment to only take Staging MAX permissions
+    permissions = {
+        &quot;Permission_1&quot;: &quot;Staging MAX&quot;,
+        &quot;Permission_2&quot;: &quot;Staging MAX&quot;
+    }
+
+    return permissions
+
+
+# Define a function to have accurate and complete data related to PPoPCode and PPoPCongressionalDistrict
+def have_accurate_and_complete_data_related_to_ppop_code_and_ppop_congressional_district():
+    # Have accurate and complete data related to PPoPCode and PPoPCongressionalDistrict
+    data = {
+        &quot;PPoPCode&quot;: &quot;123456789&quot;,
+        &quot;PPoPCongressionalDistrict&quot;: &quot;District 1&quot;
+    }
+
+    return data
+
+
+# Define a function to accept zero and blank for loan records
+def accept_zero_and_blank_for_loan_records():
+    # Accept zero and blank for loan records
+    records = {
+        &quot;Record_1&quot;: &quot;Loan Record 1&quot;,
+        &quot;Record_2&quot;: &quot;Loan Record 2&quot;
+    }
+
+    return records
+
+
+# Define a function to deploy FABS into production
+def deploy_fabs_into_production():
+    # Deploy FABS into production
+    deployment = {
+        &quot;Deployment_1&quot;: &quot;Successful&quot;,
+        &quot;Deployment_2&quot;: &quot;Successful&quot;
+    }
+
+    return deployment
+
+
+# Define a function to clarify to users what exactly is triggering the CFDA error code in each case
+def clarify_to_users_what_exactly_is_triggering_the_cfda_error_code_in_each_case():
+    # Clarify to users what exactly is triggering the CFDA error code in each case
+    clarification = {
+        &quot;Error_1&quot;: &quot;Description 1&quot;,
+        &quot;Error_2&quot;: &quot;Description 2&quot;
+    }
+
+    return clarification
+
+
+# Define a function to be confident that the data coming from SAM is complete
+def be_confident_that_the_data_coming_from_sam_is_complete():
+    # Be confident that the data coming from SAM is complete
+    data = {
+        &quot;Data_1&quot;: &quot;Complete&quot;,
+        &quot;Data_2&quot;: &quot;Complete&quot;
+    }
+
+    return data
+
+
+# Define a function to index domain models properly
+def index_domain_models_properly():
+    # Index domain models properly
+    models = {
+        &quot;Model_1&quot;: &quot;Indexed&quot;,
+        &quot;Model_2&quot;: &quot;Indexed&quot;
+    }
+
+    return models
+
+
+# Define a function to accept zero and blank for non-loan records
+def accept_zero_and_blank_for_non_loan_records():
+    # Accept zero and blank for non-loan records
+    records = {
+        &quot;Record_1&quot;: &quot;Non-Loan Record 1&quot;,
+        &quot;Record_2&quot;: &quot;Non-Loan Record 2&quot;
+    }
+
+    return records
+
+
+# Define a function to make updates to the SQL codes for clarity
+def make_updates_to_sql_codes_for_clarity():
+    # Make updates to the SQL codes for clarity
+    updates = {
+        &quot;Update_1&quot;: &quot;Description 1&quot;,
+        &quot;Update_2&quot;: &quot;Description 2&quot;
+    }
+
+    return updates
+
+
+# Define a function to add the 00***** and 00FORGN PPoPCode cases to the derivation logic
+def add_ppop_code_cases_to_derivation_logic():
+    # Add the 00***** and 00FORGN PPoPCode cases to the derivation logic
+    cases = {
+        &quot;Case_1&quot;: &quot;Description 1&quot;,
+        &quot;Case_2&quot;: &quot;Description 2&quot;
+    }
+
+    return cases
+
+
+# Define a function to see the office names derived from office codes
+def see_office_names_derived_from_office_codes():
+    # See the office names derived from office codes
+    office_names = {
+        &quot;Office_1&quot;: &quot;Name 1&quot;,
+        &quot;Office_2&quot;: &quot;Name 2&quot;
+    }
+
+    return office_names
+
+
+# Define a function to derive fields in the historical FABS loader
+def derive_fields_in_historical_fabs_loader():
+    # Derive fields in the historical FABS loader
+    fields = {
+        &quot;Field_1&quot;: &quot;Derived Field 1&quot;,
+        &quot;Field_2&quot;: &quot;Derived Field 2&quot;
+    }
+
+    return fields
+
+
+# Define a function to update the Broker resources, validations, and P&amp;P pages
+def update_broker_resources_validations_and_pp_pages():
+    # Update the Broker resources, validations, and P&amp;P pages
+    updates = {
+        &quot;Update_1&quot;: &quot;Description 1&quot;,
+        &quot;Update_2&quot;: &quot;Description 2&quot;
+    }
+
+    return updates
+
+
+# Define a function to include the FREC derivations in the historical FABS data loader
+def include_frec_derivations_in_historical_fabs_data_loader():
+    # Include the FREC derivations in the historical FABS data loader
+    derivations = {
+        &quot;Derivation_1&quot;: &quot;Description 1&quot;,
+        &quot;Derivation_2&quot;: &quot;Description 2&quot;
+    }
+
+    return derivations
+
+
+# Define a function to prevent users from seeing NASA grants displayed as contracts
+def prevent_users_from_seeing_nasa_grants_displayed_as_contracts():
+    # Prevent users from seeing NASA grants displayed as contracts
+    grants = {
+        &quot;Grant_1&quot;: &quot;Description 1&quot;,
+        &quot;Grant_2&quot;: &quot;Description 2&quot;
+    }
+
+    return grants
+
+
+# Define a function to accept records whose ActionTypes are B, C, or D and the DUNS is registered in SAM
+def accept_records_with_action_types_and_registered_duns():
+    # Accept records whose ActionTypes are B, C, or D and the DUNS is registered in SAM
+    records = {
+        &quot;Record_1&quot;: &quot;Description 1&quot;,
+        &quot;Record_2&quot;: &quot;Description 2&quot;
+    }
+
+    return records
+
+
+# Define a function to derive FundingAgencyCode
+def derive_funding_agency_code():
+    # Derive FundingAgencyCode
+    code = &quot;Derived Funding Agency Code&quot;
+
+    return code
+
+
+# Define a function to ensure that the maximum length allowed for LegalEntityAddressLine3 matches Schema v1.1
+def ensure_max_length_for_legal_entity_address_line3():
+    # Ensure that the maximum length allowed for LegalEntityAddressLine3 matches Schema v1.1
+    max_length = 100
+
+    return max_length
+
+
+# Define a function to use the schema v1.1 headers in the FABS file
+def use_schema_v1_1_headers_in_fabs_file():
+    # Use the schema v1.1 headers in the FABS file
+    headers = {
+        &quot;Header_1&quot;: &quot;Description 1&quot;,
+        &quot;Header_2&quot;: &quot;Description 2&quot;
+    }
+
+    return headers
+
+
+# Define a function to map the FederalActionObligation properly to the Atom Feed
+def map_federal_action_obligation_to_atom_feed():
+    # Map the FederalActionObligation properly to the Atom Feed
+    mapping = {
+        &quot;Mapping_1&quot;: &quot;Description 1&quot;,
+        &quot;Mapping_2&quot;: &quot;Description 2&quot;
+    }
+
+    return mapping
+
+
+# Define a function to have PPoPZIP+4 work the same as the Legal Entity ZIP validations
+def have_ppopzip4_work_same_as_legal_entity_zip_validations():
+    # Have PPoPZIP+4 work the same as the Legal Entity ZIP validations
+    validations = {
+        &quot;Validation_1&quot;: &quot;Description 1&quot;,
+        &quot;Validation_2&quot;: &quot;Description 2&quot;
+    }
+
+    return validations
+
+
+# Define a function to link the SAMPLE FILE on the &quot;What you want to submit&quot; dialog to point to the correct file
+def link_sample_file_to_correct_file():
+    # Link the SAMPLE FILE on the &quot;What you want to submit&quot; dialog to point to the correct file
+    file_link = &quot;Correct File Link&quot;
+
+    return file_link
+
+
+# Define a function to ensure that FPDS data is up-to-date daily
+def ensure_fpds_data_is_up_to_date_daily():
+    # Ensure that FPDS data is up-to-date daily
+    data = {
+        &quot;Data_1&quot;: &quot;Description 1&quot;,
+        &quot;Data_2&quot;: &quot;Description 2&quot;
+    }
+
+    return data
+
+
+# Define a function to access the raw agency published files from FABS via USASpending
+def access_raw_agency_published_files_from_fabs_via_usaspending():
+    # Access the raw agency published files from FABS via USASpending
+    files = {
+        &quot;File_1&quot;: &quot;Description 1&quot;,
+        &quot;File_2&quot;: &quot;Description 2&quot;
+    }
+
+    return files
+
+
+# Define a function to determine how agencies will generate and validate D Files from FABS and FPDS data
+def determine_how_agencies_will_generate_and_validate_d_files():
+    # Determine how agencies will generate and validate D Files from FABS and FPDS data
+    generation = {
+        &quot;Generation_1&quot;: &quot;Description 1&quot;,
+        &quot;Generation_2&quot;: &quot;Description 2&quot;
+    }
+
+    return generation
+
+
+# Define a function to generate and validate D Files from FABS and FPDS data
+def generate_and_validate_d_files():
+    # Generate and validate D Files from FABS and FPDS data
+    files = {
+        &quot;File_1&quot;: &quot;Description 1&quot;,
+        &quot;File_2&quot;: &quot;Description 2&quot;
+    }
+
+    return files
+
+
+# Define a function to display the header information box with updated date and time
+def display_header_information_box_with_updated_date_and_time():
+    # Display the header information box with updated date and time
+    header = {
+        &quot;Header_1&quot;: &quot;Description 1&quot;,
+        &quot;Header_2&quot;: &quot;Description 2&quot;
+    }
+
+    return header
+
+
+# Define a function to receive a more helpful file-level error when uploading a file with the wrong extension
+def receive_more_helpful_file_level_error():
+    # Receive a more helpful file-level error when uploading a file with the wrong extension
+    error = &quot;More Helpful Error Message&quot;
+
+    return error
+
+
+# Define a function to have access to test features in environments other than Staging
+def have_access_to_test_features_in_environments_other_than_staging():
+    # Have access to test features in environments other than Staging
+    access = {
+        &quot;Access_1&quot;: &quot;Description 1&quot;,
+        &quot;Access_2&quot;: &quot;Description 2&quot;
+    }
+
+    return access
+
+
+# Define a function to have submission errors accurately represent FABS errors
+def have_submission_errors_accurately_represent_fabs_errors():
+    # Have submission errors accurately represent FABS errors
+    errors = {
+        &quot;Error_1&quot;: &quot;Description 1&quot;,
+        &quot;Error_2&quot;: &quot;Description 2&quot;
+    }
+
+    return errors
+
+
+# Define a function to have frontend URLs more accurately reflect the page being accessed
+def have_frontend_urls_more_accurately_reflect_page_being_accessed():
+    # Have frontend URLs more accurately reflect the page being accessed
+    urls = {
+        &quot;URL_1&quot;: &quot;Description 1&quot;,
+        &quot;URL_2&quot;: &quot;Description 2&quot;
+    }
+
+    return urls
+
+
+# Define a function to load all historical Financial Assistance data for FABS go-live
+def load_all_historical_financial_assistance_data_for_fabs_go_live():
+    # Load all historical Financial Assistance data for FABS go-live
+    data = {
+        &quot;Data_1&quot;: &quot;Description 1&quot;,
+        &quot;Data_2&quot;: &quot;Description 2&quot;
+    }
+
+    return data
+
+
+# Define a function to include both extracted historical data and FPDS feed data in the historical FPDS data loader
+def include_both_extracted_historical_data_and_fpds_feed_data_in_historical_fpds_data_loader():
+    # Include both extracted historical data and FPDS feed data in the historical FPDS data loader
+    data = {
+        &quot;Data_1&quot;: &quot;Description 1&quot;,
+        &quot;Data_2&quot;: &quot;Description 2&quot;
+    }
+
+    return data
+
+
+# Define a function to load historical FPDS data
+def load_historical_fpds_data():
+    # Load historical FPDS data
+    data = {
+        &quot;Data_1&quot;: &quot;Description 1&quot;,
+        &quot;Data_2&quot;: &quot;Description 2&quot;
+    }
+
+    return data
+
+
+# Define a function to accurately see who created a submission
+def accurately_see_who_created_submission():
+    # Accurately see who created a submission
+    creator = &quot;Submission Creator&quot;
+
+    return creator
+
+
+# Define a function to get File F in the correct format
+def get_file_f_in_correct_format():
+    # Get File F in the correct format
+    file = &quot;File F in Correct Format&quot;
+
+    return file
+
+
+# Define a function to better understand file-level errors
+def better_understand_file_level_errors():
+    # Better understand file-level errors
+    errors = {
+        &quot;Error_1&quot;: &quot;Description 1&quot;,
+        &quot;Error_2&quot;: &quot;Description 2&quot;
+    }
+
+    return errors
+
+
+# Define a function to provide FABS groups that function under the FREC paradigm
+def provide_fabs_groups_that_function_under_frec_paradigm():
+    # Provide FABS groups that function under the FREC paradigm
+    groups = {
+        &quot;Group_1&quot;: &quot;Description 1&quot;,
+        &quot;Group_2&quot;: &quot;Description 2&quot;
+    }
+
+    return groups
+
+
+# Define a function to ensure that FABS is deriving fields properly through a robust test file plus a follow up check
+def ensure_fabs_is_deriving_fields_properly():
+    # Ensure that FABS is deriving fields properly through a robust test file plus a follow up check
+    fields = {
+        &quot;Field_1&quot;: &quot;Description 1&quot;,
+        &quot;Field_2&quot;: &quot;Description 2&quot;
+    }
+
+    return fields
+
+
+# Define a function to only want zero-padded fields
+def only_want_zero_padded_fields():
+    # Only want zero-padded fields
+    fields = {
+        &quot;Field_1&quot;: &quot;Zero-Padded Field 1&quot;,
+        &quot;Field_2&quot;: &quot;Zero-Padded Field 2&quot;
+    }
+
+    return fields
+
+
+# Define a function to submit records for individual recipients without receiving a DUNS error
+def submit_records_for_individual_recipients_without_receiving_duns_error():
+    # Submit records for individual recipients without receiving a DUNS error
+    records = {
+        &quot;Record_1&quot;: &quot;Description 1&quot;,
+        &quot;Record_2&quot;: &quot;Description 2&quot;
+    }
+
+    return records
+
+
+# Define a function to have more information about how many rows will be published prior to deciding whether to publish
+def have_more_information_about_how_many_rows_will_be_published():
+    # Have more information about how many rows will be published prior to deciding whether to publish
+    information = {
+        &quot;Information_1&quot;: &quot;Description 1&quot;,
+        &quot;Information_2&quot;: &quot;Description 2&quot;
+    }
+
+    return information
+
+
+# Define a function to prevent duplicate transactions from being published and deal with the time gap between validation and the publishing decision
+def prevent_duplicate_transactions_and_deal_with_time_gap():
+    # Prevent duplicate transactions from being published and deal with the time gap between validation and the publishing decision
+    transactions = {
+        &quot;Transaction_1&quot;: &quot;Description 1&quot;,
+        &quot;Transaction_2&quot;: &quot;Description 2&quot;
+    }
+
+    return transactions
+
+
+# Define a function to submit a citywide as a PPoPZIP and pass validations
+def submit_citywide_as_ppopzip_and_pass_validations():
+    # Submit a citywide as a PPoPZIP and pass validations
+    submission = &quot;Citywide Submission&quot;
+
+    return submission
+
+
+# Define a function to have updated error codes that accurately reflect the logic and provide enough information
+def have_updated_error_codes():
+    # Have updated error codes that accurately reflect the logic and provide enough information
+    error_codes = {
+        &quot;Error_Code_1&quot;: &quot;Description 1&quot;,
+        &quot;Error_Code_2&quot;: &quot;Description 2&quot;
+    }
+
+    return error_codes
+
+
+# Define a function to leave off the last 4 digits of the ZIP without an error
+def leave_off_last_4_digits_of_zip_without_error():
+    # Leave off the last 4 digits of the ZIP without an error
+    zip_code = &quot;12345&quot;
+
+    return zip_code
+
+
+# Define a function to ensure that the historical data includes all necessary columns
+def ensure_historical_data_includes_all_necessary_columns():
+    # Ensure that the historical data includes all necessary columns
+    columns = {
+        &quot;Column_1&quot;: &quot;Description 1&quot;,
+        &quot;Column_2&quot;: &quot;Description 2&quot;
+    }
+
+    return columns
+
+
+# Define a function to access two additional fields from the FPDS data pull
+def access_two_additional_fields_from_fpds_data_pull():
+    # Access two additional fields from the FPDS data pull
+    fields = {
+        &quot;Field_1&quot;: &quot;Description 1&quot;,
+        &quot;Field_2&quot;: &quot;Description 2&quot;
+    }
+
+    return fields
+
+
+# Define a function to have additional helpful info in the submission dashboard
+def have_additional_helpful_info_in_submission_dashboard():
+    # Have additional helpful info in the submission dashboard
+    info = {
+        &quot;Info_1&quot;: &quot;Description 1&quot;,
+        &quot;Info_2&quot;: &quot;Description 2&quot;
+    }
+
+    return info
+
+
+# Define a function to download the uploaded FABS file
+def download_uploaded_fabs_file():
+    # Download the uploaded FABS file
+    file = &quot;Uploaded FABS File&quot;
+
+    return file
+
+
+# Define a function to quickly access Broker application data
+def quickly_access_broker_application_data():
+    # Quickly access Broker application data
+    data = {
+        &quot;Data_1&quot;: &quot;Description 1&quot;,
+        &quot;Data_2&quot;: &quot;Description 2&quot;
+    }
+
+    return data
+
+
+# Define a function to determine the best way to load historical FPDS data
+def determine_best_way_to_load_historical_fpds_data():
+    # Determine the best way to load historical FPDS data
+    method = &quot;Best Method&quot;
+
+    return method
+
+
+# Define a function to have the language on FABS pages be appropriate
+def have_language_on_fabs_pages_be_appropriate():
+    # Have the language on FABS pages be appropriate
+    language = &quot;Appropriate Language&quot;
+
+    return language
+
+
+# Define a function to not want DABS banner messages and vice versa
+def not_want_dabs_banner_messages_and_vice_versa():
+    # Not want DABS banner messages and vice versa
+    messages = {
+        &quot;Message_1&quot;: &quot;Description 1&quot;,
+        &quot;Message_2&quot;: &quot;Description 2&quot;
+    }
+
+    return messages
+
+
+# Define a function to have read-only access to DABS
+def have_read_only_access_to_dabs():
+    # Have read-only access to DABS
+    access = &quot;Read-Only Access&quot;
+
+    return access
+
+
+# Define a function to have validations run in a reasonable amount of time
+def have_validations_run_in_reasonable_amount_of_time():
+    # Have validations run in a reasonable amount of time
+    time = &quot;Reasonable Time&quot;
+
+    return time
+
+
+# Define a function to see correct status labels on the Submission Dashboard
+def see_correct_status_labels_on_submission_dashboard():
+    # See correct status labels on the Submission Dashboard
+    labels = {
+        &quot;Label_1&quot;: &quot;Description 1&quot;,
+        &quot;Label_2&quot;: &quot;Description 2&quot;
+    }
+
+    return labels
+
+
+# Define a function to know when the submission periods start and end
+def know_when_submission_periods_start_and_end():
+    # Know when the submission periods start and end
+    periods = {
+        &quot;Period_1&quot;: &quot;Description 1&quot;,
+        &quot;Period_2&quot;: &quot;Description 2&quot;
+    }
+
+    return periods
+
+
+# Define a function to have a landing page to navigate to either FABS or DABS pages
+def have_landing_page_to_navigate_to_either_fabs_or_dabs_pages():
+    # Have a landing page to navigate to either FABS or DABS pages
+    page = &quot;Landing Page&quot;
+
+    return page
+
+
+# Define a function to submit data elements surrounded by quotation marks
+def submit_data_elements_surrounded_by_quotation_marks():
+    # Submit data elements surrounded by quotation marks
+    data = {
+        &quot;Data_1&quot;: &quot;Description 1&quot;,
+        &quot;Data_2&quot;: &quot;Description 2&quot;
+    }
+
+    return data
+
+# Test the functions
+fabs = FABS()
+print(fabs.submit({&quot;PPoPCode&quot;: &quot;123456789&quot;, &quot;PPoPCongressionalDistrict&quot;: &quot;District 1&quot;}))
+print(generate_d_file({&quot;Field_1&quot;: &quot;Value 1&quot;}, {&quot;Field_2&quot;: &quot;Value 2&quot;}))
+print(validate_d_file(&quot;Field_1:Value_1\nField_2:Value_2&quot;))
+log(&quot;Test log message&quot;)
+update_fabs_sample_file()
+print(get_fpds_data())
+print(get_fabs_data())
+print(get_usaspending_data())
+print(get_sam_data())
+print(get_gtas_window_data())
+print(derive_fields({&quot;Field_1&quot;: &quot;Value 1&quot;, &quot;Field_2&quot;: &quot;Value 2&quot;}))
+print(update_broker_validation_rule_table())
+print(add_gtas_window_data_to_database({&quot;GTAS_Window_ID&quot;: &quot;567890&quot;, &quot;Start_Date&quot;: datetime.now(), &quot;End_Date&quot;: datetime.now() + timedelta(days=30)}))
+print(manage_and_cache_d_files_generation_requests())
+print(access_raw_agency_published_files_from_fabs_via_usaspending())
+print(include_large_number_of_flexfields_without_performance_impact())
+print(help_create_content_mockups())
+print(track_issues_that_come_up_in_tech_thursday())
+print(create_user_testing_summary_from_ui_sme())
+print(begin_user_testing())
+print(schedule_user_testing())
+print(design_schedule_from_ui_sme())
+print(design_audit_from_ui_sme())
+print(prevent_double_publishing_fabs_submissions_after_refreshing())
+print(receive_updates_to_fabs_records())
+print(ensure_deleted_fsrs_records_are_not_included_in_submissions())
+print(see_updated_financial_assistance_data_daily())
+print(deactivate_publish_button_in_fabs_after_clicking_it_while_derivations_are_happening())
+print(ensure_attempts_to_correct_or_delete_non_existent_records_dont_create_new_published_data())
+print(reset_environment_to_only_take_staging_max_permissions())
+print(have_accurate_and_complete_data_related_to_ppop_code_and_ppop_congressional_district())
+print(accept_zero_and_blank_for_loan_records())
+print(deploy_fabs_into_production())
+print(clarify_to_users_what_exactly_is_triggering_the_cfda_error_code_in_each_case())
+print(be_confident_that_the_data_coming_from_sam_is_complete())
+print(index_domain_models_properly())
+print(accept_zero_and_blank_for_non_loan_records())
+print(derive_funding_agency_code())
+print(ensure_max_length_for_legal_entity_address_line3())
+print(use_schema_v1_1_headers_in_fabs_file())
+print(map_federal_action_obligation_to_atom_feed())
+print(have_ppopzip4_work_same_as_legal_entity_zip_validations())
+print(link_sample_file_to_correct_file())
+print(ensure_fpds_data_is_up_to_date_daily())
+print(access_raw_agency_published_files_from_fabs_via_usaspending())
+print(determine_how_agencies_will_generate_and_validate_d_files())
+print(generate_and_validate_d_files())
+print(display_header_information_box_with_updated_date_and_time())
+print(receive_more_helpful_file_level_error())
+print(have_access_to_test_features_in_environments_other_than_staging())
+print(have_submission_errors_accurately_represent_fabs_errors())
+print(have_frontend_urls_more_accurately_reflect_page_being_accessed())
+print(load_all_historical_financial_assistance_data_for_fabs_go_live())
+print(include_both_extracted_historical_data_and_fpds_feed_data_in_historical_fpds_data_loader())
+print(load_historical_fpds_data())
+print(accurately_see_who_created_submission())
+print(get_file_f_in_correct_format())
+print(better_understand_file_level_errors())
+print(provide_fabs_groups_that_function_under_frec_paradigm())
+print(ensure_fabs_is_deriving_fields_properly())
+print(only_want_zero_padded_fields())
+print(submit_records_for_individual_recipients_without_receiving_duns_error())
+print(have_more_information_about_how_many_rows_will_be_published())
+print(prevent_duplicate_transactions_and_deal_with_time_gap())
+print(submit_citywide_as_ppopzip_and_pass_validations())
+print(have_updated_error_codes())
+print(leave_off_last_4_digits_of_zip_without_error())
+print(ensure_historical_data_includes_all_necessary_columns())
+print(access_two_additional_fields_from_fpds_data_pull())
+print(have_additional_helpful_info_in_submission_dashboard())
+print(download_uploaded_fabs_file())
+print(quickly_access_broker_application_data())
+print(determine_best_way_to_load_historical_fpds_data())
+print(have_language_on_fabs_pages_be_appropriate())
+print(not_want_dabs_banner_messages_and_vice_versa())
+print(have_read_only_access_to_dabs())
+print(have_validations_run_in_reasonable_amount_of_time())
+print(see_correct_status_labels_on_submission_dashboard())
+print(know_when_submission_periods_start_and_end())
+print(have_landing_page_to_navigate_to_either_fabs_or_dabs_pages())
+print(submit_data_elements_surrounded_by_quotation_marks())</code></pre>
+        </details>
+    </div>
+</body>
+</html>
+    

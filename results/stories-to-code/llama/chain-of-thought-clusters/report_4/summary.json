@@ -1,0 +1,28 @@
+{
+    "request_number": 4,
+    "timestamp": "2025-10-26 23:00:33",
+    "model": "meta-llama/llama-3.3-70b-instruct",
+    "prompt_variant": "chain-of-thought-clusters",
+    "total_tokens": 533,
+    "avg_prob": 0.9044612071929994,
+    "perplexity": 1.1056306141680812,
+    "struct_metrics": {
+        "avg_cyclomatic_complexity": 1.2962962962962963,
+        "ast_depth": 10,
+        "avg_function_size_lines": 3,
+        "import_redundancy_ratio": 0.0
+    },
+    "semantic_metrics": {
+        "syntax_valid": true,
+        "flake8_error_count": 2,
+        "mypy_error_count": 0
+    },
+    "execution_metrics": {
+        "execution_success": true,
+        "execution_time_sec": 0.539,
+        "exception_type": "",
+        "exception_message": "",
+        "runtime_output": "Processed"
+    },
+    "total_credibility": 91.24
+}

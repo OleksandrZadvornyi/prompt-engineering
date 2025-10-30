@@ -19,10 +19,10 @@
     },
     "execution_metrics": {
         "execution_success": true,
-        "execution_time_sec": 0.821,
+        "execution_time_sec": 0.487,
         "exception_type": "",
         "exception_message": "",
         "runtime_output": "Processing deletions from 12-19-2017\nRedesigning Resources page with new styles.\nReporting user testing findings: User testing completed successfully.\nSyncing D1 file generation with FPDS data load.\nGenerating D1 file."
     },
-    "total_credibility": 85.82
+    "total_credibility": 87.09
 }

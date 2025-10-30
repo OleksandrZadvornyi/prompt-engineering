@@ -19,10 +19,10 @@
     },
     "execution_metrics": {
         "execution_success": true,
-        "execution_time_sec": 0.615,
+        "execution_time_sec": 0.439,
         "exception_type": "",
         "exception_message": "",
-        "runtime_output": "2025-10-25 18:19:41,992 - INFO - Submission logged: 1, Status: Pending\n2025-10-25 18:19:41,992 - INFO - Updating status for submission 1 from Pending to Validated\n2025-10-25 18:19:41,992 - INFO - Submission validated successfully.\n2025-10-25 18:19:42,035 - INFO - Tracking issue: Issue with the Resources page design\n2025-10-25 18:19:42,035 - INFO - Generating user testing summary.\n2025-10-25 18:19:42,035 - INFO - Submission 1 deleted successfully.\nSubmission ID: 1, Status: Pending, Timestamp: 2025-10-25 18:19:41.992095\nSubmission ID: 1, Status: Validated, Timestamp: 2025-10-25 18:19:41.992448\nUser Testing Summary: ['Issue with the Resources page design']\nSubmission not found."
+        "runtime_output": "2025-10-30 05:58:53,434 - INFO - Submission logged: 1, Status: Pending\n2025-10-30 05:58:53,434 - INFO - Updating status for submission 1 from Pending to Validated\n2025-10-30 05:58:53,434 - INFO - Submission validated successfully.\n2025-10-30 05:58:53,434 - INFO - Tracking issue: Issue with the Resources page design\n2025-10-30 05:58:53,434 - INFO - Generating user testing summary.\n2025-10-30 05:58:53,434 - INFO - Submission 1 deleted successfully.\nSubmission ID: 1, Status: Pending, Timestamp: 2025-10-30 05:58:53.434156\nSubmission ID: 1, Status: Validated, Timestamp: 2025-10-30 05:58:53.434549\nUser Testing Summary: ['Issue with the Resources page design']\nSubmission not found."
     },
-    "total_credibility": 81.51
+    "total_credibility": 84.25
 }

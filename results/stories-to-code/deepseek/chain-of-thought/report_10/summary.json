@@ -1,0 +1,28 @@
+{
+    "request_number": 10,
+    "timestamp": "2025-10-26 22:05:54",
+    "model": "deepseek/deepseek-chat-v3-0324",
+    "prompt_variant": "chain-of-thought",
+    "total_tokens": 1271,
+    "avg_prob": 0.9118201036063155,
+    "perplexity": 1.0967075589197108,
+    "struct_metrics": {
+        "avg_cyclomatic_complexity": 1.7272727272727273,
+        "ast_depth": 11,
+        "avg_function_size_lines": 5.666666666666667,
+        "import_redundancy_ratio": 0.0
+    },
+    "semantic_metrics": {
+        "syntax_valid": true,
+        "flake8_error_count": 9,
+        "mypy_error_count": 0
+    },
+    "execution_metrics": {
+        "execution_success": true,
+        "execution_time_sec": 0.542,
+        "exception_type": "",
+        "exception_message": "",
+        "runtime_output": "2025-10-30 05:54:05,493 - __main__ - INFO - Submission 1 created by user user1\n2025-10-30 05:54:05,494 - __main__ - INFO - Submission 1 validation result: Valid\n2025-10-30 05:54:05,494 - __main__ - INFO - Submission 1 status updated to PublishStatus.PUBLISHED\n2025-10-30 05:54:05,494 - __main__ - INFO - Submission 1 published successfully\n{'submission_id': '1', 'data': 'Generated D file'}"
+    },
+    "total_credibility": 87.41
+}

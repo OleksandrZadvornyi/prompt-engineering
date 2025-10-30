@@ -1,0 +1,28 @@
+{
+    "request_number": 2,
+    "timestamp": "2025-10-26 21:56:23",
+    "model": "deepseek/deepseek-chat-v3-0324",
+    "prompt_variant": "chain-of-thought",
+    "total_tokens": 1902,
+    "avg_prob": 0.8966348058232206,
+    "perplexity": 1.1152812644629353,
+    "struct_metrics": {
+        "avg_cyclomatic_complexity": 1.8888888888888888,
+        "ast_depth": 12,
+        "avg_function_size_lines": 4.875,
+        "import_redundancy_ratio": 0.0
+    },
+    "semantic_metrics": {
+        "syntax_valid": true,
+        "flake8_error_count": 20,
+        "mypy_error_count": 3
+    },
+    "execution_metrics": {
+        "execution_success": true,
+        "execution_time_sec": 0.475,
+        "exception_type": "",
+        "exception_message": "",
+        "runtime_output": "2025-10-30 05:54:24,359 - Broker - INFO - Added validation rule: FABS_001\n2025-10-30 05:54:24,359 - Broker - INFO - Added validation rule: FABS_002\n2025-10-30 05:54:24,360 - Broker - INFO - Processing deletions for 12-19-2017\n2025-10-30 05:54:24,360 - Broker - INFO - Syncing D1 file generation with FPDS data load\n2025-10-30 05:54:24,360 - Broker - INFO - UI design updated to new_broker\nFABS Errors: []"
+    },
+    "total_credibility": 78.67
+}

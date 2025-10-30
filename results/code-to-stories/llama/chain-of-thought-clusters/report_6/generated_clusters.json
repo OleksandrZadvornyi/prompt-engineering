@@ -1,0 +1,8 @@
+{
+  "(2,)": "As a FABS user, I want to submit FABS data, so that I can provide the necessary information As a data user, I want to view FABS records, so that I can access the latest FABS information",
+  "(4,)": "As a developer, I want to update the FABS sample file, so that I can reflect changes in the FABS data format",
+  "(5,)": "As a developer, I want to add GTAS window data, so that I can manage GTAS window information",
+  "(0,)": "As a broker user, I want to upload and validate files, so that I can ensure data accuracy As a broker user, I want to view error messages, so that I can troubleshoot issues with my uploaded files",
+  "(1,)": "As a UI user, I want to view the resources page, so that I can access relevant resources As a UI user, I want to view the landing page, so that I can navigate the application easily",
+  "(3,)": "As a system administrator, I want to track the current date and time, so that I can monitor system activity As a system administrator, I want to know the current working directory, so that I can manage system files and directories"
+}

@@ -19,10 +19,10 @@
     },
     "execution_metrics": {
         "execution_success": true,
-        "execution_time_sec": 2.817,
+        "execution_time_sec": 2.503,
         "exception_type": "",
         "exception_message": "",
         "runtime_output": "/app/main.py:15: MovedIn20Warning: The ``declarative_base()`` function is now available as sqlalchemy.orm.declarative_base(). (deprecated since: 2.0) (Background on SQLAlchemy 2.0 at: https://sqlalche.me/e/b8d9)\n  Base = declarative_base()\nINFO:root:Loading FPDS data from 2007 to present\nINFO:root:Loading historical FABS data"
     },
-    "total_credibility": 54.29
+    "total_credibility": 62.88
 }

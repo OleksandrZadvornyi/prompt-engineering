@@ -1,0 +1,9 @@
+{
+  "(2,)": "As a System Administrator, I want to process data deletions for a specific date, so that obsolete data is properly removed As a DevOps Engineer, I want to configure New Relic for an application, so that performance is monitored effectively As a Tester, I want to test if derived fields are correctly populated, so that data processing is accurate",
+  "(4,)": "As a UI Designer, I want to redesign the Resources page, so that it matches the new Broker styles",
+  "(5,)": "As a UI Designer, I want to report user testing feedback to an agency, so that they can review and improve usability As a UI Designer, I want to start a new round of edits for a page, so that it can be refined based on feedback",
+  "(0,)": "As a Developer, I want to update the publish status of a FABS submission, so that its state is accurately reflected As a Developer, I want to prevent double publishing of FABS submissions, so that data integrity is maintained",
+  "(6,)": "As a Developer, I want to add GTAS window data to the database, so that financial records are synchronized",
+  "(3,)": "As a Broker User, I want to upload and validate a file, so that errors are caught before processing",
+  "(1,)": "As a Broker User, I want to sync D1 file generation with FPDS data, so that records remain consistent As a Website User, I want to access published FABS files, so that I can review submission data"
+}

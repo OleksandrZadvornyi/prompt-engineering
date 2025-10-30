@@ -1,0 +1,28 @@
+{
+    "request_number": 4,
+    "timestamp": "2025-10-26 21:59:32",
+    "model": "deepseek/deepseek-chat-v3-0324",
+    "prompt_variant": "chain-of-thought",
+    "total_tokens": 1739,
+    "avg_prob": 0.9057312659453991,
+    "perplexity": 1.104080247198051,
+    "struct_metrics": {
+        "avg_cyclomatic_complexity": 1.5588235294117647,
+        "ast_depth": 12,
+        "avg_function_size_lines": 4.695652173913044,
+        "import_redundancy_ratio": 0.0
+    },
+    "semantic_metrics": {
+        "syntax_valid": true,
+        "flake8_error_count": 38,
+        "mypy_error_count": 0
+    },
+    "execution_metrics": {
+        "execution_success": true,
+        "execution_time_sec": 0.457,
+        "exception_type": "",
+        "exception_message": "",
+        "runtime_output": "2025-10-30 05:54:30,023 - __main__ - INFO - Loading FABS data from 2017-12-19 00:00:00 to 2017-12-19 00:00:00\n2025-10-30 05:54:30,024 - __main__ - INFO - Starting round 1 updates for Resources page\n2025-10-30 05:54:30,024 - __main__ - INFO - Starting round 2 updates for Homepage page\n2025-10-30 05:54:30,024 - __main__ - INFO - Scheduled test for 2023-12-01 00:00:00: Homepage redesign\n2025-10-30 05:54:30,024 - __main__ - INFO - Validating submission sub123\n2025-10-30 05:54:30,024 - __main__ - INFO - Submission sub123 status changed to PublishStatus.PENDING\n2025-10-30 05:54:30,024 - __main__ - INFO - Generated D file for submission sub123"
+    },
+    "total_credibility": 77.06
+}

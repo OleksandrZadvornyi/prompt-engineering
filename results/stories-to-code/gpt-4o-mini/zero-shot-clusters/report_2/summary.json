@@ -19,10 +19,10 @@
     },
     "execution_metrics": {
         "execution_success": false,
-        "execution_time_sec": 0.65,
+        "execution_time_sec": 0.445,
         "exception_type": "AttributeError",
         "exception_message": "'NoneType' object has no attribute 'submission_id'",
-        "runtime_output": "Traceback (most recent call last):\n  File \"/app/main.py\", line 97, in <module>\n{'S1': 'Pending'}\n    user.submit_for_validation(found_sub)\n  File \"/app/main.py\", line 51, in submit_for_validation\n    print(f\"Submitting {submission.submission_id} for validation.\")\n                        ^^^^^^^^^^^^^^^^^^^^^^^^\nAttributeError: 'NoneType' object has no attribute 'submission_id'"
+        "runtime_output": "{'S1': 'Pending'}\nTraceback (most recent call last):\n  File \"/app/main.py\", line 97, in <module>\n    user.submit_for_validation(found_sub)\n  File \"/app/main.py\", line 51, in submit_for_validation\n    print(f\"Submitting {submission.submission_id} for validation.\")\n                        ^^^^^^^^^^^^^^^^^^^^^^^^\nAttributeError: 'NoneType' object has no attribute 'submission_id'"
     },
-    "total_credibility": 48.53
+    "total_credibility": 54.52
 }

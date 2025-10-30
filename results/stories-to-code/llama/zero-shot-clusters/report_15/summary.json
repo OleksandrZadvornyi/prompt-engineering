@@ -1,0 +1,28 @@
+{
+    "request_number": 15,
+    "timestamp": "2025-10-26 15:55:29",
+    "model": "meta-llama/llama-3.3-70b-instruct",
+    "prompt_variant": "zero-shot-clusters",
+    "total_tokens": 940,
+    "avg_prob": 0.8682662037981426,
+    "perplexity": 1.1517205156962245,
+    "struct_metrics": {
+        "avg_cyclomatic_complexity": 1.35,
+        "ast_depth": 9,
+        "avg_function_size_lines": 5.352941176470588,
+        "import_redundancy_ratio": 0.0
+    },
+    "semantic_metrics": {
+        "syntax_valid": true,
+        "flake8_error_count": 2,
+        "mypy_error_count": 0
+    },
+    "execution_metrics": {
+        "execution_success": true,
+        "execution_time_sec": 0.386,
+        "exception_type": "",
+        "exception_message": "",
+        "runtime_output": "Error message\n[{'rule_id': 1, 'rule_name': 'rule1'}, {'rule_id': 2, 'rule_name': 'rule2'}]\nTrue\nInvalid file extension. Please upload a CSV or XLS file.\nTrue\nFPDS data loaded from database\n[]\n[]\nFile submitted successfully\nFABS sample file\nUpdated financial assistance data\nRaw agency published files\nPPoPCode and PPoPCongressionalDistrict data"
+    },
+    "total_credibility": 90.53
+}

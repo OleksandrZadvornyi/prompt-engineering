@@ -1,0 +1,32 @@
+As a Data User, I want to process deletions for a given date, so that I can manage data quality and completeness.
+As a Data User, I want to receive updates to FABS records, so that I can stay informed about changes to the data.
+As a UI Designer, I want to redesign the Resources page, so that it matches the new Broker design styles and improves user experience.
+As a UI Designer, I want to report user testing results to agencies, so that they can understand the usability of the system.
+As a UI Designer, I want to move on to round 2 of edits for a given page, so that I can iteratively improve the design.
+As a UI Designer, I want to track issues that come up during Tech Thursday, so that I can address them promptly and ensure smooth development.
+As a UI Designer, I want to begin user testing, so that I can gather feedback and validate design decisions.
+As a UI Designer, I want to schedule user testing, so that I can plan and coordinate testing sessions.
+As a DevOps Engineer, I want to provide useful data across all applications using New Relic, so that I can gain insights into system performance and make data-driven decisions.
+As a Broker User, I want to sync D1 file generation with FPDS data load, so that I can ensure data consistency and accuracy.
+As a Broker User, I want to update SQL codes for clarity, so that I can improve code readability and maintainability.
+As a Broker User, I want to add PPoPCode cases to the derivation logic, so that I can enhance data quality and completeness.
+As a Broker User, I want to derive the FundingAgencyCode, so that I can accurately identify funding sources.
+As a Broker User, I want to map FederalActionObligation to the Atom Feed, so that I can provide a standardized data format.
+As a Broker User, I want to validate PPoPZIP+4, so that I can ensure data accuracy and prevent errors.
+As an Agency User, I want to access published FABS files, so that I can retrieve and utilize the data.
+As an Agency User, I want to submit data, so that I can contribute to the system and ensure data completeness.
+As an Owner, I want to create a user testing summary, so that I can document and analyze testing results.
+As an Owner, I want to design a schedule from the UI SME, so that I can plan and coordinate project timelines.
+As an Owner, I want to design an audit from the UI SME, so that I can ensure compliance and identify areas for improvement.
+As an Owner, I want to reset the environment, so that I can restore default settings and maintain system stability.
+As a Developer, I want to index domain models properly, so that I can improve data retrieval and querying efficiency.
+As a Developer, I want to update the Broker validation rule table, so that I can ensure data accuracy and enforce validation rules.
+As a Developer, I want to clarify the CFDA error code, so that I can improve error handling and troubleshooting.
+As a Developer, I want to update the FABS sample file, so that I can provide accurate and relevant data for testing and development.
+As a Developer, I want to prevent duplicate transactions from being published, so that I can ensure data integrity and prevent errors.
+As a Developer, I want to load historical FPDS data, so that I can analyze and utilize historical trends and patterns.
+As a Developer, I want to determine the best way to load historical FPDS data, so that I can optimize data loading processes and improve system performance.
+As a FABS User, I want to access frontend URLs, so that I can interact with the system and access relevant data.
+As a FABS User, I want to download the uploaded FABS file, so that I can retrieve and utilize the data.
+As a FABS User, I want to view submitted data, so that I can monitor and track data submissions.
+As a Tester, I want to test features in non-Staging environments, so that I can ensure system functionality and stability in various environments.

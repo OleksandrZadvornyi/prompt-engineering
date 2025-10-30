@@ -1,0 +1,46 @@
+As a developer, I want to create a Submission object with an ID, status, publish status, and creation date, so that I can represent a submission in the system.
+As a system administrator, I want to initialize the logging system, so that I can track events and errors in the application.
+As a user, I want to add a submission to the FABS system, so that I can process and track it.
+As a user, I want to update the publish status of a submission in the FABS system, so that I can manage the publication process.
+As a user, I want to process deletions for a specific date in the FABS system, so that I can remove outdated submissions.
+As a user, I want to add a submission to the DABS system, so that I can process and track it.
+As a user, I want to update the publish status of a submission in the DABS system, so that I can manage the publication process.
+As a New Relic user, I want to add an application to the system, so that I can monitor its performance.
+As a New Relic user, I want to provide data across all applications, so that I can analyze and optimize performance.
+As a Flexfield user, I want to create a new Flexfield with a name and value, so that I can store and manage flexible data.
+As an ErrorFile user, I want to create an error file with a filename, so that I can store and manage error messages.
+As an ErrorFile user, I want to add an error message to the error file, so that I can track errors.
+As an ErrorFile user, I want to save the error file, so that I can persist error messages.
+As a PPoPCode user, I want to derive fields based on the PPoPCode, so that I can calculate and generate data.
+As a Broker user, I want to add a submission to the Broker system, so that I can process and track it.
+As a Broker user, I want to validate a submission in the Broker system, so that I can ensure its integrity.
+As a Broker user, I want to generate a D file, so that I can create a data file.
+As a Broker user, I want to upload an error message, so that I can report errors.
+As a UI SME, I want to summarize user testing, so that I can analyze and improve the user experience.
+As a UI SME, I want to schedule user testing, so that I can plan and conduct tests.
+As a UI SME, I want to audit user testing, so that I can evaluate and improve the testing process.
+As a system administrator, I want to update the Broker application, so that I can maintain and improve its functionality.
+As a system administrator, I want to update the FABS sample file, so that I can maintain and improve the FABS system.
+As a system administrator, I want to prevent duplicate transactions, so that I can ensure data integrity.
+As a system administrator, I want to update the FABS validation rules, so that I can maintain and improve data validation.
+As a system administrator, I want to get raw agency published files from FABS via USASpending, so that I can retrieve and process data.
+As a system administrator, I want to get updated financial assistance data, so that I can retrieve and process data.
+As a system administrator, I want to get FABS submission errors for a submission, so that I can diagnose and resolve issues.
+As a system administrator, I want to get FABS frontend URLs for a submission, so that I can retrieve and process data.
+As a system administrator, I want to get the historical FPDS data loader, so that I can retrieve and process data.
+As a system administrator, I want to get the File F format, so that I can retrieve and process data.
+As a system administrator, I want to get file level errors for a submission, so that I can diagnose and resolve issues.
+As a system administrator, I want to get FREC derivations, so that I can retrieve and process data.
+As a system administrator, I want to get the FABS submission status for a submission, so that I can track and manage submissions.
+As a system administrator, I want to get rows to publish for a submission, so that I can manage the publication process.
+As a system administrator, I want to download a FABS file for a submission, so that I can retrieve and process data.
+As a system administrator, I want to access Broker application data, so that I can retrieve and process data.
+As a system administrator, I want to load historical FPDS data, so that I can retrieve and process data.
+As a system administrator, I want to get the FABS language, so that I can retrieve and process data.
+As a system administrator, I want to get DABS banner messages, so that I can retrieve and process data.
+As a system administrator, I want to get FABS read-only access, so that I can manage access and security.
+As a system administrator, I want to validate a FABS submission, so that I can ensure data integrity.
+As a system administrator, I want to get FABS status labels for a submission, so that I can track and manage submissions.
+As a system administrator, I want to get submission periods, so that I can retrieve and process data.
+As a system administrator, I want to get the landing page, so that I can retrieve and process data.
+As a system administrator, I want to submit data elements, so that I can create and manage data.

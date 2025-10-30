@@ -1,0 +1,28 @@
+{
+    "request_number": 15,
+    "timestamp": "2025-10-27 10:37:48",
+    "model": "openai/gpt-4o-mini",
+    "prompt_variant": "chain-of-thought-clusters",
+    "total_tokens": 821,
+    "avg_prob": 0.8059201498632368,
+    "perplexity": 1.2408177164570189,
+    "struct_metrics": {
+        "avg_cyclomatic_complexity": 1.5862068965517242,
+        "ast_depth": 12,
+        "avg_function_size_lines": 3.8095238095238093,
+        "import_redundancy_ratio": 0.0
+    },
+    "semantic_metrics": {
+        "syntax_valid": true,
+        "flake8_error_count": 11,
+        "mypy_error_count": 0
+    },
+    "execution_metrics": {
+        "execution_success": true,
+        "execution_time_sec": 0.604,
+        "exception_type": "",
+        "exception_message": "",
+        "runtime_output": "Submission 1 submitted with status: Pending\nValidation rules updated: {'CFDA': 'Updated rule for CFDA validation'}\nUpdating design for the Resources page.\nValidating upload for submission 1\nSubmission ID: 1, Status: Pending"
+    },
+    "total_credibility": 84.67
+}

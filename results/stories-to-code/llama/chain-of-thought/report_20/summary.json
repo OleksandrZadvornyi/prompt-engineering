@@ -1,0 +1,28 @@
+{
+    "request_number": 20,
+    "timestamp": "2025-10-26 21:52:28",
+    "model": "meta-llama/llama-3.3-70b-instruct",
+    "prompt_variant": "chain-of-thought",
+    "total_tokens": 858,
+    "avg_prob": 0.9408351374320018,
+    "perplexity": 1.062885472931515,
+    "struct_metrics": {
+        "avg_cyclomatic_complexity": 1.28125,
+        "ast_depth": 9,
+        "avg_function_size_lines": 3.347826086956522,
+        "import_redundancy_ratio": 0.0
+    },
+    "semantic_metrics": {
+        "syntax_valid": true,
+        "flake8_error_count": 11,
+        "mypy_error_count": 0
+    },
+    "execution_metrics": {
+        "execution_success": true,
+        "execution_time_sec": 0.381,
+        "exception_type": "",
+        "exception_message": "",
+        "runtime_output": "Processing deletions for 12-19-2017\nRedesigning Resources page\nImproving logging for troubleshooting issues\nProviding useful data across all applications\nUploading and validating error message\nAccessing published FABS files\nEnsuring USAspending only sends grant records\nIncluding large number of flexfields without performance impact"
+    },
+    "total_credibility": 87.53
+}

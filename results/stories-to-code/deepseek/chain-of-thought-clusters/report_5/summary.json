@@ -1,0 +1,28 @@
+{
+    "request_number": 5,
+    "timestamp": "2025-10-26 22:30:14",
+    "model": "deepseek/deepseek-chat-v3-0324",
+    "prompt_variant": "chain-of-thought-clusters",
+    "total_tokens": 1388,
+    "avg_prob": 0.8997700547476277,
+    "perplexity": 1.1113950666878831,
+    "struct_metrics": {
+        "avg_cyclomatic_complexity": 1.8181818181818181,
+        "ast_depth": 10,
+        "avg_function_size_lines": 4.7368421052631575,
+        "import_redundancy_ratio": 0.0
+    },
+    "semantic_metrics": {
+        "syntax_valid": true,
+        "flake8_error_count": 26,
+        "mypy_error_count": 0
+    },
+    "execution_metrics": {
+        "execution_success": true,
+        "execution_time_sec": 0.588,
+        "exception_type": "",
+        "exception_message": "",
+        "runtime_output": "DUNS validation result: True\nD file generation result: {'status': 'generated', 'data': {'file': 'D_FILE', 'timestamp': datetime.datetime(2025, 10, 30, 5, 55, 14, 430109)}}"
+    },
+    "total_credibility": 78.66
+}

@@ -1,0 +1,28 @@
+{
+    "request_number": 12,
+    "timestamp": "2025-10-26 15:54:03",
+    "model": "meta-llama/llama-3.3-70b-instruct",
+    "prompt_variant": "zero-shot-clusters",
+    "total_tokens": 879,
+    "avg_prob": 0.8919058001770336,
+    "perplexity": 1.1211946371483523,
+    "struct_metrics": {
+        "avg_cyclomatic_complexity": 2,
+        "ast_depth": 11,
+        "avg_function_size_lines": 6.4,
+        "import_redundancy_ratio": 0.0
+    },
+    "semantic_metrics": {
+        "syntax_valid": true,
+        "flake8_error_count": 9,
+        "mypy_error_count": 0
+    },
+    "execution_metrics": {
+        "execution_success": true,
+        "execution_time_sec": 0.408,
+        "exception_type": "",
+        "exception_message": "",
+        "runtime_output": "File test_file.txt not found\nSubmission is valid\n[]\nFile test_file.csv not found\nFile is valid\nFile not found\nFile test_file.csv not found\nFile is valid\nData updated successfully\n[{'agency': 'Test Agency', 'amount': 1000000}]"
+    },
+    "total_credibility": 86.97
+}

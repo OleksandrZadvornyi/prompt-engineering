@@ -1,0 +1,33 @@
+As a Broker User, I want to upload and validate submissions, so that I can ensure data integrity before processing.
+
+As a Broker User, I want to generate a D1 file synchronized with FPDS data, so that I can maintain accurate records.
+
+As a Developer, I want to log issues, so that I can improve the tracking and resolution of software bugs.
+
+As a Developer, I want to update validation rules based on new requirements, so that I can ensure the system stays compliant with current standards.
+
+As an Agency User, I want to submit data, so that I can provide the necessary information for processing.
+
+As an Agency User, I want to validate my submissions according to established rules, so that I can ensure compliance before final submission.
+
+As a FABS User, I want to access published FABS files, so that I can obtain the necessary documents for reference.
+
+As a FABS User, I want to download uploaded FABS files, so that I can have local copies for my records.
+
+As a UI Designer, I want to redesign the resources page, so that I can improve the user experience for visitors.
+
+As a UI Designer, I want to track issues from Tech Thursday meetings, so that I can address them in the design process.
+
+As a File Manager, I want to handle file uploads, so that I can facilitate the data submission process.
+
+As a File Manager, I want to validate file formats upon upload, so that I can prevent errors from incorrect file types.
+
+As an Audit Manager, I want to design audits based on specific scopes, so that I can effectively review compliance.
+
+As a Schedule Manager, I want to create schedules for improvements, so that I can ensure timely project management.
+
+As a Data Manager, I want to retrieve FPDS data, so that I can use it in various processing steps.
+
+As a Data Manager, I want to derive office names from office codes, so that I can provide clearer information in reports.
+
+As a user of the Submission Dashboard, I want to display submission status, so that I can easily check the progress of my submissions.

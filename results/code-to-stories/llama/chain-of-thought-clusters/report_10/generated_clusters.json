@@ -1,0 +1,7 @@
+{
+  "(3,)": "As a system administrator, I want to upload and validate files, so that I can ensure data quality and accuracy As a data validator, I want to generate and validate D Files from FABS and FPDS data, so that I can ensure compliance with regulatory requirements and data standards",
+  "(2,)": "As a data analyst, I want to derive fields for a submission using derivation logic, so that I can generate additional insights from the data As a quality assurance specialist, I want to get file-level errors for a submission, so that I can identify and address data issues As a user, I want to access raw agency published files from FABS via USAspending, so that I can review and utilize the data for my needs",
+  "(0,)": "As a researcher, I want to load historical FPDS data, so that I can analyze trends and patterns over time As a data manager, I want to load historical DABS data, so that I can integrate it with other datasets for comprehensive analysis",
+  "(1,)": "As a system maintainer, I want to update error codes and validation rules, so that I can adapt to changing data formats and regulatory requirements",
+  "(4,)": "As a business analyst, I want to update derivation logic to include new fields, so that I can expand the scope of analysis and insights generated from the data"
+}

@@ -1,0 +1,12 @@
+As a system administrator, I want to add users to the system, so that I can manage user access and permissions.
+As a system administrator, I want to add submissions to the system, so that I can track and process user submissions.
+As a system administrator, I want to process deletions for a given date, so that I can maintain data integrity and remove outdated information.
+As a system administrator, I want to derive a funding agency code, so that I can accurately track and report on funding sources.
+As a data validator, I want to validate PPoPZIP+4 codes, so that I can ensure accurate and reliable data entry.
+As a submission manager, I want to update the status of submissions, so that I can track progress and notify users of changes.
+As a submission manager, I want to run validations for submissions, so that I can ensure data quality and accuracy.
+As a data analyst, I want to load historical data, so that I can perform trend analysis and make informed decisions.
+As a submission manager, I want to derive fields for submissions, so that I can automate data processing and reduce manual errors.
+As a user, I want to submit data, so that I can contribute to the system and receive feedback on my submissions.
+As an agency representative, I want to get files, so that I can access and review relevant data.
+As an agency representative, I want to submit data, so that I can contribute to the system and collaborate with other stakeholders.

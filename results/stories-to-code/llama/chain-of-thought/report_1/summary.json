@@ -1,0 +1,28 @@
+{
+    "request_number": 1,
+    "timestamp": "2025-10-26 21:40:59",
+    "model": "meta-llama/llama-3.3-70b-instruct",
+    "prompt_variant": "chain-of-thought",
+    "total_tokens": 1040,
+    "avg_prob": 0.9523507126451238,
+    "perplexity": 1.0500333403673652,
+    "struct_metrics": {
+        "avg_cyclomatic_complexity": 3.1333333333333333,
+        "ast_depth": 20,
+        "avg_function_size_lines": 7.642857142857143,
+        "import_redundancy_ratio": 0.0
+    },
+    "semantic_metrics": {
+        "syntax_valid": true,
+        "flake8_error_count": 3,
+        "mypy_error_count": 0
+    },
+    "execution_metrics": {
+        "execution_success": true,
+        "execution_time_sec": 0.475,
+        "exception_type": "",
+        "exception_message": "",
+        "runtime_output": "Processing user stories for Data User:\n- Process 12-19-2017 deletions\nProcessing deletions...\nProcessing user stories for UI Designer:\n- Redesign Resources page\n- Report to agencies about user testing\nProcessing user stories for Developer:\n- Improve logging\nImproving logging...\nProcessing user stories for DevOps Engineer:\n- Configure New Relic\nConfiguring New Relic...\nProcessing user stories for Broker User:\n- Upload and validate error message\nProcessing user stories for Agency User:\n- Submit data elements\nProcessing user stories for Owner:\n- Reset environment\nProcessing user stories for FABS User:\n- Submit FABS data\nProcessing user stories for Tester:\n- Test FABS\nProcessing user stories for Website User:\n- Access raw agency published files"
+    },
+    "total_credibility": 90.21
+}

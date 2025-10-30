@@ -1,0 +1,28 @@
+{
+    "request_number": 4,
+    "timestamp": "2025-10-26 21:42:17",
+    "model": "meta-llama/llama-3.3-70b-instruct",
+    "prompt_variant": "chain-of-thought",
+    "total_tokens": 1136,
+    "avg_prob": 0.9119988528297273,
+    "perplexity": 1.0964926073067143,
+    "struct_metrics": {
+        "avg_cyclomatic_complexity": 1.4864864864864864,
+        "ast_depth": 11,
+        "avg_function_size_lines": 4.1923076923076925,
+        "import_redundancy_ratio": 0.0
+    },
+    "semantic_metrics": {
+        "syntax_valid": true,
+        "flake8_error_count": 13,
+        "mypy_error_count": 0
+    },
+    "execution_metrics": {
+        "execution_success": true,
+        "execution_time_sec": 0.395,
+        "exception_type": "",
+        "exception_message": "",
+        "runtime_output": "Running Broker app\nLoaded FPDS data: [{'id': 1, 'data': 'FPDS data 1'}, {'id': 2, 'data': 'FPDS data 2'}]\nLoaded FABS data: [{'id': 1, 'data': 'FABS data 1'}, {'id': 2, 'data': 'FABS data 2'}]\nLoaded DABS data: [{'id': 1, 'data': 'DABS data 1'}, {'id': 2, 'data': 'DABS data 2'}]\nUsers: ['John Doe', 'Jane Doe']\nSubmissions: [1, 2]\nFABS validation result: False\nProcessing submission 1\nMonitoring application Application 1\nMonitoring application Application 2"
+    },
+    "total_credibility": 85.81
+}

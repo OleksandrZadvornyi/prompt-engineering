@@ -1,0 +1,33 @@
+As a user, I want to create a User object with a specific user type, so that I can differentiate between different roles in the application.
+
+As a UI Designer, I want to initialize my user type automatically when creating a UIUser object, so that I am recognized as a UI Designer in the system.
+
+As a Developer, I want to initialize my user type automatically when creating a Developer object, so that I am recognized as a Developer in the system.
+
+As an Agency User, I want to initialize my user type automatically when creating an AgencyUser object, so that I am recognized as an Agency User in the system.
+
+As a Broker User, I want to initialize my user type automatically when creating a BrokerUser object, so that I am recognized as a Broker User in the system.
+
+As a FABS User, I want to initialize my user type automatically when creating a FABSUser object, so that I am recognized as a FABS User in the system.
+
+As a user submitting data, I want to validate my submission data, so that I can ensure it meets the requirements before submission.
+
+As a user, I want to update the status of my submission, so that I can reflect its current state accurately.
+
+As a user, I want to download a file related to my submission, so that I can access the data or documentation associated with it.
+
+As a user, I want to load historical FPDS data, so that I can reference past submissions and data for analysis.
+
+As a user managing submissions, I want to add a submission to my dashboard, so that I can keep track of all my submitted items.
+
+As a user, I want to retrieve the status labels of all submissions in my dashboard, so that I can quickly assess their current state.
+
+As a developer, I want to log error messages, so that I can diagnose and resolve issues that arise during application operation.
+
+As a user, I want to upload a file, so that I can submit necessary data or documents to the system.
+
+As a user, I want to validate the file extension before uploading, so that I can ensure only supported file types are processed.
+
+As a FABS Controller, I want to submit a validated submission to the dashboard, so that it can be tracked and processed accordingly.
+
+As a user, I want to download a FABS file, so that I can obtain relevant data for my needs.

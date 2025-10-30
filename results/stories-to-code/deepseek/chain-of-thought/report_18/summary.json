@@ -1,0 +1,28 @@
+{
+    "request_number": 18,
+    "timestamp": "2025-10-26 22:16:14",
+    "model": "deepseek/deepseek-chat-v3-0324",
+    "prompt_variant": "chain-of-thought",
+    "total_tokens": 1670,
+    "avg_prob": 0.8988775829390002,
+    "perplexity": 1.1124985414925652,
+    "struct_metrics": {
+        "avg_cyclomatic_complexity": 1.625,
+        "ast_depth": 13,
+        "avg_function_size_lines": 4.913043478260869,
+        "import_redundancy_ratio": 0.0
+    },
+    "semantic_metrics": {
+        "syntax_valid": true,
+        "flake8_error_count": 16,
+        "mypy_error_count": 3
+    },
+    "execution_metrics": {
+        "execution_success": true,
+        "execution_time_sec": 0.544,
+        "exception_type": "",
+        "exception_message": "",
+        "runtime_output": "2025-10-30 05:54:20,639 - BrokerApp - INFO - Updated Resources page to design: Broker Design 2.0\n2025-10-30 05:54:20,639 - BrokerApp - INFO - Scheduled user testing for 2023-10-15 00:00:00 with testers: agency1, agency2\n2025-10-30 05:54:20,639 - BrokerApp - INFO - Derived fields for submission FABS123\n2025-10-30 05:54:20,639 - BrokerApp - INFO - Validation completed for submission FABS123\n2025-10-30 05:54:20,640 - BrokerApp - INFO - Submission FABS123 status changed to PublishStatus.PUBLISHED by system\n2025-10-30 05:54:20,640 - BrokerApp - INFO - Published submission FABS123\n2025-10-30 05:54:20,640 - BrokerApp - INFO - Loaded FPDS historical data since 2007\n2025-10-30 05:54:20,640 - BrokerApp - INFO - Generated D file for submission FABS123\n2025-10-30 05:54:20,640 - BrokerApp - INFO - Processing deletions for 12-19-2017"
+    },
+    "total_credibility": 80.79
+}

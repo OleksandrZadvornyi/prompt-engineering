@@ -1,0 +1,8 @@
+{
+  "(2,)": "As a developer, I want to log issues, so that I can track and manage problems in the submission process As a developer, I want to update the status of submissions, so that I can reflect their current state accurately As a developer, I want to prevent double publishing of submissions, so that I can avoid duplicate entries in the system As a FABS user, I want to submit data, so that it can be processed by the system",
+  "(5,)": "As a UI designer, I want to redesign the resources page, so that it aligns with the latest design standards",
+  "(0,)": "As a UI designer, I want to report user testing outcomes, so that relevant agencies are informed about the results As a UI designer, I want to schedule user testing, so that user feedback can be gathered efficiently",
+  "(1,)": "As a FABS user, I want to download uploaded files, so that I can access necessary documents As a file upload system, I want to upload files, so that users can submit necessary documents As a file upload system, I want to validate uploaded files, so that I can ensure they meet required standards",
+  "(4,)": "As a historical data loader, I want to load historical data, so that previous records can be accessed and analyzed",
+  "(3,)": "As a D file generator, I want to generate D files based on submission data, so that necessary documentation can be produced"
+}

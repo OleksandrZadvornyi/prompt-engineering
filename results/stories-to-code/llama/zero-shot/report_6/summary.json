@@ -1,0 +1,28 @@
+{
+    "request_number": 6,
+    "timestamp": "2025-10-26 15:07:23",
+    "model": "meta-llama/llama-3.3-70b-instruct",
+    "prompt_variant": "zero-shot",
+    "total_tokens": 1649,
+    "avg_prob": 0.8849492828266015,
+    "perplexity": 1.1300082608191027,
+    "struct_metrics": {
+        "avg_cyclomatic_complexity": 1.3508771929824561,
+        "ast_depth": 10,
+        "avg_function_size_lines": 3.9782608695652173,
+        "import_redundancy_ratio": 0.25
+    },
+    "semantic_metrics": {
+        "syntax_valid": true,
+        "flake8_error_count": 18,
+        "mypy_error_count": 0
+    },
+    "execution_metrics": {
+        "execution_success": true,
+        "execution_time_sec": 0.443,
+        "exception_type": "",
+        "exception_message": "",
+        "runtime_output": "Processing deletion: deletion1\nProcessing deletion: deletion2\nError message uploaded and validated successfully\nD files generated and validated successfully\nResources page redesigned successfully\nReporting user testing result: testing_result1\nReporting user testing result: testing_result2\nLogging: Log message\nFABS submission submission_id updated with publish status publish_status\nProviding New Relic data for application_name\nEnvironment reset\nUser testing summary created: testing_result1\nUser testing summary created: testing_result2\nLarge number of flexfields included\nTest features accessed\nSample file linked\nSubmitted FABS file accessed\nPublished FABS files accessed\nFields derived\nFunding agency code derived\nPPoPZIP derived\nRecords submitted for individual recipients"
+    },
+    "total_credibility": 82.31
+}

@@ -1,0 +1,28 @@
+{
+    "request_number": 6,
+    "timestamp": "2025-10-27 10:34:06",
+    "model": "openai/gpt-4o-mini",
+    "prompt_variant": "chain-of-thought-clusters",
+    "total_tokens": 751,
+    "avg_prob": 0.7704868496296934,
+    "perplexity": 1.2978806847652415,
+    "struct_metrics": {
+        "avg_cyclomatic_complexity": 1.2758620689655173,
+        "ast_depth": 10,
+        "avg_function_size_lines": 3.142857142857143,
+        "import_redundancy_ratio": 0.0
+    },
+    "semantic_metrics": {
+        "syntax_valid": true,
+        "flake8_error_count": 20,
+        "mypy_error_count": 0
+    },
+    "execution_metrics": {
+        "execution_success": true,
+        "execution_time_sec": 0.386,
+        "exception_type": "",
+        "exception_message": "",
+        "runtime_output": "Updating validation rules with: New rules from DB-2213\nAgency User submitting data: Agency data example\nGenerating D1 file synced with FPDS data load\nRedesigning page: Resources\nData User accessing additional data fields"
+    },
+    "total_credibility": 79.98
+}

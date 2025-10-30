@@ -1,0 +1,28 @@
+{
+    "request_number": 17,
+    "timestamp": "2025-10-26 22:14:58",
+    "model": "deepseek/deepseek-chat-v3-0324",
+    "prompt_variant": "chain-of-thought",
+    "total_tokens": 1508,
+    "avg_prob": 0.9088215501570822,
+    "perplexity": 1.1003260209082393,
+    "struct_metrics": {
+        "avg_cyclomatic_complexity": 1.5833333333333333,
+        "ast_depth": 11,
+        "avg_function_size_lines": 5.8,
+        "import_redundancy_ratio": 0.0
+    },
+    "semantic_metrics": {
+        "syntax_valid": true,
+        "flake8_error_count": 11,
+        "mypy_error_count": 1
+    },
+    "execution_metrics": {
+        "execution_success": true,
+        "execution_time_sec": 0.494,
+        "exception_type": "",
+        "exception_message": "",
+        "runtime_output": "2025-10-30 05:54:18,738 - __main__ - INFO - Submission sub1 status updated to published\n2025-10-30 05:54:18,738 - __main__ - INFO - FABS submission sub1 publishStatus updated to published\n2025-10-30 05:54:18,738 - __main__ - INFO - Redesigning Resources page\n2025-10-30 05:54:18,738 - __main__ - INFO - Reported user testing results to DOT\nValidation errors: ['File path is required']"
+    },
+    "total_credibility": 85.48
+}

@@ -1,0 +1,8 @@
+{
+  "(2,)": "As a user, I want to submit data with a specific submission ID and status, so that I can keep track of my submissions As a user, I want to view my submission history, so that I can see the details of my past submissions As a developer, I want to log issues encountered during development, so that I can keep a record of problems for future reference",
+  "(5,)": "As a FABS user, I want to validate a pending submission by its ID, so that I can ensure the submission is processed correctly",
+  "(0,)": "As a FABS user, I want to download a file associated with my submission by its ID, so that I can access the submitted data",
+  "(3,)": "As a developer, I want to implement improvements to the logging system, so that I can enhance tracking and debugging capabilities As a broker, I want to retrieve error messages related to submissions, so that I can address any issues that arise during the validation process",
+  "(1,)": "As a user testing manager, I want to schedule testing sessions for multiple users on a specific date, so that we can assess user experience and gather feedback As a user testing manager, I want to generate a summary report of user testing, so that I can evaluate the results and insights gained from the sessions",
+  "(4,)": "As a broker, I want to upload and validate submissions, so that I can ensure all submissions are processed and compliant"
+}

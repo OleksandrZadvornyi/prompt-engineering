@@ -1,0 +1,28 @@
+{
+    "request_number": 17,
+    "timestamp": "2025-10-27 10:38:35",
+    "model": "openai/gpt-4o-mini",
+    "prompt_variant": "chain-of-thought-clusters",
+    "total_tokens": 1020,
+    "avg_prob": 0.8765283483114202,
+    "perplexity": 1.1408644134858166,
+    "struct_metrics": {
+        "avg_cyclomatic_complexity": 2.375,
+        "ast_depth": 10,
+        "avg_function_size_lines": 5.222222222222222,
+        "import_redundancy_ratio": 0.0
+    },
+    "semantic_metrics": {
+        "syntax_valid": true,
+        "flake8_error_count": 2,
+        "mypy_error_count": 0
+    },
+    "execution_metrics": {
+        "execution_success": true,
+        "execution_time_sec": 0.442,
+        "exception_type": "",
+        "exception_message": "",
+        "runtime_output": "All User Stories:\nUserStory(id=1, role=Data user, description=As a Data user, I want to have the 12-19-2017 deletions processed.)\nUserStory(id=2, role=UI designer, description=As a UI designer, I want to redesign the Resources page.)\nUserStory(id=3, role=Developer, description=As a Developer, I want to log better.)\nUserStory(id=4, role=Agency user, description=As an agency user, I want to access published FABS files.)\nUserStory(id=5, role=FABS user, description=As a FABS user, I want to have read-only access to DABS.)\n\nUI Designer Stories:\nUserStory(id=2, role=UI designer, description=As a UI designer, I want to redesign the Resources page.)\n\nUI Design Updates:\nUserStory(id=2, role=UI designer, description=As a UI designer, I want to redesign the Resources page.)\nUserStory(id=6, role=UI designer, description=As a UI designer, I want to track the issues that come up in Tech Thursday.)\n\nDeveloper Log Improvements:\nUserStory(id=3, role=Developer, description=As a Developer, I want to log better.)\nUserStory(id=1, role=Developer, description=As a Developer, I want D Files generation requests to be managed.)\n\nAgency User View Submissions:\n\nFABS User View Files:"
+    },
+    "total_credibility": 90.02
+}

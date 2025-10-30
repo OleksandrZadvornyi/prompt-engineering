@@ -1,0 +1,28 @@
+{
+    "request_number": 5,
+    "timestamp": "2025-10-26 21:34:32",
+    "model": "openai/gpt-4o-mini",
+    "prompt_variant": "chain-of-thought",
+    "total_tokens": 688,
+    "avg_prob": 0.8175516297734896,
+    "perplexity": 1.2231643404307804,
+    "struct_metrics": {
+        "avg_cyclomatic_complexity": 1.2666666666666666,
+        "ast_depth": 9,
+        "avg_function_size_lines": 3.090909090909091,
+        "import_redundancy_ratio": 0.0
+    },
+    "semantic_metrics": {
+        "syntax_valid": true,
+        "flake8_error_count": 14,
+        "mypy_error_count": 0
+    },
+    "execution_metrics": {
+        "execution_success": true,
+        "execution_time_sec": 0.411,
+        "exception_type": "",
+        "exception_message": "",
+        "runtime_output": "Processing deletions for 12-19-2017.\nRedesigning Resources page to match Broker design styles.\nIncluding 100 flexfields without performance impact.\nUploading and validating sample_file.csv.\nPreventing duplicate publications for submission_001\nAccessing fields: ['field1', 'field2']\nSubmitting FABS file: fabs_file.csv\nSynchronizing D1 file generation with FPDS data load.\nLoading historical FPDS data.\nValidating submission errors for submission_001.\nGenerating D Files from FABS and FPDS data."
+    },
+    "total_credibility": 83.81
+}

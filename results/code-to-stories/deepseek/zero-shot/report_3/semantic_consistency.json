@@ -1,0 +1,8 @@
+{
+    "model": "deepseek/deepseek-chat-v3-0324",
+    "prompt_variant": "zero-shot",
+    "semantic_consistency_score": 0.7231498956680298,
+    "embedding_model": "all-MiniLM-L6-v2",
+    "original_stories_count": 98,
+    "generated_stories_count": 14
+}

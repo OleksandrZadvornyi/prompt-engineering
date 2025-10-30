@@ -19,10 +19,10 @@
     },
     "execution_metrics": {
         "execution_success": true,
-        "execution_time_sec": 0.529,
+        "execution_time_sec": 0.462,
         "exception_type": "",
         "exception_message": "",
         "runtime_output": "INFO:root:Processing deletions from 12-19-2017\nINFO:root:Updating Resources page design\nINFO:root:Reporting user testing results to 2 agencies\nINFO:root:Configuring New Relic monitoring\nINFO:root:Syncing D1 file generation with FPDS data load\nINFO:root:Deriving FundingAgencyCode for submission sub123\nINFO:root:Scheduling user testing for FABS Landing Page\nINFO:root:Updating FABS frontend URLs\nINFO:root:Generating sample file for FABS\nINFO:root:Updating submission sub456 to status published\nINFO:root:Loading FPDS data from 2007 to present\nINFO:root:Updating 2 validation rules\nINFO:root:Running FABS derivation tests\nINFO:root:Updating submission status labels\n{'status': 'success', 'errors': []}\n{'fpds_loaded': True, 'fabs_loaded': False, 'fpds_start_year': 2007}\nOffice names derived from office codes\nSample file link updated\nZIP validation rule updated"
     },
-    "total_credibility": 70.98
+    "total_credibility": 76.61
 }

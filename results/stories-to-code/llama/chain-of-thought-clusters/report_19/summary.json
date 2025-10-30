@@ -1,0 +1,28 @@
+{
+    "request_number": 19,
+    "timestamp": "2025-10-27 10:30:43",
+    "model": "meta-llama/llama-3.3-70b-instruct",
+    "prompt_variant": "chain-of-thought-clusters",
+    "total_tokens": 3683,
+    "avg_prob": 0.970033576607148,
+    "perplexity": 1.0308921506590158,
+    "struct_metrics": {
+        "avg_cyclomatic_complexity": 1.0673076923076923,
+        "ast_depth": 9,
+        "avg_function_size_lines": 3.7731958762886597,
+        "import_redundancy_ratio": 0.0
+    },
+    "semantic_metrics": {
+        "syntax_valid": true,
+        "flake8_error_count": 1,
+        "mypy_error_count": 0
+    },
+    "execution_metrics": {
+        "execution_success": true,
+        "execution_time_sec": 0.415,
+        "exception_type": "",
+        "exception_message": "",
+        "runtime_output": "Processing deletions for 12-19-2017\nRedesigning Resources page\nReporting to Agencies about user testing\nProviding New Relic data\nSyncing D1 file generation with FPDS data load\nUpdating SQL codes for clarity\nAdding 00***** and 00FORGN PPoPCode cases\nDeriving FundingAgencyCode\nMapping FederalActionObligation\nMaking PPoPZIP+4 work the same as Legal Entity ZIP validations\nRedesigning Resources page\nReporting to Agencies about user testing\nProviding New Relic data\nSyncing D1 file generation with FPDS data load\nUpdating SQL codes for clarity\nAdding 00***** and 00FORGN PPoPCode cases\nDeriving FundingAgencyCode\nMapping FederalActionObligation\nMaking PPoPZIP+4 work the same as Legal Entity ZIP validations\nAccessing published FABS files\nSending grant records\nCreating content mockups\nTracking issues\nCreating user testing summary\nBeginning user testing\nScheduling user testing\nDesigning schedule\nDesigning audit\nResetting environment\nIndexing domain models\nShowing updated date and time\nJustifying padding\nUpdating error codes\nAccessing Broker application data\nViewing DABS pages\nNavigating to FABS or DABS pages\nUpdating FABS submission\nAdding GTAS window data\nUpdating FABS sample file\nDeactivating publish button\nDeriving fields\nLoading historical FABS data\nIncluding FREC derivations\nUpdating frontend URLs\nLoading historical FPDS data\nProviding FABS groups\nIncluding necessary columns\nAccessing additional fields\nAdding helpful info\nDownloading uploaded file\nDetermining best way to load FPDS data\nUsing appropriate language\nHiding DABS banner messages\nShowing submission periods\nUploading and validating error message\nUpdating Broker validation rule table\nMaking flexfields appear in warning and error files\nClarifying CFDA error code\nUpdating Broker resources\nAccepting DUNS validations\nReceiving helpful file-level error\nPreventing duplicate transactions\nManaging D Files generation requests\nAccessing raw agency published files\nIncluding large number of flexfields\nPreventing double publishing\nSeeing updated financial assistance data\nPreventing correction of non-existent records\nHaving accurate PPoPCode data\nHiding NASA grants\nAccessing raw agency published files\nGenerating and validating D Files\nTesting features in non-Staging environments\nSeeing accurate submission errors\nSeeing who created submission\nEnsuring proper field derivation\nSubmitting records without DUNS error\nSeeing number of rows to be published\nSubmitting citywide as PPoPZIP\nRunning validations in reasonable time\nReceiving updates to FABS records\nEnsuring deleted FSRS records are not included\nAccepting zero and blank for loan records\nDeploying FABS into production\nEnsuring complete data from SAM\nAccepting zero and blank for non-loan records\nDeriving data elements properly\nAllowing longer LegalEntityAddressLine3\nUsing Schema v1.1 headers\nLoading historical Financial Assistance data\nLoading historical FPDS data\nGetting File F in correct format\nUnderstanding file-level errors\nSubmitting data elements surrounded by quotation marks"
+    },
+    "total_credibility": 93.12
+}

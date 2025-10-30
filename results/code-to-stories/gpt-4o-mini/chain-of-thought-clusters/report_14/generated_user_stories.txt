@@ -1,0 +1,11 @@
+As a Data user, I want to have the 12-19-2017 deletions processed, so that I can ensure that the data is accurate and up to date.  
+As a Developer, I want to log errors, so that I can keep track of issues that need to be addressed.  
+As a Developer, I want to update submission status, so that I can reflect the current state of the submission accurately.  
+As an Agency User, I want to check submission periods, so that I can ensure that I am submitting data within the active time frames.  
+As an Agency User, I want to derive data elements from submitted data, so that I can better analyze and understand the information provided.  
+As a UI Designer, I want to request user testing, so that I can gather feedback on the design and functionality of the user interface.  
+As a User, I want to submit data, so that I can provide necessary information for processing and analysis.  
+As a User, I want to upload files, so that I can include external data in my submissions.  
+As a User, I want to download files, so that I can access previously submitted or processed information.  
+As a Validation Handler, I want to validate DUNS status, so that I can ensure compliance with submission requirements.  
+As a Validation Handler, I want to validate FABS submissions, so that I can prevent the processing of already published submissions.

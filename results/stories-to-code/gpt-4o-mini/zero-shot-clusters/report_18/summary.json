@@ -19,10 +19,10 @@
     },
     "execution_metrics": {
         "execution_success": true,
-        "execution_time_sec": 0.728,
+        "execution_time_sec": 0.417,
         "exception_type": "",
         "exception_message": "",
         "runtime_output": ""
     },
-    "total_credibility": 84.27
+    "total_credibility": 85.07
 }

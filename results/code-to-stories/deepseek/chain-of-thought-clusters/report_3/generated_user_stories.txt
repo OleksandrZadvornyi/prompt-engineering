@@ -1,0 +1,17 @@
+Here are the user stories derived from the Python code:
+
+1. As a **Data Submitter**, I want to **upload files for publication**, so that **my data can be processed and published**.  
+2. As a **Data Submitter**, I want to **track the status of my submissions**, so that **I know if they are draft, pending, published, or failed**.  
+3. As a **System Administrator**, I want to **manage database sessions and connections**, so that **the system interacts reliably with the database**.  
+4. As a **Validator**, I want to **run validation rules on submissions**, so that **errors can be identified before publishing**.  
+5. As a **Validator**, I want to **add or modify validation rules**, so that **data quality standards are enforced dynamically**.  
+6. As a **Publisher**, I want to **publish validated submissions**, so that **they become available for use**.  
+7. As a **Publisher**, I want to **generate D files from FPDS data**, so that **they meet agency-specific requirements**.  
+8. As a **Data Analyst**, I want to **retrieve previously published files**, so that **I can analyze historical data**.  
+9. As a **UI Developer**, I want to **fetch UI resources with the latest styling**, so that **the interface remains consistent and up-to-date**.  
+10. As a **UI Developer**, I want to **report user testing results**, so that **agencies can improve usability**.  
+11. As a **Monitoring Engineer**, I want to **track application health metrics**, so that **system reliability is maintained**.  
+12. As an **Agency User**, I want to **ensure DUNS validation rules are enforced**, so that **only valid and registered entities are processed**.  
+13. As an **Agency User**, I want to **validate PPoP codes according to agency rules**, so that **data adheres to reporting standards**.  
+14. As a **System User**, I want to **check for FPDS data freshness before processing**, so that **only up-to-date data is used for file generation**.  
+15. As a **Developer**, I want to **log important events**, so that **issues can be diagnosed and resolved quickly**.

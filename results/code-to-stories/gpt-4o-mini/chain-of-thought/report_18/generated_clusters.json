@@ -1,0 +1,9 @@
+{
+  "(2,)": "As a user, I want to upload a submission with a valid ID, so that my submission can be processed successfully",
+  "(4,)": "As a user, I want to receive feedback if my submission fails validation, so that I can correct any issues As a user, I want to include flexfields in my submissions without impacting performance, so that I can enhance data quality As a user, I want to make sure my submission ID follows the correct format, so that I avoid validation errors",
+  "(1,)": "As a user, I want to see a log of my submission activities, so that I can track actions taken on my submissions As a user, I want to redesign the resources page with a new style, so that it aligns with updated branding or functionality As a user, I want to see a record of errors associated with my submission, so that I can troubleshoot any issues effectively",
+  "(5,)": "As a developer, I want to log my activities, so that there is a record of changes made to the system",
+  "(0,)": "As a user, I want to process deletions based on a specific date, so that I can manage data effectively",
+  "(6,)": "As a user testing coordinator, I want to report testing results to agencies, so that stakeholders are informed about user feedback",
+  "(3,)": "As a developer, I want to update validation rules for submissions, so that the system reflects the latest requirements"
+}

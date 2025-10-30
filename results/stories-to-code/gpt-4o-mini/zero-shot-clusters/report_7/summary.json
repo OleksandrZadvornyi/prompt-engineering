@@ -19,10 +19,10 @@
     },
     "execution_metrics": {
         "execution_success": true,
-        "execution_time_sec": 0.681,
+        "execution_time_sec": 0.415,
         "exception_type": "",
         "exception_message": "",
-        "runtime_output": "Processing deletions from 12-19-2017\nRedesigning Resources page to match new Broker design styles\nReporting user testing results to Agencies\nScheduling user testing for 2025-10-25 18:21:27.884158\nConfiguring New Relic for useful data collection\nSyncing D1 file generation with FPDS data load\nUpdating SQL codes for clarity\nAdding PPoPCode cases 00***** and 00FORGN to derivation logic\nDeriving FundingAgencyCode for data quality\nMapping FederalActionObligation to Atom Feed\nValidating PPoPZIP+4 as per Legal Entity ZIP rules\nShowing correct status labels on Submission Dashboard\nDeactivating publish button upon submission click\nLoading historical data for FABS and FPDS\nCreating a user testing summary from UI SME input\nResetting environment to only allow Staging MAX permissions"
+        "runtime_output": "Processing deletions from 12-19-2017\nRedesigning Resources page to match new Broker design styles\nReporting user testing results to Agencies\nScheduling user testing for 2025-10-30 06:00:02.501837\nConfiguring New Relic for useful data collection\nSyncing D1 file generation with FPDS data load\nUpdating SQL codes for clarity\nAdding PPoPCode cases 00***** and 00FORGN to derivation logic\nDeriving FundingAgencyCode for data quality\nMapping FederalActionObligation to Atom Feed\nValidating PPoPZIP+4 as per Legal Entity ZIP rules\nShowing correct status labels on Submission Dashboard\nDeactivating publish button upon submission click\nLoading historical data for FABS and FPDS\nCreating a user testing summary from UI SME input\nResetting environment to only allow Staging MAX permissions"
     },
-    "total_credibility": 78.95
+    "total_credibility": 82.58
 }

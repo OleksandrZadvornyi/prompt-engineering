@@ -1,0 +1,9 @@
+{
+  "(0,)": "As a user, I want to create a submission with a specific status, so that I can track its progress through different stages As a user, I want to check if a GTAS window is currently active, so that I can determine if certain time-sensitive operations are allowed",
+  "(2,)": "As a user, I want to update the publication status of a submission, so that I can reflect its current state in the system",
+  "(5,)": "As a system administrator, I want to log status changes for submissions, so that I can maintain an audit trail of modifications",
+  "(6,)": "As a data validator, I want to validate a DUNS number based on action type, so that I can ensure compliance with business rules As a data validator, I want to validate ZIP codes with optional short-form acceptance, so that I can enforce address formatting standards As a data analyst, I want to load historical FPDS data, so that I can perform analysis on past records",
+  "(1,)": "As a data processor, I want to derive funding agency codes from records, so that I can standardize agency references",
+  "(3,)": "As a UI developer, I want to update header information boxes with timestamps, so that users see when data was last refreshed",
+  "(4,)": "As a UI developer, I want to retrieve landing page navigation options, so that I can present available system modules to users"
+}

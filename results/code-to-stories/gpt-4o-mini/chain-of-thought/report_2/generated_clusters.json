@@ -1,0 +1,7 @@
+{
+  "(4,)": "As a user with a valid user type, I want to upload a CSV file, so that I can submit data to the FABS system",
+  "(2,)": "As a user, I want to receive feedback if my user type does not allow me to upload files, so that I understand my permissions",
+  "(0,)": "As a user, I want to receive an error message if I upload a file that is not in CSV format, so that I can correct my submission As a user, I want to ensure that my submission data includes a required DUNS field, so that my submission is valid As a user, I want to verify that my submission data contains a valid ActionType, so that my submission is accepted",
+  "(1,)": "As a user, I want to know the status of my submissions, so that I can track their progress As a user, I want to prevent duplicate submissions from being published, so that I maintain the integrity of the data As a developer, I want to log issues related to the system, so that I can keep track of problems and address them As a developer, I want to update validation rules, so that I can ensure the system is operating under the most current requirements",
+  "(3,)": "As a UI designer, I want to create UI requests for changes, so that I can improve the user interface based on feedback"
+}

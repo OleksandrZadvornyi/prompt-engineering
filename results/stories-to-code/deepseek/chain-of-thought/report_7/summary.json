@@ -1,0 +1,28 @@
+{
+    "request_number": 7,
+    "timestamp": "2025-10-26 22:03:10",
+    "model": "deepseek/deepseek-chat-v3-0324",
+    "prompt_variant": "chain-of-thought",
+    "total_tokens": 2126,
+    "avg_prob": 0.9396005724895631,
+    "perplexity": 1.0642820250209115,
+    "struct_metrics": {
+        "avg_cyclomatic_complexity": 1.6875,
+        "ast_depth": 13,
+        "avg_function_size_lines": 6.25,
+        "import_redundancy_ratio": 0.0
+    },
+    "semantic_metrics": {
+        "syntax_valid": true,
+        "flake8_error_count": 20,
+        "mypy_error_count": 3
+    },
+    "execution_metrics": {
+        "execution_success": true,
+        "execution_time_sec": 0.52,
+        "exception_type": "",
+        "exception_message": "",
+        "runtime_output": "2025-10-30 05:54:35,568 - INFO - User Admin User added with role UserRole.ADMIN\n2025-10-30 05:54:35,569 - INFO - User Agency User added with role UserRole.AGENCY_USER\n2025-10-30 05:54:35,569 - INFO - New fabs submission created: fabs_20251030055435\n2025-10-30 05:54:35,569 - INFO - Submission fabs_20251030055435 status updated to PublishStatus.PUBLISHED\n2025-10-30 05:54:35,569 - INFO - Derived FABS fields for submission fabs_20251030055435\n2025-10-30 05:54:35,570 - INFO - Submission fabs_20251030055435 published successfully\n2025-10-30 05:54:35,570 - INFO - User testing 'FABS Landing Page' scheduled for 2025-11-06 05:54:35.570149 with 2 participants\n2025-10-30 05:54:35,570 - INFO - New issue added for Resources Page: Button alignment off\n2025-10-30 05:54:35,570 - INFO - Loaded 2 FABS records with derived fields"
+    },
+    "total_credibility": 79.41
+}

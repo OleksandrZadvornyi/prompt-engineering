@@ -19,10 +19,10 @@
     },
     "execution_metrics": {
         "execution_success": true,
-        "execution_time_sec": 0.861,
+        "execution_time_sec": 0.406,
         "exception_type": "",
         "exception_message": "",
         "runtime_output": "INFO:root:Entry uploaded successfully.\nINFO:root:Processed submission with status: Error in Submission"
     },
-    "total_credibility": 81.32
+    "total_credibility": 83.4
 }

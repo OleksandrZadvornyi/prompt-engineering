@@ -1,0 +1,6 @@
+{
+  "(2,)": "As a FABS user, I want to submit a submission, so that I can track and manage my submissions As a FABS user, I want to download a file for my submission, so that I can access the necessary documents associated with it As a Broker, I want to generate a D1 file synced with FPDS data, so that I can ensure my data reporting is accurate",
+  "(3,)": "As a UI user, I want to report issues to agencies, so that I can ensure they are aware of any problems that need addressing As a Developer, I want to update validation rules, so that I can ensure submissions meet the necessary requirements As a system, I want to validate submissions, so that I can ensure only correct submissions are processed",
+  "(0,)": "As a UI user, I want to move on to the next round of edits, so that I can continue the approval process efficiently As a Developer, I want to log issues, so that I can keep track of problems that arise during the submission process",
+  "(1,)": "As a Broker, I want to process deletions for a specific date, so that I can maintain data integrity As a Broker, I want to prevent double submissions, so that I can maintain a clean and organized submission record"
+}

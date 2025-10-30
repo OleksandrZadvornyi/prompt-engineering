@@ -1,0 +1,20 @@
+Here are the user stories derived from the Python code:
+
+1. As a data submitter, I want to create a new submission, so that I can upload my files for processing.  
+2. As a data submitter, I want to view my submission details, so that I can verify its information.  
+3. As a data submitter, I want to publish my submission, so that it can be processed and shared.  
+4. As a system administrator, I want to prevent concurrent publish operations, so that data integrity is maintained.  
+5. As a compliance officer, I want to update validation rules, so that submission requirements stay current.  
+6. As a FABS user, I want to update the publish status of my submission, so that I can manage its visibility.  
+7. As a DABS user, I want to generate a D file, so that I can access processed data.  
+8. As a user, I want to view the resources page, so that I can access documentation and guides.  
+9. As a FABS user, I want to view the FABS landing page, so that I can navigate FABS-specific features.  
+10. As a user, I want to view the help page, so that I can get assistance when needed.  
+11. As an administrator, I want to view the submission dashboard, so that I can monitor all submissions.  
+12. As a data processor, I want to process historical deletions, so that outdated data is cleaned up.  
+13. As a data analyst, I want to load historical FABS data, so that I can analyze trends.  
+14. As a system architect, I want to derive funding agency codes, so that data organization remains consistent.  
+15. As a database administrator, I want to update the database schema, so that models and relationships stay current.  
+16. As a developer, I want to cache frequently accessed data, so that application performance improves.  
+17. As a developer, I want to log system events, so that I can debug and monitor the application.  
+18. As an operations team member, I want to integrate New Relic monitoring, so that I can track application performance.

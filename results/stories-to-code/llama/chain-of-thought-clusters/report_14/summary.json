@@ -1,0 +1,28 @@
+{
+    "request_number": 14,
+    "timestamp": "2025-10-26 23:06:24",
+    "model": "meta-llama/llama-3.3-70b-instruct",
+    "prompt_variant": "chain-of-thought-clusters",
+    "total_tokens": 2214,
+    "avg_prob": 0.8850903855885615,
+    "perplexity": 1.129828112792149,
+    "struct_metrics": {
+        "avg_cyclomatic_complexity": 1.393939393939394,
+        "ast_depth": 13,
+        "avg_function_size_lines": 4.1525423728813555,
+        "import_redundancy_ratio": 0.0
+    },
+    "semantic_metrics": {
+        "syntax_valid": true,
+        "flake8_error_count": 16,
+        "mypy_error_count": 0
+    },
+    "execution_metrics": {
+        "execution_success": false,
+        "execution_time_sec": 0.431,
+        "exception_type": "NameError",
+        "exception_message": "name 'FABSGroup' is not defined. Did you mean: 'fabs_group'?",
+        "runtime_output": "['Invalid value for loan record', 'Invalid value for non-loan record']\nData uploaded and validated successfully\n{'id': 1, 'status': 'updated'}\n{'landing_page': 'round_2', 'homepage': 'round_1', 'help_page': 'round_1'}\n['Test log message']\nAccessed raw agency published files\nUpdated FPDS data\nHistorical FPDS data loader\nFABS sample file\nFABS submissions\nFABS groups\nFABS frontend URLs\nHistorical data\nAdditional fields from FPDS data pull\nValidation results\nDomain models\nBroker application data\nDABS pages\nFABS pages\nSubmission errors\nFABS validation rules\nDerived data elements\nFile F\nFile level errors\nOffice names from office codes\nSample file\nStatus labels on submission dashboard\nLeft off last 4 digits of ZIP\nLinked sample file\nManaged and cached D files generation requests\nPrevented duplicate transactions\nPrevented users from double publishing FABS submissions\nTraceback (most recent call last):\n  File \"/app/main.py\", line 358, in <module>\nProvided FABS groups\nSubmitted records for individual recipients\nSubmitted records with quotation marks\nTracked issues in Tech Thursday\nUploaded and validated error message\nValidated FABS file\nValidated FABS submissions\nValidated submission data\nViewed DABS pages\n    main()\n  File \"/app/main.py\", line 318, in main\n    fabs_group = FABSGroup(\"Test FABS Group\")\n                 ^^^^^^^^^\nNameError: name 'FABSGroup' is not defined. Did you mean: 'fabs_group'?"
+    },
+    "total_credibility": 54.28
+}

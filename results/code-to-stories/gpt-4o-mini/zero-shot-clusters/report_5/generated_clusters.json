@@ -1,0 +1,6 @@
+{
+  "(2,)": "As a user, I want to create a submission, so that I can store my data for processing As a user, I want to submit my data with a unique submission ID, so that I can track my submission easily As a user, I want to publish my submissions, so that they can be processed and made available to others",
+  "(0,)": "As a user, I want to have my submission status automatically set to 'pending' when I create it, so that I know it's in the process of being reviewed",
+  "(3,)": "As a user, I want to see the status of my submission, so that I can verify its current state in the system",
+  "(1,)": "As a user, I want to run validations on my submission data, so that I can ensure it meets the necessary requirements before publication As a user, I want to upload files to the application, so that I can include additional data in my submission As a user, I want to receive feedback on validation errors when my submission data is incorrect, so that I can make the necessary corrections"
+}

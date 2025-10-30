@@ -1,0 +1,38 @@
+As an Agency User, I want to submit data, so that I can report on agency activities.
+As a FABS User, I want to submit FABS data, so that I can report on federal awards.
+As a DABS User, I want to submit DABS data, so that I can report on federal assistance.
+As a Developer, I want to update the database, so that I can maintain the system's integrity.
+As a Developer, I want to add new features, so that I can improve the system's functionality.
+As a UI Designer, I want to design the user interface, so that users can easily interact with the system.
+As a UI Designer, I want to test the user interface, so that I can ensure it meets user needs.
+As a User Tester, I want to schedule user testing, so that I can plan for user feedback.
+As a User Tester, I want to conduct user testing, so that I can gather user feedback.
+As a Data Validator, I want to validate FABS data, so that I can ensure data accuracy.
+As a Data Validator, I want to validate DABS data, so that I can ensure data accuracy.
+As a Data User, I want to access data, so that I can use it for reporting and analysis.
+As a New Relic User, I want to provide data to New Relic, so that I can monitor system performance.
+As a GTAS Window Manager, I want to lock down the site during GTAS submission periods, so that I can prevent unauthorized access.
+As a D Files Generation Manager, I want to manage D files generation requests, so that I can ensure timely processing.
+As a PPoP Code Deriver, I want to derive PPoP codes, so that I can enable data mapping.
+As a FREC Deriver, I want to derive FREC codes, so that I can enable data mapping.
+As a Funding Agency Code Deriver, I want to derive funding agency codes, so that I can enable data mapping.
+As a Federal Action Obligation Mapper, I want to map federal action obligations, so that I can enable data analysis.
+As a PPoP ZIP Validator, I want to validate PPoP ZIP files, so that I can ensure data integrity.
+As a Historical FABS Loader, I want to load historical FABS data, so that I can enable data analysis.
+As a Historical FPDS Data Loader, I want to load historical FPDS data, so that I can enable data analysis.
+As a FABS Groups Creator, I want to create FABS groups, so that I can enable data organization.
+As a FABS Submitter, I want to submit FABS data, so that I can report on federal awards.
+As a D Files Generator, I want to generate D files, so that I can enable data processing.
+As a Published Files Accessor, I want to access published files, so that I can use them for reporting.
+As a USASpending User, I want to access raw agency published files, so that I can analyze spending data.
+As a FABS Validation Rule Updater, I want to update FABS validation rules, so that I can ensure data accuracy.
+As a Submission Dashboard User, I want to view submission status, so that I can track progress.
+As a DABS Validation Rule Updater, I want to update DABS validation rules, so that I can ensure data accuracy.
+As a DABS Loader, I want to load DABS data, so that I can enable data analysis.
+As a FABS Sample File Updater, I want to update the FABS sample file, so that I can ensure data integrity.
+As a Publish Button Manager, I want to deactivate the publish button, so that I can prevent unauthorized publishing.
+As a FABS Loader, I want to load FABS data, so that I can enable data analysis.
+As a FREC Deriver, I want to derive FREC codes, so that I can enable data mapping.
+As an FPDS Data Loader, I want to load FPDS data, so that I can enable data analysis.
+As a FABS Error Code Updater, I want to update FABS error codes, so that I can ensure data accuracy.
+As a FABS Validator, I want to validate FABS data, so that I can ensure data accuracy.

@@ -1,0 +1,28 @@
+{
+    "request_number": 20,
+    "timestamp": "2025-10-26 15:23:35",
+    "model": "meta-llama/llama-3.3-70b-instruct",
+    "prompt_variant": "zero-shot",
+    "total_tokens": 1201,
+    "avg_prob": 0.7163636386840928,
+    "perplexity": 1.3959390817726682,
+    "struct_metrics": {
+        "avg_cyclomatic_complexity": -1.0,
+        "ast_depth": -1,
+        "avg_function_size_lines": -1.0,
+        "import_redundancy_ratio": -1.0
+    },
+    "semantic_metrics": {
+        "syntax_valid": false,
+        "flake8_error_count": -1,
+        "mypy_error_count": -1
+    },
+    "execution_metrics": {
+        "execution_success": false,
+        "execution_time_sec": 0.484,
+        "exception_type": "RuntimeError",
+        "exception_message": "File \"/app/main.py\", line 136\n    def delete Lösungen():\n               ^^^^^^^^\nSyntaxError: expected '('",
+        "runtime_output": "File \"/app/main.py\", line 136\n    def delete Lösungen():\n               ^^^^^^^^\nSyntaxError: expected '('"
+    },
+    "total_credibility": 0.0
+}

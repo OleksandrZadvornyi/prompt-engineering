@@ -1,0 +1,28 @@
+{
+    "request_number": 2,
+    "timestamp": "2025-10-26 15:03:58",
+    "model": "meta-llama/llama-3.3-70b-instruct",
+    "prompt_variant": "zero-shot",
+    "total_tokens": 1863,
+    "avg_prob": 0.8764471417599179,
+    "perplexity": 1.1409701194209911,
+    "struct_metrics": {
+        "avg_cyclomatic_complexity": 1.2241379310344827,
+        "ast_depth": 11,
+        "avg_function_size_lines": 4,
+        "import_redundancy_ratio": 0.0
+    },
+    "semantic_metrics": {
+        "syntax_valid": true,
+        "flake8_error_count": 40,
+        "mypy_error_count": 1
+    },
+    "execution_metrics": {
+        "execution_success": true,
+        "execution_time_sec": 0.553,
+        "exception_type": "",
+        "exception_message": "",
+        "runtime_output": "INFO:root:Updated publish status for submission 1 to published\nINFO:root:Updated publish status for submission 2 to published\nINFO:root:Providing data across all applications\nINFO:root:Deriving fields for PPoPCode code\nINFO:root:Validating submission 3\nINFO:root:Generating D file\nINFO:root:Uploading error message\nINFO:root:Summarizing user testing for UI SME ui_sme1\nINFO:root:Scheduling user testing for UI SME ui_sme1\nINFO:root:Auditing user testing for UI SME ui_sme1\nINFO:root:Updating Broker application\nINFO:root:Updating FABS sample file\nINFO:root:Preventing duplicate transactions\nINFO:root:Updating FABS validation rules\nINFO:root:Getting raw agency published files from FABS via USASpending\nINFO:root:Getting updated financial assistance data\nINFO:root:Getting FABS submission errors for submission 1\nINFO:root:Getting FABS frontend URLs for submission 2\nINFO:root:Getting historical FPDS data loader\nINFO:root:Getting File F format\nINFO:root:Getting file level errors for submission 3\nINFO:root:Getting FREC derivations\nINFO:root:Getting FABS submission status for submission 1\nINFO:root:Getting rows to publish for submission 2\nINFO:root:Downloading FABS file for submission 3\nINFO:root:Accessing Broker application data\nINFO:root:Loading historical FPDS data\nINFO:root:Getting FABS language\nINFO:root:Getting DABS banner messages\nINFO:root:Getting FABS read-only access\nINFO:root:Validating FABS submission 1\nINFO:root:Getting FABS status labels for submission 2\nINFO:root:Getting submission periods\nINFO:root:Getting landing page\nINFO:root:Submitting data elements"
+    },
+    "total_credibility": 75.69
+}

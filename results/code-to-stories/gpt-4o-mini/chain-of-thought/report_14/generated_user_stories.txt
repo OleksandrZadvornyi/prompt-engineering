@@ -1,0 +1,33 @@
+As a user, I want to create a submission with a user ID, status, and submission date, so that I can track my submissions.
+
+As a user, I want to update the status of my submission, so that I can reflect the current state of my submission.
+
+As a user, I want to add errors to my submission, so that I can keep a record of any issues encountered.
+
+As an Agency User, I want to include flexfields in my submission data, so that I can handle additional information required for my submissions.
+
+As a Broker User, I want to upload and validate my submission data, so that I can ensure accuracy before finalizing my submission.
+
+As a Developer, I want to log messages related to my submissions, so that I can maintain a record of actions taken.
+
+As a Developer, I want to update the status of a submission, so that I can manage the state of submissions effectively.
+
+As a Developer, I want to prevent duplicate publications of submissions, so that I can avoid errors in processing.
+
+As a UI Designer, I want to redesign the resources page, so that the user interface is more user-friendly and visually appealing.
+
+As a UI Designer, I want to report user testing results to agencies, so that stakeholders are informed about user feedback.
+
+As a UI Designer, I want to schedule user testing sessions, so that I can gather user insights for the design process.
+
+As a DevOps Engineer, I want to integrate New Relic into the application, so that I can monitor and optimize application performance.
+
+As a FABS User, I want to submit a FABS record, so that my data is properly recorded and processed.
+
+As a FABS User, I want to download uploaded files by their ID, so that I can access necessary documents. 
+
+As an application administrator, I want to add users to the application, so that I can manage access and functionality for different roles.
+
+As an application administrator, I want to process deletions based on a specified date, so that I can manage data retention effectively.
+
+As an application administrator, I want to access published files, so that I can review finalized submissions.

@@ -1,0 +1,28 @@
+{
+    "request_number": 10,
+    "timestamp": "2025-10-26 22:55:24",
+    "model": "meta-llama/llama-3.3-70b-instruct",
+    "prompt_variant": "chain-of-thought-clusters",
+    "total_tokens": 793,
+    "avg_prob": 0.9006815119079851,
+    "perplexity": 1.1102703750203784,
+    "struct_metrics": {
+        "avg_cyclomatic_complexity": 1.5,
+        "ast_depth": 10,
+        "avg_function_size_lines": 5.888888888888889,
+        "import_redundancy_ratio": 0.0
+    },
+    "semantic_metrics": {
+        "syntax_valid": true,
+        "flake8_error_count": 2,
+        "mypy_error_count": 0
+    },
+    "execution_metrics": {
+        "execution_success": true,
+        "execution_time_sec": 0.432,
+        "exception_type": "",
+        "exception_message": "",
+        "runtime_output": "Errors: []\nWarnings: []\nDerived Fields: {}\nHistorical FPDS Data: []\nSubmission Result: True\nFile-Level Errors: []\nRaw Agency Published Files: []\nD File Generation and Validation Result: True"
+    },
+    "total_credibility": 90.94
+}

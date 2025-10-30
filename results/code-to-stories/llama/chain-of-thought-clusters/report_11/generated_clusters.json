@@ -1,0 +1,4 @@
+{
+  "(0,)": "As a Data user, I want to process 12-19-2017 deletions, so that my work is up-to-date As a FABS user, I want to access published FABS files, so that I can review and utilize the data As a DABS user, I want to access DABS pages without needing two sets of permissions, so that I can work efficiently and securely As a tester, I want to test FABS features in environments other than Staging, so that I can ensure the system works correctly in different scenarios",
+  "(1,)": "As a UI designer, I want to redesign the Resources page, so that it is more user-friendly and meets the latest design standards As a Developer, I want to add updates to FABS submission and GTAS window data, so that the system is improved and meets the latest requirements"
+}

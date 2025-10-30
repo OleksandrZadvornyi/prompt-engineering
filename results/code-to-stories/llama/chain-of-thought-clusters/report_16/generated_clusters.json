@@ -1,0 +1,8 @@
+{
+  "(1,)": "As a FABS user, I want to process FABS submissions, so that I can manage my financial assistance data As a FABS user, I want to process FABS submissions, so that I can manage my financial assistance data As a user, I want to submit FABS submissions, so that I can report financial assistance data",
+  "(0,)": "As a Data user, I want to receive updates, so that I can stay informed about changes to the data As a user, I want to link to a sample file, so that I can access example data As a data administrator, I want to receive updates, so that I can stay informed about data changes",
+  "(2,)": "As a Developer, I want to update the Broker validation rule table, so that I can ensure data integrity As a Developer, I want to update the Broker validation rule table, so that I can maintain data consistency",
+  "(5,)": "As a Broker user, I want to upload and validate error messages, so that I can troubleshoot issues As a Broker user, I want to upload and validate error messages, so that I can resolve issues",
+  "(4,)": "As a UI user, I want to redesign the Resources page, so that I can improve the user experience As a UI designer, I want to redesign the Resources page, so that I can enhance usability As a submission administrator, I want to get status labels for submissions, so that I can track the status of submissions As a cluster administrator, I want to process user stories for a cluster, so that I can manage the cluster's workflow",
+  "(3,)": "As a user, I want to get a file in the correct format, so that I can work with the data As a data processor, I want to leave off the last four digits of a ZIP code, so that I can protect sensitive information"
+}

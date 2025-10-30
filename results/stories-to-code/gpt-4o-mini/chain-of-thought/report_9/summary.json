@@ -1,0 +1,28 @@
+{
+    "request_number": 9,
+    "timestamp": "2025-10-26 21:36:00",
+    "model": "openai/gpt-4o-mini",
+    "prompt_variant": "chain-of-thought",
+    "total_tokens": 694,
+    "avg_prob": 0.7695839345014068,
+    "perplexity": 1.2994034245892538,
+    "struct_metrics": {
+        "avg_cyclomatic_complexity": 1.4230769230769231,
+        "ast_depth": 11,
+        "avg_function_size_lines": 3.6315789473684212,
+        "import_redundancy_ratio": 0.0
+    },
+    "semantic_metrics": {
+        "syntax_valid": true,
+        "flake8_error_count": 22,
+        "mypy_error_count": 3
+    },
+    "execution_metrics": {
+        "execution_success": true,
+        "execution_time_sec": 0.541,
+        "exception_type": "",
+        "exception_message": "",
+        "runtime_output": "Errors in file upload: ['Invalid file extension. Please upload a .csv file.']\nProcessing deletions for 12-19-2017"
+    },
+    "total_credibility": 75.69
+}

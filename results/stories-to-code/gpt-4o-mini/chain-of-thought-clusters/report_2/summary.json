@@ -1,0 +1,28 @@
+{
+    "request_number": 2,
+    "timestamp": "2025-10-27 10:32:45",
+    "model": "openai/gpt-4o-mini",
+    "prompt_variant": "chain-of-thought-clusters",
+    "total_tokens": 627,
+    "avg_prob": 0.9255387607204949,
+    "perplexity": 1.0804517784015226,
+    "struct_metrics": {
+        "avg_cyclomatic_complexity": 1.4285714285714286,
+        "ast_depth": 10,
+        "avg_function_size_lines": 2.6,
+        "import_redundancy_ratio": 0.0
+    },
+    "semantic_metrics": {
+        "syntax_valid": true,
+        "flake8_error_count": 3,
+        "mypy_error_count": 0
+    },
+    "execution_metrics": {
+        "execution_success": true,
+        "execution_time_sec": 0.41,
+        "exception_type": "",
+        "exception_message": "",
+        "runtime_output": "Processing User Story 1: Broker user wants to Upload and Validate the error message to have accurate text.\nProcessing User Story 2: Developer wants to update the Broker validation rule table to account for the rule updates in DB-2213.\nProcessing User Story 1: Developer wants D Files generation requests to be managed and cached, so that duplicate requests do not cause performance issues.\nProcessing User Story 2: User wants to access the raw agency published files from FABS via USAspending.\nProcessing User Story 1: Developer wants to add the updates on a FABS submission to be modified when the publishStatus changes.\nProcessing User Story 2: User wants to have accurate and complete data related to PPoPCode and PPoPCongressionalDistrict.\nProcessing User Story 1: Agency user wants to ensure that deleted FSRS records are not included in submissions.\nProcessing User Story 2: Agency user wants to get File F in the correct format.\nProcessing User Story 1: UI designer wants to redesign the Resources page, so that it matches the new Broker design styles.\nProcessing User Story 2: DevOps engineer wants New Relic to provide useful data across all applications.\nProcessing User Story 1: UI designer wants to track the issues that come up in Tech Thursday, so that I know what to test and what wants to be fixed.\nProcessing User Story 2: Agency user wants to leave off the last 4 digits of the ZIP without an error, so that I can complete my submissions."
+    },
+    "total_credibility": 91.2
+}

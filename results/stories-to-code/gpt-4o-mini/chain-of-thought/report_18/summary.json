@@ -1,0 +1,28 @@
+{
+    "request_number": 18,
+    "timestamp": "2025-10-26 21:39:11",
+    "model": "openai/gpt-4o-mini",
+    "prompt_variant": "chain-of-thought",
+    "total_tokens": 785,
+    "avg_prob": 0.8297410573676232,
+    "perplexity": 1.2051952728150253,
+    "struct_metrics": {
+        "avg_cyclomatic_complexity": 1.5294117647058822,
+        "ast_depth": 11,
+        "avg_function_size_lines": 2.8,
+        "import_redundancy_ratio": 0.0
+    },
+    "semantic_metrics": {
+        "syntax_valid": true,
+        "flake8_error_count": 17,
+        "mypy_error_count": 1
+    },
+    "execution_metrics": {
+        "execution_success": true,
+        "execution_time_sec": 0.416,
+        "exception_type": "",
+        "exception_message": "",
+        "runtime_output": "2025-10-30 05:57:44.878783 - Submission FABS12345 uploaded successfully by user1.\n2025-10-30 05:57:44.878813 - Processed deletions for date: 12-19-2017\n2025-10-30 05:57:44.878823 - Resources page redesigned to match new style: New Broker Design\n2025-10-30 05:57:44.878830 - Reported user testing results to agencies.\n2025-10-30 05:57:44.878835 - Moved to round 2 of DABS landing page edits.\n2025-10-30 05:57:44.878840 - Moved to round 2 of Homepage edits.\n2025-10-30 05:57:44.878844 - Moved to round 3 of Help page edits.\n2025-10-30 05:57:44.878851 - Developer activity: Improved logging functionalities.\n2025-10-30 05:57:44.878856 - Updated Broker validation rule table as per DB-2213."
+    },
+    "total_credibility": 81.39
+}

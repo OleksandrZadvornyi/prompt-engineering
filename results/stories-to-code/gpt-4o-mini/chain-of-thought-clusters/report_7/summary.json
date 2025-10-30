@@ -1,0 +1,28 @@
+{
+    "request_number": 7,
+    "timestamp": "2025-10-27 10:34:28",
+    "model": "openai/gpt-4o-mini",
+    "prompt_variant": "chain-of-thought-clusters",
+    "total_tokens": 956,
+    "avg_prob": 0.8030083574058194,
+    "perplexity": 1.2453170515317888,
+    "struct_metrics": {
+        "avg_cyclomatic_complexity": 1.5172413793103448,
+        "ast_depth": 11,
+        "avg_function_size_lines": 3.3333333333333335,
+        "import_redundancy_ratio": 0.0
+    },
+    "semantic_metrics": {
+        "syntax_valid": true,
+        "flake8_error_count": 13,
+        "mypy_error_count": 0
+    },
+    "execution_metrics": {
+        "execution_success": true,
+        "execution_time_sec": 0.422,
+        "exception_type": "",
+        "exception_message": "",
+        "runtime_output": "Validation successful.\n[{'submission_id': 'submission1', 'status': 'validated', 'created_at': datetime.datetime(2025, 10, 30, 5, 58, 35, 236285)}]\n{'start': '2023-01-01', 'end': '2023-01-31'}\nTesting scheduled for 2 users on 2025-10-30 05:58:35.236318.\nUser testing summary has been generated.\n['Submission submission1 validated successfully.']"
+    },
+    "total_credibility": 83.87
+}

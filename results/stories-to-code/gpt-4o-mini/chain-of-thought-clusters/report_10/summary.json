@@ -1,0 +1,28 @@
+{
+    "request_number": 10,
+    "timestamp": "2025-10-27 10:35:36",
+    "model": "openai/gpt-4o-mini",
+    "prompt_variant": "chain-of-thought-clusters",
+    "total_tokens": 628,
+    "avg_prob": 0.7592066808944339,
+    "perplexity": 1.3171643837773972,
+    "struct_metrics": {
+        "avg_cyclomatic_complexity": 1.4545454545454546,
+        "ast_depth": 10,
+        "avg_function_size_lines": 2.5,
+        "import_redundancy_ratio": 0.0
+    },
+    "semantic_metrics": {
+        "syntax_valid": true,
+        "flake8_error_count": 1,
+        "mypy_error_count": 0
+    },
+    "execution_metrics": {
+        "execution_success": true,
+        "execution_time_sec": 0.458,
+        "exception_type": "",
+        "exception_message": "",
+        "runtime_output": "Generating file...\nRedesigning Resources page to match new Broker design styles.\nReporting user testing to Agency XYZ.\nScheduling user testing.\nCreating user testing summary.\nResetting the environment to Staging MAX permissions.\nMapping FederalActionObligation to Atom Feed.\nLoading FPDS data...\nLoading FABS data..."
+    },
+    "total_credibility": 89.15
+}

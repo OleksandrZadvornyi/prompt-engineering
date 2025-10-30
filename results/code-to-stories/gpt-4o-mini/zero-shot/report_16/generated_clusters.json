@@ -1,0 +1,7 @@
+{
+  "(4,)": "As a FABS User, I want to validate a submission, so that I can ensure it has no errors before proceeding",
+  "(2,)": "As a File Manager, I want to validate file formats, so that only compatible files are processed",
+  "(0,)": "As a Submission, I want to update my publish status, so that I can reflect the current state of my submission As a Submission, I want to log errors, so that I can keep track of any issues encountered during the validation process As a Validation service, I want to validate DUNS numbers, so that I can confirm their accuracy and format As a Data User, I want to receive updates on records, so that I can stay informed about the changes As a DevOps, I want to integrate New Relic, so that I can monitor application performance effectively",
+  "(1,)": "As a Logger, I want to log events to a file, so that there is a record of all significant actions and updates",
+  "(3,)": "As a UI Documentation creator, I want to share reports, so that stakeholders can access the necessary information"
+}

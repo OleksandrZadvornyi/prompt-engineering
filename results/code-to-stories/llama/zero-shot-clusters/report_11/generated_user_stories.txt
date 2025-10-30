@@ -1,0 +1,9 @@
+As a system administrator, I want to upload and validate files, so that I can ensure data accuracy and integrity.
+As a data analyst, I want to submit files to FABS, so that I can report on funding agency codes.
+As a data engineer, I want to load data from FPDS, so that I can update the USASpending database.
+As a USASpending administrator, I want to update data from FABS and FPDS, so that I can provide accurate and up-to-date information.
+As a DABS user, I want to load data from the database, so that I can access and analyze the information.
+As an agency representative, I want to submit data to FABS and FPDS, so that I can comply with reporting requirements.
+As a broker, I want to validate file formats, so that I can ensure data consistency and prevent errors.
+As a data validator, I want to check for missing required elements, so that I can identify and correct data gaps.
+As a system user, I want to receive success or error messages, so that I can understand the outcome of my actions.

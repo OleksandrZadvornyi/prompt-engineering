@@ -1,0 +1,28 @@
+{
+    "request_number": 5,
+    "timestamp": "2025-10-26 22:53:15",
+    "model": "meta-llama/llama-3.3-70b-instruct",
+    "prompt_variant": "chain-of-thought-clusters",
+    "total_tokens": 912,
+    "avg_prob": 0.905296126898483,
+    "perplexity": 1.1046109336908019,
+    "struct_metrics": {
+        "avg_cyclomatic_complexity": 1.394736842105263,
+        "ast_depth": 11,
+        "avg_function_size_lines": 3.5517241379310347,
+        "import_redundancy_ratio": 0.0
+    },
+    "semantic_metrics": {
+        "syntax_valid": true,
+        "flake8_error_count": 1,
+        "mypy_error_count": 0
+    },
+    "execution_metrics": {
+        "execution_success": true,
+        "execution_time_sec": 0.483,
+        "exception_type": "",
+        "exception_message": "",
+        "runtime_output": "Processing deletions for 12-19-2017\nRedesigning Resources page\nReporting to agencies\nProviding useful data across all applications\nGenerating D1 file\nLoading FPDS data\nLoading FABS data\nSyncing D1 file generation with FPDS data load\nAdding PPoPCode cases to derivation logic\nDeriving FundingAgencyCode\nMapping FederalActionObligation to Atom Feed\nMaking PPoPZIP+4 work the same as Legal Entity ZIP validations"
+    },
+    "total_credibility": 91.71
+}

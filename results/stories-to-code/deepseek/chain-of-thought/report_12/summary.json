@@ -1,0 +1,28 @@
+{
+    "request_number": 12,
+    "timestamp": "2025-10-26 22:08:35",
+    "model": "deepseek/deepseek-chat-v3-0324",
+    "prompt_variant": "chain-of-thought",
+    "total_tokens": 1626,
+    "avg_prob": 0.9247085001051542,
+    "perplexity": 1.081421874986857,
+    "struct_metrics": {
+        "avg_cyclomatic_complexity": 1.6666666666666667,
+        "ast_depth": 12,
+        "avg_function_size_lines": 5.409090909090909,
+        "import_redundancy_ratio": 0.0
+    },
+    "semantic_metrics": {
+        "syntax_valid": true,
+        "flake8_error_count": 14,
+        "mypy_error_count": 5
+    },
+    "execution_metrics": {
+        "execution_success": true,
+        "execution_time_sec": 0.56,
+        "exception_type": "",
+        "exception_message": "",
+        "runtime_output": "2025-10-30 05:54:09,384 - INFO - Added agency Department of Test\n2025-10-30 05:54:09,384 - INFO - Created fabs submission 8a73c345-df8c-4e18-8a43-a90b411313e0 for user John Doe\n2025-10-30 05:54:09,384 - INFO - Validating FABS submission 8a73c345-df8c-4e18-8a43-a90b411313e0\n2025-10-30 05:54:09,384 - INFO - Submission 8a73c345-df8c-4e18-8a43-a90b411313e0 status updated to pending\n2025-10-30 05:54:09,384 - INFO - Publishing submission 8a73c345-df8c-4e18-8a43-a90b411313e0...\n2025-10-30 05:54:09,384 - INFO - Submission 8a73c345-df8c-4e18-8a43-a90b411313e0 status updated to published\n2025-10-30 05:54:09,384 - INFO - Processing deletions for 12-19-2017\n2025-10-30 05:54:09,443 - INFO - Redesigning Resources page to match new Broker design styles\n2025-10-30 05:54:09,443 - INFO - Reporting user testing results to Department of Test: User testing showed positive feedback on new designs\n2025-10-30 05:54:09,444 - INFO - Processing round 3 of Help page edits\n2025-10-30 05:54:09,444 - INFO - Configuring New Relic for all applications\n2025-10-30 05:54:09,444 - INFO - Syncing D1 file generation with FPDS data load"
+    },
+    "total_credibility": 80.18
+}

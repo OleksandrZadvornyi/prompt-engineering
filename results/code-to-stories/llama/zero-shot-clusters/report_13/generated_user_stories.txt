@@ -1,0 +1,34 @@
+As a FABS User, I want to submit FABS data, so that I can store and manage my submissions.
+As an Agency User, I want to submit FABS data, so that I can store and manage my submissions.
+As a Broker, I want to process deletions, so that I can maintain data consistency.
+As a Broker, I want to sync D1 file generation with FPDS data load, so that I can ensure accurate data.
+As a Broker, I want to update SQL codes, so that I can improve data clarity.
+As a Broker, I want to add PPoPCode cases to derivation logic, so that I can enhance data processing.
+As a Broker, I want to derive FundingAgencyCode, so that I can accurately identify funding agencies.
+As a New Relic, I want to provide useful data across all applications, so that users can make informed decisions.
+As a USASpending User, I want to access published FABS files, so that I can retrieve and utilize the data.
+As a USASpending User, I want to send grant records to the system, so that I can share and update grant information.
+As a Website User, I want to access financial assistance data, so that I can find and utilize relevant information.
+As a Developer, I want to log messages effectively, so that I can track and debug issues.
+As a Developer, I want to update the FABS sample file, so that I can ensure data accuracy and consistency.
+As a Developer, I want to add GTAS window data to the database, so that I can enhance data management.
+As a Developer, I want to prevent duplicate transactions from being published, so that I can maintain data integrity.
+As a Developer, I want to manage D Files generation requests, so that I can efficiently process and generate files.
+As a UI User, I want to redesign the Resources page, so that I can improve user experience and accessibility.
+As a UI User, I want to report user testing to Agencies, so that I can provide feedback and insights.
+As a UI User, I want to move to round 2 of DABS landing page edits, so that I can refine and finalize the design.
+As a UI User, I want to move to round 2 of Homepage edits, so that I can refine and finalize the design.
+As a UI User, I want to move to round 3 of Help page edits, so that I can refine and finalize the design.
+As a UI User, I want to track issues in Tech Thursday, so that I can monitor and address technical problems.
+As a UI User, I want to begin user testing, so that I can validate and improve the user experience.
+As a UI User, I want to schedule user testing, so that I can plan and coordinate testing sessions.
+As an Owner, I want to create a user testing summary from UI SME, so that I can analyze and understand user feedback.
+As an Owner, I want to design a schedule from UI SME, so that I can plan and manage project timelines.
+As an Owner, I want to design an audit from UI SME, so that I can assess and evaluate project quality.
+As an Owner, I want to reset the environment to only take Staging MAX permissions, so that I can ensure secure and controlled access.
+As a Data User, I want to process deletions, so that I can maintain data consistency.
+As a Data User, I want to access raw agency published files from FABS via USAspending, so that I can retrieve and utilize the data.
+As a FABS User, I want to download uploaded FABS files, so that I can access and utilize the data.
+As a Broker Team Member, I want to update Broker resources, so that I can maintain and improve data management.
+As a Broker Team Member, I want to add PPoPCode cases to derivation logic, so that I can enhance data processing.
+As a Broker Team Member, I want to derive FundingAgencyCode, so that I can accurately identify funding agencies.

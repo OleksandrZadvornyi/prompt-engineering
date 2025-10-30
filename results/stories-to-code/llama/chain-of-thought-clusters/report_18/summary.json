@@ -1,0 +1,28 @@
+{
+    "request_number": 18,
+    "timestamp": "2025-10-27 10:29:44",
+    "model": "meta-llama/llama-3.3-70b-instruct",
+    "prompt_variant": "chain-of-thought-clusters",
+    "total_tokens": 2774,
+    "avg_prob": 0.9477101657679772,
+    "perplexity": 1.0551749217437694,
+    "struct_metrics": {
+        "avg_cyclomatic_complexity": 1.1047619047619048,
+        "ast_depth": 10,
+        "avg_function_size_lines": 3.04040404040404,
+        "import_redundancy_ratio": 0.0
+    },
+    "semantic_metrics": {
+        "syntax_valid": true,
+        "flake8_error_count": 3,
+        "mypy_error_count": 1
+    },
+    "execution_metrics": {
+        "execution_success": true,
+        "execution_time_sec": 0.393,
+        "exception_type": "",
+        "exception_message": "",
+        "runtime_output": "Processed deletions for 12-19-2017\nRedesigned Resources page\nReported to Agencies\nProvided useful data\nSynced D1 file generation\nUpdated SQL codes\nAdded PPoPCode cases\nDerived FundingAgencyCode\nMapped FederalActionObligation\nMade PPoPZIP+4 work\nMoved on to round 2 of DABS landing page edits\nMoved on to round 2 of Homepage edits\nMoved on to round 3 of Help page edits\nLogged better\nAccessed published FABS files\nSent grant records\nCreated content mockups\nTracked issues\nCreated user testing summary\nBegan user testing\nScheduled user testing\nDesigned schedule\nDesigned audit\nReset environment\nIndexed domain models\nShowed updated date and time\nJustified padding\nUpdated error codes\nAccessed Broker application data\nHad read-only access to DABS\nNavigated to FABS or DABS pages\nAdded updates to FABS submission\nAdded GTAS window data\nUpdated FABS sample file\nDeactivated publish button\nDerived fields in historical FABS loader\nIncluded FREC derivations\nUpdated frontend URLs\nIncluded historical FPDS data\nProvided FABS groups\nIncluded necessary columns\nAccessed additional fields\nAdded helpful info to submission dashboard\nDownloaded uploaded FABS file\nDetermined best way to load historical FPDS data\nUsed appropriate language\nDid not show DABS banner messages\nKnew submission periods\nUploaded and validated error message\nUpdated Broker validation rule table\nAppeared in warning and error files\nClarified CFDA error code\nEnsured Broker resources updated\nAccepted zero and blank for loan records\nReceived updates to FABS records\nEnsured deleted FSRS records not included\nAccepted zero and blank for non-loan records\nDerived data elements properly\nMatched max length for LegalEntityAddressLine3\nUsed schema v1.1 headers\nDeployed FABS into production\nEnsured data from SAM is complete\nGot File F in correct format\nUnderstood file-level errors\nSubmitted data elements surrounded by quotation marks\nManaged D Files generation requests\nAccessed raw agency published files\nIncluded large number of flexfields\nPrevented double publishing FABS submissions\nSaw updated financial assistance data daily\nPrevented correct or delete non-existent records\nHad accurate and complete data\nDid not see NASA grants as contracts\nDetermined best way to load historical FPDS data\nGenerated and validated D Files\nTested features in environments\nSaw correct status labels on Submission Dashboard\nLinked SAMPLE FILE\nLeft off last 4 digits of ZIP\nError message for broker_user: error message\nFABS submitted for fabs_user\nNo file-level errors\nUpdated Broker validation rule table for developer\nAccessed raw agency published file file_name for data_user\nTested features in environments for tester"
+    },
+    "total_credibility": 90.77
+}

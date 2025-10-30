@@ -19,10 +19,10 @@
     },
     "execution_metrics": {
         "execution_success": false,
-        "execution_time_sec": 15.567,
+        "execution_time_sec": 15.408,
         "exception_type": "TimeoutError",
         "exception_message": "Execution exceeded 15s limit",
-        "runtime_output": "* Serving Flask app 'main'\n * Debug mode: on\nINFO:werkzeug:\u001b[31m\u001b[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.\u001b[0m\n * Running on http://127.0.0.1:5000\nINFO:werkzeug:\u001b[33mPress CTRL+C to quit\u001b[0m\nINFO:werkzeug: * Restarting with stat\nWARNING:werkzeug: * Debugger is active!\nINFO:werkzeug: * Debugger PIN: 889-931-271"
+        "runtime_output": "* Serving Flask app 'main'\n * Debug mode: on\nINFO:werkzeug:\u001b[31m\u001b[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.\u001b[0m\n * Running on http://127.0.0.1:5000\nINFO:werkzeug:\u001b[33mPress CTRL+C to quit\u001b[0m\nINFO:werkzeug: * Restarting with stat\nWARNING:werkzeug: * Debugger is active!\nINFO:werkzeug: * Debugger PIN: 803-910-354"
     },
-    "total_credibility": 36.94
+    "total_credibility": 45.03
 }

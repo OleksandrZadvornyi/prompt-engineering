@@ -1,0 +1,7 @@
+{
+  "(2,)": "As a user, I want to upload my submission, so that it can be processed and validated As a user, I want to validate my submission, so that I can ensure it meets the necessary standards and is free of errors As a user, I want to update the publish status of my submission, so that its current state can be accurately reflected",
+  "(0,)": "As a user, I want to receive updates about FABS records, so that I can stay informed on any changes or new information",
+  "(4,)": "As a UI designer, I want to redesign the Resources page, so that users have a better experience navigating the content As a user, I want to view the list of current submissions, so that I can monitor the status of all submissions made",
+  "(1,)": "As a UI designer, I want to report user testing results, so that feedback can be collected and improvements can be made As a developer, I want to log issues with submissions, so that they can be tracked and resolved effectively",
+  "(3,)": "As a developer, I want to implement logic to prevent double publishing, so that duplicate submissions do not occur"
+}

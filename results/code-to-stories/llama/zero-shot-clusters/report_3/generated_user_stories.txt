@@ -1,0 +1,22 @@
+As a FABS user, I want to submit a FABS file to the system, so that I can upload my agency's data.
+As a FABS user, I want to check the status of my submission, so that I can track the progress of my uploaded file.
+As a FABS user, I want to download the uploaded FABS file, so that I can access my agency's data.
+As a Broker user, I want to upload and validate a file, so that I can ensure the data is accurate and error-free.
+As a Broker user, I want to submit records for individual recipients, so that I can update their information.
+As an Agency user, I want to ensure deleted FSRS records are not included in submissions, so that my agency's data remains accurate.
+As an Agency user, I want to validate FABS rules, so that I can ensure my agency's data meets the requirements.
+As an Agency user, I want to get File F in the correct format, so that I can access the required information.
+As a Developer, I want to add updates to a FABS submission, so that I can modify the data when the publish status changes.
+As a Developer, I want to update the FABS sample file, so that I can remove unnecessary information.
+As a Developer, I want to prevent duplicate transactions from being published, so that I can maintain data integrity.
+As a User Interface Designer, I want to move on to round 2 of DABS or FABS landing page edits, so that I can improve the user experience.
+As a User Interface Designer, I want to track issues in Tech Thursday, so that I can identify and resolve problems.
+As a User Interface Designer, I want to schedule user testing, so that I can gather feedback and improve the system.
+As a Data user, I want to access two additional fields from the FPDS data pull, so that I can gather more detailed information.
+As a Data user, I want to receive updates to FABS records, so that I can stay informed about changes to the data.
+As a FABS loader user, I want to derive fields for the FABS loader, so that I can prepare the data for loading.
+As a FABS loader user, I want to include FREC derivations in the historical FABS data loader, so that I can include detailed information.
+As an FPDS loader user, I want to load historical FPDS data, so that I can access archived information.
+As a D files generator user, I want to manage and cache D files generation requests, so that I can optimize the generation process.
+As a USASpending user, I want to access raw agency published files from FABS, so that I can gather detailed information about agency spending.
+As a system administrator, I want to generate and validate D files from FABS and FPDS data, so that I can ensure the accuracy and integrity of the data.

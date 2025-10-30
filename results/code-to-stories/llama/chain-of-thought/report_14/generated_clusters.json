@@ -1,0 +1,5 @@
+{
+  "(2,)": "As a Data user, I want to have the 12-19-2017 deletions processed, so that my data is up-to-date",
+  "(1,)": "As a UI designer, I want to redesign the Resources page, so that it matches the new Broker design styles As a Broker user, I want to Upload and Validate the error message to have accurate text, so that I can trust the information I receive As a tester, I want to have access to test features in environments other than Staging, so that I can test any nonProd feature in any environment As a FABS user, I want to link the SAMPLE FILE on the 'What you want to submit' dialog to point to the correct file, so that I have an accurate reference for my agency submissions",
+  "(0,)": "As a Developer, I want to be able to log better, so that I can troubleshoot issues with particular submissions and functions"
+}

@@ -1,0 +1,28 @@
+{
+    "request_number": 2,
+    "timestamp": "2025-10-26 21:33:35",
+    "model": "openai/gpt-4o-mini",
+    "prompt_variant": "chain-of-thought",
+    "total_tokens": 805,
+    "avg_prob": 0.7818615600447946,
+    "perplexity": 1.2789988037558822,
+    "struct_metrics": {
+        "avg_cyclomatic_complexity": 1.9583333333333333,
+        "ast_depth": 10,
+        "avg_function_size_lines": 4.235294117647059,
+        "import_redundancy_ratio": 0.0
+    },
+    "semantic_metrics": {
+        "syntax_valid": true,
+        "flake8_error_count": 14,
+        "mypy_error_count": 1
+    },
+    "execution_metrics": {
+        "execution_success": true,
+        "execution_time_sec": 0.443,
+        "exception_type": "",
+        "exception_message": "",
+        "runtime_output": "Upload successful.\n[{'user': 'BrokerUser', 'status': 'pending', 'data': {'DUNS': '123456789', 'ActionType': 'C'}, 'created_at': datetime.datetime(2025, 10, 30, 5, 57, 48, 475880)}]\nUI request submitted."
+    },
+    "total_credibility": 81.64
+}

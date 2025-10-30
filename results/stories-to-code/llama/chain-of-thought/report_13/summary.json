@@ -1,0 +1,28 @@
+{
+    "request_number": 13,
+    "timestamp": "2025-10-26 21:48:08",
+    "model": "meta-llama/llama-3.3-70b-instruct",
+    "prompt_variant": "chain-of-thought",
+    "total_tokens": 1495,
+    "avg_prob": 0.9580185531401566,
+    "perplexity": 1.043821120919045,
+    "struct_metrics": {
+        "avg_cyclomatic_complexity": 1.1904761904761905,
+        "ast_depth": 9,
+        "avg_function_size_lines": 4.205882352941177,
+        "import_redundancy_ratio": 0.0
+    },
+    "semantic_metrics": {
+        "syntax_valid": true,
+        "flake8_error_count": 14,
+        "mypy_error_count": 0
+    },
+    "execution_metrics": {
+        "execution_success": true,
+        "execution_time_sec": 0.458,
+        "exception_type": "",
+        "exception_message": "",
+        "runtime_output": "Deletions for 12-19-2017 processed.\nResources page redesigned.\nUser testing reported.\nMoved on to round 2 of DABS landing page edits.\nMoved on to round 2 of homepage edits.\nMoved on to round 3 of help page edits.\nLogging improved.\nFABS submission updates implemented.\nBroker validation rule table updated.\nGTAS window data added to database.\nD files generation requests managed and cached.\nDomain models indexed properly.\nNew Relic configured to provide useful data.\nError message uploaded and validated.\nD1 file generation synced with FPDS data load.\nAccess to published FABS files granted.\nUSAspend configured to only send grant records.\nUser testing summary created.\nSchedule from UI SME designed.\nAudit from UI SME designed.\nFlexfields included without performance impact.\nFABS validation rules updated to accept zero and blank for loan records.\nFABS validation rules updated to accept zero and blank for non-loan records.\nFABS deployed into production.\nSAM data ensured to be complete."
+    },
+    "total_credibility": 86.26
+}

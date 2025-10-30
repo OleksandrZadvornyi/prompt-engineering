@@ -1,0 +1,28 @@
+{
+    "request_number": 6,
+    "timestamp": "2025-10-26 15:49:42",
+    "model": "meta-llama/llama-3.3-70b-instruct",
+    "prompt_variant": "zero-shot-clusters",
+    "total_tokens": 731,
+    "avg_prob": 0.93734751839,
+    "perplexity": 1.066840185076302,
+    "struct_metrics": {
+        "avg_cyclomatic_complexity": 1.206896551724138,
+        "ast_depth": 9,
+        "avg_function_size_lines": 3.217391304347826,
+        "import_redundancy_ratio": 0.0
+    },
+    "semantic_metrics": {
+        "syntax_valid": true,
+        "flake8_error_count": 8,
+        "mypy_error_count": 0
+    },
+    "execution_metrics": {
+        "execution_success": true,
+        "execution_time_sec": 0.405,
+        "exception_type": "",
+        "exception_message": "",
+        "runtime_output": "Processing deletions for 12-19-2017\nRedesigning Resources page\nReporting user testing results\nUpdating SQL codes for clarity\nAdding 00***** and 00FORGN PPoPCode cases to derivation logic\nDeriving FundingAgencyCode for data quality and completeness\nMoving to round 2 of DABS or FABS landing page edits\nMoving to round 2 of Homepage edits\nMoving to round 3 of Help page edits\nAdding updates to FABS submission\nAdding GTAS window data to database\nUpdating FABS sample file\nAccessing published FABS files\nGetting file-level error\nDownloading uploaded FABS file\nSeeing correct status labels on Submission Dashboard\nHelping create content mockups\nSubmitting records for individual recipients"
+    },
+    "total_credibility": 89.0
+}

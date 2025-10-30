@@ -19,10 +19,10 @@
     },
     "execution_metrics": {
         "execution_success": true,
-        "execution_time_sec": 0.82,
+        "execution_time_sec": 0.421,
         "exception_type": "",
         "exception_message": "",
         "runtime_output": "INFO:root:Processing deletions for date: 12-19-2017\nINFO:root:Updating Resources page to match new design styles.\nINFO:root:Scheduling user testing.\nINFO:root:Logging issue: Issue in submission processing\nINFO:root:Included flexfield: New Flexfield\nINFO:root:Submitting record: {'id': 1, 'data': 'Sample record'}\nINFO:root:Handling submission error: Invalid submission format"
     },
-    "total_credibility": 79.39
+    "total_credibility": 82.09
 }

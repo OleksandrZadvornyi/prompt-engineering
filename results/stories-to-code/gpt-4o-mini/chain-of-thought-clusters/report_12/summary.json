@@ -1,0 +1,28 @@
+{
+    "request_number": 12,
+    "timestamp": "2025-10-27 10:36:15",
+    "model": "openai/gpt-4o-mini",
+    "prompt_variant": "chain-of-thought-clusters",
+    "total_tokens": 642,
+    "avg_prob": 0.8437981823948126,
+    "perplexity": 1.1851175089781132,
+    "struct_metrics": {
+        "avg_cyclomatic_complexity": 1.4482758620689655,
+        "ast_depth": 11,
+        "avg_function_size_lines": 2.3684210526315788,
+        "import_redundancy_ratio": 0.0
+    },
+    "semantic_metrics": {
+        "syntax_valid": true,
+        "flake8_error_count": 11,
+        "mypy_error_count": 0
+    },
+    "execution_metrics": {
+        "execution_success": true,
+        "execution_time_sec": 0.508,
+        "exception_type": "",
+        "exception_message": "",
+        "runtime_output": "Processing cluster 4:\nProcessing: Process the 12-19-2017 deletions.\nProcessing: Redesign the Resources page to match new Broker design styles.\nProcessing cluster 5:\nProcessing: Move on to round 2 of DABS landing page edits for approvals.\nProcessing: Access published FABS files.\nProcessing cluster 2:\nProcessing: Modify FABS submission when publishStatus changes."
+    },
+    "total_credibility": 85.63
+}

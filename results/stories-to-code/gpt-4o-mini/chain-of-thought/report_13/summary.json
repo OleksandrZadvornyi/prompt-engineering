@@ -1,0 +1,28 @@
+{
+    "request_number": 13,
+    "timestamp": "2025-10-26 21:37:16",
+    "model": "openai/gpt-4o-mini",
+    "prompt_variant": "chain-of-thought",
+    "total_tokens": 776,
+    "avg_prob": 0.8083066958737987,
+    "perplexity": 1.2371541706938063,
+    "struct_metrics": {
+        "avg_cyclomatic_complexity": 1.7142857142857142,
+        "ast_depth": 10,
+        "avg_function_size_lines": 4.928571428571429,
+        "import_redundancy_ratio": 0.0
+    },
+    "semantic_metrics": {
+        "syntax_valid": true,
+        "flake8_error_count": 12,
+        "mypy_error_count": 1
+    },
+    "execution_metrics": {
+        "execution_success": true,
+        "execution_time_sec": 0.445,
+        "exception_type": "",
+        "exception_message": "",
+        "runtime_output": "Submission 1 published.\nUser testing reported to agencies: Agency A, Agency B.\nMoving to round 2 of Homepage edits for approvals.\n['Error with DUNS validation.']\nSubmission already published, cannot publish again.\nProcessed deletions for date: 12-19-2017\nRequested File F file format.\nSubmitted data elements: \"Element1\", \"Element2\", \"Element3\""
+    },
+    "total_credibility": 83.21
+}

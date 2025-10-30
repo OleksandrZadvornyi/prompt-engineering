@@ -1,0 +1,6 @@
+{
+  "(1,)": "As a Data User, I want to process deletions on a given date, so that I can maintain data integrity As a Developer, I want to update FABS submission when publishStatus changes, so that data remains up-to-date As a DevOps Engineer, I want to provide useful data across all applications, so that stakeholders can make informed decisions As a Broker User, I want to upload and validate error messages, so that I can ensure data quality As a Broker User, I want to sync D1 file generation with FPDS data load, so that data is consistent and accurate As a Website User, I want to access published FABS files, so that I can view and utilize the data",
+  "(2,)": "As a UI Designer, I want to redesign the Resources page, so that I can improve the user experience As a UI Designer, I want to report user testing results to Agencies, so that they can make informed decisions As a UI Designer, I want to move to round 2 of a specific page type, so that I can iterate on the design",
+  "(0,)": "As a Developer, I want to improve logging for troubleshooting issues, so that I can quickly identify and resolve problems",
+  "(3,)": "As a Developer, I want to update the Broker validation rule table, so that validation rules are current and accurate"
+}

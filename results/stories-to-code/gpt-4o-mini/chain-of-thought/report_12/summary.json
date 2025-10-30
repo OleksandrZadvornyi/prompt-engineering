@@ -1,0 +1,28 @@
+{
+    "request_number": 12,
+    "timestamp": "2025-10-26 21:36:59",
+    "model": "openai/gpt-4o-mini",
+    "prompt_variant": "chain-of-thought",
+    "total_tokens": 769,
+    "avg_prob": 0.7950819899468838,
+    "perplexity": 1.2577319228005728,
+    "struct_metrics": {
+        "avg_cyclomatic_complexity": 1.4814814814814814,
+        "ast_depth": 11,
+        "avg_function_size_lines": 4.277777777777778,
+        "import_redundancy_ratio": 0.0
+    },
+    "semantic_metrics": {
+        "syntax_valid": true,
+        "flake8_error_count": 13,
+        "mypy_error_count": 1
+    },
+    "execution_metrics": {
+        "execution_success": true,
+        "execution_time_sec": 0.425,
+        "exception_type": "",
+        "exception_message": "",
+        "runtime_output": "Submission submission1 uploaded.\nSubmission submission1 validated with status: Validated\nSubmission submission1 published.\nRedesigning Resources page to match new Broker design styles.\nReporting user testing results to Agency A.\nReporting user testing results to Agency B.\nScheduling user testing for stakeholders.\nCreating user testing summary from UI SME.\nLog: User tested FABS submission.\nUpdating validation rules with changes: {'rule_change': 'DB-2213'}\nPreventing users from double publishing submissions.\nProcessing deletions for: ['12-19-2017 deletions']\nLoading up-to-date FPDS data.\nSubmitting data for agency: {'data': 'financial_assistance_data'}\nCreating content mockups for data submission."
+    },
+    "total_credibility": 82.68
+}

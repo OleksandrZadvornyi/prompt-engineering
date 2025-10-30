@@ -1,0 +1,7 @@
+{
+  "(2,)": "As a User Story Manager, I want to add a user story, so that I can keep track of project requirements and tasks As a User Story Manager, I want to update the status of a user story, so that I can reflect the current progress of tasks As a User Story Manager, I want to report to agencies, so that I can communicate important updates and feedback",
+  "(0,)": "As a Developer, I want to add a validation rule, so that I can ensure data integrity and compliance within the application As a UI Designer, I want to redesign the Resources page, so that it aligns with the new design styles and improves user experience",
+  "(1,)": "As a Data User, I want to process deletions, so that I can manage and clean the data effectively As a FABS User, I want to download an uploaded file, so that I can access and utilize the data contained within it",
+  "(4,)": "As a Data User, I want to synchronize file generation, so that I can ensure the latest data is accurately reflected in the generated files",
+  "(3,)": "As a Broker User, I want to validate error messages, so that I can ensure they are accurate and helpful for troubleshooting"
+}

@@ -1,0 +1,28 @@
+{
+    "request_number": 18,
+    "timestamp": "2025-10-26 15:57:02",
+    "model": "meta-llama/llama-3.3-70b-instruct",
+    "prompt_variant": "zero-shot-clusters",
+    "total_tokens": 2755,
+    "avg_prob": 0.9431883184606563,
+    "perplexity": 1.060233656871476,
+    "struct_metrics": {
+        "avg_cyclomatic_complexity": 1.0485436893203883,
+        "ast_depth": 10,
+        "avg_function_size_lines": 3.01010101010101,
+        "import_redundancy_ratio": 0.0
+    },
+    "semantic_metrics": {
+        "syntax_valid": true,
+        "flake8_error_count": 94,
+        "mypy_error_count": 1
+    },
+    "execution_metrics": {
+        "execution_success": true,
+        "execution_time_sec": 0.48,
+        "exception_type": "",
+        "exception_message": "",
+        "runtime_output": "Processing deletions for 12-19-2017\nRedesigning resources page\nReporting user testing results\nProviding New Relic data\nSynchronizing D1 file generation\nUpdating SQL codes\nAdding PPoPCode cases\nMapping FederalActionObligation\nValidating PPoPZIP"
+    },
+    "total_credibility": 77.14
+}

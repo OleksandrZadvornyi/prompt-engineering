@@ -19,10 +19,10 @@
     },
     "execution_metrics": {
         "execution_success": true,
-        "execution_time_sec": 0.657,
+        "execution_time_sec": 0.461,
         "exception_type": "",
         "exception_message": "",
         "runtime_output": "Processed deletions for the date: 2017-12-19\nRedesigned Resources page with style: New Broker Design Styles\nReported user testing: User Testing Report - December 2023\nLogging New Relic data across all applications...\nGenerated D1 file.\nD1 file generation synced with FPDS data load."
     },
-    "total_credibility": 72.1
+    "total_credibility": 73.59
 }

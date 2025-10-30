@@ -1,0 +1,28 @@
+{
+    "request_number": 3,
+    "timestamp": "2025-10-26 21:58:08",
+    "model": "deepseek/deepseek-chat-v3-0324",
+    "prompt_variant": "chain-of-thought",
+    "total_tokens": 1824,
+    "avg_prob": 0.8872380424332383,
+    "perplexity": 1.1270932401157119,
+    "struct_metrics": {
+        "avg_cyclomatic_complexity": 1.5,
+        "ast_depth": 12,
+        "avg_function_size_lines": 4.666666666666667,
+        "import_redundancy_ratio": 0.0
+    },
+    "semantic_metrics": {
+        "syntax_valid": true,
+        "flake8_error_count": 15,
+        "mypy_error_count": 1
+    },
+    "execution_metrics": {
+        "execution_success": true,
+        "execution_time_sec": 0.534,
+        "exception_type": "",
+        "exception_message": "",
+        "runtime_output": "2025-10-30 05:54:28,164 - BrokerApp - INFO - Processing deletions for 2017-12-19\n2025-10-30 05:54:28,165 - BrokerApp - INFO - Scheduled test Homepage Redesign for 2023-06-15 00:00:00\n2025-10-30 05:54:28,165 - BrokerApp - INFO - Requested approval for Help Page round 3\n2025-10-30 05:54:28,165 - BrokerApp - INFO - Created content mockup: Submission Flow\n2025-10-30 05:54:28,165 - BrokerApp - INFO - Loaded 1 historical records\n2025-10-30 05:54:28,165 - BrokerApp - INFO - D1 file generation synced with FPDS data\nInvalid file format. Please upload a valid CSV or Excel file."
+    },
+    "total_credibility": 83.19
+}

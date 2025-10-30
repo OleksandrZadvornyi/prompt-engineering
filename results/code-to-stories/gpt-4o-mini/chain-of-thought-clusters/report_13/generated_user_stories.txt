@@ -1,0 +1,179 @@
+As a Data user, I want to receive updates to FABS records, so that I can stay informed about changes.
+
+As an Agency user, I want to ensure deleted FSRS records are excluded from submissions, so that my submissions are accurate.
+
+As an Agency user, I want FABS validation rules to accept zero and blank for loan records, so that I can submit valid data without errors.
+
+As an Agency user, I want to deploy FABS into production for data submission, so that the system can be utilized effectively.
+
+As an Agency user, I want to ensure data from SAM is complete, so that my submissions meet requirements.
+
+As an Agency user, I want FABS validation rules to accept zero and blank for non-loan records, so that I can submit valid data without errors.
+
+As an Agency user, I want to derive all required data elements properly, so that my submissions are correct.
+
+As an Agency user, I want to match LegalEntityAddressLine3 length to Schema v1.1, so that my submissions comply with specifications.
+
+As an Agency user, I want to use schema v1.1 headers in FABS file, so that my submissions adhere to the latest standards.
+
+As an Agency user, I want to update FPDS data daily, so that my information is current.
+
+As an Agency user, I want to load all historical Financial Assistance data for FABS go-live, so that the system has comprehensive data.
+
+As an Agency user, I want to load historical FPDS data, so that I can access past information.
+
+As an Agency user, I want to get File F in correct format, so that my submissions are processed correctly.
+
+As an Agency user, I want to understand file-level errors better, so that I can troubleshoot issues efficiently.
+
+As an Agency user, I want to submit data elements surrounded by quotation marks, so that my submissions adhere to formatting requirements.
+
+As a Broker user, I want to upload and validate error message accuracy, so that I can ensure consistent quality.
+
+As a Developer, I want to update Broker validation rule table for rule updates, so that the system reflects the latest validation rules.
+
+As a User, I want flexfields to appear in warning/error files on missing required elements, so that I can identify issues quickly.
+
+As a Developer, I want to clarify CFDA error code triggers, so that I can improve error management.
+
+As a Broker team member, I want to ensure resources and validations are updated for FABS launch, so that the system is prepared for deployment.
+
+As a User, I want DUNS validations to accept records with ActionTypes B, C, or D, so that my submissions are valid.
+
+As a User, I want DUNS validations to accept records with ActionDates before registration date, so that I can submit historical records.
+
+As an Agency user, I want to receive helpful file-level error messages for wrong extension uploads, so that I can correct my submissions effectively.
+
+As a Developer, I want to prevent duplicate transactions on publish decisions, so that the system operates without errors.
+
+As a Developer, I want to manage and cache D Files generation requests, so that the processing is efficient.
+
+As a User, I want to access raw agency published files from FABS, so that I can review the data directly.
+
+As an Agency user, I want to include a large number of flexfields without performance impact, so that my submissions can be detailed.
+
+As a Developer, I want to prevent double publishing after refreshing, so that I avoid unintended data submissions.
+
+As a Website user, I want to see updated financial assistance data daily, so that I can have the most current information.
+
+As a Developer, I want to prevent attempts to correct or delete non-existent records, so that the system maintains data integrity.
+
+As a User, I want to have accurate and complete data for PPoPCode and PPoPCongressionalDistrict, so that my submissions are valid.
+
+As a User, I want to avoid seeing NASA grants displayed as contracts, so that I can see relevant data.
+
+As a Developer, I want to determine how agencies will generate and validate D Files, so that I can ensure compliance.
+
+As a User, I want to generate and validate D Files from FABS and FPDS data, so that I can submit necessary documentation.
+
+As a Tester, I want to access test features in nonProd environments, so that I can validate system functionality without affecting live data.
+
+As a FABS user, I want to ensure submission errors represent FABS errors accurately, so that I can manage issues effectively.
+
+As an Agency user, I want to see who created a submission accurately, so that I can track accountability.
+
+As a Tester, I want to ensure FABS derives fields properly with a robust test file, so that I can confirm system reliability.
+
+As a Broker user, I want to submit records for individual recipients without DUNS error, so that I can process submissions smoothly.
+
+As a User, I want to know how many rows will be published before publishing, so that I can manage expectations.
+
+As a FABS user, I want to submit citywide as PPoPZIP without errors, so that my submissions are valid.
+
+As a FABS user, I want to ensure validations run in a reasonable time, so that I can get timely feedback. 
+
+As a Developer, I want to add updates on FABS submission when publishStatus changes, so that the system reflects real-time status.
+
+As a Developer, I want to add GTAS window data to the database, so that we can integrate this information effectively.
+
+As a Developer, I want to update FABS sample file to remove FundingAgencyCode, so that we can streamline the submission process.
+
+As a User, I want to deactivate the publish button after clicking, so that I can avoid accidental submissions.
+
+As a Broker user, I want to derive fields in historical FABS loader, so that we can maintain data integrity.
+
+As a Developer, I want to include FREC derivations from historical FABS data load, so that we can enhance accuracy.
+
+As a FABS user, I want to improve frontend URL accuracy, so that users can navigate effectively.
+
+As a Developer, I want to include extracted historical data in FPDS loader, so that our records are comprehensive.
+
+As a Developer, I want to provide FABS groups under the FREC paradigm, so that we can manage submissions better.
+
+As a FABS user, I want to ensure historical data includes necessary columns, so that all information is accessible.
+
+As a Data user, I want to access two additional fields from FPDS data pull, so that I can have a richer dataset.
+
+As a FABS user, I want to include additional info in submission dashboard, so that I can see all necessary data at a glance.
+
+As a FABS user, I want to download the uploaded FABS file, so that I can keep a local copy for review.
+
+As a Developer, I want to determine the best way to load historical FPDS data, so that we can optimize performance.
+
+As a FABS user, I want to ensure FABS page language is appropriate, so that it is user-friendly.
+
+As a FABS user, I want to avoid DABS banner messages on FABS pages, so that my user experience is not interrupted.
+
+As an Agency user, I want to know when submission periods start and end, so that I can manage my submissions effectively. 
+
+As a UI designer, I want to process the 12-19-2017 deletions, so that data integrity is maintained. 
+
+As a UI designer, I want to redesign the Resources page to match new Broker design styles, so that the UI is consistent.
+
+As a UI designer, I want to report to the Agencies about user testing, so that we can keep stakeholders informed.
+
+As a DevOps engineer, I want New Relic to provide useful data across all applications, so that I can monitor performance effectively.
+
+As a Broker user, I want to sync D1 file generation with FPDS data load, so that my data processing is efficient.
+
+As a Broker team member, I want to update SQL codes for clarity, so that they are easier to understand and maintain.
+
+As a Broker team member, I want to add 00***** and 00FORGN PPoPCode cases to derivation logic, so that my data processing is accurate.
+
+As a Broker team member, I want to derive FundingAgencyCode for data quality, so that my submissions are correct.
+
+As an Agency user, I want to map FederalActionObligation properly to the Atom Feed, so that my data is transmitted accurately.
+
+As a Broker user, I want to ensure PPoPZIP+4 works the same as Legal Entity ZIP validations, so that my data processing is consistent.
+
+As a UI designer, I want to move on to round 2 of DABS or FABS landing page edits, so that the project progresses.
+
+As a UI designer, I want to move on to round 2 of Homepage edits, so that I can refine the design.
+
+As a UI designer, I want to move on to round 3 of Help page edits, so that I can ensure user support is effective.
+
+As a Developer, I want to log better for troubleshooting, so that I can quickly identify issues.
+
+As a Website user, I want to access published FABS files, so that I can view important data.
+
+As an Owner, I want to ensure USAspending only sends grant records, so that my system is accurate.
+
+As a Broker user, I want to help create content mockups, so that we can visualize the design.
+
+As a UI designer, I want to track issues from Tech Thursday, so that I can address concerns raised during meetings.
+
+As an Owner, I want to create a user testing summary from UI SME, so that I can compile feedback effectively.
+
+As a UI designer, I want to begin user testing to validate UI requests, so that the design meets user needs.
+
+As a UI designer, I want to schedule user testing, so that I can coordinate with participants.
+
+As an Owner, I want to design a schedule from UI SME, so that we can plan our workflows.
+
+As an Owner, I want to design an audit from UI SME, so that we can ensure compliance.
+
+As an Owner, I want to reset the environment to Staging MAX permissions, so that testing can be conducted securely.
+
+As a Developer, I want to index domain models properly, so that data retrieval is efficient.
+
+As an Agency user, I want to show updated date AND time in header info, so that users can see the most current information.
+
+As an Owner, I want to only allow zero-padded fields, so that data is consistent.
+
+As a Broker user, I want to update error codes for clarity, so that users can understand issues better.
+
+As a Developer, I want to quickly access Broker application data, so that I can troubleshoot effectively.
+
+As a FABS user, I want to have read-only access to DABS, so that I can view but not modify data.
+
+As an Agency user, I want to create a landing page for FABS and DABS navigation, so that users can easily find resources.

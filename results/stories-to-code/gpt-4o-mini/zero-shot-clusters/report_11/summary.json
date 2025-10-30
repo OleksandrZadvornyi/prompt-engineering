@@ -19,10 +19,10 @@
     },
     "execution_metrics": {
         "execution_success": true,
-        "execution_time_sec": 3.438,
+        "execution_time_sec": 2.54,
         "exception_type": "",
         "exception_message": "",
         "runtime_output": "/app/main.py:9: MovedIn20Warning: The ``declarative_base()`` function is now available as sqlalchemy.orm.declarative_base(). (deprecated since: 2.0) (Background on SQLAlchemy 2.0 at: https://sqlalche.me/e/b8d9)\n  Base = declarative_base()\nINFO:root:Submitting record for agency 123...\nINFO:root:Submission created with id 1\nINFO:root:Updating validation rules...\nINFO:root:Validation rules updated.\nINFO:root:Receiving updates to FABS records...\nINFO:root:Submitting FABS data...\nINFO:root:FABS data submitted.\nINFO:root:Validating agency records...\nERROR:root:Error: Missing funding agency code in record {'funding_agency_code': None}.\nINFO:root:Downloading uploaded FABS file for submission ID 1..."
     },
-    "total_credibility": 72.14
+    "total_credibility": 76.71
 }

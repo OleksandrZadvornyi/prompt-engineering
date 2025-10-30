@@ -19,10 +19,10 @@
     },
     "execution_metrics": {
         "execution_success": false,
-        "execution_time_sec": 3.067,
+        "execution_time_sec": 2.707,
         "exception_type": "EnvironmentMismatch",
         "exception_message": "Unable to open configuration file newrelic.ini.",
         "runtime_output": "/app/main.py:13: MovedIn20Warning: The ``declarative_base()`` function is now available as sqlalchemy.orm.declarative_base(). (deprecated since: 2.0) (Background on SQLAlchemy 2.0 at: https://sqlalche.me/e/b8d9)\n  Base = declarative_base()\nTraceback (most recent call last):\n  File \"/app/main.py\", line 229, in <module>\n    setup_newrelic_monitoring()\n  File \"/app/main.py\", line 58, in setup_newrelic_monitoring\n    newrelic.agent.initialize('newrelic.ini')\n  File \"/usr/local/lib/python3.11/site-packages/newrelic/config.py\", line 4349, in initialize\n    _load_configuration(config_file, environment, ignore_errors, log_file, log_level)\n  File \"/usr/local/lib/python3.11/site-packages/newrelic/config.py\", line 955, in _load_configuration\n    raise newrelic.api.exceptions.ConfigurationError(f\"Unable to open configuration file {config_file}.\")\nnewrelic.api.exceptions.ConfigurationError: Unable to open configuration file newrelic.ini."
     },
-    "total_credibility": 39.79
+    "total_credibility": 50.31
 }

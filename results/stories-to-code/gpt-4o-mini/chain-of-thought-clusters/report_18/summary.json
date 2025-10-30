@@ -1,0 +1,28 @@
+{
+    "request_number": 18,
+    "timestamp": "2025-10-27 10:38:57",
+    "model": "openai/gpt-4o-mini",
+    "prompt_variant": "chain-of-thought-clusters",
+    "total_tokens": 1029,
+    "avg_prob": 0.8798825623401411,
+    "perplexity": 1.1365153064749844,
+    "struct_metrics": {
+        "avg_cyclomatic_complexity": 1.6923076923076923,
+        "ast_depth": 12,
+        "avg_function_size_lines": 3.9,
+        "import_redundancy_ratio": 0.0
+    },
+    "semantic_metrics": {
+        "syntax_valid": true,
+        "flake8_error_count": 11,
+        "mypy_error_count": 0
+    },
+    "execution_metrics": {
+        "execution_success": true,
+        "execution_time_sec": 0.458,
+        "exception_type": "",
+        "exception_message": "",
+        "runtime_output": "Activity for Submission 1: Submission published successfully.\nPublish button deactivated for submission 1\n12345"
+    },
+    "total_credibility": 86.07
+}

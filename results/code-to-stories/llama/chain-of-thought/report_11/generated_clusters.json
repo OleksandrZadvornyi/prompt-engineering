@@ -1,0 +1,7 @@
+{
+  "(2,)": "As a BrokerUser, I want to upload and validate error messages, so that I can ensure data quality and integrity As a Developer, I want to manage and cache D Files generation requests, so that I can efficiently generate and manage financial reports",
+  "(0,)": "As a BrokerUser, I want to submit records, so that I can upload and manage my data As a FABSUser, I want to submit FABS files, so that I can upload and manage my financial assistance data As a FABSUser, I want to download FABS files, so that I can access and review my previously uploaded financial assistance data As a Developer, I want to update the Broker validation rule table, so that I can modify and improve data validation rules As a Developer, I want to add GTAS window data, so that I can manage and update my agency's financial data",
+  "(4,)": "As a DataUser, I want to access raw agency published files, so that I can review and analyze agency financial data",
+  "(1,)": "As a UI Designer, I want to redesign the Resources page, so that I can improve the user experience and accessibility of the platform",
+  "(3,)": "As a UI Designer, I want to report to agencies, so that I can provide them with relevant information and updates"
+}

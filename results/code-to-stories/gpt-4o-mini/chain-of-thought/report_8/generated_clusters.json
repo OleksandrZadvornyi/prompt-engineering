@@ -1,0 +1,7 @@
+{
+  "(2,)": "As a FABS User, I want to submit data to the broker system, so that my submission can be processed and potentially published",
+  "(4,)": "As a Developer, I want to update validation rules, so that submission validation can be improved or modified",
+  "(1,)": "As a Broker System, I want to process deletions based on a specified date, so that outdated or unnecessary submissions can be removed As a User Testing, I want to report test summaries to agencies, so that stakeholders are informed about user testing outcomes As a User Testing, I want to schedule user testing on a specific date, so that testing can be organized and conducted effectively",
+  "(0,)": "As a Broker System, I want to upload submissions with validation, so that only correctly formatted and complete submissions are accepted As a Broker System, I want to publish submissions, so that approved submissions become publicly visible and accessible As a Validation, I want to validate submissions against required fields, so that only valid submissions are processed by the broker system",
+  "(3,)": "As a Logger, I want to log user actions, so that there is a record of who performed what actions within the system"
+}

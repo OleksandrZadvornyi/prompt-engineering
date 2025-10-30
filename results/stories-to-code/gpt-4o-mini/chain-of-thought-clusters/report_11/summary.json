@@ -1,0 +1,28 @@
+{
+    "request_number": 11,
+    "timestamp": "2025-10-27 10:35:59",
+    "model": "openai/gpt-4o-mini",
+    "prompt_variant": "chain-of-thought-clusters",
+    "total_tokens": 706,
+    "avg_prob": 0.8093818986942208,
+    "perplexity": 1.235510704666492,
+    "struct_metrics": {
+        "avg_cyclomatic_complexity": 1.5,
+        "ast_depth": 11,
+        "avg_function_size_lines": 2.909090909090909,
+        "import_redundancy_ratio": 0.0
+    },
+    "semantic_metrics": {
+        "syntax_valid": true,
+        "flake8_error_count": 11,
+        "mypy_error_count": 0
+    },
+    "execution_metrics": {
+        "execution_success": true,
+        "execution_time_sec": 0.53,
+        "exception_type": "",
+        "exception_message": "",
+        "runtime_output": "[<__main__.Submission object at 0x7f8e42be3910>]\nFetched FABS data.\nScheduled user testing for 2023-10-01: Testing new UI changes."
+    },
+    "total_credibility": 84.92
+}

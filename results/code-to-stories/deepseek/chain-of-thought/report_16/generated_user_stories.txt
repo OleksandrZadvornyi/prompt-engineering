@@ -1,0 +1,24 @@
+Here are the user stories derived from the Python code:
+
+1. As a Broker User, I want to create a new submission, so that I can start the data publishing process.  
+2. As a Broker User, I want to publish my submission, so that my data becomes available to others.  
+3. As a Broker User, I want to validate my submission, so that I can catch errors before publishing.  
+4. As a Broker User, I want to track submission status changes, so that I can monitor progress.  
+5. As a Broker User, I want to load historical data, so that I can access past submissions.  
+6. As a UI Designer, I want to advance design rounds for pages, so that I can iterate on UI improvements.  
+7. As a UI Designer, I want to report issues to agencies, so that I can communicate feedback.  
+8. As a UI Designer, I want to track user testing issues, so that I can address usability concerns.  
+9. As a UI Designer, I want to schedule user testing sessions, so that I can gather feedback.  
+10. As a Data Processor, I want to process deletions, so that I can manage data cleanup.  
+11. As a Data Processor, I want to sync D1 file generation with FPDS data, so that my data stays up to date.  
+12. As a Validation Manager, I want to validate PPoP codes, so that I can ensure data accuracy.  
+13. As a Validation Manager, I want to validate DUNS numbers, so that I can verify entity identifiers.  
+14. As a Validation Manager, I want to validate federal action obligations, so that I can check financial data.  
+15. As a Validation Manager, I want to update validation rules, so that I can adapt to new requirements.  
+16. As a File Generator, I want to generate D files for submissions, so that I can provide formatted data.  
+17. As a Monitoring User, I want to track metrics, so that I can monitor system performance.  
+18. As a Monitoring User, I want to retrieve metrics, so that I can analyze trends.  
+19. As a Flex Field Manager, I want to add flex fields, so that I can store custom data.  
+20. As a Flex Field Manager, I want to retrieve flex fields, so that I can access stored custom data.  
+21. As a Historical Data Loader, I want to load historical FABS data, so that I can access past submissions.  
+22. As a Historical Data Loader, I want to load historical FPDS data, so that I can access past procurement data.

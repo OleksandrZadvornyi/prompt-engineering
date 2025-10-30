@@ -1,0 +1,25 @@
+As a data user, I want to process deletions for a specific date, so that I can ensure data accuracy.
+As a UI designer, I want to redesign the resources page, so that I can improve the user experience.
+As a UI designer, I want to report user testing results, so that I can track usability issues.
+As a UI designer, I want to move on to round 2 of DABS landing page edits, so that I can refine the design.
+As a UI designer, I want to move on to round 2 of homepage edits, so that I can enhance the user interface.
+As a UI designer, I want to move on to round 3 of help page edits, so that I can finalize the help content.
+As a developer, I want to improve logging, so that I can diagnose and resolve issues more efficiently.
+As a developer, I want to update FABS submission, so that I can ensure compliance with regulations.
+As a developer, I want to update the broker validation rule table, so that I can validate data correctly.
+As a developer, I want to add GTAS window data to the database, so that I can track financial transactions.
+As a developer, I want to manage D files generation requests, so that I can optimize data processing.
+As a developer, I want to index domain models, so that I can improve data retrieval performance.
+As a DevOps engineer, I want to configure New Relic, so that I can monitor application performance.
+As a broker user, I want to upload and validate error messages, so that I can ensure data integrity.
+As a broker user, I want to sync D1 file generation with FPDS data load, so that I can maintain data consistency.
+As a website user, I want to access published FABS files, so that I can view financial data.
+As an owner, I want to configure USAspend to send only grant records, so that I can ensure data accuracy.
+As an owner, I want to create a user testing summary, so that I can track and address usability issues.
+As an owner, I want to design a schedule from UI SME, so that I can plan and manage projects effectively.
+As an owner, I want to design an audit from UI SME, so that I can ensure compliance and risk management.
+As an agency user, I want to include flexfields without performance impact, so that I can capture additional data without compromising system performance.
+As an agency user, I want to update FABS validation rules for loan records, so that I can ensure compliance with regulations.
+As an agency user, I want to update FABS validation rules for non-loan records, so that I can ensure compliance with regulations.
+As an agency user, I want to deploy FABS into production, so that I can make financial data available to users.
+As an agency user, I want to ensure SAM data is complete, so that I can maintain data accuracy and integrity.

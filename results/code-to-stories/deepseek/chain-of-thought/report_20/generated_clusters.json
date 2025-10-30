@@ -1,0 +1,7 @@
+{
+  "(2,)": "As a user, I want to create a submission, so that I can start working on a new data submission",
+  "(4,)": "As a user, I want to update the publish status of my submission, so that I can manage its lifecycle (draft, published, pending) As a user, I want to retrieve my submission details, so that I can review or modify it",
+  "(0,)": "As a UI designer, I want to add a new UI component, so that I can track its design iterations As a UI designer, I want to update a component's design, so that the UI reflects the latest changes",
+  "(3,)": "As a data validator, I want to add a new validation rule, so that I can enforce data quality checks As a data validator, I want to toggle a validation rule's status, so that I can enable or disable it as needed",
+  "(1,)": "As a developer, I want to log application events, so that I can track system behavior for debugging As a developer, I want to retrieve logs, so that I can analyze system activity"
+}

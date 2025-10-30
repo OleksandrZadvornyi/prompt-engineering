@@ -1,0 +1,11 @@
+As a user, I want to submit data to FABS, so that my data can be processed and saved in the database.
+As a user, I want to validate a file before submitting it to FABS, so that only files with the correct extension and required columns are accepted.
+As a user, I want to get the status of my data submission, so that I can track the progress of my submission.
+As a user, I want to view DABS pages, so that I can access and view the processed data.
+As a data loader, I want to load historical FABS data, so that the system can process and save the data in the database.
+As a data loader, I want to generate D files from FABS and FPDS data, so that the system can create the necessary files for further processing.
+As a data processor, I want to derive fields from the data, so that the system can generate the required fields for the database.
+As a data processor, I want to save the processed data to the database, so that the data can be stored and retrieved as needed.
+As a PPoPCode deriver, I want to derive the PPoPCode from the data, so that the system can generate the required code for the database.
+As a FREC deriver, I want to derive the FREC from the data, so that the system can generate the required code for the database.
+As a data loader, I want to load historical FPDS data, so that the system can process and save the data in the database.

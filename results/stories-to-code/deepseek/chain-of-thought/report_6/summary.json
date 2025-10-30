@@ -1,0 +1,28 @@
+{
+    "request_number": 6,
+    "timestamp": "2025-10-26 22:01:33",
+    "model": "deepseek/deepseek-chat-v3-0324",
+    "prompt_variant": "chain-of-thought",
+    "total_tokens": 1265,
+    "avg_prob": 0.9377025227249602,
+    "perplexity": 1.0664362905775315,
+    "struct_metrics": {
+        "avg_cyclomatic_complexity": 1.4,
+        "ast_depth": 11,
+        "avg_function_size_lines": 4.25,
+        "import_redundancy_ratio": 0.0
+    },
+    "semantic_metrics": {
+        "syntax_valid": true,
+        "flake8_error_count": 36,
+        "mypy_error_count": 0
+    },
+    "execution_metrics": {
+        "execution_success": true,
+        "execution_time_sec": 0.497,
+        "exception_type": "",
+        "exception_message": "",
+        "runtime_output": "2025-10-30 05:54:33,661 - INFO - Processing deletions for 12-19-2017\n2025-10-30 05:54:33,662 - INFO - Redesigning Resources page to match Broker design styles.\n2025-10-30 05:54:33,662 - INFO - Updated logging for submission sub123: Validation failed due to missing fields\n2025-10-30 05:54:33,662 - INFO - Updating error message to: File format is invalid. Please upload a CSV file."
+    },
+    "total_credibility": 77.72
+}

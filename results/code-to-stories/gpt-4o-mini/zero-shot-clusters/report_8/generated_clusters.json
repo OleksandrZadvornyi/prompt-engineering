@@ -1,0 +1,7 @@
+{
+  "(2,)": "As a Data User, I want to process deletions for 12-19-2017, so that I can manage and clean outdated data effectively As a Broker User, I want to sync D1 file generation with FPDS data load, so that data is consistently updated and accurate",
+  "(1,)": "As a UI Designer, I want to redesign the Resources page to match Broker styles, so that the page is visually consistent and user-friendly As a UI Designer, I want to move on to round 2 of Help Page edits for approvals, so that I can finalize the design after gathering feedback",
+  "(4,)": "As a UI Designer, I want to report user testing to agencies, so that they are informed about user feedback and testing outcomes As a Developer, I want to manage D Files generation requests and caching, so that system performance is optimized and user requests are processed efficiently",
+  "(0,)": "As a DevOps Engineer, I want to provision useful data via New Relic, so that I can monitor application performance and user interactions As a Developer, I want to log troubleshooting improvements, so that future issues can be diagnosed more easily",
+  "(3,)": "As a FABS User, I want to upload FABS file successfully, so that my submissions are processed correctly and on time"
+}

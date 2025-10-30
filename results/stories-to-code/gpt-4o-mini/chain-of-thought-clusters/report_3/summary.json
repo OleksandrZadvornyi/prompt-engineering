@@ -1,0 +1,28 @@
+{
+    "request_number": 3,
+    "timestamp": "2025-10-27 10:33:06",
+    "model": "openai/gpt-4o-mini",
+    "prompt_variant": "chain-of-thought-clusters",
+    "total_tokens": 632,
+    "avg_prob": 0.8030158970005312,
+    "perplexity": 1.2453053591283243,
+    "struct_metrics": {
+        "avg_cyclomatic_complexity": 1.5217391304347827,
+        "ast_depth": 10,
+        "avg_function_size_lines": 3.7142857142857144,
+        "import_redundancy_ratio": 0.0
+    },
+    "semantic_metrics": {
+        "syntax_valid": true,
+        "flake8_error_count": 15,
+        "mypy_error_count": 2
+    },
+    "execution_metrics": {
+        "execution_success": false,
+        "execution_time_sec": 0.449,
+        "exception_type": "AttributeError",
+        "exception_message": "'Developer' object has no attribute 'submit_fabs'",
+        "runtime_output": "Requests cached.\n[<__main__.UserStory object at 0x79d199578a50>]\nTraceback (most recent call last):\n  File \"/app/main.py\", line 90, in <module>\n    print(dev_user.submit_fabs(submission))\n          ^^^^^^^^^^^^^^^^^^^^\nAttributeError: 'Developer' object has no attribute 'submit_fabs'"
+    },
+    "total_credibility": 51.26
+}

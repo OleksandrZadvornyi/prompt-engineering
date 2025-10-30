@@ -19,10 +19,10 @@
     },
     "execution_metrics": {
         "execution_success": true,
-        "execution_time_sec": 0.468,
+        "execution_time_sec": 0.506,
         "exception_type": "",
         "exception_message": "",
-        "runtime_output": "2025-10-25 18:17:45,456 - __main__ - INFO - Updated FABS submission 1 to SubmissionStatus.PUBLISHED\n{'id': 1, 'status': 'draft', 'updated': '2025-10-25T18:17:45.455950'}\nUser Testing Report for NASA\n- Homepage: passed\n- Resources: needs improvement"
+        "runtime_output": "2025-10-30 05:55:53,082 - __main__ - INFO - Updated FABS submission 1 to SubmissionStatus.PUBLISHED\n{'id': 1, 'status': 'draft', 'updated': '2025-10-30T05:55:53.082632'}\nUser Testing Report for NASA\n- Homepage: passed\n- Resources: needs improvement"
     },
-    "total_credibility": 68.25
+    "total_credibility": 74.05
 }

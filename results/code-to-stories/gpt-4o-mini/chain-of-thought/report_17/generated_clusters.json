@@ -1,0 +1,7 @@
+{
+  "(2,)": "As a Developer, I want to log issues for submissions, so that I can track and resolve problems effectively As a Developer, I want to prevent duplicate publishing of submissions, so that I can maintain data integrity As a UI User, I want to report on user testing, so that I can share insights and feedback from testing sessions",
+  "(1,)": "As a Developer, I want to update validation rules, so that I can ensure the correctness of the submissions As a Broker User, I want to upload and validate files, so that I can ensure the uploaded data is correct and usable As a FABS User, I want to validate submissions, so that I can ensure the data meets required standards before finalization As a Tester, I want to track issues found during testing, so that I can ensure they are addressed in future iterations",
+  "(0,)": "As a UI User, I want to redesign the resources page, so that it aligns with the new design styles and improves user experience",
+  "(4,)": "As a Broker User, I want to create content mockups, so that I can plan and visualize data submissions efficiently As a Data User, I want to process deletions based on a specific date, so that I can manage data effectively and maintain compliance As a FABS User, I want to download uploaded files, so that I can access and review submitted data as necessary",
+  "(3,)": "As a Submission Manager, I want to update the publish status of submissions, so that I can reflect the current state of each submission accurately"
+}

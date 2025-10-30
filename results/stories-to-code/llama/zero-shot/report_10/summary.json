@@ -1,0 +1,28 @@
+{
+    "request_number": 10,
+    "timestamp": "2025-10-26 15:12:14",
+    "model": "meta-llama/llama-3.3-70b-instruct",
+    "prompt_variant": "zero-shot",
+    "total_tokens": 1086,
+    "avg_prob": 0.9073980339778535,
+    "perplexity": 1.102052200417713,
+    "struct_metrics": {
+        "avg_cyclomatic_complexity": 1.1666666666666667,
+        "ast_depth": 10,
+        "avg_function_size_lines": 4.9,
+        "import_redundancy_ratio": 0.0
+    },
+    "semantic_metrics": {
+        "syntax_valid": true,
+        "flake8_error_count": 9,
+        "mypy_error_count": 0
+    },
+    "execution_metrics": {
+        "execution_success": true,
+        "execution_time_sec": 0.442,
+        "exception_type": "",
+        "exception_message": "",
+        "runtime_output": "INFO:__main__:Uploading and validating error message for user fabs_user\nINFO:__main__:Submitting financial assistance data for agency agency_user\nINFO:__main__:Updating Broker validation rule table for developer developer\nINFO:__main__:Processing deletions for user data_user\nINFO:__main__:Submitting records for user fabs_user without DUNS error\nINFO:__main__:Using schema v1.1 headers for agency agency_user\nINFO:__main__:Adding GTAS window data to database for developer developer\nINFO:__main__:Receiving updates to FABS records for user data_user"
+    },
+    "total_credibility": 87.82
+}

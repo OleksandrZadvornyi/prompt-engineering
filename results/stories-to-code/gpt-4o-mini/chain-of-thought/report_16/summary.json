@@ -1,0 +1,28 @@
+{
+    "request_number": 16,
+    "timestamp": "2025-10-26 21:38:20",
+    "model": "openai/gpt-4o-mini",
+    "prompt_variant": "chain-of-thought",
+    "total_tokens": 816,
+    "avg_prob": 0.8487791848773565,
+    "perplexity": 1.178162728088689,
+    "struct_metrics": {
+        "avg_cyclomatic_complexity": 1.5416666666666667,
+        "ast_depth": 11,
+        "avg_function_size_lines": 3.066666666666667,
+        "import_redundancy_ratio": 0.0
+    },
+    "semantic_metrics": {
+        "syntax_valid": true,
+        "flake8_error_count": 13,
+        "mypy_error_count": 0
+    },
+    "execution_metrics": {
+        "execution_success": true,
+        "execution_time_sec": 0.418,
+        "exception_type": "",
+        "exception_message": "",
+        "runtime_output": "Submission 101 uploaded by user 1.\nSubmission 101 is valid.\nUI designer 2 is redesigning the Resources page.\nUI designer 2 is reporting user testing results.\nDeveloper 3 logged an issue: Issue with submission validation.\nDeveloper 3 implemented logic to prevent double publishing.\nData user 4 is receiving updates to FABS records.\nOwner 5 created a user testing summary.\n[{'submission_id': 101, 'user_id': 1, 'status': 'pending'}]"
+    },
+    "total_credibility": 84.71
+}

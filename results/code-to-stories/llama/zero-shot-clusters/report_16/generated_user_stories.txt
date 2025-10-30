@@ -1,0 +1,11 @@
+As a FABS user, I want to submit a FABS file, so that I can upload my financial assistance data to the system.
+As a DABS user, I want to submit a DABS file, so that I can upload my award data to the system.
+As an agency user, I want to upload a file, so that I can share my data with other stakeholders.
+As a data user, I want to access published FABS files, so that I can view and analyze the financial assistance data.
+As a developer, I want to add updates to the FABS submission, so that I can improve the system's functionality.
+As a developer, I want to add GTAS window data to the database, so that I can enhance the system's data analytics capabilities.
+As a UI designer, I want to redesign the resources page, so that I can improve the user experience and accessibility of the system.
+As a UI designer, I want to report to agencies about user testing, so that I can inform them about the system's usability and areas for improvement.
+As a broker user, I want to upload and validate error messages, so that I can ensure the accuracy and quality of the data.
+As a broker user, I want to submit records for individual recipients, so that I can provide them with personalized information and support.
+As a validator, I want to validate FABS files, so that I can ensure they meet the required format and content standards.

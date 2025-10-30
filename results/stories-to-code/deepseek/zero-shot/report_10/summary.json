@@ -19,10 +19,10 @@
     },
     "execution_metrics": {
         "execution_success": true,
-        "execution_time_sec": 0.542,
+        "execution_time_sec": 0.571,
         "exception_type": "",
         "exception_message": "",
-        "runtime_output": "2025-10-25 18:17:20,961 - broker_app - INFO - Processing deletions for 2017-12-19 00:00:00\n2025-10-25 18:17:20,961 - broker_app - INFO - Redesigning Resources with Broker Design 2.0 style\n2025-10-25 18:17:20,961 - broker_app - INFO - Scheduled testing for agency1 on 2025-11-01 18:17:20.961627\n2025-10-25 18:17:20,961 - broker_app - INFO - Scheduled testing for agency2 on 2025-11-01 18:17:20.961627\n2025-10-25 18:17:20,961 - broker_app - INFO - Publish lock set for sub123\n2025-10-25 18:17:20,962 - broker_app - INFO - Deriving fields for FABS submission sub123\n2025-10-25 18:17:20,962 - broker_app - INFO - Generated D file for request req456\n2025-10-25 18:17:20,962 - broker_app - INFO - Validating FABS submission sub123\n2025-10-25 18:17:20,962 - broker_app - INFO - Loading historical FABS data with FREC derivations\n2025-10-25 18:17:20,962 - broker_app - INFO - Loading historical FPDS data with feed data"
+        "runtime_output": "2025-10-30 05:55:27,387 - broker_app - INFO - Processing deletions for 2017-12-19 00:00:00\n2025-10-30 05:55:27,389 - broker_app - INFO - Redesigning Resources with Broker Design 2.0 style\n2025-10-30 05:55:27,390 - broker_app - INFO - Scheduled testing for agency1 on 2025-11-06 05:55:27.390510\n2025-10-30 05:55:27,391 - broker_app - INFO - Scheduled testing for agency2 on 2025-11-06 05:55:27.390510\n2025-10-30 05:55:27,391 - broker_app - INFO - Publish lock set for sub123\n2025-10-30 05:55:27,391 - broker_app - INFO - Deriving fields for FABS submission sub123\n2025-10-30 05:55:27,391 - broker_app - INFO - Generated D file for request req456\n2025-10-30 05:55:27,392 - broker_app - INFO - Validating FABS submission sub123\n2025-10-30 05:55:27,392 - broker_app - INFO - Loading historical FABS data with FREC derivations\n2025-10-30 05:55:27,392 - broker_app - INFO - Loading historical FPDS data with feed data"
     },
-    "total_credibility": 70.65
+    "total_credibility": 76.56
 }

@@ -1,0 +1,8 @@
+{
+    "model": "meta-llama/llama-3.3-70b-instruct",
+    "prompt_variant": "chain-of-thought-clusters",
+    "semantic_consistency_score": 0.8088400363922119,
+    "embedding_model": "all-MiniLM-L6-v2",
+    "original_stories_count": 98,
+    "generated_stories_count": 20
+}

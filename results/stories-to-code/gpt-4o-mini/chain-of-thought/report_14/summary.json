@@ -1,0 +1,28 @@
+{
+    "request_number": 14,
+    "timestamp": "2025-10-26 21:37:41",
+    "model": "openai/gpt-4o-mini",
+    "prompt_variant": "chain-of-thought",
+    "total_tokens": 864,
+    "avg_prob": 0.7906267505148067,
+    "perplexity": 1.264819333963672,
+    "struct_metrics": {
+        "avg_cyclomatic_complexity": 1.3714285714285714,
+        "ast_depth": 9,
+        "avg_function_size_lines": 2.769230769230769,
+        "import_redundancy_ratio": 0.0
+    },
+    "semantic_metrics": {
+        "syntax_valid": true,
+        "flake8_error_count": 11,
+        "mypy_error_count": 1
+    },
+    "execution_metrics": {
+        "execution_success": true,
+        "execution_time_sec": 0.441,
+        "exception_type": "",
+        "exception_message": "",
+        "runtime_output": "Log: Submitting a new FABS record."
+    },
+    "total_credibility": 83.76
+}

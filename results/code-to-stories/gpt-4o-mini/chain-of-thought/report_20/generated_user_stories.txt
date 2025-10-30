@@ -1,0 +1,29 @@
+As a developer, I want to log issues, so that I can track and manage problems in the submission process.
+
+As a developer, I want to update the status of submissions, so that I can reflect their current state accurately.
+
+As a developer, I want to prevent double publishing of submissions, so that I can avoid duplicate entries in the system.
+
+As a UI designer, I want to redesign the resources page, so that it aligns with the latest design standards.
+
+As a UI designer, I want to report user testing outcomes, so that relevant agencies are informed about the results.
+
+As a UI designer, I want to schedule user testing, so that user feedback can be gathered efficiently.
+
+As an agency user, I want to include flexfields, so that additional data can be captured without affecting performance.
+
+As a FABS user, I want to submit data, so that it can be processed by the system.
+
+As a FABS user, I want to download uploaded files, so that I can access necessary documents.
+
+As an owner, I want to reset the environment, so that I can restore it to the correct permissions for testing.
+
+As an owner, I want to create a user testing summary, so that I can document and review testing results.
+
+As a file upload system, I want to upload files, so that users can submit necessary documents.
+
+As a file upload system, I want to validate uploaded files, so that I can ensure they meet required standards.
+
+As a historical data loader, I want to load historical data, so that previous records can be accessed and analyzed.
+
+As a D file generator, I want to generate D files based on submission data, so that necessary documentation can be produced.

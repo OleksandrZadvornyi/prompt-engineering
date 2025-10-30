@@ -1,0 +1,28 @@
+{
+    "request_number": 13,
+    "timestamp": "2025-10-26 22:09:34",
+    "model": "deepseek/deepseek-chat-v3-0324",
+    "prompt_variant": "chain-of-thought",
+    "total_tokens": 1025,
+    "avg_prob": 0.8962072010817331,
+    "perplexity": 1.1158133953766358,
+    "struct_metrics": {
+        "avg_cyclomatic_complexity": 1.44,
+        "ast_depth": 11,
+        "avg_function_size_lines": 4.3125,
+        "import_redundancy_ratio": 0.0
+    },
+    "semantic_metrics": {
+        "syntax_valid": true,
+        "flake8_error_count": 14,
+        "mypy_error_count": 0
+    },
+    "execution_metrics": {
+        "execution_success": true,
+        "execution_time_sec": 0.462,
+        "exception_type": "",
+        "exception_message": "",
+        "runtime_output": "INFO:__main__:Processing deletions for date: 12-19-2017\nINFO:__main__:Redesigning Resources page\nINFO:__main__:Updating publish status for submission sub123 to published\nINFO:__main__:Validating file: /path/to/file.csv"
+    },
+    "total_credibility": 84.98
+}

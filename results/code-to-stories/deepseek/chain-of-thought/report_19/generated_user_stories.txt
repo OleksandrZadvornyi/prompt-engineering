@@ -1,0 +1,19 @@
+Here are the user stories derived from the Python code:
+
+1. As a **User**, I want to **create a new submission**, so that **I can start the publishing process**.  
+2. As a **User**, I want to **upload a file for my submission**, so that **it can be processed and validated**.  
+3. As a **User**, I want to **publish my submission**, so that **it becomes publicly available**.  
+4. As a **User**, I want to **validate my submission**, so that **I can ensure it meets requirements before publishing**.  
+5. As a **System**, I want to **log status changes for submissions**, so that **I can track and debug issues**.  
+6. As an **Agency User**, I want to **manage FABS submissions**, so that **I can comply with reporting requirements**.  
+7. As a **Broker User**, I want to **manage DABS submissions**, so that **I can facilitate data exchange**.  
+8. As a **Developer**, I want to **prevent duplicate publishing attempts**, so that **I avoid data corruption**.  
+9. As a **UI Designer**, I want to **update page designs**, so that **I can improve the user experience**.  
+10. As a **Testing Manager**, I want to **schedule tests with participants**, so that **I can validate new features**.  
+11. As a **Testing Manager**, I want to **generate test reports**, so that **I can review outcomes and track progress**.  
+12. As a **Validator**, I want to **define validation rules for submissions**, so that **I can enforce data quality standards**.  
+13. As a **System Admin**, I want to **maintain validation rules dynamically**, so that **I can adapt to changing requirements**.  
+14. As a **User**, I want to **download published files**, so that **I can access the latest data**.  
+15. As a **Tester**, I want to **participate in scheduled tests**, so that **I can provide feedback on functionality**.  
+16. As a **Data User**, I want to **retrieve a list of published FABS files**, so that **I can analyze available datasets**.  
+17. As a **System**, I want to **track submission status (DRAFT, PUBLISHED, VALIDATED, ERROR)**, so that **I can manage workflows effectively**.

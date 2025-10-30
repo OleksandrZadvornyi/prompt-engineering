@@ -1,0 +1,13 @@
+Here are the user stories derived from the Python code:
+
+1. As a data administrator, I want to process deletions for a specific date, so that I can maintain data hygiene by removing outdated records.  
+2. As a FABS user, I want to update my submission status, so that I can track the progress of my submission through different stages.  
+3. As a FABS user, I want to validate my file before submission, so that I can identify and fix any errors or warnings.  
+4. As a data processor, I want to generate a D file from FABS and FPDS data, so that I can combine and analyze data from multiple sources efficiently.  
+5. As a system, I want to cache generated D files, so that I can avoid reprocessing the same data and improve performance.  
+6. As a FABS user, I want to derive funding agency codes from submission data, so that I can automatically categorize submissions.  
+7. As a UI designer, I want to redesign the Resources page, so that it matches the new Broker style guide.  
+8. As a UX researcher, I want to report user testing results to agencies, so that stakeholders can understand usability findings.  
+9. As a UX researcher, I want to schedule user testing sessions, so that I can efficiently plan and conduct usability studies.  
+10. As a FABS user, I want to retrieve published FABS files via an API, so that I can access finalized data submissions.  
+11. As a FABS user, I want to upload files through an API, so that I can submit data programmatically with proper tracking.

@@ -1,0 +1,5 @@
+{
+  "(0,)": "As a user, I want to add user stories to the manager, so that I can keep track of requirements and functionalities As a user, I want to display all user stories, so that I can see the complete set of requirements As a UI designer, I want to schedule user testing, so that I can ensure the usability of the product",
+  "(2,)": "As a user, I want to filter user stories by role, so that I can view only the relevant stories for a specific role As a developer, I want to manage D Files generation requests, so that I can streamline the process for generating necessary files As a FABS user, I want to view files, so that I can access published FABS files for my reference and use",
+  "(1,)": "As a UI designer, I want to track design updates, so that I can manage changes and issues effectively As a developer, I want to log improvements, so that I can keep track of changes and enhancements"
+}

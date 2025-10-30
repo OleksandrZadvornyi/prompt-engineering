@@ -1,0 +1,28 @@
+{
+    "request_number": 8,
+    "timestamp": "2025-10-27 10:34:52",
+    "model": "openai/gpt-4o-mini",
+    "prompt_variant": "chain-of-thought-clusters",
+    "total_tokens": 867,
+    "avg_prob": 0.8266560908346581,
+    "perplexity": 1.209692895373601,
+    "struct_metrics": {
+        "avg_cyclomatic_complexity": 1.5862068965517242,
+        "ast_depth": 10,
+        "avg_function_size_lines": 4,
+        "import_redundancy_ratio": 0.0
+    },
+    "semantic_metrics": {
+        "syntax_valid": true,
+        "flake8_error_count": 15,
+        "mypy_error_count": 0
+    },
+    "execution_metrics": {
+        "execution_success": true,
+        "execution_time_sec": 0.435,
+        "exception_type": "",
+        "exception_message": "",
+        "runtime_output": "Added UserStory: Process deletions\nAdded UserStory: Redesign Resources page\nAdded UserStory: Sync file generation\nProcessing deletion: Deletion 1\nProcessing deletion: Deletion 2\nRedesigning Resources page to match new Broker design styles.\nNo need to regenerate D1 file.\nValidating error message for ID 101: Error message should be accurate.\nDownloading uploaded FABS file with ID: 202\nReporting to agencies: User testing feedback collected."
+    },
+    "total_credibility": 83.19
+}

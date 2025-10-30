@@ -1,0 +1,28 @@
+{
+    "request_number": 2,
+    "timestamp": "2025-10-26 21:41:25",
+    "model": "meta-llama/llama-3.3-70b-instruct",
+    "prompt_variant": "chain-of-thought",
+    "total_tokens": 1386,
+    "avg_prob": 0.8999614848458448,
+    "perplexity": 1.111158662719095,
+    "struct_metrics": {
+        "avg_cyclomatic_complexity": 1.358974358974359,
+        "ast_depth": 12,
+        "avg_function_size_lines": 4.903225806451613,
+        "import_redundancy_ratio": 0.0
+    },
+    "semantic_metrics": {
+        "syntax_valid": true,
+        "flake8_error_count": 40,
+        "mypy_error_count": 0
+    },
+    "execution_metrics": {
+        "execution_success": true,
+        "execution_time_sec": 0.452,
+        "exception_type": "",
+        "exception_message": "",
+        "runtime_output": "Submission 1 by John Doe has been submitted.\nFPDS data loaded.\nValidation passed for submission 1.\nFalse\nDomain model indexed.\nDuplicate transaction prevented.\nFalse\nData elements submitted for submission 1."
+    },
+    "total_credibility": 77.06
+}

@@ -1,0 +1,10 @@
+As a system administrator, I want to create different types of users with specific roles, so that I can manage access to the system.
+As a user, I want to submit data with a specific status, so that I can track the progress of my submission.
+As a validator, I want to validate submissions based on predefined rules, so that I can ensure data quality.
+As a data analyst, I want to load historical FPDS data, so that I can analyze trends and patterns.
+As a submission manager, I want to generate D files for submissions, so that I can create required documentation.
+As a validator, I want to derive PPoP codes for submissions, so that I can ensure data consistency.
+As a developer, I want to handle validation errors, so that I can provide meaningful feedback to users.
+As a system user, I want to get the status of a submission, so that I can track the progress of my submission.
+As a data manager, I want to cache generated D files, so that I can improve system performance.
+As a validation manager, I want to apply validation rules based on user type, so that I can enforce specific requirements.

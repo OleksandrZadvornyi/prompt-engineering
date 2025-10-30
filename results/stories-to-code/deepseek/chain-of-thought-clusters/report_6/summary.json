@@ -1,0 +1,28 @@
+{
+    "request_number": 6,
+    "timestamp": "2025-10-26 22:32:49",
+    "model": "deepseek/deepseek-chat-v3-0324",
+    "prompt_variant": "chain-of-thought-clusters",
+    "total_tokens": 1331,
+    "avg_prob": 0.9315162911563506,
+    "perplexity": 1.0735185304796293,
+    "struct_metrics": {
+        "avg_cyclomatic_complexity": 1.441860465116279,
+        "ast_depth": 13,
+        "avg_function_size_lines": 3.40625,
+        "import_redundancy_ratio": 0.0
+    },
+    "semantic_metrics": {
+        "syntax_valid": true,
+        "flake8_error_count": 15,
+        "mypy_error_count": 0
+    },
+    "execution_metrics": {
+        "execution_success": true,
+        "execution_time_sec": 0.41,
+        "exception_type": "",
+        "exception_message": "",
+        "runtime_output": ""
+    },
+    "total_credibility": 85.24
+}

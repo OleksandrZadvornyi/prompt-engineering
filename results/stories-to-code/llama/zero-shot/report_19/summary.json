@@ -1,0 +1,28 @@
+{
+    "request_number": 19,
+    "timestamp": "2025-10-26 15:23:10",
+    "model": "meta-llama/llama-3.3-70b-instruct",
+    "prompt_variant": "zero-shot",
+    "total_tokens": 1563,
+    "avg_prob": 0.8940814221958135,
+    "perplexity": 1.118466366904321,
+    "struct_metrics": {
+        "avg_cyclomatic_complexity": 1.4680851063829787,
+        "ast_depth": 10,
+        "avg_function_size_lines": 5.657894736842105,
+        "import_redundancy_ratio": 0.0
+    },
+    "semantic_metrics": {
+        "syntax_valid": true,
+        "flake8_error_count": 5,
+        "mypy_error_count": 0
+    },
+    "execution_metrics": {
+        "execution_success": false,
+        "execution_time_sec": 0.417,
+        "exception_type": "FileNotFoundError",
+        "exception_message": "[Errno 2] No such file or directory: 'file.csv'",
+        "runtime_output": "Traceback (most recent call last):\n  File \"/app/main.py\", line 276, in <module>\n    main()\n  File \"/app/main.py\", line 248, in main\n    agency_user.submit_data('file.csv')\n  File \"/app/main.py\", line 188, in submit_data\n    return self.fabss.submit(file)\n           ^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/app/main.py\", line 7, in submit\n    if not self.validate_file(file):\n           ^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/app/main.py\", line 21, in validate_file\n    with open(file, 'r') as f:\n         ^^^^^^^^^^^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: 'file.csv'"
+    },
+    "total_credibility": 59.79
+}

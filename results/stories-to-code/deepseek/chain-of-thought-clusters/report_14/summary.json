@@ -1,0 +1,28 @@
+{
+    "request_number": 14,
+    "timestamp": "2025-10-26 22:40:27",
+    "model": "deepseek/deepseek-chat-v3-0324",
+    "prompt_variant": "chain-of-thought-clusters",
+    "total_tokens": 1122,
+    "avg_prob": 0.8716579523273172,
+    "perplexity": 1.147239002787746,
+    "struct_metrics": {
+        "avg_cyclomatic_complexity": 1.3823529411764706,
+        "ast_depth": 13,
+        "avg_function_size_lines": 3.3846153846153846,
+        "import_redundancy_ratio": 0.0
+    },
+    "semantic_metrics": {
+        "syntax_valid": true,
+        "flake8_error_count": 12,
+        "mypy_error_count": 0
+    },
+    "execution_metrics": {
+        "execution_success": true,
+        "execution_time_sec": 0.421,
+        "exception_type": "",
+        "exception_message": "",
+        "runtime_output": "Invalid CFDA number. Please check the format and try again.\nTrue"
+    },
+    "total_credibility": 85.69
+}

@@ -1,0 +1,12 @@
+As a user, I want to create a user story, so that I can keep track of important tasks and requirements.  
+As a user, I want to update a user story's description, so that I can reflect changes in requirements or tasks.  
+As a user, I want to add a user story to my account, so that I can manage my tasks in one place.  
+As a user, I want to retrieve all my user stories, so that I can review my tasks and their statuses.  
+As a data user, I want to access data, so that I can analyze it for insights.  
+As a FABS user, I want to submit a FABS submission, so that it can be processed and published.  
+As an agency user, I want to check the submission period, so that I can ensure my submissions are timely.  
+As a developer, I want to cache generation requests, so that I can optimize performance and reduce load times.  
+As a UI/UX designer, I want to track issues, so that I can ensure a smooth user experience and resolve problems effectively.  
+As a broker user, I want to upload and validate a submission, so that I can ensure the submission meets all requirements before publishing.  
+As a user, I want to validate a submission, so that I can confirm it is ready for publication.  
+As a user, I want to publish a submission, so that it becomes available for review or processing.

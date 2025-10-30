@@ -1,0 +1,31 @@
+As a Developer, I want to log issues, so that I can keep track of debugging submission problems.
+
+As a Developer, I want to update validation rules, so that I can ensure compliance with the latest requirements.
+
+As a Developer, I want to prevent double publishing, so that I can avoid duplicate submissions.
+
+As a Developer, I want to clarify error codes, so that I can provide better support and understanding of issues.
+
+As a UIDesigner, I want to redesign the Resources page, so that it matches the new styles and improves user experience.
+
+As a UIDesigner, I want to report user testing results, so that agencies can understand usability feedback.
+
+As a UIDesigner, I want to move to the next round of edits for various pages, so that I can ensure continuous improvement and refinement.
+
+As a UIDesigner, I want to track issues from Tech Thursday, so that I can address user feedback effectively.
+
+As a DataUser, I want to process deletions for a specific date, so that I can maintain data integrity.
+
+As a DataUser, I want to access FABS records, so that I can retrieve necessary financial information.
+
+As an AgencyUser, I want to include flexfields, so that I can enhance data collection without impacting performance.
+
+As an AgencyUser, I want to deploy FABS into production, so that the system can be used effectively by the agencies.
+
+As a BrokerUser, I want to submit data efficiently, so that I can minimize processing time and errors.
+
+As a BrokerUser, I want to upload and validate data with accurate error messages, so that I can ensure data quality.
+
+As a FABSUser, I want to generate D Files from FABS and FPDS data, so that I can produce necessary documentation.
+
+As a FABSUser, I want to download the uploaded FABS file, so that I can access and use the data as needed.

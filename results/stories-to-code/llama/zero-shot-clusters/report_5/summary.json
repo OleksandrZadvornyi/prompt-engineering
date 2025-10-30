@@ -1,0 +1,28 @@
+{
+    "request_number": 5,
+    "timestamp": "2025-10-26 15:49:20",
+    "model": "meta-llama/llama-3.3-70b-instruct",
+    "prompt_variant": "zero-shot-clusters",
+    "total_tokens": 974,
+    "avg_prob": 0.9235946736253329,
+    "perplexity": 1.0827260361677464,
+    "struct_metrics": {
+        "avg_cyclomatic_complexity": 1.631578947368421,
+        "ast_depth": 11,
+        "avg_function_size_lines": 7.333333333333333,
+        "import_redundancy_ratio": 0.0
+    },
+    "semantic_metrics": {
+        "syntax_valid": true,
+        "flake8_error_count": 9,
+        "mypy_error_count": 0
+    },
+    "execution_metrics": {
+        "execution_success": true,
+        "execution_time_sec": 0.455,
+        "exception_type": "",
+        "exception_message": "",
+        "runtime_output": "2025-10-30 06:02:17,556 - ERROR - FABS file not found.\n2025-10-30 06:02:17,556 - ERROR - Failed to submit FABS file.\n2025-10-30 06:02:17,556 - INFO - FPDS data loaded successfully.\n2025-10-30 06:02:17,556 - INFO - FPDS data loaded successfully.\n2025-10-30 06:02:17,556 - ERROR - DABS file not found.\n2025-10-30 06:02:17,556 - ERROR - Failed to submit DABS file.\n2025-10-30 06:02:17,556 - INFO - FABS submissions: []\n2025-10-30 06:02:17,556 - INFO - FPDS data: ['fpds_data_1', 'fpds_data_2']\n2025-10-30 06:02:17,556 - INFO - DABS submissions: []"
+    },
+    "total_credibility": 87.64
+}

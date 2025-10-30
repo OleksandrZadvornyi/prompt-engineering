@@ -1,0 +1,8 @@
+{
+    "model": "openai/gpt-4o-mini",
+    "prompt_variant": "chain-of-thought",
+    "semantic_consistency_score": 0.6023122072219849,
+    "embedding_model": "all-MiniLM-L6-v2",
+    "original_stories_count": 98,
+    "generated_stories_count": 11
+}

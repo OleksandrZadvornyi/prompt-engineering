@@ -1,0 +1,7 @@
+{
+  "(0,)": "As a system administrator, I want to upload and validate files, so that I can ensure the data is accurate and usable for further processing As a data validator, I want to validate the FABS data, so that I can ensure it meets the required standards and rules",
+  "(2,)": "As a data analyst, I want to derive additional fields from the uploaded submissions, so that I can gain more insights from the data",
+  "(1,)": "As a system administrator, I want to submit FABS data, so that I can store and track it for future reference As a data analyst, I want to load and access FPDS data, so that I can use it for analysis and reporting As a quality assurance specialist, I want to track and manage UI improvements, so that I can identify and prioritize areas for improvement",
+  "(3,)": "As a system administrator, I want to add new validation rules for FABS data, so that I can adapt to changing requirements and standards As a system administrator, I want to log messages and events, so that I can monitor and troubleshoot the system As a system administrator, I want to review the system log, so that I can identify issues and trends",
+  "(4,)": "As a system administrator, I want to generate a D file based on the uploaded submission, FABS data, and FPDS data, so that I can produce the required output"
+}

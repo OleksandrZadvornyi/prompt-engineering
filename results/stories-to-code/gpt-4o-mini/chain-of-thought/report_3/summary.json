@@ -1,0 +1,28 @@
+{
+    "request_number": 3,
+    "timestamp": "2025-10-26 21:33:53",
+    "model": "openai/gpt-4o-mini",
+    "prompt_variant": "chain-of-thought",
+    "total_tokens": 672,
+    "avg_prob": 0.7979303603304886,
+    "perplexity": 1.253242199715045,
+    "struct_metrics": {
+        "avg_cyclomatic_complexity": 1.5,
+        "ast_depth": 11,
+        "avg_function_size_lines": 3.764705882352941,
+        "import_redundancy_ratio": 0.0
+    },
+    "semantic_metrics": {
+        "syntax_valid": true,
+        "flake8_error_count": 16,
+        "mypy_error_count": 0
+    },
+    "execution_metrics": {
+        "execution_success": true,
+        "execution_time_sec": 0.424,
+        "exception_type": "",
+        "exception_message": "",
+        "runtime_output": "Submission 101 added.\nSubmission 101 validated successfully.\nSubmission 101 published by 1"
+    },
+    "total_credibility": 82.26
+}

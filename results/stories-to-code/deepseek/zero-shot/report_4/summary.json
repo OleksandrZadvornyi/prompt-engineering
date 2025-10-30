@@ -19,10 +19,10 @@
     },
     "execution_metrics": {
         "execution_success": true,
-        "execution_time_sec": 0.576,
+        "execution_time_sec": 0.53,
         "exception_type": "",
         "exception_message": "",
-        "runtime_output": "2025-10-25 18:18:13,109 - __main__ - INFO - Processing deletions for 2017-12-19 00:00:00\n2025-10-25 18:18:13,109 - __main__ - INFO - Redesigning Resources page with new styles\n2025-10-25 18:18:13,109 - __main__ - INFO - Sending user testing report to DOT\n2025-10-25 18:18:13,110 - __main__ - INFO - Updating submission sub123 to Validated\n2025-10-25 18:18:13,110 - __main__ - INFO - Derived funding agency code: DOT\n2025-10-25 18:18:13,110 - __main__ - INFO - Found 0 published files"
+        "runtime_output": "2025-10-30 05:56:19,967 - __main__ - INFO - Processing deletions for 2017-12-19 00:00:00\n2025-10-30 05:56:19,967 - __main__ - INFO - Redesigning Resources page with new styles\n2025-10-30 05:56:19,968 - __main__ - INFO - Sending user testing report to DOT\n2025-10-30 05:56:19,968 - __main__ - INFO - Updating submission sub123 to Validated\n2025-10-30 05:56:19,968 - __main__ - INFO - Derived funding agency code: DOT\n2025-10-30 05:56:19,968 - __main__ - INFO - Found 0 published files"
     },
-    "total_credibility": 71.05
+    "total_credibility": 76.83
 }

@@ -1,0 +1,34 @@
+Here are the user stories derived from the Python code, following the specified format:
+
+```
+As a Data Processor, I want to process deletions for a specific date, so that I can maintain data cleanliness and accuracy.
+As a UI Designer, I want to redesign the Resources page, so that it matches new Broker design styles.
+As a UI Designer, I want to report user testing results to agencies, so that they can provide feedback and improve the interface.
+As a DevOps Engineer, I want to configure New Relic for all applications, so that I can monitor performance and troubleshoot issues.
+As a Broker User, I want to sync D1 file generation with FPDS data load, so that files are generated only when data is available.
+As a Broker Team Member, I want to update SQL codes for clarity, so that the codebase is easier to maintain.
+As a Broker Team Member, I want to add PPoPCode cases to derivation logic, so that data processing is more comprehensive.
+As a Broker Team Member, I want to derive FundingAgencyCode, so that data quality is improved.
+As an Agency User, I want to map FederalActionObligation to Atom Feed, so that financial data is correctly represented.
+As an Agency User, I want to validate PPoPZIP+4, so that it matches Legal Entity ZIP validations.
+As a Developer, I want to improve logging for a specific submission, so that debugging is easier.
+As a Developer, I want to ensure domain models are properly indexed, so that queries are more efficient.
+As a Developer, I want to quickly access Broker application data, so that I can retrieve necessary information efficiently.
+As a Website User, I want to access published FABS files, so that I can view or download the latest data.
+As an Owner, I want to reset environment permissions to only take Staging MAX permissions, so that security is maintained.
+As an Owner, I want to create a user testing summary from UI SME feedback, so that we can track and act on improvements.
+As a FABS User, I want to set read-only access to DABS, so that I can control data modification privileges.
+As a FABS User, I want to navigate to FABS or DABS landing page, so that I can access the correct dashboard.
+As a FABS Submission Manager, I want to update publish status and log the change, so that submissions are tracked accurately.
+As a FABS Submission Manager, I want to deactivate the publish button during derivations, so that users don’t publish incomplete data.
+As a FPDS Loader, I want to load historical FPDS data for a given year, so that past records are available for analysis.
+As a Validation Manager, I want to update validation rules, so that data integrity is maintained.
+As a Validation Manager, I want to prevent duplicate transactions from being published, so that data accuracy is ensured.
+As a File Manager, I want to cache D File generation requests, so that duplicates are avoided.
+As a File Manager, I want to generate D Files from FABS/FPDS data, so that reports are up-to-date.
+As a FABS Validator, I want to validate loan records (accept zero/blank), so that incomplete records are handled correctly.
+As a SAM Data Manager, I want to ensure SAM data is complete, so that all records are validated.
+As an Office Data Manager, I want to derive office names from office codes, so that data is more readable.
+As a Sample File Manager, I want to update the SAMPLE FILE link, so that users access the latest sample data.
+As a Status Manager, I want to update status labels for a submission, so that progress is clearly communicated.
+```

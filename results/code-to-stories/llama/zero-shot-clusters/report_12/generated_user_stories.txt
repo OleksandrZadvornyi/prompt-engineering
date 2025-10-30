@@ -1,0 +1,10 @@
+As a data administrator, I want to upload a file to the broker, so that I can store and process the file content.
+As a data validator, I want to validate a submission against required elements, so that I can ensure data integrity and completeness.
+As a data processor, I want to process deletions for a given date, so that I can remove outdated or unnecessary data.
+As a FABS user, I want to submit a file to FABS, so that I can share and store the file content.
+As a FABS validator, I want to validate a file for FABS submission, so that I can ensure the file meets the required format and extension.
+As a FABS user, I want to get the status of a submitted file, so that I can track the file's processing and approval status.
+As a DABS user, I want to submit a file to DABS, so that I can share and store the file content.
+As a DABS validator, I want to validate a file for DABS submission, so that I can ensure the file meets the required format and extension.
+As a financial data manager, I want to update financial assistance data, so that I can keep the records up-to-date and accurate.
+As a financial data analyst, I want to retrieve financial assistance data, so that I can analyze and report on the data.

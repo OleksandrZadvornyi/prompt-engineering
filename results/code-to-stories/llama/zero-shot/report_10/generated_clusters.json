@@ -1,0 +1,7 @@
+{
+  "(4,)": "As a FABSUser, I want to upload and validate error messages, so that I can ensure the accuracy and validity of the error messages",
+  "(2,)": "As a FABSUser, I want to submit records without DUNS errors, so that I can successfully submit my records",
+  "(3,)": "As a FABSUser, I want to access raw agency published files, so that I can retrieve the necessary information As a FABSUser, I want to submit citywide data as PPoPZIP, so that I can provide the required data in the correct format As a Developer, I want to add GTAS window data to the database, so that I can store and manage the necessary data As a Developer, I want to prevent duplicate transactions from being published, so that I can ensure data integrity and accuracy As a DataUser, I want to process deletions, so that I can manage and update the data effectively As a DataUser, I want to receive updates to FABS records, so that I can stay informed and up-to-date with the latest information",
+  "(0,)": "As a FABSUser, I want to download uploaded FABS files, so that I can access and review my previously uploaded files As a Developer, I want to manage and cache D Files generation requests, so that I can optimize system performance and efficiency",
+  "(1,)": "As a Developer, I want to update the Broker validation rule table, so that I can ensure the accuracy and validity of the validation rules"
+}

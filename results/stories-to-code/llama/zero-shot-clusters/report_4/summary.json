@@ -1,0 +1,28 @@
+{
+    "request_number": 4,
+    "timestamp": "2025-10-26 15:49:01",
+    "model": "meta-llama/llama-3.3-70b-instruct",
+    "prompt_variant": "zero-shot-clusters",
+    "total_tokens": 1165,
+    "avg_prob": 0.9025233459405351,
+    "perplexity": 1.1080045790481827,
+    "struct_metrics": {
+        "avg_cyclomatic_complexity": 1.46875,
+        "ast_depth": 11,
+        "avg_function_size_lines": 5.72,
+        "import_redundancy_ratio": 0.0
+    },
+    "semantic_metrics": {
+        "syntax_valid": true,
+        "flake8_error_count": 6,
+        "mypy_error_count": 0
+    },
+    "execution_metrics": {
+        "execution_success": false,
+        "execution_time_sec": 0.42,
+        "exception_type": "TypeError",
+        "exception_message": "unhashable type: 'dict'",
+        "runtime_output": "File uploaded and validated successfully\nFABS data submitted successfully\nFPDS data loaded successfully\nTraceback (most recent call last):\n  File \"/app/main.py\", line 185, in <module>\n    main()\n  File \"/app/main.py\", line 163, in main\n    d_file = d_file_generator.generate_d_file(submission)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/app/main.py\", line 91, in generate_d_file\n    derived_fields = self.broker.derive_fields(submission)\n                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/app/main.py\", line 17, in derive_fields\n    self.derived_data[submission] = {\n    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^\nTypeError: unhashable type: 'dict'"
+    },
+    "total_credibility": 59.44
+}

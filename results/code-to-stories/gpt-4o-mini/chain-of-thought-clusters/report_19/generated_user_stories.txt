@@ -1,0 +1,26 @@
+As a Data User, I want to process deletions for a specific date, so that I can manage data integrity effectively.  
+As a UI Designer, I want to redesign the Resources page, so that it aligns with new design styles and improves user experience.  
+As a UI Designer, I want to report user testing contributions, so that agencies are informed of feedback and improvements.  
+As a DevOps Engineer, I want to provide useful data across all applications, so that teams can monitor application performance effectively.  
+As a Broker User, I want to sync D1 file generation with FPDS data load, so that data management is accurate and up-to-date.  
+As a Broker User, I want to create content mockups, so that data submission processes are more efficient.  
+As a Broker User, I want to get updated error codes, so that they accurately reflect the logic in our systems.  
+As a Broker User, I want to validate PPoPZIP+4, so that it functions the same way as Legal Entity ZIP validations.  
+As a Developer, I want to improve logging, so that troubleshooting submissions and functions becomes easier.  
+As a Developer, I want to update SQL codes, so that they are clearer and more maintainable.  
+As a Developer, I want to manage D Files requests, so that I can avoid duplicate generation requests.  
+As a Developer, I want to add GTAS data to the database, so that it can be locked during submissions effectively.  
+As a Developer, I want to update the FABS sample file, so that it no longer includes the FundingAgencyCode.  
+As a Developer, I want to prevent duplicate publishing, so that users do not accidentally submit the same FABS entries multiple times.  
+As an Agency User, I want to map Federal Action Obligation to the Atom Feed, so that data is accurately represented.  
+As an Agency User, I want to display updated date and time in the header, so that users have the latest information available.  
+As an Agency User, I want to include a large number of flexfields, so that we can capture detailed data without impacting performance.  
+As a Submission Dashboard user, I want to see correct status labels, so that I can easily understand the state of submissions.  
+As a FABS User, I want to access published FABS files, so that I can review new entries.  
+As a FABS User, I want to download uploaded FABS files, so that I can keep a local copy of submissions.  
+As a FABS User, I want the appropriate language displayed on FABS pages, so that users can understand the content clearly.  
+As a FABS User, I want to ensure submission errors accurately represent FABS errors, so that users can address issues effectively.  
+As an Owner, I want to ensure that only grant records are sent to the system, so that we maintain data accuracy.  
+As an Owner, I want to create a user testing summary, so that I can document findings from user testing effectively.  
+As an Owner, I want to design a schedule for UI improvements, so that we can plan and implement changes systematically.  
+As an Owner, I want to reset environment permissions, so that systems only have necessary access and maintain security.

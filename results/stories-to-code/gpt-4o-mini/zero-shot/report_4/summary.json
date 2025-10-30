@@ -19,10 +19,10 @@
     },
     "execution_metrics": {
         "execution_success": true,
-        "execution_time_sec": 0.763,
+        "execution_time_sec": 0.429,
         "exception_type": "",
         "exception_message": "",
-        "runtime_output": "2025-10-25 18:20:12,809 - INFO - Processing deletions for date: 2017-12-19 00:00:00\n2025-10-25 18:20:12,810 - INFO - Redesigning Resources page to match new Broker design styles.\n2025-10-25 18:20:12,810 - INFO - Reporting user testing results to the agencies.\n2025-10-25 18:20:12,810 - INFO - Moving on to round 2 edits for the Help Page to get approvals from leadership.\n2025-10-25 18:20:12,810 - ERROR - Error occurred: Test error\n2025-10-25 18:20:12,811 - INFO - Updating submission 1 status to Published.\n2025-10-25 18:20:12,811 - INFO - Uploading file: example_file.csv.\n2025-10-25 18:20:12,811 - INFO - Skipping D1 file generation, no data change.\n2025-10-25 18:20:12,811 - INFO - Submitting data: {'example': 'data'}.\n2025-10-25 18:20:12,811 - INFO - Validating submitted data.\n2025-10-25 18:20:12,811 - INFO - Including large number of flexfields in submission.\n2025-10-25 18:20:12,811 - INFO - Ensuring only grant records are sent.\n2025-10-25 18:20:12,811 - INFO - Including flexfields without performance impact.\n2025-10-25 18:20:12,811 - INFO - Downloading uploaded FABS file with ID: 12345."
+        "runtime_output": "2025-10-30 05:59:19,124 - INFO - Processing deletions for date: 2017-12-19 00:00:00\n2025-10-30 05:59:19,124 - INFO - Redesigning Resources page to match new Broker design styles.\n2025-10-30 05:59:19,124 - INFO - Reporting user testing results to the agencies.\n2025-10-30 05:59:19,124 - INFO - Moving on to round 2 edits for the Help Page to get approvals from leadership.\n2025-10-30 05:59:19,124 - ERROR - Error occurred: Test error\n2025-10-30 05:59:19,124 - INFO - Updating submission 1 status to Published.\n2025-10-30 05:59:19,125 - INFO - Uploading file: example_file.csv.\n2025-10-30 05:59:19,125 - INFO - Skipping D1 file generation, no data change.\n2025-10-30 05:59:19,125 - INFO - Submitting data: {'example': 'data'}.\n2025-10-30 05:59:19,125 - INFO - Validating submitted data.\n2025-10-30 05:59:19,125 - INFO - Including large number of flexfields in submission.\n2025-10-30 05:59:19,125 - INFO - Ensuring only grant records are sent.\n2025-10-30 05:59:19,125 - INFO - Including flexfields without performance impact.\n2025-10-30 05:59:19,125 - INFO - Downloading uploaded FABS file with ID: 12345."
     },
-    "total_credibility": 76.72
+    "total_credibility": 79.27
 }
