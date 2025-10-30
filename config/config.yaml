@@ -6,21 +6,18 @@ models:
   gpt-4o-mini:
     identifier: "openai/gpt-4o-mini"
     provider: "openai"
-  grok-4-fast:
-    identifier: "x-ai/grok-4-fast"
-    provider: "xai"
-  qwen3-coder:
-    identifier: "qwen/qwen3-coder-30b-a3b-instruct"
-    provider: "nebius"
+  llama:
+    identifier: "meta-llama/llama-3.3-70b-instruct"
+    provider: "crusoe"
   deepseek:
     identifier: "deepseek/deepseek-chat-v3-0324"
-    provider: "nebius"
+    provider: "crusoe"
 
 # --- Current Experiment Settings ---
 # Select which experiment to run by changing the values here.
 experiment:
-  model_key: "deepseek" # Use the safe key from the 'models' section
-  prompt_variant: "zero-shot"
+  model_key: "llama" # Use the safe key from the 'models' section
+  prompt_variant: "chain-of-thought-clusters"
 
 # --- Project Paths ---
 project_paths:
