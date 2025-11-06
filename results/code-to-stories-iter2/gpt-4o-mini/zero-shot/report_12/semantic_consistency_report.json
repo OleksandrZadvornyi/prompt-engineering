@@ -1,0 +1,15 @@
+{
+    "model": "gpt-4o-mini",
+    "prompt_variant": "zero-shot",
+    "embedding_model": "all-MiniLM-L6-v2",
+    "scores": {
+        "original_vs_iter1": 0.7816650867462158,
+        "original_vs_iter2": 0.7185574769973755,
+        "iter1_vs_iter2": 0.9361993670463562
+    },
+    "counts": {
+        "original": 98,
+        "iter1": 12,
+        "iter2": 9
+    }
+}

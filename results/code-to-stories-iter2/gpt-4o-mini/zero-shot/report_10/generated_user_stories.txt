@@ -1,0 +1,33 @@
+As a data manager, I want to delete records by date, so that I can maintain a clean and relevant dataset.
+
+As a web developer, I want to redesign the resources page with a specific style, so that it aligns with the desired aesthetics and user experience.
+
+As a user experience researcher, I want to report user testing results to relevant agencies, so that they are informed about the findings and can make necessary adjustments.
+
+As a content editor, I want to move to the next round of edits for a specific page, so that the content can be refined and improved.
+
+As a system administrator, I want to log activity whenever an action is performed, so that there is a record of changes and operations for auditing and troubleshooting.
+
+As a project manager, I want to update the status of FABS submissions, so that stakeholders can track progress accurately.
+
+As a data analyst, I want to retrieve data from New Relic, so that I can analyze system performance.
+
+As a quality assurance tester, I want to validate error messages, so that they are clear and helpful for users.
+
+As a data engineer, I want to sync D1 file generation with FPDS data load, so that data processing occurs efficiently and accurately.
+
+As a data manager, I want to access published FABS files, so that I can review and utilize the necessary records.
+
+As a compliance officer, I want to ensure that only grant records are sent, so that we comply with regulations and guidelines.
+
+As a system administrator, I want to update the broker validation rule table, so that the rules reflect current requirements.
+
+As a data manager, I want to add GTAS window data, so that I can enhance the dataset with relevant information.
+
+As a request manager, I want to manage D Files generation requests, so that processing is organized and efficient.
+
+As a data analyst, I want to access raw agency published files, so that I can analyze unprocessed records.
+
+As a developer, I want to include a large number of flexfields, so that the system can accommodate diverse data needs.
+
+As a project coordinator, I want to track issues

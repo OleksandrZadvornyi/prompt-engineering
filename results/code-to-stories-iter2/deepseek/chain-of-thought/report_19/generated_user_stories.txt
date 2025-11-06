@@ -1,0 +1,15 @@
+Here are the user stories derived from the code:
+
+1. As a submitter, I want to create a new submission, so that I can start uploading my files for processing.  
+2. As a submitter, I want to upload files to my submission, so that I can include all required data for validation.  
+3. As a validator, I want to add validation rules, so that submissions can be checked against specific requirements.  
+4. As a validator, I want to validate a submission, so that I can ensure it meets all the required criteria.  
+5. As a submitter, I want to publish a validated submission, so that it can be finalized and made available to others.  
+6. As a user, I want to check the status of a submission, so that I can track its progress.  
+7. As a test coordinator, I want to schedule a test, so that participants can be notified and prepared.  
+8. As a test participant, I want to provide feedback for a test, so that my input can be included in the results.  
+9. As a test coordinator, I want to generate a test report, so that I can review feedback and outcomes.  
+10. As a validator, I want to remove validation rules, so that outdated or incorrect rules are no longer applied.  
+11. As a user, I want to download published files, so that I can access the finalized data.  
+12. As a user, I want to list published files, so that I can see what is available for download.  
+13. As a system, I want to log submission creation, validation, and publishing events, so that activities can be tracked for auditing.

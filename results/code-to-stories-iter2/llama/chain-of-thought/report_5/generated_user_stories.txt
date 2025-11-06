@@ -1,0 +1,16 @@
+As a system administrator, I want to submit FABS data, so that it can be processed and validated.
+As a system administrator, I want to validate FABS data, so that I can ensure its accuracy and completeness.
+As a data manager, I want to retrieve the status of FABS submission, so that I can track its progress.
+As a data manager, I want to update the status of FABS submission, so that I can reflect any changes or updates.
+As a data manager, I want to submit DABS data, so that it can be processed and validated.
+As a data manager, I want to validate DABS data, so that I can ensure its accuracy and completeness.
+As a data manager, I want to retrieve the status of DABS submission, so that I can track its progress.
+As a data manager, I want to update the status of DABS submission, so that I can reflect any changes or updates.
+As a data analyst, I want to add FABS records to a data store, so that I can manage and retrieve them.
+As a data analyst, I want to retrieve FABS records from a data store, so that I can analyze and process them.
+As a system administrator, I want to add GTAS window data, so that I can support GTAS functionality.
+As a system administrator, I want to generate D files, so that I can support reporting and analytics.
+As a system administrator, I want to manage D files, so that I can ensure their integrity and availability.
+As a data consumer, I want to access published FABS files, so that I can view and download them.
+As a content creator, I want to upload and validate error messages, so that I can ensure their accuracy and relevance.
+As a content creator, I want to create content mockups, so that I can design and test content.

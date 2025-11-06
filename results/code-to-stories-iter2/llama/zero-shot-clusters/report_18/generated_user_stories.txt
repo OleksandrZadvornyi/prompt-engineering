@@ -1,0 +1,73 @@
+As a system administrator, I want to process deletions for a specific date, so that I can manage historical data effectively.
+As a system administrator, I want to provide New Relic data, so that I can monitor system performance.
+As a system administrator, I want to synchronize D1 file generation, so that I can ensure data consistency.
+As a system administrator, I want to load historical FPDS data, so that I can analyze past trends.
+As a system administrator, I want to determine historical FPDS data loading, so that I can make informed decisions.
+As a system administrator, I want to remove DABS banner messages, so that I can improve user experience.
+As a system administrator, I want to inform agency users, so that they are aware of important updates.
+As a system administrator, I want to update broker resources, so that they are current and accurate.
+As a system administrator, I want to manage D files generation requests, so that I can ensure efficient data processing.
+As a system administrator, I want to prevent double publishing, so that I can maintain data integrity.
+As a system administrator, I want to ensure FPDS data, so that it is accurate and up-to-date.
+As a system administrator, I want to load historical financial assistance data, so that I can analyze past trends.
+
+As a developer, I want to redesign the resources page, so that it is user-friendly and efficient.
+As a developer, I want to add PPoPCode cases, so that I can improve data accuracy.
+As a developer, I want to map FederalActionObligation, so that I can ensure data consistency.
+As a developer, I want to derive fields, so that I can generate new insights.
+As a developer, I want to include FREC derivations, so that I can ensure data accuracy.
+As a developer, I want to update frontend URLs, so that they are current and accurate.
+As a developer, I want to include necessary columns, so that I can ensure data completeness.
+As a developer, I want to provide language support, so that I can cater to diverse users.
+As a developer, I want to update the broker validation rule table, so that it is current and accurate.
+As a developer, I want to appear flexfields in warning and error files, so that I can improve error handling.
+As a developer, I want to prevent duplicate transactions, so that I can maintain data integrity.
+As a developer, I want to include a large number of flexfields, so that I can improve data flexibility.
+As a developer, I want to generate and validate D files, so that I can ensure data accuracy.
+As a developer, I want to ensure derived fields, so that they are accurate and up-to-date.
+As a developer, I want to ensure derived data elements, so that they are accurate and up-to-date.
+As a developer, I want to use schema v1.1 headers, so that I can ensure data consistency.
+
+As a tester, I want to report user testing results, so that I can identify areas for improvement.
+As a tester, I want to test features, so that I can ensure they are working correctly.
+
+As a validator, I want to validate PPoPZIP, so that I can ensure data accuracy.
+As a validator, I want to upload and validate error messages, so that I can improve error handling.
+As a validator, I want to clarify CFDA error codes, so that I can improve error handling.
+As a validator, I want to accept DUNS validations, so that I can ensure data accuracy.
+As a validator, I want to ensure correct data, so that it is accurate and up-to-date.
+As a validator, I want to ensure submission errors, so that I can identify areas for improvement.
+As a validator, I want to accept zero and blank values, so that I can improve data flexibility.
+As a validator, I want to match maximum length, so that I can ensure data consistency.
+As a validator, I want to leave off last four digits, so that I can improve data security.
+
+As a user, I want to derive funding agency code from a given dataset, so that I can generate new insights.
+As a user, I want to upload and validate a file, so that I can ensure data accuracy.
+As a user, I want to get the status of a submission, so that I can track its progress.
+As a user, I want to submit data, so that I can contribute to the system.
+As a user, I want to get submission errors, so that I can identify areas for improvement.
+As a user, I want to get data, so that I can access relevant information.
+As a user, I want to access broker application data, so that I can make informed decisions.
+As a user, I want to create a landing page, so that I can improve user experience.
+As a user, I want to add updates to a FABS submission, so that I can ensure data accuracy.
+As a user, I want to add GTAS window data, so that I can improve data completeness.
+As a user, I want to update FABS sample file, so that it is current and accurate.
+As a user, I want to access additional fields, so that I can improve data flexibility.
+As a user, I want to download an uploaded FABS file, so that I can access relevant information.
+As a user, I want to receive file-level errors, so that I can identify areas for improvement.
+As a user, I want to submit records, so that I can contribute to the system.
+As a user, I want to inform the number of rows, so that I can track data volume.
+As a user, I want to submit citywide data, so that I can contribute to the system.
+As a user, I want to submit data elements, so that I can contribute to the system.
+As a user, I want to get office names, so that I can access relevant information.
+As a user, I want to link a sample file, so that I can improve data accessibility.
+As a user, I want to get file F, so that I can access relevant information.
+As a user, I want to understand file-level errors, so that I can identify areas for improvement.
+As a user, I want to see correct status labels, so that I can track the status of submissions.
+As a user, I want to see updated financial assistance data, so that I can access relevant information.
+As a user, I want to access PPoPCode and congressional district information, so that I can generate new insights.
+As a user, I want to see who created a submission, so that I can track user activity.
+As a user, I want to receive updates to FABS records, so that I can ensure data accuracy.
+As a user, I want to ensure deleted FSRS records, so that I can maintain data integrity.
+
+As a FABS user, I want to get FABS groups, so that I can access relevant information.

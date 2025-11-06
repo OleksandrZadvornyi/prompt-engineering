@@ -1,0 +1,18 @@
+As a system administrator, I want to process deletions for a specific date, so that I can manage system data effectively.
+As a system administrator, I want to update the FABS submission for a specific publish status, so that I can manage publication status accurately.
+As a system administrator, I want to generate a D-File for specific data, so that I can create necessary files for system operations.
+As a system administrator, I want to add a FABS submission for specific data, so that I can manage FABS submissions efficiently.
+As a system administrator, I want to retrieve a FABS submission for a specific ID, so that I can access existing submissions.
+As a system administrator, I want to add a DABS submission for specific data, so that I can manage DABS submissions efficiently.
+As a system administrator, I want to retrieve a DABS submission for a specific ID, so that I can access existing submissions.
+As a content manager, I want to set content for a specific ID, so that I can manage content effectively.
+As a content manager, I want to retrieve content for a specific ID, so that I can access existing content.
+As a tester, I want to set a summary for a specific ID, so that I can manage test summaries efficiently.
+As a tester, I want to retrieve a summary for a specific ID, so that I can access existing test summaries.
+As a file manager, I want to upload a file for a specific ID, so that I can manage files efficiently.
+As a file manager, I want to download a file for a specific ID, so that I can access existing files.
+As a data analyst, I want to load data for a specific ID, so that I can manage data effectively.
+As a data analyst, I want to retrieve data for a specific ID, so that I can access existing data.
+As a data analyst, I want to load FPDS data for a specific ID, so that I can manage FPDS data efficiently.
+As a data analyst, I want to retrieve published award financial assistance data for a specific ID, so that I can access existing published data.
+As a GTAS administrator, I want to retrieve GTAS window data for a specific ID, so that I can access existing GTAS data.

@@ -1,0 +1,18 @@
+Here are the user stories derived from the provided Python code:  
+
+1. **As a** user, **I want to** create a new submission, **so that** I can track my data submission process.  
+2. **As a** user, **I want to** validate my submission, **so that** I can ensure it meets the required criteria.  
+3. **As a** user, **I want to** update the publish status of my submission, **so that** I can track its progress.  
+4. **As a** user, **I want to** add error details to my submission, **so that** I can identify and resolve issues.  
+5. **As a** user, **I want to** view a submission in JSON format, **so that** I can analyze its details.  
+6. **As a** user, **I want to** create a new agency, **so that** I can associate submissions with the correct organization.  
+7. **As a** user, **I want to** retrieve a submission by its ID, **so that** I can check its status or details.  
+8. **As a** user, **I want to** delete a submission, **so that** I can remove incorrect or outdated entries.  
+9. **As a** user, **I want to** publish a validated submission, **so that** it becomes publicly available.  
+10. **As a** UI designer, **I want to** redesign the resources page, **so that** users have a better experience.  
+11. **As a** UI designer, **I want to** report user testing results, **so that** improvements can be made.  
+12. **As a** UI designer, **I want to** handle page edits based on review rounds, **so that** design iterations are documented.  
+13. **As a** DevOps engineer, **I want to** configure New Relic settings, **so that** application performance is monitored.  
+14. **As a** data processor, **I want to** sync D1 file generation with FPDS data, **so that** data consistency is maintained.  
+15. **As a** data processor, **I want to** update validation rules, **so that** submissions are checked against the latest requirements.  
+16. **As a** data processor, **I want to** load GTAS window data, **so that** financial transparency reporting is accurate.

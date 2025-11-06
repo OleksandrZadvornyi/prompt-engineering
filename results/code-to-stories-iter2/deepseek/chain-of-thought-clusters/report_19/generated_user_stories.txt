@@ -1,0 +1,59 @@
+Here are the user stories derived from the Python code:
+
+As a UI Designer, I want to redesign the Resources page, so that it matches Broker styles.  
+As a UI Designer, I want to report user testing results to an agency, so that feedback is communicated.  
+As a UI Designer, I want to perform landing page edits, so that the page is updated for a specific round.  
+As a UI Designer, I want to update the help page content, so that users have accurate information.  
+As a UI Designer, I want to track Tech Thursday issues, so that they can be addressed.  
+As a UI Designer, I want to schedule user testing with participants, so that testing sessions are organized.  
+As a UI Designer, I want to begin user testing, so that feedback can be collected.  
+
+As a Data Processor, I want to process deletions for a target date, so that outdated records are removed.  
+As a Data Processor, I want to derive FundingAgencyCode from data, so that records are properly categorized.  
+As a Data Processor, I want to update SQL codes for clarity, so that the database scripts are easier to understand.  
+As a Data Processor, I want to add PPoPCode cases, so that foreign records are properly labeled.  
+
+As a DevOps Engineer, I want to configure New Relic for applications, so that monitoring is set up.  
+
+As a Broker User, I want to sync D1 file generation with FPDS data, so that files are up-to-date.  
+As a Broker User, I want to update error message text, so that users receive clear notifications.  
+As a Broker User, I want to update validation rules, so that data quality is maintained.  
+As a Broker User, I want to handle flexfields in warning/error files, so that data processing is accurate.  
+As a Broker User, I want to clarify CFDA error codes, so that errors are easier to understand.  
+As a Broker User, I want to validate DUNS numbers, so that duplicate or invalid entries are prevented.  
+As a Broker User, I want to prevent duplicate transactions, so that data integrity is maintained.  
+
+As a Developer, I want to improve logging configuration, so that debugging is easier.  
+As a Developer, I want to index domain models, so that data retrieval is optimized.  
+As a Developer, I want to access Broker application data, so that I can perform analysis.  
+As a Developer, I want to update FABS submission status, so that records reflect current state.  
+As a Developer, I want to add GTAS window data, so that reporting is accurate.  
+As a Developer, I want to update the FABS sample file, so that users have the latest template.  
+As a Developer, I want to deactivate the publish button, so that submissions aren't duplicated.  
+As a Developer, I want to include FREC derivations in historical FABS data, so that records are complete.  
+As a Developer, I want to update frontend URLs, so that navigation is correct.  
+As a Developer, I want to load historical FPDS data, so that reports are comprehensive.  
+As a Developer, I want to create FABS groups under the FREC paradigm, so that data is organized.  
+As a Developer, I want to add info to the submission dashboard, so that users have visibility.  
+As a Developer, I want to optimize historical FPDS data loading, so that performance improves.  
+As a Developer, I want to update FABS page language, so that instructions are clear.  
+As a Developer, I want to separate DABS/FABS banner messages, so that users see relevant alerts.  
+As a Developer, I want to manage D Files requests, so that data exports are handled efficiently.  
+As a Developer, I want to prevent double publishing, so that submissions are not duplicated.  
+As a Developer, I want to handle non-existent record corrections, so that data integrity is maintained.  
+As a Developer, I want to generate D Files, so that users can access required exports.  
+As a Developer, I want to ensure proper field derivation, so that data is consistent.  
+
+As a FABS User, I want to download a FABS file, so that I can access submitted data.  
+As a FABS User, I want to check submission periods, so that I know deadlines.  
+As a FABS User, I want to update the sample file link, so that users have the correct template.  
+As a FABS User, I want to update status labels, so that submission states are clear.  
+
+As a User, I want to access raw agency files, so that I can analyze the data.  
+As a User, I want to include flexfields without performance impact, so that I have additional metadata.  
+As a User, I want to check data accuracy, so that I can trust the information.  
+As a User, I want to get publish info, so that I know submission details.  
+As a User, I want to validate PPoPZIP codes, so that addresses are correct.  
+As a User, I want to check validation time, so that I can monitor performance.  
+
+As a Data User, I want to derive office names from codes, so that I can label data correctly.

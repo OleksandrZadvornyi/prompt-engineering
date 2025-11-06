@@ -1,0 +1,25 @@
+Here are the user stories derived from the Python code:
+
+1. As a System Administrator, I want to initialize the database with required tables, so that the system has a proper data structure for all functionalities.  
+2. As a System Administrator, I want to delete 2017 data from submissions, so that I can manage storage by removing outdated records.  
+3. As a System Administrator, I want to configure New Relic monitoring, so that I can monitor system performance and health.  
+
+4. As a Data Manager, I want to update the FABS status of a submission, so that I can track the progress of FABS submissions.  
+
+5. As a Validation Specialist, I want to update validation rules, so that data quality checks remain current and effective.  
+
+6. As a Data Analyst, I want to generate a D-File for an agency with optional caching, so that I can efficiently access combined FABS/FPDS data.  
+7. As a Data Analyst, I want to retrieve FABS data for an agency, so that I can analyze agency-specific FABS submissions.  
+8. As a Data Analyst, I want to retrieve FPDS data for an agency, so that I can analyze agency-specific FPDS submissions.  
+
+9. As a UI Team Member, I want to submit a UI change request, so that new UI features or fixes can be tracked and implemented.  
+10. As a UI Team Member, I want to retrieve UI change requests for a specific version round, so that I can review pending or completed changes.  
+
+11. As a Testing Coordinator, I want to schedule a user test session with participants, so that we can validate system functionality with real users.  
+
+12. As a Data Engineer, I want to load historical FABS data with optional field derivation, so that legacy data is available for analysis.  
+
+13. As an API User, I want to submit a UI change request via API, so that I can automate UI change workflows.  
+14. As an API User, I want to schedule a user test session via API, so that I can integrate testing with other tools.  
+15. As an API User, I want to retrieve a D-File for an agency via API, so that I can programmatically access combined data.  
+16. As an API User, I want to load historical data via API, so that I can automate data migration processes.

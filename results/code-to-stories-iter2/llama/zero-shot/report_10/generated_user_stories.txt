@@ -1,0 +1,11 @@
+As a FABS user, I want to upload and validate error messages, so that I can identify and track issues with my records.
+As a FABS user, I want to submit records without DUNS errors, so that I can ensure accurate and complete data submission.
+As a FABS user, I want to access raw agency published files, so that I can retrieve and utilize relevant data.
+As a FABS user, I want to submit citywide data as a ZIP file, so that I can easily share and transfer large datasets.
+As a FABS user, I want to download uploaded FABS files, so that I can access and verify my submitted data.
+As a developer, I want to update the broker validation rule table, so that I can maintain and refine data validation processes.
+As a developer, I want to add GTAS window data to the database, so that I can integrate and manage financial data.
+As a developer, I want to manage and cache D files generation requests, so that I can optimize and streamline data processing.
+As a developer, I want to prevent duplicate transactions from being published, so that I can ensure data accuracy and prevent errors.
+As a data user, I want to process deletions, so that I can maintain data consistency and remove outdated information.
+As a data user, I want to receive updates to FABS records, so that I can stay informed about changes and updates to the data.

@@ -1,0 +1,32 @@
+Here is the list of user stories derived from the Python code:
+
+1. As a Data Manager, I want to delete data for a specific date, so that I can maintain data cleanliness and compliance.  
+2. As a UI Designer, I want to redesign the Resources page with new styles, so that the interface remains modern and user-friendly.  
+3. As a UI Designer, I want to report user testing results to specified agencies, so that feedback can be incorporated into design improvements.  
+4. As a DevOps Engineer, I want to configure New Relic for specified applications, so that application performance can be monitored effectively.  
+5. As a Broker User, I want to sync D1 file generation with FPDS data load, so that data consistency is maintained.  
+6. As a Broker User, I want to update SQL codes for clarity and maintainability, so that scripts are easier to debug and modify.  
+7. As a Broker User, I want to improve PPoPCode derivation logic to include special cases, so that edge cases are handled correctly.  
+8. As a Broker User, I want to derive FundingAgencyCode, so that data quality is improved.  
+9. As a Broker User, I want to map FederalActionObligation to Atom Feed, so that financial data is accurately reflected.  
+10. As a Broker User, I want to validate PPoP ZIP codes against Legal Entity ZIP entries, so that address data is consistent.  
+11. As a Website User, I want to retrieve published FABS files, so that I can access the latest data.  
+12. As a Developer, I want to enhance logging, so that troubleshooting becomes easier.  
+13. As a Developer, I want to ensure only grant records are sent to USAspending, so that data accuracy is maintained.  
+14. As a Developer, I want to update the header info box with the current date and time, so that users see real-time information.  
+15. As a Developer, I want to update FABS submission status when publishStatus changes, so that submissions are tracked accurately.  
+16. As a Developer, I want to add GTAS window data to the database, so that financial records are up to date.  
+17. As a Developer, I want to update the FABS sample file by removing outdated fields, so that it remains relevant.  
+18. As a Developer, I want to toggle the publish button during derivations, so that users can't submit incomplete data.  
+19. As a Developer, I want to load historical FABS data with derived fields, so that past records are accessible and accurate.  
+20. As a Developer, I want to get accurate frontend URLs for specified pages, so that navigation links work correctly.  
+21. As a Developer, I want to update error messages for accuracy, so that users receive clear feedback.  
+22. As a Developer, I want to cache D Files generation requests, so that duplicate processing is avoided.  
+23. As a Developer, I want to prevent double publishing of FABS submissions, so that data integrity is maintained.  
+24. As a Developer, I want to derive office names from office codes, so that names are displayed correctly.  
+25. As a Developer, I want to handle partial ZIP codes during validation, so that address data is processed properly.  
+26. As a FABS User, I want to get additional helpful info for the submission dashboard, so that I can track submission progress.  
+27. As a Data User, I want to get daily updates for FABS records, so that I can stay informed about changes.  
+28. As a User Testing Coordinator, I want to schedule user testing with advanced notice, so that participants are prepared.  
+29. As a Tech Thursday Coordinator, I want to track Tech Thursday issues, so that they can be addressed in meetings.  
+30. As a UI Tester, I want to create a summary of UI testing results, so that outcomes are documented clearly.

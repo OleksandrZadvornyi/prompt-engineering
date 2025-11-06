@@ -1,0 +1,10 @@
+As a developer, I want to upload a submission with a valid ID and data, so that I can ensure submissions are correctly processed.  
+As a submission manager, I want to validate submissions, so that I can identify and log errors before processing.  
+As a submission manager, I want to maintain an activity log, so that I can track all actions taken on submissions.  
+As a submission manager, I want to delete old submissions based on a specified date, so that I can keep the submission list up-to-date and relevant.  
+As a submission manager, I want to add flexfields to an existing submission, so that I can update submission information as needed.  
+As a submission manager, I want to retrieve errors for a specific submission, so that I can understand any issues that occurred during validation.  
+As a testing coordinator, I want to report testing results for submissions, so that I can document the outcomes of evaluations performed.  
+As a testing coordinator, I want to retrieve all testing results, so that I can review and analyze the performance of submissions.  
+As a developer, I want to update validation rules, so that I can ensure they remain effective and relevant for submissions.  
+As a submission manager, I want to log failed validation attempts with specific error messages, so that I can inform users of the exact issues encountered.

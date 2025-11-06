@@ -1,0 +1,14 @@
+As a data administrator, I want to process deletions, so that I can remove unwanted data from the system.
+As a content creator, I want to create a content mockup, so that I can visualize the layout and design of the content.
+As a web developer, I want to redesign the Resources page, so that I can improve the user experience and accessibility of the page.
+As a reporting officer, I want to report user testing results to agencies, so that I can inform stakeholders of the testing outcomes.
+As a landing page editor, I want to edit the landing page, so that I can customize the content and layout to better engage users.
+As a help page editor, I want to edit the Help page, so that I can update the content and ensure it remains relevant and useful to users.
+As a issue tracker, I want to track issues from Tech Thursday, so that I can monitor and address technical problems in a timely manner.
+As a testing coordinator, I want to schedule user testing, so that I can plan and conduct testing sessions with users.
+As a testing validator, I want to begin user testing, so that I can evaluate the usability and effectiveness of the system.
+As a system administrator, I want to log messages, so that I can track system activity and debug issues.
+As a submission manager, I want to update submissions, so that I can modify and manage user-submitted data.
+As a data importer, I want to import GTAS window data, so that I can integrate external data into the system.
+As a file access manager, I want to access published FABS files, so that I can retrieve and utilize the files for reporting and analysis purposes.
+As a dashboard administrator, I want to update status labels on the Submission Dashboard, so that I can reflect the current status of submissions and provide users with accurate information.

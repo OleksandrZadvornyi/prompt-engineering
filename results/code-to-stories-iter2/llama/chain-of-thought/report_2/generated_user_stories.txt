@@ -1,0 +1,21 @@
+As a system administrator, I want to create a new user with a specific role, so that I can manage access to the system.
+As a system administrator, I want to check the GTAS window, so that I can determine if certain transactions are allowed.
+As a system administrator, I want to prevent duplicate transactions, so that data integrity is maintained.
+As a domain model administrator, I want to index the domain model, so that the system can efficiently retrieve and process data.
+As a user, I want to submit a file, so that it can be processed and validated by the system.
+As a validator, I want to add rules to validate submissions, so that I can ensure data quality and correctness.
+As a validator, I want to validate a submission against a set of rules, so that I can determine if it meets the required criteria.
+As a data loader, I want to load data from FPDS, so that it can be used for further processing and analysis.
+As a data processor, I want to derive fields from a submission, so that I can extract relevant information.
+As a data processor, I want to retrieve a file from a submission, so that I can access its contents.
+As a data processor, I want to get file-level errors from a submission, so that I can identify and address issues.
+As a data processor, I want to retrieve PPoPZIP data from a submission, so that I can use it for further processing.
+As a data processor, I want to update error codes for a submission, so that I can track and resolve issues.
+As a data generator, I want to generate a D file from a submission, so that it can be used for further processing and reporting.
+As a UI designer, I want to create a user testing summary, so that I can evaluate and improve the user experience.
+As a project manager, I want to schedule user testing, so that I can ensure the system meets user needs and expectations.
+As a project manager, I want to design an audit, so that I can evaluate the effectiveness of the system.
+As a project manager, I want to retrieve submission periods, so that I can plan and manage the submission process.
+As a data submitter, I want to submit data elements, so that they can be processed and used by the system.
+As a data analyst, I want to load historical FPDS data, so that I can analyze and report on trends and patterns.
+As a broker, I want to access broker application data, so that I can use it for business decision-making and planning.

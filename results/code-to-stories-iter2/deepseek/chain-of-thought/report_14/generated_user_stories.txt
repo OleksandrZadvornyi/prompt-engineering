@@ -1,0 +1,24 @@
+Here are the user stories derived from the Python code, following the specified format:  
+
+1. **As a** data manager, **I want to** process deletions for a specific date, **so that** old or unnecessary data is cleaned up efficiently.  
+2. **As a** data manager, **I want to** update FABS submission status, **so that** submissions reflect their current approval state.  
+3. **As a** system administrator, **I want to** sync D1 file generation with FPDS data load, **so that** data consistency is maintained.  
+4. **As a** system administrator, **I want to** reset user permissions to default, **so that** access issues can be resolved quickly.  
+5. **As a** system administrator, **I want to** grant read-only access to a user, **so that** sensitive data is protected from unauthorized changes.  
+6. **As a** UI designer, **I want to** redesign the Resources page, **so that** the interface is more user-friendly.  
+7. **As a** UI designer, **I want to** get approvals for page edits, **so that** changes comply with design standards.  
+8. **As a** DevOps engineer, **I want to** configure New Relic for an application, **so that** performance monitoring is optimized.  
+9. **As a** submission manager, **I want to** update status labels on the dashboard, **so that** users see real-time submission states.  
+10. **As a** submission manager, **I want to** provide additional info on the dashboard, **so that** users have better context for their submissions.  
+11. **As a** data validator, **I want to** update validation rules, **so that** data integrity is enforced.  
+12. **As a** data validator, **I want to** validate flexfields in a submission, **so that** dynamic form fields meet requirements.  
+13. **As a** database administrator, **I want to** add GTAS window data, **so that** financial tracking remains accurate.  
+14. **As a** database administrator, **I want to** index domain models, **so that** database queries run faster.  
+15. **As a** file manager, **I want to** generate and cache D files, **so that** reports are readily available.  
+16. **As a** file manager, **I want to** handle file uploads, **so that** user-submitted data is processed correctly.  
+17. **As a** testing coordinator, **I want to** schedule user testing, **so that** new features are validated.  
+18. **As a** testing coordinator, **I want to** generate test summaries, **so that** results are documented for review.  
+19. **As a** data analyst, **I want to** load historical FABS data, **so that** trends can be analyzed.  
+20. **As a** data analyst, **I want to** load historical FPDS data, **so that** procurement insights can be derived.  
+
+These user stories cover the key functionalities in the provided code, mapping actions to roles and benefits.

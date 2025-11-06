@@ -1,0 +1,9 @@
+As a File Uploader, I want to upload a file to the system, so that I can perform further operations on it.
+As a File Validator, I want to validate the uploaded file against a set of predefined rules, so that I can ensure data integrity.
+As a FABS User, I want to submit a validated file to the FABS system, so that I can track and manage submitted files.
+As a Developer, I want to update the validation rule table, so that I can adapt to changing requirements and ensure data accuracy.
+As a Developer, I want to add GTAS window data, so that I can store and retrieve relevant information.
+As a UI Designer, I want to redesign the resources page, so that I can improve user experience and provide up-to-date content.
+As a UI Designer, I want to report user testing results, so that I can track and analyze user feedback.
+As a Data User, I want to process deletions of existing data, so that I can maintain data consistency and remove obsolete information.
+As a DevOps Engineer, I want to configure New Relic, so that I can monitor and optimize system performance.

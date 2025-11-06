@@ -1,0 +1,20 @@
+As a user, I want to upload a file, so that I can validate its contents.
+As a user, I want to validate a file, so that I can ensure it meets the required rules.
+As a user, I want to update validation rules, so that I can change the criteria for file validation.
+As a developer, I want to add GTAS window data, so that I can store additional information.
+As a developer, I want to load data from a database, so that I can retrieve existing information.
+As a FABS user, I want to download FABS files, so that I can access the data.
+As a FABS user, I want to submit FABS data, so that I can update the database.
+As a data user, I want to access FABS files, so that I can view the data.
+As a data user, I want to retrieve updated FABS records, so that I can see the latest changes.
+As a UI user, I want to access the resources page, so that I can view available information.
+As a UI user, I want to report user testing, so that I can provide feedback.
+As a system administrator, I want to process deletions, so that I can remove unwanted data.
+As a system administrator, I want to redesign the resources page, so that I can improve the user experience.
+As a system administrator, I want to add PPoPCode cases, so that I can extend the system's functionality.
+As a system administrator, I want to derive funding agency codes, so that I can generate the necessary codes.
+As a system administrator, I want to map federal action obligations, so that I can track the obligations.
+As a system administrator, I want to synchronize D1 file generation, so that I can ensure timely generation.
+As a system administrator, I want to update SQL codes, so that I can modify the database queries.
+As a user, I want to generate D1 files, so that I can create the necessary files.
+As a user, I want to load FPDS data, so that I can update the database with new information.

@@ -1,0 +1,43 @@
+As a system administrator, I want to delete old records, so that I can maintain a clean and efficient database.
+
+As a UI designer, I want to redesign the resources page, so that users have an improved navigation experience and a responsive design.
+
+As a QA tester, I want to report feedback, so that the team can improve the system based on user experiences.
+
+As a project manager, I want to move pages to approval rounds, so that the submission process can proceed to the next steps.
+
+As a developer, I want to log errors, so that issues can be tracked and addressed in the system.
+
+As a content manager, I want to update submission statuses, so that the current status of each submission is accurately reflected.
+
+As a data analyst, I want to load FPDS data from a file, so that I can analyze and work with the latest data.
+
+As a data handler, I want to upload files, so that I can ensure only valid file formats are processed.
+
+As a compliance officer, I want to generate a D1 file from FPDS data, so that I can create necessary compliance documents.
+
+As a documentation specialist, I want to create a user testing summary, so that we can have a record of user feedback and experiences.
+
+As a policy advisor, I want to update FABS validation rules, so that submissions adhere to the latest guidelines.
+
+As a database administrator, I want to ensure deletion integrity, so that the system remains reliable after records are removed.
+
+As a submission manager, I want to add FABS submissions, so that new submissions can be processed correctly.
+
+As a user, I want to view submission errors, so that I can understand issues related to my submissions.
+
+As a project stakeholder, I want to view the submission dashboard, so that I can monitor the status of all submissions.
+
+As a data archivist, I want to add historical FABS files, so that we can maintain a record of past submissions for reference.
+
+As a data steward, I want to load historical FPDS data, so that I can access and analyze past datasets.
+
+As a team lead, I want to record the creator of each submission, so that we can track who submitted each record.
+
+As a submission reviewer, I want to prevent double submissions, so that the integrity of the submission process is maintained.
+
+As a system analyst, I want to derive office names from office codes, so that I can easily identify organizational locations.
+
+As a data validator, I want to validate DUNS numbers, so that only correct and valid DUNS numbers are submitted.
+
+As a data entry operator, I want to submit records with valid DUNS numbers, so that I can ensure quality submissions into the system.

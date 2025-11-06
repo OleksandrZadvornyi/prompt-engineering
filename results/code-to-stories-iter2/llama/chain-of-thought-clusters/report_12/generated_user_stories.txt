@@ -1,0 +1,20 @@
+As a Cluster administrator, I want to add user stories, so that I can keep track of cluster-related tasks.
+As a Cluster administrator, I want to view user stories, so that I can review and manage cluster-related tasks.
+As a FABSUser, I want to submit FABS files, so that I can upload and store my files.
+As a FABSUser, I want to download uploaded FABS files, so that I can access my previously uploaded files.
+As a DevOpsEngineer, I want to provide useful data, so that others can utilize it for their tasks.
+As a Developer, I want to log messages, so that I can track and monitor my progress.
+As a Developer, I want to add GTAS window data, so that I can update and manage GTAS-related information.
+As a Developer, I want to prevent duplicate transactions, so that I can ensure data integrity and accuracy.
+As a Developer, I want to update FABS sample files, so that I can maintain and improve the quality of FABS data.
+As a Developer, I want to generate D files from FABS and FPDS data, so that I can create and manage D files.
+As a Developer, I want to load historical FPDS data, so that I can access and analyze past data.
+As a Developer, I want to manage D files generation requests, so that I can control and optimize the D files generation process.
+As a Developer, I want to cache D files generation requests, so that I can improve performance and reduce processing time.
+As a Developer, I want to prevent double publishing FABS submissions, so that I can avoid duplicate submissions and ensure data consistency.
+As a Developer, I want to ensure correct deletion of records, so that I can maintain data accuracy and integrity.
+As a BrokerUser, I want to derive funding agency codes, so that I can obtain and utilize funding agency information.
+As a BrokerUser, I want to add PPoPCode cases, so that I can enhance and refine the derivation logic.
+As a DataUser, I want to process deletions, so that I can update and manage data records.
+As a UIDesigner, I want to redesign the Resources page, so that I can improve user experience and usability.
+As a UIDesigner, I want to report to agencies about user testing, so that I can provide feedback and insights to stakeholders.

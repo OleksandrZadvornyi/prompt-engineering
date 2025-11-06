@@ -1,0 +1,12 @@
+As a BrokerUser, I want to upload a submission, so that I can create a new submission record in the system.  
+As a BrokerUser, I want to validate my submission after uploading, so that I can ensure it meets the required standards.  
+As a SubmissionManager, I want to create a submission, so that I can store user submissions with their associated details.  
+As a SubmissionManager, I want to update the status of a submission, so that I can reflect its current state accurately.  
+As a SubmissionManager, I want to add errors to a submission, so that I can track issues associated with that submission.  
+As a SubmissionManager, I want to log actions taken on submissions, so that I can maintain an audit trail of operations performed.  
+As a FABSUser, I want to submit a FABS record, so that I can contribute my data to the system.  
+As a FABSUser, I want to download my uploaded files by submission ID, so that I can access my submission documents when needed.  
+As a UIUser, I want to schedule user testing sessions, so that I can ensure proper feedback is gathered from users.  
+As a UIUser, I want to report user testing results to agencies, so that I can provide important feedback gathered during testing.  
+As a UIUser, I want to redesign the resources page, so that I can improve user access to necessary information.  
+As a DevOpsEngineer, I want to integrate New Relic, so that I can monitor the performance and health of the application effectively.

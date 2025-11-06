@@ -1,0 +1,26 @@
+Here are the user stories derived from the Python code:
+
+As a user, I want to validate file extensions, so that I can ensure only allowed file types are processed.  
+As a user, I want to customize error messages for file validation, so that I can provide more specific feedback.  
+As a user, I want to validate DUNS numbers, so that I can ensure they meet the required format and context.  
+As a user, I want to generate unique file IDs, so that I can track files uniquely in the system.  
+As a user, I want to detect duplicate files, so that I can avoid processing the same file multiple times.  
+As a user, I want to track published files, so that I can maintain an audit trail.  
+As a user, I want to load historical data from CSV files, so that I can use it for comparison or merging.  
+As a user, I want to merge historical and current data, so that I can create consolidated datasets.  
+As a user, I want to derive FREC fields from agency codes, so that I can enrich records with standardized identifiers.  
+As a user, I want to validate CSV file headers, so that I can ensure required fields are present.  
+As a user, I want to format F-file records consistently, so that I can maintain data standardization.  
+As a user, I want to derive funding agency codes, so that I can categorize records by funding source.  
+As a user, I want to process record deletions based on date, so that I can maintain data relevance.  
+As a user, I want to update UI resources with style guidelines, so that I can ensure a consistent look and feel.  
+As a user, I want to schedule UI testing sessions, so that I can validate user experience improvements.  
+As a user, I want to track UI issues with unique IDs, so that I can manage and resolve them efficiently.  
+As a user, I want to create dynamic landing pages, so that I can provide relevant content to users.  
+As a user, I want to update application routing, so that I can manage navigation paths effectively.  
+As a user, I want to derive PPOP codes from records, so that I can categorize data by region and purpose.  
+As a user, I want to resolve office names from codes, so that I can display meaningful labels.  
+As a user, I want to configure New Relic monitoring, so that I can track application performance.  
+As a user, I want to access system documentation by component, so that I can understand functionality.  
+As a user, I want to track submission statuses, so that I can monitor progress.  
+As a user, I want to retrieve submission statuses by ID, so that I can check current states.

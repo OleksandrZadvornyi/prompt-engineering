@@ -1,0 +1,15 @@
+As a submission manager, I want to update the status of submissions, so that I can keep track of their current state and log any changes made.
+
+As a resource page manager, I want to redesign the resources page, so that I can improve its appearance and usability according to the new standards.
+
+As a user testing coordinator, I want to schedule user testing sessions, so that I can evaluate the usability of the submissions on specific dates.
+
+As a user testing coordinator, I want to report the results of user testing, so that I can document the outcomes and issues related to each submission.
+
+As a FABS user, I want to submit data associated with a submission ID, so that I can ensure my data is recorded and accessible for review.
+
+As a system manager, I want to process deletions of outdated submissions, so that I can maintain an organized and relevant list of published files.
+
+As a system manager, I want to access published files, so that I can view and manage the current submissions in the system.
+
+As a system manager, I want to generate a D1 file containing records of published files, so that I have a structured document for reporting and analysis.

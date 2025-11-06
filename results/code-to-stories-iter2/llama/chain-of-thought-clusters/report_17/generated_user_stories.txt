@@ -1,0 +1,24 @@
+As a Data Processor, I want to process deletions for a given date, so that I can efficiently manage data.
+As a FABS Updater, I want to update FABS records, so that the data remains up-to-date and accurate.
+As an Agency File Accessor, I want to access raw agency files, so that I can analyze and process the data.
+As a UI Designer, I want to make edits to the DABS landing page, so that the user interface is improved.
+As a UI Designer, I want to make edits to the Homepage, so that the user interface is improved.
+As a UI Designer, I want to make edits to the Help page, so that the user interface is improved.
+As a UI Designer, I want to redesign the Resources page, so that it matches the new Broker design styles.
+As a UI Designer, I want to report to Agencies about user testing, so that they are informed about the results.
+As a DevOps Engineer, I want to log issues better, so that I can troubleshoot problems more efficiently.
+As a DevOps Engineer, I want to track Tech Thursday issues, so that I can address them in a timely manner.
+As a Broker Team Member, I want to derive FundingAgencyCode, so that data quality and completeness are improved.
+As a Broker Team Member, I want to update SQL codes, so that they are clear and easy to understand.
+As a Broker Team Member, I want to create content mockups, so that data can be submitted efficiently.
+As a Broker Team Member, I want to update error codes, so that they accurately reflect the logic.
+As a FABS User, I want to add updates to FABS submissions, so that the data remains up-to-date.
+As a FABS User, I want to add GTAS window data, so that it is available for analysis.
+As a FABS User, I want to access published FABS files, so that I can view the data.
+As a FABS User, I want to view DABS pages, so that I can access the information without needing multiple sets of permissions.
+As a Developer, I want to update SQL codes, so that they are clear and easy to understand.
+As a Developer, I want to add PPoPCode cases, so that the derivation logic is comprehensive.
+As a Developer, I want to log issues better, so that I can troubleshoot problems more efficiently.
+As a Developer, I want to index domain models properly, so that they can be accessed efficiently.
+As a Developer, I want to manage D Files generation requests, so that they can be cached and retrieved efficiently.
+As a Developer, I want to prevent double publishing of FABS submissions, so that data integrity is maintained.

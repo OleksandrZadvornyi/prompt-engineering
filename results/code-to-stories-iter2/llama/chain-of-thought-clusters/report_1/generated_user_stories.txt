@@ -1,0 +1,11 @@
+As a FABS user, I want to submit data, so that I can provide information to the system.
+As a DABS user, I want to view DABS pages, so that I can access relevant information.
+As a developer, I want to update the FABS sample file, so that I can modify the system's sample data.
+As a developer, I want to add GTAS window data, so that I can update the system's GTAS window information.
+As a developer, I want to test system functionality, so that I can ensure the system is working correctly.
+As a broker user, I want to upload error messages, so that I can report issues to the system.
+As a broker user, I want to validate error messages, so that I can verify the accuracy of the error messages.
+As a UI SME, I want to create a user testing summary, so that I can document user testing results.
+As a system administrator, I want to validate user-submitted data, so that I can ensure the data is accurate and complete.
+As a system administrator, I want to register users, so that I can manage system access.
+As a system administrator, I want to assign roles to users, so that I can control user permissions.

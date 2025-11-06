@@ -1,0 +1,21 @@
+As a user, I want to submit a valid DUNS number and associated data, so that my submission is successfully recorded.
+
+As a user, I want to submit an invalid DUNS number, so that I receive a validation error message.
+
+As a user, I want to view my submission history, so that I can track my past submissions.
+
+As a developer, I want to update the validation rules for DUNS numbers, so that I can modify the criteria for what constitutes a valid DUNS number.
+
+As a data user, I want to receive updates on records that were updated today, so that I can stay informed about relevant changes.
+
+As a broker, I want to upload and validate multiple records at once, so that I can ensure all records comply with DUNS validation rules and capture any errors.
+
+As a broker, I want to validate DUNS numbers in records, so that I can identify and report any invalid entries.
+
+As a submission dashboard user, I want to add submissions to my dashboard, so that I can keep track of their status.
+
+As a submission dashboard user, I want to retrieve the status of all submissions in my dashboard, so that I can easily monitor their current state.
+
+As a project manager, I want to create user testing summaries, so that I can document testing outcomes and results.
+
+As a project manager, I want to track issues encountered during testing, so that I can ensure they are addressed and resolved.

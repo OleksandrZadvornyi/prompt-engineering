@@ -1,0 +1,9 @@
+As a user, I want to submit a file, so that my submission can be processed by the system.  
+As a user, I want to download my submitted file, so that I can access it when needed.  
+As a developer, I want to log issues reported by users, so that I can keep track of problems and address them.  
+As a developer, I want to update validation rules, so that the system can ensure submissions meet the necessary criteria.  
+As a broker, I want to process deletions of submissions for a specific date, so that I can maintain an accurate record of submissions.  
+As a broker, I want to generate a D1 file, so that I can sync it with FPDS data for reporting purposes.  
+As a broker, I want to prevent double submissions, so that I can ensure each submission is unique and avoid duplication in processing.  
+As a submission system, I want to validate submissions before acceptance, so that I can ensure only valid submissions are recorded.  
+As a submission system, I want to move submissions to the next round of edits, so that they can be reviewed and processed further.

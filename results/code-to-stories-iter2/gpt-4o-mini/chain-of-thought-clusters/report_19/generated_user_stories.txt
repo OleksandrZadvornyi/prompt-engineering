@@ -1,0 +1,35 @@
+As a Data User, I want to delete data for a specific date, so that I can manage the data store effectively.
+
+As a UI Designer, I want to redesign the resources page, so that the page looks more appealing and up-to-date.
+
+As a UI Designer, I want to report user testing contributions, so that we can track and utilize feedback for improvements.
+
+As a DevOps Engineer, I want to provide application performance data, so that stakeholders can assess the application's efficiency.
+
+As a Broker User, I want to sync the D1 file with FPDS data, so that the information remains consistent and up-to-date.
+
+As a Broker User, I want to create content mockups, so that I can visualize and present ideas for submission processes.
+
+As a Broker User, I want to get updated error codes, so that I can ensure that the system operates with the latest information.
+
+As a Broker User, I want to validate PPoP ZIP+4 codes, so that I can ensure the accuracy of location data.
+
+As a Developer, I want to improve logging, so that I can have better insights into system operations.
+
+As a Developer, I want to update SQL codes, so that the database queries are clearer and more efficient.
+
+As a Developer, I want to manage D Files requests, so that I can avoid processing duplicate requests.
+
+As a Developer, I want to add GTAS data to the database, so that the data is available for future queries and analyses.
+
+As a Developer, I want to update the FABS sample file, so that it reflects the most current standards.
+
+As a Developer, I want to prevent duplicate publishing, so that I can maintain the integrity of submissions.
+
+As a Submission Dashboard User, I want to get the submission status, so that I can track the progress of submissions.
+
+As a FABS User, I want to access published FABS files, so that I can review the available resources.
+
+As a FABS User, I want to download uploaded FABS files, so that I can have local copies for my records.
+
+As a FABS User, I want to ensure submission errors are accurate, so that I can address any issues effectively.

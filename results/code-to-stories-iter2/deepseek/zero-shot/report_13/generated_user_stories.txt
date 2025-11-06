@@ -1,0 +1,19 @@
+Here are the user stories derived from the Python code:
+
+1. As a data submitter, I want to create a new submission, so that I can start uploading my files.  
+2. As a data submitter, I want to add files to my submission, so that I can include all required data.  
+3. As a data submitter, I want to update my submission status, so that I can track its progress.  
+4. As a data submitter, I want to validate my submission, so that I can ensure it meets requirements before publishing.  
+5. As a compliance officer, I want to update validation rules, so that submissions meet current standards.  
+6. As a compliance officer, I want to update the database schema, so that the system supports new requirements.  
+7. As a DABS user, I want to generate a D file for a published submission, so that I can process the data.  
+8. As a system administrator, I want to process historical deletions, so that I can clean up old draft submissions.  
+9. As a system administrator, I want to load historical FABS data, so that I can migrate legacy records.  
+10. As a system administrator, I want to derive funding agency codes, so that I can categorize submissions.  
+11. As a user, I want to view submission details, so that I can check its current state.  
+12. As a user, I want to access documentation and guides, so that I can learn how to use the system.  
+13. As a user, I want to view FABS-specific features, so that I can navigate to relevant functions.  
+14. As a user, I want to access help information, so that I can get assistance when needed.  
+15. As a user, I want to publish my submission, so that I can finalize and submit my data.  
+
+These user stories cover the functionality implemented in the provided Python code while maintaining the specified format.

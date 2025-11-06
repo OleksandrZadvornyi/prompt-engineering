@@ -1,0 +1,9 @@
+As a user, I want to submit data, so that I can store my submissions in the system.  
+As a user, I want to upload a file, so that I can associate files with my submissions.  
+As a user, I want to download a file by submission ID, so that I can access my submitted files easily.  
+As a user, I want to validate my DUNS number, so that I can ensure it is valid before submission.  
+As a user, I want to validate my FABS submission, so that I can confirm it meets the necessary criteria.  
+As a data processor, I want to delete old submissions by a specific date, so that I can maintain a clean and relevant dataset.  
+As a data processor, I want to log errors, so that I can track issues that occur during data processing.  
+As a data processor, I want to update the status of a submission, so that I can reflect the current state of each submission.  
+As a user interface, I want to request user testing, so that I can gather feedback for improvements.

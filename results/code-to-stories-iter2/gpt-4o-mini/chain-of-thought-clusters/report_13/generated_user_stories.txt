@@ -1,0 +1,11 @@
+- As a user, I want to create a FABS record, so that I can store data with a unique identifier.
+- As a user, I want to publish a FABS record, so that it can be made available for others to access.
+- As a developer, I want to create and add validation rules, so that I can ensure data integrity in the records.
+- As a user, I want to validate a FABS record against existing validation rules, so that I can identify any errors in the data.
+- As a user, I want to access published files, so that I can view the records that have been made available.
+- As a broker user, I want to upload a file, so that I can contribute data to the FABS system.
+- As a broker user, I want to validate error messages, so that I can ensure the accuracy and relevance of the errors reported during validation.
+- As a developer, I want to update a validation rule, so that the rules reflect the most current requirements for data validation.
+- As a developer, I want to log issues, so that any problems encountered can be tracked and addressed.
+- As a FABS user, I want to request access to raw data, so that I can perform detailed analysis or reporting on it.
+- As a FABS user, I want to generate a D file from data, so that I can create a formatted output suitable for specific reporting needs.

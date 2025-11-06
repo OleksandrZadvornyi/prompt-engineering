@@ -1,0 +1,9 @@
+As a user, I want to submit data, so that I can create a new submission with a unique ID.  
+As a user, I want to receive feedback on my submission, so that I know if it was created successfully or if it failed validation.  
+As a user, I want to view the status of my submission using its ID, so that I can track its progress.  
+As a user, I want to update the status of my submission, so that I can reflect changes in its state.  
+As a user, I want to delete my submission using its ID, so that I can remove it from the system if it's no longer needed.  
+As a tester, I want to track issues encountered during testing, so that I can keep a record of problems for future reference.  
+As a tester, I want to generate a summary of issues encountered during testing, so that I can communicate findings effectively.  
+As a user, I want to receive an error message if I try to view or update a non-existent submission, so that I am informed of the mistake.  
+As a user, I want to ensure that only valid submissions are accepted, so that the integrity of the submission system is maintained.

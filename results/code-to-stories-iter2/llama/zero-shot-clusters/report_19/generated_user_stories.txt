@@ -1,0 +1,26 @@
+As a Data Processor, I want to process deletions on a specific date, so that I can remove outdated records from the system.
+As a Data Processor, I want to update SQL codes, so that I can modify the database queries.
+As a Data Processor, I want to add derivation logic, so that I can enhance the data processing rules.
+As a Data Processor, I want to derive funding agency codes from data, so that I can categorize the records by agency.
+As a Data Processor, I want to map federal action obligations, so that I can track the obligations associated with each record.
+As a Data Processor, I want to validate zip codes, so that I can ensure the accuracy of the location data.
+As a UI Updater, I want to redesign the resources page, so that I can improve the user experience.
+As a UI Updater, I want to report issues to agencies, so that I can keep them informed about the system's performance.
+As a UI Updater, I want to track issues, so that I can monitor and resolve system problems.
+As a UI Updater, I want to schedule user testing, so that I can plan and conduct testing sessions.
+As a UI Updater, I want to begin user testing, so that I can start evaluating the system's usability.
+As a New Relic Monitor, I want to provide useful data, so that I can help optimize system performance.
+As a DevOps Engineer, I want to sync D1 file generation, so that I can ensure the files are up-to-date and consistent.
+As a FABS User, I want to update FABS submissions, so that I can manage the submissions and track their status.
+As a FABS User, I want to add GTAS window data, so that I can incorporate additional financial data into the system.
+As a FABS User, I want to update the FABS sample file, so that I can modify the sample data for testing purposes.
+As a FABS User, I want to deactivate the publish button, so that I can prevent accidental publishing of incomplete data.
+As a FABS Loader, I want to derive fields from data, so that I can extract relevant information from the records.
+As a FABS Loader, I want to include FREC derivations, so that I can incorporate additional derived fields into the data.
+As a Broker User, I want to create content mockups, so that I can design and test the content before publishing.
+As a Broker User, I want to submit records, so that I can add new data to the system.
+As a Developer, I want to index domain models, so that I can organize and manage the domain models.
+As a Developer, I want to access broker application data, so that I can retrieve and utilize the data for development purposes.
+As a USASpending User, I want to access raw agency published files, so that I can retrieve and analyze the published data.
+As a DFiles Generator, I want to manage D files generation requests, so that I can process and fulfill the requests efficiently.
+As a FABS Uploader, I want to prevent duplicate transactions, so that I can ensure data integrity and avoid errors.

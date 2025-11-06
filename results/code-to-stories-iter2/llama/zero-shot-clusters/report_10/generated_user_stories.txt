@@ -1,0 +1,55 @@
+As a system administrator, I want to process deletions for a given date, so that I can maintain data consistency.
+As a designer, I want to redesign the Resources page, so that it matches the new Broker design styles.
+As a designer, I want to update the header information box, so that it shows the updated date and time.
+As a tester, I want to report user testing progress, so that I can track the testing status.
+As a tester, I want to schedule user testing, so that I can plan the testing process.
+As a tester, I want to begin user testing, so that I can start testing the system.
+As a tester, I want to create a user testing summary, so that I can analyze the testing results.
+As a developer, I want to provide New Relic data, so that I can monitor application performance.
+As a developer, I want to update error codes, so that they accurately reflect logic and provide enough information.
+As a developer, I want to display submission errors, so that users are informed of any issues.
+As a developer, I want to update frontend URLs, so that they accurately reflect the page being accessed.
+As a developer, I want to deploy FABS, so that it is available to users.
+As a developer, I want to improve logging, so that I can troubleshoot issues efficiently.
+As a developer, I want to update Broker resources, so that they are accurate and up-to-date.
+As a developer, I want to prevent duplicate transactions, so that data is accurate and up-to-date.
+As a developer, I want to prevent double publishing, so that data is accurate and up-to-date.
+As a developer, I want to update FABS submission, so that it is accurate and up-to-date.
+As a developer, I want to deactivate the publish button, so that multiple publishing is prevented.
+As a data analyst, I want to sync D1 file generation with FPDS data load, so that data is accurate and complete.
+As a data analyst, I want to derive FundingAgencyCode, so that data is accurate and complete.
+As a data analyst, I want to map FederalActionObligation, so that data is accurate and complete.
+As a data analyst, I want to validate PPoPZIP, so that data is accurate and complete.
+As a data analyst, I want to derive fields, so that data is accurate and complete.
+As a data analyst, I want to include FREC derivations, so that data is accurate and complete.
+As a data analyst, I want to load historical FPDS data, so that data is accurate and complete.
+As a data analyst, I want to load FPDS data, so that data is up-to-date.
+As a data analyst, I want to load all historical Financial Assistance data, so that data is accurate and complete.
+As a data analyst, I want to get File F, so that it is in the correct format.
+As a data analyst, I want to derive office names, so that data is accurate and complete.
+As a data analyst, I want to index domain models, so that validation results are returned in a reasonable amount of time.
+As a data analyst, I want to justify padding, so that zero-padded fields are accurate.
+As a data analyst, I want to access published FABS files, so that I can perform data analysis.
+As a data analyst, I want to send grant records, so that data is accurate and up-to-date.
+As a data analyst, I want to add GTAS window data, so that data is accurate and complete.
+As a data analyst, I want to update the FABS sample file, so that it is accurate and up-to-date.
+As a data analyst, I want to provide FABS groups, so that data is accurate and complete.
+As a data analyst, I want to include necessary columns, so that data is accurate and complete.
+As a data analyst, I want to access additional fields, so that data is accurate and complete.
+As a project manager, I want to move to round 2 of DABS or FABS landing page edits, so that I can stay on track.
+As a project manager, I want to move to round 2 of Homepage edits, so that I can stay on track.
+As a project manager, I want to move to round 3 of Help page edits, so that I can stay on track.
+As a project manager, I want to track issues, so that I can stay on track.
+As a project manager, I want to design a schedule, so that the project timeline is clear.
+As a project manager, I want to design an audit, so that the project scope is clear.
+As a system administrator, I want to reset the environment, so that it only takes Staging MAX permissions.
+As a user, I want to view DABS pages, so that I can access information.
+As a user, I want to navigate to FABS or DABS pages, so that I can access information.
+As a user, I want to download a FABS file, so that I can access information.
+As a user, I want to display language, so that it is appropriate for me.
+As a user, I want to display submission periods, so that I can plan accordingly.
+As a user, I want to display status labels, so that I can track submission progress.
+As a user, I want to display financial assistance data, so that I can access the latest information.
+As a user, I want to display publishing information, so that I can plan accordingly.
+As a user, I want to submit records, so that they can be processed.
+As a user, I want to display submission status, so that I can track progress.

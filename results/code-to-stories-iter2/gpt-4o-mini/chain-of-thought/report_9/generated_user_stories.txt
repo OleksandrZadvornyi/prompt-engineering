@@ -1,0 +1,15 @@
+As a file uploader, I want to upload files in CSV or Excel format, so that I can ensure the data is in the correct format for processing.
+
+As a file uploader, I want to validate the file format of the uploaded file, so that I can reject unsupported formats and log the error.
+
+As a file uploader, I want to check for errors in the uploaded file content, so that I can ensure the data meets the minimum requirements for processing.
+
+As a file uploader, I want to log errors when the file format is invalid or contains errors, so that I can keep a record of issues for troubleshooting.
+
+As a project manager, I want to add user testing reports, so that I can gather feedback and improve the project based on user experience.
+
+As a project manager, I want to request redesigns for resources, so that I can address concerns and enhance project materials.
+
+As a project manager, I want to process deletions based on a specific date, so that I can manage records and maintain data integrity.
+
+As a user, I want to submit data relevant to my role, so that I can contribute to the project effectively.

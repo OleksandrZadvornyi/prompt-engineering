@@ -1,0 +1,24 @@
+Here are the user stories derived from the Python code:
+
+As a system administrator, I want to delete submissions by date, so that I can clean up old data and maintain system efficiency.  
+As a user, I want to update the status of my submission, so that I can track its progress through the workflow.  
+As a user, I want to view my submission details, so that I can verify the information I've submitted.  
+As a system administrator, I want to add validation rules, so that I can ensure data quality and consistency.  
+As a system administrator, I want to add lock windows, so that I can prevent submissions during maintenance periods.  
+As a user, I want to check if the system is locked, so that I know when I can submit data.  
+As a system, I want to cache file requests, so that I can avoid processing duplicate files.  
+As a system administrator, I want to set user permissions, so that I can control access to system features.  
+As a user, I want to view all my submissions, so that I can track my submission history.  
+As a system, I want to validate submission data, so that I can ensure required fields are provided and formatted correctly.  
+As a system administrator, I want to update validation rules, so that I can adapt to changing data requirements.  
+As a system administrator, I want to add GTAS lock windows, so that I can schedule system maintenance.  
+As a user, I want to generate a D file for my submission, so that I can have a record of my data submission.  
+As a user, I want to get an office name from its code, so that I can verify agency information.  
+As a system, I want to derive a funding agency code from submission data, so that I can automate data processing.  
+As a system administrator, I want to set user permissions, so that I can manage access control.  
+As a user, I want to view all my submissions, so that I can track my activity.  
+As a tester, I want to schedule a testing session, so that I can coordinate with my team.  
+As a tester, I want to send a testing report, so that I can share results with stakeholders.  
+As a user, I want to view a personalized homepage layout, so that I can access relevant features quickly.  
+As a user, I want to view a redesigned resources page, so that I can easily find documentation and tutorials.  
+As a user, I want to view a redesigned help page, so that I can quickly find support when needed.

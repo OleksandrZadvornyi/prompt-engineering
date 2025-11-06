@@ -1,0 +1,22 @@
+Here are the user stories derived from the Python code:
+
+1. As a System Administrator, I want to delete submissions older than a specified date, so that I can free up storage space and maintain data relevance.  
+2. As a Data Analyst, I want to map submission IDs to funding agency codes, so that I can categorize submissions for reporting and analysis.  
+3. As a Data Engineer, I want to sync D1 report generation with FPDS data loading, so that reports always reflect the latest data.  
+4. As a Data Manager, I want to load historical FPDS data for a specific year, so that I can analyze trends over time.  
+5. As a Developer, I want to generate a report combining historical and current FPDS data, so that I can provide comprehensive insights.  
+6. As a UI Designer, I want to update the Resources page styles, so that the interface remains modern and user-friendly.  
+7. As a Project Manager, I want to generate user testing reports for specific agencies, so that I can track feedback and improvements.  
+8. As a Content Manager, I want to update landing page content, so that users always see the most relevant and up-to-date information.  
+9. As a Validation Specialist, I want to update DUNS validation rules, so that submissions adhere to current standards.  
+10. As a Validation Specialist, I want to update CFDA validation error messages, so that users receive clear and helpful feedback.  
+11. As a File Processor, I want to generate D files with optional caching, so that I can improve performance for repeated requests.  
+12. As a Security Officer, I want to reset environment permissions, so that only authorized users can access sensitive data.  
+13. As a Security Officer, I want to grant read-only DABS access to specific users, so that they can view data without making changes.  
+14. As a Dashboard Manager, I want to update submission status labels, so that the dashboard reflects the latest workflow states.  
+15. As a Dashboard Manager, I want to add contextual information to submission dashboards, so that users have more detailed insights.  
+16. As a Historical Data Loader, I want to load historical FPDS data for a range of years, so that I can support longitudinal analysis.  
+17. As a Historical Data Loader, I want to load historical FABS data for a range of years, so that I can ensure completeness of archived records.  
+18. As a FABS Processor, I want to validate PPoP zip codes, so that addresses meet the required format.  
+19. As a FABS Processor, I want to update sample files for a given type, so that users have accurate templates for submissions.  
+20. As a File Processor, I want to validate file extensions, so that only permitted file types are processed.

@@ -1,0 +1,11 @@
+As a system administrator, I want to define different types of users with distinct roles and permissions, so that I can manage access to the system and its functionality effectively.
+As a developer, I want to implement the logic for each user type to submit data, so that the system can handle different types of submissions correctly.
+As a validator, I want to validate the submitted data according to predefined rules, so that the system can ensure data quality and accuracy.
+As a data analyst, I want to load historical data from external sources, so that I can analyze and process it for various purposes.
+As a submission manager, I want to generate D files based on the submitted data, so that I can store and manage the submissions efficiently.
+As a user, I want to receive feedback on the status of my submissions, so that I can track the progress and outcome of my submissions.
+As a system administrator, I want to handle validation errors and exceptions, so that the system can provide meaningful error messages and prevent data corruption.
+As a user, I want to derive PPoP codes from my submissions, so that I can use them for further processing and analysis.
+As a system administrator, I want to manage the cache of generated D files, so that the system can improve performance and reduce redundant computations.
+As a developer, I want to implement the logic for deriving PPoP codes, so that the system can generate accurate and consistent codes.
+As a user, I want to apply validation rules to my submissions, so that the system can ensure data quality and accuracy before processing.

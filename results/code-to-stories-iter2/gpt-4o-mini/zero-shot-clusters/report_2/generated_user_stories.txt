@@ -1,0 +1,17 @@
+As a user, I want to add a submission, so that I can track submissions with a unique identifier and associated data.
+
+As a user, I want to validate a submission, so that I can ensure that the data provided meets the necessary requirements.
+
+As a user, I want to retrieve a submission by its ID, so that I can view the details of a specific submission.
+
+As a user, I want to update the status of a submission, so that I can reflect its current state in the system.
+
+As a user, I want to add an error message to a submission, so that I can document issues that need attention.
+
+As a user, I want to generate a validated file of all valid submissions, so that I can keep a record of successfully processed submissions.
+
+As a user, I want to get the status of all submissions, so that I can have an overview of the current state of my submissions.
+
+As a user, I want to delete submissions based on submission date, so that I can manage and clean up outdated entries.
+
+As a user, I want to sync data loads, so that I can ensure that my submission data is up-to-date with external systems.

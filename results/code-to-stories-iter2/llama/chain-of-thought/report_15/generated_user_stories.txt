@@ -1,0 +1,13 @@
+As a FABS user, I want to submit FABS data, so that I can store and track my submissions.
+As a FABS user, I want to view my FABS submissions, so that I can monitor and manage my data.
+As a broker user, I want to submit data, so that I can store and track my submissions.
+As a broker user, I want to view my submissions, so that I can monitor and manage my data.
+As a developer, I want to log messages, so that I can track and debug the application.
+As a developer, I want to update the broker validation rule table, so that I can ensure data quality and integrity.
+As a developer, I want to add GTAS window data, so that I can update the GTAS data store.
+As a developer, I want to manage D files generation requests, so that I can facilitate the generation of D files.
+As a UI SME, I want to provide user testing results, so that I can contribute to the improvement of the application.
+As an administrator, I want to register FABS users, so that I can manage user access and permissions.
+As an administrator, I want to register broker users, so that I can manage user access and permissions.
+As an administrator, I want to retrieve FABS users, so that I can manage and support user accounts.
+As an administrator, I want to retrieve broker users, so that I can manage and support user accounts.

@@ -1,0 +1,17 @@
+As a system administrator, I want to set up logging with a specified level, so that I can track the execution of the system and diagnose any issues.
+As a developer, I want to define an enumeration for FABS status, so that I can accurately represent the different states of FABS submissions.
+As a developer, I want to create a class for FABS validation rules, so that I can encapsulate the validation logic and rule metadata.
+As a developer, I want to create a class for FABS data, so that I can store and manage the FABS submission metadata and data.
+As a developer, I want to implement validation logic for FABS data, so that I can ensure the data meets the required standards.
+As a developer, I want to implement publishing logic for FABS data, so that I can make the validated data available.
+As a developer, I want to create a class for a broker, so that I can manage FABS submissions and validation rules.
+As a developer, I want to implement a method to add FABS submissions, so that I can store and process them.
+As a developer, I want to implement a method to add validation rules, so that I can apply them to FABS submissions.
+As a developer, I want to implement a method to process FABS submissions, so that I can validate and publish them.
+As a developer, I want to implement a method to retrieve FABS submissions, so that I can access and review them.
+As a developer, I want to create a class for an agency, so that I can represent and manage agency metadata and files.
+As a developer, I want to implement a method to get raw published files for an agency, so that I can access the published data.
+As a data user, I want to access raw agency published files, so that I can use the published data for analysis or other purposes.
+As a FABS user, I want to submit FABS data, so that I can contribute to the FABS repository.
+As a FABS user, I want to retrieve FABS submissions, so that I can review and manage my submissions.
+As a system administrator, I want to configure the system to run the main program, so that I can execute the FABS workflow.

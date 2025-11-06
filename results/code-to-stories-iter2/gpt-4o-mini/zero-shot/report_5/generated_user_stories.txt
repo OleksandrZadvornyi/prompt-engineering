@@ -1,0 +1,31 @@
+As a database administrator, I want to delete old submissions by a specific cutoff date, so that I can maintain a clean and relevant submissions database.
+
+As a web developer, I want to redesign the resources page using a specified style, so that users have a better experience navigating the resources.
+
+As a QA tester, I want to report user testing findings to a JSON file, so that I can keep a record of testing results for future reference.
+
+As a developer, I want to log my activities with timestamps, so that I have a clear history of changes and actions taken during development.
+
+As a validator, I want to check if FABS submissions contain all required fields, so that I can ensure data completeness before processing.
+
+As a user, I want to access published FABS submissions, so that I can view and utilize the information that has been made available.
+
+As a data analyst, I want to generate D1 files based on FPDS data, so that I can create formatted outputs for reporting and analysis.
+
+As a database manager, I want to load FPDS data into the database, so that I can keep the data set updated and relevant.
+
+As a submissions manager, I want to prevent double publishing of submissions, so that I can avoid errors and ensure each submission is published only once.
+
+As an office administrator, I want to derive office names from their corresponding codes, so that I can easily understand which office is being referred to.
+
+As a data analyst, I want to provide FABS groups based on the FREC paradigm, so that I can categorize submissions for easier analysis.
+
+As a user, I want to download files related to my submissions, so that I can access the necessary documents easily.
+
+As a researcher, I want to extract historical FPDS data within a specific date range, so that I can analyze trends over time.
+
+As a project manager, I want to specify a user testing schedule in a JSON file, so that I can organize and communicate the timeline for testing.
+
+As a submission processor, I want to generate File F in the correct format for each submission, so that I can ensure compliance with submission requirements.
+
+As a user, I want to obtain detailed information about specific submissions, so that I can review the necessary details related to my inquiries.

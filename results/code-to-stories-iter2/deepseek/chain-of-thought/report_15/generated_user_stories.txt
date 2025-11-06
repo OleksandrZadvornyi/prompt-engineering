@@ -1,0 +1,33 @@
+Here are the user stories derived from the Python code, formatted as requested:
+
+As a developer, I want to update FABS submission status, so that I can track the progress of submissions.  
+As a developer, I want to update broker validation rules, so that the system enforces current business requirements.  
+As a developer, I want to add GTAS window data, so that financial transaction information is available for validation.  
+As a developer, I want to cache D Files requests, so that frequently accessed data can be served faster.  
+As a developer, I want to prevent double publishing of FABS submissions, so that data integrity is maintained.  
+As a developer, I want to update FABS sample files, so that users have accurate examples for reference.  
+As a developer, I want to index domain models, so that database queries perform efficiently.  
+As a developer, I want to update SQL codes, so that database operations reflect current business logic.  
+As a developer, I want to load historical FABS data, so that past submissions are available for reference.  
+As a developer, I want to load historical FPDS data, so that contract information is preserved.  
+As a DevOps engineer, I want to set up New Relic, so that application performance can be monitored.  
+As a DevOps engineer, I want to reset environment permissions, so that access controls match security requirements.  
+As a broker user, I want to upload and validate files, so that my data can be processed by the system.  
+As a broker user, I want to sync D1 files with FPDS data, so that contract information is up-to-date.  
+As a broker user, I want to create content mockups, so that UI changes can be previewed.  
+As a broker user, I want to update error codes, so that users receive accurate error messages.  
+As a website user, I want to access published FABS files, so that I can view available submissions.  
+As a website user, I want to access raw agency files, so that I can work with original data sources.  
+As a FABS user, I want to deactivate the publish button, so that submissions can't be published multiple times.  
+As a FABS user, I want to download FABS files, so that I can work with submission data locally.  
+As a FABS user, I want to validate status labels, so that submission states are accurately displayed.  
+As a data user, I want to receive FABS updates, so that I'm aware of new published submissions.  
+As a data user, I want to access additional FPDS fields, so that I have complete contract information.  
+As a tester, I want to access test features, so that I can verify functionality in different environments.  
+As a tester, I want to test FABS field derivations, so that calculated fields are accurate.  
+As a UI designer, I want to redesign resources pages, so that the interface meets current design standards.  
+As a UI designer, I want to report user testing results, so that design improvements can be made.  
+As a UI designer, I want to proceed to the next round of edits, so that design iterations can continue.  
+As a UI designer, I want to track Tech Thursday issues, so that technical problems are documented.  
+As a UI designer, I want to schedule user testing, so that we can gather feedback on designs.  
+As a data processor, I want to delete data by date, so that outdated records can be removed.

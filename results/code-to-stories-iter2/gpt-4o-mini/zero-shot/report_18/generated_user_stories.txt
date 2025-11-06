@@ -1,0 +1,19 @@
+As a submission manager, I want to delete submissions on a specific date, so that I can manage and remove outdated submissions efficiently.
+
+As a submission manager, I want to log the status of submissions, so that I can keep track of submission changes over time.
+
+As a submission manager, I want to update the status of a submission, so that I can reflect its current state and monitor its progress.
+
+As a UI manager, I want to redesign the resource page, so that it aligns with new styles and improves the user experience.
+
+As a UI manager, I want to report user test summaries to agencies, so that they are informed about the testing outcomes.
+
+As a UI manager, I want to schedule user testing for new features, so that I can gather user feedback before the official release.
+
+As a validation manager, I want to validate uploaded files against allowed formats, so that I can ensure only acceptable file types are processed.
+
+As a validation manager, I want to validate DUNS numbers, so that I can confirm their legitimacy and maintain data integrity.
+
+As a data publisher, I want to publish data records if they have not already been published, so that I can avoid duplication and ensure every record is unique.
+
+As a flex field manager, I want to add a flex field if under the limit, so that I can customize data fields without exceeding constraints.

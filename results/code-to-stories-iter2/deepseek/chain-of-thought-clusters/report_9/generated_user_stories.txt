@@ -1,0 +1,16 @@
+Here are the user stories derived from the Python code:
+
+1. As a user, I want to validate a DUNS number for contract or grant actions, so that I can ensure it is registered in SAM.  
+2. As a user, I want to validate file extensions, so that only CSV or XLSX files are processed.  
+3. As a user, I want to generate a unique request ID, so that I can track file submissions.  
+4. As a user, I want to check for duplicate files using a hash, so that I can prevent duplicate submissions.  
+5. As a user, I want to load historical FPDS data from CSV or XLSX files, so that I can analyze procurement data.  
+6. As a user, I want to derive funding agency codes from records, so that I can categorize contract data.  
+7. As a user, I want to derive office names from codes, so that I can improve readability in reports.  
+8. As a UX researcher, I want to schedule user testing sessions, so that I can gather feedback on system usability.  
+9. As a UX researcher, I want to report testing results for a session, so that I can document findings and recommendations.  
+10. As an administrator, I want to update submission statuses, so that users can track progress in the dashboard.  
+11. As an administrator, I want to add new submissions with an initial status, so that I can manage the workflow.  
+12. As an administrator, I want to log submission history actions and outcomes, so that I can maintain an audit trail.  
+13. As an auditor, I want to retrieve submission history, so that I can review past actions for compliance.  
+14. As a data engineer, I want to sync FPDS data with D1 generation data, so that the system remains up-to-date with procurement records.

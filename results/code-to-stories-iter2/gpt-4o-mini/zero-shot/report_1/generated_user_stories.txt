@@ -1,0 +1,25 @@
+As a user, I want to delete submissions by date, so that I can manage submissions that are no longer relevant.
+
+As a user, I want to validate submission data, so that I can ensure all required fields are present before processing.
+
+As a user, I want to upload a FABS file, so that I can store and track submissions in the system.
+
+As a user, I want to check the status of a submission by its ID, so that I can see its current processing state.
+
+As a user, I want to update a submission with new data, so that I can correct or enhance the information submitted.
+
+As a user, I want to reset permissions in a staging environment, so that I can ensure the environment is properly configured for testing.
+
+As a user, I want to report user testing results, so that I can share feedback with the team.
+
+As a user, I want to schedule user testing on a specific date, so that I can prepare for evaluations in advance.
+
+As a user, I want to move to the next design round for a specified page, so that I can progress through the design iterations.
+
+As a user, I want to load FPDS data from a file, so that I can access and utilize that data effectively.
+
+As a user, I want to load historical data from both FPDS and FABS files, so that I can analyze trends and patterns over time.
+
+As a user, I want to update validation rules, so that I can ensure the system reflects the latest requirements.
+
+As a user, I want to check for duplicate transactions, so that I can maintain data integrity and avoid processing errors.

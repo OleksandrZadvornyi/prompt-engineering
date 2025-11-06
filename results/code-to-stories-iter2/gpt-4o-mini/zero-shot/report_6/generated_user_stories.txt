@@ -1,0 +1,27 @@
+As a user, I want to upload a file, so that I can store data for processing.
+
+As a user, I want to receive an error message if I don't include a file in my upload, so that I know what went wrong.
+
+As a user, I want to receive an error message if I upload a file with an invalid file type, so that I can correct my submission.
+
+As a user, I want to receive an error message if I try to upload a file that has already been submitted, so that I avoid duplicate uploads.
+
+As a user, I want to receive a success message when my file is uploaded successfully, so that I know the upload was completed.
+
+As a user, I want to delete a previously uploaded file, so that I can manage my submissions.
+
+As a user, I want to receive an error message if I try to delete a file that doesn't exist, so that I understand the issue.
+
+As a user, I want to load FPDS data from a file, so that I can process that data further.
+
+As a user, I want to receive an error message if I submit invalid FPDS data, so that I can correct my submission.
+
+As a user, I want to receive a success message when the FPDS data is loaded successfully, so that I know the loading was completed.
+
+As a user, I want to generate D files based on the loaded FPDS data, so that I can utilize that data effectively.
+
+As a user, I want to receive a success message when the D files are generated successfully, so that I know the generation was completed.
+
+As a developer, I want to ensure that errors during file uploads and processing are logged, so that I can troubleshoot issues effectively.
+
+As a user, I want user testing to be scheduled automatically at regular intervals, so that the application can be tested without manual intervention.

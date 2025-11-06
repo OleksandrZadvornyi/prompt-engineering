@@ -1,0 +1,59 @@
+As a data manager, I want to process deletions for a specific date, so that I can maintain accurate records.
+As a user, I want to redesign the Resources page, so that I can have a better user experience.
+As a reporter, I want to report to agencies, so that I can inform them about important updates.
+As a landing page editor, I want to move on to round 2 of DABS landing page edits, so that I can improve the user interface.
+As a homepage editor, I want to move on to round 2 of Homepage edits, so that I can enhance the user experience.
+As a help page editor, I want to move on to round 3 of Help page edits, so that I can provide better support.
+As a logging administrator, I want to log messages, so that I can track system activities.
+As a data analyst, I want to provide useful data across all applications, so that I can support informed decision-making.
+As an error handler, I want to upload and validate error messages, so that I can ensure system reliability.
+As a production manager, I want to deploy FABS into production, so that I can make it available to users.
+As a data validator, I want to accept zero and blank for loan records, so that I can handle different data formats.
+As a data validator, I want to accept zero and blank for non-loan records, so that I can handle different data formats.
+As a SQL administrator, I want to make updates to SQL codes for clarity, so that I can improve system performance.
+As a SQL administrator, I want to derive data elements properly, so that I can ensure data accuracy.
+As a PPoP code manager, I want to add 00***** and 00FORGN PPoPCode cases to derivation logic, so that I can handle different code formats.
+As an office name manager, I want to derive office names from office codes, so that I can provide accurate information.
+As a FREC manager, I want to include FREC derivations in historical FABS data, so that I can provide accurate information.
+As a NASA manager, I want to not display NASA grants as contracts, so that I can accurately represent data.
+As a DUNS manager, I want to accept records whose ActionTypes are B, C, or D and the DUNS is registered in SAM, so that I can handle different data formats.
+As a funding agency code manager, I want to derive FundingAgencyCode, so that I can provide accurate information.
+As a legal entity address line 3 manager, I want to match maximum length allowed for LegalEntityAddressLine3 to Schema v1.1, so that I can ensure data consistency.
+As a FABS file manager, I want to use schema v1.1 headers in FABS file, so that I can ensure data consistency.
+As a federal action obligation manager, I want to map FederalActionObligation to Atom Feed, so that I can provide accurate information.
+As a PPoPZIP manager, I want to allow PPoPZIP+4 to work the same as Legal Entity ZIP validations, so that I can handle different data formats.
+As a sample file manager, I want to link SAMPLE FILE to correct file, so that I can ensure data accuracy.
+As an FPDS data manager, I want to ensure FPDS data is up-to-date daily, so that I can provide accurate information.
+As a D files manager, I want to generate and validate D Files from FABS and FPDS data, so that I can ensure data accuracy.
+As a header information manager, I want to show updated date and time in header information box, so that I can provide accurate information.
+As a file uploader, I want to receive more helpful file-level error when uploading file with wrong extension, so that I can handle errors efficiently.
+As a test features manager, I want to access test features in environments other than Staging, so that I can test system functionality.
+As a submission errors manager, I want to accurately represent FABS errors in submission errors, so that I can provide accurate information.
+As a frontend URLs manager, I want to make frontend URLs more accurately reflect page being accessed, so that I can improve user experience.
+As a historical data manager, I want to load historical Financial Assistance data for FABS go-live, so that I can provide accurate information.
+As a historical data manager, I want to load historical FPDS data, so that I can provide accurate information.
+As a submission dashboard manager, I want to see who created submission, so that I can track user activities.
+As a file level errors manager, I want to better understand file-level errors, so that I can handle errors efficiently.
+As a FABS groups manager, I want to provide FABS groups that function under FREC paradigm, so that I can provide accurate information.
+As a FABS derivation manager, I want to ensure FABS is deriving fields properly, so that I can ensure data accuracy.
+As a zero-padded fields manager, I want to only have zero-padded fields, so that I can ensure data consistency.
+As a DUNS validation manager, I want to submit records for individual recipients without receiving DUNS error, so that I can handle different data formats.
+As a published rows manager, I want to see more information about number of rows to be published, so that I can track system activities.
+As a duplicate transactions manager, I want to prevent duplicate transactions from being published, so that I can ensure data accuracy.
+As a citywide submission manager, I want to submit citywide as PPoPZIP and pass validations, so that I can handle different data formats.
+As an error code manager, I want to have updated error codes, so that I can handle errors efficiently.
+As a ZIP validation manager, I want to leave off last 4 digits of ZIP without error, so that I can handle different data formats.
+As a historical columns manager, I want to include all necessary columns in historical data, so that I can provide accurate information.
+As an FPDS data pull manager, I want to access two additional fields from FPDS data pull, so that I can provide accurate information.
+As a submission dashboard info manager, I want to have additional helpful info in submission dashboard, so that I can provide accurate information.
+As a FABS file download manager, I want to download uploaded FABS file, so that I can access system data.
+As a broker application manager, I want to quickly access Broker application data, so that I can track system activities.
+As a historical FPDS data manager, I want to determine best way to load historical FPDS data, so that I can provide accurate information.
+As a FABS pages manager, I want to have language on FABS pages be appropriate, so that I can improve user experience.
+As a DABS banner manager, I want to not display DABS banner messages on FABS pages, so that I can improve user experience.
+As a DABS access manager, I want to have read-only access to DABS, so that I can track system activities.
+As a validation manager, I want to have validations run in reasonable amount of time, so that I can ensure system reliability.
+As a submission status manager, I want to see correct status labels on Submission Dashboard, so that I can track system activities.
+As a submission period manager, I want to know when submission periods start and end, so that I can track system activities.
+As a landing page manager, I want to have landing page to navigate to either FABS or DABS pages, so that I can improve user experience.
+As a data submission manager, I want to submit data elements surrounded by quotation marks, so that I can handle different data formats.

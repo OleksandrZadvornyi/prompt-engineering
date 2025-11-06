@@ -1,0 +1,17 @@
+As a System Administrator, I want to process deletions for a specific date, so that I can maintain data integrity.
+As a System Administrator, I want to report to agencies, so that they can receive necessary information.
+As a System Administrator, I want to receive new relic data, so that I can analyze and utilize the data.
+As a System Administrator, I want to generate D1 files, so that I can create necessary reports.
+As a Developer, I want to update broker validation rules, so that I can ensure data accuracy.
+As a Developer, I want to add GTAS window data, so that I can maintain data completeness.
+As a Developer, I want to update the FABS sample file, so that I can reflect changes in the data.
+As a Developer, I want to derive the funding agency code, so that I can map it to the correct agency.
+As a Developer, I want to map federal action obligation to atom feed, so that I can create a standardized feed.
+As a Developer, I want to add PPoPCode cases to derivation logic, so that I can improve the derivation process.
+As a Data Loader, I want to load FPDS data, so that I can make it available for analysis.
+As a Data Loader, I want to load FABS data, so that I can make it available for analysis.
+As a UI Designer, I want to redesign the resources page, so that I can improve the user experience.
+As a FABS User, I want to submit FABS data, so that I can provide necessary information.
+As a Broker User, I want to upload and validate files, so that I can ensure data accuracy.
+As a System Administrator, I want to sync D1 file generation with FPDS data load, so that I can maintain data consistency.
+As a Developer, I want to make PPoPZIP+4 work like legal entity ZIP validations, so that I can standardize the validation process.

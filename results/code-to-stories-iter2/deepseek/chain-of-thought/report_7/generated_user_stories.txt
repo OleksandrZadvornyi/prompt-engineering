@@ -1,0 +1,18 @@
+Here are the user stories derived from the Python code:
+
+1. As a developer, I want to create different user roles, so that I can manage permissions and access control in the system.  
+2. As a user, I want to create a submission, so that I can submit data for processing.  
+3. As a user, I want to update my submission status, so that I can track its progress.  
+4. As a user, I want to add errors and warnings to my submission, so that I can record validation issues.  
+5. As a data analyst, I want to validate DABS submissions, so that I can ensure required fields like DUNS number are present.  
+6. As a data engineer, I want to derive FABS fields automatically, so that I can enrich the submission data.  
+7. As an admin, I want to publish a submission, so that I can finalize and make it available for further processing.  
+8. As a user, I want to retrieve a submission by ID, so that I can view or edit its details.  
+9. As a system, I want to cache file data, so that I can improve performance for frequently accessed files.  
+10. As an analyst, I want to set a GTAS window with start and end dates, so that I can filter data for analysis.  
+11. As a tester, I want to report UI issues, so that developers can fix bugs in specific components.  
+12. As a QA lead, I want to generate test reports, so that I can track issue statuses.  
+13. As a testing coordinator, I want to schedule testing sessions, so that I can organize team collaboration.  
+14. As a participant, I want to join a testing session, so that I can contribute to testing efforts.  
+15. As a data engineer, I want to load historical FABS data, so that I can perform trend analysis.  
+16. As an analyst, I want to filter FPDS data by date, so that I can focus on relevant historical records.

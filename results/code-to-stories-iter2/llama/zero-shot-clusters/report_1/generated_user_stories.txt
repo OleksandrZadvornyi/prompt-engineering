@@ -1,0 +1,20 @@
+As a developer, I want to create a user story, so that I can track and manage user requirements.
+As a user, I want to process a FABS submission, so that I can manage the publication status of a submission.
+As a system administrator, I want to update the publish status of a FABS submission, so that I can control the visibility of a submission.
+As an error handler, I want to upload and validate error messages, so that I can track and resolve errors in the system.
+As a data generator, I want to generate D Files, so that I can create the necessary data for further processing.
+As a data manager, I want to update FABS records, so that I can maintain accurate and up-to-date information.
+As a validator, I want to validate FABS submissions, so that I can ensure submissions meet the required rules and standards.
+As a record checker, I want to check the status of FSRS records, so that I can verify the validity of records.
+As a validator, I want to validate DUNS numbers, so that I can ensure the accuracy of business identification numbers.
+As a validator, I want to validate PPoP ZIP codes, so that I can ensure the accuracy of location data.
+As a validator, I want to validate loan records, so that I can ensure the accuracy of financial data.
+As a validator, I want to validate non-loan records, so that I can ensure the accuracy of non-financial data.
+As a validator, I want to validate schema v1.1 headers, so that I can ensure the accuracy of data formatting.
+As a data manager, I want to update FPDS data, so that I can maintain accurate and up-to-date information.
+As a file generator, I want to generate File F, so that I can create the necessary files for further processing.
+As an error handler, I want to handle file level errors, so that I can resolve errors and ensure system stability.
+As a data derivator, I want to derive office names, so that I can accurately identify office locations.
+As a link updater, I want to update sample file links, so that I can maintain accurate and accessible links.
+As a validator, I want to validate ZIP codes, so that I can ensure the accuracy of location data.
+As a status retriever, I want to retrieve submission status labels, so that I can accurately track and manage submission status.

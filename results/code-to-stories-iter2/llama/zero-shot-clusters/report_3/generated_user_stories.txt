@@ -1,0 +1,18 @@
+As a FABS user, I want to submit a FABS file, so that I can upload and track my file submissions.
+As a FABS user, I want to check the status of my submitted FABS file, so that I can stay informed about the processing status of my file.
+As a FABS user, I want to download a previously submitted FABS file, so that I can access and review my submitted files.
+As a Broker user, I want to upload and validate a file, so that I can ensure the integrity and accuracy of the data.
+As a Broker user, I want to submit records, so that I can send the validated data to the relevant systems.
+As a Developer, I want to add updates to a FABS submission, so that I can modify and enhance the existing data.
+As a Developer, I want to update a FABS sample file, so that I can modify and refine the file for future use.
+As a Developer, I want to prevent duplicate transactions, so that I can ensure data consistency and accuracy.
+As a User Interface Designer, I want to move to round 2, so that I can proceed with the next stage of the design process.
+As a User Interface Designer, I want to track issues, so that I can monitor and address any problems that arise.
+As a User Interface Designer, I want to schedule user testing, so that I can gather feedback and validate the design.
+As a Data user, I want to access additional fields, so that I can retrieve and analyze the data I need.
+As a Data user, I want to receive FABS updates, so that I can stay informed about changes and updates to the data.
+As a FABS Loader user, I want to derive fields, so that I can generate new data fields based on existing data.
+As a FABS Loader user, I want to include FREC derivations, so that I can incorporate additional data fields into the existing data.
+As a D Files Generator user, I want to manage and cache D files, so that I can optimize file access and processing.
+As a USASpending user, I want to access raw agency files, so that I can retrieve and analyze the data I need.
+As a System Administrator, I want to generate and validate D files, so that I can ensure the integrity and accuracy of the data.

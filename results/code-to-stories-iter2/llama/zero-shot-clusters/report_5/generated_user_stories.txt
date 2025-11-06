@@ -1,0 +1,10 @@
+As a system administrator, I want to validate the existence and content of FABS files, so that I can ensure they are properly formatted and not empty.
+As a system administrator, I want to validate the existence and content of DABS files, so that I can ensure they are properly formatted and not empty.
+As a system administrator, I want to process FABS files and store their contents in a database, so that I can manage and retrieve their data efficiently.
+As a system administrator, I want to process DABS files and store their contents in a database, so that I can manage and retrieve their data efficiently.
+As a system administrator, I want to load FPDS data from a file, so that I can access and utilize the data as needed.
+As a system administrator, I want to retrieve a list of processed FABS submissions, so that I can track and manage FABS files that have been processed.
+As a system administrator, I want to retrieve FPDS data, so that I can access and utilize the data as needed.
+As a system administrator, I want to retrieve a list of processed DABS submissions, so that I can track and manage DABS files that have been processed.
+As a user, I want to submit a FABS file for processing, so that I can easily manage and analyze the file's contents.
+As a user, I want to submit a DABS file for processing, so that I can easily manage and analyze the file's contents.

@@ -1,0 +1,23 @@
+As a data processor, I want to delete data from the database based on a specific date, so that I can manage and maintain the database.
+As a data processor, I want to notify users when deletions have been processed, so that they are aware of the changes made to the database.
+As a UI designer, I want to redesign the Resources page, so that users have a better experience navigating the website.
+As a UI designer, I want to report user testing, so that I can identify and fix issues with the website.
+As a UI designer, I want to move on to round 2 of DABS landing page edits, so that I can continue to improve the design and functionality of the website.
+As a UI designer, I want to move on to round 2 of Homepage edits, so that I can continue to improve the design and functionality of the website.
+As a UI designer, I want to move on to round 3 of Help page edits, so that I can continue to improve the design and functionality of the website.
+As a developer, I want to improve logging, so that I can better track and debug issues with the system.
+As a developer, I want to update FABS submission, so that users can submit accurate and up-to-date information.
+As a developer, I want to update the Broker validation rule table, so that the system can validate user input correctly.
+As a developer, I want to add GTAS window data to the database, so that the system can track and manage this data.
+As a developer, I want to manage and cache D Files generation requests, so that the system can efficiently handle these requests.
+As a developer, I want to prevent duplicate transactions from being published, so that the system can maintain data integrity.
+As a DevOps engineer, I want to provide useful New Relic data, so that the team can monitor and optimize system performance.
+As a broker user, I want to upload and validate error messages, so that the system can track and manage errors.
+As a broker user, I want to sync D1 file generation with FPDS data load, so that the system can ensure data consistency and accuracy.
+As a broker user, I want to help create content mockups, so that I can provide input and feedback on the design and functionality of the website.
+As a website user, I want to access published FABS files, so that I can view and download the most up-to-date information.
+As a FABS user, I want to link the SAMPLE FILE to the correct file, so that the system can accurately track and manage this data.
+As a FABS user, I want to represent submission errors accurately, so that I can identify and fix issues with my submissions.
+As a FABS user, I want to include flexfields in warning and error files, so that the system can provide detailed and accurate information about errors and warnings.
+As a FABS user, I want to deactivate the publish button after clicking, so that I can prevent accidental or unauthorized publishes.
+As a FABS user, I want to include all necessary columns in historical data, so that I can view and analyze complete and accurate information.

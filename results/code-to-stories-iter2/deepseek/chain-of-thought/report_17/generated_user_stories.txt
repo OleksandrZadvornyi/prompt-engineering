@@ -1,0 +1,19 @@
+Here are the user stories derived from the Python code:
+
+1. As a user, I want to create a new submission, so that I can start the data submission process.  
+2. As a user, I want to update the status of my submission, so that I can track its progress through the workflow.  
+3. As a user, I want to validate a FABS submission, so that I can ensure the data meets FABS requirements.  
+4. As a user, I want to validate a DABS submission, so that I can ensure the data meets DABS requirements.  
+5. As a data manager, I want to update a submission's status, so that I can manage its lifecycle correctly.  
+6. As a system administrator, I want to set a GTAS window, so that I can close the system for updates or maintenance.  
+7. As a system administrator, I want to clear a GTAS window, so that I can reopen the system for normal operations.  
+8. As a data processor, I want to generate a D file for a validated submission, so that I can prepare the data for further processing.  
+9. As a publisher, I want to publish a validated submission, so that the data becomes publicly available.  
+10. As a UI designer, I want to redesign the resources page, so that it adheres to the new style guide.  
+11. As a UX researcher, I want to report user testing results to an agency, so that feedback can be incorporated.  
+12. As a testing coordinator, I want to schedule a user testing session, so that usability can be evaluated.  
+13. As a tech lead, I want to log technical issues, so that they can be addressed in future meetings.  
+14. As a tech lead, I want to retrieve logged technical issues, so that I can review them with the team.  
+15. As a data steward, I want to process deletions for a specific date, so that outdated or incorrect data is removed.  
+
+These user stories align with the functions and classes in the provided Python code. Let me know if you'd like any refinements!

@@ -1,0 +1,32 @@
+As a system administrator, I want to log system events, so that I can track and monitor system activity.
+As a FABS data manager, I want to submit FABS data, so that I can store and manage FABS information.
+As a FABS data manager, I want to retrieve FABS data, so that I can view and analyze FABS information.
+As a DABS data manager, I want to submit DABS data, so that I can store and manage DABS information.
+As a D File generator, I want to generate a D File by combining FABS and FPDS data, so that I can create a comprehensive file.
+As a data validator, I want to validate DABS submissions, so that I can ensure data quality and integrity.
+As a data validator, I want to validate derived fields in FABS data, so that I can ensure data accuracy and consistency.
+As a data validator, I want to validate the D File, so that I can ensure data quality and integrity.
+As a FPDS data manager, I want to access FPDS data, so that I can retrieve and use relevant information.
+As a USASpending data manager, I want to access USASpending data, so that I can retrieve and use relevant information.
+As a SAM data manager, I want to access SAM data, so that I can retrieve and use relevant information.
+As a GTAS data manager, I want to access GTAS data, so that I can retrieve and use relevant information.
+As a broker validation rule manager, I want to update the broker validation rule table, so that I can manage and maintain validation rules.
+As a GTAS window data manager, I want to add GTAS window data to the database, so that I can store and manage GTAS window information.
+As a D Files generation request manager, I want to manage D Files generation requests, so that I can plan and manage file generation activities.
+As a raw agency published file manager, I want to access raw agency published files, so that I can retrieve and use relevant information.
+As a user interface designer, I want to create content mockups, so that I can design and develop user-friendly interfaces.
+As a FABS record manager, I want to update FABS records, so that I can manage and maintain FABS information.
+As a financial assistance data manager, I want to access financial assistance data, so that I can retrieve and use relevant information.
+As a submission manager, I want to submit FABS submissions, so that I can store and manage FABS submissions.
+As a frontend manager, I want to update frontend URLs, so that I can ensure accurate and up-to-date navigation.
+As a historical financial assistance data manager, I want to load historical financial assistance data, so that I can retrieve and analyze historical information.
+As a historical FPDS data manager, I want to load historical FPDS data, so that I can retrieve and analyze historical information.
+As a submission dashboard manager, I want to update the submission dashboard, so that I can display accurate and up-to-date submission status.
+As a File F manager, I want to get File F in the correct format, so that I can use and process the file correctly.
+As a FABS group manager, I want to create FABS groups, so that I can manage and maintain FABS group information.
+As a derived fields manager, I want to derive funding agency codes, so that I can calculate and populate derived fields.
+As a zero-padded fields manager, I want to get zero-padded fields, so that I can use and process the fields correctly.
+As a PPoPZIP manager, I want to get PPoPZIP, so that I can use and process the ZIP code correctly.
+As an error codes manager, I want to get error codes, so that I can use and manage error codes.
+As a submission errors manager, I want to get submission errors, so that I can identify and resolve submission issues.
+As a ZIP code manager, I want to get ZIP codes, so that I can use and process the ZIP code correctly.

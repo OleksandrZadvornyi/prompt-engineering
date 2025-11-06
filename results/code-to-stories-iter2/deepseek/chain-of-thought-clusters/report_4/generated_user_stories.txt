@@ -1,0 +1,26 @@
+Here are the user stories derived from the Python code:
+
+1. As a data manager, I want to process deletions for specific dates, so that outdated data is cleaned up efficiently.  
+2. As a UI designer, I want to redesign the Resources page, so that it matches Broker team styles.  
+3. As a UI designer, I want to report user testing results to agencies, so that feedback can be incorporated into improvements.  
+4. As a UI designer, I want to edit the landing page for specific rounds, so that it stays relevant and up-to-date.  
+5. As a UI designer, I want to track issues from Tech Thursday sessions, so that they can be addressed promptly.  
+6. As a UI designer, I want to schedule user testing with participants, so that usability can be evaluated.  
+7. As a DevOps engineer, I want to configure New Relic for applications, so that performance can be monitored effectively.  
+8. As a SQL developer, I want to update SQL code for clarity, so that queries are easier to read and maintain.  
+9. As a data analyst, I want to add edge cases to PPoPCode derivation logic, so that data processing is more accurate.  
+10. As a developer, I want to derive FundingAgencyCode from agency data, so that reporting is consistent.  
+11. As a developer, I want to improve logging for specific components, so that debugging is easier.  
+12. As a developer, I want to ensure domain models are indexed, so that validation is faster.  
+13. As a FABS user, I want to update the publish status of submissions, so that users see accurate statuses.  
+14. As a FABS user, I want to toggle the publish button during derivations, so that users can't submit incomplete data.  
+15. As a FABS user, I want to update frontend URLs, so that they remain accurate and functional.  
+16. As a data loader, I want to load historical FPDS data, so that past records are accessible.  
+17. As a data loader, I want to include FREC derivations in FABS data, so that reporting is complete.  
+18. As a validator, I want to update error messages for clarity, so that users understand issues better.  
+19. As a validator, I want to prevent duplicate transactions from being published, so that data integrity is maintained.  
+20. As a file manager, I want to cache D File generation requests, so that duplicate work is avoided.  
+21. As a file manager, I want to generate D Files from FABS and FPDS data, so that reports are up-to-date.  
+22. As a cross-cluster team member, I want to derive office names from codes, so that data is more readable.  
+23. As a cross-cluster team member, I want to update sample file links, so that resources are easily accessible.  
+24. As a cross-cluster team member, I want to update submission status labels, so that users see consistent terminology.

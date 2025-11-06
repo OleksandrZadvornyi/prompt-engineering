@@ -1,0 +1,7 @@
+As a developer, I want to log issues with a description and severity, so that I can track and manage reported problems effectively.  
+As a user, I want to report contributions along with my feedback, so that my input can be recognized and potentially acted upon.  
+As a user, I want to upload files associated with my account, so that I can share relevant documents easily.  
+As a user, I want to submit FABS with a unique ID, so that my submissions can be processed and tracked.  
+As a data manager, I want to process deletions of data by date, so that I can maintain an organized and accurate data store.  
+As a designer, I want to redesign the resources page using a new style, so that the interface remains modern and user-friendly.  
+As a user, I want to update the status of my FABS submissions, so that I can keep track of their approval process.

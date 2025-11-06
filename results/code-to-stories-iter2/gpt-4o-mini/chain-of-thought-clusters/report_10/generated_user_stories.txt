@@ -1,0 +1,25 @@
+As a user, I want to create a profile with a username and user type, so that I can manage my interactions within the system.
+
+As a file generator, I want to validate submission data and status, so that I can ensure only valid submissions are processed for file generation.
+
+As a file generator, I want to generate files from valid submissions, so that users receive the appropriate output based on their input data.
+
+As a file generator, I want to report error messages when validation fails, so that users are informed of any issues with their submissions.
+
+As a FABS validator, I want to validate FABS data to ensure the amount is greater than zero, so that only valid financial data is processed.
+
+As a data loader, I want to load data from various sources, so that the system can work with real-time data inputs for further processing.
+
+As a UI handler, I want to redesign the resources page, so that the user interface is more engaging and user-friendly.
+
+As a UI handler, I want to report user testing results to the agency, so that stakeholders are informed of user feedback and testing outcomes.
+
+As a user testing coordinator, I want to schedule user testing sessions, so that I can gather feedback on system usability at specific times.
+
+As a user testing coordinator, I want to summarize user testing results, so that I can provide clear insights into the effectiveness of the system.
+
+As a system administrator, I want to reset the environment to Staging MAX permissions, so that I can ensure the system is in the correct state for testing or deployment.
+
+As a system administrator, I want to map federal action obligations to an Atom feed, so that the data can be correctly structured for external use.
+
+As a developer, I want to work with different user roles and file generation processes, so that I can ensure the development meets the needs of various stakeholders.

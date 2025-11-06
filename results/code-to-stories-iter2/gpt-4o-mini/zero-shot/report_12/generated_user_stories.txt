@@ -1,0 +1,17 @@
+As a user, I want to submit data as an AgencyUser, so that I can provide relevant information for processing.
+
+As a user, I want to validate my submitted flexfields, so that I can ensure they meet the required criteria.
+
+As a user, I want to upload files as a FabsUser or BrokerUser, so that I can provide data in a structured format.
+
+As a user, I want to ensure that the files I upload have valid extensions, so that I can avoid errors during processing.
+
+As a user, I want to check the submission period, so that I can know the timeframe for submitting data.
+
+As a user, I want to prevent duplicate submissions, so that I can maintain the integrity of the data being submitted.
+
+As a user, I want to retrieve my submission history as a BrokerUser, so that I can review the data I have submitted in the past.
+
+As a user, I want to schedule user testing, so that I can prepare for upcoming evaluations.
+
+As a user, I want to ensure integration with New Relic, so that I can monitor application performance and health.

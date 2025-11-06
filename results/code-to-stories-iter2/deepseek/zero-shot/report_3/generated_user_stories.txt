@@ -1,0 +1,17 @@
+Here are the user stories derived from the Python code:
+
+1. As a content manager, I want to submit content with a publish status, so that I can control its visibility.
+2. As a system administrator, I want to clean up old submissions after 30 days, so that the database doesn't get cluttered.
+3. As an editor, I want to update the publish status of a submission, so that I can manage content lifecycle.
+4. As a scheduler, I want to create GTAS windows with start and end times, so that I can define time-bound processing periods.
+5. As an analyst, I want to retrieve active GTAS windows, so that I can work within approved processing periods.
+6. As a developer, I want to generate D-files with caching, so that frequently accessed data loads faster.
+7. As a data validator, I want to validate FABS files for required headers and footers, so that I can ensure data quality.
+8. As a team lead, I want to create Tech Thursday issues, so that technical problems can be tracked.
+9. As a researcher, I want to schedule user testing sessions, so that we can gather feedback on our products.
+10. As a system administrator, I want to reset permissions for the staging environment, so that I can maintain security controls.
+11. As a data analyst, I want to derive funding agency codes from records, so that I can categorize funding sources.
+12. As an API consumer, I want to retrieve D-files by ID, so that I can access processed data.
+13. As an API consumer, I want to create new D-files, so that I can generate reports from my data.
+14. As a data validator, I want to validate FABS files via API, so that I can automate quality checks.
+15. As a background worker, I want to process historical FABS data asynchronously, so that large validation jobs don't block other operations.

@@ -1,0 +1,19 @@
+As a user, I want to submit a record with a title, status, and file path, so that I can track my submissions.
+
+As a user, I want to validate my submission before it's added, so that I ensure all necessary information is correct and the file exists.
+
+As a user, I want to update the status of my submission, so that I can reflect the current state of my work.
+
+As a user, I want to delete submissions older than a specified number of days, so that I can keep the submission list manageable.
+
+As a user, I want to check if my file format is valid before submission, so that I avoid errors due to unsupported file types.
+
+As a user, I want to download the file associated with my submission by its title, so that I can access it easily.
+
+As a user, I want to log events related to my submissions, so that I have a record of actions taken for future reference.
+
+As a user, I want to prevent duplicate submissions, so that I do not accidentally submit the same record multiple times.
+
+As a user tester, I want to schedule user testing for a specific date, so that I can plan my testing activities.
+
+As a user tester, I want to report insights from user testing, so that I can share findings and improve the submission process.

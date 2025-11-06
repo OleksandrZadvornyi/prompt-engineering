@@ -1,0 +1,20 @@
+As an administrator, I want to update FABS submissions, so that I can manage financial assistance data effectively.
+As a user, I want to view FABS pages, so that I can access relevant information about financial assistance data.
+As an administrator, I want to add GTAS window data, so that I can maintain accurate and up-to-date records.
+As a developer, I want to update FABS sample files, so that I can test and validate the system with sample data.
+As an administrator, I want to access published FABS files, so that I can review and analyze the financial assistance data.
+As a user, I want to navigate to FABS or DABS pages, so that I can easily access the relevant information.
+As an administrator, I want to access raw agency published files, so that I can retrieve and process the necessary data.
+As a user, I want to view updated financial assistance data, so that I can stay informed about the latest information.
+As an administrator, I want to generate D files from FABS and FPDS data, so that I can create the necessary reports and documents.
+As a developer, I want to prevent duplicate transactions, so that I can ensure data integrity and accuracy in the system.
+As a tester, I want to test the update FABS submissions functionality, so that I can verify its correctness.
+As a tester, I want to test the add GTAS data functionality, so that I can verify its correctness.
+As a tester, I want to test the update FABS sample files functionality, so that I can verify its correctness.
+As a tester, I want to test the access published FABS files functionality, so that I can verify its correctness.
+As a tester, I want to test the view FABS pages functionality, so that I can verify its correctness.
+As a tester, I want to test the navigate to pages functionality, so that I can verify its correctness.
+As a tester, I want to test the access raw agency files functionality, so that I can verify its correctness.
+As a tester, I want to test the view updated FABS data functionality, so that I can verify its correctness.
+As a tester, I want to test the generate D files functionality, so that I can verify its correctness.
+As a tester, I want to test the prevent duplicate transactions functionality, so that I can verify its correctness.

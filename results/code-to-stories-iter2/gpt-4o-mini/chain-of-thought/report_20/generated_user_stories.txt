@@ -1,0 +1,21 @@
+As a user, I want to create an issue, so that I can track problems encountered during the submission process.
+
+As a user, I want to update the status of an issue, so that I can reflect its current state.
+
+As a FABSUser, I want to submit data, so that I can contribute my information to the system.
+
+As a FABSUser, I want to receive an error when submitting duplicate data, so that I can avoid unnecessary resubmissions.
+
+As a FABSUser, I want to download a file associated with my submission, so that I can access the details of my submission.
+
+As a resource manager, I want to redesign the resource page, so that I can improve its appearance and usability.
+
+As a user tester, I want to schedule user tests, so that I can gather feedback on the system's functionality.
+
+As a user tester, I want to report outcomes of scheduled tests, so that I can document the feedback received from participants.
+
+As a file upload manager, I want to upload files in specific formats, so that I can ensure the validity of the uploaded content.
+
+As a historical data analyst, I want to load historical data into the system, so that I can review and analyze past records.
+
+As a file generator, I want to generate a D file for each submission, so that I can produce the necessary documentation for processing submissions.

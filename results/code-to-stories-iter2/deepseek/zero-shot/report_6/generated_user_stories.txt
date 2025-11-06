@@ -1,0 +1,22 @@
+Here are the user stories derived from the Python code:  
+
+1. **As a** system administrator, **I want to** lock the site with a reason, **so that** I can prevent actions during maintenance or critical issues.  
+2. **As a** system administrator, **I want to** unlock the site, **so that** users can resume normal operations.  
+3. **As a** submission creator, **I want to** create a new submission, **so that** I can begin drafting and publishing content.  
+4. **As a** submission editor, **I want to** update the publish status of a submission, **so that** I can track its progress (Draft, Pending, Published, Failed).  
+5. **As a** submission editor, **I want to** add custom fields (flexfields) to a submission, **so that** I can store additional metadata.  
+6. **As a** publisher, **I want to** generate a D file for a submission, **so that** I can prepare it for processing.  
+7. **As a** publisher, **I want to** publish a submission, **so that** it becomes publicly available.  
+8. **As a** submission manager, **I want to** retrieve a submission by its ID, **so that** I can view or modify it.  
+9. **As a** submission manager, **I want to** get a list of all published submissions, **so that** I can review active content.  
+10. **As a** system cleaner, **I want to** delete submissions created on a specific date, **so that** I can maintain data hygiene.  
+11. **As a** validator, **I want to** validate a file for required headers, **so that** I can ensure compliance with standards.  
+12. **As a** validator, **I want to** validate a DUNS number based on business rules, **so that** I can verify its correctness for different actions.  
+13. **As a** FDPS manager, **I want to** check if the FDPS data has changed since the last check, **so that** I can trigger updates if needed.  
+14. **As an** office manager, **I want to** get the office name from its code, **so that** I can display the correct location information.  
+15. **As a** reporting analyst, **I want to** generate a test report for an agency, **so that** I can track test case results.  
+16. **As a** content manager, **I want to** update the resource page with new content, **so that** users have access to the latest information.  
+17. **As a** testing coordinator, **I want to** create a test schedule for agencies over a date range, **so that** testing is organized and documented.  
+18. **As a** financial data analyst, **I want to** retrieve updated financial data, **so that** I can use it for reporting or analysis.  
+
+Each user story reflects a distinct functionality in the code and follows the *"As a [role], I want to [action], so that [benefit]"* format. Let me know if you need any refinements!

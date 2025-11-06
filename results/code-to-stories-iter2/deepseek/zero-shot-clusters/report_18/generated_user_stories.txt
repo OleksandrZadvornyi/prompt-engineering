@@ -1,0 +1,34 @@
+Here is the list of user stories derived from the Python code:
+
+1. As a data manager, I want to process 2017 deletions, so that outdated data is removed from the system.
+2. As a data manager, I want to sync D1 file generation with FPDS data load, so that files are generated only when data is ready.
+3. As a data validator, I want to validate PPoPZIP+4 codes, so that they comply with legal standards.
+4. As a data validator, I want to validate records with expired DUNS numbers, so that only valid records are processed.
+5. As a data validator, I want to check file extensions, so that only allowed file types are accepted.
+6. As a data validator, I want to validate field lengths against schema definitions, so that data conforms to expected formats.
+7. As a database developer, I want to update SQL queries for clarity and maintainability, so that queries are easier to understand and modify.
+8. As a database developer, I want to properly index domain models, so that database queries are optimized.
+9. As a UI designer, I want to redesign the Resources page, so that it matches Broker styles.
+10. As a UI designer, I want to create content mockups, so that stakeholders can review and provide feedback.
+11. As a UI designer, I want to create a unified landing page for FABS and DABS, so that users have a consistent experience.
+12. As a testing coordinator, I want to report user testing results, so that agencies can review the findings.
+13. As a testing coordinator, I want to schedule user testing sessions, so that participants can provide feedback.
+14. As a testing coordinator, I want to create user testing summaries, so that results are documented and actionable.
+15. As a system administrator, I want to configure New Relic monitoring, so that application performance is tracked.
+16. As a system administrator, I want to reset environment permissions, so that only authorized users have access.
+17. As a system administrator, I want to grant read-only access to users, so that they can view but not modify data.
+18. As a data manager, I want to add GTAS window data to the database, so that it is available for analysis.
+19. As a data manager, I want to refresh FABS records with the latest data, so that the system stays up-to-date.
+20. As a web developer, I want to show updated timestamps in headers, so that users know when data was last refreshed.
+21. As a web developer, I want to update frontend URLs, so that links are accurate and functional.
+22. As a data exporter, I want to download original uploaded FABS files, so that users can access their submissions.
+23. As a data exporter, I want to generate sample files, so that users have templates for submissions.
+24. As a content editor, I want to edit landing pages, so that they are ready for approval.
+25. As a content editor, I want to update language for better understanding, so that users receive clear instructions.
+26. As a dashboard designer, I want to enhance submission info on the dashboard, so that users can easily understand the status.
+27. As a file manager, I want to cache D File generation requests, so that they can be processed efficiently.
+28. As a file manager, I want to generate D Files from FPDS and FABS data, so that users have combined datasets.
+29. As a data publisher, I want to prevent duplicate transaction publishing, so that data integrity is maintained.
+30. As a data publisher, I want to update submission publish status, so that users know the current state of their submissions.
+31. As a historical data loader, I want to load historical FPDS data, so that past records are available for reference.
+32. As a historical data loader, I want to load historical financial assistance data, so that complete records are maintained.

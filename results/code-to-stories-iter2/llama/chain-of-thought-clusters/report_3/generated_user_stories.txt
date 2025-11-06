@@ -1,0 +1,17 @@
+As a data analyst, I want to process deletions from a dataset, so that I can remove unnecessary data.
+As a UI designer, I want to redesign the resources page, so that I can improve the user experience.
+As a QA engineer, I want to report user testing results, so that I can track the success of testing.
+As a data engineer, I want to sync D1 file generation with FPDS data load, so that I can ensure data consistency.
+As a database administrator, I want to update SQL codes, so that I can optimize database performance.
+As a funding agency, I want to derive a funding agency code, so that I can identify funding sources.
+As a federal action obligations manager, I want to map federal action obligations, so that I can track obligations.
+As a zip code validator, I want to implement PPOP zip validations, so that I can ensure zip code accuracy.
+As a zip code processor, I want to leave off the last 4 digits of a zip code, so that I can standardize zip code formatting.
+As a DABS or FABS landing page editor, I want to move on to round 2 of edits, so that I can progress through the editing process.
+As a GTAS data manager, I want to add GTAS window data to the database, so that I can update the database with new information.
+As a FABS sample file manager, I want to update a FABS sample file, so that I can keep the file up to date.
+As a raw agency published files accessor, I want to access raw agency published files, so that I can retrieve relevant data.
+As a D files generation request manager, I want to manage D files generation requests, so that I can prioritize and process requests.
+As an FSRS records manager, I want to ensure deleted FSRS records are not included in submissions, so that I can maintain data integrity.
+As a sample file linker, I want to link a sample file to the correct file, so that I can associate related files.
+As a status label manager, I want to display the correct status labels, so that I can provide accurate status information.

@@ -1,0 +1,27 @@
+As a DataUser, I want to delete data for a specific date, so that I can manage my data store efficiently.
+
+As a UIDesigner, I want to redesign the resources page, so that users have an improved experience with updated resources.
+
+As a UIDesigner, I want to report user testing results to an agency, so that stakeholders are informed of the feedback and findings.
+
+As a UIDesigner, I want to move a project to a specific round of edits, so that I can progress through the design phases systematically.
+
+As a UIDesigner, I want to track issues for Tech Thursday, so that I can keep a record of challenges faced during development.
+
+As a Developer, I want to log issues, so that I can maintain a record of problems that need attention.
+
+As a Developer, I want to modify the submission status of a submission, so that I can accurately reflect its current state.
+
+As a Developer, I want to prevent double publishing of submissions, so that I avoid duplicate entries in the system.
+
+As a Developer, I want to update validation rules, so that I can ensure data integrity based on the latest requirements.
+
+As a Developer, I want to clarify CFDA error code triggers, so that I can provide accurate feedback on errors encountered.
+
+As a DevOpsEngineer, I want to provide performance data from New Relic, so that the team can monitor application performance effectively.
+
+As a FABSUser, I want to submit data elements, so that I can contribute necessary information to the system.
+
+As a SubmissionDashboardUser, I want to add new submissions, so that I can manage and track various entries in the dashboard.
+
+As a SubmissionDashboardUser, I want to display submission statuses, so that I can easily review the current state of submissions.

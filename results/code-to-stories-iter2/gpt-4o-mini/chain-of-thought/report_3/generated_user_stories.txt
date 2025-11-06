@@ -1,0 +1,11 @@
+As a FABSUser, I want to submit a record with a title and content, so that I can create a new submission.  
+As a SubmissionManager, I want to validate a submission, so that I can ensure it meets the required criteria before adding it to the system.  
+As a SubmissionManager, I want to add a validated submission to the system, so that it can be stored and managed correctly.  
+As a User, I want to publish my submission, so that it becomes visible and accessible to others.  
+As a Developer, I want to log issues related to submissions, so that they can be tracked and resolved efficiently.  
+As a Developer, I want to update validation rules, so that the system can enforce new requirements for submission content.  
+As a UIDesigner, I want to redesign a page with a new design, so that the user interface remains modern and user-friendly.  
+As a UIDesigner, I want to report user testing results, so that the findings can be reviewed and used for future improvements.  
+As a BrokerUser, I want to upload files, so that I can associate necessary documents with submissions.  
+As a BrokerUser, I want to validate uploaded files, so that I can ensure they maintain integrity and comply with standards.  
+As a FlexFieldManager, I want to process flexfields for a submission, so that additional data can be handled efficiently.

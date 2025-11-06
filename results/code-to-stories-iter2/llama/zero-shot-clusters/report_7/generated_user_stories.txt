@@ -1,0 +1,26 @@
+As a system administrator, I want to configure the broker system, so that it is ready for use.
+As a system administrator, I want to add user stories to the broker system, so that they are properly tracked and managed.
+As a system administrator, I want to configure the FABS system, so that it is integrated with the overall system.
+As a system administrator, I want to add user stories to the FABS system, so that they are properly tracked and managed.
+As a system administrator, I want to configure the DABS system, so that it is integrated with the overall system.
+As a system administrator, I want to add user stories to the DABS system, so that they are properly tracked and managed.
+As a system administrator, I want to configure the USASpending system, so that it is integrated with the overall system.
+As a system administrator, I want to add user stories to the USASpending system, so that they are properly tracked and managed.
+As a content manager, I want to update the resources page, so that users have access to the most current information.
+As a system administrator, I want to configure New Relic, so that system performance is monitored and optimized.
+As a data analyst, I want to load FPDS data, so that it is available for analysis and reporting.
+As a data analyst, I want to generate D1 files, so that they are available for further processing.
+As a database administrator, I want to optimize SQL codes, so that database queries are executed efficiently.
+As a business analyst, I want to update derivation logic, so that it reflects the latest business rules and policies.
+As a business analyst, I want to derive funding agency codes, so that they are accurate and up-to-date.
+As a content manager, I want to update the landing page, so that users are presented with the most current information.
+As a content manager, I want to update the homepage, so that users are presented with the most current information.
+As a content manager, I want to update the help page, so that users have access to the most current documentation and support resources.
+As a system administrator, I want to update the submission dashboard, so that users have access to the most current information and metrics.
+As a system administrator, I want to upload FABS files, so that they are processed and integrated with the overall system.
+As a system administrator, I want to upload DABS files, so that they are processed and integrated with the overall system.
+As a system administrator, I want to include flexfields, so that they are available for use in the system.
+As a system administrator, I want to update the publish button, so that it reflects the current system state and user permissions.
+As a system administrator, I want to configure FABS groups, so that they are integrated with the overall system and user permissions.
+As a data analyst, I want to load historical data, so that it is available for analysis and reporting.
+As a system administrator, I want to configure the FPDS data loader, so that it is integrated with the overall system and data sources.

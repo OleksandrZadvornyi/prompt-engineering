@@ -1,0 +1,17 @@
+As a DataProcessor, I want to process deletions for a specific date, so that I can maintain data consistency.
+As a DataProcessor, I want to access raw agency published files, so that I can utilize the data for further processing.
+As a FinancialAssistanceData, I want to update financial assistance data, so that I can ensure the data is up-to-date and accurate.
+As a ResourcesPage, I want to redesign the Resources page, so that I can improve the user experience.
+As a ResourcesPage, I want to report to agencies about user testing, so that I can gather feedback and make data-driven decisions.
+As a ResourcesPage, I want to move on to the next round of page edits, so that I can continue to refine and improve the page.
+As a DevOpsEngineer, I want to provide useful data, so that I can support informed decision-making.
+As a BrokerUser, I want to sync D1 file generation with FPDS data load, so that I can ensure data consistency and accuracy.
+As a BrokerUser, I want to derive the FundingAgencyCode, so that I can accurately track and manage funding.
+As a BrokerUser, I want to map FederalActionObligation to the Atom Feed, so that I can provide timely and accurate information.
+As a FABSUser, I want to access published FABS files, so that I can utilize the data for analysis and reporting.
+As a FABSUser, I want to see correct status labels on the Submission Dashboard, so that I can easily track the status of my submissions.
+As a Developer, I want to log better, so that I can improve the debugging and troubleshooting process.
+As a Developer, I want to add updates to FABS submission, so that I can ensure the submission is accurate and complete.
+As a Developer, I want to update the FABS sample file, so that I can provide a current and relevant example for users.
+As a Developer, I want to prevent duplicate transactions from being published, so that I can maintain data integrity and prevent errors.
+As a Tester, I want to test features in environments other than Staging, so that I can ensure the features work as expected in different environments.

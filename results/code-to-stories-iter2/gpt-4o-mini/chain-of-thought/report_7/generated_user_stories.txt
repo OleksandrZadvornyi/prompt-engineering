@@ -1,0 +1,25 @@
+As a developer, I want to log issues, so that I can track problems that arise in the system.
+
+As a project manager, I want to update the status of logged issues, so that I can keep track of their resolution progress.
+
+As a data manager, I want to submit data without duplicates, so that I maintain data integrity.
+
+As a user, I want to receive error messages for specific error codes, so that I can understand and address issues quickly.
+
+As a designer, I want to redesign the resources page with new styles, so that it aligns with the updated branding.
+
+As a researcher, I want to report user testing results, so that I can analyze user feedback and improve the product.
+
+As an editor, I want to move pages to the next round of editing, so that the editing process continues smoothly.
+
+As a team member, I want to track issues related to Tech Thursday, so that I can ensure all concerns are addressed.
+
+As a data manager, I want to delete records based on date, so that I can keep my data set clean and relevant.
+
+As a broker data manager, I want to submit data for processing, so that it can be utilized in analytics.
+
+As a broker data manager, I want to upload and validate files, so that I can ensure the correctness of the data format before processing.
+
+As a user, I want to generate D Files from FABS and FPDS data, so that I can utilize this data in my reports.
+
+As a user, I want to download specific FABS files, so that I can access necessary information for my work.

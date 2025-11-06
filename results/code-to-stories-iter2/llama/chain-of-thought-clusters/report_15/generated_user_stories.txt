@@ -1,0 +1,29 @@
+As a FABS user, I want to access FABS files, so that I can view and manage the files.
+As a FABS user, I want to log issues, so that I can track and resolve problems.
+As a FABS user, I want to create content mockups for submissions, so that I can prepare and submit content.
+As a FABS user, I want to track issues, so that I can monitor and resolve problems.
+
+As a DevOps user, I want to provide New Relic data for applications, so that I can monitor and optimize application performance.
+
+As a Broker user, I want to submit records for recipients, so that I can manage recipient data.
+As a Broker user, I want to upload error messages, so that I can track and resolve errors.
+As a Broker user, I want to update broker resources, so that I can manage and optimize resources.
+
+As a data processor, I want to process deletions for specific dates, so that I can manage and maintain data.
+As a data processor, I want to sync D1 file generation with FPDS data, so that I can ensure data consistency.
+As a data processor, I want to derive Funding Agency Codes, so that I can accurately categorize funding agencies.
+As a data processor, I want to update SQL codes, so that I can improve data management and query efficiency.
+As a data processor, I want to add PPOP code cases, so that I can ensure accurate and complete data.
+As a data processor, I want to map Federal Action Obligations to Atom Feeds, so that I can ensure data consistency and accuracy.
+
+As a homepage editor, I want to edit the homepage for specific rounds, so that I can manage and update content.
+As a help page editor, I want to edit help pages for specific rounds, so that I can manage and update content.
+As a DABS page editor, I want to edit DABS pages for specific rounds, so that I can manage and update content.
+As a FABS page editor, I want to edit FABS pages for specific rounds, so that I can manage and update content.
+
+As a logger, I want to log errors, so that I can track and resolve problems.
+As a logger, I want to log issues, so that I can track and resolve problems.
+
+As a database manager, I want to load historical FPDS data, so that I can analyze and manage data.
+As a database manager, I want to add GTAS window data, so that I can manage and maintain data.
+As a database manager, I want to prevent duplicate transactions, so that I can ensure data accuracy and consistency.

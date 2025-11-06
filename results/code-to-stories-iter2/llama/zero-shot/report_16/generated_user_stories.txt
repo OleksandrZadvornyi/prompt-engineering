@@ -1,0 +1,33 @@
+As a System Administrator, I want to process deletions for a given date, so that I can remove outdated submissions.
+As a System Administrator, I want to sync D1 file generation with FPDS data load, so that I can ensure data consistency.
+As a System Administrator, I want to manage and cache D Files generation requests, so that I can optimize data processing.
+As a System Administrator, I want to prevent NASA grants from being displayed as contracts, so that I can maintain data accuracy.
+As a System Administrator, I want to prevent duplicate transactions from being published, so that I can prevent data duplication.
+As a System Administrator, I want to ensure all derived data elements are derived properly, so that I can maintain data quality.
+As a System Administrator, I want to ensure PPoPZIP+4 works the same as Legal Entity ZIP validations, so that I can maintain data consistency.
+As a System Administrator, I want to ensure FPDS data is up-to-date daily, so that I can maintain data freshness.
+As a Developer, I want to update the Broker validation rule table, so that I can improve data validation.
+As a Developer, I want to update the FABS sample file to remove FundingAgencyCode, so that I can adapt to changing data requirements.
+As a Developer, I want to derive fields in historical FABS loader, so that I can generate accurate data.
+As a Developer, I want to update domain models to be indexed properly, so that I can optimize data retrieval.
+As a Developer, I want to update SQL codes for clarity, so that I can improve data management.
+As a Data Analyst, I want to load historical FABS data with FREC derivations, so that I can analyze data trends.
+As a Data Analyst, I want to load historical FPDS data, so that I can analyze data trends.
+As a Data Analyst, I want to ensure data coming from SAM is complete, so that I can maintain data quality.
+As a Project Manager, I want to track issues that come up in Tech Thursday, so that I can identify and address problems.
+As a Project Manager, I want to schedule user testing, so that I can gather feedback and improve the system.
+As a Tester, I want to begin user testing, so that I can evaluate system functionality.
+As a Tester, I want to move on to round 2 of DABS or FABS landing page edits, so that I can refine the user interface.
+As a Designer, I want to help create content mockups, so that I can visualize and improve the user interface.
+As a Designer, I want to design a schedule from the UI SME, so that I can create an effective project plan.
+As a User, I want to upload and validate error messages, so that I can report and resolve issues.
+As a User, I want to see updated financial assistance data daily, so that I can stay informed about funding.
+As a User, I want to receive more helpful file-level error messages, so that I can diagnose and resolve issues.
+As a User, I want to submit records for individual recipients without receiving a DUNS error, so that I can efficiently submit data.
+As a User, I want to receive more information about the number of rows to be published, so that I can track my submissions.
+As a User, I want to receive updated error codes, so that I can understand and resolve issues.
+As a User, I want to leave off the last 4 digits of ZIP without an error, so that I can submit data efficiently.
+As a User, I want to download uploaded FABS files, so that I can access and review my submissions.
+As a User, I want to have quick access to Broker application data, so that I can efficiently manage my applications.
+As a User, I want to receive language on FABS pages that is apropos for users, so that I can understand and navigate the system.
+As a User, I want to submit data elements surrounded by quotation marks, so that I can submit data in a flexible format.

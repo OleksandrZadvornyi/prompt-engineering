@@ -1,0 +1,15 @@
+{
+    "model": "deepseek",
+    "prompt_variant": "chain-of-thought-clusters",
+    "embedding_model": "all-MiniLM-L6-v2",
+    "scores": {
+        "original_vs_iter1": 0.795234739780426,
+        "original_vs_iter2": 0.710310161113739,
+        "iter1_vs_iter2": 0.859897255897522
+    },
+    "counts": {
+        "original": 98,
+        "iter1": 15,
+        "iter2": 14
+    }
+}

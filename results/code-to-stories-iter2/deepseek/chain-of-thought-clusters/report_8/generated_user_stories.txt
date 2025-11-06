@@ -1,0 +1,55 @@
+Here are the user stories derived from the Python code:
+
+As a database administrator, I want to initialize the database with tables for submissions, historical data, and tech Thursday issues, so that the application has proper data storage.
+
+As a user, I want to create a submission with a user ID, so that I can track my work.
+
+As a content manager, I want to update the publish status of a submission, so that I can control its visibility.
+
+As a validator, I want to validate a submission, so that I can ensure it meets requirements.
+
+As a system, I want to log submission activities, so that I can maintain an audit trail.
+
+As a data manager, I want to delete historical data by date, so that I can maintain data hygiene.
+
+As an integration specialist, I want to sync D1 file generation with FPDS data load, so that systems stay consistent.
+
+As a financial analyst, I want to derive funding agency codes from funding sources, so that I can categorize transactions.
+
+As a database administrator, I want to update SQL codes, so that I can maintain query functionality.
+
+As a data specialist, I want to handle special PPOP cases, so that I can process exceptional entries correctly.
+
+As a data manager, I want to load historical FPDS/FABS data with type and date, so that I can maintain historical records.
+
+As a web developer, I want to redesign the resources page, so that users have better access to information.
+
+As a tester, I want to report user testing results to an agency, so that feedback can be analyzed.
+
+As a test coordinator, I want to schedule user testing, so that it occurs at the planned time.
+
+As a tester, I want to begin user testing, so that I can evaluate the system.
+
+As a technical support agent, I want to track Tech Thursday issues, so that problems can be addressed.
+
+As a test analyst, I want to create a user testing summary, so that results can be reviewed.
+
+As a data validator, I want to update DUNS validations, so that data quality is maintained.
+
+As a developer, I want to clarify CFDA error codes, so that users understand validation failures.
+
+As a file processor, I want to generate D files for submissions, so that required outputs are created.
+
+As a data processor, I want to map federal action obligations, so that financial data is properly structured.
+
+As a data validator, I want to validate ZIP codes, so that address information is correct.
+
+As a user, I want to download FABS files for submissions, so that I can access the data.
+
+As a system administrator, I want to set up New Relic monitoring, so that I can track application performance.
+
+As a test designer, I want to create user testing plans, so that testing is structured and complete.
+
+As a tester, I want to conduct user testing according to a plan, so that the system can be validated.
+
+As a test reporter, I want to generate user testing reports, so that results can be documented and shared.

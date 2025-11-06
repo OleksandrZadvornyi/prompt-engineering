@@ -1,0 +1,17 @@
+As a user, I want to upload a submission, so that I can store my data in a structured format.
+
+As a user, I want to receive validation errors when my submission is incorrect, so that I can correct my input before resubmitting.
+
+As a user, I want to add a project, so that I can organize my work and track progress.
+
+As a user, I want to track an issue, so that I can manage and resolve it effectively.
+
+As a user, I want to schedule a testing session, so that I can ensure my project meets quality standards.
+
+As an admin, I want to update the validation rules, so that I can enforce different data requirements as needed.
+
+As a user, I want to download my submission file, so that I can access it outside of the application.
+
+As a user, I want to generate a report of all submissions, so that I can review the collected data in one document.
+
+As a user, I want to submit a record, so that I can add additional information to the existing submissions.

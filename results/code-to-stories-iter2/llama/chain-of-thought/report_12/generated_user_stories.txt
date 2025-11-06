@@ -1,0 +1,12 @@
+As a data analyst, I want to create a loan record, so that I can track and manage loan amounts.
+As a data analyst, I want to validate loan records, so that I can ensure data accuracy and integrity.
+As a data analyst, I want to create a non-loan record, so that I can track and manage non-loan amounts.
+As a data analyst, I want to validate non-loan records, so that I can ensure data accuracy and integrity.
+As a data loader, I want to load historical data from a data source, so that I can analyze and process the data.
+As a data submitter, I want to submit data for processing and storage, so that I can track and manage submissions.
+As a data submitter, I want to retrieve the status of a submission, so that I can monitor the submission process.
+As a data helper, I want to retrieve the PPoPZIP for a given zip code, so that I can perform location-based analysis.
+As a data helper, I want to retrieve the legal entity address for a given entity ID, so that I can perform location-based analysis.
+As a page user, I want to retrieve the language of the page, so that I can display content in the correct language.
+As a page user, I want to retrieve banner messages for a given user type, so that I can display relevant messages to users.
+As a system administrator, I want to create new users with specific roles, so that I can manage user access and permissions.

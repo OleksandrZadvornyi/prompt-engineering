@@ -1,0 +1,43 @@
+Here are the user stories derived from the Python code:
+
+1. As a Database Administrator, I want to delete records from before December 19, 2017, so that the database only contains relevant and recent data.
+
+2. As a UI Designer, I want to update the Resources page design with Broker Sans font and modern styling, so that the page has a consistent and professional appearance.
+
+3. As a System Administrator, I want to configure New Relic monitoring for our application, so that we can track performance and errors effectively.
+
+4. As a Data Engineer, I want to synchronize D1 file generation with FPDS data loads, so that our reports always contain the most current procurement data.
+
+5. As a Submission Manager, I want to log detailed submission information including status and timestamps, so that we can track submission lifecycle events.
+
+6. As a Data Analyst, I want to retrieve published FABS files from the database, so that I can analyze recent funding activity.
+
+7. As a Grants Specialist, I want to filter grant records from all records, so that I can work specifically with grant-related data.
+
+8. As a Submission Processor, I want to automatically update submission status when publish status changes, so that the system state remains consistent.
+
+9. As a GTAS Administrator, I want to add new GTAS reporting windows with start and end dates, so that we can manage reporting periods effectively.
+
+10. As a Data Loader, I want to load historical FABS data from files into the database, so that we maintain a complete historical record.
+
+11. As a Web Administrator, I want to update frontend URLs when they change, so that users always access the correct endpoints.
+
+12. As a User Support Specialist, I want to update system error messages, so that users receive clear and helpful feedback.
+
+13. As a Validation Specialist, I want to update validation rules, so that data quality checks remain current with requirements.
+
+14. As a DUNS Administrator, I want to validate DUNS numbers for correct format, so that we maintain data integrity.
+
+15. As a File Manager, I want to cache generated D files with TTL expiration, so that we can improve performance while keeping data reasonably fresh.
+
+16. As a Data Optimizer, I want to process flex fields efficiently, so that we can handle large volumes of variable data effectively.
+
+17. As a Deployment Engineer, I want to deploy new FABS versions to production, so that users can access the latest features.
+
+18. As a Data Validator, I want to validate SAM data for required fields, so that we ensure complete registration records.
+
+19. As a Schema Manager, I want to validate field lengths against schema specifications, so that data conforms to our database constraints.
+
+20. As a UI Manager, I want to update sample file download links, so that users can access current example files.
+
+21. As a Dashboard Manager, I want to retrieve submission status labels with user-friendly names, so that the dashboard presents clear status information.

@@ -1,0 +1,12 @@
+As a user, I want to create a submission, so that I can manage my submission records.  
+As a user, I want to update the status of my submission, so that I can track its progress.  
+As a user, I want to publish my submission, so that it becomes available for review.  
+As a user, I want to log activities related to my submission, so that I have a record of changes and updates.  
+As a user, I want to generate a FABS file for my submission, so that I can comply with reporting requirements.  
+As a user, I want to remove the ZIP code suffix from a given ZIP code, so that I can standardize the format for processing.  
+As an admin, I want to create a user, so that I can manage user accounts.  
+As an admin, I want to retrieve user details, so that I can view or edit user information.  
+As an admin, I want to create an agency, so that I can manage agency records.  
+As an admin, I want to retrieve agency details, so that I can view or edit agency information.  
+As a submission manager, I want to create submissions, so that I can oversee all submissions within the system.  
+As a submission manager, I want to retrieve submission details, so that I can review the status and information of specific submissions.

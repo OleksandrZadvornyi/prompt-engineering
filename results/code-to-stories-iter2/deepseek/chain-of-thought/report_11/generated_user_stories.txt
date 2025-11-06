@@ -1,0 +1,17 @@
+Here are the user stories based on the provided Python code:  
+
+1. As a **content manager**, I want to **create a submission with specific data and status**, so that **I can track and manage content before publishing**.  
+2. As a **content manager**, I want to **update the publish status of a submission**, so that **I can control its workflow (draft, pending, published, rejected)**.  
+3. As a **content manager**, I want to **automatically derive additional fields (timestamps, data length)**, so that **I have metadata for tracking and analysis**.  
+4. As a **content manager**, I want to **publish a submission if it’s pending**, so that **it becomes publicly available**.  
+5. As a **validator**, I want to **define and update validation rules**, so that **I can ensure data integrity before publishing**.  
+6. As a **validator**, I want to **check if submissions meet required fields and length limits**, so that **only valid data gets processed**.  
+7. As a **data analyst**, I want to **load historical FABS or FPDS data by year**, so that **I can analyze past records**.  
+8. As a **UI designer**, I want to **apply styles to a specific page**, so that **the interface matches design guidelines**.  
+9. As a **UI designer**, I want to **track UI improvement ideas with priorities**, so that **I can plan future enhancements**.  
+10. As a **UI designer**, I want to **redesign the resources page**, so that **users have a better experience**.  
+11. As a **QA tester**, I want to **generate a test report with passed/failed counts**, so that **I can assess software quality**.  
+12. As a **data processor**, I want to **add flexible fields to accommodate custom data**, so that **the system supports dynamic requirements**.  
+13. As a **data processor**, I want to **generate cached D-files for requests**, so that **repeated requests are processed efficiently**.  
+14. As a **data processor**, I want to **process record deletions**, so that **unneeded data is removed**.  
+15. As a **developer**, I want to **get meaningful error messages with codes**, so that **I can debug and handle issues effectively**.

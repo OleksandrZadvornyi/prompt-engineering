@@ -1,0 +1,14 @@
+As a user experience designer, I want to redesign the resources page with new styles, so that the visual appearance aligns with our branding guidelines.  
+As a user testing manager, I want to report findings from user tests to relevant agencies, so that they can act on user feedback to improve the system.  
+As a design team member, I want to start editing multiple pages at once, so that we can efficiently manage updates across the website.  
+As a system administrator, I want to log actions performed on the system, so that we can maintain a record of user activity for audits and troubleshooting.  
+As a submission manager, I want to update the status of submissions, so that stakeholders can track their progress and know the current state.  
+As a data validator, I want to upload and validate CSV files, so that I can ensure the data being processed is in the correct format.  
+As a file manager, I want to access published files, so that I can review and manage the documents that have been made public.  
+As a grant administrator, I want to send grant records to the grant records system, so that our funding information is accurately recorded and accessible.  
+As a compliance officer, I want to update validation rules, so that we can ensure data compliance with current regulations.  
+As a GTAS administrator, I want to add GTAS window data, so that we can keep our records up to date with the latest information.  
+As a request manager, I want to cache D File generation requests, so that I can avoid processing duplicate requests and improve efficiency.  
+As a user experience lead, I want to create user testing summaries, so that we can document insights and findings from our user testing sessions.  
+As a testing coordinator, I want to schedule user testing sessions, so that we can gather feedback on our designs from actual users.  
+As a system administrator, I want to reset environment permissions, so that we can prepare the system for staging and testing purposes.

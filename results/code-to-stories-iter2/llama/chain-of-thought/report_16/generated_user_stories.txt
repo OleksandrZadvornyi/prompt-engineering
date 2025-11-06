@@ -1,0 +1,17 @@
+As a data processor, I want to process deletions for a specific date, so that I can manage data effectively.
+As a UI designer, I want to redesign the Resources page, so that users can navigate the website easily.
+As a UI designer, I want to report user testing results, so that I can track user feedback.
+As a UI designer, I want to move to the next round of edits, so that I can refine the design.
+As a UI designer, I want to track Tech Thursday issues, so that I can address technical problems.
+As a developer, I want to improve logging, so that I can troubleshoot issues efficiently.
+As a developer, I want to update FABS submission status, so that I can manage file submissions.
+As a developer, I want to update the Broker validation rule table, so that I can maintain data integrity.
+As a developer, I want to add GTAS window data, so that I can provide relevant information.
+As a developer, I want to manage D files generation requests, so that I can generate files on demand.
+As a DevOps engineer, I want to provide useful data across all applications, so that I can support multiple systems.
+As a broker user, I want to upload and validate error messages, so that I can identify and resolve issues.
+As a broker user, I want to sync D1 file generation with FPDS data load, so that I can maintain data consistency.
+As a website user, I want to access published FABS files, so that I can view relevant information.
+As a FABS user, I want to link a sample file to the correct file, so that I can ensure data accuracy.
+As a FABS user, I want to access raw agency published files, so that I can view original data.
+As a FABS user, I want to generate and validate D files, so that I can produce high-quality files.

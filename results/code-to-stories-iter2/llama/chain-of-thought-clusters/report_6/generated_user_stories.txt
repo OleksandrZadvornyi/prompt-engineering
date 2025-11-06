@@ -1,0 +1,11 @@
+As a FABS user, I want to submit FABS data, so that I can store and track my FABS information.
+As a developer, I want to update FABS sample files, so that I can modify and maintain the sample data.
+As a developer, I want to add GTAS window data, so that I can include additional relevant information.
+As a broker user, I want to upload files, so that I can share and process data.
+As a broker user, I want to validate files, so that I can ensure data integrity and correctness.
+As a broker user, I want to view error messages, so that I can diagnose and resolve issues.
+As a data user, I want to view FABS records, so that I can access and review the stored information.
+As a UI user, I want to view the resources page, so that I can access relevant tools and documentation.
+As a UI user, I want to view the landing page, so that I can navigate and access the system's features.
+As a system administrator, I want to track the current date and time, so that I can monitor and log system activities.
+As a system administrator, I want to get the current working directory, so that I can manage and configure the system's file structure.

@@ -1,0 +1,37 @@
+As a data user, I want to delete records from a data source by date, so that I can manage and clean up the dataset effectively.
+
+As a UI designer, I want to redesign the resources page with a new style, so that the page looks modern and appealing to users.
+
+As a UI designer, I want to report user testing results to an agency, so that they are informed about the findings and can make decisions based on the data.
+
+As a UI designer, I want to begin user testing, so that I can gather feedback on the interface and improve user experience.
+
+As a UI designer, I want to schedule user testing sessions with specific dates and participants, so that I can organize and manage testing efficiently.
+
+As a UI designer, I want to track issues reported during user testing, so that I can address them in a timely manner.
+
+As a DevOps engineer, I want to set up New Relic monitoring, so that I can ensure the application is monitored for performance and issues.
+
+As a broker user, I want to sync D1 file generation with FPDS data loads, so that I can ensure data consistency across systems.
+
+As a broker user, I want to update error codes for specific submissions, so that I can provide accurate information regarding submission statuses.
+
+As a broker user, I want to access published FABS files, so that I can retrieve important financial data.
+
+As a broker user, I want to create content mockups, so that I can visualize and plan content presentation effectively.
+
+As a developer, I want to update SQL codes, so that I can keep the database queries up to date.
+
+As a developer, I want to log improvements made to the system, so that I can track changes and enhancements over time.
+
+As a developer, I want to index domain models, so that I can organize and access data structures efficiently.
+
+As a developer, I want to manage requests for D files generation, so that I can control and verify requests made by users.
+
+As a developer, I want to add GTAS window data to the database, so that I can maintain up-to-date and accurate records.
+
+As a developer, I want to prevent duplicate submissions, so that I can ensure data integrity and avoid redundancy.
+
+As a FABS user, I want to access FABS data in read-only mode, so that I can review information without altering it.
+
+As a file upload validator, I want to validate submission files based on their extensions, so that I can ensure only supported file types are uploaded.

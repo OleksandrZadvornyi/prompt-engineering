@@ -1,0 +1,17 @@
+As a submission manager, I want to add validation rules, so that I can ensure all submissions meet specific criteria.
+
+As a user, I want to submit my content and files, so that I can have my work evaluated.
+
+As a submission, I want to validate my content against specified rules, so that I can verify if I meet the submission requirements.
+
+As a user, I want to receive feedback on whether my submission was successful or failed validation, so that I can take appropriate action.
+
+As a submission manager, I want to store valid submissions, so that they can be processed or reviewed later.
+
+As a user, I want to upload files, so that I can include necessary documents with my submission.
+
+As a user, I want to download files, so that I can access relevant documents or reports.
+
+As a user, I want to ensure my uploaded files are in an allowed format, so that my submissions comply with the system requirements. 
+
+As a user, I want to check the length of my content, so that I can ensure it is not empty before submission.

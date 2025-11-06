@@ -1,0 +1,25 @@
+As a user, I want to create a user story, so that I can document my requirements.
+
+As a user, I want to update a user story, so that I can modify the details as needed.
+
+As a user, I want to retrieve my user stories, so that I can review what I have documented.
+
+As a broker user, I want to upload a submission, so that I can provide content for validation and processing.
+
+As a broker user, I want to validate my submission, so that I can ensure it meets the necessary criteria before publishing.
+
+As a broker user, I want to publish my validated submission, so that it can be shared or made available to others.
+
+As a broker user, I want to create a FABS submission, so that I can process specific types of submissions.
+
+As a FABS submission, I want to be validated, so that I can confirm my content is appropriate for processing.
+
+As a FABS submission, I want to be processed, so that I can complete my intended operation.
+
+As a user, I want to track issues, so that I can manage problems that arise during development.
+
+As a user, I want to resolve tracked issues, so that I can keep my project documentation current and accurate.
+
+As a cache, I want to add requests, so that I can temporarily store data for quick access.
+
+As a cache, I want to retrieve requests, so that I can access stored data when needed.

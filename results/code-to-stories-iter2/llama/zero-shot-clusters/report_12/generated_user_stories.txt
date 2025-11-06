@@ -1,0 +1,9 @@
+As a FABS user, I want to upload a CSV file, so that I can store it in the system for further processing.
+As a FABS user, I want to check the status of my uploaded file, so that I can determine if it has been processed.
+As a DABS user, I want to upload a JSON file, so that I can store it in the system for further processing.
+As a data validator, I want to check if a submission contains all required elements, so that I can ensure data integrity.
+As a data processor, I want to delete data by date, so that I can manage and clean up data.
+As a financial data manager, I want to update financial assistance data, so that I can keep the data up-to-date and accurate.
+As a financial data analyst, I want to retrieve financial assistance data, so that I can analyze and report on it.
+As a system administrator, I want to store and retrieve files, so that users can access and manage their data.
+As a broker, I want to manage file uploads and retrievals, so that users can access and share their files securely.

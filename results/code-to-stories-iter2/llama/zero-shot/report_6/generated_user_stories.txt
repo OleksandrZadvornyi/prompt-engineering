@@ -1,0 +1,28 @@
+As a Data User, I want to process deletions from the dataset, so that I can maintain data integrity.
+As a Data User, I want to access raw agency published files, so that I can retrieve necessary data.
+As a Broker User, I want to upload and validate error messages, so that I can ensure error messages are properly formatted.
+As a Broker User, I want to generate D1 files, so that I can create new D1 files.
+As a Broker User, I want to generate and validate D files, so that I can create valid D files.
+As a UI Designer, I want to redesign the resources page, so that I can improve the user experience.
+As a UI Designer, I want to report user testing results, so that I can track the success of user testing.
+As a UI Designer, I want to move to the next round of DABS or FABS landing page edits, so that I can continue improving the landing page.
+As a UI Designer, I want to move to the next round of homepage edits, so that I can continue improving the homepage.
+As a UI Designer, I want to move to the next round of help page edits, so that I can continue improving the help page.
+As a UI Designer, I want to track issues, so that I can identify and resolve problems.
+As a Developer, I want to log messages, so that I can track system activity.
+As a Developer, I want to update FABS submissions, so that I can keep submissions up-to-date.
+As a Developer, I want to update the broker validation rule table, so that I can ensure validation rules are current.
+As a Developer, I want to add GTAS window data, so that I can incorporate new data.
+As a Developer, I want to manage and cache D files generation requests, so that I can optimize D files generation.
+As a Developer, I want to prevent users from double publishing FABS submissions, so that I can prevent duplicate submissions.
+As a Developer, I want to update the FABS sample file, so that I can provide the most current sample file.
+As a Developer, I want to add domain model indexing, so that I can improve data organization.
+As a DevOps Engineer, I want to provide New Relic data, so that I can provide insights into system performance.
+As a Tester, I want to access test features, so that I can test the system.
+As a FABS User, I want to link sample files, so that I can associate sample files with submissions.
+As a FABS User, I want to access submitted FABS files, so that I can retrieve submitted files.
+As a Website User, I want to access published FABS files, so that I can view published files.
+As a Data Broker, I want to derive fields from data, so that I can extract relevant information.
+As a Data Broker, I want to derive the funding agency code, so that I can identify the funding agency.
+As a Data Broker, I want to derive the PPoPZIP, so that I can identify the place of performance.
+As a Data Broker, I want to submit records for individual recipients, so that I can process records for recipients.

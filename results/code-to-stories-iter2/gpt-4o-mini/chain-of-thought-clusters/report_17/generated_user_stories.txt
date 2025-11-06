@@ -1,0 +1,13 @@
+As a user, I want to manage user stories, so that I can keep track of project requirements and tasks.  
+As a UI designer, I want to track design updates, so that I can ensure the interface is current and meets user needs.  
+As a developer, I want to filter user stories by role, so that I can focus on relevant tasks specific to my responsibilities.  
+As a project manager, I want to display all user stories, so that I can review the progress and status of the project.  
+As a designer, I want to add design updates, so that I can keep a record of changes made to the project.  
+As a team leader, I want to schedule user testing, so that I can gather feedback on design updates.  
+As a user researcher, I want to get design updates, so that I can stay informed about recent changes for user testing preparations.  
+As a team member, I want to log improvements, so that I can track enhancements made to the project over time.  
+As a project coordinator, I want to get all logged improvements, so that I can evaluate the effectiveness of recent changes.  
+As a document manager, I want to add D file requests, so that I can keep track of necessary document generation requests.  
+As a team lead, I want to retrieve all D file requests, so that I can manage and prioritize document generation tasks.  
+As an admin, I want to add FABS files, so that I can keep important project documentation organized.  
+As a stakeholder, I want to get a list of all FABS files, so that I can review relevant project documentation.

@@ -1,0 +1,20 @@
+Here are the user stories derived from the Python code:
+
+1. As a Database Administrator, I want to delete records older than a specified date, so that the database remains optimized and contains only relevant data.  
+2. As a Data Analyst, I want to sync D1 file generation with FPDS data load, so that data remains consistent across systems.  
+3. As a System Administrator, I want to derive PPoP codes according to business logic, so that special codes are correctly identified and processed.  
+4. As a Financial Analyst, I want to derive FundingAgencyCode from raw data, so that funding sources are standardized and properly formatted.  
+5. As a Data Mapper, I want to map FederalActionObligation to Atom Feed format, so that financial data is presented in a structured and consumable way.  
+6. As a Form Validator, I want to validate ZIP codes (with or without +4 extension), so that address data is accurate and properly formatted.  
+7. As a Submission Manager, I want to update submissions when publishStatus changes, so that the system reflects the latest state of submissions.  
+8. As a System Administrator, I want to lock the site during a specified period, so that GTAS submissions are not interrupted.  
+9. As a File Processor, I want to remove FundingAgencyCode from FABS sample files, so that the files comply with updated data standards.  
+10. As a UI Developer, I want to enable/disable the publish button during derivations, so that users cannot submit incomplete or invalid data.  
+11. As a Data Historian, I want to derive fields for historical FABS data, so that records maintain accurate processing metadata.  
+12. As a Data Historian, I want to include FREC derivations in historical data, so that financial records are complete and traceable.  
+13. As a Validation Engineer, I want to update validation rules dynamically, so that data quality checks remain effective and up-to-date.  
+14. As a File Manager, I want to cache and manage D Files generation requests, so that processing is efficient and avoids redundant operations.  
+15. As a Submission Auditor, I want to prevent duplicate FABS publishing, so that data integrity is maintained.  
+16. As a UI Developer, I want to update header information with the current date and time, so that users have real-time context.  
+17. As a Support Engineer, I want to update error codes with clearer descriptions, so that troubleshooting is more efficient.  
+18. As a Form Validator, I want to validate partial ZIP codes (without last 4 digits), so that incomplete entries are still usable for basic address verification.

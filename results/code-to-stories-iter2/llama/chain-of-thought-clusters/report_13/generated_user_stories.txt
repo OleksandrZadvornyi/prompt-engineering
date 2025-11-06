@@ -1,0 +1,9 @@
+As a system administrator, I want to create and manage user accounts, so that I can track and control access to the system.
+As a user, I want to submit data to the system, so that my data can be processed and stored.
+As a data analyst, I want to load historical data from the system, so that I can analyze and make informed decisions.
+As a data validator, I want to validate specific data fields, such as ppopzip codes, so that I can ensure data accuracy and compliance.
+As a submission manager, I want to update the status of submissions, so that I can track and manage the submission workflow.
+As a system manager, I want to derive funding agency codes from submission data, so that I can categorize and report on submissions.
+As a system manager, I want to derive additional fields for submissions, so that I can extract relevant information and make informed decisions.
+As a system manager, I want to run validations on submissions, so that I can ensure data quality and compliance.
+As a system administrator, I want to delete submissions based on specific criteria, such as date, so that I can maintain data integrity and remove outdated information.

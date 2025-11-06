@@ -16,7 +16,7 @@ models:
 # --- Current Experiment Settings ---
 # Select which experiment to run by changing the values here.
 experiment:
-  model_key: "llama" # Use the safe key from the 'models' section
+  model_key: "deepseek" # Use the safe key from the 'models' section
   prompt_variant: "chain-of-thought-clusters"
 
 # --- Project Paths ---

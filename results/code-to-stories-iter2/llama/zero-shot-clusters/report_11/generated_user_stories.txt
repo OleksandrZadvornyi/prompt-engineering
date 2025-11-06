@@ -1,0 +1,10 @@
+As a system administrator, I want to validate the format of a file, so that I can ensure it is in the correct format for processing.
+As a system administrator, I want to check for missing required elements in a file, so that I can ensure all necessary data is present.
+As a system administrator, I want to upload a file, so that I can make it available for further processing.
+As a system administrator, I want to submit a file to FABS, so that I can share the data with the relevant authorities.
+As a system administrator, I want to load data from FPDS, so that I can access the relevant information.
+As a system administrator, I want to update data from FABS and FPDS, so that I can ensure the data is up-to-date and accurate.
+As a system administrator, I want to load data from a database, so that I can access the stored information.
+As a system administrator, I want to validate the format of a file through a broker, so that I can use a separate service for validation.
+As a system administrator, I want to check for missing required elements in a file through a data validator, so that I can use a separate service for validation.
+As a system user, I want to receive success or error messages, so that I can be informed about the outcome of the operations.

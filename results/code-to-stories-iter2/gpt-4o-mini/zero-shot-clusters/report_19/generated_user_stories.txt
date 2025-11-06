@@ -1,0 +1,21 @@
+As a user, I want to upload a CSV file, so that I can submit data for validation and processing.
+
+As a user, I want to receive an error message if the uploaded file does not exist, so that I am informed of input issues.
+
+As a user, I want to receive an error message if the uploaded file is not in CSV format, so that I understand the requirements for file uploads.
+
+As a user, I want to get a submission ID after successfully uploading a file, so that I can track my submission.
+
+As a user, I want to know if there are validation errors in my submission, so that I can correct them before processing.
+
+As a user, I want to see the status of my submission (e.g., Pending, Validated), so that I can monitor the progress.
+
+As a user, I want to retrieve a list of published FABS files, so that I can access the output of my submissions.
+
+As a user, I want to provide feedback about the application, so that I can suggest improvements or report issues.
+
+As a user, I want to track the status of my submission by its ID, so that I can check if it has been validated or if there are any issues.
+
+As a user, I want to derive and view funding agency codes from my submissions, so that I can analyze the data related to each agency.
+
+As a user, I want to add validation results to my submissions, so that I can keep a record of the outcomes.

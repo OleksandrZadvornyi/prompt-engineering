@@ -1,0 +1,18 @@
+As a data user, I want to delete records by date, so that I can remove outdated or irrelevant information from my dataset.  
+As a UI manager, I want to report user testing findings, so that I can keep track of feedback and improvements needed.  
+As a UI manager, I want to move on to the next edits, so that I can continue improving the user interface based on testing results.  
+As a UI manager, I want to schedule user testing, so that I can plan and organize future testing sessions efficiently.  
+As an issue tracker, I want to track issues, so that I can maintain a record of problems that need resolution.  
+As a developer, I want to log errors, so that I can identify and resolve issues in the codebase.  
+As a developer, I want to update submission status, so that I can keep track of the progress of each submission.  
+As a developer, I want to prevent double publishing of submissions, so that I can avoid duplicate records and maintain data integrity.  
+As a developer, I want to validate D files, so that I can ensure the data meets required standards before processing.  
+As a DevOps engineer, I want to integrate New Relic, so that I can monitor application performance and data tracking.  
+As a broker user, I want to upload files, so that I can manage and submit necessary data for processing.  
+As a broker user, I want to submit records, so that I can ensure my data is officially recorded in the system.  
+As a submission manager, I want to check if the submission period is open, so that I can know when I can submit new records.  
+As a submission manager, I want to display errors, so that I can inform users of any issues encountered during submissions.  
+As a file manager, I want to download files by ID, so that I can retrieve specific documents as needed.  
+As a file manager, I want to load FPDS data, so that I can process and utilize federal procurement data efficiently.  
+As a file manager, I want to load historical data, so that I can access past submissions for reference or analysis.  
+As a user experience tester, I want to conduct user testing, so that I can evaluate the usability and functionality of the application.

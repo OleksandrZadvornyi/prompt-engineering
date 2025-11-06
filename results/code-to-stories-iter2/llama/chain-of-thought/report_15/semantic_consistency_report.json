@@ -1,0 +1,15 @@
+{
+    "model": "llama",
+    "prompt_variant": "chain-of-thought",
+    "embedding_model": "all-MiniLM-L6-v2",
+    "scores": {
+        "original_vs_iter1": 0.7487146854400635,
+        "original_vs_iter2": 0.7300533652305603,
+        "iter1_vs_iter2": 0.9796326160430908
+    },
+    "counts": {
+        "original": 98,
+        "iter1": 9,
+        "iter2": 9
+    }
+}

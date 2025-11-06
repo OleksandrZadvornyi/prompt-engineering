@@ -1,0 +1,21 @@
+As a submission creator, I want to create a submission with an ID and status, so that I can manage my submissions effectively.
+
+As a submission creator, I want to update the status of my submission, so that I can reflect its current state.
+
+As a submission creator, I want to add files to my submission, so that I can include necessary documents for review.
+
+As a database administrator, I want to add a submission to the database, so that it can be stored and managed centrally.
+
+As a database administrator, I want to add GTAS data to the database, so that I can keep track of relevant information.
+
+As a database administrator, I want to load historical data of specific types (FPDS, FABS), so that I can analyze past submissions.
+
+As a FABS user, I want to download files associated with my submission, so that I can access the necessary documents.
+
+As a FABS user, I want to view the status of my submission, so that I can stay informed about its progress.
+
+As a broker user, I want to upload a submission to the database, so that it can be reviewed and processed.
+
+As a broker user, I want to validate a submission, so that I can ensure it meets the required standards before approval.
+
+As a broker user, I want to update the submission status to validated or invalid, so that I can communicate the outcome of the validation process.

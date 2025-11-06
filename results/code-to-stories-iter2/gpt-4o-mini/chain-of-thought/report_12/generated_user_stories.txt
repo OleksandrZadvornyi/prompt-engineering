@@ -1,0 +1,23 @@
+As a user, I want to upload a submission, so that I can store my content for processing.
+
+As a user, I want to validate my submission, so that I can ensure it meets the necessary criteria before publication.
+
+As a user, I want to publish my validated submission, so that it can be shared or made publicly available.
+
+As a user, I want to prevent double publishing of my submission, so that I avoid errors or duplication in the published content.
+
+As a user, I want to schedule user testing sessions, so that I can gather feedback on my submission from participants.
+
+As a user, I want to report the results of user testing, so that I can communicate the outcomes and insights to relevant stakeholders.
+
+As a user, I want to create a summary of user testing sessions, so that I can easily review and present the overall findings.
+
+As a user, I want to log activities related to submissions and user testing, so that I can maintain a clear record of actions taken.
+
+As a user, I want to delete my submission, so that I can remove content that is no longer needed.
+
+As a broker user, I want to create a content mockup for my submission, so that I can visualize how it will appear in a final format. 
+
+As a validator, I want to update validation rules, so that submissions can be evaluated against the most current criteria.
+
+As a developer, I want to ensure that submissions are validated before they can be published, so that only appropriate content is made public.

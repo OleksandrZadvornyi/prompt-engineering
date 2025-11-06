@@ -1,0 +1,111 @@
+Here are the user stories derived from the Python code:
+
+As a data administrator, I want to delete obsolete data for specific dates, so that our database remains clean and up-to-date.
+
+As a system integrator, I want to synchronize D1 file generation with FPDS data load, so that data flows are properly coordinated.
+
+As a data analyst, I want to derive PPoPCode values with special case handling, so that our data classification is accurate.
+
+As a data quality specialist, I want to derive FundingAgencyCode from agency data, so that we maintain consistent agency references.
+
+As a financial data processor, I want to map FederalActionObligation to Atom Feed format, so that financial data is properly formatted for sharing.
+
+As a data validator, I want to validate ZIP codes according to Legal Entity standards, so that address data is consistently formatted.
+
+As a UI designer, I want to update the Resources page styles to match new Broker styles, so that the interface is visually consistent.
+
+As a testing coordinator, I want to report user testing results to agencies, so that they can review feedback and improvements.
+
+As a DevOps engineer, I want to configure New Relic for application monitoring, so that we can track performance and errors.
+
+As a content manager, I want to edit landing page content, so that information remains current and accurate.
+
+As a testing coordinator, I want to schedule user testing sessions with specific testers, so that we can gather feedback efficiently.
+
+As a project manager, I want to track issues from Tech Thursday sessions, so that we can prioritize and address them.
+
+As a developer, I want to improve logging configuration, so that troubleshooting is easier when issues occur.
+
+As a UI designer, I want to create content mockups for user validation, so that we can test designs before implementation.
+
+As a security administrator, I want to reset environment permissions to Staging MAX, so that access control remains secure.
+
+As a system administrator, I want to grant read-only access to users for specific systems, so that they can view data without modifying it.
+
+As a UI developer, I want to update header information with current date and time, so that users see timely information.
+
+As a data processor, I want to zero-pad fields to consistent lengths, so that data formats are standardized.
+
+As a submission manager, I want to update submission status based on publishStatus, so that workflows are accurately reflected.
+
+As a database administrator, I want to add GTAS windows to the database, so that time-based filtering works correctly.
+
+As a documentation specialist, I want to update sample files for users, so that they have accurate examples to follow.
+
+As a UI developer, I want to disable the publish button during derivations, so that users don't submit incomplete data.
+
+As a data historian, I want to derive fields for historical FABS data, so that historical records are properly annotated.
+
+As a data processor, I want to include FREC derivations in historical data, so that agency relationships are maintained.
+
+As a webmaster, I want to update frontend URLs, so that links remain accurate and functional.
+
+As a data loader, I want to load historical FPDS data, so that we maintain complete historical records.
+
+As a content editor, I want to update language on the FABS page, so that messaging is clear and current.
+
+As a UI designer, I want to separate DABS and FABS banner messages, so that users see relevant information.
+
+As a dashboard developer, I want to add helpful information to the submission dashboard, so that users have better context.
+
+As a file manager, I want to provide downloads of uploaded FABS files, so that users can access their submissions.
+
+As a validator, I want to update upload/validate error messages, so that users get clearer feedback.
+
+As a data quality specialist, I want to update validation rules, so that data meets current standards.
+
+As a data processor, I want to include flexfields in warning/error files, so that complete information is available.
+
+As a validator, I want to validate DUNS numbers, so that entity identification is accurate.
+
+As a UX designer, I want to improve file-level error messages, so that users understand and can fix issues.
+
+As a transaction processor, I want to prevent duplicate transaction publishing, so that data integrity is maintained.
+
+As a system architect, I want to cache D Files generation requests, so that performance is optimized.
+
+As a data optimizer, I want to optimize handling for large numbers of flexfields, so that performance remains good.
+
+As a submission manager, I want to prevent double publishing of FABS submissions, so that data isn't duplicated.
+
+As a financial data manager, I want to update financial assistance data daily, so that information remains current.
+
+As a data validator, I want to validate corrections don't create new published data, so that history is preserved.
+
+As a tester, I want to generate test files for field derivation testing, so that we can verify functionality.
+
+As a submission viewer, I want to accurately see who created a submission, so that attribution is clear.
+
+As a data publisher, I want to see the number of rows to be published, so that I can verify the scope.
+
+As a data validator, I want to validate citywide ZIP codes, so that location data is accurate.
+
+As a data processor, I want to exclude deleted FSRS records, so that we only work with active data.
+
+As a loan processor, I want to validate loan records, so that required fields are present.
+
+As a data validator, I want to validate schema v1.1 headers, so that files meet specifications.
+
+As a data processor, I want to preserve quotation marks in data, so that text formatting is maintained.
+
+As a data loader, I want to load historical data within specified date ranges, so that we can analyze specific periods.
+
+As a procurement data manager, I want to update FPDS data daily, so that procurement records are current.
+
+As a data processor, I want to derive office names from codes, so that locations are human-readable.
+
+As a UI developer, I want to update sample file links in the UI, so that users access the right resources.
+
+As a data validator, I want to validate ZIP codes without last 4 digits, so that partial entries are accepted when appropriate.
+
+As a UI developer, I want to update submission status labels, so that workflow states are clearly communicated.

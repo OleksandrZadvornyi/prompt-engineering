@@ -1,0 +1,14 @@
+As a database administrator, I want to delete records by date, so that I can manage the database efficiently by removing outdated entries.  
+As a data manager, I want to add records to the database, so that I can keep track of new data entries.  
+As a submission manager, I want to add FABS submissions to the database, so that I can maintain a record of all submitted data.  
+As a submission manager, I want to prevent double publishing of submissions, so that I can avoid duplicate entries in the database.  
+As a user experience researcher, I want to report user testing feedback, so that I can gather insights on user interactions with the system.  
+As a file validator, I want to validate uploaded files, so that I can ensure only correct file formats are processed.  
+As a data sync manager, I want to sync D1 files with FPDS data, so that I can ensure data consistency across systems.  
+As a database administrator, I want to retrieve file errors, so that I can identify and resolve issues with uploaded files.  
+As a submission validator, I want to validate submissions by ID, so that I can confirm the status of specific submissions.  
+As a data manager, I want to update historical FABS data, so that I can keep records up-to-date with the latest information.  
+As a testing coordinator, I want to submit a testing summary, so that I can document the results of testing sessions for future reference.  
+As a performance tester, I want to perform performance tests on flexfields, so that I can assess their efficiency and effectiveness.  
+As a user interface designer, I want to configure user preferences in the interface, so that users can tailor their experience according to their needs.  
+As a data analyst, I want to access published FABS files, so that I can review and analyze the submitted data.

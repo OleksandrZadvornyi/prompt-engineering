@@ -1,0 +1,19 @@
+As a data manager, I want to delete outdated data entries, so that I can maintain an up-to-date data store.
+
+As a UI designer, I want to redesign the Resources page to match Broker styles, so that the user interface is visually appealing and consistent.
+
+As a user testing coordinator, I want to add user testing reports, so that I can keep track of feedback and results.
+
+As a user testing coordinator, I want to send reports to agencies, so that stakeholders can review the findings and make informed decisions.
+
+As a DevOps engineer, I want to provision useful performance data via New Relic, so that I can monitor and improve application performance.
+
+As a data analyst, I want to sync files between D1 and FPDS data, so that I can ensure consistency and accuracy in data reporting.
+
+As a developer, I want to log improvements for troubleshooting issues, so that I can track resolutions and enhance future development processes.
+
+As a developer, I want to manage D Files generation requests, so that I can streamline the process of generating necessary files.
+
+As a UI designer, I want to move Help Page edits to round 2 for approvals, so that I can finalize the changes and enhance user support.
+
+As a FABS uploader, I want to upload FABS files, so that I can ensure timely submission of required financial data.

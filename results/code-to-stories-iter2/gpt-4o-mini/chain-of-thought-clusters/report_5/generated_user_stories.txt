@@ -1,0 +1,19 @@
+As a user, I want to submit a record with my user ID and content, so that I can store my submission for review.
+
+As a user, I want to validate my submission before publishing, so that I ensure it meets the required criteria.
+
+As a user, I want to publish my submission, so that it becomes visible to others.
+
+As a user, I want to view my submissions, so that I can keep track of what I have submitted.
+
+As a developer, I want to update the validation rules for submissions, so that I can customize how submissions are validated.
+
+As a historical data manager, I want to load historical data into the system, so that I can maintain a record of past submissions.
+
+As a designer, I want to submit a design with my designer ID and content, so that I can seek approval for my design.
+
+As a designer, I want to track issues with my submitted designs, so that I can address any problems that arise.
+
+As a user, I want to reject my submission if needed, so that I can remove it from consideration. 
+
+As a designer, I want to approve my submitted designs, so that I can mark them as finalized.

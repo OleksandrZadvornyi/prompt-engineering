@@ -1,0 +1,76 @@
+As a Broker Team Member, I want to update SQL codes in the database, so that I can manage the SQL codes effectively.
+As a Broker Team Member, I want to derive fields from given data, so that I can extract relevant information.
+As a Broker Team Member, I want to get the office name from a given office code, so that I can map office codes to their respective names.
+As a FABS User, I want to upload a file, so that I can submit my FABS data for processing.
+As a FABS User, I want to validate a file, so that I can ensure my FABS data is accurate and complete.
+As a Developer, I want to update broker validation rules, so that I can manage the validation rules effectively.
+As a Developer, I want to retrieve broker validation rules, so that I can use them for validation.
+As a Developer, I want to add GTAS window data, so that I can manage the GTAS window data effectively.
+As a User, I want to determine agency D file generation and validation, so that I can generate and validate D files correctly.
+As a User, I want to access raw agency published files, so that I can view and use the published data.
+As a User, I want to download uploaded FABS files, so that I can access and review my submitted FABS data.
+As a User, I want to process deletions, so that I can manage deleted data effectively.
+As a User, I want to redesign resources pages, so that I can improve the user experience.
+As a User, I want to report to agencies, so that I can provide relevant information to the agencies.
+As a System, I want to generate D files from FABS and FPDS data, so that I can automate the D file generation process.
+As a System, I want to validate FABS records, so that I can ensure data accuracy and completeness.
+As a System, I want to get the office name from a given office code, so that I can map office codes to their respective names.
+As a System, I want to get the funding agency name from a given funding agency code, so that I can map funding agency codes to their respective names.
+As a System, I want to derive PPoPZIP from Legal Entity ZIP, so that I can calculate the PPoPZIP correctly.
+As a System, I want to map Federal Action Obligation to Atom Feed, so that I can integrate with other systems.
+As a System, I want to get the maximum length allowed for Legal Entity Address Line 3, so that I can validate the address data.
+As a System, I want to load historical financial assistance data, so that I can analyze and report on historical data.
+As a System, I want to load historical FPDS data, so that I can analyze and report on historical data.
+As a System, I want to get the submission creator, so that I can track who created a submission.
+As a System, I want to get submission errors, so that I can diagnose and resolve issues.
+As a System, I want to prevent double publishing FABS submissions, so that I can avoid data duplication.
+As a System, I want to receive updates to FABS records, so that I can keep the data up-to-date.
+As a System, I want to reset the environment to only take Staging MAX permissions, so that I can manage the environment effectively.
+As a System, I want to derive funding agency code, so that I can map funding agency names to their respective codes.
+As a System, I want to ensure deleted FSRS records are not included in submissions, so that I can maintain data integrity.
+As a System, I want to see updated financial assistance data daily, so that I can monitor and analyze the data.
+As a System, I want to deactivate the publish button after clicking, so that I can prevent accidental multiple submissions.
+As a System, I want to ensure attempts to correct or delete non-existent records don't create new published data, so that I can maintain data integrity.
+As a System, I want to generate and validate D files from FABS and FPDS data, so that I can automate the D file generation and validation process.
+As a System, I want to show updated header information boxes, so that I can improve the user experience.
+As a System, I want to receive more helpful file-level errors, so that I can diagnose and resolve issues more efficiently.
+As a System, I want to have access to test features in environments other than Staging, so that I can test and validate the features.
+As a System, I want to quickly access Broker application data, so that I can efficiently manage and analyze the data.
+As a System, I want to link sample files on the "What you want to submit" dialog, so that I can provide helpful resources to users.
+As a System, I want to update FABS sample files to remove FundingAgencyCode, so that I can maintain data consistency.
+As a System, I want to ensure FABS validation rules accept zero and blank for non-loan records, so that I can validate data correctly.
+As a System, I want to ensure FABS validation rules accept zero and blank for loan records, so that I can validate data correctly.
+As a System, I want to deploy FABS into production, so that I can make the system available to users.
+As a System, I want to clarify CFDA error codes, so that I can provide clear and accurate error messages.
+As a System, I want to ensure data coming from SAM is complete, so that I can maintain data integrity.
+As a System, I want to provide FABS groups functioning under FREC paradigm, so that I can support the FREC paradigm.
+As a System, I want to track issues in Tech Thursday, so that I can monitor and resolve issues.
+As a System, I want to schedule user testing, so that I can plan and conduct user testing.
+As a System, I want to begin user testing, so that I can validate the system with real users.
+As a System, I want to derive PPoPZIP work same as Legal Entity ZIP validations, so that I can maintain data consistency.
+As a System, I want to map Federal Action Obligation to Atom Feed, so that I can integrate with other systems.
+As a System, I want to get the maximum length allowed for Legal Entity Address Line 3, so that I can validate the address data.
+As a System, I want to load historical financial assistance data for FABS go-live, so that I can analyze and report on historical data.
+As a System, I want to load historical FPDS data, so that I can analyze and report on historical data.
+As a System, I want to see who created a submission, so that I can track and manage submissions.
+As a System, I want to see submission errors accurately represent FABS errors, so that I can diagnose and resolve issues.
+As a System, I want to see frontend URLs more accurately reflect the page being accessed, so that I can improve the user experience.
+As a System, I want to prevent users from double-publishing FABS submissions after refreshing, so that I can avoid data duplication.
+As a System, I want to receive updates to FABS records, so that I can keep the data up-to-date.
+As a System, I want to reset the environment to only take Staging MAX permissions, so that I can manage the environment effectively.
+As a System, I want to derive funding agency code, so that I can map funding agency names to their respective codes.
+As a System, I want to ensure deleted FSRS records are not included in submissions, so that I can maintain data integrity.
+As a System, I want to see updated financial assistance data daily, so that I can monitor and analyze the data.
+As a System, I want to deactivate the publish button after clicking, so that I can prevent accidental multiple submissions.
+As a System, I want to ensure attempts to correct or delete non-existent records don't create new published data, so that I can maintain data integrity.
+As a System, I want to generate and validate D files from FABS and FPDS data, so that I can automate the D file generation and validation process.
+As a System, I want to show updated header information boxes, so that I can improve the user experience.
+As a System, I want to receive more helpful file-level errors, so that I can diagnose and resolve issues more efficiently.
+As a System, I want to have access to test features in environments other than Staging, so that I can test and validate the features.
+As a System, I want to quickly access Broker application data, so that I can efficiently manage and analyze the data.
+As a System, I want to link sample files on the "What you want to submit" dialog, so that I can provide helpful resources to users.
+As a System, I want to update FABS sample files to remove FundingAgencyCode, so that I can maintain data consistency.
+As a System, I want to access two additional fields from FPDS data pull, so that I can analyze and report on additional data.
+As a System, I want to add helpful info in submission dashboard, so that I can improve the user experience.
+As a System, I want to download uploaded FABS files, so that I can access and review submitted FABS data.
+As a System, I want to determine the best way to load historical FPDS data, so that I can optimize the data loading process.

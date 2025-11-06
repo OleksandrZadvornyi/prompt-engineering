@@ -1,0 +1,16 @@
+As a Project Manager, I want to add user stories to clusters, so that I can organize and prioritize tasks effectively.  
+As a Project Manager, I want to begin user testing, so that I can gather feedback from participants to improve the project.  
+As a Developer, I want to process deletions for specific dates, so that I can maintain the integrity of the database by removing outdated records.  
+As a Developer, I want to update submission error codes, so that I can ensure that the system reflects the latest error handling requirements.  
+As a Developer, I want to validate file extensions, so that I can ensure that only acceptable file types are processed.  
+As a Developer, I want to sync D1 files with FPDS data, so that I can ensure data consistency across platforms.  
+As a Designer, I want to redesign the Resources page, so that it aligns with the new Broker design styles for a better user experience.  
+As a QATester, I want to report user testing results, so that I can communicate findings to relevant agencies for necessary actions.  
+As a QATester, I want to log testing issues, so that I can keep track of problems identified during user testing for future reference.  
+As a Data Analyst, I want to derive funding agency codes, so that I can improve data quality and reporting accuracy.  
+As a Data Analyst, I want to upload and validate files, so that I can ensure that the data being processed is accurate and reliable.  
+As a Data Analyst, I want to load historical FPDS data, so that I can perform a comprehensive analysis of trends and changes over time.  
+As a Compliance Officer, I want to validate ZIP codes, so that I can ensure compliance with geographical standards and requirements.  
+As a Coordinator, I want to schedule user testing sessions, so that I can effectively manage participant availability and testing logistics.  
+As a Financial Analyst, I want to sync FABS data, so that I can keep financial records up to date and accurate.  
+As a Software Engineer, I want to update SQL codes, so that I can improve code clarity and maintainability for future development.

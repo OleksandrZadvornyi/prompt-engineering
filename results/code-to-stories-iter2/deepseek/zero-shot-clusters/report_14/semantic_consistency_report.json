@@ -1,0 +1,15 @@
+{
+    "model": "deepseek",
+    "prompt_variant": "zero-shot-clusters",
+    "embedding_model": "all-MiniLM-L6-v2",
+    "scores": {
+        "original_vs_iter1": 0.8998311758041382,
+        "original_vs_iter2": 0.8174804449081421,
+        "iter1_vs_iter2": 0.9352566003799438
+    },
+    "counts": {
+        "original": 98,
+        "iter1": 45,
+        "iter2": 23
+    }
+}

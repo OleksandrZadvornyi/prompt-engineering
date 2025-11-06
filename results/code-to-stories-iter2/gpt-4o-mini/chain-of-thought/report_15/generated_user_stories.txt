@@ -1,0 +1,10 @@
+As a user, I want to submit data with my user ID, so that I can create a new submission.  
+As a developer, I want to validate submission data against predefined rules, so that I can ensure the quality of submissions.  
+As a developer, I want to manage submission requests and update their status, so that I can keep track of which submissions are approved or rejected.  
+As a user, I want to upload files associated with my submission, so that I can provide additional information or documents.  
+As a user, I want to download files associated with my submission, so that I can access the documents I need.  
+As a UI designer, I want to report the status of projects to agencies, so that they are informed about the progress.  
+As a UI designer, I want to move to the next round of edits, so that I can continue improving the project.  
+As a developer, I want to update validation rules for submission fields, so that I can adapt to changing requirements.  
+As a user, I want to retrieve my submission details using its ID, so that I can view the status and data of my submission.  
+As a manager, I want to keep track of multiple submissions, so that I can efficiently handle user requests.

@@ -1,0 +1,15 @@
+1. As a user, I want to upload a file with a specific type (PDF, CSV, JSON, or XML), so that I can submit it for processing.  
+2. As a user, I want my submission to have a clear status (draft, published, or archived), so that I can track its progress.  
+3. As a user, I want my submission to include metadata like file size and timestamps, so that I have detailed records of my uploads.  
+4. As a user, I want to update the publish status of my submission, so that I can control its visibility.  
+5. As a user, I want validation errors to be recorded for my submission, so that I can identify and fix issues.  
+6. As a user, I want to update the metadata of my submission, so that I can add or modify additional details.  
+7. As a system administrator, I want to validate submissions before publishing, so that only correctly formatted files are processed.  
+8. As a system administrator, I want to publish validated submissions, so that they become available for further use.  
+9. As a system administrator, I want to retrieve published files by their type, so that I can manage and analyze them efficiently.  
+10. As a system administrator, I want to delete old unpublished submissions, so that the system remains clean and efficient.  
+11. As a system administrator, I want to sync FPDS data with the system, so that external data is integrated seamlessly.  
+12. As a system administrator, I want to generate test reports for users, so that I can monitor submission statistics and errors.  
+13. As a user, I want to view my submission errors in a structured way, so that I can address validation issues.  
+14. As a system administrator, I want to log all submission activities, so that I have an audit trail for debugging and monitoring.  
+15. As a user, I want to ensure that only existing files are submitted, so that the system prevents invalid upload attempts.

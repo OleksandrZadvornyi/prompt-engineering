@@ -1,0 +1,19 @@
+As a user, I want to create an issue with a title and description, so that I can track and manage the issue effectively.  
+As a user, I want to update the status of an issue, so that I can reflect its current state.  
+As a user, I want to submit a file with my name, so that I can keep track of my submissions.  
+As a user, I want to prevent duplicate submissions, so that I can ensure the integrity of the submission process.  
+As a user, I want to update the status of my submission, so that I can communicate its progress.  
+As a user, I want to schedule user testing sessions with a date and participants, so that I can organize and conduct tests efficiently.  
+As a user, I want to report testing results for a specific session, so that I can document the findings.  
+As a user, I want to upload files to the system, so that I can manage and share documents easily.  
+As a user, I want to download files from the system, so that I can access the documents I need.  
+As a data manager, I want to load data into the FPDSData class, so that I can work with the required information.  
+As a data manager, I want to validate the loaded data, so that I can ensure its correctness before further processing.  
+As a user, I want to submit files to the FABSData class, so that I can keep track of my submissions in that context.  
+As a user, I want to view a dashboard of all submissions in the FABSData class, so that I can monitor the submission status.  
+As a system administrator, I want to process deletions for a specific date, so that I can manage records effectively.  
+As a system administrator, I want to synchronize FPDS data, so that I can keep the data up to date.  
+As a system administrator, I want to load historical FPDS data, so that I can analyze past records.  
+As a system administrator, I want to validate submission errors, so that I can ensure submissions are correct before processing.  
+As a system administrator, I want to generate D files from FABS and FPDS data, so that I can prepare the necessary reports.  
+As a web designer, I want to redesign the resource page with new styles, so that the page is visually appealing and user-friendly.

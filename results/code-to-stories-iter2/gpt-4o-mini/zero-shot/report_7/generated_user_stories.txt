@@ -1,0 +1,23 @@
+As a data manager, I want to delete records for a specific date, so that I can remove outdated or irrelevant data.
+
+As a data manager, I want to validate uploaded files, so that I can ensure only the correct file types are processed.
+
+As a data manager, I want to receive updates related to FABS, so that I can keep track of important changes.
+
+As a user interface designer, I want to update the resources page, so that users have access to the latest design styles.
+
+As a user interface designer, I want to schedule user testing for a specific date, so that I can gather feedback on the user interface.
+
+As a user interface designer, I want to report user testing results, so that agencies are informed about the feedback received.
+
+As a developer, I want to log issues, so that I can keep track of problems that need to be addressed.
+
+As a developer, I want to clarify validation error codes, so that I can understand the issues related to data validations.
+
+As a developer, I want to update the status of submissions, so that I can monitor and manage the progress of each submission.
+
+As a developer, I want to prevent double publishing of records, so that I can avoid duplicates and maintain data integrity.
+
+As a broker user, I want to submit records, so that I can contribute data to the system without duplication.
+
+As a broker user, I want to download uploaded files, so that I can access the data I need for further processing.

@@ -1,0 +1,42 @@
+As an Agency User, I want to submit data, so that I can provide information to the system.
+As an Agency User, I want to view banner messages, so that I can stay informed about important announcements.
+As an Agency User, I want to access submission periods, so that I can plan and manage my submissions.
+As a Data Processor, I want to load data from files, so that I can import and process data efficiently.
+As a Data Processor, I want to update data, so that I can modify and correct existing information.
+As a Data Processor, I want to save data to files, so that I can export and store processed data securely.
+As a System Administrator, I want to log messages and events, so that I can track and monitor system activity.
+As a System Administrator, I want to manage GTAS windows, so that I can control and configure the system.
+As a System Administrator, I want to send data to New Relic, so that I can monitor and analyze system performance.
+As a System Administrator, I want to sync D1 file generation with FPDS data load, so that I can ensure data consistency and accuracy.
+As a System Administrator, I want to prevent duplicate transactions, so that I can avoid data errors and inconsistencies.
+As a System Administrator, I want to update FABS sample files, so that I can provide accurate and up-to-date information.
+As a System Administrator, I want to upload and validate error messages, so that I can troubleshoot and resolve issues efficiently.
+As a System Administrator, I want to generate D files, so that I can create and manage system files.
+As a System Administrator, I want to load GTAS window data, so that I can access and analyze system information.
+As a System Administrator, I want to manage and cache D file generation requests, so that I can optimize system performance and efficiency.
+As a System Administrator, I want to add GTAS window data to the database, so that I can store and manage system information securely.
+As a System Administrator, I want to validate and publish FABS submissions, so that I can ensure data accuracy and compliance.
+As a System Administrator, I want to delete grants, so that I can manage and maintain system data.
+As a System Administrator, I want to track Tech Thursday issues, so that I can identify and resolve system problems.
+As a System Administrator, I want to improve website performance, so that I can enhance user experience and system efficiency.
+As a Tester, I want to create user testing summaries, so that I can evaluate and analyze testing results.
+As a Tester, I want to begin user testing, so that I can initiate and conduct testing activities.
+As a Tester, I want to schedule user testing, so that I can plan and manage testing activities.
+As a UI/UX Expert, I want to design schedules, so that I can plan and organize system activities.
+As a UI/UX Expert, I want to design audits, so that I can evaluate and improve system processes.
+As a FABS User, I want to view the submission dashboard, so that I can monitor and manage my submissions.
+As a FABS User, I want to run validations, so that I can ensure data accuracy and compliance.
+As a DABS User, I want to view the submission dashboard, so that I can monitor and manage my submissions.
+As a User, I want to display status labels, so that I can understand and track system information.
+As a User, I want to submit records for individual recipients, so that I can provide information to the system.
+As a User, I want to show the number of rows to be published, so that I can track and manage system data.
+As a User, I want to upload FABS files, so that I can provide information to the system.
+As a User, I want to display submission history, so that I can track and analyze my submissions.
+As a System User, I want to derive fields, so that I can process and analyze system data.
+As a System User, I want to derive PPoPZIP data, so that I can process and analyze system data.
+As a System User, I want to get user activity, so that I can track and monitor system usage.
+As a System User, I want to map federal action obligations to an atom feed, so that I can process and analyze system data.
+As a System User, I want to access raw agency published files, so that I can retrieve and analyze system information.
+As a System User, I want to load historical FPDS data, so that I can analyze and understand system trends.
+As a System User, I want to allow multiple flexfields, so that I can configure and customize system settings.
+As a System User, I want to display banner messages for FABS and DABS users, so that I can inform and communicate with users.

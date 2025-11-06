@@ -1,11 +1,10 @@
 import pandas as pd
 import json
 import yaml
-import re
 from pathlib import Path
 import webbrowser
-import os
 import sys
+import os
 
 def load_config():
     """Loads the YAML configuration file."""
@@ -22,10 +21,10 @@ def load_config():
         print(f"Error loading YAML config: {e}")
         return None
 
-def create_html_report(summary_df, report_stats, output_path):
-    """Generates a self-contained HTML report from the summary DataFrame."""
+def create_html_report_iter2(summary_df, report_stats, output_path):
+    """Generates a self-contained HTML report from the Iteration 2 summary DataFrame."""
     
-    print("Generating HTML report...")
+    print("Generating HTML report for Iteration 2...")
 
     # --- 1. Prepare Data and Styler ---
     
@@ -33,11 +32,13 @@ def create_html_report(summary_df, report_stats, output_path):
     display_columns = {
         'model': 'Model',
         'prompt_variant': 'Prompt Variant',
-        'mean_score': 'Mean Score',
         'run_count': 'Runs',
-        'mean_generated_stories': 'Mean Gen. Count',
-        'mean_count_diff': 'Count Diff (from Orig)',
-        'mean_count_ratio': 'Count Ratio (%)'
+        'mean_us_vs_us1': "Score (US vs US')",
+        'mean_us_vs_us2': "Score (US vs US'')",
+        'mean_us1_vs_us2': "Score (US' vs US'')",
+        'decay_score': 'Score Decay',
+        'mean_count_iter1': "Mean US' Count",
+        'mean_count_iter2': "Mean US'' Count"
     }
     
     # Format for display
@@ -46,21 +47,23 @@ def create_html_report(summary_df, report_stats, output_path):
     # Create a Styler object to add conditional formatting
     styler = summary_display_df.style \
         .format({
-            'Mean Score': '{:.4f}',
-            'Mean Gen. Count': '{:.1f}',
-            'Count Diff (from Orig)': '{:+.1f}', # Show + or -
-            'Count Ratio (%)': '{:.1%}' # Format as percentage
+            "Score (US vs US')": '{:.4f}',
+            "Score (US vs US'')": '{:.4f}',
+            "Score (US' vs US'')" : '{:.4f}',
+            'Score Decay': '{:+.4f}', # Show + or -
+            "Mean US' Count": '{:.1f}',
+            "Mean US'' Count": '{:.1f}'
         }) \
         .background_gradient(
-            subset=['Mean Score'],
+            subset=["Score (US vs US')", "Score (US vs US'')", "Score (US' vs US'')" ],
             cmap='RdYlGn', # Red -> Yellow -> Green
-            vmin=max(0, summary_df['mean_score'].min() - 0.1),
-            vmax=min(1, summary_df['mean_score'].max() + 0.1)
+            vmin=0.5,
+            vmax=1.0
         ) \
         .background_gradient(
-            subset=['Count Diff (from Orig)'],
-            cmap='Reds', # White -> Red
-            gmap=summary_df['mean_count_diff_abs'] # Color based on absolute value
+            subset=['Score Decay'],
+            cmap='RdYlBu_r', # Red (high decay) -> Blue (low decay)
+            gmap=summary_df['decay_score'].abs()
         ) \
         .set_table_attributes('class="results-table"') \
         .set_properties(**{'border': '1px solid #ddd', 'padding': '8px'}) \
@@ -72,8 +75,9 @@ def create_html_report(summary_df, report_stats, output_path):
     table_html = styler.to_html()
 
     # --- 2. Create Summary Cards ---
-    best_combo = report_stats['best_score_combo']
-    best_count_combo = report_stats['best_count_combo']
+    best_convergence = report_stats['best_convergence_combo']
+    best_stability = report_stats['best_stability_combo']
+    least_decay = report_stats['least_decay_combo']
     
     cards_html = f"""
     <div class="card-grid">
@@ -86,14 +90,19 @@ def create_html_report(summary_df, report_stats, output_path):
             <div class="card-value">{report_stats['original_story_count']}</div>
         </div>
         <div class="card">
-            <div class="card-title">Best Semantic Score</div>
-            <div class="card-value">{best_combo['mean_score']:.4f}</div>
-            <div class="card-sub">{best_combo['model']} / {best_combo['prompt_variant']}</div>
+            <div class="card-title">Best Convergence (US vs US'')</div>
+            <div class="card-value">{best_convergence['mean_us_vs_us2']:.4f}</div>
+            <div class="card-sub">{best_convergence['model']} / {best_convergence['prompt_variant']}</div>
         </div>
         <div class="card">
-            <div class="card-title">Closest Story Count</div>
-            <div class="card-value">{best_count_combo['mean_count_diff']:+.1f} <span>Diff</span></div>
-            <div class="card-sub">{best_count_combo['model']} / {best_count_combo['prompt_variant']}</div>
+            <div class="card-title">Best Stability (US' vs US'')</div>
+            <div class="card-value">{best_stability['mean_us1_vs_us2']:.4f}</div>
+            <div class="card-sub">{best_stability['model']} / {best_stability['prompt_variant']}</div>
+        </div>
+        <div class="card">
+            <div class="card-title">Least Score Decay</div>
+            <div class="card-value">{least_decay['decay_score']:+.4f}</div>
+            <div class="card-sub">{least_decay['model']} / {least_decay['prompt_variant']}</div>
         </div>
     </div>
     """
@@ -105,7 +114,7 @@ def create_html_report(summary_df, report_stats, output_path):
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Semantic Consistency Report</title>
+        <title>Iteration 2 - Semantic Consistency Report</title>
         <style>
             body {{
                 font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
@@ -115,7 +124,7 @@ def create_html_report(summary_df, report_stats, output_path):
                 padding: 2rem;
             }}
             .container {{
-                max-width: 1400px;
+                max-width: 1600px; /* Widened for new columns */
                 margin: 0 auto;
                 background-color: #ffffff;
                 border-radius: 8px;
@@ -168,12 +177,6 @@ def create_html_report(summary_df, report_stats, output_path):
                 color: #111827;
                 line-height: 1;
             }}
-            .card-value span {{
-                font-size: 1rem;
-                font-weight: 500;
-                color: #4b5563;
-                margin-left: 0.25rem;
-            }}
             .card-sub {{
                 font-size: 0.85rem;
                 color: #4b5563;
@@ -198,32 +201,13 @@ def create_html_report(summary_df, report_stats, output_path):
                 font-weight: 600;
                 color: #374151;
             }}
-            .results-table tr:last-child td {{
-                border-bottom: none;
-            }}
-            .results-table tr:nth-child(even) {{
-                background-color: #fdfdfd;
-            }}
-            /* Styler adds inline styles for colors, this just helps layout */
-            .results-table td:nth-child(3), /* Mean Score */
-            .results-table td:nth-child(6), /* Count Diff */
-            .results-table td:nth-child(7) {{ /* Count Ratio */
-                font-weight: 500;
-            }}
-            footer {{
-                text-align: center;
-                padding: 1.5rem;
-                font-size: 0.85rem;
-                color: #9ca3af;
-                margin-top: 2rem;
-            }}
         </style>
     </head>
     <body>
         <div class="container">
             <header>
-                <h1>Semantic Consistency Report</h1>
-                <p style="margin: 0.25rem 0 0 0; color: #6b7280;">Analysis of Code-to-Stories Generation</p>
+                <h1>Iteration 2 - Semantic Consistency Report</h1>
+                <p style="margin: 0.25rem 0 0 0; color: #6b7280;">Analysis of US -> US' -> US'' semantic stability and count</p>
             </header>
             <div class="content">
                 <h2>Overall Summary</h2>
@@ -253,28 +237,29 @@ def create_html_report(summary_df, report_stats, output_path):
     except Exception as e:
         print(f"\nError writing or opening HTML file: {e}")
 
-def analyze_and_report(config):
+def analyze_and_report_iter2(config):
     """
-    Finds all 'semantic_consistency.json' files, aggregates the scores,
-    and generates an HTML report.
+    Finds all 'semantic_consistency_report.json' files from Iteration 2,
+    aggregates the scores, and generates an HTML report.
     """
     if not config or 'project_paths' not in config or 'results_dir' not in config['project_paths']:
         print("Error: 'project_paths.results_dir' not found in config.")
         return
 
     base_results_dir = Path(config['project_paths']['results_dir'])
-    analysis_dir = base_results_dir / "code-to-stories"
+    # Set the search path to the Iteration 2 results
+    analysis_dir = base_results_dir / "code-to-stories-iter2"
 
     if not analysis_dir.exists():
         print(f"Error: Analysis directory not found: {analysis_dir}")
-        print("Please ensure the 'code-to-stories' analysis has been run first.")
+        print("Please ensure the Iteration 2 analysis script has been run first.")
         return
 
-    print(f"Scanning for 'semantic_consistency.json' files in {analysis_dir}...")
-    json_files = list(analysis_dir.rglob("semantic_consistency.json"))
+    print(f"Scanning for 'semantic_consistency_report.json' files in {analysis_dir}...")
+    json_files = list(analysis_dir.rglob("semantic_consistency_report.json"))
 
     if not json_files:
-        print("No 'semantic_consistency.json' files found to analyze.")
+        print("No 'semantic_consistency_report.json' files found to analyze.")
         return
 
     print(f"Found {len(json_files)} result files. Loading data...")
@@ -285,8 +270,19 @@ def analyze_and_report(config):
         try:
             with open(f_path, 'r', encoding='utf-8') as f:
                 data = json.load(f)
-                data['report_number'] = f_path.parent.name
-                all_data.append(data)
+                
+                # Flatten the nested score and count data
+                flat_data = {
+                    "model": data.get("model", "unknown"),
+                    "prompt_variant": data.get("prompt_variant", "unknown"),
+                    "original_vs_iter1": data.get("scores", {}).get("original_vs_iter1"),
+                    "original_vs_iter2": data.get("scores", {}).get("original_vs_iter2"),
+                    "iter1_vs_iter2": data.get("scores", {}).get("iter1_vs_iter2"),
+                    "count_original": data.get("counts", {}).get("original"),
+                    "count_iter1": data.get("counts", {}).get("iter1"),
+                    "count_iter2": data.get("counts", {}).get("iter2"),
+                }
+                all_data.append(flat_data)
         except Exception as e:
             print(f"Warning: Could not read or parse {f_path.relative_to(base_results_dir)}: {e}")
 
@@ -296,46 +292,48 @@ def analyze_and_report(config):
 
     # --- Step 2: Convert to Pandas DataFrame ---
     df = pd.DataFrame(all_data)
-    
-    # Check for consistency in original stories count
-    original_counts = df['original_stories_count'].unique()
-    if len(original_counts) > 1:
-        print(f"Warning: Multiple 'original_stories_count' values found: {original_counts}")
-        print(f"Using the first value: {original_counts[0]}")
-    original_story_count = original_counts[0]
 
-    # --- Step 3: Engineer new comparison features ---
-    df['count_diff'] = df['generated_stories_count'] - original_story_count
-    df['count_ratio'] = df['generated_stories_count'] / original_story_count
-
-    # --- Step 4: Aggregate the data ---
+    # --- Step 3: Aggregate the data ---
     print("Aggregating results by model and prompt variant...")
     
     summary_df = df.groupby(['model', 'prompt_variant']).agg(
-        mean_score=('semantic_consistency_score', 'mean'),
-        run_count=('semantic_consistency_score', 'count'),
-        mean_generated_stories=('generated_stories_count', 'mean'),
-        mean_count_diff=('count_diff', 'mean'),
-        mean_count_ratio=('count_ratio', 'mean')
+        mean_us_vs_us1=('original_vs_iter1', 'mean'),
+        mean_us_vs_us2=('original_vs_iter2', 'mean'),
+        mean_us1_vs_us2=('iter1_vs_iter2', 'mean'),
+        mean_count_orig=('count_original', 'mean'),
+        mean_count_iter1=('count_iter1', 'mean'),
+        mean_count_iter2=('count_iter2', 'mean'),
+        run_count=('model', 'count')
     ).reset_index()
 
-    # Add helper columns for styling and sorting
-    summary_df['mean_count_diff_abs'] = summary_df['mean_count_diff'].abs()
+    # --- Step 4: Engineer new comparison features ---
     
-    # Sort by model, then by the mean score (descending)
-    summary_df = summary_df.sort_values(by=['model', 'mean_score'], ascending=[True, False])
+    # Calculate "decay" or "drop-off" from US' to US''
+    summary_df['decay_score'] = summary_df['mean_us_vs_us2'] - summary_df['mean_us_vs_us1']
+    
+    # Calculate count ratios relative to original
+    # Get the first original count (assuming it's consistent)
+    original_count = summary_df['mean_count_orig'].iloc[0] if not summary_df.empty else 1.0
+    if original_count == 0: original_count = 1.0 # Avoid divide by zero
+    
+    summary_df['mean_count_ratio_iter1'] = summary_df['mean_count_iter1'] / original_count
+    summary_df['mean_count_ratio_iter2'] = summary_df['mean_count_iter2'] / original_count
+
+    # Sort by model, then by the final convergence score (descending)
+    summary_df = summary_df.sort_values(by=['model', 'mean_us_vs_us2'], ascending=[True, False])
 
     # --- Step 5: Get high-level stats for the report cards ---
     report_stats = {
         'total_runs': int(summary_df['run_count'].sum()),
-        'original_story_count': int(original_story_count),
-        'best_score_combo': summary_df.loc[summary_df['mean_score'].idxmax()],
-        'best_count_combo': summary_df.loc[summary_df['mean_count_diff_abs'].idxmin()]
+        'original_story_count': int(original_count),
+        'best_convergence_combo': summary_df.loc[summary_df['mean_us_vs_us2'].idxmax()],
+        'best_stability_combo': summary_df.loc[summary_df['mean_us1_vs_us2'].idxmax()],
+        'least_decay_combo': summary_df.loc[summary_df['decay_score'].idxmax()]
     }
 
     # --- Step 6: Generate and save the HTML report ---
-    output_html_path = base_results_dir / "semantic_consistency_report.html"
-    create_html_report(summary_df, report_stats, output_html_path)
+    output_html_path = base_results_dir / "semantic_consistency_report_iter2.html"
+    create_html_report_iter2(summary_df, report_stats, output_html_path)
 
 if __name__ == "__main__":
     # Check for pandas import
@@ -352,7 +350,7 @@ if __name__ == "__main__":
     config = load_config()
     
     if config:
-        print("Configuration loaded. Starting analysis...")
-        analyze_and_report(config)
+        print("Configuration loaded. Starting Iteration 2 aggregation...")
+        analyze_and_report_iter2(config)
     else:
         print("Failed to load configuration. Exiting.")

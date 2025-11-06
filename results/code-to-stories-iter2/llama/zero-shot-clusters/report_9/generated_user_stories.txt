@@ -1,0 +1,26 @@
+As a DataProcessor, I want to process deletions for a given date, so that I can maintain data consistency.
+As a FABSUpdater, I want to update FABS records, so that I can keep my data up-to-date.
+As a UIDesigner, I want to redesign the Resources page, so that I can improve the user experience.
+As a UIDesigner, I want to report user testing results to agencies, so that they can track progress and make informed decisions.
+As a UIDesigner, I want to move on to round 2 of edits for a given page, so that I can refine the design based on feedback.
+As a UIDesigner, I want to track issues that come up during Tech Thursday, so that I can address technical problems efficiently.
+As a UIDesigner, I want to begin user testing, so that I can validate design decisions with real users.
+As a UIDesigner, I want to schedule user testing, so that I can plan and coordinate testing sessions.
+As a DevOpsEngineer, I want to provide useful data across all applications using New Relic, so that I can monitor performance and optimize system resources.
+As a BrokerUser, I want to sync D1 file generation with FPDS data load, so that I can ensure data consistency and accuracy.
+As a BrokerUser, I want to update SQL codes for clarity, so that I can improve database maintainability and readability.
+As a BrokerUser, I want to add PPoPCode cases to the derivation logic, so that I can enhance data processing and validation.
+As a BrokerUser, I want to derive the FundingAgencyCode, so that I can enable accurate funding agency identification.
+As a BrokerUser, I want to map FederalActionObligation to the Atom Feed, so that I can facilitate data sharing and integration.
+As a BrokerUser, I want to validate PPoPZIP+4, so that I can ensure data accuracy and prevent errors.
+As a Developer, I want to index domain models properly, so that I can improve data retrieval and querying efficiency.
+As a Developer, I want to update the Broker validation rule table, so that I can maintain data integrity and enforce business rules.
+As a Developer, I want to clarify the CFDA error code, so that I can improve error handling and troubleshooting.
+As a Developer, I want to update the FABS sample file, so that I can maintain data accuracy and consistency.
+As a Developer, I want to prevent duplicate transactions from being published, so that I can prevent data duplication and errors.
+As a Developer, I want to load historical FPDS data, so that I can analyze and report on past data.
+As a Developer, I want to determine the best way to load historical FPDS data, so that I can optimize data loading and processing.
+As a FABSUser, I want to access frontend URLs, so that I can navigate and interact with the application.
+As a FABSUser, I want to download the uploaded FABS file, so that I can access and review submitted data.
+As a FABSUser, I want to view submitted data, so that I can track and monitor data submissions.
+As a Tester, I want to test features in non-Staging environments, so that I can ensure application stability and functionality in production environments.

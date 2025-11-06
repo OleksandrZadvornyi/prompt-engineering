@@ -1,0 +1,17 @@
+As a user, I want to initiate a deletion process by providing a date, so that the system can handle data deletions based on that date.
+
+As a user, I want to schedule user testing by providing a test date, so that the testing can be organized for that specific date.
+
+As a user, I want to upload FABS files in JSON format, so that the system can process and load the data from those files.
+
+As a user, I want to validate a ZIP code, so that I can ensure it meets the required format.
+
+As a user, I want to update the status of a submission by providing a submission ID and a status, so that the system can keep track of the submission's progress.
+
+As a user, I want to generate submission files based on a specified submission type, so that I can prepare the necessary documentation.
+
+As a user, I want to sync D1 file generation with FPDS data loads, so that the files are accurately generated based on the latest data.
+
+As a user, I want to load historical FPDS data from CSV files, so that the system can process and analyze past data.
+
+As a user, I want to fetch the latest FPDS updates, so that I can stay informed about the most recent data changes.

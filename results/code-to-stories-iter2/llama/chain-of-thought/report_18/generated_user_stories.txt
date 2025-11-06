@@ -1,0 +1,14 @@
+As a Data User, I want to process deletions for a specific date, so that I can manage data effectively.
+As a UI Designer, I want to redesign the Resources page, so that users have a better experience.
+As a UI Designer, I want to report user testing results, so that I can track and improve the design.
+As a UI Designer, I want to move on to the next round of edits, so that I can continue refining the design.
+As a Developer, I want to improve logging, so that I can troubleshoot issues more efficiently.
+As a Developer, I want to update the FABS submission, so that financial data is accurate and up-to-date.
+As a Developer, I want to update the Broker validation rule table, so that data validation is accurate and reliable.
+As a Developer, I want to add GTAS window data to the database, so that financial data is comprehensive and accurate.
+As a Developer, I want to manage D Files generation requests, so that data files are generated correctly and efficiently.
+As a DevOps Engineer, I want to provide New Relic data, so that performance metrics are available for analysis.
+As a Broker User, I want to upload and validate error messages, so that I can identify and resolve issues.
+As a Broker User, I want to sync D1 file generation with FPDS data load, so that data is consistent and accurate.
+As a Website User, I want to access published FABS files, so that I can view financial data.
+As a Tester, I want to test features in environments, so that I can ensure they work correctly and meet requirements.

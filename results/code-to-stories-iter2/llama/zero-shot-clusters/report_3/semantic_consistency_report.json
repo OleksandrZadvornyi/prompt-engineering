@@ -1,0 +1,15 @@
+{
+    "model": "llama",
+    "prompt_variant": "zero-shot-clusters",
+    "embedding_model": "all-MiniLM-L6-v2",
+    "scores": {
+        "original_vs_iter1": 0.8893527388572693,
+        "original_vs_iter2": 0.8586975336074829,
+        "iter1_vs_iter2": 0.9643747806549072
+    },
+    "counts": {
+        "original": 98,
+        "iter1": 18,
+        "iter2": 18
+    }
+}

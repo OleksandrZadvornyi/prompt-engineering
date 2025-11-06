@@ -1,0 +1,28 @@
+Here are the user stories derived from the Python code:
+
+1. As a Data Administrator, I want to delete records older than a specific date, so that I can maintain database performance and comply with data retention policies.  
+2. As a UI Designer, I want to redesign the resources page layout, so that users have an improved experience when accessing resources.  
+3. As a UI Designer, I want to report user testing results to the appropriate agency, so that feedback can be incorporated into future designs.  
+4. As a DevOps Engineer, I want to track application performance metrics using New Relic, so that I can monitor and optimize system performance.  
+5. As a Data Analyst, I want to generate D1 files from FPDS data, so that reports and analyses can be shared with stakeholders.  
+6. As a Data Analyst, I want to update SQL queries in the configuration, so that reports reflect the latest business logic.  
+7. As a Data Analyst, I want to enhance PPoPCode derivation logic, so that special conditions are correctly handled.  
+8. As a Data Analyst, I want to derive FundingAgencyCode from records, so that funding sources are accurately categorized.  
+9. As a Content Editor, I want to edit landing page content, so that users see up-to-date information.  
+10. As a Developer, I want to enhance logging with submission IDs, so that debugging and tracking submissions is easier.  
+11. As a Data Manager, I want to retrieve published FABS files, so that I can review and manage public data.  
+12. As a Data Analyst, I want to filter grant records from datasets, so that I can focus on relevant data for analysis.  
+13. As a Submission Manager, I want to control publish status for submissions, so that content goes through the correct workflow.  
+14. As a Data Engineer, I want to load historical FPDS data into the database, so that historical trends can be analyzed.  
+15. As a Data Engineer, I want to load FABS data with derived FREC codes, so that agency information is standardized.  
+16. As a System Admin, I want to update validation messages, so that users receive clear feedback on errors.  
+17. As a System Admin, I want to update validation rules, so that data quality is enforced according to requirements.  
+18. As a Validator, I want to check DUNS numbers for correctness, so that invalid entries are flagged.  
+19. As a File Generator, I want to generate D files with caching, so that repeated requests are processed efficiently.  
+20. As a Performance Engineer, I want to process flexfields in batches, so that large datasets are handled without performance issues.  
+21. As a Deployment Engineer, I want to deploy FABS updates to production, so that users access the latest features.  
+22. As a Data Validator, I want to validate loan records for required fields, so that incomplete data is identified early.  
+23. As a Schema Validator, I want to validate data against schema v1.1, so that it meets structural requirements.  
+24. As a Navigation Designer, I want to retrieve landing pages based on user type, so that users see role-specific content.  
+25. As a Navigation Designer, I want to update frontend URLs, so that routing reflects the latest application structure.  
+26. As a Dashboard Manager, I want to update submission status labels, so that users see consistent and clear status information.

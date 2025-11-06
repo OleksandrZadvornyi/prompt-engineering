@@ -1,0 +1,18 @@
+Here are the user stories derived from the Python code:
+
+1. As a visitor, I want to view the home page, so that I can learn about the application.  
+2. As a visitor, I want to access resources, so that I can find helpful documentation.  
+3. As a visitor, I want to view the help page, so that I can get support when needed.  
+4. As a visitor, I want to access the FABS landing page, so that I can navigate to FABS-related features.  
+5. As a visitor, I want to access the DABS landing page, so that I can navigate to DABS-related features.  
+6. As a submitter, I want to view my submission dashboard, so that I can track my submissions.  
+7. As a submitter, I want to upload a new CSV file, so that I can submit data for validation.  
+8. As a submitter, I want to publish a validated submission, so that it becomes available to others.  
+9. As a consumer, I want to view published files, so that I can access validated data.  
+10. As a consumer, I want to filter published files by agency, so that I can find relevant data.  
+11. As a consumer, I want to download published files, so that I can use the data locally.  
+12. As a validator, I want to view validation rules, so that I can understand the criteria for valid submissions.  
+13. As a validator, I want to run validation on a submission, so that I can verify data quality.  
+14. As a validator, I want to see validation results, so that I can determine if a submission passes or fails.  
+
+Each user story maps to a specific route or functionality in the provided Flask application. Let me know if you'd like any refinements!

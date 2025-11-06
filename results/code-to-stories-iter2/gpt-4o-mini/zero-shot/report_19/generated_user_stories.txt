@@ -1,0 +1,17 @@
+As a user, I want to create an account, so that I can submit my work to the broker.
+
+As a user, I want to upload a submission, so that my work can be published and stored.
+
+As a user, I want to receive a notification if I try to upload a submission that already exists, so that I can avoid duplicate submissions.
+
+As a user, I want to validate my submission data before uploading, so that I can ensure it meets the required criteria.
+
+As a user, I want to see a list of my published submissions, so that I can keep track of my uploaded work.
+
+As a user, I want to delete submissions that are older than a specified date, so that I can manage my submissions effectively.
+
+As a user, I want to receive confirmation messages when I add a new user, upload a submission, or delete submissions, so that I know my actions were successful.
+
+As a user, I want to validate my DUNS number, so that I can ensure it is formatted correctly before submitting.
+
+As a user, I want to ensure that all required fields are present in my submission, so that I can submit a complete and accurate entry.

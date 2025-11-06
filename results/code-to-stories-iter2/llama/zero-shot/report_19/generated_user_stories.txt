@@ -1,0 +1,12 @@
+As a user, I want to submit data from a CSV file, so that I can process and save it to the database.
+As a user, I want the system to validate the submitted file for correct extension and required columns, so that I can ensure data integrity.
+As a user, I want to retrieve the status of my submitted data, so that I can track the processing progress.
+As a user, I want to view the processed DABS pages, so that I can retrieve and display the processed data.
+As a user, I want to load historical FABS data from a file, so that I can process and save it to the database.
+As a system administrator, I want the system to generate D files from FABS and FPDS data, so that I can create the required files.
+As a data analyst, I want the system to derive required fields from the data, so that I can perform further analysis.
+As a system administrator, I want the system to save processed data to the database, so that I can store and manage the data.
+As a data analyst, I want the system to derive PPoPCode from the data, so that I can identify the place of performance.
+As a data analyst, I want the system to derive FREC from the data, so that I can identify the federal funding agency.
+As a user, I want to load historical FPDS data from a file, so that I can process and save it to the database.
+As a system administrator, I want the system to load data from a file, so that I can process and save it to the database.

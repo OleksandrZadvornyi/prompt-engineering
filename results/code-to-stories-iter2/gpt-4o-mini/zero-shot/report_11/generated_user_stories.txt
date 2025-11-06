@@ -1,0 +1,21 @@
+As a user, I want to upload a file, so that I can store data on the server.
+
+As a user, I want to download my uploaded file, so that I can access it whenever I need.
+
+As a broker user, I want to submit a record, so that I can save important data to the system.
+
+As a broker user, I want to validate my submitted record, so that I can ensure the data meets required standards before saving.
+
+As a user, I want to view a redesigned resources page, so that I can easily access helpful materials and information.
+
+As a data user, I want to update a FABS record, so that I can ensure the data is current and accurate.
+
+As a data user, I want to access FPDS data fields, so that I can retrieve additional information as needed.
+
+As a developer, I want to update validation rules, so that I can maintain data integrity and adapt to changing requirements.
+
+As a developer, I want to validate a submission, so that I can confirm that the data is correct before processing.
+
+As a developer, I want to prevent double submissions, so that I can ensure data consistency and avoid duplicates.
+
+As a user, I want to view a submission dashboard, so that I can track the status of my submissions and manage them effectively.

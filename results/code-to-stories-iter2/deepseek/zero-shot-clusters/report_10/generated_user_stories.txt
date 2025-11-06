@@ -1,0 +1,20 @@
+Here are the user stories derived from the provided Python code:
+
+1. As a data analyst, I want to load historical FPDS data from 2007 to present, so that I can analyze government contract trends.  
+2. As a data analyst, I want to load historical FABS submissions, so that I can review assistance award data.  
+3. As a system administrator, I want to derive funding agency codes from submission data, so that I can understand agency distribution.  
+4. As a system administrator, I want to remove data older than a cutoff date, so that I can maintain database performance and relevance.  
+5. As a UI/UX designer, I want to update the resources page design, so that I can improve user experience.  
+6. As a UI/UX designer, I want to send user testing results to agencies, so that we can gather feedback for improvements.  
+7. As a UI/UX designer, I want to schedule user testing sessions, so that we can validate design changes with real users.  
+8. As a frontend developer, I want to update FABS-related URLs in the application, so that users have access to current resources.  
+9. As a frontend developer, I want to update submission status labels, so that users see consistent and clear terminology.  
+10. As a validation engineer, I want to update data validation rules, so that we maintain data quality standards.  
+11. As a validation engineer, I want to validate DUNS number formats, so that we ensure accurate vendor identification.  
+12. As a DevOps engineer, I want to configure New Relic monitoring, so that we can track application performance.  
+13. As a data engineer, I want to sync D1 file generation with FPDS load, so that we maintain data consistency.  
+14. As a data engineer, I want to generate sample files for user reference, so that users understand required file formats.  
+15. As a submission manager, I want to update the publish status of a submission, so that we can track publication workflow.  
+16. As a submission manager, I want to check for and prevent duplicate publishing, so that we maintain data integrity.  
+17. As a QA tester, I want to run tests for FABS derivation logic, so that we can verify system accuracy.  
+18. As a data manager, I want to check the availability of historical data, so that we can inform users about data accessibility.

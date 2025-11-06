@@ -1,0 +1,23 @@
+As a System Administrator, I want to process deletions for a given date, so that I can maintain the system's data integrity.
+As a Developer, I want to redesign the Resources page, so that I can improve the user experience.
+As a Tester, I want to report user testing results to an agency, so that I can provide feedback on the system's usability.
+As a Content Creator, I want to move on to the next round of edits for a given page, so that I can refine the content.
+As a Troubleshooter, I want to log an issue, so that I can track and resolve problems.
+As a Data Manager, I want to update the FABS sample file, so that I can ensure data accuracy.
+As a Data Quality Specialist, I want to ensure deleted FSRS records are not included in submissions, so that I can maintain data integrity.
+As a Validation Expert, I want to update the Broker validation rule table, so that I can ensure data consistency.
+As a Database Administrator, I want to add GTAS window data to the database, so that I can store and manage data.
+As a Performance Optimizer, I want to manage D Files generation requests, so that I can improve system performance.
+As a Data Analyst, I want to access raw agency published files from FABS via USAspending, so that I can analyze data.
+As a Designer, I want to create content mockups, so that I can visualize the user interface.
+As a Project Manager, I want to track issues, so that I can monitor project progress.
+As a User Experience Specialist, I want to design a user testing summary, so that I can evaluate user feedback.
+As a Scheduler, I want to schedule user testing, so that I can plan and coordinate testing sessions.
+As a Planner, I want to design a schedule and audit, so that I can plan and evaluate project timelines.
+As a User, I want to prevent duplicate publishing, so that I can avoid data duplication.
+As a Data Recipient, I want to receive updates to FABS records, so that I can stay informed about data changes.
+As a Financial Analyst, I want to see updated financial assistance data daily, so that I can make informed financial decisions.
+As a Deployment Specialist, I want to deploy FABS into production, so that I can make the system available to users.
+As a Data Loader, I want to load historical FABS data, so that I can populate the system with existing data.
+As a Data Modeler, I want to add PPoPCode cases to the derivation logic, so that I can improve data modeling.
+As a Validation Manager, I want to ensure FABS validation rules accept zero and blank for non-loan records, so that I can ensure data validity.

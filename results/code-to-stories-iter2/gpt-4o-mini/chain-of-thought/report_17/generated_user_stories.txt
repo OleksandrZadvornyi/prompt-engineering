@@ -1,0 +1,15 @@
+As a submission creator, I want to create a submission with an ID, user ID, and content, so that I can manage my work in a structured manner.  
+As a submission creator, I want to update the validation rules for my submission, so that I can ensure my content meets the necessary criteria.  
+As a submission creator, I want to validate my submission based on the defined rules, so that I can confirm its compliance before submission.  
+As a user, I want to log issues related to submissions, so that I can track problems and address them later.  
+As a user, I want to retrieve a list of logged issues, so that I can review and manage them effectively.  
+As a submission manager, I want to add new submissions to the system, so that I can keep track of all submissions.  
+As a submission manager, I want to update the publish status of a submission, so that I can reflect its current state in the system.  
+As a file validator, I want to validate uploaded files to ensure they are not empty and can be read successfully, so that users can only submit valid files.  
+As a resource page manager, I want to redesign the resource page with new design elements, so that I can enhance user experience.  
+As a user testing report creator, I want to report insights from user testing, so that I can capture and analyze feedback for improvements.  
+As a data manager, I want to delete old data entries based on a specified date, so that I can maintain relevant and up-to-date information.  
+As a FABS user, I want to download a specific file by its ID, so that I can access the content I need.  
+As a FABS user, I want to validate my submission, so that I can ensure it meets the necessary validation criteria before further actions.  
+As a broker user, I want to upload a file and have it validated, so that I can confirm its readiness for use.  
+As a tester, I want to track issues that arise during testing, so that I can ensure they are addressed and resolved.

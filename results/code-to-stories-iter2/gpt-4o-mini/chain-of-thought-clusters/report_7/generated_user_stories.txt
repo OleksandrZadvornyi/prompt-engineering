@@ -1,0 +1,17 @@
+As a user, I want to submit data with an ID, status, and file, so that I can store my submission in the system.
+
+As a user, I want to view my submission history, so that I can track the status of my submissions.
+
+As a user, I want to validate my submission if its status is pending, so that I can update it to validated.
+
+As a user, I want to download the data file associated with my submission, so that I can access my submitted data.
+
+As a user, I want to retrieve error messages related to my submission, so that I can understand any issues with my submission status.
+
+As a user testing manager, I want to schedule user testing sessions with specific dates and user IDs, so that I can organize and manage testing activities.
+
+As a user testing manager, I want to generate a summary report of all scheduled testing sessions, so that I can review and present the testing activities.
+
+As a broker, I want to upload and validate submissions in one action, so that I can streamline the submission process.
+
+As a broker, I want to ensure that I can retrieve error messages for unvalidated submissions, so that I can address any issues promptly.

@@ -1,0 +1,25 @@
+As a database administrator, I want to set up a database, so that I can manage records and submissions effectively.
+
+As a data manager, I want to delete old records based on a specific date, so that I can maintain a clean and relevant dataset.
+
+As a data processor, I want to derive a funding agency code from provided data, so that I can standardize agency identification.
+
+As a data validator, I want to validate ZIP fields, so that I can ensure the integrity of address data.
+
+As a testing coordinator, I want to schedule user testing sessions, so that I can gather feedback from participants on our system.
+
+As a project lead, I want to log developer issues, so that I can track and address problems in the development process.
+
+As a data quality specialist, I want to add new PPoPCode cases to the database, so that I can ensure all relevant cases are documented.
+
+As a data submission specialist, I want to generate FABS records from existing records, so that I can facilitate accurate reporting.
+
+As a support engineer, I want to handle submission errors by submission ID, so that I can troubleshoot and resolve issues for users.
+
+As a database administrator, I want to update the statuses of FABS records, so that I can keep track of their current state.
+
+As a data manager, I want to load historical data for specific types, so that I can analyze trends over time.
+
+As a data processor, I want to process submissions after validating them, so that I can ensure only correct data is processed.
+
+As a data analyst, I want to create a summary of user testing feedback, so that I can evaluate participant responses and improve the system.

@@ -1,0 +1,20 @@
+As a data analyst, I want to process deletions for a specific date, so that I can maintain accurate records.
+As a designer, I want to redesign the Resources page with a new style, so that I can improve the user experience.
+As a designer, I want to report user testing results to agencies, so that they can be informed of the testing outcomes.
+As a designer, I want to edit the DABS landing page for a specific round, so that I can update the content.
+As a designer, I want to edit the Homepage for a specific round, so that I can update the content.
+As a designer, I want to edit the Help page for a specific round, so that I can update the content.
+As a developer, I want to improve the logging, so that I can better debug and troubleshoot issues.
+As a developer, I want to update the FABS submission with a publish status, so that I can reflect the current state of the submission.
+As a developer, I want to update the Broker validation rule table, so that I can ensure data accuracy.
+As a developer, I want to add GTAS window data, so that I can provide more comprehensive information.
+As a developer, I want to manage D Files generation requests, so that I can ensure efficient data processing.
+As a developer, I want to prevent duplicate transactions, so that I can maintain data integrity.
+As a DevOps engineer, I want to provide useful data, so that I can support informed decision-making.
+As a broker user, I want to upload and validate error messages, so that I can ensure accurate error reporting.
+As a broker user, I want to sync D1 file generation with FPDS data load, so that I can ensure data consistency.
+As a website user, I want to access published FABS files, so that I can view the latest information.
+As a FABS user, I want to submit FABS data, so that I can provide required information.
+As a FABS user, I want to download uploaded FABS files, so that I can access my submitted data.
+As a FABS user, I want to see correct status labels, so that I can track the progress of my submissions.
+As a tester, I want to test features, so that I can ensure the system is functioning correctly.

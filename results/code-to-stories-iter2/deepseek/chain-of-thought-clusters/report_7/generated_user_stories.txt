@@ -1,0 +1,26 @@
+Here are the user stories derived from the Python code:
+
+1. As a Data Processor, I want to process deletions for a specific date, so that I can maintain clean and up-to-date records.  
+2. As a UI Designer, I want to redesign the Resources page, so that it matches the new Broker styles.  
+3. As a UI Designer, I want to report user testing results to agencies, so that they can review and provide feedback.  
+4. As a DevOps Engineer, I want to configure New Relic for all applications, so that I can monitor performance and errors.  
+5. As a Broker User, I want to sync D1 file generation with FPDS data load, so that data remains consistent across systems.  
+6. As a Broker Team Member, I want to update SQL codes for clarity, so that queries are easier to understand and maintain.  
+7. As a Broker Team Member, I want to add special PPoP code cases, so that all edge cases are properly handled.  
+8. As a Broker Team Member, I want to derive FundingAgencyCode, so that funding agencies are correctly identified.  
+9. As a Developer, I want to improve logging, so that troubleshooting is more efficient.  
+10. As a Developer, I want to index domain models, so that validation processes are faster.  
+11. As a FABS User, I want to access published FABS files, so that I can review or distribute them.  
+12. As a FABS User, I want to request read-only access to DABS, so that I can view relevant data.  
+13. As a FABS Developer, I want to update FABS submission status, so that users see the latest status.  
+14. As a FABS Developer, I want to load GTAS window data to the database, so that it’s available for analysis.  
+15. As a FABS Developer, I want to deactivate the publish button during derivations, so that users don’t submit incomplete data.  
+16. As a Historical Data Loader, I want to include FREC derivations in historical data, so that records are comprehensive.  
+17. As a Validation Manager, I want to update validation rules, so that data quality is maintained.  
+18. As a Validation Manager, I want to prevent duplicate transactions from being published, so that reports are accurate.  
+19. As a File Manager, I want to cache D File generation requests, so that performance is optimized.  
+20. As a File Manager, I want to prevent double publishing of FABS submissions, so that data integrity is preserved.  
+21. As a Cross-Cluster Team Member, I want to derive office names from codes, so that users see meaningful labels.  
+22. As a Cross-Cluster Team Member, I want to update the sample file link, so that users access the correct resources.  
+23. As a Cross-Cluster Team Member, I want to handle ZIP codes missing the last 4 digits, so that addresses are standardized.  
+24. As a Cross-Cluster Team Member, I want to update status labels on the Submission Dashboard, so that users have clear status indicators.

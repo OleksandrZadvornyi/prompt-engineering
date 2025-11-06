@@ -1,0 +1,12 @@
+As a System Administrator, I want to add agencies to the system, so that I can manage submissions from different agencies.
+As a System Administrator, I want to add submissions to agencies, so that I can track and manage submissions from various agencies.
+As a System Administrator, I want to validate submissions based on file type, so that I can ensure only valid files are processed.
+As a System Administrator, I want to process submissions, so that I can update their status and track their progress.
+As a USASpending Administrator, I want to retrieve all FABS submissions, so that I can view and manage all submissions from agencies.
+As a USASpending Administrator, I want to retrieve all FPDS data, so that I can access and utilize the data for analysis and reporting.
+As a USASpending Administrator, I want to process FABS submissions, so that I can update their status and track their progress.
+As a Broker, I want to upload and validate files, so that I can ensure only valid files are accepted and processed.
+As a Broker, I want to retrieve all FABS submissions, so that I can view and manage all submissions from agencies.
+As a Broker, I want to retrieve all FPDS data, so that I can access and utilize the data for analysis and reporting.
+As a DataManager, I want to load FPDS data, so that I can store and manage the data for future reference.
+As a DataManager, I want to retrieve FPDS data, so that I can access and utilize the data for analysis and reporting.

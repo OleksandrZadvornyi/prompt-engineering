@@ -1,0 +1,15 @@
+{
+    "model": "gpt-4o-mini",
+    "prompt_variant": "chain-of-thought-clusters",
+    "embedding_model": "all-MiniLM-L6-v2",
+    "scores": {
+        "original_vs_iter1": 0.7109606266021729,
+        "original_vs_iter2": 0.6216264963150024,
+        "iter1_vs_iter2": 0.8989711999893188
+    },
+    "counts": {
+        "original": 98,
+        "iter1": 8,
+        "iter2": 8
+    }
+}

@@ -1,0 +1,19 @@
+Here are the user stories derived from the Python code:
+
+1. As a database administrator, I want to establish and manage database connections, so that the application can store and retrieve data reliably.  
+2. As a system administrator, I want to set up logging for the application, so that I can monitor and troubleshoot issues.  
+3. As a file uploader, I want to ensure an upload directory exists, so that files can be saved securely.  
+4. As a security officer, I want to generate file hashes for uploaded files, so that I can verify file integrity.  
+5. As a user, I want to save uploaded files to a designated directory, so that my files are stored correctly.  
+6. As a data manager, I want to mark old records as deleted, so that the database remains efficient and organized.  
+7. As a submission reviewer, I want to update the publish status of submissions, so that their visibility can be controlled.  
+8. As a validator, I want to check if a file is a valid FABS file, so that only compliant files are processed.  
+9. As an API user, I want to validate D file content via an API, so that I can ensure data correctness.  
+10. As a tester, I want to generate test reports for agencies, so that I can document validation results.  
+11. As a GTAS manager, I want to set submission windows, so that submissions are only accepted during allowed times.  
+12. As a submitter, I want to check if the submission window is open, so that I know when to upload files.  
+13. As a web user, I want to view a homepage with navigation links, so that I can easily access different submission types.  
+14. As a user, I want to view a resources page, so that I can access documentation and guidelines.  
+15. As an application administrator, I want to initialize the database with required tables, so that the application functions correctly from the start.  
+16. As a submitter, I want to upload files only during open submission windows, so that I comply with system rules.  
+17. As a user, I want to check the status of my submission, so that I know if it was processed successfully.

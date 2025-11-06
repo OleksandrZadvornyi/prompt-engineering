@@ -1,0 +1,13 @@
+As a user, I want to create a new submission with a title and content, so that I can store my information for review.
+
+As a user, I want to retrieve a submission by its ID, so that I can view the details of my submission.
+
+As a user, I want to validate my submission to check for errors, so that I can ensure all required information is provided before publishing.
+
+As a user, I want to publish my validated submission, so that it can be officially submitted for review.
+
+As a user, I want to get the status of my submission, so that I can track its progress.
+
+As a user, I want to retrieve validation errors for my submission, so that I can correct any issues before trying to publish it.
+
+As a user, I want to upload a file associated with my submission, so that I can provide additional context or information related to it.

@@ -1,0 +1,46 @@
+As a system administrator, I want to create an agency with a name and a list of FSR records, so that I can manage agency information.
+As a developer, I want to retrieve the name and FSR records of an agency, so that I can display agency information.
+As a user, I want to validate a FABS submission with a submission ID and data, so that I can check for errors in the submission.
+As a data analyst, I want to derive data elements from submission data, so that I can analyze the data.
+As a system administrator, I want to update the status of a FABS submission, so that I can track the submission process.
+As a user, I want to add GTAS window data to a FABS submission, so that I can associate GTAS data with the submission.
+As a developer, I want to move to the next round of edits for a page, so that I can manage the editing process.
+As a system administrator, I want to log a message, so that I can track system events.
+As a developer, I want to retrieve log messages, so that I can debug the system.
+As a data analyst, I want to retrieve raw agency published files, so that I can analyze the data.
+As a user, I want to retrieve updated financial assistance data, so that I can view the latest data.
+As a developer, I want to retrieve updated FPDS data, so that I can update the system with the latest data.
+As a data analyst, I want to retrieve historical FPDS data, so that I can analyze trends.
+As a user, I want to retrieve FABS sample files, so that I can view sample data.
+As a developer, I want to retrieve FABS submissions, so that I can manage the submissions.
+As a system administrator, I want to retrieve FABS groups, so that I can manage group information.
+As a user, I want to retrieve FABS frontend URLs, so that I can access the frontend.
+As a data analyst, I want to retrieve historical data, so that I can analyze trends.
+As a developer, I want to retrieve additional fields from FPDS data, so that I can update the system with the latest data.
+As a user, I want to retrieve validation results, so that I can view the results of validation.
+As a system administrator, I want to retrieve domain models, so that I can manage the models.
+As a developer, I want to retrieve broker application data, so that I can manage the applications.
+As a user, I want to retrieve DABS pages, so that I can view the pages.
+As a developer, I want to retrieve FABS pages, so that I can manage the pages.
+As a system administrator, I want to retrieve submission errors, so that I can troubleshoot issues.
+As a user, I want to retrieve FABS validation rules, so that I can view the rules.
+As a data analyst, I want to retrieve derived data elements from a submission, so that I can analyze the data.
+As a developer, I want to retrieve file F, so that I can manage the file.
+As a system administrator, I want to retrieve file level errors, so that I can troubleshoot issues.
+As a user, I want to retrieve office names from office codes, so that I can view the names.
+As a developer, I want to retrieve sample files, so that I can manage the files.
+As a system administrator, I want to retrieve status labels on the submission dashboard, so that I can manage the labels.
+As a user, I want to leave off the last 4 digits of a ZIP code, so that I can anonymize the ZIP code.
+As a developer, I want to link a sample file, so that I can associate the file with a submission.
+As a system administrator, I want to manage and cache D files generation requests, so that I can optimize the system.
+As a user, I want to prevent duplicate transactions, so that I can avoid errors.
+As a system administrator, I want to prevent double publishing FABS submissions, so that I can avoid errors.
+As a developer, I want to provide FABS groups, so that I can manage the groups.
+As a user, I want to submit records for individual recipients, so that I can process the records.
+As a developer, I want to submit records with quotation marks, so that I can process the records.
+As a system administrator, I want to track issues in Tech Thursday, so that I can manage the issues.
+As a user, I want to upload and validate error messages, so that I can troubleshoot issues.
+As a developer, I want to validate FABS files, so that I can check for errors.
+As a system administrator, I want to validate FABS submissions, so that I can check for errors.
+As a user, I want to validate submission data, so that I can check for errors.
+As a developer, I want to view DABS pages, so that I can manage the pages.

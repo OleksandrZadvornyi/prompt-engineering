@@ -1,0 +1,15 @@
+Here are the user stories derived from the Python code:
+
+1. As a system administrator, I want to initialize the database tables, so that the application has all required tables for operation.  
+2. As a user, I want to retrieve a submission by its ID, so that I can view its details.  
+3. As a user, I want to publish a submission, so that it becomes publicly available.  
+4. As a validator, I want to validate flexible fields in a submission, so that required fields are present.  
+5. As a validator, I want to derive missing fields in a submission, so that incomplete data can be auto-filled.  
+6. As an auditor, I want to retrieve active validation rules, so that I can ensure compliance.  
+7. As a GTAS user, I want to check the active GTAS window, so that I know when submissions are being processed.  
+8. As a D-File user, I want to generate an FPDS file for an agency, so that I have up-to-date procurement data.  
+9. As a D-File user, I want to check for cached FPDS files, so that I avoid redundant file generation.  
+10. As a tester, I want to schedule a testing session, so that I can coordinate user feedback.  
+11. As a content manager, I want to update resource content and styles, so that the application's help docs stay current.  
+12. As a developer, I want logging configured for both console and file output, so that I can monitor and debug the application.  
+13. As a developer, I want New Relic monitoring enabled, so that I can track application performance.

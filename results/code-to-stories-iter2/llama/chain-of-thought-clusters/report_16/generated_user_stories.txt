@@ -1,0 +1,15 @@
+As a system administrator, I want to process FABS submissions, so that I can manage and track submissions.
+As a data manager, I want to send updates, so that I can inform users of changes.
+As a broker, I want to validate error messages, so that I can ensure correct error handling.
+As a resources manager, I want to redesign the resources page, so that I can improve user experience.
+As a developer, I want to link to sample files, so that I can provide examples for users.
+As a broker, I want to upload error messages, so that I can track and validate errors.
+As a submissions administrator, I want to get status labels, so that I can track submission status.
+As a submissions administrator, I want to add submissions, so that I can manage the submission process.
+As a zip code processor, I want to process zip codes, so that I can handle geographic data.
+As a cluster administrator, I want to process user stories, so that I can manage and track requirements.
+As a FABS submitter, I want to submit FABS submissions, so that I can send submissions to the system.
+As a data processor, I want to get files in the correct format, so that I can process data correctly.
+As a data processor, I want to add data, so that I can store and manage information.
+As a zip code processor, I want to add zip codes, so that I can store geographic data.
+As a user, I want to leave off the last four digits of a zip code, so that I can handle partial zip codes.

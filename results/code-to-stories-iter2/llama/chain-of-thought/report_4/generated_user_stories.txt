@@ -1,0 +1,9 @@
+As a system administrator, I want to create and manage user accounts, so that I can control access to the system.
+As a data analyst, I want to load data from various sources, so that I can perform analysis and make informed decisions.
+As a submission manager, I want to add and retrieve submissions, so that I can track and manage the submission process.
+As a validation expert, I want to define and apply validation rules to submissions, so that I can ensure data quality and integrity.
+As a submission processor, I want to process submissions, so that I can generate output and take further action.
+As a system monitor, I want to monitor applications, so that I can detect and respond to issues.
+As a system administrator, I want to add and manage applications, so that I can track and control system resources.
+As a user, I want to run the broker application, so that I can access its functionality and services.
+As a system administrator, I want to manage the system's users, submissions, and applications, so that I can oversee and control the overall system.

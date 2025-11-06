@@ -1,0 +1,83 @@
+As a system administrator, I want to process deletions for a given date, so that I can maintain the accuracy of the database.
+As a system administrator, I want to redesign the Resources page to match the new design styles, so that the user interface is consistent.
+As a system administrator, I want to report to the Agencies about user testing, so that they are informed about the progress.
+As a system administrator, I want to provide New Relic data, so that it can be useful across all applications.
+As a system administrator, I want to sync D1 file generation with the FPDS data load, so that the data is up-to-date.
+As a system administrator, I want to update SQL codes to be clear and easy to understand, so that they can be maintained efficiently.
+As a system administrator, I want to add PPoPCode cases to make the derivation logic comprehensive, so that the data is accurate.
+As a system administrator, I want to derive the Funding Agency Code, so that the data quality and completeness are improved.
+As a system administrator, I want to map the Federal Action Obligation, so that it is properly reflected in the Atom Feed.
+As a system administrator, I want to make PPoPZIP+4 work like the Legal Entity ZIP validations, so that the data is consistent.
+As a system administrator, I want to upload and validate error messages, so that they are accurate and helpful.
+As a system administrator, I want to update the Broker validation rule table, so that it reflects the latest rules.
+As a system administrator, I want to make flexfields appear in warning and error files, so that they are visible and useful.
+As a system administrator, I want to clarify the CFDA error code, so that its trigger is understood.
+As a system administrator, I want to update the Broker resources, so that they are current and relevant.
+As a system administrator, I want to accept DUNS validations, so that records can be processed correctly.
+As a system administrator, I want to receive helpful file-level errors, so that issues can be troubleshot efficiently.
+As a system administrator, I want to prevent duplicate transactions, so that data integrity is maintained.
+As a system administrator, I want to update FABS submissions, so that they are modified when the publish status changes.
+As a system administrator, I want to add GTAS window data, so that it is available in the database.
+As a system administrator, I want to update the FABS sample file, so that it is accurate and relevant.
+As a system administrator, I want to deactivate the publish button, so that multiple clicks are prevented.
+As a system administrator, I want to derive fields, so that they are available for the historical FABS loader.
+As a system administrator, I want to load historical FABS data, so that it includes FREC derivations.
+As a system administrator, I want to include FREC derivations, so that the data is comprehensive.
+As a system administrator, I want to update frontend URLs, so that they accurately reflect the page being accessed.
+As a system administrator, I want to load historical FPDS data, so that it includes both extracted historical data and FPDS feed data.
+As a system administrator, I want to provide FABS groups, so that they function under the FREC paradigm.
+As a system administrator, I want to include necessary columns, so that the data is complete and useful.
+As a system administrator, I want to access additional fields, so that they are available for issue investigation.
+As a system administrator, I want to add helpful info, so that the submission dashboard is informative.
+As a system administrator, I want to download uploaded files, so that they are accessible.
+As a system administrator, I want to determine the best way to load FPDS data, so that it is efficient and accurate.
+As a system administrator, I want to use appropriate language, so that it is suitable for the user.
+As a system administrator, I want to hide DABS banner messages, so that they do not appear on FABS pages.
+As a system administrator, I want to show submission periods, so that agency users are informed.
+As a system administrator, I want to manage D Files generation requests, so that performance issues are prevented.
+As a system administrator, I want to access raw agency published files, so that they are available via USAspending.
+As a system administrator, I want to include a large number of flexfields, so that they do not impact performance.
+As a system administrator, I want to prevent double publishing, so that FABS submissions are not duplicated.
+As a system administrator, I want to see updated financial assistance data, so that it is current and accurate.
+As a system administrator, I want to prevent attempts to correct non-existent records, so that new published data is not created.
+As a system administrator, I want to have accurate PPoPCode data, so that it is complete and reliable.
+As a system administrator, I want to hide NASA grants, so that they are not displayed as contracts.
+As a system administrator, I want to generate and validate D Files, so that they are accurate and available.
+As a system administrator, I want to test features in non-Staging environments, so that they function correctly.
+As a system administrator, I want to see accurate submission errors, so that they represent FABS errors.
+As a system administrator, I want to see who created a submission, so that it is identifiable.
+As a system administrator, I want to ensure proper field derivation, so that fields are derived correctly.
+As a system administrator, I want to submit records without DUNS errors, so that they are processed efficiently.
+As a system administrator, I want to see the number of rows to be published, so that it is known prior to publishing.
+As a system administrator, I want to submit a citywide as a PPoPZIP, so that it passes validations.
+As a system administrator, I want to run validations in a reasonable time, so that they do not take too long.
+As a system administrator, I want to receive updates to FABS records, so that they are current and accurate.
+As a system administrator, I want to ensure deleted FSRS records are not included, so that submissions are accurate.
+As a system administrator, I want to accept zero and blank for loan records, so that FABS validation rules are flexible.
+As a system administrator, I want to deploy FABS into production, so that it is available for use.
+As a system administrator, I want to ensure complete data from SAM, so that it is accurate and reliable.
+As a system administrator, I want to accept zero and blank for non-loan records, so that FABS validation rules are flexible.
+As a system administrator, I want to derive data elements properly, so that they are accurate and reliable.
+As a system administrator, I want to allow longer LegalEntityAddressLine3, so that it matches Schema v1.1.
+As a system administrator, I want to use Schema v1.1 headers, so that FABS files are compatible.
+As a system administrator, I want to load historical Financial Assistance data, so that it is available for FABS go-live.
+As a system administrator, I want to get File F in the correct format, so that it is usable.
+As a system administrator, I want to understand file-level errors, so that issues can be troubleshot efficiently.
+As a system administrator, I want to submit data elements surrounded by quotation marks, so that they are processed correctly.
+As a system administrator, I want to access published FABS files, so that they are available for viewing.
+As a system administrator, I want to send grant records, so that they are delivered to the owner's system.
+As a system administrator, I want to create content mockups, so that data submission is efficient.
+As a system administrator, I want to track issues, so that they are addressed in Tech Thursday.
+As a system administrator, I want to create a user testing summary, so that it is available from the UI SME.
+As a system administrator, I want to begin user testing, so that stakeholder UI improvement requests are validated.
+As a system administrator, I want to schedule user testing, so that testers have advanced notice.
+As a system administrator, I want to design a schedule, so that the potential timeline of UI improvements is known.
+As a system administrator, I want to design an audit, so that the potential scope of UI improvements is known.
+As a system administrator, I want to reset the environment, so that it only takes Staging MAX permissions.
+As a system administrator, I want to index domain models, so that validation results are faster.
+As a system administrator, I want to show the updated date and time, so that it is visible in the header information box.
+As a system administrator, I want to justify padding, so that zero-padded fields are handled correctly.
+As a system administrator, I want to update error codes, so that they accurately reflect the logic and provide enough information.
+As a system administrator, I want to access Broker application data, so that it is available for issue investigation.
+As a system administrator, I want to view DABS pages, so that they can be accessed without needing two sets of permissions.
+As a system administrator, I want to navigate to FABS or DABS pages, so that they can be accessed from a landing page.

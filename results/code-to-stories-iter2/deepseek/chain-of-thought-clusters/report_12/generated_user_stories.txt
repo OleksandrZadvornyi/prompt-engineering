@@ -1,0 +1,53 @@
+Here are the user stories derived from the Python code:
+
+As a Data Manager, I want to process deletions for a specific date, so that I can maintain clean and up-to-date records.
+
+As a UI Designer, I want to redesign the Resources page, so that it matches new Broker design styles.
+
+As a UI Designer, I want to report user testing results to agencies, so that they can provide feedback on the interface.
+
+As a DevOps Engineer, I want to configure New Relic for an application, so that I can monitor its performance.
+
+As a Broker User, I want to sync D1 file generation with FPDS data load, so that the files are generated with the latest data.
+
+As a Broker Team Member, I want to update SQL codes for clarity, so that queries are easier to maintain.
+
+As a Broker Team Member, I want to add PPoPCode cases to derivation logic, so that we have more accurate data processing.
+
+As a Broker Team Member, I want to derive FundingAgencyCode, so that we can improve data quality.
+
+As a Developer, I want to improve logging for a specific submission, so that debugging is easier.
+
+As a Developer, I want to ensure domain models are properly indexed, so that database queries are optimized.
+
+As a Developer, I want to quickly access Broker application data, so that I can perform necessary operations efficiently.
+
+As a Website User, I want to access published FABS files, so that I can view or download them.
+
+As a FABS User, I want to set read-only access to DABS, so that I can control user permissions.
+
+As a FABS User, I want to navigate to FABS or DABS landing page, so that I can access the respective system.
+
+As a FABS Submission Manager, I want to update publish status and log the change, so that submissions are tracked accurately.
+
+As a FABS Submission Manager, I want to deactivate the publish button during derivations, so that users cannot publish incomplete data.
+
+As a FPDS Loader, I want to load historical FPDS data for a given year, so that we have access to past records.
+
+As a FPDS Loader, I want to check if FPDS data is loaded, so that I can ensure data availability.
+
+As a Validation Manager, I want to update validation rules, so that data quality is maintained.
+
+As a Validation Manager, I want to prevent duplicate transactions from being published, so that data integrity is preserved.
+
+As a File Manager, I want to cache D File generation requests, so that duplicate requests are avoided.
+
+As a File Manager, I want to generate D Files from FABS/FPDS data, so that users have up-to-date files.
+
+As a FABS Validator, I want to validate loan records (accept zero/blank), so that we can process all valid cases.
+
+As a SAM Data Manager, I want to ensure SAM data is complete, so that we have all necessary information.
+
+As a Sample File Manager, I want to update the SAMPLE FILE link, so that users can access the latest sample.
+
+As a Status Manager, I want to update status labels for a submission, so that its current state is clearly communicated.

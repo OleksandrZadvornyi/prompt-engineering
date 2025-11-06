@@ -1,0 +1,12 @@
+As a user, I want to create a submission with a title and content, so that I can store my work for further processing.  
+As a user, I want to upload my submission, so that it can be prepared for validation and publishing.  
+As a user, I want to validate my submission to ensure all required fields are filled, so that I can confirm its readiness for publishing.  
+As a user, I want to publish my submission after it has been uploaded and validated, so that it becomes publicly available.  
+As a user, I want to report user testing feedback to multiple agencies, so that I can share insights about the submission's reception.  
+As a user, I want to add edits to the UI editor, so that I can keep track of changes needed for the submission.  
+As a user, I want to move to the next round of edits in the UI editor, so that I can continue refining the submission.  
+As a user, I want to log errors related to my submission, so that I can keep track of issues that need resolution.  
+As a user, I want to retrieve logged errors, so that I can review and address them efficiently.  
+As a submission manager, I want to add a submission to the system, so that I can manage and track submissions easily.  
+As a submission manager, I want to delete a submission from the system, so that I can remove unnecessary or outdated submissions.  
+As a submission manager, I want to process deletions based on the creation date, so that I can maintain the database by removing old submissions.

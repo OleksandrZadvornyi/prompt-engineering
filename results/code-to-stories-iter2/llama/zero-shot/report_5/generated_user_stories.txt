@@ -1,0 +1,52 @@
+As a system administrator, I want to process deletions for a specific date, so that I can maintain data consistency.
+As a system administrator, I want to manage D Files generation, so that I can maintain system efficiency.
+As a system administrator, I want to sync D1 file generation with FPDS data load, so that I can maintain data consistency.
+As a system administrator, I want to ensure FPDS data is up-to-date daily, so that I can maintain data freshness.
+As a UX designer, I want to redesign the Resources page, so that I can improve user experience.
+As a developer, I want to log better, so that I can improve error tracking.
+As a developer, I want to upload and validate error messages, so that I can improve system reliability.
+As a developer, I want to update error codes, so that I can improve system reliability.
+As a UX designer, I want to display more information about publishing rows, so that I can improve system usability.
+As a UX designer, I want to display additional helpful info in the submission dashboard, so that I can improve system usability.
+As a tester, I want to report user testing, so that I can track testing progress.
+As a tester, I want to create a user testing summary, so that I can track testing progress.
+As a tester, I want to begin user testing, so that I can ensure system quality.
+As a tester, I want to schedule user testing, so that I can plan testing activities.
+As a project manager, I want to move to round 2 of page edits, so that I can advance the project timeline.
+As a project manager, I want to move to round 3 of page edits, so that I can finalize the project.
+As a project manager, I want to design a schedule from UI SME, so that I can create a project timeline.
+As a project manager, I want to design an audit from UI SME, so that I can ensure project compliance.
+As a project manager, I want to track issues in Tech Thursday, so that I can monitor project progress.
+As a data analyst, I want to access raw agency published files, so that I can perform data analysis.
+As a data analyst, I want to access published FABS files, so that I can perform data analysis.
+As a data analyst, I want to access raw agency published files via USAspending, so that I can perform data analysis.
+As a data analyst, I want to provide FABS groups, so that I can facilitate data analysis.
+As a data analyst, I want to test FABS derivations, so that I can ensure data accuracy.
+As a data analyst, I want to access additional fields from FPDS data pull, so that I can perform data analysis.
+As a data integrity specialist, I want to update FABS submissions, so that I can ensure data accuracy.
+As a data integrity specialist, I want to add GTAS window data, so that I can enhance data analysis.
+As a data integrity specialist, I want to add GTAS window data to the database, so that I can enhance data analysis.
+As a data integrity specialist, I want to prevent double publishing FABS submissions, so that I can maintain data integrity.
+As a data integrity specialist, I want to receive updates to FABS records, so that I can ensure data accuracy.
+As a data integrity specialist, I want to update the FABS sample file, so that I can ensure data consistency.
+As a data integrity specialist, I want to prevent duplicate transactions, so that I can maintain data integrity.
+As a data integrity specialist, I want to ensure deleted FSRS records are not included, so that I can maintain data integrity.
+As a data integrity specialist, I want to ensure historical data includes all necessary columns, so that I can perform data analysis.
+As a data manager, I want to send grant records, so that I can facilitate grant processing.
+As a data manager, I want to submit records for individual recipients, so that I can facilitate grant processing.
+As a data manager, I want to submit citywide as PPoPZIP, so that I can facilitate grant processing.
+As a data manager, I want to download the uploaded FABS file, so that I can access data.
+As a data manager, I want to manage D Files generation requests, so that I can maintain system efficiency.
+As a data manager, I want to determine the best way to load historical FPDS data, so that I can optimize data analysis.
+As a data manager, I want to load historical FPDS data, so that I can perform data analysis.
+As a system administrator, I want to quickly access Broker application data, so that I can maintain system efficiency.
+As a developer, I want to update the Broker validation rule table, so that I can improve system accuracy.
+As a developer, I want to include a large number of flexfields, so that I can improve system flexibility.
+As a developer, I want to ensure the correct max length for LegalEntityAddressLine3, so that I can improve system accuracy.
+As a developer, I want to use schema v1.1 headers in the FABS file, so that I can improve system compatibility.
+As a developer, I want to map FederalActionObligation properly, so that I can ensure data accuracy.
+As a developer, I want to make PPoPZIP+4 work the same as Legal Entity ZIP, so that I can improve system consistency.
+As a developer, I want to link the SAMPLE FILE to the correct file, so that I can ensure data integrity.
+As a developer, I want to ensure zero-padded fields, so that I can improve system accuracy.
+As a developer, I want to leave off the last 4 digits of ZIP, so that I can improve system security.
+As a designer, I want to create content mockups, so that I can visualize the user interface.

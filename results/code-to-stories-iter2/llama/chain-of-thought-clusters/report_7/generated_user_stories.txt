@@ -1,0 +1,20 @@
+As a system administrator, I want to log system events, so that I can track system activity and troubleshoot issues.
+As a system administrator, I want to manage broker validation rules, so that I can update and retrieve rules as needed.
+As a system administrator, I want to manage transactions, so that I can add and track unique transactions.
+As a system administrator, I want to generate D files, so that I can create files with unique names and content.
+As a system administrator, I want to load data from historical FPDS, so that I can access and use the data.
+As a system administrator, I want to manage FABS groups, so that I can add and retrieve groups by ID.
+As a system administrator, I want to test FABS, so that I can validate its functionality and get test results.
+As a system administrator, I want to derive fields from FABS data, so that I can extract and use the derived fields.
+As a system administrator, I want to redesign the Resources page, so that I can improve its design and layout.
+As a system administrator, I want to report to agencies, so that I can send reports to the relevant agencies.
+As a system administrator, I want to schedule user testing, so that I can plan and organize testing sessions.
+As a system administrator, I want to process deletions, so that I can remove unwanted data and track deletions.
+As a system administrator, I want to sync D1 file generation, so that I can ensure timely and accurate file generation.
+As a system administrator, I want to derive funding agency codes, so that I can extract and use the codes.
+As a system administrator, I want to map federal action obligations, so that I can understand and track obligations.
+As a FABS administrator, I want to update FABS submissions, so that I can modify and track submissions.
+As a FABS administrator, I want to add GTAS window data, so that I can include the data in FABS.
+As a FABS administrator, I want to update the FABS sample file, so that I can keep the file up-to-date and accurate.
+As a FABS administrator, I want to derive fields from FABS data, so that I can extract and use the derived fields.
+As a FABS administrator, I want to include FREC derivations, so that I can incorporate the derivations into FABS.

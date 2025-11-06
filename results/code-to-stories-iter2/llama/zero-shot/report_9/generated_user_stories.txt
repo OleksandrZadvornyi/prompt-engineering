@@ -1,0 +1,71 @@
+As a System Administrator, I want to process deletions for a given date, so that I can maintain data integrity and accuracy.
+As a System Administrator, I want to improve logging, so that I can troubleshoot issues more effectively.
+As a System Administrator, I want to configure New Relic, so that I can collect useful data for system optimization.
+As a System Administrator, I want to sync D1 file generation with FPDS data load, so that I can ensure data consistency and accuracy.
+As a System Administrator, I want to update the Broker validation rule table, so that I can ensure data validity and consistency.
+As a System Administrator, I want to manage D Files generation requests, so that I can ensure timely and accurate data generation.
+As a System Administrator, I want to ensure deleted FSRS records are not included in submissions, so that I can maintain data integrity and accuracy.
+As a System Administrator, I want to prevent attempts to correct or delete non-existent records, so that I can prevent errors and maintain data consistency.
+As a System Administrator, I want to reset the environment, so that I can ensure a clean and stable system.
+As a System Administrator, I want to deploy FABS into production, so that I can make the system available to users.
+As a System Administrator, I want to update domain models, so that I can ensure data consistency and accuracy.
+As a System Administrator, I want to update PPoPZIP validations, so that I can ensure data validity and consistency.
+As a System Administrator, I want to update FPDS data, so that I can ensure data accuracy and completeness.
+As a System Administrator, I want to determine the best way to load historical FPDS data, so that I can optimize data loading processes.
+As a System Administrator, I want to update the historical FPDS data loader, so that I can ensure data consistency and accuracy.
+As a System Administrator, I want to update frontend URLs, so that I can ensure data consistency and accuracy.
+As a System Administrator, I want to provide read-only access to DABS, so that I can ensure data integrity and security.
+As a System Administrator, I want to run validations in a reasonable time, so that I can ensure data consistency and accuracy.
+As a System Administrator, I want to create a landing page, so that I can provide a user-friendly interface and navigation.
+As a System Administrator, I want to prevent duplicate transactions, so that I can maintain data integrity and accuracy.
+As a System Administrator, I want to update error codes, so that I can ensure data consistency and accuracy.
+As a Developer, I want to redesign the Resources page, so that I can improve the user experience.
+As a Developer, I want to include a large number of flexfields, so that I can provide flexibility and customization.
+As a User, I want to receive reports about user testing, so that I can make informed decisions.
+As a User, I want to upload and validate error messages, so that I can ensure accurate and helpful error messages.
+As a User, I want to access published FABS files, so that I can view and utilize the data.
+As a User, I want to access raw agency published files, so that I can view and utilize the data.
+As a User, I want to create a user testing summary, so that I can review and analyze the results.
+As a User, I want to prevent double publishing, so that I can avoid errors and ensure data integrity.
+As a User, I want to upload and validate FABS files, so that I can ensure accurate and complete data.
+As a User, I want to access updated financial assistance data, so that I can view and utilize the data.
+As a User, I want to deactivate the publish button, so that I can prevent errors and ensure data integrity.
+As a User, I want to display flexfields in warning and error files, so that I can view and understand errors and warnings.
+As a User, I want to generate and validate D Files, so that I can ensure accurate and complete data.
+As a User, I want to display updated header information, so that I can view and understand the latest information.
+As a User, I want to provide helpful file-level errors, so that I can understand and address errors.
+As a User, I want to accurately represent FABS errors, so that I can understand and address errors.
+As a User, I want to accurately display the submission creator, so that I can view and understand the latest information.
+As a User, I want to generate File F, so that I can ensure accurate and complete data.
+As a User, I want to better understand file-level errors, so that I can address and resolve errors.
+As a User, I want to provide FABS groups, so that I can ensure accurate and complete data.
+As a User, I want to submit records for individual recipients, so that I can ensure accurate and complete data.
+As a User, I want to display the number of rows to be published, so that I can view and understand the latest information.
+As a User, I want to submit citywide as PPoPZIP, so that I can ensure accurate and complete data.
+As a User, I want to leave off the last 4 digits of ZIP, so that I can ensure accurate and complete data.
+As a User, I want to download uploaded FABS files, so that I can access and utilize the data.
+As a User, I want to display additional info in the submission dashboard, so that I can view and understand the latest information.
+As a User, I want to display appropriate language on FABS pages, so that I can view and understand the information.
+As a User, I want to display appropriate banner messages, so that I can view and understand the information.
+As a User, I want to display correct status labels on the Submission Dashboard, so that I can view and understand the latest information.
+As a User, I want to display submission periods, so that I can view and understand the latest information.
+As a User, I want to submit data elements with quotation marks, so that I can ensure accurate and complete data.
+As a Content Manager, I want to move on to round 2 of edits, so that I can refine content and improve quality.
+As a Content Manager, I want to move on to round 3 of edits, so that I can finalize content and ensure required standards.
+As a Content Manager, I want to create content mockups, so that I can visualize and refine content before publishing.
+As a Data Manager, I want to update FABS submission, so that I can modify publishStatus and ensure data accuracy.
+As a Data Manager, I want to send grant records, so that I can update the system with the latest information.
+As a Data Manager, I want to add GTAS window data to the database, so that I can include it in reports and analysis.
+As a Data Manager, I want to receive updates to FABS records, so that I can ensure data accuracy and completeness.
+As a Data Manager, I want to update the FABS sample file, so that I can remove FundingAgencyCode and improve data quality.
+As a Data Manager, I want to derive FundingAgencyCode, so that I can improve data quality and completeness.
+As a Data Manager, I want to ensure proper field derivation, so that I can ensure accurate and complete information.
+As a Data Manager, I want to ensure historical data includes necessary columns, so that I can ensure accurate and complete information.
+As a Data Manager, I want to access additional FPDS data fields, so that I can ensure accurate and complete information.
+As a Data Manager, I want to load historical Financial Assistance data, so that I can ensure accurate and complete information.
+As a Project Manager, I want to track Tech Thursday issues, so that I can monitor and address technical problems.
+As a Project Manager, I want to schedule user testing, so that I can plan and coordinate the testing process.
+As a Project Manager, I want to design a schedule from UI SME, so that I can plan and coordinate UI improvements.
+As a Project Manager, I want to design an audit from UI SME, so that I can plan and coordinate UI improvements.
+As a Tester, I want to begin user testing, so that I can validate stakeholder UI improvement requests and identify areas for improvement.
+As a Tester, I want to test features in non-Staging environments, so that I can validate the system and identify areas for improvement.

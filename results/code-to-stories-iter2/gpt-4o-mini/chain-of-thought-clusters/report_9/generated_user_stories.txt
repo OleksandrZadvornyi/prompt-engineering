@@ -1,0 +1,23 @@
+As a UI Designer, I want to create a user instance, so that I can represent myself in the system.
+
+As a Developer, I want to create a user instance, so that I can represent myself in the system.
+
+As a Broker User, I want to create a user instance, so that I can represent myself in the system.
+
+As a FABS User, I want to create a user instance, so that I can represent myself in the system.
+
+As a user, I want to submit data, so that I can have my submission processed and tracked.
+
+As a user, I want to validate my submission data, so that I can ensure it meets the required criteria before submission.
+
+As a user, I want to check the status of my submissions on the dashboard, so that I can monitor their progress.
+
+As a user, I want to upload files, so that I can share necessary documents as part of my submissions.
+
+As a user, I want to ensure my uploaded files have the correct format, so that I can avoid errors and ensure successful uploads.
+
+As a system, I want to log errors when invalid submissions are made, so that I can provide feedback to the user for correction.
+
+As a FABS Controller, I want to submit a validated submission to the dashboard, so that it can be added to the system for tracking.
+
+As a user, I want to see a confirmation of successful submission, so that I know my data has been received.

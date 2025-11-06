@@ -1,0 +1,38 @@
+As a system administrator, I want to configure logging, so that I can track system events and debug issues.
+As a FABS user, I want to upload FABS records, so that I can submit my financial data to the government.
+As a FABS validator, I want to validate FABS records, so that I can ensure the data is accurate and complete.
+As a system user, I want to retrieve FABS upload results, so that I can track the status of my submissions.
+As a data analyst, I want to generate D1 files from FABS records, so that I can analyze the data in a standard format.
+As a FABS administrator, I want to update the FABS sample file, so that I can ensure users have the most up-to-date template.
+As a system user, I want to prevent duplicate transactions from being published, so that I can avoid errors and ensure data integrity.
+As a data analyst, I want to access raw agency published files, so that I can perform in-depth analysis of the data.
+As a FABS user, I want to submit FABS records, so that I can meet my reporting requirements.
+As a system user, I want to get the status of a FABS submission, so that I can track the progress of my submissions.
+As a data analyst, I want to retrieve FPDS data, so that I can analyze the data and identify trends.
+As a system administrator, I want to update the Broker validation rule table, so that I can ensure the system is using the latest validation rules.
+As a data analyst, I want to add GTAS window data to the database, so that I can analyze the data and identify trends.
+As a system user, I want to manage D files generation requests, so that I can ensure the system is generating the necessary files.
+As a data analyst, I want to retrieve agency published files, so that I can analyze the data and identify trends.
+As a system user, I want to retrieve FABS submission errors, so that I can diagnose and resolve issues.
+As a FABS administrator, I want to update the FABS sample file link, so that I can ensure users have access to the most up-to-date template.
+As a data analyst, I want to load historical FPDS data, so that I can analyze the data and identify trends.
+As a data analyst, I want to load historical FABS data, so that I can analyze the data and identify trends.
+As a system user, I want to derive fields for FABS records, so that I can ensure the data is complete and accurate.
+As a system user, I want to get the status label of a FABS submission, so that I can track the progress of my submissions.
+As a system user, I want to retrieve FABS error codes, so that I can diagnose and resolve issues.
+As a system user, I want to prevent double publishing of FABS records, so that I can avoid errors and ensure data integrity.
+As a system user, I want to retrieve submission periods, so that I can plan and track my submissions.
+As a system user, I want to retrieve file level errors, so that I can diagnose and resolve issues.
+As a system user, I want to retrieve the file format, so that I can ensure I am using the correct format.
+As a system user, I want to retrieve validation results, so that I can diagnose and resolve issues.
+As a system user, I want to retrieve derived data elements for FABS records, so that I can ensure the data is complete and accurate.
+As a system user, I want to retrieve the Legal Entity Address Line 3 for a FABS record, so that I can ensure the data is accurate and complete.
+As a system user, I want to access Broker application data, so that I can analyze the data and identify trends.
+As a system administrator, I want to add fields to FPDS data pull, so that I can ensure the system is retrieving the necessary data.
+As a system user, I want to retrieve updated error codes for FABS records, so that I can diagnose and resolve issues.
+As a system user, I want to retrieve the PPoPZIP for a FABS record, so that I can ensure the data is accurate and complete.
+As a system user, I want to retrieve the PPoPCongressionalDistrict for a FABS record, so that I can ensure the data is accurate and complete.
+As a system user, I want to retrieve the FundingAgencyCode for a FABS record, so that I can ensure the data is accurate and complete.
+As a system user, I want to retrieve FABS submission dashboard data, so that I can track the progress of my submissions.
+As a system user, I want to retrieve a FABS record, so that I can view and analyze the data.
+As a system user, I want to retrieve FABS records, so that I can view and analyze the data.

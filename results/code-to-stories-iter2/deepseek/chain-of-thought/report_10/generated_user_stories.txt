@@ -1,0 +1,14 @@
+Here are the user stories derived from the Python code:
+
+As a System Administrator, I want to add users with specific roles, so that I can manage access control in the system.  
+As a System Administrator, I want to set the maximum number of flexible fields for submissions, so that I can control system resource usage.  
+As a User, I want to create a new submission, so that I can start preparing my data for processing.  
+As a User, I want to publish my submission, so that it can be processed by the system.  
+As a Data Analyst, I want to validate submissions, so that only correct data proceeds to processing.  
+As a Data Processor, I want to generate D files from submissions, so that the data can be used in downstream systems.  
+As a Data Processor, I want to retrieve cached D files, so that I can avoid redundant processing.  
+As a User, I want to add flexible fields to my submission, so that I can include additional custom metadata.  
+As a User, I want to remove flexible fields from my submission, so that I can correct or update my metadata.  
+As a User, I want to retrieve external data from sources like FPDS or FABS, so that I can incorporate it into my submission.  
+As any authorized user, I want to view submission details, so that I can check its status and contents.  
+As any authorized user, I want to see the audit log for a submission, so that I can track changes and actions taken.

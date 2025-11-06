@@ -1,0 +1,34 @@
+As a developer, I want to create an instance of the USASpending class, so that I can utilize its methods for updating FABS records, deriving funding agency codes, and mapping federal action obligations to atom feeds.
+As a data analyst, I want to validate PPoP zip codes, so that I can ensure the accuracy of the data.
+As a system administrator, I want to generate D1 files, so that I can create reports based on the data.
+As a New Relic user, I want to retrieve New Relic data, so that I can monitor the performance and health of the system.
+As a SQL developer, I want to update SQL codes, so that I can make changes to the database schema.
+As a PPoPCode manager, I want to add PPoPCode cases, so that I can manage the cases effectively.
+As a user testing manager, I want to report user testing results, so that I can track the progress of user testing.
+As a FABS user, I want to submit FABS files, so that I can upload and process FABS data.
+As a FABS validator, I want to validate FABS files, so that I can ensure the accuracy and completeness of the data.
+As a data processor, I want to derive fields from FABS records, so that I can extract relevant information.
+As a data manager, I want to get FABS data, so that I can access and analyze the data.
+As a sample file manager, I want to update FABS sample files, so that I can keep the sample files up-to-date.
+As a GTAS user, I want to add GTAS window data, so that I can manage the GTAS window.
+As a publish button manager, I want to deactivate the publish button, so that I can control the publishing process.
+As a historical data manager, I want to load historical FABS data, so that I can analyze historical trends.
+As a historical data manager, I want to load historical FPDS data, so that I can analyze historical trends.
+As a DABS user, I want to submit DABS files, so that I can upload and process DABS data.
+As a DABS validator, I want to validate DABS files, so that I can ensure the accuracy and completeness of the data.
+As a data processor, I want to derive fields from DABS records, so that I can extract relevant information.
+As a data manager, I want to get DABS data, so that I can access and analyze the data.
+As a sample file manager, I want to update DABS sample files, so that I can keep the sample files up-to-date.
+As an error message manager, I want to upload and validate error messages, so that I can track and resolve errors.
+As a validation rule manager, I want to update Broker validation rule tables, so that I can manage the validation rules.
+As an error code manager, I want to clarify CFDA error codes, so that I can understand and resolve errors.
+As a resource manager, I want to update Broker resources, so that I can manage the resources effectively.
+As a validation manager, I want to update Broker validations, so that I can manage the validation process.
+As a page manager, I want to update Broker P&P pages, so that I can manage the pages effectively.
+As a logging manager, I want to log messages, so that I can track system activity.
+As an issue resolver, I want to troubleshoot issues, so that I can resolve problems and improve system performance.
+As a domain model manager, I want to update domain models, so that I can manage the domain models effectively.
+As an indexing manager, I want to index domain models, so that I can improve data retrieval efficiency.
+As a data access manager, I want to access Broker application data, so that I can analyze and manage the data.
+As a feature tester, I want to test features, so that I can ensure the features are working correctly.
+As a FABS tester, I want to ensure FABS is deriving fields properly, so that I can verify the accuracy of the data.

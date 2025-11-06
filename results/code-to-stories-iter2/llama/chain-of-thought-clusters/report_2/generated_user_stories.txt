@@ -1,0 +1,17 @@
+As a data analyst, I want to load data for a specific date, so that I can analyze and process the data.
+As a system administrator, I want to process FABS data, so that I can generate FABS submissions and sample files.
+As a developer, I want to derive funding agency codes, so that I can update derivation logic and improve the system's accuracy.
+As a user, I want to access New Relic data, so that I can monitor system performance and identify areas for improvement.
+As a data manager, I want to update FABS submissions and sample files, so that I can ensure data consistency and accuracy.
+As a system administrator, I want to deactivate the publish button, so that I can prevent accidental data publishing.
+As a data analyst, I want to derive historical FABS loaders, so that I can analyze historical data and trends.
+As a developer, I want to update frontend URLs, so that I can improve the system's user interface and user experience.
+As a data manager, I want to update header information, so that I can ensure data consistency and accuracy.
+As a system administrator, I want to improve logging, so that I can monitor system performance and identify areas for improvement.
+As a developer, I want to index domain models, so that I can improve the system's data management and analysis capabilities.
+As a user, I want to access broker application data, so that I can analyze and process the data.
+As a system administrator, I want to sync D1 file generation, so that I can ensure data consistency and accuracy.
+As a developer, I want to update SQL codes, so that I can improve the system's data management and analysis capabilities.
+As a system administrator, I want to process deletions for a specific date, so that I can remove outdated data and improve system performance.
+As a tester, I want to report user testing results, so that I can evaluate the system's usability and performance.
+As a designer, I want to redesign the resources page, so that I can improve the system's user interface and user experience.

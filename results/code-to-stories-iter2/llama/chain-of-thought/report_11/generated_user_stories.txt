@@ -1,0 +1,16 @@
+As a BrokerUser, I want to upload error messages, so that I can manage and update validation rules.
+As a BrokerUser, I want to submit records, so that I can store and track data.
+As a BrokerUser, I want to update validation rules, so that I can modify existing rules.
+
+As a FABSUser, I want to submit FABS files, so that I can store and manage file data.
+As a FABSUser, I want to download FABS files, so that I can access and retrieve stored files.
+
+As a Developer, I want to update the broker validation rule table, so that I can modify existing rules.
+As a Developer, I want to add GTAS window data, so that I can store and track data.
+As a Developer, I want to manage D files generation requests, so that I can track and fulfill requests.
+
+As a DataUser, I want to upload raw agency published files, so that I can store and manage file data.
+As a DataUser, I want to access raw agency published files, so that I can retrieve and view stored files.
+
+As a UIDesigner, I want to redesign the resources page, so that I can improve the user interface and user experience.
+As a UIDesigner, I want to report to agencies, so that I can provide them with relevant data and information.

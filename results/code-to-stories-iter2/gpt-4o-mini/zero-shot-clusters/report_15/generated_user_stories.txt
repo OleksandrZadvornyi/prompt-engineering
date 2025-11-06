@@ -1,0 +1,27 @@
+As a user, I want to add a submission, so that I can store my data for processing.
+
+As a user, I want to validate my submission data, so that I can ensure it meets the required criteria before adding it to the database.
+
+As a user, I want to update my submission, so that I can correct or modify my previously submitted data.
+
+As an administrator, I want to add agency information, so that I can maintain a record of agencies associated with submissions.
+
+As a system, I want to record the history of generated PDFs related to submissions, so that I can track document production over time.
+
+As an administrator, I want to set the status of a submission, so that I can manage and indicate the current processing stage.
+
+As a user, I want to check the status of my submission, so that I can know whether it is still pending or has been processed.
+
+As an administrator, I want to log errors related to submissions, so that I can keep track of issues that occur during processing.
+
+As an administrator, I want to update error messages, so that I can provide clearer context or corrections for previously logged errors.
+
+As an administrator, I want to validate DUNS numbers, so that I can ensure they are legitimate and applicable for specific actions.
+
+As a system, I want to check if a DUNS number is registered, so that I can confirm its existence in the validation records.
+
+As a user, I want to schedule user testing sessions, so that I can gather feedback on the submission process.
+
+As an administrator, I want to generate a report based on user testing results, so that I can analyze user feedback and improve the submission process.
+
+As an administrator, I want to track issues reported from user testing, so that I can identify and address user concerns effectively.

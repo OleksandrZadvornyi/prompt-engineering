@@ -1,0 +1,19 @@
+As a system administrator, I want to log messages, so that I can track system activity and debug issues.
+As a system administrator, I want to retrieve logs, so that I can analyze system activity and troubleshoot problems.
+As a FABS user, I want to submit records, so that I can store and manage my data.
+As a FABS user, I want to retrieve historical data, so that I can analyze trends and make informed decisions.
+As a FABS user, I want to update the broker validation rule table, so that I can ensure data accuracy and compliance.
+As a DABS user, I want to submit records, so that I can store and manage my data.
+As a DABS user, I want to validate submissions, so that I can ensure data accuracy and quality.
+As a GTAS user, I want to add window data, so that I can store and manage my data.
+As a D files user, I want to manage generation requests, so that I can control and track my requests.
+As a published FABS user, I want to access files, so that I can view and utilize published data.
+As a UI designer, I want to track improvements, so that I can refine and optimize the user interface.
+As a FABS loader user, I want to derive fields, so that I can configure and customize the loader.
+As a staging environment administrator, I want to reset the environment, so that I can prepare it for testing and development.
+As a New Relic user, I want to provide data, so that I can monitor and analyze system performance.
+As a system administrator, I want to validate submissions, so that I can ensure data quality and accuracy.
+As a system administrator, I want to manage D files generation requests, so that I can control and track requests.
+As a GTAS user, I want to add window data to the database, so that I can store and manage my data.
+As a FABS user, I want to submit records for FABS, so that I can store and manage my FABS data.
+As a DABS user, I want to submit records for DABS, so that I can store and manage my DABS data.

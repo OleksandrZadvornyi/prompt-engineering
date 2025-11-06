@@ -1,0 +1,29 @@
+As a Data Manager, I want to log submissions with timestamps and statuses, so that I can keep a record of all submissions made.
+
+As a Compliance Officer, I want to add PPoP code cases, so that I can track specific compliance cases effectively.
+
+As a Data Analyst, I want to generate a D1 file if FPDS data is updated, so that I can ensure the D1 file reflects the latest data.
+
+As a Data Analyst, I want to derive the funding agency code from data, so that I can identify the funding sources accurately.
+
+As a Data Analyst, I want to derive fields from historical data, so that I can utilize important information from past records.
+
+As a Finance Officer, I want to map federal action obligations from data, so that I can understand financial commitments accurately.
+
+As a Quality Assurance Tester, I want to validate PPoP ZIP codes, so that I can ensure only correct ZIP codes are used.
+
+As a Project Coordinator, I want to schedule user testing on specific dates, so that I can manage user feedback sessions effectively.
+
+As a User Experience Researcher, I want to create a user testing summary from feedback, so that I can analyze user experiences and improve the product.
+
+As a System Administrator, I want to reset environment permissions, so that I can ensure the system is secured for staging purposes.
+
+As a Project Manager, I want to design the schedule and audit process for UI improvements, so that I can enhance the user interface systematically.
+
+As a Developer, I want to process deletions for a specific date, so that I can maintain data integrity by removing outdated records.
+
+As a Web Designer, I want to redesign the resources page, so that I can improve the user interface and user experience.
+
+As a Database Administrator, I want to update SQL codes for clarity, so that the database queries are easier to understand and maintain.
+
+As a Data Entry Clerk, I want to submit FABS records after validation, so that I can ensure only valid records are submitted.

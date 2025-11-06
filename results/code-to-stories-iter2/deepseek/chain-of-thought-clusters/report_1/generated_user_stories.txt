@@ -1,0 +1,32 @@
+Here are the user stories derived from the Python code:
+
+1. As a Data Administrator, I want to process deletions for a specific date, so that I can maintain clean and up-to-date records.  
+2. As a UI Designer, I want to redesign the Resources page, so that users have an improved experience with updated styles.  
+3. As a UI Designer, I want to report user testing results to agencies, so that feedback can be incorporated into design improvements.  
+4. As a UI Designer, I want to edit the landing page for a specific round, so that content remains relevant and accurate.  
+5. As a UI Designer, I want to update the sample file link, so that users can access the latest reference files.  
+6. As a Database Administrator, I want to update SQL code for better clarity, so that database operations are more maintainable.  
+7. As a Database Administrator, I want to add special PPoPCode cases to derivation logic, so that edge cases are handled correctly.  
+8. As a Data Engineer, I want to derive FundingAgencyCode for records, so that data quality is improved.  
+9. As a Data Engineer, I want to sync D1 file generation with FPDS data load, so that data remains consistent.  
+10. As a Data Engineer, I want to include FREC derivations in historical data, so that historical analyses are more accurate.  
+11. As a Data Engineer, I want to handle large numbers of flexfields efficiently, so that performance is not impacted.  
+12. As a Data Validator, I want to validate ZIP+4 codes, so that address data is accurate.  
+13. As a Data Validator, I want to validate loan records, so that blank or zero amounts are accepted where appropriate.  
+14. As a Data Validator, I want to validate DUNS numbers based on action type and date, so that invalid entries are rejected.  
+15. As a Data Validator, I want to validate ZIP codes, so that only correctly formatted entries are processed.  
+16. As a Data Validator, I want to prevent duplicate transactions from being published, so that data integrity is maintained.  
+17. As a System Administrator, I want to update the header info box with the current date and time, so that users see the latest update timestamp.  
+18. As a System Administrator, I want to deactivate the publish button during derivations, so that users cannot publish incomplete data.  
+19. As a System Administrator, I want to cache D File generation requests, so that repeated requests are processed efficiently.  
+20. As a Data Manager, I want to update FABS submission status, so that the system reflects the current state of submissions.  
+21. As a Data Manager, I want to load historical FPDS data, so that it can be used for reporting and analysis.  
+22. As a Data Manager, I want to prevent double publishing of FABS submissions, so that data is not duplicated.  
+23. As a Data Formatter, I want to format FABS files according to a schema, so that they meet required standards.  
+24. As a Tester, I want to schedule user testing with advanced notice, so that participants can prepare accordingly.  
+25. As a Support Technician, I want to track issues from Tech Thursday, so that they can be addressed systematically.  
+26. As a Developer, I want to update frontend URLs to reflect the current page, so that navigation remains consistent.  
+27. As a Developer, I want to update error message text, so that users receive clear and helpful feedback.  
+28. As a Data Analyst, I want to retrieve published FABS files, so that I can analyze up-to-date data.  
+29. As a Data Analyst, I want to filter records to only include grants, so that I can focus on specific data subsets.  
+30. As a Data Analyst, I want to derive office names from office codes, so that reports display human-readable labels.

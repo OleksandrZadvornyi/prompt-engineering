@@ -1,0 +1,23 @@
+As a data analyst, I want to process deletions based on a specific date, so that I can maintain a clean and relevant database.
+
+As a UI designer, I want to redesign the resources page with new styles, so that it meets the latest design standards and improves user experience.
+
+As a UI manager, I want to report user testing results to various agencies, so that they are informed of the outcomes and any necessary adjustments can be made.
+
+As a project manager, I want to move to the next round of edits for a specific page, so that the development process continues smoothly.
+
+As a system administrator, I want to log errors with detailed messages, so that I can troubleshoot issues effectively.
+
+As a submission coordinator, I want to update the status of submissions, so that I can track their progress and ensure timely responses.
+
+As a file manager, I want to upload files, so that I can easily manage and share documents within the system.
+
+As a file manager, I want to generate a D1 file based on a condition, so that I can produce necessary documentation when required.
+
+As a user, I want to submit my data, so that it can be processed and utilized as needed.
+
+As a user, I want to validate my data before submission, so that I can ensure its accuracy and completeness.
+
+As a flexfield manager, I want to handle flexfields in submission data, so that I can ensure all necessary information is included.
+
+As a FABS user, I want to download specific files, so that I have access to the documents I need for my work.

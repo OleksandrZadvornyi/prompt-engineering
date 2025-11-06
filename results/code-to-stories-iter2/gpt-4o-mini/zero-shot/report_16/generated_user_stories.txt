@@ -1,0 +1,19 @@
+As a user, I want to create a submission with a unique ID, so that I can track and manage my submissions effectively.
+
+As a user, I want to update the publish status of my submission, so that I can change its visibility from draft to published.
+
+As a user, I want to log errors related to my submission, so that I can keep track of issues that need to be addressed.
+
+As a user, I want to validate the file format of my documents, so that I can ensure they are in a supported format before submission.
+
+As a user, I want to receive notifications when my file format is invalid, so that I can correct it before proceeding.
+
+As a user, I want to validate my DUNS number, so that I can ensure it is in the correct format and valid for submission.
+
+As a user, I want to receive notifications when my DUNS number is invalid, so that I can correct it before proceeding.
+
+As a user, I want to update my data records with new information, so that I can keep my records accurate and up to date.
+
+As a user, I want to retrieve updates from my records, so that I can review the current state of my data.
+
+As a user, I want to share a report of my submissions and records, so that I can easily distribute this information in a structured format.

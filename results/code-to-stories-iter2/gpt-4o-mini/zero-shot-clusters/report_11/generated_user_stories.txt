@@ -1,0 +1,9 @@
+As a user, I want to submit a record with an agency and a file, so that I can store submissions in the system.  
+As a user, I want to receive a submission ID after successfully submitting a record, so that I can track my submission.  
+As a user, I want to download a file associated with my submission by providing the submission ID, so that I can access my submitted documents.  
+As a user, I want to update the status of my submission, so that I can change its progress in the system.  
+As a user, I want to receive a confirmation message after updating the status of my submission, so that I know the update was successful.  
+As a user, I want to see an error message if I try to submit a record without providing an agency or file, so that I understand what is required.  
+As a user, I want to see an error message if I try to download a file for a non-existent submission, so that I know the submission is not found.  
+As a user, I want to access FPDS data through an API endpoint, so that I can retrieve relevant procurement information.  
+As a user, I want to retrieve updates to FABS records through an API endpoint, so that I can stay informed about changes to submissions.

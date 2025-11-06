@@ -1,0 +1,18 @@
+As a Cluster Administrator, I want to delete records from the database by date, so that I can manage data effectively.
+As a Cluster Administrator, I want to redesign the Resources page, so that users have an improved user experience.
+As a Cluster Administrator, I want to report user testing results, so that I can track and analyze user feedback.
+As a Cluster Administrator, I want to update SQL codes, so that I can modify database queries as needed.
+As a Cluster Administrator, I want to add PPoPCode cases, so that I can manage and track cases efficiently.
+As a Cluster Administrator, I want to derive the funding agency code from given data, so that I can identify and classify funding agencies.
+
+As a UI Designer, I want to move to the next round of page edits, so that I can continue iterating on the design.
+
+As a Developer, I want to add updates to the FABS submission, so that I can manage and track updates to the submission.
+As a Developer, I want to add GTAS window data, so that I can manage and track GTAS data.
+As a Developer, I want to update the FABS sample file, so that I can modify the sample file as needed.
+
+As a FABS User, I want to download uploaded FABS files, so that I can access and review the files.
+As a FABS User, I want to get the submission status, so that I can track the progress of my submissions.
+
+As a Broker User, I want to create content mockups, so that I can design and test content.
+As a Broker User, I want to submit records, so that I can add new records to the database.

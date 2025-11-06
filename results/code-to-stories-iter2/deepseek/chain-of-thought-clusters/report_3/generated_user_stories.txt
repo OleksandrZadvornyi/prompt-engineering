@@ -1,0 +1,27 @@
+Here are the user stories derived from the Python code:
+
+As a data submitter, I want to upload files to the system, so that I can start the submission process.
+
+As a data submitter, I want to check the status of my submissions, so that I can track their progress.
+
+As a validator, I want to validate submitted files against defined rules, so that I can ensure data quality.
+
+As a validator, I want to add new validation rules, so that I can maintain the integrity of submitted data.
+
+As a publisher, I want to publish validated submissions, so that they become available for use.
+
+As a publisher, I want to generate D-files from FPDS data, so that I can create standardized output files.
+
+As a data analyst, I want to retrieve published files, so that I can analyze and use the data.
+
+As a UI developer, I want to access UI resources, so that I can build and maintain the user interface.
+
+As a UI developer, I want to report UI test results, so that I can track and improve interface quality.
+
+As a monitoring engineer, I want to track system health metrics, so that I can monitor system performance.
+
+As a monitoring engineer, I want to check the overall system health status, so that I can identify and address issues.
+
+As a system user, I want to check data freshness, so that I can ensure I'm working with recent data.
+
+As a system administrator, I want to log system events, so that I can maintain an audit trail and troubleshoot issues.

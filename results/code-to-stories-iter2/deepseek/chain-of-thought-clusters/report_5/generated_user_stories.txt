@@ -1,0 +1,31 @@
+Here are the user stories derived from the Python code:
+
+As a system administrator, I want to initialize the database with proper tables, so that all data is stored in an organized structure.  
+
+As a user, I want to create an account with a username and hashed password, so that I can securely access the system.  
+
+As an administrator, I want to assign roles to users, so that I can manage their permissions.  
+
+As a user, I want to view my assigned roles, so that I know my permissions in the system.  
+
+As a submitter, I want to create a new submission with a file, so that I can start the processing workflow.  
+
+As a submitter, I want to update the status of my submission, so that the system can track its progress.  
+
+As a user, I want to check the status of my submission, so that I know its current processing state.  
+
+As a validator, I want to validate DUNS numbers against allowed action types, so that only authorized submissions are processed.  
+
+As a validator, I want to validate file types based on their extensions, so that only supported formats are accepted.  
+
+As a data loader, I want to load FPDS historical data with a specified year, so that it can be used for reference.  
+
+As a data loader, I want to load FABS historical data, so that it can be used for analysis.  
+
+As a data processor, I want to derive the funding agency from submission data, so that submissions can be categorized correctly.  
+
+As a system, I want to cache generated D files, so that repeated requests are served faster.  
+
+As a developer, I want to set up New Relic monitoring, so that I can track application performance.  
+
+As a tester, I want to schedule user testing sessions, so that feedback can be collected on system functionality.

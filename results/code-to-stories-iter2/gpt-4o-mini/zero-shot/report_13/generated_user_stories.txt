@@ -1,0 +1,23 @@
+As a user, I want to submit a title and description via a POST request, so that I can create a new submission and receive confirmation of success.
+
+As a user, I want to include optional flexfields when submitting a form, so that I can provide additional information related to my submission.
+
+As a user, I want to receive validation errors if my submission is missing a title or description, so that I can correct the input before resubmitting.
+
+As a user, I want to upload a CSV file via a POST request, so that I can process multiple data entries at once.
+
+As a user, I want to receive an error message if I try to upload a file that is not in CSV format, so that I understand the requirements for file uploads.
+
+As a user, I want to generate a report via a GET request, so that I can view all submissions, flexfields, and performance data in a structured format.
+
+As a user, I want to add a new flexfield via a POST request, so that I can extend the information captured in my submissions.
+
+As a user, I want to receive an error message if I try to add a flexfield that already exists, so that I avoid duplicate entries.
+
+As a user, I want to validate performance data via a POST request, so that I can analyze the number of flexfields being used.
+
+As a user, I want to update data and generate a D1 file via a POST request, so that I can save the latest information in JSON format.
+
+As a user, I want to download the generated D1 file via a GET request, so that I can have a local copy of the updated data.
+
+As a user, I want to receive an error message if I attempt to download a D1 file that does not exist, so that I am aware of the issue.

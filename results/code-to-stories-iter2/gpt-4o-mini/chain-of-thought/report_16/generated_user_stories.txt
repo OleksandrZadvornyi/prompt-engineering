@@ -1,0 +1,12 @@
+As a user, I want to upload a submission, so that I can share my content with the system.  
+As a user, I want to receive feedback on whether my submission is valid, so that I can correct any issues before it is published.  
+As a submission manager, I want to ensure that a user cannot upload multiple submissions, so that there are no duplicates in the system.  
+As a submission manager, I want to validate submissions for content issues, so that only quality submissions are considered.  
+As a submission manager, I want to update the publish status of submissions, so that I can control which submissions are visible to others.  
+As a user, I want to see a list of current submissions, so that I can track the status of my contributions.  
+As a user, I want to subscribe to notifications, so that I am informed of new updates relevant to my submissions.  
+As a notifier, I want to send notifications to subscribers, so that they are aware of important updates.  
+As a UI manager, I want to redesign the resources page based on user feedback, so that it improves user experience.  
+As a UI manager, I want to report user testing results, so that I can document and address user concerns effectively.  
+As an issue logger, I want to log issues related to submissions, so that I can track and manage problems for future reference.  
+As a user, I want to ensure that submissions are not published multiple times, so that I avoid confusion and maintain clarity in submissions.

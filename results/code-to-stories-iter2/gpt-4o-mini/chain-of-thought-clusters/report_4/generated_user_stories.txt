@@ -1,0 +1,15 @@
+As a BrokerUser, I want to upload a submission, so that I can successfully submit data for processing.  
+As a BrokerUser, I want to validate my submission, so that I ensure the data is correct before uploading.  
+As a D1FileGenerator, I want to generate a D1 file, so that I can synchronize my FPDS data into the required format.  
+As a Developer, I want to log an issue, so that I can keep track of problems that arise during development.  
+As a Developer, I want to update validation rules, so that I can adapt to new requirements and improve data quality.  
+As a FABSUser, I want to access published files, so that I can view and download relevant documents.  
+As a FABSUser, I want to download a file, so that I can obtain a specific document for my use.  
+As a UI_Designer, I want to redesign the resources page, so that I can improve the user experience and aesthetic of the interface.  
+As a UI_Designer, I want to track issues related to design, so that I can manage and resolve problems effectively.  
+As a FileManager, I want to upload a file, so that I can add necessary documents to the system.  
+As a FileManager, I want to validate the file format, so that I can ensure compatibility with system requirements.  
+As a ScheduleManager, I want to create a schedule for a project, so that I can track deadlines and manage project timelines effectively.  
+As a DataManager, I want to retrieve FPDS data, so that I can access necessary information for processing or reporting.  
+As a DataManager, I want to derive the office name from an office code, so that I can identify locations based on codes accurately.  
+As a SubmissionDashboard, I want to display submission status, so that I can inform users about the current state of their submissions.
